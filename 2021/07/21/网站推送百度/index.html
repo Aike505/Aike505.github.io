@@ -29,7 +29,7 @@
 <meta property="og:image" content="https://s4.51cto.com/images/blog/202106/22/b3063be3f3bba0404d1401ef5edbb73c.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=">
 <meta property="og:image" content="https://s4.51cto.com/images/blog/202106/22/d4bdeab31727e86d482f5de88f78675c.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=">
 <meta property="article:published_time" content="2021-07-21T04:39:29.000Z">
-<meta property="article:modified_time" content="2021-07-22T09:46:32.426Z">
+<meta property="article:modified_time" content="2021-07-23T02:35:17.730Z">
 <meta property="article:author" content="zk">
 <meta property="article:tag" content="推送百度">
 <meta name="twitter:card" content="summary">
@@ -90,9 +90,7 @@
 			
 				<li><a href="/" target="_blank">主页</a></li>
 			
-				<li><a href="https://zhousiwei.gitee.io/ibooks/" target="_blank">技术笔记</a></li>
-			
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" target="_blank">随笔</a></li>
+				<li><a href="/categories" target="_blank">分类</a></li>
 			
 			</ul>
 		</nav>
@@ -125,7 +123,7 @@
 					
 				
 					
-						<a class="qq" href="/img/1736134512.jpg" 
+						<a class="qq" href="http://wpa.qq.com/msgrd?v=3&uin=1736134512&site=qq&menu=yes" 
 												title="QQ" target="_blank"><i class="icon-qq"></i></a>
 					
 				
@@ -149,6 +147,17 @@
 		</nav>
 	</header>		
 </div>
+
+<nav class="header-nav">
+    <div class="social">
+        
+    </div>
+
+    <!--音乐播放插件-->
+    <div style="margin-top:90px;">
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=300height=86 src="//music.163.com/outchain/player?type=2&id=857896&auto=0&height=66"></iframe>
+    </div>
+</nav>
 
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
@@ -184,8 +193,6 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -203,7 +210,7 @@
 					
 						
 						<a class="qq" target="_blank" 
-							href="/img/1736134512.jpg" title="QQ"><i class="icon-qq"></i></a>
+							href="http://wpa.qq.com/msgrd?v=3&uin=1736134512&site=qq&menu=yes" title="QQ"><i class="icon-qq"></i></a>
 						
 					
 						
@@ -225,14 +232,12 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a target="_blank" rel="noopener" href="https://zhousiwei.gitee.io/ibooks/">技术笔记</a></li>
-		        
-					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 50%"><a href="/categories">分类</a></li>
 		        
 				</ul>
 			</nav>
@@ -413,6 +418,21 @@
 	</div>
 
     
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/网站//" class="article-tag-list-link color3">网站</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/网站/推送百度//" class="article-tag-list-link color5">推送百度</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
     
 
@@ -477,7 +497,7 @@
 
 <nav id="article-nav">
   
-    <a href="/2021/07/22/Hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -545,11 +565,28 @@
     <div id="footer-info">
     	<div class="footer-left">
     		&copy; 2021 <a href="https://Aike505.github.io/" target="_blank">zk</a>
+
+			<!-- 添加网址运行时间 -->
+			<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+			<script>
+				var now = new Date(); 
+				function createtime() { 
+					var grt= new Date("07/20/2021 20:00:00");//此处修改你的建站时间或者网站上线时间 
+					now.setTime(now.getTime()+250); 
+					days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+					hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+					if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+					mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+					seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+					snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+					document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+					document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+				} 
+				setInterval("createtime()",250);
+			</script>
+
     	</div>
       	<div class="footer-right">
-			
-			
-      		GitHub:<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">hexo-theme-yilia-plus</a> by Litten
       	</div>
     </div>
   </div>
@@ -664,14 +701,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">前端</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -869,6 +898,35 @@
   </div>
 
   
+<script type="text/javascript" src="/plugins/TweenMax/TweenMax.min.js"></script>
+<script type="text/javascript" src="/plugins/TweenMax/HoverImg.js"></script>
+
+<script>
+
+
+  var hoverEffect = {
+    "subNav": ".left-col .social a"
+  }
+
+
+  for (var x in hoverEffect) {
+    // 初始化data-img属性值
+    let $em = document.querySelectorAll(hoverEffect[x]);
+    $em.forEach(($a) => {
+      //console.log($a.href);
+      if (isImageType($a.href)) {
+        $a.setAttribute("data-img", $a.href)
+      }
+    })
+    // 实现悬停元素预览图片效果
+    let $a = document.querySelectorAll(hoverEffect[x] + "[data-img]");
+    $a.forEach(($em) => {
+      new HoverImgFx1($em)
+    })
+  }
+
+</script>
+
   
 <script type="text/javascript" src="/plugins/activate-power-mode/activate-power-mode.js"></script>
 <script>
