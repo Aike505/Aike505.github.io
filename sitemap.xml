@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://aike505.github.io/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</loc>
+    
+    <lastmod>2021-07-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/images/index.html</loc>
+    
+    <lastmod>2021-07-24</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://aike505.github.io/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</loc>
     
     <lastmod>2021-07-24</lastmod>
@@ -9,16 +23,9 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</loc>
-    
-    <lastmod>2021-07-23</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://aike505.github.io/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</loc>
     
-    <lastmod>2021-07-23</lastmod>
+    <lastmod>2021-07-24</lastmod>
     
   </url>
   
@@ -65,13 +72,6 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/images/index.html</loc>
-    
-    <lastmod>2021-07-19</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://aike505.github.io/about/index.html</loc>
     
     <lastmod>2021-07-19</lastmod>
@@ -95,14 +95,14 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/%E6%B3%A8%E5%86%8C%E5%9F%9F%E5%90%8D/</loc>
+    <loc>https://aike505.github.io/tags/hexo-bug/</loc>
     <lastmod>2021-07-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/hexo-bug/</loc>
+    <loc>https://aike505.github.io/tags/%E6%B3%A8%E5%86%8C%E5%9F%9F%E5%90%8D/</loc>
     <lastmod>2021-07-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -132,14 +132,14 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/categories/hexo/%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://aike505.github.io/categories/hexo/%E4%B8%BB%E9%A2%98/</loc>
     <lastmod>2021-07-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://aike505.github.io/categories/hexo/%E4%B8%BB%E9%A2%98/</loc>
+    <loc>https://aike505.github.io/categories/hexo/%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-07-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -153,14 +153,14 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/categories/hexo/%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/bug/</loc>
+    <loc>https://aike505.github.io/categories/%E7%BD%91%E7%AB%99/%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/</loc>
     <lastmod>2021-07-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://aike505.github.io/categories/%E7%BD%91%E7%AB%99/%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/</loc>
+    <loc>https://aike505.github.io/categories/hexo/%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/bug/</loc>
     <lastmod>2021-07-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
