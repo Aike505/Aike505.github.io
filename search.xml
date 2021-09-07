@@ -262,111 +262,6 @@ to_file(filename)| 将词云图保存为名为filename的文件
       </tags>
   </entry>
   <entry>
-    <title>11.Python第三方库纵览</title>
-    <url>/2021/09/05/11-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88/</url>
-    <content><![CDATA[<p>Python第三方库纵览</p>
-<span id="more"></span>
-<h1 id="11-Python第三方库纵览"><a href="#11-Python第三方库纵览" class="headerlink" title="11.Python第三方库纵览"></a>11.Python第三方库纵览</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_11.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88.png"></li>
-</ul>
-<blockquote>
-<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>更广泛的Python计算生态，只要求了解第三方库的名称，不限于以下领域: 网络爬虫、数据分析、文本处理、数据可视化、用户图形界面、机器学习、Web开发、游戏开发等</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>方向</th>
-<th>第三方库</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>网络爬虫方向</td>
-<td>requests<br>scrapy</td>
-<td>requests库是一个简洁且简单的处理HTTP请求的第三方库，它的最大优点是程序编写过程更接近正常URL访问过程。<br>scrapy是Python开发的一个快速的、高层次的Web获取框架。</td>
-</tr>
-<tr>
-<td>数据分析方向</td>
-<td>numpy<br>scipy<br>pandas</td>
-<td>numpy是Python的一种开源数值计算扩展第三方库，用于处理数据类型相同的多维数组（ndarray），简称“数组”<br>scipy是一款方便、易于使用、专为科学和工程设计的Python工具包。<br>pandas是基于numpy扩展的一个重要第三方库，它是为了解决数据分析任务而创建的。</td>
-</tr>
-<tr>
-<td>文本处理方向</td>
-<td>pdfminer<br>openpyxl<br>python-docx<br>beautifulsoup4</td>
-<td>pdfminer是一个可以从PDF文档中提取各类信息的第三方库<br>openpyxl是一个处理Microsoft Excel文档Python第三方库<br>python-docx是一个处理Microsoft Word文档的Python第三方库<br>beautifulsoup4库，也称为Beautiful Soup库或bs4库，用于解析和处理HTML和XML</td>
-</tr>
-<tr>
-<td>数据可视化</td>
-<td>matplotlib<br>TVTK<br>mayavi</td>
-<td>matplotlib是提供数据绘图功能的第三方库，主要进行二维图表数据展示，广泛用于科学计算的数据可视化<br>TVTK库在标准的VTK库之上用Traits库进行封装的Python第三方库<br>mayavi基于VTK开发，完全用Python编写，提供了一个更为方便实用的可视化软件</td>
-</tr>
-<tr>
-<td>用户图形界面方向</td>
-<td>pyqt5<br>wxpython<br>pygtk</td>
-<td>Python语言当前最好的GUI第三方库，它可以在Windows、Linux和Mac OS X等操作系统上跨平台使用<br>wxPython是Python语言的一套优秀的GUI图形库，它是跨平台GUI库wxWidgets的Python封装<br>pygtk是基于GTK+的Python语言封装，它提供了各式的可视元素和功能，能够轻松创建具有图形用户界面的程序。</td>
-</tr>
-<tr>
-<td>机器学习方向</td>
-<td>Scikit-learn<br>TensorFlow<br>Theano</td>
-<td>Scikit-learn是一个简单且高效的数据挖掘和数据分析工具<br>TensorFlow是谷歌公司基于DistBelief进行研发的第二代人工智能学习系统，也是用来支撑著名的AlphaGo系统的后台框架<br>Theano为执行深度学习中大规模神经网络算法的运算而设计，擅长处理多维数组</td>
-</tr>
-<tr>
-<td>Web开发方向</td>
-<td>Django<br>Pyramid<br>lask</td>
-<td>Django是Python生态中最流行的开源Web应用框架<br>Pyramid是一个通用、开源的Python Web应用程序开发框架<br>Flask是轻量级Web应用框架，相比Django和Pyramid，它也被称为微框架</td>
-</tr>
-<tr>
-<td>游戏开发方向</td>
-<td>Pygame<br>Panda3D<br>cocos2d</td>
-<td>Pygame是在SDL库基础上进行封装的、面向游戏开发入门的Python第三方库，除了制作游戏外，还用于制作多媒体应用程序<br>Panda3D是一个开源、跨平台的3D渲染和游戏开发库,简答说，它是一个3D游戏引擎，由迪士尼和卡耐基梅隆大学娱乐技术中心共同进行开发<br>cocos2d是一个构建2D游戏和图形界面交互式应用的框架，它包括C++、JavaScript、Swift、Python等多个版本</td>
-</tr>
-</tbody></table>
-<p>Python语言有超过12万个第三方库，覆盖信息技术几乎所有领域。即使每个方向，也会有大量的专业人员开发多个第三方库来给出具体设计。除了本章所提到的方向外，这里再列出5个有趣且有用的Python第三方库，展示Python在工程实践方面强大的魅力。</p>
-<table>
-<thead>
-<tr>
-<th>更多第三方库</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>PIL</td>
-<td>PIL库是Python语言在图像处理方面的重要第三方库，支持图像存储、显示和处理，它能够处理几乎所有图片格式，可以完成对图像的缩放、剪裁、叠加以及向图像添加线条、图像和文字等操作。</td>
-</tr>
-<tr>
-<td>SymPy</td>
-<td>SymPy是一个支持符号计算的Python第三方库，它是一个全功能的计算机代数系统。SymPy代码简洁、易于理解，支持符号计算、高精度计算、模式匹配、绘图、解方程、微积分、组合数学、离散数学、几何学、概率与统计、物理学等领域计算和应用。</td>
-</tr>
-<tr>
-<td>NLTK</td>
-<td>NLTK是一个非常重要的自然语言处理Python第三方库，它支持多种语言，尤其对中文支持良好。NLTK可以进行语料处理、文本统计、内容理解、情感分析等多种应用，具备非常可靠的应用价值。</td>
-</tr>
-<tr>
-<td>WeRoBot</td>
-<td>WeRoBot 是一个微信公众号开发框架，也称为的微信机器人框架。WeRoBot可以解析微信服务器发来的消息，并将消息转换成成Message或者Event类型。</td>
-</tr>
-<tr>
-<td>MyQR</td>
-<td>MyQR是一个能够产生基本二维码、艺术二维码和动态效果二维码的Python第三方库。图11.1给出了一些MyQR生成二维码的实例。</td>
-</tr>
-</tbody></table>
-<ul>
-<li>图11.1<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_11.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88_1.png"></li>
-</ul>
-<blockquote>
-<h2 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h2><p>本章通过8个具体方向30个Python功能库的简要介绍纵览Python语言计算生态的丰富性，希望读者能够从Python基础语法出发，看到更广阔的程序设计生态，进一步“理解和运用计算生态”，掌握符合信息时代需要的程序设计能力。<br><br>国家计算机等级考试不仅仅是一场考试，更是检验能力提升的手段，加油!<br><br><br>点击<a href="https://python123.io/student/series/1/">这里</a>获取所有章节pdf<br>点击<a href="https://python123.io/python/songtian/5ed87dc83b5ca9663fd4761d">这里</a>获取更多内容</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>3.Python基本数据类型</title>
     <url>/2021/09/04/3-Python%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB/</url>
     <content><![CDATA[<p>Python基本数据类型</p>
@@ -772,6 +667,111 @@ to_file(filename)| 将词云图保存为名为filename的文件
       </tags>
   </entry>
   <entry>
+    <title>11.Python第三方库纵览</title>
+    <url>/2021/09/05/11-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88/</url>
+    <content><![CDATA[<p>Python第三方库纵览</p>
+<span id="more"></span>
+<h1 id="11-Python第三方库纵览"><a href="#11-Python第三方库纵览" class="headerlink" title="11.Python第三方库纵览"></a>11.Python第三方库纵览</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_11.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88.png"></li>
+</ul>
+<blockquote>
+<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>更广泛的Python计算生态，只要求了解第三方库的名称，不限于以下领域: 网络爬虫、数据分析、文本处理、数据可视化、用户图形界面、机器学习、Web开发、游戏开发等</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>方向</th>
+<th>第三方库</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>网络爬虫方向</td>
+<td>requests<br>scrapy</td>
+<td>requests库是一个简洁且简单的处理HTTP请求的第三方库，它的最大优点是程序编写过程更接近正常URL访问过程。<br>scrapy是Python开发的一个快速的、高层次的Web获取框架。</td>
+</tr>
+<tr>
+<td>数据分析方向</td>
+<td>numpy<br>scipy<br>pandas</td>
+<td>numpy是Python的一种开源数值计算扩展第三方库，用于处理数据类型相同的多维数组（ndarray），简称“数组”<br>scipy是一款方便、易于使用、专为科学和工程设计的Python工具包。<br>pandas是基于numpy扩展的一个重要第三方库，它是为了解决数据分析任务而创建的。</td>
+</tr>
+<tr>
+<td>文本处理方向</td>
+<td>pdfminer<br>openpyxl<br>python-docx<br>beautifulsoup4</td>
+<td>pdfminer是一个可以从PDF文档中提取各类信息的第三方库<br>openpyxl是一个处理Microsoft Excel文档Python第三方库<br>python-docx是一个处理Microsoft Word文档的Python第三方库<br>beautifulsoup4库，也称为Beautiful Soup库或bs4库，用于解析和处理HTML和XML</td>
+</tr>
+<tr>
+<td>数据可视化</td>
+<td>matplotlib<br>TVTK<br>mayavi</td>
+<td>matplotlib是提供数据绘图功能的第三方库，主要进行二维图表数据展示，广泛用于科学计算的数据可视化<br>TVTK库在标准的VTK库之上用Traits库进行封装的Python第三方库<br>mayavi基于VTK开发，完全用Python编写，提供了一个更为方便实用的可视化软件</td>
+</tr>
+<tr>
+<td>用户图形界面方向</td>
+<td>pyqt5<br>wxpython<br>pygtk</td>
+<td>Python语言当前最好的GUI第三方库，它可以在Windows、Linux和Mac OS X等操作系统上跨平台使用<br>wxPython是Python语言的一套优秀的GUI图形库，它是跨平台GUI库wxWidgets的Python封装<br>pygtk是基于GTK+的Python语言封装，它提供了各式的可视元素和功能，能够轻松创建具有图形用户界面的程序。</td>
+</tr>
+<tr>
+<td>机器学习方向</td>
+<td>Scikit-learn<br>TensorFlow<br>Theano</td>
+<td>Scikit-learn是一个简单且高效的数据挖掘和数据分析工具<br>TensorFlow是谷歌公司基于DistBelief进行研发的第二代人工智能学习系统，也是用来支撑著名的AlphaGo系统的后台框架<br>Theano为执行深度学习中大规模神经网络算法的运算而设计，擅长处理多维数组</td>
+</tr>
+<tr>
+<td>Web开发方向</td>
+<td>Django<br>Pyramid<br>lask</td>
+<td>Django是Python生态中最流行的开源Web应用框架<br>Pyramid是一个通用、开源的Python Web应用程序开发框架<br>Flask是轻量级Web应用框架，相比Django和Pyramid，它也被称为微框架</td>
+</tr>
+<tr>
+<td>游戏开发方向</td>
+<td>Pygame<br>Panda3D<br>cocos2d</td>
+<td>Pygame是在SDL库基础上进行封装的、面向游戏开发入门的Python第三方库，除了制作游戏外，还用于制作多媒体应用程序<br>Panda3D是一个开源、跨平台的3D渲染和游戏开发库,简答说，它是一个3D游戏引擎，由迪士尼和卡耐基梅隆大学娱乐技术中心共同进行开发<br>cocos2d是一个构建2D游戏和图形界面交互式应用的框架，它包括C++、JavaScript、Swift、Python等多个版本</td>
+</tr>
+</tbody></table>
+<p>Python语言有超过12万个第三方库，覆盖信息技术几乎所有领域。即使每个方向，也会有大量的专业人员开发多个第三方库来给出具体设计。除了本章所提到的方向外，这里再列出5个有趣且有用的Python第三方库，展示Python在工程实践方面强大的魅力。</p>
+<table>
+<thead>
+<tr>
+<th>更多第三方库</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PIL</td>
+<td>PIL库是Python语言在图像处理方面的重要第三方库，支持图像存储、显示和处理，它能够处理几乎所有图片格式，可以完成对图像的缩放、剪裁、叠加以及向图像添加线条、图像和文字等操作。</td>
+</tr>
+<tr>
+<td>SymPy</td>
+<td>SymPy是一个支持符号计算的Python第三方库，它是一个全功能的计算机代数系统。SymPy代码简洁、易于理解，支持符号计算、高精度计算、模式匹配、绘图、解方程、微积分、组合数学、离散数学、几何学、概率与统计、物理学等领域计算和应用。</td>
+</tr>
+<tr>
+<td>NLTK</td>
+<td>NLTK是一个非常重要的自然语言处理Python第三方库，它支持多种语言，尤其对中文支持良好。NLTK可以进行语料处理、文本统计、内容理解、情感分析等多种应用，具备非常可靠的应用价值。</td>
+</tr>
+<tr>
+<td>WeRoBot</td>
+<td>WeRoBot 是一个微信公众号开发框架，也称为的微信机器人框架。WeRoBot可以解析微信服务器发来的消息，并将消息转换成成Message或者Event类型。</td>
+</tr>
+<tr>
+<td>MyQR</td>
+<td>MyQR是一个能够产生基本二维码、艺术二维码和动态效果二维码的Python第三方库。图11.1给出了一些MyQR生成二维码的实例。</td>
+</tr>
+</tbody></table>
+<ul>
+<li>图11.1<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_11.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88_1.png"></li>
+</ul>
+<blockquote>
+<h2 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h2><p>本章通过8个具体方向30个Python功能库的简要介绍纵览Python语言计算生态的丰富性，希望读者能够从Python基础语法出发，看到更广阔的程序设计生态，进一步“理解和运用计算生态”，掌握符合信息时代需要的程序设计能力。<br><br>国家计算机等级考试不仅仅是一场考试，更是检验能力提升的手段，加油!<br><br><br>点击<a href="https://python123.io/student/series/1/">这里</a>获取所有章节pdf<br>点击<a href="https://python123.io/python/songtian/5ed87dc83b5ca9663fd4761d">这里</a>获取更多内容</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>5.函数和代码复用</title>
     <url>/2021/09/05/5-%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8/</url>
     <content><![CDATA[<p>函数和代码复用</p>
@@ -838,28 +838,6 @@ to_file(filename)| 将词云图保存为名为filename的文件
       <tags>
         <tag>Python</tag>
         <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日常记录</title>
-    <url>/2021/08/17/8-17/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg " width = "300"  height = "200">
-<span id="more"></span>
->今天看完了《平凡的世界》第三部（*利用学驾校时间看的手机*），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:
->>* 平凡又平庸的我们努力奔向爱情。      
->>* 在这平凡的世界里努力过好平凡的生活。
->>* 我这个平凡的世界里平凡的人觉得遥不可及。
-
-<blockquote>
-<p>同时，今天是keep打卡第一天 fighting~</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg"></p>
-]]></content>
-      <categories>
-        <category>日常记录</category>
-      </categories>
-      <tags>
-        <tag>生活片段</tag>
       </tags>
   </entry>
   <entry>
@@ -1078,22 +1056,6 @@ to_file(filename)| 将词云图保存为名为filename的文件
       </tags>
   </entry>
   <entry>
-    <title>日常记录</title>
-    <url>/2021/08/16/8-16/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200">
-<span id="more"></span>
-> 一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以**平凡**的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处>~<
-
-<p> <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210814.jpg"></p>
-]]></content>
-      <categories>
-        <category>日常记录</category>
-      </categories>
-      <tags>
-        <tag>生活片段</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>7.文章和数据格式化</title>
     <url>/2021/09/05/7-%E6%96%87%E7%AB%A0%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/</url>
     <content><![CDATA[<p>文章和数据格式化</p>
@@ -1225,6 +1187,44 @@ to_file(filename)| 将词云图保存为名为filename的文件
       <tags>
         <tag>Python</tag>
         <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日常记录</title>
+    <url>/2021/08/16/8-16/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200">
+<span id="more"></span>
+> 一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以**平凡**的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处>~<
+
+<p> <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210814.jpg"></p>
+]]></content>
+      <categories>
+        <category>日常记录</category>
+      </categories>
+      <tags>
+        <tag>生活片段</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日常记录</title>
+    <url>/2021/08/17/8-17/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg " width = "300"  height = "200">
+<span id="more"></span>
+>今天看完了《平凡的世界》第三部（*利用学驾校时间看的手机*），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:
+>>* 平凡又平庸的我们努力奔向爱情。      
+>>* 在这平凡的世界里努力过好平凡的生活。
+>>* 我这个平凡的世界里平凡的人觉得遥不可及。
+
+<blockquote>
+<p>同时，今天是keep打卡第一天 fighting~</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg"></p>
+]]></content>
+      <categories>
+        <category>日常记录</category>
+      </categories>
+      <tags>
+        <tag>生活片段</tag>
       </tags>
   </entry>
   <entry>
@@ -1984,6 +1984,36 @@ to_file(filename)| 将词云图保存为名为filename的文件
       </tags>
   </entry>
   <entry>
+    <title>hexo的安装和在github部署博客</title>
+    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<p>hexo的安装和在github部署博客</p>
+<span id="more"></span>
+
+<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io </code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>打开 git 下 git bash 输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
+<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
+
+<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
+<hr>
+<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
+]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo部署各种错误的解决方式</title>
     <url>/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
     <content><![CDATA[<p>hexo部署各种错误的解决方式</p>
@@ -2051,36 +2081,6 @@ to_file(filename)| 将词云图保存为名为filename的文件
       </categories>
       <tags>
         <tag>注册域名</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo的安装和在github部署博客</title>
-    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<p>hexo的安装和在github部署博客</p>
-<span id="more"></span>
-
-<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io </code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<p>打开 git 下 git bash 输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
-
-<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
-<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
-
-<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
-<hr>
-<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
-]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
       </tags>
   </entry>
   <entry>
