@@ -30,6 +30,119 @@
       </tags>
   </entry>
   <entry>
+    <title>10.Python第三方库概览</title>
+    <url>/2021/09/05/10-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88/</url>
+    <content><![CDATA[<p>Python第三方库概览</p>
+<span id="more"></span>
+<h1 id="10-Python第三方库概览"><a href="#10-Python第三方库概览" class="headerlink" title="10.Python第三方库概览"></a>10.Python第三方库概览</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_10.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88.png"></li>
+</ul>
+<blockquote>
+<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>第三方库的获取和安装<br><br>脚本程序转变为可执行程序的第三方库:<br>PyInstaller库(必选)<br><br>第三方库: jieba库(必选)、wordcloud库（可选）</p>
+</blockquote>
+<h2 id="10-1-Python第三方库的获取与安装"><a href="#10-1-Python第三方库的获取与安装" class="headerlink" title="10.1 Python第三方库的获取与安装"></a>10.1 Python第三方库的获取与安装</h2><p>Python第三方库依照安装方式灵活性和难易程度有三个方法：<strong>pip工具安装</strong>、<strong>自定义安装</strong>和<strong>文件安装</strong>。</p>
+<h3 id="10-1-1-pip工具安装"><a href="#10-1-1-pip工具安装" class="headerlink" title="10.1.1 pip工具安装"></a>10.1.1 pip工具安装</h3><p>最常用且最高效的Python第三方库安装方式是采用pip工具安装。pip是Python官方提供并维护的在线第三方库安装工具。<br><br><code>pip install&lt;拟安装库名称&gt;</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install pygame</span><br><span class="line">...</span><br><span class="line">Installing collected packages: pygame</span><br><span class="line">Successfully installed pygame-1.9.2b1</span><br></pre></td></tr></table></figure>
+
+<p>pip常用指令,可以通过<code>pip help</code>查看：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C:\Users\86159&gt;pip -h</span><br><span class="line"></span><br><span class="line">Usage:</span><br><span class="line">  pip &lt;command&gt; [options]</span><br><span class="line"></span><br><span class="line">Commands:</span><br><span class="line">  install                     Install packages.</span><br><span class="line">  download                    Download packages.</span><br><span class="line">  uninstall                   Uninstall packages.</span><br><span class="line">  freeze                      Output installed packages in requirements format.</span><br><span class="line">  list                        List installed packages.</span><br><span class="line">  show                        Show information about installed packages.</span><br><span class="line">  check                       Verify installed packages have compatible dependencies.</span><br><span class="line">  config                      Manage local and global configuration.</span><br><span class="line">  search                      Search PyPI for packages.</span><br><span class="line">  cache                       Inspect and manage pip&#x27;s wheel cache.</span><br><span class="line">  wheel                       Build wheels from your requirements.</span><br><span class="line">  hash                        Compute hashes of package archives.</span><br><span class="line">  completion                  A helper command used for command completion.</span><br><span class="line">  debug                       Show information useful for debugging.</span><br><span class="line">  help                        Show help for commands.</span><br></pre></td></tr></table></figure>
+
+<h3 id="10-1-2-自定义安装"><a href="#10-1-2-自定义安装" class="headerlink" title="10.1.2 自定义安装"></a>10.1.2 自定义安装</h3><p>自定义安装指按照第三方库提供的步骤和方式安装。第三方库都有主页用于维护库的代码和文档。以科学计算用的numpy为例，开发者维护的官方主页是：<a href="http://www.numpy.org/">http://www.numpy.org/</a><br><br>浏览该网页找到下载链接，如下：<a href="https://www.scipy.org/scipylib/download.html">https://www.scipy.org/scipylib/download.html</a><br><br>进而根据指示步骤安装。</p>
+<h3 id="10-1-3-文件安装"><a href="#10-1-3-文件安装" class="headerlink" title="10.1.3 文件安装"></a>10.1.3 文件安装</h3><p>为了解决这类第三方库安装问题，美国加州大学尔湾分校提供了一个页面，帮助Python用户获得Windows可直接安装的第三方库文件，链接地址如下：<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">https://www.lfd.uci.edu/~gohlke/pythonlibs/</a><br><br>这里以scipy为例说明，首先在上述页面中找到scipy库对应的内容。选择其中的.whl文件下载，这里选择适用于Python 3.5版本解释器和32位系统的对应文件：scipy- 0 . 1 7 . 1 - cp3 5 - cp3 5m-win3 2 .whl，下载该文件到D:\pycodes目录。<br>然后，采用pip命令安装该文件。<br></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install D:\pycodes\scipy-0.17.1-cp35-cp35m-win32.whl</span><br><span class="line">Processing d:\pycodes\scipy-0.17.1-cp35-cp35m-win32.whl</span><br><span class="line">Installing collected packages: scipy</span><br><span class="line">Successfully installed scipy-0.17.1</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>对于上述三种安装方式，一般优先选择采用pip工具安装，如果安装失败，则选择自定义安装或<br>者文件安装。另外，如果需要在没有网络条件下安装Python第三方库，请直接采用文件安装方<br>式。其中，.whl文件可以通过pip download指令在有网络条件的情况下获得。</p>
+</blockquote>
+<h2 id="10-2-pyinstaller库"><a href="#10-2-pyinstaller库" class="headerlink" title="10.2 pyinstaller库"></a>10.2 pyinstaller库</h2><h3 id="10-2-1-pyinstaller库概述"><a href="#10-2-1-pyinstaller库概述" class="headerlink" title="10.2.1 pyinstaller库概述"></a>10.2.1 pyinstaller库概述</h3><p>PyInstaller是一个十分有用的Python第三方库，它能够在Windows、Linux、Mac OS X等操作系统下将Python源文件打包，变成直接可运行的可执行文件。<br><br><br>通过对源文件打包，Python程序可以在没有安装Python的环境中运行，也可以作为一个独立文件方便传递和管理。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install PyInstaller</span><br></pre></td></tr></table></figure>
+
+<h3 id="10-2-2-PyInstaller库与程序打包"><a href="#10-2-2-PyInstaller库与程序打包" class="headerlink" title="10.2.2 PyInstaller库与程序打包"></a>10.2.2 PyInstaller库与程序打包</h3><p>使用PyInstaller库对Python源文件打包十分简单，使用方法如下：</p>
+<figure class="highlight plaintext"><figcaption><span><Python源程序文件名>```<br><br></span></figcaption><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">执行完毕后，源文件所在目录将生成dist和build两个文件夹。最终的打包程序在dist内部与源文件同名的目录中。&lt;br&gt;&lt;br&gt;</span><br><span class="line">可以通过-F参数对Python源文件生成一个独立的可执行文件，如下：&lt;br&gt;&lt;br&gt;</span><br><span class="line">```:\&gt;PyInstaller -F SnowView.py```&lt;br&gt;&lt;br&gt;</span><br><span class="line"></span><br><span class="line">执行后在dist目录中出现了SnowView.exe文件，没有任何依赖库，执行它即可显示雪景效果。</span><br><span class="line"></span><br><span class="line">参数| 功能</span><br><span class="line">-|-</span><br><span class="line">-h, --help |查看帮助</span><br><span class="line">--clean |清理打包过程中的临时文件</span><br><span class="line">-D, --onedir |默认值，生成dist目录</span><br><span class="line">-F, --onefile |在dist文件夹中只生成独立的打包文件</span><br><span class="line">-i &lt;图标文件名.ico &gt; |指定打包程序使用的图标（icon）文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## 10.3 jieba库</span><br><span class="line">### 10.3.1 jieba库概述</span><br><span class="line">jieba（“结巴”）是Python中一个重要的第三方中文分词函数库。&lt;br&gt;&lt;br&gt;</span><br><span class="line">jieba库安装：</span><br><span class="line">```:\&gt;pip install jieba```&lt;br&gt;&lt;br&gt;</span><br><span class="line">jieba库支持三种分词模式：**精确模式**，将句子最精确地切开，适合文本分析；**全模式**，把句子中所有可以成词的词语都扫描出来，速度非常快，但是不能解决歧义；**搜索引擎模式**，在精确模式基础上，对长词再次切分，提高召回率，适合用于搜索引擎分词。&lt;br&gt;&lt;br&gt;</span><br><span class="line">对中文分词来说，jieba库只需要一行代码即可。</span><br></pre></td></tr></table></figure>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>import jieba<br>jieba.lcut(“全国计算机等级考试”)<br>Building prefix dict from the default dictionary …<br>Loading model from cache C:\AppData\Local\Temp\jieba.cache<br>Loading model cost 1.001 seconds.<br>Prefix dict has been built succesfully.<br>[‘全国’,’计算机’,’等级’,’考试’]</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">### 10.3.2 jieba库与中文分词</span><br><span class="line"></span><br><span class="line">模式| 功能</span><br><span class="line">-|-</span><br><span class="line">jieba.lcut(s)|最常用的中文分词函数，用于精准模式，即将字符串分割成等量的中文词组，返回结果是列表类型| </span><br><span class="line">jieba.lcut(s, cut_all = True)|用于全模式，即将字符串的所有分词可能均列出来，返回结果是列表类型，冗余性最大</span><br><span class="line">jieba.lcut_for_search(s)|返回搜索引擎模式，该模式首先执行精确模式，然后再对其中长词进一步切分获得最终结果</span><br><span class="line">jieba.add_word()|顾名思义，用来向jieba词库增加新的单词。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>import jieba<br>ls = jieba.lcut(“全国计算机等级考试Python科目”)<br>print(ls)<br>[‘全国’,’计算机’,’等级’,’考试’,’Python’,’科目’]</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>import jieba<br>ls = jieba.lcut(“全国计算机等级考试Python科目”, cut_all=True)<br>print(ls)<br>[‘全国’,’国计’,’计算’,’计算机’,’算机’,’等级’,’考试’,’Python’,’科目’]</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>import jieba<br>ls = jieba.lcut_for_search(“全国计算机等级考试Python科目”)<br>print(ls)<br>[‘全国’,’计算’,’算机’,’计算机’,’等级’,’考试’,’Python’,’科目’]</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>import jieba<br>jieba.add_word(“Python科目”)<br>ls = jieba.lcut(“全国计算机等级考试Python科目”)<br>print(ls)<br>[‘全国’,’计算机’,’等级’,’考试’,’Python科目’]</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">## 10.4 worldcloud库</span><br><span class="line">### 10.4.1 worldcloud库概述</span><br><span class="line">wordcloud库是专门用于根据文本生成词云的Python第三方库，十分常用且有趣。&lt;br&gt;&lt;br&gt;</span><br><span class="line">装wordcloud库在Windows的cmd命令行使用如下命令：```:\&gt;pip install wordcloud```&lt;br&gt;&lt;br&gt;</span><br><span class="line">wordcloud库的使用十分简单，以一个字符串为例。其中，产生词云只需要一行语句，在第三行，并可以将词云保存为图片。</span><br></pre></td></tr></table></figure>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>from wordcloud import WordCloud<br>txt=’I like python. I am learning python’<br>wordcloud = WordCloud().generate(txt)<br>wordcloud.to_file(‘testcloud.png’)<br>&lt;wordcloud.wordcloud.WordCloud object at 0x000001583E26D208&gt;</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">### 10.4.2 worldcloud库与可视化词云</span><br><span class="line">在生成词云时，wordcloud默认会以空格或标点为分隔符对目标文本进行分词处理。对于中文文本，分词处理需要由用户来完成。&lt;br&gt;</span><br><span class="line">一般步骤是先将文本分词处理，然后以空格拼接，再调用wordcloud库函数。</span><br></pre></td></tr></table></figure>
+<p>import jieba<br>from wordcloud import WordCloud<br>txt = ‘程序设计语言是计算机能够理解和识别用户操作意图的一种交互体系，它按<br>照特定规则组织计算机指令，使计算机能够自动进行各种运算处理。’<br>words = jieba.lcut(txt) # 精确分词<br>newtxt = ‘ ‘.join(words) # 空格拼接<br>wordcloud = WordCloud(font_path=”msyh.ttc”).generate(newtxt)<br>wordcloud.to_file(‘词云中文例子图.png’) # 保存图片</p>
+<pre><code>
+wordcloud库的核心是WordColoud类，所有的功能都封装在WordCloud类中。使用时需要实
+例化一个WordColoud类的对象，并调用其generate(text)方法将text文本转化为词云。&lt;br&gt;&lt;br&gt;
+WordCloud对象创建的常用参数:
+
+参数| 功能
+-|-
+font_path |指定字体文件的完整路径，默认None
+width |生成图片宽度，默认400像素
+height |生成图片高度，默认200像素
+mask |词云形状，默认None，即，方形图
+min_font_size |词云中最小的字体字号，默认4号
+font_step |字号步进间隔，默认1
+min_font_size| 词云中最大的字体字号，默认None，根据高度自动调节
+max_words |词云图中最大词数，默认200
+stopwords |被排除词列表，排除词不在词云中显示
+background_color |图片背景颜色，默认黑色
+
+WordCloud类的常用方法:
+
+方法| 功能
+-|-
+generate(text)| 由text文本生成词云
+to_file(filename)| 将词云图保存为名为filename的文件
+
+## 10.5 实例解析：《红楼梦》人物出场词
+</code></pre>
+]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>11.Python第三方库纵览</title>
     <url>/2021/09/05/11-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88/</url>
     <content><![CDATA[<p>Python第三方库纵览</p>
@@ -326,6 +439,75 @@
 <h2 id="4-4程序的异常处理"><a href="#4-4程序的异常处理" class="headerlink" title="4.4程序的异常处理"></a>4.4程序的异常处理</h2><p>Python语言使用保留字try和except进行异常处理，基本的语法格式如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">try:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">except:</span><br><span class="line">    &lt;语句块2&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="4-5实例解析——猜数字游戏"><a href="#4-5实例解析——猜数字游戏" class="headerlink" title="4.5实例解析——猜数字游戏"></a>4.5实例解析——猜数字游戏</h2>]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>5.函数和代码复用</title>
+    <url>/2021/09/05/5-%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8/</url>
+    <content><![CDATA[<p>函数和代码复用</p>
+<span id="more"></span>
+<h1 id="5-函数和代码复用"><a href="#5-函数和代码复用" class="headerlink" title="5.函数和代码复用"></a>5.函数和代码复用</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_5.%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8.png"></li>
+</ul>
+<h2 id="5-1函数的基本使用"><a href="#5-1函数的基本使用" class="headerlink" title="5.1函数的基本使用"></a>5.1函数的基本使用</h2><h3 id="5-1-1函数的定义"><a href="#5-1-1函数的定义" class="headerlink" title="5.1.1函数的定义"></a>5.1.1函数的定义</h3><p>Python定义一个函数使用def保留字，语法形式<br>如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;参数列表&gt;):</span><br><span class="line">    &lt;函数体&gt;</span><br><span class="line">return &lt;返回值列表</span><br></pre></td></tr></table></figure>
+<h3 id="5-1-2函数的使用"><a href="#5-1-2函数的使用" class="headerlink" title="5.1.2函数的使用"></a>5.1.2函数的使用</h3><p>&lt;函数名&gt;(&lt;实际赋值参数列表&gt;</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 定义一个对整数n求阶乘的函数</span><br><span class="line">def fact(n):</span><br><span class="line">  s = 1</span><br><span class="line">  for i in range(1, n+1):</span><br><span class="line">    s *= i</span><br><span class="line">  return s</span><br><span class="line"># 调用整数阶乘的函数</span><br><span class="line">print(fact(100))</span><br></pre></td></tr></table></figure>
+<p>函数定义-&gt;函数调用-&gt;函数执行-&gt;函数返回</p>
+<h2 id="5-2函数的传递"><a href="#5-2函数的传递" class="headerlink" title="5.2函数的传递"></a>5.2函数的传递</h2><h3 id="5-2-1可选参数传递"><a href="#5-2-1可选参数传递" class="headerlink" title="5.2.1可选参数传递"></a>5.2.1可选参数传递</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;非可选参数列表&gt;, &lt;可选参数&gt; = &lt;默认值&gt;):</span><br><span class="line">  &lt;函数体&gt;</span><br><span class="line">  return &lt;返回值列表&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="5-2-2参数名称传递"><a href="#5-2-2参数名称传递" class="headerlink" title="5.2.2参数名称传递"></a>5.2.2参数名称传递</h3><p>&lt;函数名&gt;(&lt;参数名&gt; = &lt;实际值&gt;)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">print(x*y)</span><br><span class="line">&gt;&gt;&gt;multiply(x = 99)</span><br><span class="line">990</span><br><span class="line">&gt;&gt;&gt;multiply(y = 2, x = 99)</span><br><span class="line">198</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="5-2-3函数的返回值"><a href="#5-2-3函数的返回值" class="headerlink" title="5.2.3函数的返回值"></a>5.2.3函数的返回值</h3><p>return语句可以出现在函数中的任何部分，同时可以将0个、1个或多个函数运算的结果返回给函数被调用处的变量。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">return x*y</span><br><span class="line">&gt;&gt;&gt;s = multiply(99, 2)</span><br><span class="line">&gt;&gt;&gt;print(s)</span><br><span class="line">198</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-3变量的作用域"><a href="#5-3变量的作用域" class="headerlink" title="5.3变量的作用域"></a>5.3变量的作用域</h2><table>
+<thead>
+<tr>
+<th>变量</th>
+<th>作用域</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>局部变量</td>
+<td>局部变量指在函数内部使用的变量，仅在函数内部有效，当函数退出时变量将不再存在。但可以用global声明在函数内做为全局变量用。</td>
+</tr>
+<tr>
+<td>全局变量</td>
+<td>全局变量指在函数之外定义的变量，在程序执行</td>
+</tr>
+<tr>
+<td>全过程有效。</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="5-4代码复用"><a href="#5-4代码复用" class="headerlink" title="5.4代码复用"></a>5.4代码复用</h2><p>函数封装的直接好处是代码复用，任何其他代码只要输入参数即可调用函数，从而避免相同功能代码在被调用处重复编写。<br><br>模块化<br>设计是使用函数设计程序的思考方法，以功能块为基本单位，一般有两个基本要求：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>含义</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>紧耦合</td>
+<td>尽可能合理划分功能块，功能块内部耦合紧密</td>
+<td>紧耦合的缺点在于更新一个模块可能导致其它模块变化，复用较困难。</td>
+</tr>
+<tr>
+<td>松耦合</td>
+<td>模块间关系尽可能简单，功能块之间耦合度低</td>
+<td>松耦合一般基于消息或协议实现，系统间交互简单。</td>
+</tr>
+</tbody></table>
+<h2 id="5-5实例解析——软文的诗词风"><a href="#5-5实例解析——软文的诗词风" class="headerlink" title="5.5实例解析——软文的诗词风"></a>5.5实例解析——软文的诗词风</h2>]]></content>
       <categories>
         <category>Python</category>
         <category>二级</category>
@@ -659,188 +841,6 @@
       </tags>
   </entry>
   <entry>
-    <title>5.函数和代码复用</title>
-    <url>/2021/09/05/5-%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8/</url>
-    <content><![CDATA[<p>函数和代码复用</p>
-<span id="more"></span>
-<h1 id="5-函数和代码复用"><a href="#5-函数和代码复用" class="headerlink" title="5.函数和代码复用"></a>5.函数和代码复用</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_5.%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8.png"></li>
-</ul>
-<h2 id="5-1函数的基本使用"><a href="#5-1函数的基本使用" class="headerlink" title="5.1函数的基本使用"></a>5.1函数的基本使用</h2><h3 id="5-1-1函数的定义"><a href="#5-1-1函数的定义" class="headerlink" title="5.1.1函数的定义"></a>5.1.1函数的定义</h3><p>Python定义一个函数使用def保留字，语法形式<br>如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;参数列表&gt;):</span><br><span class="line">    &lt;函数体&gt;</span><br><span class="line">return &lt;返回值列表</span><br></pre></td></tr></table></figure>
-<h3 id="5-1-2函数的使用"><a href="#5-1-2函数的使用" class="headerlink" title="5.1.2函数的使用"></a>5.1.2函数的使用</h3><p>&lt;函数名&gt;(&lt;实际赋值参数列表&gt;</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 定义一个对整数n求阶乘的函数</span><br><span class="line">def fact(n):</span><br><span class="line">  s = 1</span><br><span class="line">  for i in range(1, n+1):</span><br><span class="line">    s *= i</span><br><span class="line">  return s</span><br><span class="line"># 调用整数阶乘的函数</span><br><span class="line">print(fact(100))</span><br></pre></td></tr></table></figure>
-<p>函数定义-&gt;函数调用-&gt;函数执行-&gt;函数返回</p>
-<h2 id="5-2函数的传递"><a href="#5-2函数的传递" class="headerlink" title="5.2函数的传递"></a>5.2函数的传递</h2><h3 id="5-2-1可选参数传递"><a href="#5-2-1可选参数传递" class="headerlink" title="5.2.1可选参数传递"></a>5.2.1可选参数传递</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;非可选参数列表&gt;, &lt;可选参数&gt; = &lt;默认值&gt;):</span><br><span class="line">  &lt;函数体&gt;</span><br><span class="line">  return &lt;返回值列表&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="5-2-2参数名称传递"><a href="#5-2-2参数名称传递" class="headerlink" title="5.2.2参数名称传递"></a>5.2.2参数名称传递</h3><p>&lt;函数名&gt;(&lt;参数名&gt; = &lt;实际值&gt;)</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">print(x*y)</span><br><span class="line">&gt;&gt;&gt;multiply(x = 99)</span><br><span class="line">990</span><br><span class="line">&gt;&gt;&gt;multiply(y = 2, x = 99)</span><br><span class="line">198</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="5-2-3函数的返回值"><a href="#5-2-3函数的返回值" class="headerlink" title="5.2.3函数的返回值"></a>5.2.3函数的返回值</h3><p>return语句可以出现在函数中的任何部分，同时可以将0个、1个或多个函数运算的结果返回给函数被调用处的变量。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">return x*y</span><br><span class="line">&gt;&gt;&gt;s = multiply(99, 2)</span><br><span class="line">&gt;&gt;&gt;print(s)</span><br><span class="line">198</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-3变量的作用域"><a href="#5-3变量的作用域" class="headerlink" title="5.3变量的作用域"></a>5.3变量的作用域</h2><table>
-<thead>
-<tr>
-<th>变量</th>
-<th>作用域</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>局部变量</td>
-<td>局部变量指在函数内部使用的变量，仅在函数内部有效，当函数退出时变量将不再存在。但可以用global声明在函数内做为全局变量用。</td>
-</tr>
-<tr>
-<td>全局变量</td>
-<td>全局变量指在函数之外定义的变量，在程序执行</td>
-</tr>
-<tr>
-<td>全过程有效。</td>
-<td></td>
-</tr>
-</tbody></table>
-<h2 id="5-4代码复用"><a href="#5-4代码复用" class="headerlink" title="5.4代码复用"></a>5.4代码复用</h2><p>函数封装的直接好处是代码复用，任何其他代码只要输入参数即可调用函数，从而避免相同功能代码在被调用处重复编写。<br><br>模块化<br>设计是使用函数设计程序的思考方法，以功能块为基本单位，一般有两个基本要求：</p>
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>含义</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>紧耦合</td>
-<td>尽可能合理划分功能块，功能块内部耦合紧密</td>
-<td>紧耦合的缺点在于更新一个模块可能导致其它模块变化，复用较困难。</td>
-</tr>
-<tr>
-<td>松耦合</td>
-<td>模块间关系尽可能简单，功能块之间耦合度低</td>
-<td>松耦合一般基于消息或协议实现，系统间交互简单。</td>
-</tr>
-</tbody></table>
-<h2 id="5-5实例解析——软文的诗词风"><a href="#5-5实例解析——软文的诗词风" class="headerlink" title="5.5实例解析——软文的诗词风"></a>5.5实例解析——软文的诗词风</h2>]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>10.Python第三方库概览</title>
-    <url>/2021/09/05/10-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88/</url>
-    <content><![CDATA[<p>Python第三方库概览</p>
-<span id="more"></span>
-<h1 id="10-Python第三方库概览"><a href="#10-Python第三方库概览" class="headerlink" title="10.Python第三方库概览"></a>10.Python第三方库概览</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_10.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88.png"></li>
-</ul>
-<blockquote>
-<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>第三方库的获取和安装<br><br>脚本程序转变为可执行程序的第三方库:<br>PyInstaller库(必选)<br><br>第三方库: jieba库(必选)、wordcloud库（可选）</p>
-</blockquote>
-<h2 id="10-1-Python第三方库的获取与安装"><a href="#10-1-Python第三方库的获取与安装" class="headerlink" title="10.1 Python第三方库的获取与安装"></a>10.1 Python第三方库的获取与安装</h2><p>Python第三方库依照安装方式灵活性和难易程度有三个方法：<strong>pip工具安装</strong>、<strong>自定义安装</strong>和<strong>文件安装</strong>。</p>
-<h3 id="10-1-1-pip工具安装"><a href="#10-1-1-pip工具安装" class="headerlink" title="10.1.1 pip工具安装"></a>10.1.1 pip工具安装</h3><p>最常用且最高效的Python第三方库安装方式是采用pip工具安装。pip是Python官方提供并维护的在线第三方库安装工具。<br><br><code>pip install&lt;拟安装库名称&gt;</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install pygame</span><br><span class="line">...</span><br><span class="line">Installing collected packages: pygame</span><br><span class="line">Successfully installed pygame-1.9.2b1</span><br></pre></td></tr></table></figure>
-
-<p>pip常用指令,可以通过<code>pip help</code>查看：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C:\Users\86159&gt;pip -h</span><br><span class="line"></span><br><span class="line">Usage:</span><br><span class="line">  pip &lt;command&gt; [options]</span><br><span class="line"></span><br><span class="line">Commands:</span><br><span class="line">  install                     Install packages.</span><br><span class="line">  download                    Download packages.</span><br><span class="line">  uninstall                   Uninstall packages.</span><br><span class="line">  freeze                      Output installed packages in requirements format.</span><br><span class="line">  list                        List installed packages.</span><br><span class="line">  show                        Show information about installed packages.</span><br><span class="line">  check                       Verify installed packages have compatible dependencies.</span><br><span class="line">  config                      Manage local and global configuration.</span><br><span class="line">  search                      Search PyPI for packages.</span><br><span class="line">  cache                       Inspect and manage pip&#x27;s wheel cache.</span><br><span class="line">  wheel                       Build wheels from your requirements.</span><br><span class="line">  hash                        Compute hashes of package archives.</span><br><span class="line">  completion                  A helper command used for command completion.</span><br><span class="line">  debug                       Show information useful for debugging.</span><br><span class="line">  help                        Show help for commands.</span><br></pre></td></tr></table></figure>
-
-<h3 id="10-1-2-自定义安装"><a href="#10-1-2-自定义安装" class="headerlink" title="10.1.2 自定义安装"></a>10.1.2 自定义安装</h3><p>自定义安装指按照第三方库提供的步骤和方式安装。第三方库都有主页用于维护库的代码和文档。以科学计算用的numpy为例，开发者维护的官方主页是：<a href="http://www.numpy.org/">http://www.numpy.org/</a><br><br>浏览该网页找到下载链接，如下：<a href="https://www.scipy.org/scipylib/download.html">https://www.scipy.org/scipylib/download.html</a><br><br>进而根据指示步骤安装。</p>
-<h3 id="10-1-3-文件安装"><a href="#10-1-3-文件安装" class="headerlink" title="10.1.3 文件安装"></a>10.1.3 文件安装</h3><p>为了解决这类第三方库安装问题，美国加州大学尔湾分校提供了一个页面，帮助Python用户获得Windows可直接安装的第三方库文件，链接地址如下：<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">https://www.lfd.uci.edu/~gohlke/pythonlibs/</a><br><br>这里以scipy为例说明，首先在上述页面中找到scipy库对应的内容。选择其中的.whl文件下载，这里选择适用于Python 3.5版本解释器和32位系统的对应文件：scipy- 0 . 1 7 . 1 - cp3 5 - cp3 5m-win3 2 .whl，下载该文件到D:\pycodes目录。<br>然后，采用pip命令安装该文件。<br></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install D:\pycodes\scipy-0.17.1-cp35-cp35m-win32.whl</span><br><span class="line">Processing d:\pycodes\scipy-0.17.1-cp35-cp35m-win32.whl</span><br><span class="line">Installing collected packages: scipy</span><br><span class="line">Successfully installed scipy-0.17.1</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>对于上述三种安装方式，一般优先选择采用pip工具安装，如果安装失败，则选择自定义安装或<br>者文件安装。另外，如果需要在没有网络条件下安装Python第三方库，请直接采用文件安装方<br>式。其中，.whl文件可以通过pip download指令在有网络条件的情况下获得。</p>
-</blockquote>
-<h2 id="10-2-pyinstaller库"><a href="#10-2-pyinstaller库" class="headerlink" title="10.2 pyinstaller库"></a>10.2 pyinstaller库</h2><h3 id="10-2-1-pyinstaller库概述"><a href="#10-2-1-pyinstaller库概述" class="headerlink" title="10.2.1 pyinstaller库概述"></a>10.2.1 pyinstaller库概述</h3><p>PyInstaller是一个十分有用的Python第三方库，它能够在Windows、Linux、Mac OS X等操作系统下将Python源文件打包，变成直接可运行的可执行文件。<br><br><br>通过对源文件打包，Python程序可以在没有安装Python的环境中运行，也可以作为一个独立文件方便传递和管理。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install PyInstaller</span><br></pre></td></tr></table></figure>
-
-<h3 id="10-2-2-PyInstaller库与程序打包"><a href="#10-2-2-PyInstaller库与程序打包" class="headerlink" title="10.2.2 PyInstaller库与程序打包"></a>10.2.2 PyInstaller库与程序打包</h3><p>使用PyInstaller库对Python源文件打包十分简单，使用方法如下：</p>
-<figure class="highlight plaintext"><figcaption><span><Python源程序文件名>```<br><br></span></figcaption><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">执行完毕后，源文件所在目录将生成dist和build两个文件夹。最终的打包程序在dist内部与源文件同名的目录中。&lt;br&gt;&lt;br&gt;</span><br><span class="line">可以通过-F参数对Python源文件生成一个独立的可执行文件，如下：&lt;br&gt;&lt;br&gt;</span><br><span class="line">```:\&gt;PyInstaller -F SnowView.py```&lt;br&gt;&lt;br&gt;</span><br><span class="line"></span><br><span class="line">执行后在dist目录中出现了SnowView.exe文件，没有任何依赖库，执行它即可显示雪景效果。</span><br><span class="line"></span><br><span class="line">参数| 功能</span><br><span class="line">-|-</span><br><span class="line">-h, --help |查看帮助</span><br><span class="line">--clean |清理打包过程中的临时文件</span><br><span class="line">-D, --onedir |默认值，生成dist目录</span><br><span class="line">-F, --onefile |在dist文件夹中只生成独立的打包文件</span><br><span class="line">-i &lt;图标文件名.ico &gt; |指定打包程序使用的图标（icon）文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## 10.3 jieba库</span><br><span class="line">### 10.3.1 jieba库概述</span><br><span class="line">jieba（“结巴”）是Python中一个重要的第三方中文分词函数库。&lt;br&gt;&lt;br&gt;</span><br><span class="line">jieba库安装：</span><br><span class="line">```:\&gt;pip install jieba```&lt;br&gt;&lt;br&gt;</span><br><span class="line">jieba库支持三种分词模式：**精确模式**，将句子最精确地切开，适合文本分析；**全模式**，把句子中所有可以成词的词语都扫描出来，速度非常快，但是不能解决歧义；**搜索引擎模式**，在精确模式基础上，对长词再次切分，提高召回率，适合用于搜索引擎分词。&lt;br&gt;&lt;br&gt;</span><br><span class="line">对中文分词来说，jieba库只需要一行代码即可。</span><br></pre></td></tr></table></figure>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>import jieba<br>jieba.lcut(“全国计算机等级考试”)<br>Building prefix dict from the default dictionary …<br>Loading model from cache C:\AppData\Local\Temp\jieba.cache<br>Loading model cost 1.001 seconds.<br>Prefix dict has been built succesfully.<br>[‘全国’,’计算机’,’等级’,’考试’]</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">### 10.3.2 jieba库与中文分词</span><br><span class="line"></span><br><span class="line">模式| 功能</span><br><span class="line">-|-</span><br><span class="line">jieba.lcut(s)|最常用的中文分词函数，用于精准模式，即将字符串分割成等量的中文词组，返回结果是列表类型| </span><br><span class="line">jieba.lcut(s, cut_all = True)|用于全模式，即将字符串的所有分词可能均列出来，返回结果是列表类型，冗余性最大</span><br><span class="line">jieba.lcut_for_search(s)|返回搜索引擎模式，该模式首先执行精确模式，然后再对其中长词进一步切分获得最终结果</span><br><span class="line">jieba.add_word()|顾名思义，用来向jieba词库增加新的单词。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>import jieba<br>ls = jieba.lcut(“全国计算机等级考试Python科目”)<br>print(ls)<br>[‘全国’,’计算机’,’等级’,’考试’,’Python’,’科目’]</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>import jieba<br>ls = jieba.lcut(“全国计算机等级考试Python科目”, cut_all=True)<br>print(ls)<br>[‘全国’,’国计’,’计算’,’计算机’,’算机’,’等级’,’考试’,’Python’,’科目’]</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>import jieba<br>ls = jieba.lcut_for_search(“全国计算机等级考试Python科目”)<br>print(ls)<br>[‘全国’,’计算’,’算机’,’计算机’,’等级’,’考试’,’Python’,’科目’]</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>import jieba<br>jieba.add_word(“Python科目”)<br>ls = jieba.lcut(“全国计算机等级考试Python科目”)<br>print(ls)<br>[‘全国’,’计算机’,’等级’,’考试’,’Python科目’]</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">## 10.4 worldcloud库</span><br><span class="line">### 10.4.1 worldcloud库概述</span><br><span class="line">wordcloud库是专门用于根据文本生成词云的Python第三方库，十分常用且有趣。&lt;br&gt;&lt;br&gt;</span><br><span class="line">装wordcloud库在Windows的cmd命令行使用如下命令：```:\&gt;pip install wordcloud```&lt;br&gt;&lt;br&gt;</span><br><span class="line">wordcloud库的使用十分简单，以一个字符串为例。其中，产生词云只需要一行语句，在第三行，并可以将词云保存为图片。</span><br></pre></td></tr></table></figure>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>from wordcloud import WordCloud<br>txt=’I like python. I am learning python’<br>wordcloud = WordCloud().generate(txt)<br>wordcloud.to_file(‘testcloud.png’)<br>&lt;wordcloud.wordcloud.WordCloud object at 0x000001583E26D208&gt;</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">### 10.4.2 worldcloud库与可视化词云</span><br><span class="line">在生成词云时，wordcloud默认会以空格或标点为分隔符对目标文本进行分词处理。对于中文文本，分词处理需要由用户来完成。&lt;br&gt;</span><br><span class="line">一般步骤是先将文本分词处理，然后以空格拼接，再调用wordcloud库函数。</span><br></pre></td></tr></table></figure>
-<p>import jieba<br>from wordcloud import WordCloud<br>txt = ‘程序设计语言是计算机能够理解和识别用户操作意图的一种交互体系，它按<br>照特定规则组织计算机指令，使计算机能够自动进行各种运算处理。’<br>words = jieba.lcut(txt) # 精确分词<br>newtxt = ‘ ‘.join(words) # 空格拼接<br>wordcloud = WordCloud(font_path=”msyh.ttc”).generate(newtxt)<br>wordcloud.to_file(‘词云中文例子图.png’) # 保存图片</p>
-<pre><code>
-wordcloud库的核心是WordColoud类，所有的功能都封装在WordCloud类中。使用时需要实
-例化一个WordColoud类的对象，并调用其generate(text)方法将text文本转化为词云。&lt;br&gt;&lt;br&gt;
-WordCloud对象创建的常用参数:
-
-参数| 功能
--|-
-font_path |指定字体文件的完整路径，默认None
-width |生成图片宽度，默认400像素
-height |生成图片高度，默认200像素
-mask |词云形状，默认None，即，方形图
-min_font_size |词云中最小的字体字号，默认4号
-font_step |字号步进间隔，默认1
-min_font_size| 词云中最大的字体字号，默认None，根据高度自动调节
-max_words |词云图中最大词数，默认200
-stopwords |被排除词列表，排除词不在词云中显示
-background_color |图片背景颜色，默认黑色
-
-WordCloud类的常用方法:
-
-方法| 功能
--|-
-generate(text)| 由text文本生成词云
-to_file(filename)| 将词云图保存为名为filename的文件
-
-## 10.5 实例解析：《红楼梦》人物出场词
-</code></pre>
-]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>6.组合数据类型</title>
     <url>/2021/09/05/6-%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
     <content><![CDATA[<p>组合数据类型</p>
@@ -1056,22 +1056,6 @@ to_file(filename)| 将词云图保存为名为filename的文件
       </tags>
   </entry>
   <entry>
-    <title>日常记录</title>
-    <url>/2021/08/16/8-16/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200">
-<span id="more"></span>
-> 一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以**平凡**的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处>~<
-
-<p> <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210814.jpg"></p>
-]]></content>
-      <categories>
-        <category>日常记录</category>
-      </categories>
-      <tags>
-        <tag>生活片段</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>7.文章和数据格式化</title>
     <url>/2021/09/05/7-%E6%96%87%E7%AB%A0%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/</url>
     <content><![CDATA[<p>文章和数据格式化</p>
@@ -1207,6 +1191,22 @@ to_file(filename)| 将词云图保存为名为filename的文件
   </entry>
   <entry>
     <title>日常记录</title>
+    <url>/2021/08/16/8-16/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200">
+<span id="more"></span>
+> 一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以**平凡**的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处>~<
+
+<p> <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210814.jpg"></p>
+]]></content>
+      <categories>
+        <category>日常记录</category>
+      </categories>
+      <tags>
+        <tag>生活片段</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日常记录</title>
     <url>/2021/08/17/8-17/</url>
     <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg " width = "300"  height = "200">
 <span id="more"></span>
@@ -1228,20 +1228,177 @@ to_file(filename)| 将词云图保存为名为filename的文件
       </tags>
   </entry>
   <entry>
-    <title>8-18</title>
-    <url>/2021/08/18/8-18/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
+    <title>8.Python计算生态</title>
+    <url>/2021/09/05/8-Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81/</url>
+    <content><![CDATA[<p>Python计算生态</p>
 <span id="more"></span>
->中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
-]]></content>
+<h1 id="8-Python计算生态"><a href="#8-Python计算生态" class="headerlink" title="8.Python计算生态"></a>8.Python计算生态</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_8.Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81.png"></li>
+</ul>
+<h2 id="8-1计算思维"><a href="#8-1计算思维" class="headerlink" title="8.1计算思维"></a>8.1计算思维</h2><p>人类在认识世界、改造世界过程中表现出<em>三种基本的思维特征</em>：以实验和验证为特征的<strong>实证思维</strong> ，以物理学科为代表；以推理和演绎为特征的<strong>逻辑思维</strong>，以数学学科为代表；以设计和构造为特征的<strong>计算思维</strong>，以计算机学科为代表。<br><br>计算思维的本质是<strong>抽象</strong>（Abstraction）和<strong>自动化</strong>（Automation）</p>
+<h2 id="8-2程序设计方法"><a href="#8-2程序设计方法" class="headerlink" title="8.2程序设计方法"></a>8.2程序设计方法</h2><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>自顶而下的设计</td>
+<td>一个解决复杂问题行之有效的方法,基本思想是以一个总问题开始，试图把它表达为很多小问题组成的解决方案。再用同样的技术依次攻破每个小问题，最终问题变得非常小，以至于可以很容易解决。然后只需把所有的碎片组合起来，就可以得到一个程序。</td>
+</tr>
+<tr>
+<td>自底向上执行</td>
+<td>开展测试的更好办法也是将程序分成小部分逐个测试执行中等规模程序的最好方法是从结构图最底层开始，而不是从顶部开始，然后逐步上升。或者说，先运行和测试每一个基本函数，再测试由基础函数组成的整体函数，这样有助于定位错误</td>
+</tr>
+</tbody></table>
+<h2 id="8-3Python标准库"><a href="#8-3Python标准库" class="headerlink" title="8.3Python标准库"></a>8.3Python标准库</h2><p>有一部分Python计算生态随Python安装包一起发布，用户可以随时使用，被称为Python标准库。<br><br>受限于Python安装包的设定大小，标准库数量270个左右。</p>
+<h2 id="8-4Python第三方库"><a href="#8-4Python第三方库" class="headerlink" title="8.4Python第三方库"></a>8.4Python第三方库</h2><p>更广泛的Python计算生态采用额外安装方式服务用户，被称为Python第三方库。这些第三方库由全球各行业专家、工程师和爱好者开发，没有顶层设计，由开发者采用“尽力而为”的方式维护。Python通过新一代安装工具pip管理大部分Python第三方库的安装。</p>
+<h2 id="8-5基本的Python内置函数"><a href="#8-5基本的Python内置函数" class="headerlink" title="8.5基本的Python内置函数"></a>8.5基本的Python内置函数</h2><p>Python解释器提供了68个内置函数（下面介绍32个）</p>
+<table>
+<thead>
+<tr>
+<th>函数名称</th>
+<th>函数说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>abs(x)</td>
+<td>x的绝对值<br>如果x是复数，返回复数的模</td>
+</tr>
+<tr>
+<td>all(x)</td>
+<td>组合类型变量x中所有元素都为真时返回True，否则返回False；若x为空，返回True</td>
+</tr>
+<tr>
+<td>any(x)</td>
+<td>组合类型变量x中任一元素都为真时返回True，否则返回False；若x为空，返回False</td>
+</tr>
+<tr>
+<td>bin(x)</td>
+<td>将整数x转换为等值的二进制字符串</td>
+</tr>
+<tr>
+<td>bin(1010)</td>
+<td>的结果是’0b1111110010’</td>
+</tr>
+<tr>
+<td>bool(x)</td>
+<td>将x转换为Boolean类型，即True或False<br>bool(‘’) 的结果是False</td>
+</tr>
+<tr>
+<td>chr(i)</td>
+<td>返回Unicode为i的字符<br>chr(9996)的结果是’✌ ‘</td>
+</tr>
+<tr>
+<td>complex(r,i)</td>
+<td>创建一个复数 r + i*1j，其中i可以省略<br>complex(10,10)的结果是10+10j</td>
+</tr>
+<tr>
+<td>dict()</td>
+<td>创建字典类型<br>dict()的结果是一个空字典{}</td>
+</tr>
+<tr>
+<td>divmod(a,b)</td>
+<td>返回a和b的商及余数<br>divmod(10,3)结果是一个(3,1)</td>
+</tr>
+<tr>
+<td>eval(s)</td>
+<td>计算字符串s作为Python表达式的值<br>eval(‘1+99’)的结果是100</td>
+</tr>
+<tr>
+<td>exec(s)</td>
+<td>计算字符串s作为Python语句的值<br>exec(‘a = 1+999’)运行后，变量a的值为1000</td>
+</tr>
+<tr>
+<td>float(x)</td>
+<td>将x转换成浮点数<br>float(1010)的结果是1010.0</td>
+</tr>
+<tr>
+<td>hex(x)</td>
+<td>将整数转换为16进制字符串<br>hex(1010)的结果是’0x3f2’</td>
+</tr>
+<tr>
+<td>input(s)</td>
+<td>获取用户输入，其中s是字符串，作为提示信息<br>s可选</td>
+</tr>
+<tr>
+<td>int(x)</td>
+<td>将x转换成整数<br>int(9.9)的结果是9</td>
+</tr>
+<tr>
+<td>list(x)</td>
+<td>创建或将变量x转换成一个列表类型<br>list({10,9,8})的结果是[8,9,10]</td>
+</tr>
+<tr>
+<td>max(a1,a2,…)</td>
+<td>返回参数的最大值<br>max(1,2,3,4,5)的结果是5</td>
+</tr>
+<tr>
+<td>min(a1,a2,…)</td>
+<td>返回参数的最小值<br>min(1,2,3,4,5)的结果是1</td>
+</tr>
+<tr>
+<td>oct(x)</td>
+<td>将整数x转换成等值的八进制字符串形式<br>oct(1010)的结果是’0o1762’</td>
+</tr>
+<tr>
+<td>open(fname, m)</td>
+<td>打开文件，包括文本方式和二进制方式等<br>其中，m部分可以省略，默认是以文本可读形式打开</td>
+</tr>
+<tr>
+<td>ord(c)</td>
+<td>返回一个字符的Unicode编码值<br>ord(‘字’)的结果是23383</td>
+</tr>
+<tr>
+<td>pow(x,y)</td>
+<td>返回x的y次幂<br>pow(2,pow(2,2))的结果是16</td>
+</tr>
+<tr>
+<td>print(x)</td>
+<td>打印变量或字符串x<br>print()的end参数用来表示输出的结尾字符</td>
+</tr>
+<tr>
+<td>range(a,b,s)</td>
+<td>从a到b(不含)以s为步长产生一个序列<br>list(range(1,10,3))的结果是[1, 4, 7]</td>
+</tr>
+<tr>
+<td>reversed(r)</td>
+<td>返回组合类型r的逆序迭代形式<br>for i in reversed([1,2,3])将逆序遍历列表</td>
+</tr>
+<tr>
+<td>round(n)</td>
+<td>四舍五入方式计算n<br>round(10.6)的结果是11</td>
+</tr>
+<tr>
+<td>set(x)</td>
+<td>将组合数据类型x转换成集合类型<br>set([1,1,1,1])的结果是{1}</td>
+</tr>
+<tr>
+<td>sorted(x)</td>
+<td>对组合数据类型x进行排序，默认从小到大<br>sorted([1,3,5,2,4])的结果是[1,2,3,4,5]</td>
+</tr>
+<tr>
+<td>str(x)</td>
+<td>将x转换为等值的字符串类型<br>str(0x1010)的结果是’4112’</td>
+</tr>
+<tr>
+<td>sum(x)</td>
+<td>对组合数据类型x计算求和结果<br>sum([1,3,5,2,4])的结果是15</td>
+</tr>
+<tr>
+<td>type(x)</td>
+<td>返回变量x的数据类型<br>type({1:2})的结果是&lt;class&nbsp;’dict’&gt;</td>
+</tr>
+</tbody></table>
+<h2 id="8-5实例解析：Web页面元素提取"><a href="#8-5实例解析：Web页面元素提取" class="headerlink" title="8.5实例解析：Web页面元素提取"></a>8.5实例解析：Web页面元素提取</h2>]]></content>
       <categories>
-        <category>日常记录</category>
+        <category>Python</category>
+        <category>二级</category>
       </categories>
       <tags>
-        <tag>生活片段</tag>
+        <tag>Python</tag>
+        <tag>二级</tag>
       </tags>
   </entry>
   <entry>
@@ -1733,180 +1890,6 @@ to_file(filename)| 将词云图保存为名为filename的文件
       </tags>
   </entry>
   <entry>
-    <title>8.Python计算生态</title>
-    <url>/2021/09/05/8-Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81/</url>
-    <content><![CDATA[<p>Python计算生态</p>
-<span id="more"></span>
-<h1 id="8-Python计算生态"><a href="#8-Python计算生态" class="headerlink" title="8.Python计算生态"></a>8.Python计算生态</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_8.Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81.png"></li>
-</ul>
-<h2 id="8-1计算思维"><a href="#8-1计算思维" class="headerlink" title="8.1计算思维"></a>8.1计算思维</h2><p>人类在认识世界、改造世界过程中表现出<em>三种基本的思维特征</em>：以实验和验证为特征的<strong>实证思维</strong> ，以物理学科为代表；以推理和演绎为特征的<strong>逻辑思维</strong>，以数学学科为代表；以设计和构造为特征的<strong>计算思维</strong>，以计算机学科为代表。<br><br>计算思维的本质是<strong>抽象</strong>（Abstraction）和<strong>自动化</strong>（Automation）</p>
-<h2 id="8-2程序设计方法"><a href="#8-2程序设计方法" class="headerlink" title="8.2程序设计方法"></a>8.2程序设计方法</h2><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>解释</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>自顶而下的设计</td>
-<td>一个解决复杂问题行之有效的方法,基本思想是以一个总问题开始，试图把它表达为很多小问题组成的解决方案。再用同样的技术依次攻破每个小问题，最终问题变得非常小，以至于可以很容易解决。然后只需把所有的碎片组合起来，就可以得到一个程序。</td>
-</tr>
-<tr>
-<td>自底向上执行</td>
-<td>开展测试的更好办法也是将程序分成小部分逐个测试执行中等规模程序的最好方法是从结构图最底层开始，而不是从顶部开始，然后逐步上升。或者说，先运行和测试每一个基本函数，再测试由基础函数组成的整体函数，这样有助于定位错误</td>
-</tr>
-</tbody></table>
-<h2 id="8-3Python标准库"><a href="#8-3Python标准库" class="headerlink" title="8.3Python标准库"></a>8.3Python标准库</h2><p>有一部分Python计算生态随Python安装包一起发布，用户可以随时使用，被称为Python标准库。<br><br>受限于Python安装包的设定大小，标准库数量270个左右。</p>
-<h2 id="8-4Python第三方库"><a href="#8-4Python第三方库" class="headerlink" title="8.4Python第三方库"></a>8.4Python第三方库</h2><p>更广泛的Python计算生态采用额外安装方式服务用户，被称为Python第三方库。这些第三方库由全球各行业专家、工程师和爱好者开发，没有顶层设计，由开发者采用“尽力而为”的方式维护。Python通过新一代安装工具pip管理大部分Python第三方库的安装。</p>
-<h2 id="8-5基本的Python内置函数"><a href="#8-5基本的Python内置函数" class="headerlink" title="8.5基本的Python内置函数"></a>8.5基本的Python内置函数</h2><p>Python解释器提供了68个内置函数（下面介绍32个）</p>
-<table>
-<thead>
-<tr>
-<th>函数名称</th>
-<th>函数说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>abs(x)</td>
-<td>x的绝对值<br>如果x是复数，返回复数的模</td>
-</tr>
-<tr>
-<td>all(x)</td>
-<td>组合类型变量x中所有元素都为真时返回True，否则返回False；若x为空，返回True</td>
-</tr>
-<tr>
-<td>any(x)</td>
-<td>组合类型变量x中任一元素都为真时返回True，否则返回False；若x为空，返回False</td>
-</tr>
-<tr>
-<td>bin(x)</td>
-<td>将整数x转换为等值的二进制字符串</td>
-</tr>
-<tr>
-<td>bin(1010)</td>
-<td>的结果是’0b1111110010’</td>
-</tr>
-<tr>
-<td>bool(x)</td>
-<td>将x转换为Boolean类型，即True或False<br>bool(‘’) 的结果是False</td>
-</tr>
-<tr>
-<td>chr(i)</td>
-<td>返回Unicode为i的字符<br>chr(9996)的结果是’✌ ‘</td>
-</tr>
-<tr>
-<td>complex(r,i)</td>
-<td>创建一个复数 r + i*1j，其中i可以省略<br>complex(10,10)的结果是10+10j</td>
-</tr>
-<tr>
-<td>dict()</td>
-<td>创建字典类型<br>dict()的结果是一个空字典{}</td>
-</tr>
-<tr>
-<td>divmod(a,b)</td>
-<td>返回a和b的商及余数<br>divmod(10,3)结果是一个(3,1)</td>
-</tr>
-<tr>
-<td>eval(s)</td>
-<td>计算字符串s作为Python表达式的值<br>eval(‘1+99’)的结果是100</td>
-</tr>
-<tr>
-<td>exec(s)</td>
-<td>计算字符串s作为Python语句的值<br>exec(‘a = 1+999’)运行后，变量a的值为1000</td>
-</tr>
-<tr>
-<td>float(x)</td>
-<td>将x转换成浮点数<br>float(1010)的结果是1010.0</td>
-</tr>
-<tr>
-<td>hex(x)</td>
-<td>将整数转换为16进制字符串<br>hex(1010)的结果是’0x3f2’</td>
-</tr>
-<tr>
-<td>input(s)</td>
-<td>获取用户输入，其中s是字符串，作为提示信息<br>s可选</td>
-</tr>
-<tr>
-<td>int(x)</td>
-<td>将x转换成整数<br>int(9.9)的结果是9</td>
-</tr>
-<tr>
-<td>list(x)</td>
-<td>创建或将变量x转换成一个列表类型<br>list({10,9,8})的结果是[8,9,10]</td>
-</tr>
-<tr>
-<td>max(a1,a2,…)</td>
-<td>返回参数的最大值<br>max(1,2,3,4,5)的结果是5</td>
-</tr>
-<tr>
-<td>min(a1,a2,…)</td>
-<td>返回参数的最小值<br>min(1,2,3,4,5)的结果是1</td>
-</tr>
-<tr>
-<td>oct(x)</td>
-<td>将整数x转换成等值的八进制字符串形式<br>oct(1010)的结果是’0o1762’</td>
-</tr>
-<tr>
-<td>open(fname, m)</td>
-<td>打开文件，包括文本方式和二进制方式等<br>其中，m部分可以省略，默认是以文本可读形式打开</td>
-</tr>
-<tr>
-<td>ord(c)</td>
-<td>返回一个字符的Unicode编码值<br>ord(‘字’)的结果是23383</td>
-</tr>
-<tr>
-<td>pow(x,y)</td>
-<td>返回x的y次幂<br>pow(2,pow(2,2))的结果是16</td>
-</tr>
-<tr>
-<td>print(x)</td>
-<td>打印变量或字符串x<br>print()的end参数用来表示输出的结尾字符</td>
-</tr>
-<tr>
-<td>range(a,b,s)</td>
-<td>从a到b(不含)以s为步长产生一个序列<br>list(range(1,10,3))的结果是[1, 4, 7]</td>
-</tr>
-<tr>
-<td>reversed(r)</td>
-<td>返回组合类型r的逆序迭代形式<br>for i in reversed([1,2,3])将逆序遍历列表</td>
-</tr>
-<tr>
-<td>round(n)</td>
-<td>四舍五入方式计算n<br>round(10.6)的结果是11</td>
-</tr>
-<tr>
-<td>set(x)</td>
-<td>将组合数据类型x转换成集合类型<br>set([1,1,1,1])的结果是{1}</td>
-</tr>
-<tr>
-<td>sorted(x)</td>
-<td>对组合数据类型x进行排序，默认从小到大<br>sorted([1,3,5,2,4])的结果是[1,2,3,4,5]</td>
-</tr>
-<tr>
-<td>str(x)</td>
-<td>将x转换为等值的字符串类型<br>str(0x1010)的结果是’4112’</td>
-</tr>
-<tr>
-<td>sum(x)</td>
-<td>对组合数据类型x计算求和结果<br>sum([1,3,5,2,4])的结果是15</td>
-</tr>
-<tr>
-<td>type(x)</td>
-<td>返回变量x的数据类型<br>type({1:2})的结果是&lt;class&nbsp;’dict’&gt;</td>
-</tr>
-</tbody></table>
-<h2 id="8-5实例解析：Web页面元素提取"><a href="#8-5实例解析：Web页面元素提取" class="headerlink" title="8.5实例解析：Web页面元素提取"></a>8.5实例解析：Web页面元素提取</h2>]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>github+hexo 个人博客更换主题</title>
     <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
     <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
@@ -1942,33 +1925,20 @@ to_file(filename)| 将词云图保存为名为filename的文件
       </tags>
   </entry>
   <entry>
-    <title>hexo的安装和在github部署博客</title>
-    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<p>hexo的安装和在github部署博客</p>
+    <title>8-18</title>
+    <url>/2021/08/18/8-18/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
 <span id="more"></span>
-
-<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io </code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<p>打开 git 下 git bash 输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
-
-<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
-<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
-
-<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
-<hr>
-<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
+>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
 ]]></content>
       <categories>
-        <category>hexo</category>
+        <category>日常记录</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
+        <tag>生活片段</tag>
       </tags>
   </entry>
   <entry>
@@ -2009,6 +1979,36 @@ to_file(filename)| 将词云图保存为名为filename的文件
       <tags>
         <tag>hexo</tag>
         <tag>新建分类标签</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo的安装和在github部署博客</title>
+    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<p>hexo的安装和在github部署博客</p>
+<span id="more"></span>
+
+<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io </code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>打开 git 下 git bash 输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
+<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
+
+<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
+<hr>
+<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
       </tags>
   </entry>
   <entry>
