@@ -482,7 +482,7 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>2.1k字</p>
+        <p>2.2k字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
@@ -537,7 +537,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:\&gt;pip install PyInstaller</span><br></pre></td></tr></table></figure>
 
 <h3 id="10-2-2-PyInstaller库与程序打包"><a href="#10-2-2-PyInstaller库与程序打包" class="headerlink" title="10.2.2 PyInstaller库与程序打包"></a>10.2.2 PyInstaller库与程序打包</h3><p>使用PyInstaller库对Python源文件打包十分简单，使用方法如下：</p>
-<figure class="highlight plaintext"><figcaption><span><Python源程序文件名>```<br><br></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">执行完毕后，源文件所在目录将生成dist和build两个文件夹。最终的打包程序在dist内部与源文件同名的目录中。&lt;br&gt;&lt;br&gt;</span><br><span class="line">可以通过-F参数对Python源文件生成一个独立的可执行文件，如下：&lt;br&gt;&lt;br&gt;</span><br><span class="line">```:\&gt;PyInstaller -F SnowView.py```&lt;br&gt;&lt;br&gt;</span><br><span class="line"></span><br><span class="line">执行后在dist目录中出现了SnowView.exe文件，没有任何依赖库，执行它即可显示雪景效果。</span><br><span class="line"></span><br><span class="line">参数| 功能</span><br><span class="line">-|-</span><br><span class="line">-h, --help |查看帮助</span><br><span class="line">--clean |清理打包过程中的临时文件</span><br><span class="line">-D, --onedir |默认值，生成dist目录</span><br><span class="line">-F, --onefile |在dist文件夹中只生成独立的打包文件</span><br><span class="line">-i &lt;图标文件名.ico &gt; |指定打包程序使用的图标（icon）文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## 10.3 jieba库</span><br><span class="line">### 10.3.1 jieba库概述</span><br><span class="line">jieba（“结巴”）是Python中一个重要的第三方中文分词函数库。&lt;br&gt;&lt;br&gt;</span><br><span class="line">jieba库安装：</span><br><span class="line">```:\&gt;pip install jieba```&lt;br&gt;&lt;br&gt;</span><br><span class="line">jieba库支持三种分词模式：**精确模式**，将句子最精确地切开，适合文本分析；**全模式**，把句子中所有可以成词的词语都扫描出来，速度非常快，但是不能解决歧义；**搜索引擎模式**，在精确模式基础上，对长词再次切分，提高召回率，适合用于搜索引擎分词。&lt;br&gt;&lt;br&gt;</span><br><span class="line">对中文分词来说，jieba库只需要一行代码即可。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">:\&gt;PyInstaller &lt;Python源程序文件名&gt;</span><br><span class="line">```&lt;br&gt;&lt;br&gt;</span><br><span class="line"></span><br><span class="line">执行完毕后，源文件所在目录将生成dist和build两个文件夹。最终的打包程序在dist内部与源文件同名的目录中。&lt;br&gt;&lt;br&gt;</span><br><span class="line">可以通过-F参数对Python源文件生成一个独立的可执行文件，如下：&lt;br&gt;&lt;br&gt;</span><br><span class="line">```:\&gt;PyInstaller -F SnowView.py```&lt;br&gt;&lt;br&gt;</span><br><span class="line"></span><br><span class="line">执行后在dist目录中出现了SnowView.exe文件，没有任何依赖库，执行它即可显示雪景效果。</span><br><span class="line"></span><br><span class="line">参数| 功能</span><br><span class="line">-|-</span><br><span class="line">-h, --help |查看帮助</span><br><span class="line">--clean |清理打包过程中的临时文件</span><br><span class="line">-D, --onedir |默认值，生成dist目录</span><br><span class="line">-F, --onefile |在dist文件夹中只生成独立的打包文件</span><br><span class="line">-i &lt;图标文件名.ico &gt; |指定打包程序使用的图标（icon）文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## 10.3 jieba库</span><br><span class="line">### 10.3.1 jieba库概述</span><br><span class="line">jieba（“结巴”）是Python中一个重要的第三方中文分词函数库。&lt;br&gt;&lt;br&gt;</span><br><span class="line">jieba库安装：</span><br><span class="line">```:\&gt;pip install jieba```&lt;br&gt;&lt;br&gt;</span><br><span class="line">jieba库支持三种分词模式：**精确模式**，将句子最精确地切开，适合文本分析；**全模式**，把句子中所有可以成词的词语都扫描出来，速度非常快，但是不能解决歧义；**搜索引擎模式**，在精确模式基础上，对长词再次切分，提高召回率，适合用于搜索引擎分词。&lt;br&gt;&lt;br&gt;</span><br><span class="line">对中文分词来说，jieba库只需要一行代码即可。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <blockquote>
 <blockquote>
 <blockquote>
@@ -545,7 +545,7 @@
 </blockquote>
 </blockquote>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 10.3.2 jieba库与中文分词</span><br><span class="line"></span><br><span class="line">模式| 功能</span><br><span class="line">-|-</span><br><span class="line">jieba.lcut(s)|最常用的中文分词函数，用于精准模式，即将字符串分割成等量的中文词组，返回结果是列表类型| </span><br><span class="line">jieba.lcut(s, cut_all = True)|用于全模式，即将字符串的所有分词可能均列出来，返回结果是列表类型，冗余性最大</span><br><span class="line">jieba.lcut_for_search(s)|返回搜索引擎模式，该模式首先执行精确模式，然后再对其中长词进一步切分获得最终结果</span><br><span class="line">jieba.add_word()|顾名思义，用来向jieba词库增加新的单词。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">### 10.3.2 jieba库与中文分词</span><br><span class="line"></span><br><span class="line">模式| 功能</span><br><span class="line">-|-</span><br><span class="line">jieba.lcut(s)|最常用的中文分词函数，用于精准模式，即将字符串分割成等量的中文词组，返回结果是列表类型| </span><br><span class="line">jieba.lcut(s, cut_all = True)|用于全模式，即将字符串的所有分词可能均列出来，返回结果是列表类型，冗余性最大</span><br><span class="line">jieba.lcut_for_search(s)|返回搜索引擎模式，该模式首先执行精确模式，然后再对其中长词进一步切分获得最终结果</span><br><span class="line">jieba.add_word()|顾名思义，用来向jieba词库增加新的单词。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <blockquote>
 <blockquote>
 <blockquote>
@@ -693,10 +693,10 @@ to_file(filename)| 将词云图保存为名为filename的文件
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-09-06T14:04:51+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-09-08T12:45:05+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2021年9月6日</p>
+    <p>最后更新于 2021年9月8日</p>
   </a>
 </div>
 
@@ -1273,7 +1273,7 @@ to_file(filename)| 将词云图保存为名为filename的文件
       <span class="badge-subject">PV</span><span class="badge-value bg-brightgreen" id="busuanzi_value_site_pv"></span>
     </div>
     <div class="github-badge">
-      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">18.1k</span>
+      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">18.2k</span>
     </div>
 </footer>
 

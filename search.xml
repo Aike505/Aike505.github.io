@@ -58,7 +58,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install PyInstaller</span><br></pre></td></tr></table></figure>
 
 <h3 id="10-2-2-PyInstaller库与程序打包"><a href="#10-2-2-PyInstaller库与程序打包" class="headerlink" title="10.2.2 PyInstaller库与程序打包"></a>10.2.2 PyInstaller库与程序打包</h3><p>使用PyInstaller库对Python源文件打包十分简单，使用方法如下：</p>
-<figure class="highlight plaintext"><figcaption><span><Python源程序文件名>```<br><br></span></figcaption><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">执行完毕后，源文件所在目录将生成dist和build两个文件夹。最终的打包程序在dist内部与源文件同名的目录中。&lt;br&gt;&lt;br&gt;</span><br><span class="line">可以通过-F参数对Python源文件生成一个独立的可执行文件，如下：&lt;br&gt;&lt;br&gt;</span><br><span class="line">```:\&gt;PyInstaller -F SnowView.py```&lt;br&gt;&lt;br&gt;</span><br><span class="line"></span><br><span class="line">执行后在dist目录中出现了SnowView.exe文件，没有任何依赖库，执行它即可显示雪景效果。</span><br><span class="line"></span><br><span class="line">参数| 功能</span><br><span class="line">-|-</span><br><span class="line">-h, --help |查看帮助</span><br><span class="line">--clean |清理打包过程中的临时文件</span><br><span class="line">-D, --onedir |默认值，生成dist目录</span><br><span class="line">-F, --onefile |在dist文件夹中只生成独立的打包文件</span><br><span class="line">-i &lt;图标文件名.ico &gt; |指定打包程序使用的图标（icon）文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## 10.3 jieba库</span><br><span class="line">### 10.3.1 jieba库概述</span><br><span class="line">jieba（“结巴”）是Python中一个重要的第三方中文分词函数库。&lt;br&gt;&lt;br&gt;</span><br><span class="line">jieba库安装：</span><br><span class="line">```:\&gt;pip install jieba```&lt;br&gt;&lt;br&gt;</span><br><span class="line">jieba库支持三种分词模式：**精确模式**，将句子最精确地切开，适合文本分析；**全模式**，把句子中所有可以成词的词语都扫描出来，速度非常快，但是不能解决歧义；**搜索引擎模式**，在精确模式基础上，对长词再次切分，提高召回率，适合用于搜索引擎分词。&lt;br&gt;&lt;br&gt;</span><br><span class="line">对中文分词来说，jieba库只需要一行代码即可。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;PyInstaller &lt;Python源程序文件名&gt;</span><br><span class="line">```&lt;br&gt;&lt;br&gt;</span><br><span class="line"></span><br><span class="line">执行完毕后，源文件所在目录将生成dist和build两个文件夹。最终的打包程序在dist内部与源文件同名的目录中。&lt;br&gt;&lt;br&gt;</span><br><span class="line">可以通过-F参数对Python源文件生成一个独立的可执行文件，如下：&lt;br&gt;&lt;br&gt;</span><br><span class="line">```:\&gt;PyInstaller -F SnowView.py```&lt;br&gt;&lt;br&gt;</span><br><span class="line"></span><br><span class="line">执行后在dist目录中出现了SnowView.exe文件，没有任何依赖库，执行它即可显示雪景效果。</span><br><span class="line"></span><br><span class="line">参数| 功能</span><br><span class="line">-|-</span><br><span class="line">-h, --help |查看帮助</span><br><span class="line">--clean |清理打包过程中的临时文件</span><br><span class="line">-D, --onedir |默认值，生成dist目录</span><br><span class="line">-F, --onefile |在dist文件夹中只生成独立的打包文件</span><br><span class="line">-i &lt;图标文件名.ico &gt; |指定打包程序使用的图标（icon）文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## 10.3 jieba库</span><br><span class="line">### 10.3.1 jieba库概述</span><br><span class="line">jieba（“结巴”）是Python中一个重要的第三方中文分词函数库。&lt;br&gt;&lt;br&gt;</span><br><span class="line">jieba库安装：</span><br><span class="line">```:\&gt;pip install jieba```&lt;br&gt;&lt;br&gt;</span><br><span class="line">jieba库支持三种分词模式：**精确模式**，将句子最精确地切开，适合文本分析；**全模式**，把句子中所有可以成词的词语都扫描出来，速度非常快，但是不能解决歧义；**搜索引擎模式**，在精确模式基础上，对长词再次切分，提高召回率，适合用于搜索引擎分词。&lt;br&gt;&lt;br&gt;</span><br><span class="line">对中文分词来说，jieba库只需要一行代码即可。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <blockquote>
 <blockquote>
 <blockquote>
@@ -66,7 +66,7 @@
 </blockquote>
 </blockquote>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">### 10.3.2 jieba库与中文分词</span><br><span class="line"></span><br><span class="line">模式| 功能</span><br><span class="line">-|-</span><br><span class="line">jieba.lcut(s)|最常用的中文分词函数，用于精准模式，即将字符串分割成等量的中文词组，返回结果是列表类型| </span><br><span class="line">jieba.lcut(s, cut_all = True)|用于全模式，即将字符串的所有分词可能均列出来，返回结果是列表类型，冗余性最大</span><br><span class="line">jieba.lcut_for_search(s)|返回搜索引擎模式，该模式首先执行精确模式，然后再对其中长词进一步切分获得最终结果</span><br><span class="line">jieba.add_word()|顾名思义，用来向jieba词库增加新的单词。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">### 10.3.2 jieba库与中文分词</span><br><span class="line"></span><br><span class="line">模式| 功能</span><br><span class="line">-|-</span><br><span class="line">jieba.lcut(s)|最常用的中文分词函数，用于精准模式，即将字符串分割成等量的中文词组，返回结果是列表类型| </span><br><span class="line">jieba.lcut(s, cut_all = True)|用于全模式，即将字符串的所有分词可能均列出来，返回结果是列表类型，冗余性最大</span><br><span class="line">jieba.lcut_for_search(s)|返回搜索引擎模式，该模式首先执行精确模式，然后再对其中长词进一步切分获得最终结果</span><br><span class="line">jieba.add_word()|顾名思义，用来向jieba词库增加新的单词。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <blockquote>
 <blockquote>
 <blockquote>
@@ -1228,23 +1228,6 @@ to_file(filename)| 将词云图保存为名为filename的文件
       </tags>
   </entry>
   <entry>
-    <title>8-18</title>
-    <url>/2021/08/18/8-18/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
-<span id="more"></span>
->中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
-]]></content>
-      <categories>
-        <category>日常记录</category>
-      </categories>
-      <tags>
-        <tag>生活片段</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>8.Python计算生态</title>
     <url>/2021/09/05/8-Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81/</url>
     <content><![CDATA[<p>Python计算生态</p>
@@ -1416,6 +1399,42 @@ to_file(filename)| 将词云图保存为名为filename的文件
       <tags>
         <tag>Python</tag>
         <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>8-18</title>
+    <url>/2021/08/18/8-18/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
+<span id="more"></span>
+>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
+]]></content>
+      <categories>
+        <category>日常记录</category>
+      </categories>
+      <tags>
+        <tag>生活片段</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
+    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</p>
+<span id="more"></span>
+
+<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
+<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
+<p>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
+<p>成功帮助舍友解决</p>
+]]></content>
+      <categories>
+        <category>电脑</category>
+      </categories>
+      <tags>
+        <tag>电脑</tag>
+        <tag>磁盘</tag>
       </tags>
   </entry>
   <entry>
@@ -1888,25 +1907,6 @@ to_file(filename)| 将词云图保存为名为filename的文件
       </tags>
   </entry>
   <entry>
-    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
-    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</p>
-<span id="more"></span>
-
-<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
-<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
-<p>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
-<p>成功帮助舍友解决</p>
-]]></content>
-      <categories>
-        <category>电脑</category>
-      </categories>
-      <tags>
-        <tag>电脑</tag>
-        <tag>磁盘</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>github+hexo 个人博客更换主题</title>
     <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
     <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
@@ -1940,6 +1940,36 @@ to_file(filename)| 将词云图保存为名为filename的文件
         <tag>hexo</tag>
         <tag>博客</tag>
         <tag>主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo的安装和在github部署博客</title>
+    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<p>hexo的安装和在github部署博客</p>
+<span id="more"></span>
+
+<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io </code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>打开 git 下 git bash 输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
+<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
+
+<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
+<hr>
+<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
+]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
       </tags>
   </entry>
   <entry>
@@ -1981,36 +2011,6 @@ to_file(filename)| 将词云图保存为名为filename的文件
         <tag>hexo</tag>
         <tag>博客</tag>
         <tag>新建分类标签</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo的安装和在github部署博客</title>
-    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<p>hexo的安装和在github部署博客</p>
-<span id="more"></span>
-
-<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io </code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<p>打开 git 下 git bash 输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
-
-<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
-<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
-
-<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
-<hr>
-<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
-]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
       </tags>
   </entry>
   <entry>
