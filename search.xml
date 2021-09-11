@@ -1270,28 +1270,6 @@
       </tags>
   </entry>
   <entry>
-    <title>日常记录</title>
-    <url>/2021/08/17/8-17/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg " width = "300"  height = "200">
-<span id="more"></span>
->今天看完了《平凡的世界》第三部（*利用学驾校时间看的手机*），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:
->>* 平凡又平庸的我们努力奔向爱情。      
->>* 在这平凡的世界里努力过好平凡的生活。
->>* 我这个平凡的世界里平凡的人觉得遥不可及。
-
-<blockquote>
-<p>同时，今天是keep打卡第一天 fighting~</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg"></p>
-]]></content>
-      <categories>
-        <category>日常记录</category>
-      </categories>
-      <tags>
-        <tag>生活片段</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>8.Python计算生态</title>
     <url>/2021/09/05/8-Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81/</url>
     <content><![CDATA[<p>Python计算生态</p>
@@ -1480,6 +1458,69 @@
       </categories>
       <tags>
         <tag>生活片段</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日常记录</title>
+    <url>/2021/08/17/8-17/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg " width = "300"  height = "200">
+<span id="more"></span>
+>今天看完了《平凡的世界》第三部（*利用学驾校时间看的手机*），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:
+>>* 平凡又平庸的我们努力奔向爱情。      
+>>* 在这平凡的世界里努力过好平凡的生活。
+>>* 我这个平凡的世界里平凡的人觉得遥不可及。
+
+<blockquote>
+<p>同时，今天是keep打卡第一天 fighting~</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg"></p>
+]]></content>
+      <categories>
+        <category>日常记录</category>
+      </categories>
+      <tags>
+        <tag>生活片段</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo 新建分类和标签</title>
+    <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
+    <content><![CDATA[<p>hexo 新建分类和标签</p>
+<span id="more"></span>
+
+<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
+<h2 id="1-创建“分类”选项"><a href="#1-创建“分类”选项" class="headerlink" title="1.创建“分类”选项"></a>1.创建“分类”选项</h2><p>生成“分类”页并添加 tpye 属性,进入博客目录。执行命令下方命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+
+<p>categories 文件夹下会有 index.md 这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2019-04-24 15:30:30</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>保存并关闭文件。</p>
+<p>给文章添加“categories”属性</p>
+<p>打开需要添加分类的文章，为其添加 categories 属性。下方的 categories:Hexo 表示这篇文章添加到到“Hexo”这个分类。注意：一篇文章只会添加到一个分类中，如果是多个默认放到第一个分类中。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 添加分类及标签</span><br><span class="line">date: 2017-05-26 12:12:57</span><br><span class="line">categories: Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了 categories: xxx 的文章才会被收录到首页的“分类”中。</p>
+<h2 id="2-创建“标签”选项"><a href="#2-创建“标签”选项" class="headerlink" title="2.创建“标签”选项"></a>2.创建“标签”选项</h2><p>生成“标签”页并添加 tpye 属性</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+
+<p>在 tags 文件夹下，找到 index.md 这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-22 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>添加 type: “tags”到内容中，添加后是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>保存并关闭文件。</p>
+<p>给文章添加“tags”属性,打开需要添加标签的文章，为其添加 tags 属性。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 添加分类及标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">categories:</span><br><span class="line">           - Hexo</span><br><span class="line">tags:</span><br><span class="line">           - 博客</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+        <tag>新建分类标签</tag>
       </tags>
   </entry>
   <entry>
@@ -1952,25 +1993,6 @@
       </tags>
   </entry>
   <entry>
-    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
-    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</p>
-<span id="more"></span>
-
-<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
-<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
-<p>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
-<p>成功帮助舍友解决</p>
-]]></content>
-      <categories>
-        <category>电脑</category>
-      </categories>
-      <tags>
-        <tag>电脑</tag>
-        <tag>磁盘</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>github+hexo 个人博客更换主题</title>
     <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
     <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
@@ -2004,6 +2026,65 @@
         <tag>hexo</tag>
         <tag>博客</tag>
         <tag>主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
+    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</p>
+<span id="more"></span>
+
+<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
+<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
+<p>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
+<p>成功帮助舍友解决</p>
+]]></content>
+      <categories>
+        <category>电脑</category>
+      </categories>
+      <tags>
+        <tag>电脑</tag>
+        <tag>磁盘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>修改github.io站点域名</title>
+    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
+    <content><![CDATA[<p>修改github.io站点域名</p>
+<span id="more"></span>
+
+<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
+<ul>
+<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
+<ul>
+<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&utm_medium=cpc&utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&utm_medium=se-cpc-op&utm_campaign=10045&utm_content=&utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&utm_adplace=AdPlace039520">华为云</a></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
+<ul>
+<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE3.png"></li>
+<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE1.png"></li>
+</ul>
+</blockquote>
+<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
+<ul>
+<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE2.png"></li>
+</ul>
+</blockquote>
+<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
+<ul>
+<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>注册域名</tag>
       </tags>
   </entry>
   <entry>
@@ -2064,87 +2145,6 @@
         <tag>hexo</tag>
         <tag>部署博客</tag>
         <tag>bug</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo 新建分类和标签</title>
-    <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
-    <content><![CDATA[<p>hexo 新建分类和标签</p>
-<span id="more"></span>
-
-<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
-<h2 id="1-创建“分类”选项"><a href="#1-创建“分类”选项" class="headerlink" title="1.创建“分类”选项"></a>1.创建“分类”选项</h2><p>生成“分类”页并添加 tpye 属性,进入博客目录。执行命令下方命令</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-
-<p>categories 文件夹下会有 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2019-04-24 15:30:30</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存并关闭文件。</p>
-<p>给文章添加“categories”属性</p>
-<p>打开需要添加分类的文章，为其添加 categories 属性。下方的 categories:Hexo 表示这篇文章添加到到“Hexo”这个分类。注意：一篇文章只会添加到一个分类中，如果是多个默认放到第一个分类中。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 添加分类及标签</span><br><span class="line">date: 2017-05-26 12:12:57</span><br><span class="line">categories: Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了 categories: xxx 的文章才会被收录到首页的“分类”中。</p>
-<h2 id="2-创建“标签”选项"><a href="#2-创建“标签”选项" class="headerlink" title="2.创建“标签”选项"></a>2.创建“标签”选项</h2><p>生成“标签”页并添加 tpye 属性</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-
-<p>在 tags 文件夹下，找到 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-22 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>添加 type: “tags”到内容中，添加后是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存并关闭文件。</p>
-<p>给文章添加“tags”属性,打开需要添加标签的文章，为其添加 tags 属性。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 添加分类及标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">categories:</span><br><span class="line">           - Hexo</span><br><span class="line">tags:</span><br><span class="line">           - 博客</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-        <tag>新建分类标签</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>修改github.io站点域名</title>
-    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
-    <content><![CDATA[<p>修改github.io站点域名</p>
-<span id="more"></span>
-
-<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
-<ul>
-<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
-<ul>
-<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&utm_medium=cpc&utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&utm_medium=se-cpc-op&utm_campaign=10045&utm_content=&utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&utm_adplace=AdPlace039520">华为云</a></li>
-</ul>
-</blockquote>
-</li>
-</ul>
-</blockquote>
-<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
-<ul>
-<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE3.png"></li>
-<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE1.png"></li>
-</ul>
-</blockquote>
-<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
-<ul>
-<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE2.png"></li>
-</ul>
-</blockquote>
-<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
-<ul>
-<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
-</ul>
-</blockquote>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>注册域名</tag>
       </tags>
   </entry>
   <entry>
