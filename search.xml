@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>1.程序设计基本方法</title>
+    <url>/2021/09/04/1-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>程序设计基本方法</p>
+<span id="more"></span>
+<h1 id="1-程序设计基本方法"><a href="#1-程序设计基本方法" class="headerlink" title="1.程序设计基本方法"></a>1.程序设计基本方法</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95.png"><h2 id="1-1高级编程语言两类执行机制"><a href="#1-1高级编程语言两类执行机制" class="headerlink" title="1.1高级编程语言两类执行机制"></a>1.1高级编程语言两类执行机制</h2>| 语言|执行机制 |示例|区别</li>
+</ul>
+<p>-|-|-|-<br>静态语言|编译执行|如C语言、Java语言|编译是一次性地翻译，一旦程序被编译，不再需要编译程序或者源代码。<br>脚本语言|解释执行|如Python语言、JavaScript语言、PHP语言|解释则在每次程序运行时都需要解释器和源代码。</p>
+<ul>
+<li><p>编译是将源代码转换成目标代码的过程，通常，<br>源代码是高级语言代码，目标代码是机器语言代<br>码，执行编译的计算机程序称为编译器<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95_1.png"></p>
+</li>
+<li><p>解释是将源代码逐条转换成目标代码同时逐条运<br>行目标代码的过程。执行解释的计算机程序称为<br>解释器。<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95_2.png"></p>
+</li>
+</ul>
+<h2 id="1-2-Python解释器的两个重要工具"><a href="#1-2-Python解释器的两个重要工具" class="headerlink" title="1.2 Python解释器的两个重要工具"></a>1.2 Python解释器的两个重要工具</h2><p>IDLE：Python集成开发环境，用来编写和调试<br>Python代码；<br><br>Pip：Python第三方库安装工具，用来在当前计算<br>机上安装第三方库</p>
+<blockquote>
+<p>关于python的安装，发展历史，程序设计IPO方法，Pythond优缺点为避免繁琐，这里不予过多介绍，有问题的可以<strong>留言</strong>或自己百度解决~~</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>10.Python第三方库概览</title>
     <url>/2021/09/05/10-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88/</url>
     <content><![CDATA[<p>Python第三方库概览</p>
@@ -168,35 +197,6 @@
 </tr>
 </tbody></table>
 <h2 id="10-5-实例解析：《红楼梦》人物出场词"><a href="#10-5-实例解析：《红楼梦》人物出场词" class="headerlink" title="10.5 实例解析：《红楼梦》人物出场词"></a>10.5 实例解析：《红楼梦》人物出场词</h2>]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>1.程序设计基本方法</title>
-    <url>/2021/09/04/1-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p>程序设计基本方法</p>
-<span id="more"></span>
-<h1 id="1-程序设计基本方法"><a href="#1-程序设计基本方法" class="headerlink" title="1.程序设计基本方法"></a>1.程序设计基本方法</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95.png"><h2 id="1-1高级编程语言两类执行机制"><a href="#1-1高级编程语言两类执行机制" class="headerlink" title="1.1高级编程语言两类执行机制"></a>1.1高级编程语言两类执行机制</h2>| 语言|执行机制 |示例|区别</li>
-</ul>
-<p>-|-|-|-<br>静态语言|编译执行|如C语言、Java语言|编译是一次性地翻译，一旦程序被编译，不再需要编译程序或者源代码。<br>脚本语言|解释执行|如Python语言、JavaScript语言、PHP语言|解释则在每次程序运行时都需要解释器和源代码。</p>
-<ul>
-<li><p>编译是将源代码转换成目标代码的过程，通常，<br>源代码是高级语言代码，目标代码是机器语言代<br>码，执行编译的计算机程序称为编译器<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95_1.png"></p>
-</li>
-<li><p>解释是将源代码逐条转换成目标代码同时逐条运<br>行目标代码的过程。执行解释的计算机程序称为<br>解释器。<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95_2.png"></p>
-</li>
-</ul>
-<h2 id="1-2-Python解释器的两个重要工具"><a href="#1-2-Python解释器的两个重要工具" class="headerlink" title="1.2 Python解释器的两个重要工具"></a>1.2 Python解释器的两个重要工具</h2><p>IDLE：Python集成开发环境，用来编写和调试<br>Python代码；<br><br>Pip：Python第三方库安装工具，用来在当前计算<br>机上安装第三方库</p>
-<blockquote>
-<p>关于python的安装，发展历史，程序设计IPO方法，Pythond优缺点为避免繁琐，这里不予过多介绍，有问题的可以<strong>留言</strong>或自己百度解决~~</p>
-</blockquote>
-]]></content>
       <categories>
         <category>Python</category>
         <category>二级</category>
@@ -421,75 +421,6 @@
 </ul>
 <p>-|-|-<br>input|&lt;变量&gt; = input(&lt;提示性文字&gt; |获得用户输入之前，input()函数可以包含一些提示性文字<br>eval|eval(&lt;字符串&gt;) |eval(&lt;字符串&gt;)函数是Python语言中一个十分重要的函数，它能够以Python表达式的方式解析并执行字符串，将返回结果输出<br>print()|1.print(&lt;待输出字符串&gt;)<br>2.print(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;)<br>3.print(&lt;输出字符串模板&gt;.format(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;))<br>4.print(&lt;待输出内容&gt;, end=”&lt;增加的输出结尾&gt;”) |1.仅用于输出字符串<br>2.仅用于输出一个或多个变量<br>3.用于混合输出字符串与变量值<br>4.对print()函数的end参数进行赋值</p>
 ]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>5.函数和代码复用</title>
-    <url>/2021/09/05/5-%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8/</url>
-    <content><![CDATA[<p>函数和代码复用</p>
-<span id="more"></span>
-<h1 id="5-函数和代码复用"><a href="#5-函数和代码复用" class="headerlink" title="5.函数和代码复用"></a>5.函数和代码复用</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_5.%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8.png"></li>
-</ul>
-<h2 id="5-1函数的基本使用"><a href="#5-1函数的基本使用" class="headerlink" title="5.1函数的基本使用"></a>5.1函数的基本使用</h2><h3 id="5-1-1函数的定义"><a href="#5-1-1函数的定义" class="headerlink" title="5.1.1函数的定义"></a>5.1.1函数的定义</h3><p>Python定义一个函数使用def保留字，语法形式<br>如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;参数列表&gt;):</span><br><span class="line">    &lt;函数体&gt;</span><br><span class="line">return &lt;返回值列表</span><br></pre></td></tr></table></figure>
-<h3 id="5-1-2函数的使用"><a href="#5-1-2函数的使用" class="headerlink" title="5.1.2函数的使用"></a>5.1.2函数的使用</h3><p>&lt;函数名&gt;(&lt;实际赋值参数列表&gt;</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 定义一个对整数n求阶乘的函数</span><br><span class="line">def fact(n):</span><br><span class="line">  s = 1</span><br><span class="line">  for i in range(1, n+1):</span><br><span class="line">    s *= i</span><br><span class="line">  return s</span><br><span class="line"># 调用整数阶乘的函数</span><br><span class="line">print(fact(100))</span><br></pre></td></tr></table></figure>
-<p>函数定义-&gt;函数调用-&gt;函数执行-&gt;函数返回</p>
-<h2 id="5-2函数的传递"><a href="#5-2函数的传递" class="headerlink" title="5.2函数的传递"></a>5.2函数的传递</h2><h3 id="5-2-1可选参数传递"><a href="#5-2-1可选参数传递" class="headerlink" title="5.2.1可选参数传递"></a>5.2.1可选参数传递</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;非可选参数列表&gt;, &lt;可选参数&gt; = &lt;默认值&gt;):</span><br><span class="line">  &lt;函数体&gt;</span><br><span class="line">  return &lt;返回值列表&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="5-2-2参数名称传递"><a href="#5-2-2参数名称传递" class="headerlink" title="5.2.2参数名称传递"></a>5.2.2参数名称传递</h3><p>&lt;函数名&gt;(&lt;参数名&gt; = &lt;实际值&gt;)</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">print(x*y)</span><br><span class="line">&gt;&gt;&gt;multiply(x = 99)</span><br><span class="line">990</span><br><span class="line">&gt;&gt;&gt;multiply(y = 2, x = 99)</span><br><span class="line">198</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="5-2-3函数的返回值"><a href="#5-2-3函数的返回值" class="headerlink" title="5.2.3函数的返回值"></a>5.2.3函数的返回值</h3><p>return语句可以出现在函数中的任何部分，同时可以将0个、1个或多个函数运算的结果返回给函数被调用处的变量。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">return x*y</span><br><span class="line">&gt;&gt;&gt;s = multiply(99, 2)</span><br><span class="line">&gt;&gt;&gt;print(s)</span><br><span class="line">198</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-3变量的作用域"><a href="#5-3变量的作用域" class="headerlink" title="5.3变量的作用域"></a>5.3变量的作用域</h2><table>
-<thead>
-<tr>
-<th>变量</th>
-<th>作用域</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>局部变量</td>
-<td>局部变量指在函数内部使用的变量，仅在函数内部有效，当函数退出时变量将不再存在。但可以用global声明在函数内做为全局变量用。</td>
-</tr>
-<tr>
-<td>全局变量</td>
-<td>全局变量指在函数之外定义的变量，在程序执行</td>
-</tr>
-<tr>
-<td>全过程有效。</td>
-<td></td>
-</tr>
-</tbody></table>
-<h2 id="5-4代码复用"><a href="#5-4代码复用" class="headerlink" title="5.4代码复用"></a>5.4代码复用</h2><p>函数封装的直接好处是代码复用，任何其他代码只要输入参数即可调用函数，从而避免相同功能代码在被调用处重复编写。<br><br>模块化<br>设计是使用函数设计程序的思考方法，以功能块为基本单位，一般有两个基本要求：</p>
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>含义</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>紧耦合</td>
-<td>尽可能合理划分功能块，功能块内部耦合紧密</td>
-<td>紧耦合的缺点在于更新一个模块可能导致其它模块变化，复用较困难。</td>
-</tr>
-<tr>
-<td>松耦合</td>
-<td>模块间关系尽可能简单，功能块之间耦合度低</td>
-<td>松耦合一般基于消息或协议实现，系统间交互简单。</td>
-</tr>
-</tbody></table>
-<h2 id="5-5实例解析——软文的诗词风"><a href="#5-5实例解析——软文的诗词风" class="headerlink" title="5.5实例解析——软文的诗词风"></a>5.5实例解析——软文的诗词风</h2>]]></content>
       <categories>
         <category>Python</category>
         <category>二级</category>
@@ -905,6 +836,209 @@
       </tags>
   </entry>
   <entry>
+    <title>5.函数和代码复用</title>
+    <url>/2021/09/05/5-%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8/</url>
+    <content><![CDATA[<p>函数和代码复用</p>
+<span id="more"></span>
+<h1 id="5-函数和代码复用"><a href="#5-函数和代码复用" class="headerlink" title="5.函数和代码复用"></a>5.函数和代码复用</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_5.%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8.png"></li>
+</ul>
+<h2 id="5-1函数的基本使用"><a href="#5-1函数的基本使用" class="headerlink" title="5.1函数的基本使用"></a>5.1函数的基本使用</h2><h3 id="5-1-1函数的定义"><a href="#5-1-1函数的定义" class="headerlink" title="5.1.1函数的定义"></a>5.1.1函数的定义</h3><p>Python定义一个函数使用def保留字，语法形式<br>如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;参数列表&gt;):</span><br><span class="line">    &lt;函数体&gt;</span><br><span class="line">return &lt;返回值列表</span><br></pre></td></tr></table></figure>
+<h3 id="5-1-2函数的使用"><a href="#5-1-2函数的使用" class="headerlink" title="5.1.2函数的使用"></a>5.1.2函数的使用</h3><p>&lt;函数名&gt;(&lt;实际赋值参数列表&gt;</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 定义一个对整数n求阶乘的函数</span><br><span class="line">def fact(n):</span><br><span class="line">  s = 1</span><br><span class="line">  for i in range(1, n+1):</span><br><span class="line">    s *= i</span><br><span class="line">  return s</span><br><span class="line"># 调用整数阶乘的函数</span><br><span class="line">print(fact(100))</span><br></pre></td></tr></table></figure>
+<p>函数定义-&gt;函数调用-&gt;函数执行-&gt;函数返回</p>
+<h2 id="5-2函数的传递"><a href="#5-2函数的传递" class="headerlink" title="5.2函数的传递"></a>5.2函数的传递</h2><h3 id="5-2-1可选参数传递"><a href="#5-2-1可选参数传递" class="headerlink" title="5.2.1可选参数传递"></a>5.2.1可选参数传递</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;非可选参数列表&gt;, &lt;可选参数&gt; = &lt;默认值&gt;):</span><br><span class="line">  &lt;函数体&gt;</span><br><span class="line">  return &lt;返回值列表&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="5-2-2参数名称传递"><a href="#5-2-2参数名称传递" class="headerlink" title="5.2.2参数名称传递"></a>5.2.2参数名称传递</h3><p>&lt;函数名&gt;(&lt;参数名&gt; = &lt;实际值&gt;)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">print(x*y)</span><br><span class="line">&gt;&gt;&gt;multiply(x = 99)</span><br><span class="line">990</span><br><span class="line">&gt;&gt;&gt;multiply(y = 2, x = 99)</span><br><span class="line">198</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="5-2-3函数的返回值"><a href="#5-2-3函数的返回值" class="headerlink" title="5.2.3函数的返回值"></a>5.2.3函数的返回值</h3><p>return语句可以出现在函数中的任何部分，同时可以将0个、1个或多个函数运算的结果返回给函数被调用处的变量。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">return x*y</span><br><span class="line">&gt;&gt;&gt;s = multiply(99, 2)</span><br><span class="line">&gt;&gt;&gt;print(s)</span><br><span class="line">198</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-3变量的作用域"><a href="#5-3变量的作用域" class="headerlink" title="5.3变量的作用域"></a>5.3变量的作用域</h2><table>
+<thead>
+<tr>
+<th>变量</th>
+<th>作用域</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>局部变量</td>
+<td>局部变量指在函数内部使用的变量，仅在函数内部有效，当函数退出时变量将不再存在。但可以用global声明在函数内做为全局变量用。</td>
+</tr>
+<tr>
+<td>全局变量</td>
+<td>全局变量指在函数之外定义的变量，在程序执行</td>
+</tr>
+<tr>
+<td>全过程有效。</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="5-4代码复用"><a href="#5-4代码复用" class="headerlink" title="5.4代码复用"></a>5.4代码复用</h2><p>函数封装的直接好处是代码复用，任何其他代码只要输入参数即可调用函数，从而避免相同功能代码在被调用处重复编写。<br><br>模块化<br>设计是使用函数设计程序的思考方法，以功能块为基本单位，一般有两个基本要求：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>含义</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>紧耦合</td>
+<td>尽可能合理划分功能块，功能块内部耦合紧密</td>
+<td>紧耦合的缺点在于更新一个模块可能导致其它模块变化，复用较困难。</td>
+</tr>
+<tr>
+<td>松耦合</td>
+<td>模块间关系尽可能简单，功能块之间耦合度低</td>
+<td>松耦合一般基于消息或协议实现，系统间交互简单。</td>
+</tr>
+</tbody></table>
+<h2 id="5-5实例解析——软文的诗词风"><a href="#5-5实例解析——软文的诗词风" class="headerlink" title="5.5实例解析——软文的诗词风"></a>5.5实例解析——软文的诗词风</h2>]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>7.文章和数据格式化</title>
+    <url>/2021/09/05/7-%E6%96%87%E7%AB%A0%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/</url>
+    <content><![CDATA[<p>文章和数据格式化</p>
+<span id="more"></span>
+<h1 id="7-文章和数据格式化"><a href="#7-文章和数据格式化" class="headerlink" title="7.文章和数据格式化"></a>7.文章和数据格式化</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96.png"></li>
+</ul>
+<h2 id="7-1文件类型"><a href="#7-1文件类型" class="headerlink" title="7.1文件类型"></a>7.1文件类型</h2><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>文本文件</td>
+<td>文本文件一般由单一特定编码的字符组成，如UTF-8编码，内容容易统一展示和阅读。</td>
+</tr>
+<tr>
+<td>二进制</td>
+<td>二进制文件直接由比特0和比特1组成，文件内部数据的组织格式与文件用途有关。二进制是信息按照非字符但特定格式形成的文件，如，png格式的图片文件、avi格式的视频文件。</td>
+</tr>
+</tbody></table>
+<p>二进制文件和文本文件最主要的区别在于是否有统一的字符编码。</p>
+<blockquote>
+<p>Python对文本文件和二进制文件采用统一的操作步骤，即“<strong>打开-操作-关闭</strong>”</p>
+</blockquote>
+<h2 id="7-2文件的使用"><a href="#7-2文件的使用" class="headerlink" title="7.2文件的使用"></a>7.2文件的使用</h2><h3 id="7-2-1文件的打开"><a href="#7-2-1文件的打开" class="headerlink" title="7.2.1文件的打开"></a>7.2.1文件的打开</h3><p>Python通过open()函数打开一个文件，并返回一个操作这个文件的变量，语法形式如下：<br><br>&lt;变量名&gt; = open(&lt;文件路径及文件名&gt;, &lt;打开模式&gt;)</p>
+<table>
+<thead>
+<tr>
+<th>打开模式</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>‘r’</td>
+<td>只读模式，如果文件不存在，返回异常FileNotFoundError，默认值</td>
+</tr>
+<tr>
+<td>‘w’</td>
+<td>覆盖写模式，文件不存在则创建，存在则完全覆盖源文件</td>
+</tr>
+<tr>
+<td>‘x’</td>
+<td>创建写模式，文件不存在则创建，存在则返回异FileExistsError ‘a’</td>
+</tr>
+<tr>
+<td>‘b’</td>
+<td>二进制文件模式</td>
+</tr>
+<tr>
+<td>‘t’</td>
+<td>文本文件模式，默认值</td>
+</tr>
+<tr>
+<td>‘+’</td>
+<td>与r/w/x/a一同使用，在原功能基础上增加同时读写功能</td>
+</tr>
+</tbody></table>
+<h3 id="7-2-2文件的关闭"><a href="#7-2-2文件的关闭" class="headerlink" title="7.2.2文件的关闭"></a>7.2.2文件的关闭</h3><p>&lt;变量名&gt;.close()</p>
+<h3 id="7-2-3文件的读"><a href="#7-2-3文件的读" class="headerlink" title="7.2.3文件的读"></a>7.2.3文件的读</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>f.read(size=-1)</td>
+<td>从文件中读入整个文件内容。参数可选，如果给出，读入前size长度的字符串或字节流</td>
+</tr>
+<tr>
+<td>f.readline(size = -1)</td>
+<td>从文件中读入一行内容。参数可选，如果给出，读入该行前size长度的字符串或字节流</td>
+</tr>
+<tr>
+<td>f.readlines(hint=-1)</td>
+<td>从文件中读入所有行，以每行为元素形成一个列表。参数可选，如果给出，读入hint行</td>
+</tr>
+<tr>
+<td>f.seek(offset)</td>
+<td>改变当前文件操作指针的位置，offset的值：0：文件开头； 2: 文件结尾</td>
+</tr>
+</tbody></table>
+<p>f = open(&lt;文件路径及名称&gt;,”r”)<br><br>for line in f:<br><br><code># 处理一行数据</code><br><br>f.close()</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">f = open(&quot;D://b.txt&quot;, &quot;r&quot;)</span><br><span class="line">for line in f:</span><br><span class="line">    print(line)</span><br><span class="line">f.close()</span><br><span class="line"></span><br><span class="line">&gt;&gt;</span><br><span class="line">新年都未有芳华，二月初惊见草芽。</span><br><span class="line"></span><br><span class="line">白雪却嫌春色晚，故穿庭树作飞花。</span><br></pre></td></tr></table></figure>
+<h3 id="7-2-4文件的写"><a href="#7-2-4文件的写" class="headerlink" title="7.2.4文件的写"></a>7.2.4文件的写</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>f.write(s)</td>
+<td>向文件写入一个字符串或字节流</td>
+</tr>
+<tr>
+<td>f.writelines(lines)</td>
+<td>将一个元素为字符串的列表写入文件</td>
+</tr>
+</tbody></table>
+<p><strong>f.write(s)</strong>  向文件写入字符串s，每次写入后，将会记录一个写入指<br>针。该方法可以反复调用，将在写入指针后分批写入内容，直至文<br>件被关闭。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;f = open(&quot;D://c.txt&quot;, &quot;w&quot;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;新年都未有芳华\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;二月初惊见草芽\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;白雪却嫌春色晚\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;故穿庭树作飞花\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.close()</span><br><span class="line"></span><br><span class="line">&gt;&gt;</span><br><span class="line">新年都未有芳华</span><br><span class="line">二月初惊见草芽</span><br><span class="line">白雪却嫌春色晚</span><br><span class="line">故穿庭树作飞花</span><br></pre></td></tr></table></figure>
+<p><strong>f.writelines(lines)</strong> 直接将列表类型的各元素连<br>接起来写入文件f。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;ls = [&#x27;新年都未有芳华\n&#x27;,&#x27;二月初惊见草芽\n&#x27;,&#x27;白雪却嫌春色晚\n&#x27;,&#x27;故穿庭树作飞花\n&#x27;]</span><br><span class="line">&gt;&gt;&gt;f = open(&quot;D://c.txt&quot;, &quot;w&quot;)</span><br><span class="line">&gt;&gt;&gt;f.writelines(ls)</span><br><span class="line">&gt;&gt;&gt;f.close()</span><br></pre></td></tr></table></figure>
+
+<h2 id="7-3数据的维度"><a href="#7-3数据的维度" class="headerlink" title="7.3数据的维度"></a>7.3数据的维度</h2><p>一维数据由对等关系的有序或无序数据构成，采<br>用线性方式组织，对应于数学中数组的概念。<br></p>
+<ul>
+<li>一维数据<blockquote>
+<p>北京、上海、天津、重庆</p>
+</blockquote>
+</li>
+</ul>
+<p>二维数据，也称表格数据，由关联关系数据构成，<br>采用二维表格方式组织，对应于数学中的矩阵，<br>常见的表格都属于二维数据。<br><br>高维数据由键值对类型的数据构成，采用对象方<br>式组织，可以多层嵌套。<br></p>
+<ul>
+<li><p>二维数据<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96_1.png"></p>
+</li>
+<li><p>高维数据<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96_2.png"></p>
+</li>
+</ul>
+<p>一维数据的存储|<br>|-|<br>采用空格分隔元素，例如：<br>北京 上海 天津 重庆<br>采用逗号分隔元素，例如：<br>北京,上海,天津,重庆<br>采用换行分隔包括，例如：<br>北京<br>上海<br>天津<br>重庆<br>其他特殊符号分隔，以分号分隔为例，例如：<br>北京;上海;天津;重庆</p>
+<h2 id="7-4实例解析：国家财政数据趋势演算"><a href="#7-4实例解析：国家财政数据趋势演算" class="headerlink" title="7.4实例解析：国家财政数据趋势演算"></a>7.4实例解析：国家财政数据趋势演算</h2>]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>6.组合数据类型</title>
     <url>/2021/09/05/6-%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
     <content><![CDATA[<p>组合数据类型</p>
@@ -1110,140 +1244,6 @@
 
 <h3 id="6-3-4字典的遍历"><a href="#6-3-4字典的遍历" class="headerlink" title="6.3.4字典的遍历"></a>6.3.4字典的遍历</h3><p>与其他组合类型一样，字典可以遍历循环对其元素进行遍历，基本语法结构如下：<br><br>for &lt;变量名&gt; in &lt;字典名&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;语句块&gt;</p>
 <h2 id="6-4实例解析：文本词频统计"><a href="#6-4实例解析：文本词频统计" class="headerlink" title="6.4实例解析：文本词频统计"></a>6.4实例解析：文本词频统计</h2>]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>7.文章和数据格式化</title>
-    <url>/2021/09/05/7-%E6%96%87%E7%AB%A0%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/</url>
-    <content><![CDATA[<p>文章和数据格式化</p>
-<span id="more"></span>
-<h1 id="7-文章和数据格式化"><a href="#7-文章和数据格式化" class="headerlink" title="7.文章和数据格式化"></a>7.文章和数据格式化</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96.png"></li>
-</ul>
-<h2 id="7-1文件类型"><a href="#7-1文件类型" class="headerlink" title="7.1文件类型"></a>7.1文件类型</h2><table>
-<thead>
-<tr>
-<th>类型</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>文本文件</td>
-<td>文本文件一般由单一特定编码的字符组成，如UTF-8编码，内容容易统一展示和阅读。</td>
-</tr>
-<tr>
-<td>二进制</td>
-<td>二进制文件直接由比特0和比特1组成，文件内部数据的组织格式与文件用途有关。二进制是信息按照非字符但特定格式形成的文件，如，png格式的图片文件、avi格式的视频文件。</td>
-</tr>
-</tbody></table>
-<p>二进制文件和文本文件最主要的区别在于是否有统一的字符编码。</p>
-<blockquote>
-<p>Python对文本文件和二进制文件采用统一的操作步骤，即“<strong>打开-操作-关闭</strong>”</p>
-</blockquote>
-<h2 id="7-2文件的使用"><a href="#7-2文件的使用" class="headerlink" title="7.2文件的使用"></a>7.2文件的使用</h2><h3 id="7-2-1文件的打开"><a href="#7-2-1文件的打开" class="headerlink" title="7.2.1文件的打开"></a>7.2.1文件的打开</h3><p>Python通过open()函数打开一个文件，并返回一个操作这个文件的变量，语法形式如下：<br><br>&lt;变量名&gt; = open(&lt;文件路径及文件名&gt;, &lt;打开模式&gt;)</p>
-<table>
-<thead>
-<tr>
-<th>打开模式</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>‘r’</td>
-<td>只读模式，如果文件不存在，返回异常FileNotFoundError，默认值</td>
-</tr>
-<tr>
-<td>‘w’</td>
-<td>覆盖写模式，文件不存在则创建，存在则完全覆盖源文件</td>
-</tr>
-<tr>
-<td>‘x’</td>
-<td>创建写模式，文件不存在则创建，存在则返回异FileExistsError ‘a’</td>
-</tr>
-<tr>
-<td>‘b’</td>
-<td>二进制文件模式</td>
-</tr>
-<tr>
-<td>‘t’</td>
-<td>文本文件模式，默认值</td>
-</tr>
-<tr>
-<td>‘+’</td>
-<td>与r/w/x/a一同使用，在原功能基础上增加同时读写功能</td>
-</tr>
-</tbody></table>
-<h3 id="7-2-2文件的关闭"><a href="#7-2-2文件的关闭" class="headerlink" title="7.2.2文件的关闭"></a>7.2.2文件的关闭</h3><p>&lt;变量名&gt;.close()</p>
-<h3 id="7-2-3文件的读"><a href="#7-2-3文件的读" class="headerlink" title="7.2.3文件的读"></a>7.2.3文件的读</h3><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>f.read(size=-1)</td>
-<td>从文件中读入整个文件内容。参数可选，如果给出，读入前size长度的字符串或字节流</td>
-</tr>
-<tr>
-<td>f.readline(size = -1)</td>
-<td>从文件中读入一行内容。参数可选，如果给出，读入该行前size长度的字符串或字节流</td>
-</tr>
-<tr>
-<td>f.readlines(hint=-1)</td>
-<td>从文件中读入所有行，以每行为元素形成一个列表。参数可选，如果给出，读入hint行</td>
-</tr>
-<tr>
-<td>f.seek(offset)</td>
-<td>改变当前文件操作指针的位置，offset的值：0：文件开头； 2: 文件结尾</td>
-</tr>
-</tbody></table>
-<p>f = open(&lt;文件路径及名称&gt;,”r”)<br><br>for line in f:<br><br><code># 处理一行数据</code><br><br>f.close()</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">f = open(&quot;D://b.txt&quot;, &quot;r&quot;)</span><br><span class="line">for line in f:</span><br><span class="line">    print(line)</span><br><span class="line">f.close()</span><br><span class="line"></span><br><span class="line">&gt;&gt;</span><br><span class="line">新年都未有芳华，二月初惊见草芽。</span><br><span class="line"></span><br><span class="line">白雪却嫌春色晚，故穿庭树作飞花。</span><br></pre></td></tr></table></figure>
-<h3 id="7-2-4文件的写"><a href="#7-2-4文件的写" class="headerlink" title="7.2.4文件的写"></a>7.2.4文件的写</h3><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>f.write(s)</td>
-<td>向文件写入一个字符串或字节流</td>
-</tr>
-<tr>
-<td>f.writelines(lines)</td>
-<td>将一个元素为字符串的列表写入文件</td>
-</tr>
-</tbody></table>
-<p><strong>f.write(s)</strong>  向文件写入字符串s，每次写入后，将会记录一个写入指<br>针。该方法可以反复调用，将在写入指针后分批写入内容，直至文<br>件被关闭。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;f = open(&quot;D://c.txt&quot;, &quot;w&quot;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;新年都未有芳华\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;二月初惊见草芽\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;白雪却嫌春色晚\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;故穿庭树作飞花\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.close()</span><br><span class="line"></span><br><span class="line">&gt;&gt;</span><br><span class="line">新年都未有芳华</span><br><span class="line">二月初惊见草芽</span><br><span class="line">白雪却嫌春色晚</span><br><span class="line">故穿庭树作飞花</span><br></pre></td></tr></table></figure>
-<p><strong>f.writelines(lines)</strong> 直接将列表类型的各元素连<br>接起来写入文件f。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;ls = [&#x27;新年都未有芳华\n&#x27;,&#x27;二月初惊见草芽\n&#x27;,&#x27;白雪却嫌春色晚\n&#x27;,&#x27;故穿庭树作飞花\n&#x27;]</span><br><span class="line">&gt;&gt;&gt;f = open(&quot;D://c.txt&quot;, &quot;w&quot;)</span><br><span class="line">&gt;&gt;&gt;f.writelines(ls)</span><br><span class="line">&gt;&gt;&gt;f.close()</span><br></pre></td></tr></table></figure>
-
-<h2 id="7-3数据的维度"><a href="#7-3数据的维度" class="headerlink" title="7.3数据的维度"></a>7.3数据的维度</h2><p>一维数据由对等关系的有序或无序数据构成，采<br>用线性方式组织，对应于数学中数组的概念。<br></p>
-<ul>
-<li>一维数据<blockquote>
-<p>北京、上海、天津、重庆</p>
-</blockquote>
-</li>
-</ul>
-<p>二维数据，也称表格数据，由关联关系数据构成，<br>采用二维表格方式组织，对应于数学中的矩阵，<br>常见的表格都属于二维数据。<br><br>高维数据由键值对类型的数据构成，采用对象方<br>式组织，可以多层嵌套。<br></p>
-<ul>
-<li><p>二维数据<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96_1.png"></p>
-</li>
-<li><p>高维数据<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96_2.png"></p>
-</li>
-</ul>
-<p>一维数据的存储|<br>|-|<br>采用空格分隔元素，例如：<br>北京 上海 天津 重庆<br>采用逗号分隔元素，例如：<br>北京,上海,天津,重庆<br>采用换行分隔包括，例如：<br>北京<br>上海<br>天津<br>重庆<br>其他特殊符号分隔，以分号分隔为例，例如：<br>北京;上海;天津;重庆</p>
-<h2 id="7-4实例解析：国家财政数据趋势演算"><a href="#7-4实例解析：国家财政数据趋势演算" class="headerlink" title="7.4实例解析：国家财政数据趋势演算"></a>7.4实例解析：国家财政数据趋势演算</h2>]]></content>
       <categories>
         <category>Python</category>
         <category>二级</category>
@@ -1952,61 +1952,6 @@
       </tags>
   </entry>
   <entry>
-    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
-    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</p>
-<span id="more"></span>
-
-<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
-<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
-<p>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
-<p>成功帮助舍友解决</p>
-]]></content>
-      <categories>
-        <category>电脑</category>
-      </categories>
-      <tags>
-        <tag>电脑</tag>
-        <tag>磁盘</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>github+hexo 个人博客更换主题</title>
-    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
-<span id="more"></span>
-
-<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
-<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
-<blockquote>
-<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
-</blockquote>
-<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
-<blockquote>
-<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
-</blockquote>
-<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
-<blockquote>
-<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></table></figure>
-
-<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
-]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-        <tag>主题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo 新建分类和标签</title>
     <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
     <content><![CDATA[<p>hexo 新建分类和标签</p>
@@ -2048,33 +1993,39 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo的安装和在github部署博客</title>
-    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<p>hexo的安装和在github部署博客</p>
+    <title>github+hexo 个人博客更换主题</title>
+    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
 <span id="more"></span>
 
-<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
+<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io </code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
+<blockquote>
+<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
+</blockquote>
+<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
+<blockquote>
+<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
+</blockquote>
+<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
-<p>打开 git 下 git bash 输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
+<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
+<blockquote>
+<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></table></figure>
 
-<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
-<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
-
-<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
-<hr>
-<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
+<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
 ]]></content>
       <categories>
         <category>hexo博客</category>
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>部署博客</tag>
+        <tag>博客</tag>
+        <tag>主题</tag>
       </tags>
   </entry>
   <entry>
@@ -2105,6 +2056,55 @@
         <tag>hexo</tag>
         <tag>部署博客</tag>
         <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
+    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</p>
+<span id="more"></span>
+
+<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
+<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
+<p>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
+<p>成功帮助舍友解决</p>
+]]></content>
+      <categories>
+        <category>电脑</category>
+      </categories>
+      <tags>
+        <tag>电脑</tag>
+        <tag>磁盘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo的安装和在github部署博客</title>
+    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<p>hexo的安装和在github部署博客</p>
+<span id="more"></span>
+
+<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io </code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>打开 git 下 git bash 输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
+<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
+
+<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
+<hr>
+<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
+]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
       </tags>
   </entry>
   <entry>
