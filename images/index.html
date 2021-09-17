@@ -474,7 +474,7 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>28字</p>
+        <p>127字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
@@ -505,31 +505,57 @@
         <div class="article-entry" itemprop="articleBody">
           <link rel="stylesheet" href="xiangce.css" />
 
-<!-- 
-<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/1.jpg"/>
-<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2.jpg"/>
-<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/3.jpg"/>
-<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/4.jpg"/>
-<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/5.jpg"/>
-<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/6.jpg"/> -->
+
+<body>
+
+
+<!-- <p>JavaScript 能够改变 HTML 属性值。</p>
+
+<p>在本例中，JavaScript 改变了图像的 src 属性值。</p> -->
+
+<p><button onclick="shang()">上一张</button></p>
+<img id="myImage" border="0" src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/1.jpg" style="text-align:center;">
+
+<p><button onclick="xia()">下一张</button></p>
+<p id="num"></p>
+
+<script>
+    var pic = ['https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/1.jpg',
+                'https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2.jpg',
+                'https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/6.jpg',
+                'https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/5.jpg',
+                'https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/4.jpg',
+                'https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/3.jpg'];
+    var i = 0;
+    function shang(){
+        if (i <= pic.length && i >= 1){
+            i -= 1;
+            document.getElementById('myImage').src=pic[i];
+        }
+        else{
+            i = 5;
+            document.getElementById('myImage').src=pic[i];
+        }
+        document.getElementById('num').innerHTML = i+'/'+6;
+    }
+    function xia(){
+        if (i <= pic.length-2 && i >= 0){
+            i += 1;
+            document.getElementById('myImage').src=pic[i];
+        }
+        else{
+            i = 0;
+            document.getElementById('myImage').src=pic[i];
+        }
+    }
+    
+</script>
+
+</body>
 
 
 
 <!-- <body>
-    <div class="wrap">
-        <div class="box">
-            <div class="left"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/1.jpg"/></div>
-            <div class="right"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2.jpg"/></div>
-            <div class="top"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/3.jpg"/></div>
-            <div class="bottom"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/4.jpg"/></div>
-            <div class="after"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/5.jpg"/></div>
-            <div class="before"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/6.jpg"/></div>
-        </div>
-    </div>
-</body> -->
-
-
-<body>
 
 <div class="responsive">
   <div class="img">
@@ -571,7 +597,7 @@
 <div class="clearfix"></div>
 
 </body>
-</html>
+</html> -->
 
 
 
