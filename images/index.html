@@ -474,7 +474,7 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>127字</p>
+        <p>129字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
@@ -503,7 +503,7 @@
 
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
-          <link rel="stylesheet" href="xiangce.css" />
+          <!-- <link rel="stylesheet" href="xiangce.css" /> -->
 
 
 <body>
@@ -536,7 +536,7 @@
             i = 5;
             document.getElementById('myImage').src=pic[i];
         }
-        document.getElementById('num').innerHTML = i+'/'+6;
+        document.getElementById('num').innerHTML = (i+1)+'/'+pic.lenth;
     }
     function xia(){
         if (i <= pic.length-2 && i >= 0){
