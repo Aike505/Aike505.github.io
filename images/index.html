@@ -474,7 +474,7 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>129字</p>
+        <p>137字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
@@ -516,8 +516,10 @@
 
 
 <img id="myImage" border="0" src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/1.jpg" style="text-align:center;">
+<p style="text-align:right;">
 <button onclick="shang()">上一张</button>
 <button onclick="xia()">下一张</button>
+</p>
 <p id="num"></p>
 
 <script>
@@ -537,7 +539,7 @@
             i = 5;
             document.getElementById('myImage').src=pic[i];
         }
-        document.getElementById('num').innerHTML = (i+1)+'/'+pic.lenth;
+        document.getElementById('num').innerHTML = (i+1)+'/'+pic.length;
     }
     function xia(){
         if (i <= pic.length-2 && i >= 0){
@@ -548,6 +550,7 @@
             i = 0;
             document.getElementById('myImage').src=pic[i];
         }
+        document.getElementById('num').innerHTML = (i+1)+'/'+pic.length;
     }
     
 </script>
