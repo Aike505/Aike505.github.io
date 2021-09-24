@@ -34,7 +34,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>7.文章和数据格式化 | Aike-blog</title>
+  <title>7.文件和数据格式化 | Aike-blog</title>
   
   <meta name="keywords" content="Python,hexo博客">
   
@@ -408,8 +408,8 @@
         
   
     <h1 class="title">
-      <a href="/2021/09/05/7-%E6%96%87%E7%AB%A0%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/">
-        7.文章和数据格式化
+      <a href="/2021/09/05/7-%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/">
+        7.文件和数据格式化
       </a>
     </h1>
   
@@ -511,9 +511,9 @@
 
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
-          <p>文章和数据格式化</p>
+          <p>文件和数据格式化</p>
 <span id="more"></span>
-<h1 id="7-文章和数据格式化"><a href="#7-文章和数据格式化" class="headerlink" title="7.文章和数据格式化"></a>7.文章和数据格式化</h1><ul>
+<h1 id="7-文件和数据格式化"><a href="#7-文件和数据格式化" class="headerlink" title="7.文件和数据格式化"></a>7.文件和数据格式化</h1><ul>
 <li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96.png"></li>
 </ul>
 <h2 id="7-1文件类型"><a href="#7-1文件类型" class="headerlink" title="7.1文件类型"></a>7.1文件类型</h2><table>
@@ -612,26 +612,27 @@
 <td>将一个元素为字符串的列表写入文件</td>
 </tr>
 </tbody></table>
-<p><strong>f.write(s)</strong>  向文件写入字符串s，每次写入后，将会记录一个写入指<br>针。该方法可以反复调用，将在写入指针后分批写入内容，直至文<br>件被关闭。</p>
+<p><strong>f.write(s)</strong>  向文件写入字符串s，每次写入后，将会记录一个写入指针。该方法可以反复调用，将在写入指针后分批写入内容，直至文件被关闭。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;f = open(&quot;D://c.txt&quot;, &quot;w&quot;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;新年都未有芳华\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;二月初惊见草芽\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;白雪却嫌春色晚\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;故穿庭树作飞花\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.close()</span><br><span class="line"></span><br><span class="line">&gt;&gt;</span><br><span class="line">新年都未有芳华</span><br><span class="line">二月初惊见草芽</span><br><span class="line">白雪却嫌春色晚</span><br><span class="line">故穿庭树作飞花</span><br></pre></td></tr></table></figure>
-<p><strong>f.writelines(lines)</strong> 直接将列表类型的各元素连<br>接起来写入文件f。</p>
+<p><strong>f.writelines(lines)</strong> 直接将列表类型的各元素连接起来写入文件f。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;ls = [&#x27;新年都未有芳华\n&#x27;,&#x27;二月初惊见草芽\n&#x27;,&#x27;白雪却嫌春色晚\n&#x27;,&#x27;故穿庭树作飞花\n&#x27;]</span><br><span class="line">&gt;&gt;&gt;f = open(&quot;D://c.txt&quot;, &quot;w&quot;)</span><br><span class="line">&gt;&gt;&gt;f.writelines(ls)</span><br><span class="line">&gt;&gt;&gt;f.close()</span><br></pre></td></tr></table></figure>
 
-<h2 id="7-3数据的维度"><a href="#7-3数据的维度" class="headerlink" title="7.3数据的维度"></a>7.3数据的维度</h2><p>一维数据由对等关系的有序或无序数据构成，采<br>用线性方式组织，对应于数学中数组的概念。<br></p>
+<h2 id="7-3数据的维度"><a href="#7-3数据的维度" class="headerlink" title="7.3数据的维度"></a>7.3数据的维度</h2><p>一维数据由对等关系的有序或无序数据构成，采用线性方式组织，对应于数学中数组的概念。<br></p>
 <ul>
 <li>一维数据<blockquote>
 <p>北京、上海、天津、重庆</p>
 </blockquote>
 </li>
 </ul>
-<p>二维数据，也称表格数据，由关联关系数据构成，<br>采用二维表格方式组织，对应于数学中的矩阵，<br>常见的表格都属于二维数据。<br><br>高维数据由键值对类型的数据构成，采用对象方<br>式组织，可以多层嵌套。<br></p>
+<p>二维数据，也称表格数据，由关联关系数据构成，采用二维表格方式组织，对应于数学中的矩阵，常见的表格都属于二维数据。<br><br>高维数据由键值对类型的数据构成，采用对象方式组织，可以多层嵌套。<br></p>
 <ul>
 <li><p>二维数据<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96_1.png"></p>
 </li>
 <li><p>高维数据<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96_2.png"></p>
 </li>
 </ul>
-<p>一维数据的存储|<br>|-|<br>采用空格分隔元素，例如：<br>北京 上海 天津 重庆<br>采用逗号分隔元素，例如：<br>北京,上海,天津,重庆<br>采用换行分隔包括，例如：<br>北京<br>上海<br>天津<br>重庆<br>其他特殊符号分隔，以分号分隔为例，例如：<br>北京;上海;天津;重庆</p>
+<p>一维数据的存储</p>
+<p>|-|-|<br>采用空格分隔元素，例如：<br>北京 上海 天津 重庆<br>采用逗号分隔元素，例如：<br>北京,上海,天津,重庆<br>采用换行分隔包括，例如：<br>北京<br>上海<br>天津<br>重庆<br>其他特殊符号分隔，以分号分隔为例，例如：<br>北京;上海;天津;重庆</p>
 <h2 id="7-4实例解析：国家财政数据趋势演算"><a href="#7-4实例解析：国家财政数据趋势演算" class="headerlink" title="7.4实例解析：国家财政数据趋势演算"></a>7.4实例解析：国家财政数据趋势演算</h2>
         </div>
         <hr />
@@ -714,10 +715,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-09-06T14:04:24+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-09-24T23:26:57+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2021年9月6日</p>
+    <p>最后更新于 2021年9月24日</p>
   </a>
 </div>
 
@@ -739,7 +740,7 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://aike505.github.io/2021/09/05/7-%E6%96%87%E7%AB%A0%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/&title=7.文章和数据格式化 | Aike-blog&pics=https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/avatar.png&summary=文章和数据格式化"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://aike505.github.io/2021/09/05/7-%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/&title=7.文件和数据格式化 | Aike-blog&pics=https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/avatar.png&summary=文件和数据格式化"
           
           >
           
@@ -751,7 +752,7 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://aike505.github.io/2021/09/05/7-%E6%96%87%E7%AB%A0%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/&title=7.文章和数据格式化 | Aike-blog&pics=https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/avatar.png&summary=文章和数据格式化"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://aike505.github.io/2021/09/05/7-%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/&title=7.文件和数据格式化 | Aike-blog&pics=https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/avatar.png&summary=文件和数据格式化"
           
           >
           
@@ -761,7 +762,7 @@
       
     
       
-        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAAD5klEQVR42u3aS27bQBAFQN//0sk2gEzqve4hLCPFlUBQnJnSotWfr6/4+vNyvd7/987V5/a6XyXfyeELBw4cOHCUR71f7HWZhCDBTd5wv8P8W1er48CBAweOUxxXEWd24Pv3v9lQsLdkt0nQxYEDBw4cn8MxS6vy5DD/K9CGfxw4cODA8ZkcV9udHTgnyMMwDhw4cOD4WY6kOJinVQlZW+bbP3m4VooDBw4cOLpINywUfubnR+Y7cODAgQPHouiWp0D580n43LSy6tPhwIEDB441R7t8m4a15by2LNiufr8WDhw4cOB4jqPdUBtQ2xJkG1ZXgRwHDhw4cCw4WrlkZCF/fxIO96E03ycOHDhw4DjL0S65P0w7xHY25H9zBwcOHDhwrDny4JcHy+S7bZhM0rNT5UscOHDgwLHhaMPkJljOyDYNqrYciQMHDhw49hx5YpMnbF/lNQvMyajELDDjwIEDB44Nx2yYYAORN7raPeTffTPQgAMHDhw4HuOYJWZtqbFtWc2Kg1FShwMHDhw4DnG0VxsO2+bQvhnWDl4Uxjhw4MCBY922yZtDM5r28O2TyYneBFocOHDgwFFyzILuJqQl685aSvk7v3kbDhw4cOB4gGPWOqobPOUqSdA90JTCgQMHDhxn+vtRgjTbUNsEyit1+eDCEA4HDhw4cCw4Nk2ddnP5YMSsBJm/8/LsOHDgwIFjzdEG2lNDD08kafn7j/3vwIEDBw4cj5XY8oGDs8XBPRwOHDhw4HiO44nRgc2ddrRuhYgDBw4cOB7myAuCm3G62VjbZqjuMujiwIEDB441R/JQm5IlQBu4dgIhb2LhwIEDB46zHPuBgzzZSwLnLGHb7BkHDhw4cJzimJXn9olZXojcjEq0wRgHDhw4cGw4ZknRZivttUnJ2iQQBw4cOHCc4siLd5uE7enG0uzJy4EGHDhw4MCx4MhLdXk6d38/T642obodxcCBAwcOHHuOdrE8HOZp4Szc5ill8lMVExk4cODAgeN29XYgIAmQm/Ji+8OcalxdFgdx4MCBA8eIow11yRbzA+T/CPJ21LDgiAMHDhw4DvVu2rbN2cMkb2uHJPIUEQcOHDhwnOXYJ06b4mCRXJXzBrPyIg4cOHDg2HPkV11oCxZLmkbJj5EXCjc/Jw4cOHDgyDn2wTVPopJvtcW+zUhE/e8DBw4cOHDEHEU1cZFEtcXBvMW1z8Jw4MCBA8fncOTtqzYVbIuDm5QPBw4cOHD8Lo5TaV5eEMxxfyDQ4sCBA8d/wJEnS5txt7wtlA8i5LuNkkAcOHDgwLHmyEtps7ZTwt2G+SRdbE+EAwcOHDjWHH8B0GI1l5V5yhwAAAAASUVORK5CYII='>
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAAD6UlEQVR42u3aO3LDMAwFQN//0kmbwrLfA6iJilXlcWSJXBYIPq9XfP38ua6++fv91ef2yt9+9c3rjgsHDhw4cMRbTRb0+ZU5WQ7ariT51dXbceDAgQPHKY6riJOHz8+RK+dI1pasNgm6OHDgwIHjORyztCrJmNqsqk0mceDAgQPHMzk+lw5nYTUhyMMwDhw4cOD4X46kOJg8OikIzsp8+zsP10px4MCBA0cX6YaFwmd+vmW+AwcOHDhwLIpueQqU358PScxaWfXucODAgQPHmqN9fZ6GbQYU8rJg3gBL3oUDBw4cOPYcefmsDaizQYRZo6s9qss148CBAweOQxz7MLlvKW0C/Kz692ZfOHDgwIHjZo5NoD01HpFvpi1HXqZwOHDgwIFjwZEHvzxYJr/NKfNAPkvk3qwBBw4cOHAsOPL0aTaU1hb7Nk2jluzNSnDgwIEDx5qjSGzKLbUFu/04Xfucy5CPAwcOHDgWHJsgOoPIxwvaNRw4Nhw4cODAcTNH3hDaBOx2lGFWHIySOhw4cODAcYijvRKIfOl5IbJNKdtSIw4cOHDguI9j1hxqFzfbfHtnsqMvgRYHDhw4cJQcySNmf82Ld0nC1h5MviocOHDgwHEfx6x1dHbEoS0ObkYo3kx24MCBAweObX8/SpBmC2qbQHmlLh9cGMLhwIEDB44Fx6ap04bG5PmbEmT+zMu948CBAweOBUdbYssHFPIlnk3S8ucXP8aBAwcOHPO6WV0izFtT9xUH93A4cODAgeMUx6wANwvGbYMqJ84D/5d7cODAgQPHUY5ZUJwNpe3H2vYlyDf34MCBAweONceszZMsNx9rmA1D5BMI+e5w4MCBA8dZjv3AQZ7sJYFzlrBt1owDBw4cOE5xzMpz+8QsL0TODqw9DBw4cODAsefYJEWzpbTXJiVrk0AcOHDgwHGKYzam0AbatrzYhufZnV/mO3DgwIEDx4jj1LhAPjSQE29CdTuKgQMHDhw49hyzl73Ka/aEvCg5HIlrp/9w4MCBA0fA0Q4E5MnYplE0G1nYNK4ui4M4cODAgWPE0Ya6/AV14ycOvdGMRpua4sCBAweOQ72bTSlwv5nkae2QRJ4i4sCBAweOsxz7xGnW5mkD9mbeIC8v4sCBAweOPcemdTQLmW3TKDmMvFC4OU4cOHDgwJFz7INrzpT8qi327QcpcODAgQPHHRxFNTFuTbXLaocShv81fF4VDhw4cOB4AMes39UW9fLhiVnKhwMHDhw4nsaRp3abNC8vCLb/CuDAgQMHjrMcebK0GXdrA/Adx3Cs7YQDBw4cONYDDbO2U8I9o0zubBNLHDhw4MCx4PgFlbsWqHlGFv8AAAAASUVORK5CYII='>
         
           <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
         
@@ -771,7 +772,7 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://aike505.github.io/2021/09/05/7-%E6%96%87%E7%AB%A0%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/&title=7.文章和数据格式化 | Aike-blog&pics=https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/avatar.png&summary=文章和数据格式化"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://aike505.github.io/2021/09/05/7-%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/&title=7.文件和数据格式化 | Aike-blog&pics=https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/avatar.png&summary=文件和数据格式化"
           
           >
           
@@ -781,7 +782,7 @@
       
     
       
-        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAAD5klEQVR42u3aS27bQBAFQN//0sk2gEzqve4hLCPFlUBQnJnSotWfr6/4+vNyvd7/987V5/a6XyXfyeELBw4cOHCUR71f7HWZhCDBTd5wv8P8W1er48CBAweOUxxXEWd24Pv3v9lQsLdkt0nQxYEDBw4cn8MxS6vy5DD/K9CGfxw4cODA8ZkcV9udHTgnyMMwDhw4cOD4WY6kOJinVQlZW+bbP3m4VooDBw4cOLpINywUfubnR+Y7cODAgQPHouiWp0D580n43LSy6tPhwIEDB441R7t8m4a15by2LNiufr8WDhw4cOB4jqPdUBtQ2xJkG1ZXgRwHDhw4cCw4WrlkZCF/fxIO96E03ycOHDhw4DjL0S65P0w7xHY25H9zBwcOHDhwrDny4JcHy+S7bZhM0rNT5UscOHDgwLHhaMPkJljOyDYNqrYciQMHDhw49hx5YpMnbF/lNQvMyajELDDjwIEDB44Nx2yYYAORN7raPeTffTPQgAMHDhw4HuOYJWZtqbFtWc2Kg1FShwMHDhw4DnG0VxsO2+bQvhnWDl4Uxjhw4MCBY922yZtDM5r28O2TyYneBFocOHDgwFFyzILuJqQl685aSvk7v3kbDhw4cOB4gGPWOqobPOUqSdA90JTCgQMHDhxn+vtRgjTbUNsEyit1+eDCEA4HDhw4cCw4Nk2ddnP5YMSsBJm/8/LsOHDgwIFjzdEG2lNDD08kafn7j/3vwIEDBw4cj5XY8oGDs8XBPRwOHDhw4HiO44nRgc2ddrRuhYgDBw4cOB7myAuCm3G62VjbZqjuMujiwIEDB441R/JQm5IlQBu4dgIhb2LhwIEDB46zHPuBgzzZSwLnLGHb7BkHDhw4cJzimJXn9olZXojcjEq0wRgHDhw4cGw4ZknRZivttUnJ2iQQBw4cOHCc4siLd5uE7enG0uzJy4EGHDhw4MCx4MhLdXk6d38/T642obodxcCBAwcOHHuOdrE8HOZp4Szc5ill8lMVExk4cODAgeN29XYgIAmQm/Ji+8OcalxdFgdx4MCBA8eIow11yRbzA+T/CPJ21LDgiAMHDhw4DvVu2rbN2cMkb2uHJPIUEQcOHDhwnOXYJ06b4mCRXJXzBrPyIg4cOHDg2HPkV11oCxZLmkbJj5EXCjc/Jw4cOHDgyDn2wTVPopJvtcW+zUhE/e8DBw4cOHDEHEU1cZFEtcXBvMW1z8Jw4MCBA8fncOTtqzYVbIuDm5QPBw4cOHD8Lo5TaV5eEMxxfyDQ4sCBA8d/wJEnS5txt7wtlA8i5LuNkkAcOHDgwLHmyEtps7ZTwt2G+SRdbE+EAwcOHDjWHH8B0GI1l5V5yhwAAAAASUVORK5CYII='>
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAAD6UlEQVR42u3aO3LDMAwFQN//0kmbwrLfA6iJilXlcWSJXBYIPq9XfP38ua6++fv91ef2yt9+9c3rjgsHDhw4cMRbTRb0+ZU5WQ7ariT51dXbceDAgQPHKY6riJOHz8+RK+dI1pasNgm6OHDgwIHjORyztCrJmNqsqk0mceDAgQPHMzk+lw5nYTUhyMMwDhw4cOD4X46kOJg8OikIzsp8+zsP10px4MCBA0cX6YaFwmd+vmW+AwcOHDhwLIpueQqU358PScxaWfXucODAgQPHmqN9fZ6GbQYU8rJg3gBL3oUDBw4cOPYcefmsDaizQYRZo6s9qss148CBAweOQxz7MLlvKW0C/Kz692ZfOHDgwIHjZo5NoD01HpFvpi1HXqZwOHDgwIFjwZEHvzxYJr/NKfNAPkvk3qwBBw4cOHAsOPL0aTaU1hb7Nk2jluzNSnDgwIEDx5qjSGzKLbUFu/04Xfucy5CPAwcOHDgWHJsgOoPIxwvaNRw4Nhw4cODAcTNH3hDaBOx2lGFWHIySOhw4cODAcYijvRKIfOl5IbJNKdtSIw4cOHDguI9j1hxqFzfbfHtnsqMvgRYHDhw4cJQcySNmf82Ld0nC1h5MviocOHDgwHEfx6x1dHbEoS0ObkYo3kx24MCBAweObX8/SpBmC2qbQHmlLh9cGMLhwIEDB44Fx6ap04bG5PmbEmT+zMu948CBAweOBUdbYssHFPIlnk3S8ucXP8aBAwcOHPO6WV0izFtT9xUH93A4cODAgeMUx6wANwvGbYMqJ84D/5d7cODAgQPHUY5ZUJwNpe3H2vYlyDf34MCBAweONceszZMsNx9rmA1D5BMI+e5w4MCBA8dZjv3AQZ7sJYFzlrBt1owDBw4cOE5xzMpz+8QsL0TODqw9DBw4cODAsefYJEWzpbTXJiVrk0AcOHDgwHGKYzam0AbatrzYhufZnV/mO3DgwIEDx4jj1LhAPjSQE29CdTuKgQMHDhw49hyzl73Ka/aEvCg5HIlrp/9w4MCBA0fA0Q4E5MnYplE0G1nYNK4ui4M4cODAgWPE0Ya6/AV14ycOvdGMRpua4sCBAweOQ72bTSlwv5nkae2QRJ4i4sCBAweOsxz7xGnW5mkD9mbeIC8v4sCBAweOPcemdTQLmW3TKDmMvFC4OU4cOHDgwJFz7INrzpT8qi327QcpcODAgQPHHRxFNTFuTbXLaocShv81fF4VDhw4cOB4AMes39UW9fLhiVnKhwMHDhw4nsaRp3abNC8vCLb/CuDAgQMHjrMcebK0GXdrA/Adx3Cs7YQDBw4cONYDDbO2U8I9o0zubBNLHDhw4MCx4PgFlbsWqHlGFv8AAAAASUVORK5CYII='>
         
           <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png">
         
@@ -881,7 +882,7 @@
 
   <script>
     window.subData = {
-      title: '7.文章和数据格式化',
+      title: '7.文件和数据格式化',
       tools: true
     }
   </script>
@@ -1020,7 +1021,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#7-%E6%96%87%E7%AB%A0%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96"><span class="toc-text">7.文章和数据格式化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#7-1%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B"><span class="toc-text">7.1文件类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-2%E6%96%87%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">7.2文件的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-1%E6%96%87%E4%BB%B6%E7%9A%84%E6%89%93%E5%BC%80"><span class="toc-text">7.2.1文件的打开</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-2%E6%96%87%E4%BB%B6%E7%9A%84%E5%85%B3%E9%97%AD"><span class="toc-text">7.2.2文件的关闭</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-3%E6%96%87%E4%BB%B6%E7%9A%84%E8%AF%BB"><span class="toc-text">7.2.3文件的读</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-4%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%99"><span class="toc-text">7.2.4文件的写</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-3%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BB%B4%E5%BA%A6"><span class="toc-text">7.3数据的维度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-4%E5%AE%9E%E4%BE%8B%E8%A7%A3%E6%9E%90%EF%BC%9A%E5%9B%BD%E5%AE%B6%E8%B4%A2%E6%94%BF%E6%95%B0%E6%8D%AE%E8%B6%8B%E5%8A%BF%E6%BC%94%E7%AE%97"><span class="toc-text">7.4实例解析：国家财政数据趋势演算</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#7-%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96"><span class="toc-text">7.文件和数据格式化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#7-1%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B"><span class="toc-text">7.1文件类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-2%E6%96%87%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">7.2文件的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-1%E6%96%87%E4%BB%B6%E7%9A%84%E6%89%93%E5%BC%80"><span class="toc-text">7.2.1文件的打开</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-2%E6%96%87%E4%BB%B6%E7%9A%84%E5%85%B3%E9%97%AD"><span class="toc-text">7.2.2文件的关闭</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-3%E6%96%87%E4%BB%B6%E7%9A%84%E8%AF%BB"><span class="toc-text">7.2.3文件的读</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-4%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%99"><span class="toc-text">7.2.4文件的写</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-3%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BB%B4%E5%BA%A6"><span class="toc-text">7.3数据的维度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-4%E5%AE%9E%E4%BE%8B%E8%A7%A3%E6%9E%90%EF%BC%9A%E5%9B%BD%E5%AE%B6%E8%B4%A2%E6%94%BF%E6%95%B0%E6%8D%AE%E8%B6%8B%E5%8A%BF%E6%BC%94%E7%AE%97"><span class="toc-text">7.4实例解析：国家财政数据趋势演算</span></a></li></ol></li></ol>
     </div>
   </section>
 

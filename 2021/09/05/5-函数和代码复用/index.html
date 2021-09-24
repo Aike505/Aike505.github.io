@@ -482,7 +482,7 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>651字</p>
+        <p>652字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
@@ -517,13 +517,13 @@
 <li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_5.%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8.png"></li>
 </ul>
 <h2 id="5-1函数的基本使用"><a href="#5-1函数的基本使用" class="headerlink" title="5.1函数的基本使用"></a>5.1函数的基本使用</h2><h3 id="5-1-1函数的定义"><a href="#5-1-1函数的定义" class="headerlink" title="5.1.1函数的定义"></a>5.1.1函数的定义</h3><p>Python定义一个函数使用def保留字，语法形式<br>如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;参数列表&gt;):</span><br><span class="line">    &lt;函数体&gt;</span><br><span class="line">return &lt;返回值列表</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;参数列表&gt;):</span><br><span class="line">    &lt;函数体&gt;</span><br><span class="line">return &lt;返回值列表&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="5-1-2函数的使用"><a href="#5-1-2函数的使用" class="headerlink" title="5.1.2函数的使用"></a>5.1.2函数的使用</h3><p>&lt;函数名&gt;(&lt;实际赋值参数列表&gt;</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 定义一个对整数n求阶乘的函数</span><br><span class="line">def fact(n):</span><br><span class="line">  s = 1</span><br><span class="line">  for i in range(1, n+1):</span><br><span class="line">    s *= i</span><br><span class="line">  return s</span><br><span class="line"># 调用整数阶乘的函数</span><br><span class="line">print(fact(100))</span><br></pre></td></tr></table></figure>
 <p>函数定义-&gt;函数调用-&gt;函数执行-&gt;函数返回</p>
 <h2 id="5-2函数的传递"><a href="#5-2函数的传递" class="headerlink" title="5.2函数的传递"></a>5.2函数的传递</h2><h3 id="5-2-1可选参数传递"><a href="#5-2-1可选参数传递" class="headerlink" title="5.2.1可选参数传递"></a>5.2.1可选参数传递</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;非可选参数列表&gt;, &lt;可选参数&gt; = &lt;默认值&gt;):</span><br><span class="line">  &lt;函数体&gt;</span><br><span class="line">  return &lt;返回值列表&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="5-2-2参数名称传递"><a href="#5-2-2参数名称传递" class="headerlink" title="5.2.2参数名称传递"></a>5.2.2参数名称传递</h3><p>&lt;函数名&gt;(&lt;参数名&gt; = &lt;实际值&gt;)</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">print(x*y)</span><br><span class="line">&gt;&gt;&gt;multiply(x = 99)</span><br><span class="line">990</span><br><span class="line">&gt;&gt;&gt;multiply(y = 2, x = 99)</span><br><span class="line">198</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">        print(x*y)</span><br><span class="line">&gt;&gt;&gt;multiply(x = 99)</span><br><span class="line">990</span><br><span class="line">&gt;&gt;&gt;multiply(y = 2, x = 99)</span><br><span class="line">198</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h3 id="5-2-3函数的返回值"><a href="#5-2-3函数的返回值" class="headerlink" title="5.2.3函数的返回值"></a>5.2.3函数的返回值</h3><p>return语句可以出现在函数中的任何部分，同时可以将0个、1个或多个函数运算的结果返回给函数被调用处的变量。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">return x*y</span><br><span class="line">&gt;&gt;&gt;s = multiply(99, 2)</span><br><span class="line">&gt;&gt;&gt;print(s)</span><br><span class="line">198</span><br></pre></td></tr></table></figure>
 
@@ -540,14 +540,10 @@
 </tr>
 <tr>
 <td>全局变量</td>
-<td>全局变量指在函数之外定义的变量，在程序执行</td>
-</tr>
-<tr>
-<td>全过程有效。</td>
-<td></td>
+<td>全局变量指在函数之外定义的变量，在程序执行全过程有效。</td>
 </tr>
 </tbody></table>
-<h2 id="5-4代码复用"><a href="#5-4代码复用" class="headerlink" title="5.4代码复用"></a>5.4代码复用</h2><p>函数封装的直接好处是代码复用，任何其他代码只要输入参数即可调用函数，从而避免相同功能代码在被调用处重复编写。<br><br>模块化<br>设计是使用函数设计程序的思考方法，以功能块为基本单位，一般有两个基本要求：</p>
+<h2 id="5-4代码复用"><a href="#5-4代码复用" class="headerlink" title="5.4代码复用"></a>5.4代码复用</h2><p>函数封装的直接好处是代码复用，任何其他代码只要输入参数即可调用函数，从而避免相同功能代码在被调用处重复编写。<br><br><strong>模块化设计</strong>是使用函数设计程序的思考方法，以功能块为基本单位，一般有两个基本要求：</p>
 <table>
 <thead>
 <tr>
@@ -649,10 +645,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-09-06T14:04:04+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-09-24T11:44:25+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2021年9月6日</p>
+    <p>最后更新于 2021年9月24日</p>
   </a>
 </div>
 
