@@ -517,7 +517,7 @@
 <li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_10.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88.png"></li>
 </ul>
 <blockquote>
-<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>第三方库的获取和安装<br><br>脚本程序转变为可执行程序的第三方库:<br>PyInstaller库(必选)<br><br>第三方库: jieba库(必选)、wordcloud库（可选）</p>
+<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>第三方库的获取和安装<br><br>脚本程序转变为可执行程序的第三方库:PyInstaller库(必选)<br><br>第三方库: jieba库(必选)、wordcloud库（可选）</p>
 </blockquote>
 <h2 id="10-1-Python第三方库的获取与安装"><a href="#10-1-Python第三方库的获取与安装" class="headerlink" title="10.1 Python第三方库的获取与安装"></a>10.1 Python第三方库的获取与安装</h2><p>Python第三方库依照安装方式灵活性和难易程度有三个方法：<strong>pip工具安装</strong>、<strong>自定义安装</strong>和<strong>文件安装</strong>。</p>
 <h3 id="10-1-1-pip工具安装"><a href="#10-1-1-pip工具安装" class="headerlink" title="10.1.1 pip工具安装"></a>10.1.1 pip工具安装</h3><p>最常用且最高效的Python第三方库安装方式是采用pip工具安装。pip是Python官方提供并维护的在线第三方库安装工具。<br><br><code>pip install&lt;拟安装库名称&gt;</code></p>
@@ -526,12 +526,12 @@
 <p>pip常用指令,可以通过<code>pip help</code>查看：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\86159&gt;pip -h</span><br><span class="line"></span><br><span class="line">Usage:</span><br><span class="line">  pip &lt;command&gt; [options]</span><br><span class="line"></span><br><span class="line">Commands:</span><br><span class="line">  install                     Install packages.</span><br><span class="line">  download                    Download packages.</span><br><span class="line">  uninstall                   Uninstall packages.</span><br><span class="line">  freeze                      Output installed packages in requirements format.</span><br><span class="line">  list                        List installed packages.</span><br><span class="line">  show                        Show information about installed packages.</span><br><span class="line">  check                       Verify installed packages have compatible dependencies.</span><br><span class="line">  config                      Manage local and global configuration.</span><br><span class="line">  search                      Search PyPI for packages.</span><br><span class="line">  cache                       Inspect and manage pip&#x27;s wheel cache.</span><br><span class="line">  wheel                       Build wheels from your requirements.</span><br><span class="line">  hash                        Compute hashes of package archives.</span><br><span class="line">  completion                  A helper command used for command completion.</span><br><span class="line">  debug                       Show information useful for debugging.</span><br><span class="line">  help                        Show help for commands.</span><br></pre></td></tr></table></figure>
 
-<h3 id="10-1-2-自定义安装"><a href="#10-1-2-自定义安装" class="headerlink" title="10.1.2 自定义安装"></a>10.1.2 自定义安装</h3><p>自定义安装指按照第三方库提供的步骤和方式安装。第三方库都有主页用于维护库的代码和文档。以科学计算用的numpy为例，开发者维护的官方主页是：<a target="_blank" rel="noopener" href="http://www.numpy.org/">http://www.numpy.org/</a><br><br>浏览该网页找到下载链接，如下：<a target="_blank" rel="noopener" href="https://www.scipy.org/scipylib/download.html">https://www.scipy.org/scipylib/download.html</a><br><br>进而根据指示步骤安装。</p>
+<h3 id="10-1-2-自定义安装"><a href="#10-1-2-自定义安装" class="headerlink" title="10.1.2 自定义安装"></a>10.1.2 自定义安装</h3><p>自定义安装指按照第三方库提供的步骤和方式安装。第三方库都有主页用于维护库的代码和文档。以科学计算用的numpy为例，开发者维护的官方主页是：<a target="_blank" rel="noopener" href="http://www.numpy.org/">http://www.numpy.org/</a><br><br>浏览该网页找到下载链接，如下：<a target="_blank" rel="noopener" href="https://www.scipy.org/scipylib/download.html">https://www.scipy.org/scipylib/download.html</a><br><br>进入根据指示步骤安装。</p>
 <h3 id="10-1-3-文件安装"><a href="#10-1-3-文件安装" class="headerlink" title="10.1.3 文件安装"></a>10.1.3 文件安装</h3><p>为了解决这类第三方库安装问题，美国加州大学尔湾分校提供了一个页面，帮助Python用户获得Windows可直接安装的第三方库文件，链接地址如下：<a target="_blank" rel="noopener" href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">https://www.lfd.uci.edu/~gohlke/pythonlibs/</a><br><br>这里以scipy为例说明，首先在上述页面中找到scipy库对应的内容。选择其中的.whl文件下载，这里选择适用于Python 3.5版本解释器和32位系统的对应文件：scipy- 0 . 1 7 . 1 - cp3 5 - cp3 5m-win3 2 .whl，下载该文件到D:\pycodes目录。<br>然后，采用pip命令安装该文件。<br></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">:\&gt;pip install D:\pycodes\scipy-0.17.1-cp35-cp35m-win32.whl</span><br><span class="line">Processing d:\pycodes\scipy-0.17.1-cp35-cp35m-win32.whl</span><br><span class="line">Installing collected packages: scipy</span><br><span class="line">Successfully installed scipy-0.17.1</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>对于上述三种安装方式，一般优先选择采用pip工具安装，如果安装失败，则选择自定义安装或<br>者文件安装。另外，如果需要在没有网络条件下安装Python第三方库，请直接采用文件安装方<br>式。其中，.whl文件可以通过pip download指令在有网络条件的情况下获得。</p>
+<p>对于上述三种安装方式，一般优先选择采用pip工具安装，如果安装失败，则选择自定义安装或者文件安装。另外，如果需要在没有网络条件下安装Python第三方库，请直接采用文件安装方式。其中，.whl文件可以通过pip download指令在有网络条件的情况下获得。</p>
 </blockquote>
 <h2 id="10-2-pyinstaller库"><a href="#10-2-pyinstaller库" class="headerlink" title="10.2 pyinstaller库"></a>10.2 pyinstaller库</h2><h3 id="10-2-1-pyinstaller库概述"><a href="#10-2-1-pyinstaller库概述" class="headerlink" title="10.2.1 pyinstaller库概述"></a>10.2.1 pyinstaller库概述</h3><p>PyInstaller是一个十分有用的Python第三方库，它能够在Windows、Linux、Mac OS X等操作系统下将Python源文件打包，变成直接可运行的可执行文件。<br><br><br>通过对源文件打包，Python程序可以在没有安装Python的环境中运行，也可以作为一个独立文件方便传递和管理。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:\&gt;pip install PyInstaller</span><br></pre></td></tr></table></figure>
@@ -757,10 +757,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-09-08T12:48:15+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-09-25T09:45:59+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2021年9月8日</p>
+    <p>最后更新于 2021年9月25日</p>
   </a>
 </div>
 

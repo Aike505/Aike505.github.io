@@ -1,6 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>11.Python第三方库纵览</title>
+    <url>/2021/09/05/11-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88/</url>
+    <content><![CDATA[<p>Python第三方库纵览</p>
+<span id="more"></span>
+<h1 id="11-Python第三方库纵览"><a href="#11-Python第三方库纵览" class="headerlink" title="11.Python第三方库纵览"></a>11.Python第三方库纵览</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_11.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88.png"></li>
+</ul>
+<blockquote>
+<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>更广泛的Python计算生态，只要求了解第三方库的名称，不限于以下领域: 网络爬虫、数据分析、文本处理、数据可视化、用户图形界面、机器学习、Web开发、游戏开发等</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>方向</th>
+<th>第三方库</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>网络爬虫方向</td>
+<td>requests<br>scrapy</td>
+<td>requests库是一个简洁且简单的处理HTTP请求的第三方库，它的最大优点是程序编写过程更接近正常URL访问过程。<br>scrapy是Python开发的一个快速的、高层次的Web获取框架。</td>
+</tr>
+<tr>
+<td>数据分析方向</td>
+<td>numpy<br>scipy<br>pandas</td>
+<td>numpy是Python的一种开源数值计算扩展第三方库，用于处理数据类型相同的多维数组（ndarray），简称“数组”<br>scipy是一款方便、易于使用、专为科学和工程设计的Python工具包。<br>pandas是基于numpy扩展的一个重要第三方库，它是为了解决数据分析任务而创建的。</td>
+</tr>
+<tr>
+<td>文本处理方向</td>
+<td>pdfminer<br>openpyxl<br>python-docx<br>beautifulsoup4</td>
+<td>pdfminer是一个可以从PDF文档中提取各类信息的第三方库<br>openpyxl是一个处理Microsoft Excel文档Python第三方库<br>python-docx是一个处理Microsoft Word文档的Python第三方库<br>beautifulsoup4库，也称为Beautiful Soup库或bs4库，用于解析和处理HTML和XML</td>
+</tr>
+<tr>
+<td>数据可视化</td>
+<td>matplotlib<br>TVTK<br>mayavi</td>
+<td>matplotlib是提供数据绘图功能的第三方库，主要进行二维图表数据展示，广泛用于科学计算的数据可视化<br>TVTK库在标准的VTK库之上用Traits库进行封装的Python第三方库<br>mayavi基于VTK开发，完全用Python编写，提供了一个更为方便实用的可视化软件</td>
+</tr>
+<tr>
+<td>用户图形界面方向</td>
+<td>pyqt5<br>wxpython<br>pygtk</td>
+<td>Python语言当前最好的GUI第三方库，它可以在Windows、Linux和Mac OS X等操作系统上跨平台使用<br>wxPython是Python语言的一套优秀的GUI图形库，它是跨平台GUI库wxWidgets的Python封装<br>pygtk是基于GTK+的Python语言封装，它提供了各式的可视元素和功能，能够轻松创建具有图形用户界面的程序。</td>
+</tr>
+<tr>
+<td>机器学习方向</td>
+<td>Scikit-learn<br>TensorFlow<br>Theano</td>
+<td>Scikit-learn是一个简单且高效的数据挖掘和数据分析工具<br>TensorFlow是谷歌公司基于DistBelief进行研发的第二代人工智能学习系统，也是用来支撑著名的AlphaGo系统的后台框架<br>Theano为执行深度学习中大规模神经网络算法的运算而设计，擅长处理多维数组</td>
+</tr>
+<tr>
+<td>Web开发方向</td>
+<td>Django<br>Pyramid<br>lask</td>
+<td>Django是Python生态中最流行的开源Web应用框架<br>Pyramid是一个通用、开源的Python Web应用程序开发框架<br>Flask是轻量级Web应用框架，相比Django和Pyramid，它也被称为微框架</td>
+</tr>
+<tr>
+<td>游戏开发方向</td>
+<td>Pygame<br>Panda3D<br>cocos2d</td>
+<td>Pygame是在SDL库基础上进行封装的、面向游戏开发入门的Python第三方库，除了制作游戏外，还用于制作多媒体应用程序<br>Panda3D是一个开源、跨平台的3D渲染和游戏开发库,简答说，它是一个3D游戏引擎，由迪士尼和卡耐基梅隆大学娱乐技术中心共同进行开发<br>cocos2d是一个构建2D游戏和图形界面交互式应用的框架，它包括C++、JavaScript、Swift、Python等多个版本</td>
+</tr>
+</tbody></table>
+<p>Python语言有超过12万个第三方库，覆盖信息技术几乎所有领域。即使每个方向，也会有大量的专业人员开发多个第三方库来给出具体设计。除了本章所提到的方向外，这里再列出5个有趣且有用的Python第三方库，展示Python在工程实践方面强大的魅力。</p>
+<table>
+<thead>
+<tr>
+<th>更多第三方库</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PIL</td>
+<td>PIL库是Python语言在图像处理方面的重要第三方库，支持图像存储、显示和处理，它能够处理几乎所有图片格式，可以完成对图像的缩放、剪裁、叠加以及向图像添加线条、图像和文字等操作。</td>
+</tr>
+<tr>
+<td>SymPy</td>
+<td>SymPy是一个支持符号计算的Python第三方库，它是一个全功能的计算机代数系统。SymPy代码简洁、易于理解，支持符号计算、高精度计算、模式匹配、绘图、解方程、微积分、组合数学、离散数学、几何学、概率与统计、物理学等领域计算和应用。</td>
+</tr>
+<tr>
+<td>NLTK</td>
+<td>NLTK是一个非常重要的自然语言处理Python第三方库，它支持多种语言，尤其对中文支持良好。NLTK可以进行语料处理、文本统计、内容理解、情感分析等多种应用，具备非常可靠的应用价值。</td>
+</tr>
+<tr>
+<td>WeRoBot</td>
+<td>WeRoBot 是一个微信公众号开发框架，也称为的微信机器人框架。WeRoBot可以解析微信服务器发来的消息，并将消息转换成成Message或者Event类型。</td>
+</tr>
+<tr>
+<td>MyQR</td>
+<td>MyQR是一个能够产生基本二维码、艺术二维码和动态效果二维码的Python第三方库。图11.1给出了一些MyQR生成二维码的实例。</td>
+</tr>
+</tbody></table>
+<ul>
+<li>图11.1<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_11.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88_1.png"></li>
+</ul>
+<blockquote>
+<h2 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h2><p>本章通过8个具体方向30个Python功能库的简要介绍纵览Python语言计算生态的丰富性，希望读者能够从Python基础语法出发，看到更广阔的程序设计生态，进一步“理解和运用计算生态”，掌握符合信息时代需要的程序设计能力。<br><br>国家计算机等级考试不仅仅是一场考试，更是检验能力提升的手段，加油!<br><br><br>点击<a href="https://python123.io/student/series/1/">这里</a>获取所有章节pdf<br>点击<a href="https://python123.io/python/songtian/5ed87dc83b5ca9663fd4761d">这里</a>获取更多内容</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>1.程序设计基本方法</title>
     <url>/2021/09/04/1-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<p>程序设计基本方法</p>
@@ -38,7 +143,7 @@
 <li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_10.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88.png"></li>
 </ul>
 <blockquote>
-<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>第三方库的获取和安装<br><br>脚本程序转变为可执行程序的第三方库:<br>PyInstaller库(必选)<br><br>第三方库: jieba库(必选)、wordcloud库（可选）</p>
+<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>第三方库的获取和安装<br><br>脚本程序转变为可执行程序的第三方库:PyInstaller库(必选)<br><br>第三方库: jieba库(必选)、wordcloud库（可选）</p>
 </blockquote>
 <h2 id="10-1-Python第三方库的获取与安装"><a href="#10-1-Python第三方库的获取与安装" class="headerlink" title="10.1 Python第三方库的获取与安装"></a>10.1 Python第三方库的获取与安装</h2><p>Python第三方库依照安装方式灵活性和难易程度有三个方法：<strong>pip工具安装</strong>、<strong>自定义安装</strong>和<strong>文件安装</strong>。</p>
 <h3 id="10-1-1-pip工具安装"><a href="#10-1-1-pip工具安装" class="headerlink" title="10.1.1 pip工具安装"></a>10.1.1 pip工具安装</h3><p>最常用且最高效的Python第三方库安装方式是采用pip工具安装。pip是Python官方提供并维护的在线第三方库安装工具。<br><br><code>pip install&lt;拟安装库名称&gt;</code></p>
@@ -47,12 +152,12 @@
 <p>pip常用指令,可以通过<code>pip help</code>查看：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C:\Users\86159&gt;pip -h</span><br><span class="line"></span><br><span class="line">Usage:</span><br><span class="line">  pip &lt;command&gt; [options]</span><br><span class="line"></span><br><span class="line">Commands:</span><br><span class="line">  install                     Install packages.</span><br><span class="line">  download                    Download packages.</span><br><span class="line">  uninstall                   Uninstall packages.</span><br><span class="line">  freeze                      Output installed packages in requirements format.</span><br><span class="line">  list                        List installed packages.</span><br><span class="line">  show                        Show information about installed packages.</span><br><span class="line">  check                       Verify installed packages have compatible dependencies.</span><br><span class="line">  config                      Manage local and global configuration.</span><br><span class="line">  search                      Search PyPI for packages.</span><br><span class="line">  cache                       Inspect and manage pip&#x27;s wheel cache.</span><br><span class="line">  wheel                       Build wheels from your requirements.</span><br><span class="line">  hash                        Compute hashes of package archives.</span><br><span class="line">  completion                  A helper command used for command completion.</span><br><span class="line">  debug                       Show information useful for debugging.</span><br><span class="line">  help                        Show help for commands.</span><br></pre></td></tr></table></figure>
 
-<h3 id="10-1-2-自定义安装"><a href="#10-1-2-自定义安装" class="headerlink" title="10.1.2 自定义安装"></a>10.1.2 自定义安装</h3><p>自定义安装指按照第三方库提供的步骤和方式安装。第三方库都有主页用于维护库的代码和文档。以科学计算用的numpy为例，开发者维护的官方主页是：<a href="http://www.numpy.org/">http://www.numpy.org/</a><br><br>浏览该网页找到下载链接，如下：<a href="https://www.scipy.org/scipylib/download.html">https://www.scipy.org/scipylib/download.html</a><br><br>进而根据指示步骤安装。</p>
+<h3 id="10-1-2-自定义安装"><a href="#10-1-2-自定义安装" class="headerlink" title="10.1.2 自定义安装"></a>10.1.2 自定义安装</h3><p>自定义安装指按照第三方库提供的步骤和方式安装。第三方库都有主页用于维护库的代码和文档。以科学计算用的numpy为例，开发者维护的官方主页是：<a href="http://www.numpy.org/">http://www.numpy.org/</a><br><br>浏览该网页找到下载链接，如下：<a href="https://www.scipy.org/scipylib/download.html">https://www.scipy.org/scipylib/download.html</a><br><br>进入根据指示步骤安装。</p>
 <h3 id="10-1-3-文件安装"><a href="#10-1-3-文件安装" class="headerlink" title="10.1.3 文件安装"></a>10.1.3 文件安装</h3><p>为了解决这类第三方库安装问题，美国加州大学尔湾分校提供了一个页面，帮助Python用户获得Windows可直接安装的第三方库文件，链接地址如下：<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">https://www.lfd.uci.edu/~gohlke/pythonlibs/</a><br><br>这里以scipy为例说明，首先在上述页面中找到scipy库对应的内容。选择其中的.whl文件下载，这里选择适用于Python 3.5版本解释器和32位系统的对应文件：scipy- 0 . 1 7 . 1 - cp3 5 - cp3 5m-win3 2 .whl，下载该文件到D:\pycodes目录。<br>然后，采用pip命令安装该文件。<br></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install D:\pycodes\scipy-0.17.1-cp35-cp35m-win32.whl</span><br><span class="line">Processing d:\pycodes\scipy-0.17.1-cp35-cp35m-win32.whl</span><br><span class="line">Installing collected packages: scipy</span><br><span class="line">Successfully installed scipy-0.17.1</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>对于上述三种安装方式，一般优先选择采用pip工具安装，如果安装失败，则选择自定义安装或<br>者文件安装。另外，如果需要在没有网络条件下安装Python第三方库，请直接采用文件安装方<br>式。其中，.whl文件可以通过pip download指令在有网络条件的情况下获得。</p>
+<p>对于上述三种安装方式，一般优先选择采用pip工具安装，如果安装失败，则选择自定义安装或者文件安装。另外，如果需要在没有网络条件下安装Python第三方库，请直接采用文件安装方式。其中，.whl文件可以通过pip download指令在有网络条件的情况下获得。</p>
 </blockquote>
 <h2 id="10-2-pyinstaller库"><a href="#10-2-pyinstaller库" class="headerlink" title="10.2 pyinstaller库"></a>10.2 pyinstaller库</h2><h3 id="10-2-1-pyinstaller库概述"><a href="#10-2-1-pyinstaller库概述" class="headerlink" title="10.2.1 pyinstaller库概述"></a>10.2.1 pyinstaller库概述</h3><p>PyInstaller是一个十分有用的Python第三方库，它能够在Windows、Linux、Mac OS X等操作系统下将Python源文件打包，变成直接可运行的可执行文件。<br><br><br>通过对源文件打包，Python程序可以在没有安装Python的环境中运行，也可以作为一个独立文件方便传递和管理。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install PyInstaller</span><br></pre></td></tr></table></figure>
@@ -197,576 +302,6 @@
 </tr>
 </tbody></table>
 <h2 id="10-5-实例解析：《红楼梦》人物出场词"><a href="#10-5-实例解析：《红楼梦》人物出场词" class="headerlink" title="10.5 实例解析：《红楼梦》人物出场词"></a>10.5 实例解析：《红楼梦》人物出场词</h2>]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>11.Python第三方库纵览</title>
-    <url>/2021/09/05/11-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88/</url>
-    <content><![CDATA[<p>Python第三方库纵览</p>
-<span id="more"></span>
-<h1 id="11-Python第三方库纵览"><a href="#11-Python第三方库纵览" class="headerlink" title="11.Python第三方库纵览"></a>11.Python第三方库纵览</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_11.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88.png"></li>
-</ul>
-<blockquote>
-<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>更广泛的Python计算生态，只要求了解第三方库的名称，不限于以下领域: 网络爬虫、数据分析、文本处理、数据可视化、用户图形界面、机器学习、Web开发、游戏开发等</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>方向</th>
-<th>第三方库</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>网络爬虫方向</td>
-<td>requests<br>scrapy</td>
-<td>requests库是一个简洁且简单的处理HTTP请求的第三方库，它的最大优点是程序编写过程更接近正常URL访问过程。<br>scrapy是Python开发的一个快速的、高层次的Web获取框架。</td>
-</tr>
-<tr>
-<td>数据分析方向</td>
-<td>numpy<br>scipy<br>pandas</td>
-<td>numpy是Python的一种开源数值计算扩展第三方库，用于处理数据类型相同的多维数组（ndarray），简称“数组”<br>scipy是一款方便、易于使用、专为科学和工程设计的Python工具包。<br>pandas是基于numpy扩展的一个重要第三方库，它是为了解决数据分析任务而创建的。</td>
-</tr>
-<tr>
-<td>文本处理方向</td>
-<td>pdfminer<br>openpyxl<br>python-docx<br>beautifulsoup4</td>
-<td>pdfminer是一个可以从PDF文档中提取各类信息的第三方库<br>openpyxl是一个处理Microsoft Excel文档Python第三方库<br>python-docx是一个处理Microsoft Word文档的Python第三方库<br>beautifulsoup4库，也称为Beautiful Soup库或bs4库，用于解析和处理HTML和XML</td>
-</tr>
-<tr>
-<td>数据可视化</td>
-<td>matplotlib<br>TVTK<br>mayavi</td>
-<td>matplotlib是提供数据绘图功能的第三方库，主要进行二维图表数据展示，广泛用于科学计算的数据可视化<br>TVTK库在标准的VTK库之上用Traits库进行封装的Python第三方库<br>mayavi基于VTK开发，完全用Python编写，提供了一个更为方便实用的可视化软件</td>
-</tr>
-<tr>
-<td>用户图形界面方向</td>
-<td>pyqt5<br>wxpython<br>pygtk</td>
-<td>Python语言当前最好的GUI第三方库，它可以在Windows、Linux和Mac OS X等操作系统上跨平台使用<br>wxPython是Python语言的一套优秀的GUI图形库，它是跨平台GUI库wxWidgets的Python封装<br>pygtk是基于GTK+的Python语言封装，它提供了各式的可视元素和功能，能够轻松创建具有图形用户界面的程序。</td>
-</tr>
-<tr>
-<td>机器学习方向</td>
-<td>Scikit-learn<br>TensorFlow<br>Theano</td>
-<td>Scikit-learn是一个简单且高效的数据挖掘和数据分析工具<br>TensorFlow是谷歌公司基于DistBelief进行研发的第二代人工智能学习系统，也是用来支撑著名的AlphaGo系统的后台框架<br>Theano为执行深度学习中大规模神经网络算法的运算而设计，擅长处理多维数组</td>
-</tr>
-<tr>
-<td>Web开发方向</td>
-<td>Django<br>Pyramid<br>lask</td>
-<td>Django是Python生态中最流行的开源Web应用框架<br>Pyramid是一个通用、开源的Python Web应用程序开发框架<br>Flask是轻量级Web应用框架，相比Django和Pyramid，它也被称为微框架</td>
-</tr>
-<tr>
-<td>游戏开发方向</td>
-<td>Pygame<br>Panda3D<br>cocos2d</td>
-<td>Pygame是在SDL库基础上进行封装的、面向游戏开发入门的Python第三方库，除了制作游戏外，还用于制作多媒体应用程序<br>Panda3D是一个开源、跨平台的3D渲染和游戏开发库,简答说，它是一个3D游戏引擎，由迪士尼和卡耐基梅隆大学娱乐技术中心共同进行开发<br>cocos2d是一个构建2D游戏和图形界面交互式应用的框架，它包括C++、JavaScript、Swift、Python等多个版本</td>
-</tr>
-</tbody></table>
-<p>Python语言有超过12万个第三方库，覆盖信息技术几乎所有领域。即使每个方向，也会有大量的专业人员开发多个第三方库来给出具体设计。除了本章所提到的方向外，这里再列出5个有趣且有用的Python第三方库，展示Python在工程实践方面强大的魅力。</p>
-<table>
-<thead>
-<tr>
-<th>更多第三方库</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>PIL</td>
-<td>PIL库是Python语言在图像处理方面的重要第三方库，支持图像存储、显示和处理，它能够处理几乎所有图片格式，可以完成对图像的缩放、剪裁、叠加以及向图像添加线条、图像和文字等操作。</td>
-</tr>
-<tr>
-<td>SymPy</td>
-<td>SymPy是一个支持符号计算的Python第三方库，它是一个全功能的计算机代数系统。SymPy代码简洁、易于理解，支持符号计算、高精度计算、模式匹配、绘图、解方程、微积分、组合数学、离散数学、几何学、概率与统计、物理学等领域计算和应用。</td>
-</tr>
-<tr>
-<td>NLTK</td>
-<td>NLTK是一个非常重要的自然语言处理Python第三方库，它支持多种语言，尤其对中文支持良好。NLTK可以进行语料处理、文本统计、内容理解、情感分析等多种应用，具备非常可靠的应用价值。</td>
-</tr>
-<tr>
-<td>WeRoBot</td>
-<td>WeRoBot 是一个微信公众号开发框架，也称为的微信机器人框架。WeRoBot可以解析微信服务器发来的消息，并将消息转换成成Message或者Event类型。</td>
-</tr>
-<tr>
-<td>MyQR</td>
-<td>MyQR是一个能够产生基本二维码、艺术二维码和动态效果二维码的Python第三方库。图11.1给出了一些MyQR生成二维码的实例。</td>
-</tr>
-</tbody></table>
-<ul>
-<li>图11.1<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_11.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88_1.png"></li>
-</ul>
-<blockquote>
-<h2 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h2><p>本章通过8个具体方向30个Python功能库的简要介绍纵览Python语言计算生态的丰富性，希望读者能够从Python基础语法出发，看到更广阔的程序设计生态，进一步“理解和运用计算生态”，掌握符合信息时代需要的程序设计能力。<br><br>国家计算机等级考试不仅仅是一场考试，更是检验能力提升的手段，加油!<br><br><br>点击<a href="https://python123.io/student/series/1/">这里</a>获取所有章节pdf<br>点击<a href="https://python123.io/python/songtian/5ed87dc83b5ca9663fd4761d">这里</a>获取更多内容</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2.Python语言基本语法元素</title>
-    <url>/2021/09/04/2-Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0/</url>
-    <content><![CDATA[<p>Python语言基本语法元素</p>
-<span id="more"></span>
-<h1 id="2-Python语言基本语法元素"><a href="#2-Python语言基本语法元素" class="headerlink" title="2.Python语言基本语法元素"></a>2.Python语言基本语法元素</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_2.Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0.png"><blockquote>
-<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>程序的基本语法元素：程序的格式框架、缩进、注释、变量、命名、保留字、数据类型、赋值语句、引用<br><br><br>基本输入输出函数：input()、eval()、print()<br><br><br>源程序的书写风格</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="2-1程序的格式"><a href="#2-1程序的格式" class="headerlink" title="2.1程序的格式"></a>2.1程序的格式</h2><h3 id="2-1-1缩进"><a href="#2-1-1缩进" class="headerlink" title="2.1.1缩进"></a>2.1.1缩进</h3><ul>
-<li>Python语言采用严格的“缩进”来表明程序的格式框架。缩进指每一行代码开始前的空白区域，用来表示代码之间的包含和层次关系</li>
-<li>1个缩进 = 4个空格</li>
-<li>缩进是Python语言中表明程序框架的唯一手段<h3 id="2-1-2注释"><a href="#2-1-2注释" class="headerlink" title="2.1.2注释"></a>2.1.2注释</h3></li>
-<li>注释是代码中的辅助性文字，会被编译或解释器略去，不被计算机执行，一般用于程序员对代码的说明。Python语言采用#表示一行注释的开始，<br>多行注释用’’’或”””将内容前后包含<h3 id="2-1-3续行符"><a href="#2-1-3续行符" class="headerlink" title="2.1.3续行符"></a>2.1.3续行符</h3></li>
-<li>Python程序是逐行编写的，每行代码长度并无限制，但从程序员角度，单行代码太长并不利于阅读，因此，Python提供“续行符”将代码分割为多行表达。续行符由反斜杠()符号表达。</li>
-</ul>
-<h2 id="2-2语法元素的名称"><a href="#2-2语法元素的名称" class="headerlink" title="2.2语法元素的名称"></a>2.2语法元素的名称</h2><h3 id="2-2-1变量"><a href="#2-2-1变量" class="headerlink" title="2.2.1变量"></a>2.2.1变量</h3><ul>
-<li>变量是保存和表示数据值的一种语法元素，在程序中十分常见。顾名思义，变量的值是可以改变的，能够通过赋值（使用等号=表达）方式被修改，例如：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;a = 99</span><br><span class="line">&gt;&gt;&gt;a = a + 1</span><br><span class="line">&gt;&gt;&gt;print(a)</span><br><span class="line">100</span><br></pre></td></tr></table></figure>
-<h3 id="2-2-2命名"><a href="#2-2-2命名" class="headerlink" title="2.2.2命名"></a>2.2.2命名</h3></li>
-<li>Python语言允许采用大写字母、小写字母、数字、下划线(_)和汉字等字符及其组合给变量命名，但名字的首字符不能是数字，中间不能出现空格，长度没有限制</li>
-<li>注意：<strong>标识符对大小写敏感</strong>，python和Python是两个不同的名字<h3 id="2-2-3保留字"><a href="#2-2-3保留字" class="headerlink" title="2.2.3保留字"></a>2.2.3保留字</h3></li>
-<li>保留字，也称为关键字，指被编程语言内部定义并保留使用的标识符。</li>
-<li>程序员编写程序不能定义与保留字相同的标识符。</li>
-<li>每种程序设计语言都有一套保留字，保留字一般用来构成程序整体框架、表达关键值和具有结构性的复杂语义等。</li>
-<li>掌握一门编程语言首先要熟记其所对应的保留字。</li>
-<li> Python 3.x保留字列表 (33个)</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>and</td>
-<td>elif</td>
-<td>import</td>
-<td>raise</td>
-</tr>
-<tr>
-<td>as</td>
-<td>else</td>
-<td>in</td>
-<td>return</td>
-</tr>
-<tr>
-<td>assert</td>
-<td>except</td>
-<td>is</td>
-<td>try</td>
-</tr>
-<tr>
-<td>break</td>
-<td>finally</td>
-<td>lambda</td>
-<td>while</td>
-</tr>
-<tr>
-<td>class</td>
-<td>for</td>
-<td>nonlocal</td>
-<td>with</td>
-</tr>
-<tr>
-<td>continue</td>
-<td>from</td>
-<td>not</td>
-<td>yield</td>
-</tr>
-<tr>
-<td>def</td>
-<td>global</td>
-<td>or</td>
-<td>True</td>
-</tr>
-<tr>
-<td>del</td>
-<td>if</td>
-<td>pass</td>
-<td>False</td>
-</tr>
-<tr>
-<td>None</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<h3 id="2-2-4数据类型"><a href="#2-2-4数据类型" class="headerlink" title="2.2.4数据类型"></a>2.2.4数据类型</h3><ul>
-<li>Python语言支持多种数据类型，最简单的包括数字类型、字符串类型，略微复杂的包括元组类型、集合类型、列表类型、字典类型等。<blockquote>
-<p>数据类型各种编程语言大同小异，文章后面章节也会详细介绍，这里就不再赘述。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="2-3程序的语句元素"><a href="#2-3程序的语句元素" class="headerlink" title="2.3程序的语句元素"></a>2.3程序的语句元素</h2><h3 id="2-3-1表达式"><a href="#2-3-1表达式" class="headerlink" title="2.3.1表达式"></a>2.3.1表达式</h3><ul>
-<li>产生或计算新数据值的代码片段称为表达式。表达式类似数学中的计算公式，以表达单一功能为目的，运算后产生运算结果，运算结果的类型由操作符或运算符决定。</li>
-<li>表达式一般由数据和操作符等构成，这是构成Python语句的重要部分。<h3 id="2-3-2赋值语句"><a href="#2-3-2赋值语句" class="headerlink" title="2.3.2赋值语句"></a>2.3.2赋值语句</h3></li>
-<li>Python语言中，= 表示“赋值”，即将等号右侧的值计算后将结果值赋给左侧变量，包含等号（=）的语句称为“赋值语句”<br><br><code>&lt;变量&gt; = &lt;表达式&gt;</code></li>
-<li>同步赋值语句：同时给多个变量赋值<br><br><code>&lt;变量1&gt;, …, &lt;变量N&gt; = &lt;表达式1&gt;, …, &lt;表达式N&gt;</code><h3 id="2-3-3引用"><a href="#2-3-3引用" class="headerlink" title="2.3.3引用"></a>2.3.3引用</h3></li>
-<li>Python程序会经常使用当前程序之外已有的功能代码，这个过程叫“引用”。Python语言使用import保留字引用当前程序以外的功能库，使用方式如下：<br><br><code>import &lt;功能库名称&gt;</code></li>
-<li>引用功能库之后，采用<code>&lt;功能库名称&gt;.&lt;函数名称&gt;()</code>方式调用具体功能<h3 id="2-3-4其他语句"><a href="#2-3-4其他语句" class="headerlink" title="2.3.4其他语句"></a>2.3.4其他语句</h3></li>
-<li>除了赋值语句外，Python程序还包括一些其他的语句类型，例如，分支语句和循环语句等。更多的分支和循环内容将在第4章介绍。这里不再赘述。<h2 id="2-4基本输入输出函数"><a href="#2-4基本输入输出函数" class="headerlink" title="2.4基本输入输出函数"></a>2.4基本输入输出函数</h2></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>函数</th>
-<th>语法</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>input</td>
-<td>&lt;变量&gt; = input(&lt;提示性文字&gt;</td>
-<td>获得用户输入之前，input()函数可以包含一些提示性文字</td>
-</tr>
-<tr>
-<td>eval</td>
-<td>eval(&lt;字符串&gt;)</td>
-<td>eval(&lt;字符串&gt;)函数是Python语言中一个十分重要的函数，它能够以Python表达式的方式解析并执行字符串，将返回结果输出</td>
-</tr>
-<tr>
-<td>print()</td>
-<td>1.print(&lt;待输出字符串&gt;)<br>2.print(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;)<br>3.print(&lt;输出字符串模板&gt;.format(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;))<br>4.print(&lt;待输出内容&gt;, end=”&lt;增加的输出结尾&gt;”)</td>
-<td>1.仅用于输出字符串<br>2.仅用于输出一个或多个变量<br>3.用于混合输出字符串与变量值<br>4.对print()函数的end参数进行赋值</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>3.Python基本数据类型</title>
-    <url>/2021/09/04/3-Python%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB/</url>
-    <content><![CDATA[<p>Python基本数据类型</p>
-<span id="more"></span>
-<h1 id="3-Python-基本数据类型"><a href="#3-Python-基本数据类型" class="headerlink" title="3.Python 基本数据类型"></a>3.Python 基本数据类型</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_3.%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png"><h2 id="数字类型"><a href="#数字类型" class="headerlink" title="数字类型"></a>数字类型</h2><h3 id="3-1-1整数类型"><a href="#3-1-1整数类型" class="headerlink" title="3.1.1整数类型"></a>3.1.1整数类型</h3>整数(int)的4种进制的表示：</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>进制种类</th>
-<th>引导符号</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>十进制</td>
-<td>无</td>
-<td>默认情况，例：1010，-1010</td>
-</tr>
-<tr>
-<td>二进制</td>
-<td>ob或oB</td>
-<td>由数字0和1组成，例：0b1010,0B1010</td>
-</tr>
-<tr>
-<td>八进制</td>
-<td>0o或0O</td>
-<td>由数字0到7组成，例：0o1010,0O1010</td>
-</tr>
-<tr>
-<td>十六进制</td>
-<td>0x或0X</td>
-<td>由字符0到9，a到f或A到F组成，例：0x1010,0X1010</td>
-</tr>
-</tbody></table>
-<h3 id="3-1-2浮点类型"><a href="#3-1-2浮点类型" class="headerlink" title="3.1.2浮点类型"></a>3.1.2浮点类型</h3><table>
-<thead>
-<tr>
-<th>类型</th>
-<th>样式</th>
-<th>例子</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>科学计数法</td>
-<td><code>&lt;a&gt;e&lt;b&gt;</code>=a×10<sup>b</sup></td>
-<td>1.23e4=12300</td>
-</tr>
-<tr>
-<td>小数类型</td>
-<td>整数.小数</td>
-<td>0.3</td>
-</tr>
-</tbody></table>
-<h3 id="3-1-3复数类型"><a href="#3-1-3复数类型" class="headerlink" title="3.1.3复数类型"></a>3.1.3复数类型</h3><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>z.real</td>
-<td>取实部</td>
-</tr>
-<tr>
-<td>z.iamg</td>
-<td>取虚部</td>
-</tr>
-</tbody></table>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; z = 1.23e4+4.56e4j</span><br><span class="line">&gt;&gt;&gt; z.real</span><br><span class="line">12300.0</span><br><span class="line">&gt;&gt;&gt; z.imag</span><br><span class="line">45600.0</span><br><span class="line">&gt;&gt;&gt;1.23e4+5.67e4j.imag # 先获得5.67e4j的虚部，再与1.23e4进行求和计算</span><br><span class="line">69000.0</span><br></pre></td></tr></table></figure>
-<h2 id="3-2数字类型的运算"><a href="#3-2数字类型的运算" class="headerlink" title="3.2数字类型的运算"></a>3.2数字类型的运算</h2><h3 id="3-2-1数值运算操作符"><a href="#3-2-1数值运算操作符" class="headerlink" title="3.2.1数值运算操作符"></a>3.2.1数值运算操作符</h3><p>Python提供了9个运算操作符，如表所示：</p>
-<table>
-<thead>
-<tr>
-<th>操作符及运算</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>x+y</td>
-<td>x与y的和</td>
-</tr>
-<tr>
-<td>x-y</td>
-<td>x与y的差</td>
-</tr>
-<tr>
-<td>x*y</td>
-<td>x与y的积</td>
-</tr>
-<tr>
-<td>x/y</td>
-<td>x与y的商，产生结果为浮点数</td>
-</tr>
-<tr>
-<td>x//y</td>
-<td>x与y的整数商，即：不大于x与y之商的最大整数</td>
-</tr>
-<tr>
-<td>x%y</td>
-<td>x与y之商的余数，也称为模运算</td>
-</tr>
-<tr>
-<td>-x</td>
-<td>x的负值，即：x*(-1)</td>
-</tr>
-<tr>
-<td>+x</td>
-<td>x本身</td>
-</tr>
-<tr>
-<td>x**y</td>
-<td>x的y次幂，即：x<sup>y</sup></td>
-</tr>
-</tbody></table>
-<p><strong>增强赋值操作符</strong>：+=、-=、*=、/=、//=、%=、**=，用op表示二元运算操作符，增强操作符用法如下：<code>x op= y</code>等价与<code>x = x op y</code></p>
-<h3 id="3-2-2数值运算函数"><a href="#3-2-2数值运算函数" class="headerlink" title="3.2.2数值运算函数"></a>3.2.2数值运算函数</h3><p>内置的数值运算函数：</p>
-<table>
-<thead>
-<tr>
-<th>函数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>abs(x)</td>
-<td>x的绝对值</td>
-</tr>
-<tr>
-<td>divmod(x, y)</td>
-<td>(x//y, x%y)，输出为二元组形式（也称为元组类型）</td>
-</tr>
-<tr>
-<td>pow(x,y)或pow(x,y,z)</td>
-<td><code>(x**y)%z，[..]表示该参数可以省略，即：pow(x,y)，它与x**y相同</code></td>
-</tr>
-<tr>
-<td>round(x)或round(x,d)</td>
-<td>对x四舍五入，保留ndigits位小数。round(x)返回四舍五入的整数值</td>
-</tr>
-<tr>
-<td>max(x1, x2, …, xn)</td>
-<td>x1, x2, …, xn的最大值，n没有限定</td>
-</tr>
-<tr>
-<td>min(x1, x2, …, xn)</td>
-<td>x1, x2, …, xn的最小值，n没有限定</td>
-</tr>
-</tbody></table>
-<h2 id="3-3字符串类型及格式化"><a href="#3-3字符串类型及格式化" class="headerlink" title="3.3字符串类型及格式化"></a>3.3字符串类型及格式化</h2><h3 id="3-3-1字符串的索引"><a href="#3-3-1字符串的索引" class="headerlink" title="3.3.1字符串的索引"></a>3.3.1字符串的索引</h3><p>&lt;字符串或字符串变量&gt;[序号]</p>
-<h3 id="3-3-2字符串的切片"><a href="#3-3-2字符串的切片" class="headerlink" title="3.3.2字符串的切片"></a>3.3.2字符串的切片</h3><p>&lt;字符串或字符串变量&gt;[N: M]</p>
-<h3 id="3-3-3format-的方法的基本使用"><a href="#3-3-3format-的方法的基本使用" class="headerlink" title="3.3.3format()的方法的基本使用"></a>3.3.3format()的方法的基本使用</h3><p>&lt;模板字符串&gt;.format(&lt;逗号分隔的参数&gt;)</p>
-<h3 id="3-3-4format-的方法的格式控制"><a href="#3-3-4format-的方法的格式控制" class="headerlink" title="3.3.4format()的方法的格式控制"></a>3.3.4format()的方法的格式控制</h3><p>{&lt;参数序号&gt;: &lt;格式控制标记&gt;} </p>
-<table>
-<thead>
-<tr>
-<th>:</th>
-<th>&lt;填充&gt;</th>
-<th>&lt;对齐&gt;</th>
-<th>&lt;宽度&gt;</th>
-<th>&lt;,&gt;</th>
-<th>&lt;.精度&gt;</th>
-<th>&lt;类型&gt;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>引导符号</td>
-<td>用于填充的单个字符</td>
-<td>&lt;左对齐<br>&gt;右对齐<br>^中间对齐</td>
-<td>槽的设定输出宽度</td>
-<td>数字的千位分隔符<br>适用于整数和浮点数</td>
-<td>浮点数小数部分的精度<br>或<br>字符串的最大输出长度</td>
-<td>整数类型b,c,d,o,x,X&lt;<br>浮点数类型e,E,f,%</td>
-</tr>
-</tbody></table>
-<p>格式控制标记包括：&lt;填充&gt;&lt;对齐&gt;&lt;宽度&gt;,&lt;.精度&gt;&lt;类型&gt;6个<br>字段，这些字段都是可选的，可以组合使用</p>
-<ul>
-<li>&lt;填充&gt;、&lt;对齐&gt;和&lt;宽度&gt;主要用于对显示格式的规范。</li>
-<li>&lt;.精度&gt;&lt;类型&gt;主要用于对数值本身的规范</li>
-<li>对于整数类型，输出格式包括6种：<br><br>• b: 输出整数的二进制方式；<br><br>• c: 输出整数对应的Unicode字符；<br><br>• d: 输出整数的十进制方式；<br><br>• o: 输出整数的八进制方式；<br><br>• x: 输出整数的小写十六进制方式；<br><br>• X: 输出整数的大写十六进制方式；<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;&quot;&#123;0:b&#125;,&#123;0:c&#125;,&#123;0:d&#125;,&#123;0:o&#125;,&#123;0:x&#125;,&#123;0:X&#125;&quot;.format(425)</span><br><span class="line">&#x27;110101001,Ʃ,425,651,1a9,1A9&#x27;</span><br></pre></td></tr></table></figure>
-<h2 id="3-4字符串类型的操作"><a href="#3-4字符串类型的操作" class="headerlink" title="3.4字符串类型的操作"></a>3.4字符串类型的操作</h2><h3 id="3-4-1字符串操作符"><a href="#3-4-1字符串操作符" class="headerlink" title="3.4.1字符串操作符"></a>3.4.1字符串操作符</h3>基本的字符串操作符：</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>操作符</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>x + y</td>
-<td>连接两个字符串x与y</td>
-</tr>
-<tr>
-<td>x * n 或 n * x</td>
-<td>复制n次字符串x</td>
-</tr>
-<tr>
-<td>x in s</td>
-<td>如果x是s的子串，返回True，否则返回False</td>
-</tr>
-</tbody></table>
-<h3 id="3-4-2字符串处理函数"><a href="#3-4-2字符串处理函数" class="headerlink" title="3.4.2字符串处理函数"></a>3.4.2字符串处理函数</h3><p>字符串处理函数：</p>
-<table>
-<thead>
-<tr>
-<th>函数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>len(x)</td>
-<td>返回字符串x的长度，也可返回其他组合数据类型的元素个数</td>
-</tr>
-<tr>
-<td>str(x)</td>
-<td>返回任意类型x所对应的字符串形式</td>
-</tr>
-<tr>
-<td>chr(x)</td>
-<td>返回Unicode编码x对应的单字符</td>
-</tr>
-<tr>
-<td>ord(x)</td>
-<td>返回单字符x表示的Unicode编码</td>
-</tr>
-<tr>
-<td>hex(x)</td>
-<td>返回整数x对应十六进制数的小写形式字符串</td>
-</tr>
-<tr>
-<td>oct(x)</td>
-<td>返回整数x对应八进制数的小写形式字符串</td>
-</tr>
-</tbody></table>
-<h3 id="3-4-3字符串处理方法"><a href="#3-4-3字符串处理方法" class="headerlink" title="3.4.3字符串处理方法"></a>3.4.3字符串处理方法</h3><p>常用的字符串处理方法</p>
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>str.lower()</td>
-<td>返回字符串str的副本，全部字符小写</td>
-</tr>
-<tr>
-<td>str.upper()</td>
-<td>返回字符串str的副本，全部字符大写</td>
-</tr>
-<tr>
-<td>str.split(sep=None)</td>
-<td>返回一个列表，由str根据sep被分割的部分构成</td>
-</tr>
-<tr>
-<td>str.count(sub)</td>
-<td>返回sub子串出现的次数</td>
-</tr>
-<tr>
-<td>str.replace(old, new)</td>
-<td>返回字符串str的副本，所有old子串被替换为new</td>
-</tr>
-<tr>
-<td>str.center(width, fillchar)</td>
-<td>字符串居中函数，fillchar参数可选</td>
-</tr>
-<tr>
-<td>str.strip(chars)</td>
-<td>从字符串str中去掉在其左侧和右侧chars中列出的字符</td>
-</tr>
-<tr>
-<td>str.join(iter)</td>
-<td>将iter变量的每一个元素后增加一个str字符串</td>
-</tr>
-</tbody></table>
-<h2 id="3-5类型判断和类型转换"><a href="#3-5类型判断和类型转换" class="headerlink" title="3.5类型判断和类型转换"></a>3.5类型判断和类型转换</h2><p>类型判断函数</p>
-<table>
-<thead>
-<tr>
-<th>函数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>type(x)</td>
-<td>函数对变量x进行类型判断，适用于任何数据类型。</td>
-</tr>
-</tbody></table>
-<p>类型转换函数</p>
-<table>
-<thead>
-<tr>
-<th>函数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>int(x)</td>
-<td>将x转换为整数，x可以是浮点数或字符串</td>
-</tr>
-<tr>
-<td>float(x)</td>
-<td>将x转换为浮点数，x可以是整数或字符串</td>
-</tr>
-<tr>
-<td>str(x)</td>
-<td>将x转换为字符串，x可以是整数或浮点数</td>
-</tr>
-</tbody></table>
-<h2 id="3-6实例解析——凯撒密码"><a href="#3-6实例解析——凯撒密码" class="headerlink" title="3.6实例解析——凯撒密码"></a>3.6实例解析——凯撒密码</h2>]]></content>
       <categories>
         <category>Python</category>
         <category>二级</category>
@@ -1139,19 +674,343 @@
       </tags>
   </entry>
   <entry>
-    <title>日常记录</title>
-    <url>/2021/08/16/8-16/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200">
+    <title>8-18</title>
+    <url>/2021/08/18/8-18/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
 <span id="more"></span>
-> 一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以**平凡**的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处>~<
-
-<p> <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210814.jpg"></p>
+>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
 ]]></content>
       <categories>
         <category>日常记录</category>
       </categories>
       <tags>
         <tag>生活片段</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>3.Python基本数据类型</title>
+    <url>/2021/09/04/3-Python%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB/</url>
+    <content><![CDATA[<p>Python基本数据类型</p>
+<span id="more"></span>
+<h1 id="3-Python-基本数据类型"><a href="#3-Python-基本数据类型" class="headerlink" title="3.Python 基本数据类型"></a>3.Python 基本数据类型</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_3.%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png"><h2 id="数字类型"><a href="#数字类型" class="headerlink" title="数字类型"></a>数字类型</h2><h3 id="3-1-1整数类型"><a href="#3-1-1整数类型" class="headerlink" title="3.1.1整数类型"></a>3.1.1整数类型</h3>整数(int)的4种进制的表示：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>进制种类</th>
+<th>引导符号</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>十进制</td>
+<td>无</td>
+<td>默认情况，例：1010，-1010</td>
+</tr>
+<tr>
+<td>二进制</td>
+<td>ob或oB</td>
+<td>由数字0和1组成，例：0b1010,0B1010</td>
+</tr>
+<tr>
+<td>八进制</td>
+<td>0o或0O</td>
+<td>由数字0到7组成，例：0o1010,0O1010</td>
+</tr>
+<tr>
+<td>十六进制</td>
+<td>0x或0X</td>
+<td>由字符0到9，a到f或A到F组成，例：0x1010,0X1010</td>
+</tr>
+</tbody></table>
+<h3 id="3-1-2浮点类型"><a href="#3-1-2浮点类型" class="headerlink" title="3.1.2浮点类型"></a>3.1.2浮点类型</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>样式</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>科学计数法</td>
+<td><code>&lt;a&gt;e&lt;b&gt;</code>=a×10<sup>b</sup></td>
+<td>1.23e4=12300</td>
+</tr>
+<tr>
+<td>小数类型</td>
+<td>整数.小数</td>
+<td>0.3</td>
+</tr>
+</tbody></table>
+<h3 id="3-1-3复数类型"><a href="#3-1-3复数类型" class="headerlink" title="3.1.3复数类型"></a>3.1.3复数类型</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>z.real</td>
+<td>取实部</td>
+</tr>
+<tr>
+<td>z.iamg</td>
+<td>取虚部</td>
+</tr>
+</tbody></table>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; z = 1.23e4+4.56e4j</span><br><span class="line">&gt;&gt;&gt; z.real</span><br><span class="line">12300.0</span><br><span class="line">&gt;&gt;&gt; z.imag</span><br><span class="line">45600.0</span><br><span class="line">&gt;&gt;&gt;1.23e4+5.67e4j.imag # 先获得5.67e4j的虚部，再与1.23e4进行求和计算</span><br><span class="line">69000.0</span><br></pre></td></tr></table></figure>
+<h2 id="3-2数字类型的运算"><a href="#3-2数字类型的运算" class="headerlink" title="3.2数字类型的运算"></a>3.2数字类型的运算</h2><h3 id="3-2-1数值运算操作符"><a href="#3-2-1数值运算操作符" class="headerlink" title="3.2.1数值运算操作符"></a>3.2.1数值运算操作符</h3><p>Python提供了9个运算操作符，如表所示：</p>
+<table>
+<thead>
+<tr>
+<th>操作符及运算</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>x+y</td>
+<td>x与y的和</td>
+</tr>
+<tr>
+<td>x-y</td>
+<td>x与y的差</td>
+</tr>
+<tr>
+<td>x*y</td>
+<td>x与y的积</td>
+</tr>
+<tr>
+<td>x/y</td>
+<td>x与y的商，产生结果为浮点数</td>
+</tr>
+<tr>
+<td>x//y</td>
+<td>x与y的整数商，即：不大于x与y之商的最大整数</td>
+</tr>
+<tr>
+<td>x%y</td>
+<td>x与y之商的余数，也称为模运算</td>
+</tr>
+<tr>
+<td>-x</td>
+<td>x的负值，即：x*(-1)</td>
+</tr>
+<tr>
+<td>+x</td>
+<td>x本身</td>
+</tr>
+<tr>
+<td>x**y</td>
+<td>x的y次幂，即：x<sup>y</sup></td>
+</tr>
+</tbody></table>
+<p><strong>增强赋值操作符</strong>：+=、-=、*=、/=、//=、%=、**=，用op表示二元运算操作符，增强操作符用法如下：<code>x op= y</code>等价与<code>x = x op y</code></p>
+<h3 id="3-2-2数值运算函数"><a href="#3-2-2数值运算函数" class="headerlink" title="3.2.2数值运算函数"></a>3.2.2数值运算函数</h3><p>内置的数值运算函数：</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>abs(x)</td>
+<td>x的绝对值</td>
+</tr>
+<tr>
+<td>divmod(x, y)</td>
+<td>(x//y, x%y)，输出为二元组形式（也称为元组类型）</td>
+</tr>
+<tr>
+<td>pow(x,y)或pow(x,y,z)</td>
+<td><code>(x**y)%z，[..]表示该参数可以省略，即：pow(x,y)，它与x**y相同</code></td>
+</tr>
+<tr>
+<td>round(x)或round(x,d)</td>
+<td>对x四舍五入，保留ndigits位小数。round(x)返回四舍五入的整数值</td>
+</tr>
+<tr>
+<td>max(x1, x2, …, xn)</td>
+<td>x1, x2, …, xn的最大值，n没有限定</td>
+</tr>
+<tr>
+<td>min(x1, x2, …, xn)</td>
+<td>x1, x2, …, xn的最小值，n没有限定</td>
+</tr>
+</tbody></table>
+<h2 id="3-3字符串类型及格式化"><a href="#3-3字符串类型及格式化" class="headerlink" title="3.3字符串类型及格式化"></a>3.3字符串类型及格式化</h2><h3 id="3-3-1字符串的索引"><a href="#3-3-1字符串的索引" class="headerlink" title="3.3.1字符串的索引"></a>3.3.1字符串的索引</h3><p>&lt;字符串或字符串变量&gt;[序号]</p>
+<h3 id="3-3-2字符串的切片"><a href="#3-3-2字符串的切片" class="headerlink" title="3.3.2字符串的切片"></a>3.3.2字符串的切片</h3><p>&lt;字符串或字符串变量&gt;[N: M]</p>
+<h3 id="3-3-3format-的方法的基本使用"><a href="#3-3-3format-的方法的基本使用" class="headerlink" title="3.3.3format()的方法的基本使用"></a>3.3.3format()的方法的基本使用</h3><p>&lt;模板字符串&gt;.format(&lt;逗号分隔的参数&gt;)</p>
+<h3 id="3-3-4format-的方法的格式控制"><a href="#3-3-4format-的方法的格式控制" class="headerlink" title="3.3.4format()的方法的格式控制"></a>3.3.4format()的方法的格式控制</h3><p>{&lt;参数序号&gt;: &lt;格式控制标记&gt;} </p>
+<table>
+<thead>
+<tr>
+<th>:</th>
+<th>&lt;填充&gt;</th>
+<th>&lt;对齐&gt;</th>
+<th>&lt;宽度&gt;</th>
+<th>&lt;,&gt;</th>
+<th>&lt;.精度&gt;</th>
+<th>&lt;类型&gt;</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>引导符号</td>
+<td>用于填充的单个字符</td>
+<td>&lt;左对齐<br>&gt;右对齐<br>^中间对齐</td>
+<td>槽的设定输出宽度</td>
+<td>数字的千位分隔符<br>适用于整数和浮点数</td>
+<td>浮点数小数部分的精度<br>或<br>字符串的最大输出长度</td>
+<td>整数类型b,c,d,o,x,X&lt;<br>浮点数类型e,E,f,%</td>
+</tr>
+</tbody></table>
+<p>格式控制标记包括：&lt;填充&gt;&lt;对齐&gt;&lt;宽度&gt;,&lt;.精度&gt;&lt;类型&gt;6个<br>字段，这些字段都是可选的，可以组合使用</p>
+<ul>
+<li>&lt;填充&gt;、&lt;对齐&gt;和&lt;宽度&gt;主要用于对显示格式的规范。</li>
+<li>&lt;.精度&gt;&lt;类型&gt;主要用于对数值本身的规范</li>
+<li>对于整数类型，输出格式包括6种：<br><br>• b: 输出整数的二进制方式；<br><br>• c: 输出整数对应的Unicode字符；<br><br>• d: 输出整数的十进制方式；<br><br>• o: 输出整数的八进制方式；<br><br>• x: 输出整数的小写十六进制方式；<br><br>• X: 输出整数的大写十六进制方式；<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;&quot;&#123;0:b&#125;,&#123;0:c&#125;,&#123;0:d&#125;,&#123;0:o&#125;,&#123;0:x&#125;,&#123;0:X&#125;&quot;.format(425)</span><br><span class="line">&#x27;110101001,Ʃ,425,651,1a9,1A9&#x27;</span><br></pre></td></tr></table></figure>
+<h2 id="3-4字符串类型的操作"><a href="#3-4字符串类型的操作" class="headerlink" title="3.4字符串类型的操作"></a>3.4字符串类型的操作</h2><h3 id="3-4-1字符串操作符"><a href="#3-4-1字符串操作符" class="headerlink" title="3.4.1字符串操作符"></a>3.4.1字符串操作符</h3>基本的字符串操作符：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>操作符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>x + y</td>
+<td>连接两个字符串x与y</td>
+</tr>
+<tr>
+<td>x * n 或 n * x</td>
+<td>复制n次字符串x</td>
+</tr>
+<tr>
+<td>x in s</td>
+<td>如果x是s的子串，返回True，否则返回False</td>
+</tr>
+</tbody></table>
+<h3 id="3-4-2字符串处理函数"><a href="#3-4-2字符串处理函数" class="headerlink" title="3.4.2字符串处理函数"></a>3.4.2字符串处理函数</h3><p>字符串处理函数：</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>len(x)</td>
+<td>返回字符串x的长度，也可返回其他组合数据类型的元素个数</td>
+</tr>
+<tr>
+<td>str(x)</td>
+<td>返回任意类型x所对应的字符串形式</td>
+</tr>
+<tr>
+<td>chr(x)</td>
+<td>返回Unicode编码x对应的单字符</td>
+</tr>
+<tr>
+<td>ord(x)</td>
+<td>返回单字符x表示的Unicode编码</td>
+</tr>
+<tr>
+<td>hex(x)</td>
+<td>返回整数x对应十六进制数的小写形式字符串</td>
+</tr>
+<tr>
+<td>oct(x)</td>
+<td>返回整数x对应八进制数的小写形式字符串</td>
+</tr>
+</tbody></table>
+<h3 id="3-4-3字符串处理方法"><a href="#3-4-3字符串处理方法" class="headerlink" title="3.4.3字符串处理方法"></a>3.4.3字符串处理方法</h3><p>常用的字符串处理方法</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>str.lower()</td>
+<td>返回字符串str的副本，全部字符小写</td>
+</tr>
+<tr>
+<td>str.upper()</td>
+<td>返回字符串str的副本，全部字符大写</td>
+</tr>
+<tr>
+<td>str.split(sep=None)</td>
+<td>返回一个列表，由str根据sep被分割的部分构成</td>
+</tr>
+<tr>
+<td>str.count(sub)</td>
+<td>返回sub子串出现的次数</td>
+</tr>
+<tr>
+<td>str.replace(old, new)</td>
+<td>返回字符串str的副本，所有old子串被替换为new</td>
+</tr>
+<tr>
+<td>str.center(width, fillchar)</td>
+<td>字符串居中函数，fillchar参数可选</td>
+</tr>
+<tr>
+<td>str.strip(chars)</td>
+<td>从字符串str中去掉在其左侧和右侧chars中列出的字符</td>
+</tr>
+<tr>
+<td>str.join(iter)</td>
+<td>将iter变量的每一个元素后增加一个str字符串</td>
+</tr>
+</tbody></table>
+<h2 id="3-5类型判断和类型转换"><a href="#3-5类型判断和类型转换" class="headerlink" title="3.5类型判断和类型转换"></a>3.5类型判断和类型转换</h2><p>类型判断函数</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>type(x)</td>
+<td>函数对变量x进行类型判断，适用于任何数据类型。</td>
+</tr>
+</tbody></table>
+<p>类型转换函数</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int(x)</td>
+<td>将x转换为整数，x可以是浮点数或字符串</td>
+</tr>
+<tr>
+<td>float(x)</td>
+<td>将x转换为浮点数，x可以是整数或字符串</td>
+</tr>
+<tr>
+<td>str(x)</td>
+<td>将x转换为字符串，x可以是整数或浮点数</td>
+</tr>
+</tbody></table>
+<h2 id="3-6实例解析——凯撒密码"><a href="#3-6实例解析——凯撒密码" class="headerlink" title="3.6实例解析——凯撒密码"></a>3.6实例解析——凯撒密码</h2>]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
       </tags>
   </entry>
   <entry>
@@ -1278,7 +1137,30 @@
 </li>
 </ul>
 <p>一维数据的存储</p>
-<p>|-|-|<br>采用空格分隔元素|例如：<br>北京 上海 天津 重庆<br>采用逗号分隔元素|例如：<br>北京,上海,天津,重庆<br>采用换行分隔包括|例如：<br>北京<br>上海<br>天津<br>重庆<br>其他特殊符号分隔，以分号分隔为例|例如：<br>北京;上海;天津;重庆</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>采用空格分隔元素</td>
+<td>例如：<br>北京 上海 天津 重庆</td>
+</tr>
+<tr>
+<td>采用逗号分隔元素</td>
+<td>例如：<br>北京,上海,天津,重庆</td>
+</tr>
+<tr>
+<td>采用换行分隔包括</td>
+<td>例如：<br>北京<br>上海<br>天津<br>重庆</td>
+</tr>
+<tr>
+<td>其他特殊符号分隔，以分号分隔为例</td>
+<td>例如：<br>北京;上海;天津;重庆</td>
+</tr>
+</tbody></table>
 <h2 id="7-4实例解析：国家财政数据趋势演算"><a href="#7-4实例解析：国家财政数据趋势演算" class="headerlink" title="7.4实例解析：国家财政数据趋势演算"></a>7.4实例解析：国家财政数据趋势演算</h2>]]></content>
       <categories>
         <category>Python</category>
@@ -1287,23 +1169,6 @@
       <tags>
         <tag>Python</tag>
         <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>8-18</title>
-    <url>/2021/08/18/8-18/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
-<span id="more"></span>
->中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
-]]></content>
-      <categories>
-        <category>日常记录</category>
-      </categories>
-      <tags>
-        <tag>生活片段</tag>
       </tags>
   </entry>
   <entry>
@@ -1326,6 +1191,164 @@
       </categories>
       <tags>
         <tag>生活片段</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日常记录</title>
+    <url>/2021/08/16/8-16/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200">
+<span id="more"></span>
+> 一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以**平凡**的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处>~<
+
+<p> <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210814.jpg"></p>
+]]></content>
+      <categories>
+        <category>日常记录</category>
+      </categories>
+      <tags>
+        <tag>生活片段</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2.Python语言基本语法元素</title>
+    <url>/2021/09/04/2-Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0/</url>
+    <content><![CDATA[<p>Python语言基本语法元素</p>
+<span id="more"></span>
+<h1 id="2-Python语言基本语法元素"><a href="#2-Python语言基本语法元素" class="headerlink" title="2.Python语言基本语法元素"></a>2.Python语言基本语法元素</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_2.Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0.png"><blockquote>
+<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>程序的基本语法元素：程序的格式框架、缩进、注释、变量、命名、保留字、数据类型、赋值语句、引用<br><br><br>基本输入输出函数：input()、eval()、print()<br><br><br>源程序的书写风格</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2-1程序的格式"><a href="#2-1程序的格式" class="headerlink" title="2.1程序的格式"></a>2.1程序的格式</h2><h3 id="2-1-1缩进"><a href="#2-1-1缩进" class="headerlink" title="2.1.1缩进"></a>2.1.1缩进</h3><ul>
+<li>Python语言采用严格的“缩进”来表明程序的格式框架。缩进指每一行代码开始前的空白区域，用来表示代码之间的包含和层次关系</li>
+<li>1个缩进 = 4个空格</li>
+<li>缩进是Python语言中表明程序框架的唯一手段<h3 id="2-1-2注释"><a href="#2-1-2注释" class="headerlink" title="2.1.2注释"></a>2.1.2注释</h3></li>
+<li>注释是代码中的辅助性文字，会被编译或解释器略去，不被计算机执行，一般用于程序员对代码的说明。Python语言采用#表示一行注释的开始，<br>多行注释用’’’或”””将内容前后包含<h3 id="2-1-3续行符"><a href="#2-1-3续行符" class="headerlink" title="2.1.3续行符"></a>2.1.3续行符</h3></li>
+<li>Python程序是逐行编写的，每行代码长度并无限制，但从程序员角度，单行代码太长并不利于阅读，因此，Python提供“续行符”将代码分割为多行表达。续行符由反斜杠()符号表达。</li>
+</ul>
+<h2 id="2-2语法元素的名称"><a href="#2-2语法元素的名称" class="headerlink" title="2.2语法元素的名称"></a>2.2语法元素的名称</h2><h3 id="2-2-1变量"><a href="#2-2-1变量" class="headerlink" title="2.2.1变量"></a>2.2.1变量</h3><ul>
+<li>变量是保存和表示数据值的一种语法元素，在程序中十分常见。顾名思义，变量的值是可以改变的，能够通过赋值（使用等号=表达）方式被修改，例如：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;a = 99</span><br><span class="line">&gt;&gt;&gt;a = a + 1</span><br><span class="line">&gt;&gt;&gt;print(a)</span><br><span class="line">100</span><br></pre></td></tr></table></figure>
+<h3 id="2-2-2命名"><a href="#2-2-2命名" class="headerlink" title="2.2.2命名"></a>2.2.2命名</h3></li>
+<li>Python语言允许采用大写字母、小写字母、数字、下划线(_)和汉字等字符及其组合给变量命名，但名字的首字符不能是数字，中间不能出现空格，长度没有限制</li>
+<li>注意：<strong>标识符对大小写敏感</strong>，python和Python是两个不同的名字<h3 id="2-2-3保留字"><a href="#2-2-3保留字" class="headerlink" title="2.2.3保留字"></a>2.2.3保留字</h3></li>
+<li>保留字，也称为关键字，指被编程语言内部定义并保留使用的标识符。</li>
+<li>程序员编写程序不能定义与保留字相同的标识符。</li>
+<li>每种程序设计语言都有一套保留字，保留字一般用来构成程序整体框架、表达关键值和具有结构性的复杂语义等。</li>
+<li>掌握一门编程语言首先要熟记其所对应的保留字。</li>
+<li> Python 3.x保留字列表 (33个)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>and</td>
+<td>elif</td>
+<td>import</td>
+<td>raise</td>
+</tr>
+<tr>
+<td>as</td>
+<td>else</td>
+<td>in</td>
+<td>return</td>
+</tr>
+<tr>
+<td>assert</td>
+<td>except</td>
+<td>is</td>
+<td>try</td>
+</tr>
+<tr>
+<td>break</td>
+<td>finally</td>
+<td>lambda</td>
+<td>while</td>
+</tr>
+<tr>
+<td>class</td>
+<td>for</td>
+<td>nonlocal</td>
+<td>with</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>from</td>
+<td>not</td>
+<td>yield</td>
+</tr>
+<tr>
+<td>def</td>
+<td>global</td>
+<td>or</td>
+<td>True</td>
+</tr>
+<tr>
+<td>del</td>
+<td>if</td>
+<td>pass</td>
+<td>False</td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="2-2-4数据类型"><a href="#2-2-4数据类型" class="headerlink" title="2.2.4数据类型"></a>2.2.4数据类型</h3><ul>
+<li>Python语言支持多种数据类型，最简单的包括数字类型、字符串类型，略微复杂的包括元组类型、集合类型、列表类型、字典类型等。<blockquote>
+<p>数据类型各种编程语言大同小异，文章后面章节也会详细介绍，这里就不再赘述。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2-3程序的语句元素"><a href="#2-3程序的语句元素" class="headerlink" title="2.3程序的语句元素"></a>2.3程序的语句元素</h2><h3 id="2-3-1表达式"><a href="#2-3-1表达式" class="headerlink" title="2.3.1表达式"></a>2.3.1表达式</h3><ul>
+<li>产生或计算新数据值的代码片段称为表达式。表达式类似数学中的计算公式，以表达单一功能为目的，运算后产生运算结果，运算结果的类型由操作符或运算符决定。</li>
+<li>表达式一般由数据和操作符等构成，这是构成Python语句的重要部分。<h3 id="2-3-2赋值语句"><a href="#2-3-2赋值语句" class="headerlink" title="2.3.2赋值语句"></a>2.3.2赋值语句</h3></li>
+<li>Python语言中，= 表示“赋值”，即将等号右侧的值计算后将结果值赋给左侧变量，包含等号（=）的语句称为“赋值语句”<br><br><code>&lt;变量&gt; = &lt;表达式&gt;</code></li>
+<li>同步赋值语句：同时给多个变量赋值<br><br><code>&lt;变量1&gt;, …, &lt;变量N&gt; = &lt;表达式1&gt;, …, &lt;表达式N&gt;</code><h3 id="2-3-3引用"><a href="#2-3-3引用" class="headerlink" title="2.3.3引用"></a>2.3.3引用</h3></li>
+<li>Python程序会经常使用当前程序之外已有的功能代码，这个过程叫“引用”。Python语言使用import保留字引用当前程序以外的功能库，使用方式如下：<br><br><code>import &lt;功能库名称&gt;</code></li>
+<li>引用功能库之后，采用<code>&lt;功能库名称&gt;.&lt;函数名称&gt;()</code>方式调用具体功能<h3 id="2-3-4其他语句"><a href="#2-3-4其他语句" class="headerlink" title="2.3.4其他语句"></a>2.3.4其他语句</h3></li>
+<li>除了赋值语句外，Python程序还包括一些其他的语句类型，例如，分支语句和循环语句等。更多的分支和循环内容将在第4章介绍。这里不再赘述。<h2 id="2-4基本输入输出函数"><a href="#2-4基本输入输出函数" class="headerlink" title="2.4基本输入输出函数"></a>2.4基本输入输出函数</h2></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>语法</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>input</td>
+<td>&lt;变量&gt; = input(&lt;提示性文字&gt;</td>
+<td>获得用户输入之前，input()函数可以包含一些提示性文字</td>
+</tr>
+<tr>
+<td>eval</td>
+<td>eval(&lt;字符串&gt;)</td>
+<td>eval(&lt;字符串&gt;)函数是Python语言中一个十分重要的函数，它能够以Python表达式的方式解析并执行字符串，将返回结果输出</td>
+</tr>
+<tr>
+<td>print()</td>
+<td>1.print(&lt;待输出字符串&gt;)<br>2.print(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;)<br>3.print(&lt;输出字符串模板&gt;.format(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;))<br>4.print(&lt;待输出内容&gt;, end=”&lt;增加的输出结尾&gt;”)</td>
+<td>1.仅用于输出字符串<br>2.仅用于输出一个或多个变量<br>3.用于混合输出字符串与变量值<br>4.对print()函数的end参数进行赋值</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
       </tags>
   </entry>
   <entry>
@@ -1503,6 +1526,42 @@
       </tags>
   </entry>
   <entry>
+    <title>github+hexo 个人博客更换主题</title>
+    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
+<span id="more"></span>
+
+<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
+<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
+<blockquote>
+<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
+</blockquote>
+<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
+<blockquote>
+<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
+</blockquote>
+<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
+<blockquote>
+<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></table></figure>
+
+<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
+]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+        <tag>主题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>9.Python标准库概览</title>
     <url>/2021/09/05/9-Python%E6%A0%87%E5%87%86%E5%BA%93%E6%A6%82%E8%A7%88/</url>
     <content><![CDATA[<p>Python标准库概览</p>
@@ -1513,8 +1572,8 @@
 <blockquote>
 <h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点 "></a>考纲考点 <br></h2><p>标准库: turtle库(必选) <br><br>标准库: random库(必选)、time库(可选）</p>
 </blockquote>
-<h2 id="9-1-turtle库"><a href="#9-1-turtle库" class="headerlink" title="9.1 turtle库"></a>9.1 turtle库</h2><p>turtle（海龟）是Python重要的标准库之一，它能够进<br>行基本的图形绘制。</p>
-<h3 id="9-1-1-对turtle库的引用"><a href="#9-1-1-对turtle库的引用" class="headerlink" title="9.1.1 对turtle库的引用"></a>9.1.1 对turtle库的引用</h3><p>使用import保留字对turtle库的引用有如下三种<br>方式:</p>
+<h2 id="9-1-turtle库"><a href="#9-1-turtle库" class="headerlink" title="9.1 turtle库"></a>9.1 turtle库</h2><p>turtle（海龟）是Python重要的标准库之一，它能够进行基本的图形绘制。</p>
+<h3 id="9-1-1-对turtle库的引用"><a href="#9-1-1-对turtle库的引用" class="headerlink" title="9.1.1 对turtle库的引用"></a>9.1.1 对turtle库的引用</h3><p>使用import保留字对turtle库的引用有如下三种方式:</p>
 <table>
 <thead>
 <tr>
@@ -1540,7 +1599,7 @@
 </tr>
 </tbody></table>
 <blockquote>
-<p>turtle库包含100多个功能函数，主要包括窗体函<br>数、画笔状态函数、画笔运动函数等三类。</p>
+<p>turtle库包含100多个功能函数，主要包括窗体函数、画笔状态函数、画笔运动函数等三类。</p>
 </blockquote>
 <h3 id="9-1-2-窗体函数"><a href="#9-1-2-窗体函数" class="headerlink" title="9.1.2 窗体函数"></a>9.1.2 窗体函数</h3><p>turtle.setup(width, height, startx, star)<br><br>作用：设置主窗体的大小和位置</p>
 <table>
@@ -1637,7 +1696,7 @@
 </tr>
 <tr>
 <td>isvisible()</td>
-<td>如果turtle可见，则返回Tru</td>
+<td>如果turtle可见，则返回True</td>
 <td></td>
 </tr>
 </tbody></table>
@@ -1972,61 +2031,6 @@
       </tags>
   </entry>
   <entry>
-    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
-    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</p>
-<span id="more"></span>
-
-<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
-<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
-<p>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
-<p>成功帮助舍友解决</p>
-]]></content>
-      <categories>
-        <category>电脑</category>
-      </categories>
-      <tags>
-        <tag>电脑</tag>
-        <tag>磁盘</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>github+hexo 个人博客更换主题</title>
-    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
-<span id="more"></span>
-
-<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
-<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
-<blockquote>
-<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
-</blockquote>
-<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
-<blockquote>
-<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
-</blockquote>
-<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
-<blockquote>
-<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></table></figure>
-
-<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
-]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-        <tag>主题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo 新建分类和标签</title>
     <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
     <content><![CDATA[<p>hexo 新建分类和标签</p>
@@ -2065,36 +2069,6 @@
         <tag>hexo</tag>
         <tag>博客</tag>
         <tag>新建分类标签</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo的安装和在github部署博客</title>
-    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<p>hexo的安装和在github部署博客</p>
-<span id="more"></span>
-
-<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io </code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<p>打开 git 下 git bash 输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
-
-<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
-<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
-
-<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
-<hr>
-<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
-]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
       </tags>
   </entry>
   <entry>
@@ -2227,6 +2201,36 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo的安装和在github部署博客</title>
+    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<p>hexo的安装和在github部署博客</p>
+<span id="more"></span>
+
+<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io </code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>打开 git 下 git bash 输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
+<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
+
+<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
+<hr>
+<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
+]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>选课</title>
     <url>/2021/08/28/%E9%80%89%E8%AF%BE/</url>
     <content><![CDATA[<p>又是一年开学季，选课的日子又来了。</p>
@@ -2334,6 +2338,25 @@
       <tags>
         <tag>选课</tag>
         <tag>大学生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
+    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</p>
+<span id="more"></span>
+
+<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
+<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
+<p>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
+<p>成功帮助舍友解决</p>
+]]></content>
+      <categories>
+        <category>电脑</category>
+      </categories>
+      <tags>
+        <tag>电脑</tag>
+        <tag>磁盘</tag>
       </tags>
   </entry>
 </search>
