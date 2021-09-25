@@ -859,71 +859,6 @@
       </tags>
   </entry>
   <entry>
-    <title>5.函数和代码复用</title>
-    <url>/2021/09/05/5-%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8/</url>
-    <content><![CDATA[<p>函数和代码复用</p>
-<span id="more"></span>
-<h1 id="5-函数和代码复用"><a href="#5-函数和代码复用" class="headerlink" title="5.函数和代码复用"></a>5.函数和代码复用</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_5.%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8.png"></li>
-</ul>
-<h2 id="5-1函数的基本使用"><a href="#5-1函数的基本使用" class="headerlink" title="5.1函数的基本使用"></a>5.1函数的基本使用</h2><h3 id="5-1-1函数的定义"><a href="#5-1-1函数的定义" class="headerlink" title="5.1.1函数的定义"></a>5.1.1函数的定义</h3><p>Python定义一个函数使用def保留字，语法形式<br>如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;参数列表&gt;):</span><br><span class="line">    &lt;函数体&gt;</span><br><span class="line">return &lt;返回值列表&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="5-1-2函数的使用"><a href="#5-1-2函数的使用" class="headerlink" title="5.1.2函数的使用"></a>5.1.2函数的使用</h3><p>&lt;函数名&gt;(&lt;实际赋值参数列表&gt;</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 定义一个对整数n求阶乘的函数</span><br><span class="line">def fact(n):</span><br><span class="line">  s = 1</span><br><span class="line">  for i in range(1, n+1):</span><br><span class="line">    s *= i</span><br><span class="line">  return s</span><br><span class="line"># 调用整数阶乘的函数</span><br><span class="line">print(fact(100))</span><br></pre></td></tr></table></figure>
-<p>函数定义-&gt;函数调用-&gt;函数执行-&gt;函数返回</p>
-<h2 id="5-2函数的传递"><a href="#5-2函数的传递" class="headerlink" title="5.2函数的传递"></a>5.2函数的传递</h2><h3 id="5-2-1可选参数传递"><a href="#5-2-1可选参数传递" class="headerlink" title="5.2.1可选参数传递"></a>5.2.1可选参数传递</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;非可选参数列表&gt;, &lt;可选参数&gt; = &lt;默认值&gt;):</span><br><span class="line">  &lt;函数体&gt;</span><br><span class="line">  return &lt;返回值列表&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="5-2-2参数名称传递"><a href="#5-2-2参数名称传递" class="headerlink" title="5.2.2参数名称传递"></a>5.2.2参数名称传递</h3><p>&lt;函数名&gt;(&lt;参数名&gt; = &lt;实际值&gt;)</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">        print(x*y)</span><br><span class="line">&gt;&gt;&gt;multiply(x = 99)</span><br><span class="line">990</span><br><span class="line">&gt;&gt;&gt;multiply(y = 2, x = 99)</span><br><span class="line">198</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="5-2-3函数的返回值"><a href="#5-2-3函数的返回值" class="headerlink" title="5.2.3函数的返回值"></a>5.2.3函数的返回值</h3><p>return语句可以出现在函数中的任何部分，同时可以将0个、1个或多个函数运算的结果返回给函数被调用处的变量。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">return x*y</span><br><span class="line">&gt;&gt;&gt;s = multiply(99, 2)</span><br><span class="line">&gt;&gt;&gt;print(s)</span><br><span class="line">198</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-3变量的作用域"><a href="#5-3变量的作用域" class="headerlink" title="5.3变量的作用域"></a>5.3变量的作用域</h2><table>
-<thead>
-<tr>
-<th>变量</th>
-<th>作用域</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>局部变量</td>
-<td>局部变量指在函数内部使用的变量，仅在函数内部有效，当函数退出时变量将不再存在。但可以用global声明在函数内做为全局变量用。</td>
-</tr>
-<tr>
-<td>全局变量</td>
-<td>全局变量指在函数之外定义的变量，在程序执行全过程有效。</td>
-</tr>
-</tbody></table>
-<h2 id="5-4代码复用"><a href="#5-4代码复用" class="headerlink" title="5.4代码复用"></a>5.4代码复用</h2><p>函数封装的直接好处是代码复用，任何其他代码只要输入参数即可调用函数，从而避免相同功能代码在被调用处重复编写。<br><br><strong>模块化设计</strong>是使用函数设计程序的思考方法，以功能块为基本单位，一般有两个基本要求：</p>
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>含义</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>紧耦合</td>
-<td>尽可能合理划分功能块，功能块内部耦合紧密</td>
-<td>紧耦合的缺点在于更新一个模块可能导致其它模块变化，复用较困难。</td>
-</tr>
-<tr>
-<td>松耦合</td>
-<td>模块间关系尽可能简单，功能块之间耦合度低</td>
-<td>松耦合一般基于消息或协议实现，系统间交互简单。</td>
-</tr>
-</tbody></table>
-<h2 id="5-5实例解析——软文的诗词风"><a href="#5-5实例解析——软文的诗词风" class="headerlink" title="5.5实例解析——软文的诗词风"></a>5.5实例解析——软文的诗词风</h2>]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>6.组合数据类型</title>
     <url>/2021/09/05/6-%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
     <content><![CDATA[<p>组合数据类型</p>
@@ -1139,6 +1074,71 @@
       </tags>
   </entry>
   <entry>
+    <title>5.函数和代码复用</title>
+    <url>/2021/09/05/5-%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8/</url>
+    <content><![CDATA[<p>函数和代码复用</p>
+<span id="more"></span>
+<h1 id="5-函数和代码复用"><a href="#5-函数和代码复用" class="headerlink" title="5.函数和代码复用"></a>5.函数和代码复用</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_5.%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8.png"></li>
+</ul>
+<h2 id="5-1函数的基本使用"><a href="#5-1函数的基本使用" class="headerlink" title="5.1函数的基本使用"></a>5.1函数的基本使用</h2><h3 id="5-1-1函数的定义"><a href="#5-1-1函数的定义" class="headerlink" title="5.1.1函数的定义"></a>5.1.1函数的定义</h3><p>Python定义一个函数使用def保留字，语法形式<br>如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;参数列表&gt;):</span><br><span class="line">    &lt;函数体&gt;</span><br><span class="line">return &lt;返回值列表&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="5-1-2函数的使用"><a href="#5-1-2函数的使用" class="headerlink" title="5.1.2函数的使用"></a>5.1.2函数的使用</h3><p>&lt;函数名&gt;(&lt;实际赋值参数列表&gt;</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 定义一个对整数n求阶乘的函数</span><br><span class="line">def fact(n):</span><br><span class="line">  s = 1</span><br><span class="line">  for i in range(1, n+1):</span><br><span class="line">    s *= i</span><br><span class="line">  return s</span><br><span class="line"># 调用整数阶乘的函数</span><br><span class="line">print(fact(100))</span><br></pre></td></tr></table></figure>
+<p>函数定义-&gt;函数调用-&gt;函数执行-&gt;函数返回</p>
+<h2 id="5-2函数的传递"><a href="#5-2函数的传递" class="headerlink" title="5.2函数的传递"></a>5.2函数的传递</h2><h3 id="5-2-1可选参数传递"><a href="#5-2-1可选参数传递" class="headerlink" title="5.2.1可选参数传递"></a>5.2.1可选参数传递</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;非可选参数列表&gt;, &lt;可选参数&gt; = &lt;默认值&gt;):</span><br><span class="line">  &lt;函数体&gt;</span><br><span class="line">  return &lt;返回值列表&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="5-2-2参数名称传递"><a href="#5-2-2参数名称传递" class="headerlink" title="5.2.2参数名称传递"></a>5.2.2参数名称传递</h3><p>&lt;函数名&gt;(&lt;参数名&gt; = &lt;实际值&gt;)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">        print(x*y)</span><br><span class="line">&gt;&gt;&gt;multiply(x = 99)</span><br><span class="line">990</span><br><span class="line">&gt;&gt;&gt;multiply(y = 2, x = 99)</span><br><span class="line">198</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="5-2-3函数的返回值"><a href="#5-2-3函数的返回值" class="headerlink" title="5.2.3函数的返回值"></a>5.2.3函数的返回值</h3><p>return语句可以出现在函数中的任何部分，同时可以将0个、1个或多个函数运算的结果返回给函数被调用处的变量。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">return x*y</span><br><span class="line">&gt;&gt;&gt;s = multiply(99, 2)</span><br><span class="line">&gt;&gt;&gt;print(s)</span><br><span class="line">198</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-3变量的作用域"><a href="#5-3变量的作用域" class="headerlink" title="5.3变量的作用域"></a>5.3变量的作用域</h2><table>
+<thead>
+<tr>
+<th>变量</th>
+<th>作用域</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>局部变量</td>
+<td>局部变量指在函数内部使用的变量，仅在函数内部有效，当函数退出时变量将不再存在。但可以用global声明在函数内做为全局变量用。</td>
+</tr>
+<tr>
+<td>全局变量</td>
+<td>全局变量指在函数之外定义的变量，在程序执行全过程有效。</td>
+</tr>
+</tbody></table>
+<h2 id="5-4代码复用"><a href="#5-4代码复用" class="headerlink" title="5.4代码复用"></a>5.4代码复用</h2><p>函数封装的直接好处是代码复用，任何其他代码只要输入参数即可调用函数，从而避免相同功能代码在被调用处重复编写。<br><br><strong>模块化设计</strong>是使用函数设计程序的思考方法，以功能块为基本单位，一般有两个基本要求：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>含义</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>紧耦合</td>
+<td>尽可能合理划分功能块，功能块内部耦合紧密</td>
+<td>紧耦合的缺点在于更新一个模块可能导致其它模块变化，复用较困难。</td>
+</tr>
+<tr>
+<td>松耦合</td>
+<td>模块间关系尽可能简单，功能块之间耦合度低</td>
+<td>松耦合一般基于消息或协议实现，系统间交互简单。</td>
+</tr>
+</tbody></table>
+<h2 id="5-5实例解析——软文的诗词风"><a href="#5-5实例解析——软文的诗词风" class="headerlink" title="5.5实例解析——软文的诗词风"></a>5.5实例解析——软文的诗词风</h2>]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>7.文件和数据格式化</title>
     <url>/2021/09/05/7-%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/</url>
     <content><![CDATA[<p>文件和数据格式化</p>
@@ -1313,6 +1313,23 @@
       </tags>
   </entry>
   <entry>
+    <title>8-18</title>
+    <url>/2021/08/18/8-18/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
+<span id="more"></span>
+>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
+]]></content>
+      <categories>
+        <category>日常记录</category>
+      </categories>
+      <tags>
+        <tag>生活片段</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>日常记录</title>
     <url>/2021/08/17/8-17/</url>
     <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg " width = "300"  height = "200">
@@ -1326,23 +1343,6 @@
 <p>同时，今天是keep打卡第一天 fighting~</p>
 </blockquote>
 <p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg"></p>
-]]></content>
-      <categories>
-        <category>日常记录</category>
-      </categories>
-      <tags>
-        <tag>生活片段</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>8-18</title>
-    <url>/2021/08/18/8-18/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
-<span id="more"></span>
->中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
 ]]></content>
       <categories>
         <category>日常记录</category>
