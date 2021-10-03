@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://aike505.github.io/comments/index.html</loc>
+    
+    <lastmod>2021-10-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://aike505.github.io/friends/index.html</loc>
     
     <lastmod>2021-10-03</lastmod>
@@ -10,13 +17,6 @@
   
   <url>
     <loc>https://aike505.github.io/bb/index.html</loc>
-    
-    <lastmod>2021-10-03</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/comments/index.html</loc>
     
     <lastmod>2021-10-03</lastmod>
     
@@ -275,21 +275,14 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/games/cat/index.html</loc>
-    
-    <lastmod>2020-09-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/games/element/index.html</loc>
-    
-    <lastmod>2020-09-12</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://aike505.github.io/games/PacMan/index.html</loc>
+    
+    <lastmod>2020-09-12</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/games/cat/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -304,6 +297,13 @@
   
   <url>
     <loc>https://aike505.github.io/games/piano/index.html</loc>
+    
+    <lastmod>2020-09-12</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/games/element/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -340,20 +340,6 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/%E7%94%B5%E8%84%91/</loc>
-    <lastmod>2021-10-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/tags/%E7%A3%81%E7%9B%98/</loc>
-    <lastmod>2021-10-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aike505.github.io/tags/hexo/</loc>
     <lastmod>2021-10-03</lastmod>
     <changefreq>daily</changefreq>
@@ -375,27 +361,6 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/%E4%B8%BB%E9%A2%98/</loc>
-    <lastmod>2021-10-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/tags/%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2021-10-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/tags/%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/</loc>
-    <lastmod>2021-10-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aike505.github.io/tags/%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-10-03</lastmod>
     <changefreq>daily</changefreq>
@@ -403,7 +368,7 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/%E6%B3%A8%E5%86%8C%E5%9F%9F%E5%90%8D/</loc>
+    <loc>https://aike505.github.io/tags/%E4%B8%BB%E9%A2%98/</loc>
     <lastmod>2021-10-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -411,6 +376,27 @@
   
   <url>
     <loc>https://aike505.github.io/tags/bug/</loc>
+    <lastmod>2021-10-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/tags/%E7%94%B5%E8%84%91/</loc>
+    <lastmod>2021-10-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/tags/%E7%A3%81%E7%9B%98/</loc>
+    <lastmod>2021-10-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/tags/%E6%B3%A8%E5%86%8C%E5%9F%9F%E5%90%8D/</loc>
     <lastmod>2021-10-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -425,6 +411,20 @@
   
   <url>
     <loc>https://aike505.github.io/tags/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2021-10-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/tags/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2021-10-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/tags/%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/</loc>
     <lastmod>2021-10-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -454,14 +454,14 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/categories/%E7%94%B5%E8%84%91/</loc>
+    <loc>https://aike505.github.io/categories/hexo%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-10-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://aike505.github.io/categories/hexo%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://aike505.github.io/categories/%E7%94%B5%E8%84%91/</loc>
     <lastmod>2021-10-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
