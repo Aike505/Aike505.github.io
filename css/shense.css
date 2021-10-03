@@ -72,6 +72,7 @@ body.dark a
 /* 背景颜色变灰色 */
 body.dark .card,
 body.dark .block-with-text:after
+body.dark ul
 {
     background-color: #282c34;
 }

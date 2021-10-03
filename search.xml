@@ -312,148 +312,6 @@
       </tags>
   </entry>
   <entry>
-    <title>2.Python语言基本语法元素</title>
-    <url>/2021/09/04/2-Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0/</url>
-    <content><![CDATA[<p>Python语言基本语法元素</p>
-<span id="more"></span>
-<h1 id="2-Python语言基本语法元素"><a href="#2-Python语言基本语法元素" class="headerlink" title="2.Python语言基本语法元素"></a>2.Python语言基本语法元素</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_2.Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0.png"><blockquote>
-<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>程序的基本语法元素：程序的格式框架、缩进、注释、变量、命名、保留字、数据类型、赋值语句、引用<br><br><br>基本输入输出函数：input()、eval()、print()<br><br><br>源程序的书写风格</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="2-1程序的格式"><a href="#2-1程序的格式" class="headerlink" title="2.1程序的格式"></a>2.1程序的格式</h2><h3 id="2-1-1缩进"><a href="#2-1-1缩进" class="headerlink" title="2.1.1缩进"></a>2.1.1缩进</h3><ul>
-<li>Python语言采用严格的“缩进”来表明程序的格式框架。缩进指每一行代码开始前的空白区域，用来表示代码之间的包含和层次关系</li>
-<li>1个缩进 = 4个空格</li>
-<li>缩进是Python语言中表明程序框架的唯一手段<h3 id="2-1-2注释"><a href="#2-1-2注释" class="headerlink" title="2.1.2注释"></a>2.1.2注释</h3></li>
-<li>注释是代码中的辅助性文字，会被编译或解释器略去，不被计算机执行，一般用于程序员对代码的说明。Python语言采用#表示一行注释的开始，<br>多行注释用’’’或”””将内容前后包含<h3 id="2-1-3续行符"><a href="#2-1-3续行符" class="headerlink" title="2.1.3续行符"></a>2.1.3续行符</h3></li>
-<li>Python程序是逐行编写的，每行代码长度并无限制，但从程序员角度，单行代码太长并不利于阅读，因此，Python提供“续行符”将代码分割为多行表达。续行符由反斜杠()符号表达。</li>
-</ul>
-<h2 id="2-2语法元素的名称"><a href="#2-2语法元素的名称" class="headerlink" title="2.2语法元素的名称"></a>2.2语法元素的名称</h2><h3 id="2-2-1变量"><a href="#2-2-1变量" class="headerlink" title="2.2.1变量"></a>2.2.1变量</h3><ul>
-<li>变量是保存和表示数据值的一种语法元素，在程序中十分常见。顾名思义，变量的值是可以改变的，能够通过赋值（使用等号=表达）方式被修改，例如：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;a = 99</span><br><span class="line">&gt;&gt;&gt;a = a + 1</span><br><span class="line">&gt;&gt;&gt;print(a)</span><br><span class="line">100</span><br></pre></td></tr></table></figure>
-<h3 id="2-2-2命名"><a href="#2-2-2命名" class="headerlink" title="2.2.2命名"></a>2.2.2命名</h3></li>
-<li>Python语言允许采用大写字母、小写字母、数字、下划线(_)和汉字等字符及其组合给变量命名，但名字的首字符不能是数字，中间不能出现空格，长度没有限制</li>
-<li>注意：<strong>标识符对大小写敏感</strong>，python和Python是两个不同的名字<h3 id="2-2-3保留字"><a href="#2-2-3保留字" class="headerlink" title="2.2.3保留字"></a>2.2.3保留字</h3></li>
-<li>保留字，也称为关键字，指被编程语言内部定义并保留使用的标识符。</li>
-<li>程序员编写程序不能定义与保留字相同的标识符。</li>
-<li>每种程序设计语言都有一套保留字，保留字一般用来构成程序整体框架、表达关键值和具有结构性的复杂语义等。</li>
-<li>掌握一门编程语言首先要熟记其所对应的保留字。</li>
-<li> Python 3.x保留字列表 (33个)</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>and</td>
-<td>elif</td>
-<td>import</td>
-<td>raise</td>
-</tr>
-<tr>
-<td>as</td>
-<td>else</td>
-<td>in</td>
-<td>return</td>
-</tr>
-<tr>
-<td>assert</td>
-<td>except</td>
-<td>is</td>
-<td>try</td>
-</tr>
-<tr>
-<td>break</td>
-<td>finally</td>
-<td>lambda</td>
-<td>while</td>
-</tr>
-<tr>
-<td>class</td>
-<td>for</td>
-<td>nonlocal</td>
-<td>with</td>
-</tr>
-<tr>
-<td>continue</td>
-<td>from</td>
-<td>not</td>
-<td>yield</td>
-</tr>
-<tr>
-<td>def</td>
-<td>global</td>
-<td>or</td>
-<td>True</td>
-</tr>
-<tr>
-<td>del</td>
-<td>if</td>
-<td>pass</td>
-<td>False</td>
-</tr>
-<tr>
-<td>None</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<h3 id="2-2-4数据类型"><a href="#2-2-4数据类型" class="headerlink" title="2.2.4数据类型"></a>2.2.4数据类型</h3><ul>
-<li>Python语言支持多种数据类型，最简单的包括数字类型、字符串类型，略微复杂的包括元组类型、集合类型、列表类型、字典类型等。<blockquote>
-<p>数据类型各种编程语言大同小异，文章后面章节也会详细介绍，这里就不再赘述。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="2-3程序的语句元素"><a href="#2-3程序的语句元素" class="headerlink" title="2.3程序的语句元素"></a>2.3程序的语句元素</h2><h3 id="2-3-1表达式"><a href="#2-3-1表达式" class="headerlink" title="2.3.1表达式"></a>2.3.1表达式</h3><ul>
-<li>产生或计算新数据值的代码片段称为表达式。表达式类似数学中的计算公式，以表达单一功能为目的，运算后产生运算结果，运算结果的类型由操作符或运算符决定。</li>
-<li>表达式一般由数据和操作符等构成，这是构成Python语句的重要部分。<h3 id="2-3-2赋值语句"><a href="#2-3-2赋值语句" class="headerlink" title="2.3.2赋值语句"></a>2.3.2赋值语句</h3></li>
-<li>Python语言中，= 表示“赋值”，即将等号右侧的值计算后将结果值赋给左侧变量，包含等号（=）的语句称为“赋值语句”<br><br><code>&lt;变量&gt; = &lt;表达式&gt;</code></li>
-<li>同步赋值语句：同时给多个变量赋值<br><br><code>&lt;变量1&gt;, …, &lt;变量N&gt; = &lt;表达式1&gt;, …, &lt;表达式N&gt;</code><h3 id="2-3-3引用"><a href="#2-3-3引用" class="headerlink" title="2.3.3引用"></a>2.3.3引用</h3></li>
-<li>Python程序会经常使用当前程序之外已有的功能代码，这个过程叫“引用”。Python语言使用import保留字引用当前程序以外的功能库，使用方式如下：<br><br><code>import &lt;功能库名称&gt;</code></li>
-<li>引用功能库之后，采用<code>&lt;功能库名称&gt;.&lt;函数名称&gt;()</code>方式调用具体功能<h3 id="2-3-4其他语句"><a href="#2-3-4其他语句" class="headerlink" title="2.3.4其他语句"></a>2.3.4其他语句</h3></li>
-<li>除了赋值语句外，Python程序还包括一些其他的语句类型，例如，分支语句和循环语句等。更多的分支和循环内容将在第4章介绍。这里不再赘述。<h2 id="2-4基本输入输出函数"><a href="#2-4基本输入输出函数" class="headerlink" title="2.4基本输入输出函数"></a>2.4基本输入输出函数</h2></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>函数</th>
-<th>语法</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>input</td>
-<td>&lt;变量&gt; = input(&lt;提示性文字&gt;</td>
-<td>获得用户输入之前，input()函数可以包含一些提示性文字</td>
-</tr>
-<tr>
-<td>eval</td>
-<td>eval(&lt;字符串&gt;)</td>
-<td>eval(&lt;字符串&gt;)函数是Python语言中一个十分重要的函数，它能够以Python表达式的方式解析并执行字符串，将返回结果输出</td>
-</tr>
-<tr>
-<td>print()</td>
-<td>1.print(&lt;待输出字符串&gt;)<br>2.print(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;)<br>3.print(&lt;输出字符串模板&gt;.format(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;))<br>4.print(&lt;待输出内容&gt;, end=”&lt;增加的输出结尾&gt;”)</td>
-<td>1.仅用于输出字符串<br>2.仅用于输出一个或多个变量<br>3.用于混合输出字符串与变量值<br>4.对print()函数的end参数进行赋值</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>3.Python基本数据类型</title>
     <url>/2021/09/04/3-Python%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB/</url>
     <content><![CDATA[<p>Python基本数据类型</p>
@@ -767,6 +625,148 @@
 </tr>
 </tbody></table>
 <h2 id="3-6实例解析——凯撒密码"><a href="#3-6实例解析——凯撒密码" class="headerlink" title="3.6实例解析——凯撒密码"></a>3.6实例解析——凯撒密码</h2>]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2.Python语言基本语法元素</title>
+    <url>/2021/09/04/2-Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0/</url>
+    <content><![CDATA[<p>Python语言基本语法元素</p>
+<span id="more"></span>
+<h1 id="2-Python语言基本语法元素"><a href="#2-Python语言基本语法元素" class="headerlink" title="2.Python语言基本语法元素"></a>2.Python语言基本语法元素</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_2.Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0.png"><blockquote>
+<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>程序的基本语法元素：程序的格式框架、缩进、注释、变量、命名、保留字、数据类型、赋值语句、引用<br><br><br>基本输入输出函数：input()、eval()、print()<br><br><br>源程序的书写风格</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2-1程序的格式"><a href="#2-1程序的格式" class="headerlink" title="2.1程序的格式"></a>2.1程序的格式</h2><h3 id="2-1-1缩进"><a href="#2-1-1缩进" class="headerlink" title="2.1.1缩进"></a>2.1.1缩进</h3><ul>
+<li>Python语言采用严格的“缩进”来表明程序的格式框架。缩进指每一行代码开始前的空白区域，用来表示代码之间的包含和层次关系</li>
+<li>1个缩进 = 4个空格</li>
+<li>缩进是Python语言中表明程序框架的唯一手段<h3 id="2-1-2注释"><a href="#2-1-2注释" class="headerlink" title="2.1.2注释"></a>2.1.2注释</h3></li>
+<li>注释是代码中的辅助性文字，会被编译或解释器略去，不被计算机执行，一般用于程序员对代码的说明。Python语言采用#表示一行注释的开始，<br>多行注释用’’’或”””将内容前后包含<h3 id="2-1-3续行符"><a href="#2-1-3续行符" class="headerlink" title="2.1.3续行符"></a>2.1.3续行符</h3></li>
+<li>Python程序是逐行编写的，每行代码长度并无限制，但从程序员角度，单行代码太长并不利于阅读，因此，Python提供“续行符”将代码分割为多行表达。续行符由反斜杠()符号表达。</li>
+</ul>
+<h2 id="2-2语法元素的名称"><a href="#2-2语法元素的名称" class="headerlink" title="2.2语法元素的名称"></a>2.2语法元素的名称</h2><h3 id="2-2-1变量"><a href="#2-2-1变量" class="headerlink" title="2.2.1变量"></a>2.2.1变量</h3><ul>
+<li>变量是保存和表示数据值的一种语法元素，在程序中十分常见。顾名思义，变量的值是可以改变的，能够通过赋值（使用等号=表达）方式被修改，例如：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;a = 99</span><br><span class="line">&gt;&gt;&gt;a = a + 1</span><br><span class="line">&gt;&gt;&gt;print(a)</span><br><span class="line">100</span><br></pre></td></tr></table></figure>
+<h3 id="2-2-2命名"><a href="#2-2-2命名" class="headerlink" title="2.2.2命名"></a>2.2.2命名</h3></li>
+<li>Python语言允许采用大写字母、小写字母、数字、下划线(_)和汉字等字符及其组合给变量命名，但名字的首字符不能是数字，中间不能出现空格，长度没有限制</li>
+<li>注意：<strong>标识符对大小写敏感</strong>，python和Python是两个不同的名字<h3 id="2-2-3保留字"><a href="#2-2-3保留字" class="headerlink" title="2.2.3保留字"></a>2.2.3保留字</h3></li>
+<li>保留字，也称为关键字，指被编程语言内部定义并保留使用的标识符。</li>
+<li>程序员编写程序不能定义与保留字相同的标识符。</li>
+<li>每种程序设计语言都有一套保留字，保留字一般用来构成程序整体框架、表达关键值和具有结构性的复杂语义等。</li>
+<li>掌握一门编程语言首先要熟记其所对应的保留字。</li>
+<li> Python 3.x保留字列表 (33个)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>and</td>
+<td>elif</td>
+<td>import</td>
+<td>raise</td>
+</tr>
+<tr>
+<td>as</td>
+<td>else</td>
+<td>in</td>
+<td>return</td>
+</tr>
+<tr>
+<td>assert</td>
+<td>except</td>
+<td>is</td>
+<td>try</td>
+</tr>
+<tr>
+<td>break</td>
+<td>finally</td>
+<td>lambda</td>
+<td>while</td>
+</tr>
+<tr>
+<td>class</td>
+<td>for</td>
+<td>nonlocal</td>
+<td>with</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>from</td>
+<td>not</td>
+<td>yield</td>
+</tr>
+<tr>
+<td>def</td>
+<td>global</td>
+<td>or</td>
+<td>True</td>
+</tr>
+<tr>
+<td>del</td>
+<td>if</td>
+<td>pass</td>
+<td>False</td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="2-2-4数据类型"><a href="#2-2-4数据类型" class="headerlink" title="2.2.4数据类型"></a>2.2.4数据类型</h3><ul>
+<li>Python语言支持多种数据类型，最简单的包括数字类型、字符串类型，略微复杂的包括元组类型、集合类型、列表类型、字典类型等。<blockquote>
+<p>数据类型各种编程语言大同小异，文章后面章节也会详细介绍，这里就不再赘述。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2-3程序的语句元素"><a href="#2-3程序的语句元素" class="headerlink" title="2.3程序的语句元素"></a>2.3程序的语句元素</h2><h3 id="2-3-1表达式"><a href="#2-3-1表达式" class="headerlink" title="2.3.1表达式"></a>2.3.1表达式</h3><ul>
+<li>产生或计算新数据值的代码片段称为表达式。表达式类似数学中的计算公式，以表达单一功能为目的，运算后产生运算结果，运算结果的类型由操作符或运算符决定。</li>
+<li>表达式一般由数据和操作符等构成，这是构成Python语句的重要部分。<h3 id="2-3-2赋值语句"><a href="#2-3-2赋值语句" class="headerlink" title="2.3.2赋值语句"></a>2.3.2赋值语句</h3></li>
+<li>Python语言中，= 表示“赋值”，即将等号右侧的值计算后将结果值赋给左侧变量，包含等号（=）的语句称为“赋值语句”<br><br><code>&lt;变量&gt; = &lt;表达式&gt;</code></li>
+<li>同步赋值语句：同时给多个变量赋值<br><br><code>&lt;变量1&gt;, …, &lt;变量N&gt; = &lt;表达式1&gt;, …, &lt;表达式N&gt;</code><h3 id="2-3-3引用"><a href="#2-3-3引用" class="headerlink" title="2.3.3引用"></a>2.3.3引用</h3></li>
+<li>Python程序会经常使用当前程序之外已有的功能代码，这个过程叫“引用”。Python语言使用import保留字引用当前程序以外的功能库，使用方式如下：<br><br><code>import &lt;功能库名称&gt;</code></li>
+<li>引用功能库之后，采用<code>&lt;功能库名称&gt;.&lt;函数名称&gt;()</code>方式调用具体功能<h3 id="2-3-4其他语句"><a href="#2-3-4其他语句" class="headerlink" title="2.3.4其他语句"></a>2.3.4其他语句</h3></li>
+<li>除了赋值语句外，Python程序还包括一些其他的语句类型，例如，分支语句和循环语句等。更多的分支和循环内容将在第4章介绍。这里不再赘述。<h2 id="2-4基本输入输出函数"><a href="#2-4基本输入输出函数" class="headerlink" title="2.4基本输入输出函数"></a>2.4基本输入输出函数</h2></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>语法</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>input</td>
+<td>&lt;变量&gt; = input(&lt;提示性文字&gt;</td>
+<td>获得用户输入之前，input()函数可以包含一些提示性文字</td>
+</tr>
+<tr>
+<td>eval</td>
+<td>eval(&lt;字符串&gt;)</td>
+<td>eval(&lt;字符串&gt;)函数是Python语言中一个十分重要的函数，它能够以Python表达式的方式解析并执行字符串，将返回结果输出</td>
+</tr>
+<tr>
+<td>print()</td>
+<td>1.print(&lt;待输出字符串&gt;)<br>2.print(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;)<br>3.print(&lt;输出字符串模板&gt;.format(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;))<br>4.print(&lt;待输出内容&gt;, end=”&lt;增加的输出结尾&gt;”)</td>
+<td>1.仅用于输出字符串<br>2.仅用于输出一个或多个变量<br>3.用于混合输出字符串与变量值<br>4.对print()函数的end参数进行赋值</td>
+</tr>
+</tbody></table>
+]]></content>
       <categories>
         <category>Python</category>
         <category>二级</category>
@@ -1298,22 +1298,6 @@
   </entry>
   <entry>
     <title>日常记录</title>
-    <url>/2021/08/16/8-16/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200">
-<span id="more"></span>
-> 一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以**平凡**的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处>~<
-
-<p> <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210814.jpg"></p>
-]]></content>
-      <categories>
-        <category>日常记录</category>
-      </categories>
-      <tags>
-        <tag>生活片段</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日常记录</title>
     <url>/2021/08/17/8-17/</url>
     <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg " width = "300"  height = "200">
 <span id="more"></span>
@@ -1352,177 +1336,19 @@
       </tags>
   </entry>
   <entry>
-    <title>8.Python计算生态</title>
-    <url>/2021/09/05/8-Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81/</url>
-    <content><![CDATA[<p>Python计算生态</p>
+    <title>日常记录</title>
+    <url>/2021/08/16/8-16/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200">
 <span id="more"></span>
-<h1 id="8-Python计算生态"><a href="#8-Python计算生态" class="headerlink" title="8.Python计算生态"></a>8.Python计算生态</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_8.Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81.png"></li>
-</ul>
-<h2 id="8-1计算思维"><a href="#8-1计算思维" class="headerlink" title="8.1计算思维"></a>8.1计算思维</h2><p>人类在认识世界、改造世界过程中表现出<em>三种基本的思维特征</em>：以实验和验证为特征的<strong>实证思维</strong> ，以物理学科为代表；以推理和演绎为特征的<strong>逻辑思维</strong>，以数学学科为代表；以设计和构造为特征的<strong>计算思维</strong>，以计算机学科为代表。<br><br>计算思维的本质是<strong>抽象</strong>（Abstraction）和<strong>自动化</strong>（Automation）</p>
-<h2 id="8-2程序设计方法"><a href="#8-2程序设计方法" class="headerlink" title="8.2程序设计方法"></a>8.2程序设计方法</h2><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>解释</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>自顶而下的设计</td>
-<td>一个解决复杂问题行之有效的方法,基本思想是以一个总问题开始，试图把它表达为很多小问题组成的解决方案。再用同样的技术依次攻破每个小问题，最终问题变得非常小，以至于可以很容易解决。然后只需把所有的碎片组合起来，就可以得到一个程序。</td>
-</tr>
-<tr>
-<td>自底向上执行</td>
-<td>开展测试的更好办法也是将程序分成小部分逐个测试执行中等规模程序的最好方法是从结构图最底层开始，而不是从顶部开始，然后逐步上升。或者说，先运行和测试每一个基本函数，再测试由基础函数组成的整体函数，这样有助于定位错误</td>
-</tr>
-</tbody></table>
-<h2 id="8-3Python标准库"><a href="#8-3Python标准库" class="headerlink" title="8.3Python标准库"></a>8.3Python标准库</h2><p>有一部分Python计算生态随Python安装包一起发布，用户可以随时使用，被称为Python标准库。<br><br>受限于Python安装包的设定大小，标准库数量270个左右。</p>
-<h2 id="8-4Python第三方库"><a href="#8-4Python第三方库" class="headerlink" title="8.4Python第三方库"></a>8.4Python第三方库</h2><p>更广泛的Python计算生态采用额外安装方式服务用户，被称为Python第三方库。这些第三方库由全球各行业专家、工程师和爱好者开发，没有顶层设计，由开发者采用“尽力而为”的方式维护。Python通过新一代安装工具pip管理大部分Python第三方库的安装。</p>
-<h2 id="8-5基本的Python内置函数"><a href="#8-5基本的Python内置函数" class="headerlink" title="8.5基本的Python内置函数"></a>8.5基本的Python内置函数</h2><p>Python解释器提供了68个内置函数（下面介绍32个）</p>
-<table>
-<thead>
-<tr>
-<th>函数名称</th>
-<th>函数说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>abs(x)</td>
-<td>x的绝对值<br>如果x是复数，返回复数的模</td>
-</tr>
-<tr>
-<td>all(x)</td>
-<td>组合类型变量x中所有元素都为真时返回True，否则返回False；若x为空，返回True</td>
-</tr>
-<tr>
-<td>any(x)</td>
-<td>组合类型变量x中任一元素都为真时返回True，否则返回False；若x为空，返回False</td>
-</tr>
-<tr>
-<td>bin(x)</td>
-<td>将整数x转换为等值的二进制字符串</td>
-</tr>
-<tr>
-<td>bin(1010)</td>
-<td>的结果是’0b1111110010’</td>
-</tr>
-<tr>
-<td>bool(x)</td>
-<td>将x转换为Boolean类型，即True或False<br>bool(‘’) 的结果是False</td>
-</tr>
-<tr>
-<td>chr(i)</td>
-<td>返回Unicode为i的字符<br>chr(9996)的结果是’✌ ‘</td>
-</tr>
-<tr>
-<td>complex(r,i)</td>
-<td>创建一个复数 r + i*1j，其中i可以省略<br>complex(10,10)的结果是10+10j</td>
-</tr>
-<tr>
-<td>dict()</td>
-<td>创建字典类型<br>dict()的结果是一个空字典{}</td>
-</tr>
-<tr>
-<td>divmod(a,b)</td>
-<td>返回a和b的商及余数<br>divmod(10,3)结果是一个(3,1)</td>
-</tr>
-<tr>
-<td>eval(s)</td>
-<td>计算字符串s作为Python表达式的值<br>eval(‘1+99’)的结果是100</td>
-</tr>
-<tr>
-<td>exec(s)</td>
-<td>计算字符串s作为Python语句的值<br>exec(‘a = 1+999’)运行后，变量a的值为1000</td>
-</tr>
-<tr>
-<td>float(x)</td>
-<td>将x转换成浮点数<br>float(1010)的结果是1010.0</td>
-</tr>
-<tr>
-<td>hex(x)</td>
-<td>将整数转换为16进制字符串<br>hex(1010)的结果是’0x3f2’</td>
-</tr>
-<tr>
-<td>input(s)</td>
-<td>获取用户输入，其中s是字符串，作为提示信息<br>s可选</td>
-</tr>
-<tr>
-<td>int(x)</td>
-<td>将x转换成整数<br>int(9.9)的结果是9</td>
-</tr>
-<tr>
-<td>list(x)</td>
-<td>创建或将变量x转换成一个列表类型<br>list({10,9,8})的结果是[8,9,10]</td>
-</tr>
-<tr>
-<td>max(a1,a2,…)</td>
-<td>返回参数的最大值<br>max(1,2,3,4,5)的结果是5</td>
-</tr>
-<tr>
-<td>min(a1,a2,…)</td>
-<td>返回参数的最小值<br>min(1,2,3,4,5)的结果是1</td>
-</tr>
-<tr>
-<td>oct(x)</td>
-<td>将整数x转换成等值的八进制字符串形式<br>oct(1010)的结果是’0o1762’</td>
-</tr>
-<tr>
-<td>open(fname, m)</td>
-<td>打开文件，包括文本方式和二进制方式等<br>其中，m部分可以省略，默认是以文本可读形式打开</td>
-</tr>
-<tr>
-<td>ord(c)</td>
-<td>返回一个字符的Unicode编码值<br>ord(‘字’)的结果是23383</td>
-</tr>
-<tr>
-<td>pow(x,y)</td>
-<td>返回x的y次幂<br>pow(2,pow(2,2))的结果是16</td>
-</tr>
-<tr>
-<td>print(x)</td>
-<td>打印变量或字符串x<br>print()的end参数用来表示输出的结尾字符</td>
-</tr>
-<tr>
-<td>range(a,b,s)</td>
-<td>从a到b(不含)以s为步长产生一个序列<br>list(range(1,10,3))的结果是[1, 4, 7]</td>
-</tr>
-<tr>
-<td>reversed(r)</td>
-<td>返回组合类型r的逆序迭代形式<br>for i in reversed([1,2,3])将逆序遍历列表</td>
-</tr>
-<tr>
-<td>round(n)</td>
-<td>四舍五入方式计算n<br>round(10.6)的结果是11</td>
-</tr>
-<tr>
-<td>set(x)</td>
-<td>将组合数据类型x转换成集合类型<br>set([1,1,1,1])的结果是{1}</td>
-</tr>
-<tr>
-<td>sorted(x)</td>
-<td>对组合数据类型x进行排序，默认从小到大<br>sorted([1,3,5,2,4])的结果是[1,2,3,4,5]</td>
-</tr>
-<tr>
-<td>str(x)</td>
-<td>将x转换为等值的字符串类型<br>str(0x1010)的结果是’4112’</td>
-</tr>
-<tr>
-<td>sum(x)</td>
-<td>对组合数据类型x计算求和结果<br>sum([1,3,5,2,4])的结果是15</td>
-</tr>
-<tr>
-<td>type(x)</td>
-<td>返回变量x的数据类型<br>type({1:2})的结果是&lt;class&nbsp;’dict’&gt;</td>
-</tr>
-</tbody></table>
-<h2 id="8-5实例解析：Web页面元素提取"><a href="#8-5实例解析：Web页面元素提取" class="headerlink" title="8.5实例解析：Web页面元素提取"></a>8.5实例解析：Web页面元素提取</h2>]]></content>
+> 一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以**平凡**的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处>~<
+
+<p> <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210814.jpg"></p>
+]]></content>
       <categories>
-        <category>Python</category>
-        <category>二级</category>
+        <category>日常记录</category>
       </categories>
       <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
+        <tag>生活片段</tag>
       </tags>
   </entry>
   <entry>
@@ -2011,6 +1837,180 @@
       <tags>
         <tag>电脑</tag>
         <tag>磁盘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>8.Python计算生态</title>
+    <url>/2021/09/05/8-Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81/</url>
+    <content><![CDATA[<p>Python计算生态</p>
+<span id="more"></span>
+<h1 id="8-Python计算生态"><a href="#8-Python计算生态" class="headerlink" title="8.Python计算生态"></a>8.Python计算生态</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_8.Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81.png"></li>
+</ul>
+<h2 id="8-1计算思维"><a href="#8-1计算思维" class="headerlink" title="8.1计算思维"></a>8.1计算思维</h2><p>人类在认识世界、改造世界过程中表现出<em>三种基本的思维特征</em>：以实验和验证为特征的<strong>实证思维</strong> ，以物理学科为代表；以推理和演绎为特征的<strong>逻辑思维</strong>，以数学学科为代表；以设计和构造为特征的<strong>计算思维</strong>，以计算机学科为代表。<br><br>计算思维的本质是<strong>抽象</strong>（Abstraction）和<strong>自动化</strong>（Automation）</p>
+<h2 id="8-2程序设计方法"><a href="#8-2程序设计方法" class="headerlink" title="8.2程序设计方法"></a>8.2程序设计方法</h2><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>自顶而下的设计</td>
+<td>一个解决复杂问题行之有效的方法,基本思想是以一个总问题开始，试图把它表达为很多小问题组成的解决方案。再用同样的技术依次攻破每个小问题，最终问题变得非常小，以至于可以很容易解决。然后只需把所有的碎片组合起来，就可以得到一个程序。</td>
+</tr>
+<tr>
+<td>自底向上执行</td>
+<td>开展测试的更好办法也是将程序分成小部分逐个测试执行中等规模程序的最好方法是从结构图最底层开始，而不是从顶部开始，然后逐步上升。或者说，先运行和测试每一个基本函数，再测试由基础函数组成的整体函数，这样有助于定位错误</td>
+</tr>
+</tbody></table>
+<h2 id="8-3Python标准库"><a href="#8-3Python标准库" class="headerlink" title="8.3Python标准库"></a>8.3Python标准库</h2><p>有一部分Python计算生态随Python安装包一起发布，用户可以随时使用，被称为Python标准库。<br><br>受限于Python安装包的设定大小，标准库数量270个左右。</p>
+<h2 id="8-4Python第三方库"><a href="#8-4Python第三方库" class="headerlink" title="8.4Python第三方库"></a>8.4Python第三方库</h2><p>更广泛的Python计算生态采用额外安装方式服务用户，被称为Python第三方库。这些第三方库由全球各行业专家、工程师和爱好者开发，没有顶层设计，由开发者采用“尽力而为”的方式维护。Python通过新一代安装工具pip管理大部分Python第三方库的安装。</p>
+<h2 id="8-5基本的Python内置函数"><a href="#8-5基本的Python内置函数" class="headerlink" title="8.5基本的Python内置函数"></a>8.5基本的Python内置函数</h2><p>Python解释器提供了68个内置函数（下面介绍32个）</p>
+<table>
+<thead>
+<tr>
+<th>函数名称</th>
+<th>函数说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>abs(x)</td>
+<td>x的绝对值<br>如果x是复数，返回复数的模</td>
+</tr>
+<tr>
+<td>all(x)</td>
+<td>组合类型变量x中所有元素都为真时返回True，否则返回False；若x为空，返回True</td>
+</tr>
+<tr>
+<td>any(x)</td>
+<td>组合类型变量x中任一元素都为真时返回True，否则返回False；若x为空，返回False</td>
+</tr>
+<tr>
+<td>bin(x)</td>
+<td>将整数x转换为等值的二进制字符串</td>
+</tr>
+<tr>
+<td>bin(1010)</td>
+<td>的结果是’0b1111110010’</td>
+</tr>
+<tr>
+<td>bool(x)</td>
+<td>将x转换为Boolean类型，即True或False<br>bool(‘’) 的结果是False</td>
+</tr>
+<tr>
+<td>chr(i)</td>
+<td>返回Unicode为i的字符<br>chr(9996)的结果是’✌ ‘</td>
+</tr>
+<tr>
+<td>complex(r,i)</td>
+<td>创建一个复数 r + i*1j，其中i可以省略<br>complex(10,10)的结果是10+10j</td>
+</tr>
+<tr>
+<td>dict()</td>
+<td>创建字典类型<br>dict()的结果是一个空字典{}</td>
+</tr>
+<tr>
+<td>divmod(a,b)</td>
+<td>返回a和b的商及余数<br>divmod(10,3)结果是一个(3,1)</td>
+</tr>
+<tr>
+<td>eval(s)</td>
+<td>计算字符串s作为Python表达式的值<br>eval(‘1+99’)的结果是100</td>
+</tr>
+<tr>
+<td>exec(s)</td>
+<td>计算字符串s作为Python语句的值<br>exec(‘a = 1+999’)运行后，变量a的值为1000</td>
+</tr>
+<tr>
+<td>float(x)</td>
+<td>将x转换成浮点数<br>float(1010)的结果是1010.0</td>
+</tr>
+<tr>
+<td>hex(x)</td>
+<td>将整数转换为16进制字符串<br>hex(1010)的结果是’0x3f2’</td>
+</tr>
+<tr>
+<td>input(s)</td>
+<td>获取用户输入，其中s是字符串，作为提示信息<br>s可选</td>
+</tr>
+<tr>
+<td>int(x)</td>
+<td>将x转换成整数<br>int(9.9)的结果是9</td>
+</tr>
+<tr>
+<td>list(x)</td>
+<td>创建或将变量x转换成一个列表类型<br>list({10,9,8})的结果是[8,9,10]</td>
+</tr>
+<tr>
+<td>max(a1,a2,…)</td>
+<td>返回参数的最大值<br>max(1,2,3,4,5)的结果是5</td>
+</tr>
+<tr>
+<td>min(a1,a2,…)</td>
+<td>返回参数的最小值<br>min(1,2,3,4,5)的结果是1</td>
+</tr>
+<tr>
+<td>oct(x)</td>
+<td>将整数x转换成等值的八进制字符串形式<br>oct(1010)的结果是’0o1762’</td>
+</tr>
+<tr>
+<td>open(fname, m)</td>
+<td>打开文件，包括文本方式和二进制方式等<br>其中，m部分可以省略，默认是以文本可读形式打开</td>
+</tr>
+<tr>
+<td>ord(c)</td>
+<td>返回一个字符的Unicode编码值<br>ord(‘字’)的结果是23383</td>
+</tr>
+<tr>
+<td>pow(x,y)</td>
+<td>返回x的y次幂<br>pow(2,pow(2,2))的结果是16</td>
+</tr>
+<tr>
+<td>print(x)</td>
+<td>打印变量或字符串x<br>print()的end参数用来表示输出的结尾字符</td>
+</tr>
+<tr>
+<td>range(a,b,s)</td>
+<td>从a到b(不含)以s为步长产生一个序列<br>list(range(1,10,3))的结果是[1, 4, 7]</td>
+</tr>
+<tr>
+<td>reversed(r)</td>
+<td>返回组合类型r的逆序迭代形式<br>for i in reversed([1,2,3])将逆序遍历列表</td>
+</tr>
+<tr>
+<td>round(n)</td>
+<td>四舍五入方式计算n<br>round(10.6)的结果是11</td>
+</tr>
+<tr>
+<td>set(x)</td>
+<td>将组合数据类型x转换成集合类型<br>set([1,1,1,1])的结果是{1}</td>
+</tr>
+<tr>
+<td>sorted(x)</td>
+<td>对组合数据类型x进行排序，默认从小到大<br>sorted([1,3,5,2,4])的结果是[1,2,3,4,5]</td>
+</tr>
+<tr>
+<td>str(x)</td>
+<td>将x转换为等值的字符串类型<br>str(0x1010)的结果是’4112’</td>
+</tr>
+<tr>
+<td>sum(x)</td>
+<td>对组合数据类型x计算求和结果<br>sum([1,3,5,2,4])的结果是15</td>
+</tr>
+<tr>
+<td>type(x)</td>
+<td>返回变量x的数据类型<br>type({1:2})的结果是&lt;class&nbsp;’dict’&gt;</td>
+</tr>
+</tbody></table>
+<h2 id="8-5实例解析：Web页面元素提取"><a href="#8-5实例解析：Web页面元素提取" class="headerlink" title="8.5实例解析：Web页面元素提取"></a>8.5实例解析：Web页面元素提取</h2>]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
       </tags>
   </entry>
   <entry>
