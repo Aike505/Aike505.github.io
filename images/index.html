@@ -90,6 +90,24 @@
   <script data-ad-client="ca-pub-1913211097936916" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <meta name="generator" content="Hexo 5.4.0"></head>
 <body>
+
+  <!-- 深色模式添加2021-10-3 16:20:26 -->
+  <script>
+    if (localStorage.getItem('dark') === '1') {
+    document.body.classList.add('dark');
+    }
+    else if (new Date().getHours() >= 22 || new Date().getHours() < 7) {
+    document.body.classList.add('dark');
+    } 
+    else if (matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.body.classList.add('dark');
+    }
+</script>
+<a onclick="switchNightMode()" id="sma">
+    <i class="fa fa-moon-o" id="nightMode" aria-hidden="true"></i>
+</a>
+
+
   
   
 <div class="cover-wrapper">
