@@ -30,111 +30,6 @@
       </tags>
   </entry>
   <entry>
-    <title>11.Python第三方库纵览</title>
-    <url>/2021/09/05/11-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88/</url>
-    <content><![CDATA[<p>Python第三方库纵览</p>
-<span id="more"></span>
-<h1 id="11-Python第三方库纵览"><a href="#11-Python第三方库纵览" class="headerlink" title="11.Python第三方库纵览"></a>11.Python第三方库纵览</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_11.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88.png"></li>
-</ul>
-<blockquote>
-<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>更广泛的Python计算生态，只要求了解第三方库的名称，不限于以下领域: 网络爬虫、数据分析、文本处理、数据可视化、用户图形界面、机器学习、Web开发、游戏开发等</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>方向</th>
-<th>第三方库</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>网络爬虫方向</td>
-<td>requests<br>scrapy</td>
-<td>requests库是一个简洁且简单的处理HTTP请求的第三方库，它的最大优点是程序编写过程更接近正常URL访问过程。<br>scrapy是Python开发的一个快速的、高层次的Web获取框架。</td>
-</tr>
-<tr>
-<td>数据分析方向</td>
-<td>numpy<br>scipy<br>pandas</td>
-<td>numpy是Python的一种开源数值计算扩展第三方库，用于处理数据类型相同的多维数组（ndarray），简称“数组”<br>scipy是一款方便、易于使用、专为科学和工程设计的Python工具包。<br>pandas是基于numpy扩展的一个重要第三方库，它是为了解决数据分析任务而创建的。</td>
-</tr>
-<tr>
-<td>文本处理方向</td>
-<td>pdfminer<br>openpyxl<br>python-docx<br>beautifulsoup4</td>
-<td>pdfminer是一个可以从PDF文档中提取各类信息的第三方库<br>openpyxl是一个处理Microsoft Excel文档Python第三方库<br>python-docx是一个处理Microsoft Word文档的Python第三方库<br>beautifulsoup4库，也称为Beautiful Soup库或bs4库，用于解析和处理HTML和XML</td>
-</tr>
-<tr>
-<td>数据可视化</td>
-<td>matplotlib<br>TVTK<br>mayavi</td>
-<td>matplotlib是提供数据绘图功能的第三方库，主要进行二维图表数据展示，广泛用于科学计算的数据可视化<br>TVTK库在标准的VTK库之上用Traits库进行封装的Python第三方库<br>mayavi基于VTK开发，完全用Python编写，提供了一个更为方便实用的可视化软件</td>
-</tr>
-<tr>
-<td>用户图形界面方向</td>
-<td>pyqt5<br>wxpython<br>pygtk</td>
-<td>Python语言当前最好的GUI第三方库，它可以在Windows、Linux和Mac OS X等操作系统上跨平台使用<br>wxPython是Python语言的一套优秀的GUI图形库，它是跨平台GUI库wxWidgets的Python封装<br>pygtk是基于GTK+的Python语言封装，它提供了各式的可视元素和功能，能够轻松创建具有图形用户界面的程序。</td>
-</tr>
-<tr>
-<td>机器学习方向</td>
-<td>Scikit-learn<br>TensorFlow<br>Theano</td>
-<td>Scikit-learn是一个简单且高效的数据挖掘和数据分析工具<br>TensorFlow是谷歌公司基于DistBelief进行研发的第二代人工智能学习系统，也是用来支撑著名的AlphaGo系统的后台框架<br>Theano为执行深度学习中大规模神经网络算法的运算而设计，擅长处理多维数组</td>
-</tr>
-<tr>
-<td>Web开发方向</td>
-<td>Django<br>Pyramid<br>Flask</td>
-<td>Django是Python生态中最流行的开源Web应用框架<br>Pyramid是一个通用、开源的Python Web应用程序开发框架<br>Flask是轻量级Web应用框架，相比Django和Pyramid，它也被称为微框架</td>
-</tr>
-<tr>
-<td>游戏开发方向</td>
-<td>Pygame<br>Panda3D<br>cocos2d</td>
-<td>Pygame是在SDL库基础上进行封装的、面向游戏开发入门的Python第三方库，除了制作游戏外，还用于制作多媒体应用程序<br>Panda3D是一个开源、跨平台的3D渲染和游戏开发库,简答说，它是一个3D游戏引擎，由迪士尼和卡耐基梅隆大学娱乐技术中心共同进行开发<br>cocos2d是一个构建2D游戏和图形界面交互式应用的框架，它包括C++、JavaScript、Swift、Python等多个版本</td>
-</tr>
-</tbody></table>
-<p>Python语言有超过12万个第三方库，覆盖信息技术几乎所有领域。即使每个方向，也会有大量的专业人员开发多个第三方库来给出具体设计。除了本章所提到的方向外，这里再列出5个<strong>有趣且有用</strong>的Python第三方库，展示Python在工程实践方面强大的魅力。</p>
-<table>
-<thead>
-<tr>
-<th>更多第三方库</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>PIL</td>
-<td>PIL库是Python语言在图像处理方面的重要第三方库，支持图像存储、显示和处理，它能够处理几乎所有图片格式，可以完成对图像的缩放、剪裁、叠加以及向图像添加线条、图像和文字等操作。</td>
-</tr>
-<tr>
-<td>SymPy</td>
-<td>SymPy是一个支持符号计算的Python第三方库，它是一个全功能的计算机代数系统。SymPy代码简洁、易于理解，支持符号计算、高精度计算、模式匹配、绘图、解方程、微积分、组合数学、离散数学、几何学、概率与统计、物理学等领域计算和应用。</td>
-</tr>
-<tr>
-<td>NLTK</td>
-<td>NLTK是一个非常重要的自然语言处理Python第三方库，它支持多种语言，尤其对中文支持良好。NLTK可以进行语料处理、文本统计、内容理解、情感分析等多种应用，具备非常可靠的应用价值。</td>
-</tr>
-<tr>
-<td>WeRoBot</td>
-<td>WeRoBot 是一个微信公众号开发框架，也称为的微信机器人框架。WeRoBot可以解析微信服务器发来的消息，并将消息转换成成Message或者Event类型。</td>
-</tr>
-<tr>
-<td>MyQR</td>
-<td>MyQR是一个能够产生基本二维码、艺术二维码和动态效果二维码的Python第三方库。图11.1给出了一些MyQR生成二维码的实例。</td>
-</tr>
-</tbody></table>
-<ul>
-<li>图11.1<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_11.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88_1.png"></li>
-</ul>
-<blockquote>
-<h2 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h2><p>本章通过8个具体方向30个Python功能库的简要介绍纵览Python语言计算生态的丰富性，希望读者能够从Python基础语法出发，看到更广阔的程序设计生态，进一步“理解和运用计算生态”，掌握符合信息时代需要的程序设计能力。<br><br>国家计算机等级考试不仅仅是一场考试，更是检验能力提升的手段，加油!<br><br><br>点击<a href="https://python123.io/student/series/1/">这里</a>获取所有章节pdf<br>点击<a href="https://python123.io/python/songtian/5ed87dc83b5ca9663fd4761d">这里</a>获取更多内容</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>10.Python第三方库概览</title>
     <url>/2021/09/05/10-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88/</url>
     <content><![CDATA[<p>Python第三方库概览</p>
@@ -312,6 +207,111 @@
       </tags>
   </entry>
   <entry>
+    <title>11.Python第三方库纵览</title>
+    <url>/2021/09/05/11-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88/</url>
+    <content><![CDATA[<p>Python第三方库纵览</p>
+<span id="more"></span>
+<h1 id="11-Python第三方库纵览"><a href="#11-Python第三方库纵览" class="headerlink" title="11.Python第三方库纵览"></a>11.Python第三方库纵览</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_11.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88.png"></li>
+</ul>
+<blockquote>
+<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>更广泛的Python计算生态，只要求了解第三方库的名称，不限于以下领域: 网络爬虫、数据分析、文本处理、数据可视化、用户图形界面、机器学习、Web开发、游戏开发等</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>方向</th>
+<th>第三方库</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>网络爬虫方向</td>
+<td>requests<br>scrapy</td>
+<td>requests库是一个简洁且简单的处理HTTP请求的第三方库，它的最大优点是程序编写过程更接近正常URL访问过程。<br>scrapy是Python开发的一个快速的、高层次的Web获取框架。</td>
+</tr>
+<tr>
+<td>数据分析方向</td>
+<td>numpy<br>scipy<br>pandas</td>
+<td>numpy是Python的一种开源数值计算扩展第三方库，用于处理数据类型相同的多维数组（ndarray），简称“数组”<br>scipy是一款方便、易于使用、专为科学和工程设计的Python工具包。<br>pandas是基于numpy扩展的一个重要第三方库，它是为了解决数据分析任务而创建的。</td>
+</tr>
+<tr>
+<td>文本处理方向</td>
+<td>pdfminer<br>openpyxl<br>python-docx<br>beautifulsoup4</td>
+<td>pdfminer是一个可以从PDF文档中提取各类信息的第三方库<br>openpyxl是一个处理Microsoft Excel文档Python第三方库<br>python-docx是一个处理Microsoft Word文档的Python第三方库<br>beautifulsoup4库，也称为Beautiful Soup库或bs4库，用于解析和处理HTML和XML</td>
+</tr>
+<tr>
+<td>数据可视化</td>
+<td>matplotlib<br>TVTK<br>mayavi</td>
+<td>matplotlib是提供数据绘图功能的第三方库，主要进行二维图表数据展示，广泛用于科学计算的数据可视化<br>TVTK库在标准的VTK库之上用Traits库进行封装的Python第三方库<br>mayavi基于VTK开发，完全用Python编写，提供了一个更为方便实用的可视化软件</td>
+</tr>
+<tr>
+<td>用户图形界面方向</td>
+<td>pyqt5<br>wxpython<br>pygtk</td>
+<td>Python语言当前最好的GUI第三方库，它可以在Windows、Linux和Mac OS X等操作系统上跨平台使用<br>wxPython是Python语言的一套优秀的GUI图形库，它是跨平台GUI库wxWidgets的Python封装<br>pygtk是基于GTK+的Python语言封装，它提供了各式的可视元素和功能，能够轻松创建具有图形用户界面的程序。</td>
+</tr>
+<tr>
+<td>机器学习方向</td>
+<td>Scikit-learn<br>TensorFlow<br>Theano</td>
+<td>Scikit-learn是一个简单且高效的数据挖掘和数据分析工具<br>TensorFlow是谷歌公司基于DistBelief进行研发的第二代人工智能学习系统，也是用来支撑著名的AlphaGo系统的后台框架<br>Theano为执行深度学习中大规模神经网络算法的运算而设计，擅长处理多维数组</td>
+</tr>
+<tr>
+<td>Web开发方向</td>
+<td>Django<br>Pyramid<br>Flask</td>
+<td>Django是Python生态中最流行的开源Web应用框架<br>Pyramid是一个通用、开源的Python Web应用程序开发框架<br>Flask是轻量级Web应用框架，相比Django和Pyramid，它也被称为微框架</td>
+</tr>
+<tr>
+<td>游戏开发方向</td>
+<td>Pygame<br>Panda3D<br>cocos2d</td>
+<td>Pygame是在SDL库基础上进行封装的、面向游戏开发入门的Python第三方库，除了制作游戏外，还用于制作多媒体应用程序<br>Panda3D是一个开源、跨平台的3D渲染和游戏开发库,简答说，它是一个3D游戏引擎，由迪士尼和卡耐基梅隆大学娱乐技术中心共同进行开发<br>cocos2d是一个构建2D游戏和图形界面交互式应用的框架，它包括C++、JavaScript、Swift、Python等多个版本</td>
+</tr>
+</tbody></table>
+<p>Python语言有超过12万个第三方库，覆盖信息技术几乎所有领域。即使每个方向，也会有大量的专业人员开发多个第三方库来给出具体设计。除了本章所提到的方向外，这里再列出5个<strong>有趣且有用</strong>的Python第三方库，展示Python在工程实践方面强大的魅力。</p>
+<table>
+<thead>
+<tr>
+<th>更多第三方库</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PIL</td>
+<td>PIL库是Python语言在图像处理方面的重要第三方库，支持图像存储、显示和处理，它能够处理几乎所有图片格式，可以完成对图像的缩放、剪裁、叠加以及向图像添加线条、图像和文字等操作。</td>
+</tr>
+<tr>
+<td>SymPy</td>
+<td>SymPy是一个支持符号计算的Python第三方库，它是一个全功能的计算机代数系统。SymPy代码简洁、易于理解，支持符号计算、高精度计算、模式匹配、绘图、解方程、微积分、组合数学、离散数学、几何学、概率与统计、物理学等领域计算和应用。</td>
+</tr>
+<tr>
+<td>NLTK</td>
+<td>NLTK是一个非常重要的自然语言处理Python第三方库，它支持多种语言，尤其对中文支持良好。NLTK可以进行语料处理、文本统计、内容理解、情感分析等多种应用，具备非常可靠的应用价值。</td>
+</tr>
+<tr>
+<td>WeRoBot</td>
+<td>WeRoBot 是一个微信公众号开发框架，也称为的微信机器人框架。WeRoBot可以解析微信服务器发来的消息，并将消息转换成成Message或者Event类型。</td>
+</tr>
+<tr>
+<td>MyQR</td>
+<td>MyQR是一个能够产生基本二维码、艺术二维码和动态效果二维码的Python第三方库。图11.1给出了一些MyQR生成二维码的实例。</td>
+</tr>
+</tbody></table>
+<ul>
+<li>图11.1<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_11.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88_1.png"></li>
+</ul>
+<blockquote>
+<h2 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h2><p>本章通过8个具体方向30个Python功能库的简要介绍纵览Python语言计算生态的丰富性，希望读者能够从Python基础语法出发，看到更广阔的程序设计生态，进一步“理解和运用计算生态”，掌握符合信息时代需要的程序设计能力。<br><br>国家计算机等级考试不仅仅是一场考试，更是检验能力提升的手段，加油!<br><br><br>点击<a href="https://python123.io/student/series/1/">这里</a>获取所有章节pdf<br>点击<a href="https://python123.io/python/songtian/5ed87dc83b5ca9663fd4761d">这里</a>获取更多内容</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2.Python语言基本语法元素</title>
     <url>/2021/09/04/2-Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0/</url>
     <content><![CDATA[<p>Python语言基本语法元素</p>
@@ -444,88 +444,6 @@
 </tr>
 </tbody></table>
 ]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4.程序的控制结构</title>
-    <url>/2021/09/05/4-%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<p>程序的控制结构</p>
-<span id="more"></span>
-<h1 id="4-程序的控制结构"><a href="#4-程序的控制结构" class="headerlink" title="4.程序的控制结构"></a>4.程序的控制结构</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_4.%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84.png"><h2 id="4-1顺序结构"><a href="#4-1顺序结构" class="headerlink" title="4.1顺序结构"></a>4.1顺序结构</h2>顺序结构是程序按照线性顺序依次执行的一种运行<br>方式<h2 id="4-2分支结构"><a href="#4-2分支结构" class="headerlink" title="4.2分支结构"></a>4.2分支结构</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#单分支结构: if语句</span><br><span class="line">if &lt;条件&gt;:</span><br><span class="line">    语句块</span><br><span class="line"></span><br><span class="line">#二分支结构：if-else</span><br><span class="line">if &lt;条件&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;</span><br><span class="line"></span><br><span class="line">#多分支结构：if-elif-else</span><br><span class="line">if &lt;条件1&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">elif &lt;条件2&gt;:</span><br><span class="line">    &lt;语句块2&gt;</span><br><span class="line">... </span><br><span class="line">else:</span><br><span class="line">    &lt;语句块N&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="4-3循环结构"><a href="#4-3循环结构" class="headerlink" title="4.3循环结构"></a>4.3循环结构</h2><h3 id="4-3-1遍历循环-for"><a href="#4-3-1遍历循环-for" class="headerlink" title="4.3.1遍历循环: for"></a>4.3.1遍历循环: for</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for &lt;循环变量&gt; in &lt;遍历结构&gt;:</span><br><span class="line">    &lt;语句块&gt;</span><br></pre></td></tr></table></figure>
-遍历循环还有一种扩展模式，使用方法如下：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for &lt;循环变量&gt; in &lt;遍历结构&gt;:       </span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;</span><br></pre></td></tr></table></figure>
-当for循环正常执行之后，程序会继续执行else语句中内容。else语句只在循环正常执行之后才执行并结束，因此，可以在&lt;语句块2&gt;中放置判断循环执行情况的语句。</li>
-</ul>
-<h3 id="4-3-2无限循环-while"><a href="#4-3-2无限循环-while" class="headerlink" title="4.3.2无限循环: while"></a>4.3.2无限循环: while</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">while &lt;条件&gt;:</span><br><span class="line">    &lt;语句块&gt;  </span><br><span class="line"></span><br><span class="line">while &lt;条件&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;  </span><br></pre></td></tr></table></figure>
-<h3 id="4-3-3循环控制-break和continue"><a href="#4-3-3循环控制-break和continue" class="headerlink" title="4.3.3循环控制: break和continue"></a>4.3.3循环控制: break和continue</h3><table>
-<thead>
-<tr>
-<th>语句</th>
-<th>区别</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>continue</td>
-<td>只结束本次循环，不终止整个循环的执行</td>
-</tr>
-<tr>
-<td>break</td>
-<td>具备结束循环的能力</td>
-</tr>
-</tbody></table>
-<h2 id="4-4判断条件组合"><a href="#4-4判断条件组合" class="headerlink" title="4.4判断条件组合"></a>4.4判断条件组合</h2><p>Python关系操作符</p>
-<table>
-<thead>
-<tr>
-<th>操作符</th>
-<th>数学符号</th>
-<th>操作符含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>＜</td>
-<td>﹤</td>
-<td>小于</td>
-</tr>
-<tr>
-<td>＜＝</td>
-<td>≤</td>
-<td>小于等于</td>
-</tr>
-<tr>
-<td>＞＝</td>
-<td>≥</td>
-<td>大于等于</td>
-</tr>
-<tr>
-<td>＞</td>
-<td>＞</td>
-<td>大于</td>
-</tr>
-<tr>
-<td>＝＝</td>
-<td>＝</td>
-<td>等于</td>
-</tr>
-<tr>
-<td>！＝</td>
-<td>≠</td>
-<td>不等于</td>
-</tr>
-</tbody></table>
-<p>Python语言使用保留字not、and和or对条件进行逻辑运算或组着。<br><br>保留字not表示单个条件的“否”关系，and表示多个条件之间的“与”关系，保留字or表示多个条件之间的“或”关系。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;not True</span><br><span class="line">False</span><br><span class="line">&gt;&gt;&gt;a = 80</span><br><span class="line">&gt;&gt;&gt;( a &gt; 100) or ( a &gt; 50 and a &lt; 90)</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
-<h2 id="4-4程序的异常处理"><a href="#4-4程序的异常处理" class="headerlink" title="4.4程序的异常处理"></a>4.4程序的异常处理</h2><p>Python语言使用保留字try和except进行异常处理，基本的语法格式如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">try:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">except:</span><br><span class="line">    &lt;语句块2&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="4-5实例解析——猜数字游戏"><a href="#4-5实例解析——猜数字游戏" class="headerlink" title="4.5实例解析——猜数字游戏"></a>4.5实例解析——猜数字游戏</h2>]]></content>
       <categories>
         <category>Python</category>
         <category>二级</category>
@@ -849,6 +767,88 @@
 </tr>
 </tbody></table>
 <h2 id="3-6实例解析——凯撒密码"><a href="#3-6实例解析——凯撒密码" class="headerlink" title="3.6实例解析——凯撒密码"></a>3.6实例解析——凯撒密码</h2>]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.程序的控制结构</title>
+    <url>/2021/09/05/4-%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<p>程序的控制结构</p>
+<span id="more"></span>
+<h1 id="4-程序的控制结构"><a href="#4-程序的控制结构" class="headerlink" title="4.程序的控制结构"></a>4.程序的控制结构</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_4.%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84.png"><h2 id="4-1顺序结构"><a href="#4-1顺序结构" class="headerlink" title="4.1顺序结构"></a>4.1顺序结构</h2>顺序结构是程序按照线性顺序依次执行的一种运行<br>方式<h2 id="4-2分支结构"><a href="#4-2分支结构" class="headerlink" title="4.2分支结构"></a>4.2分支结构</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#单分支结构: if语句</span><br><span class="line">if &lt;条件&gt;:</span><br><span class="line">    语句块</span><br><span class="line"></span><br><span class="line">#二分支结构：if-else</span><br><span class="line">if &lt;条件&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;</span><br><span class="line"></span><br><span class="line">#多分支结构：if-elif-else</span><br><span class="line">if &lt;条件1&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">elif &lt;条件2&gt;:</span><br><span class="line">    &lt;语句块2&gt;</span><br><span class="line">... </span><br><span class="line">else:</span><br><span class="line">    &lt;语句块N&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="4-3循环结构"><a href="#4-3循环结构" class="headerlink" title="4.3循环结构"></a>4.3循环结构</h2><h3 id="4-3-1遍历循环-for"><a href="#4-3-1遍历循环-for" class="headerlink" title="4.3.1遍历循环: for"></a>4.3.1遍历循环: for</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for &lt;循环变量&gt; in &lt;遍历结构&gt;:</span><br><span class="line">    &lt;语句块&gt;</span><br></pre></td></tr></table></figure>
+遍历循环还有一种扩展模式，使用方法如下：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for &lt;循环变量&gt; in &lt;遍历结构&gt;:       </span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;</span><br></pre></td></tr></table></figure>
+当for循环正常执行之后，程序会继续执行else语句中内容。else语句只在循环正常执行之后才执行并结束，因此，可以在&lt;语句块2&gt;中放置判断循环执行情况的语句。</li>
+</ul>
+<h3 id="4-3-2无限循环-while"><a href="#4-3-2无限循环-while" class="headerlink" title="4.3.2无限循环: while"></a>4.3.2无限循环: while</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">while &lt;条件&gt;:</span><br><span class="line">    &lt;语句块&gt;  </span><br><span class="line"></span><br><span class="line">while &lt;条件&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;  </span><br></pre></td></tr></table></figure>
+<h3 id="4-3-3循环控制-break和continue"><a href="#4-3-3循环控制-break和continue" class="headerlink" title="4.3.3循环控制: break和continue"></a>4.3.3循环控制: break和continue</h3><table>
+<thead>
+<tr>
+<th>语句</th>
+<th>区别</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>continue</td>
+<td>只结束本次循环，不终止整个循环的执行</td>
+</tr>
+<tr>
+<td>break</td>
+<td>具备结束循环的能力</td>
+</tr>
+</tbody></table>
+<h2 id="4-4判断条件组合"><a href="#4-4判断条件组合" class="headerlink" title="4.4判断条件组合"></a>4.4判断条件组合</h2><p>Python关系操作符</p>
+<table>
+<thead>
+<tr>
+<th>操作符</th>
+<th>数学符号</th>
+<th>操作符含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>＜</td>
+<td>﹤</td>
+<td>小于</td>
+</tr>
+<tr>
+<td>＜＝</td>
+<td>≤</td>
+<td>小于等于</td>
+</tr>
+<tr>
+<td>＞＝</td>
+<td>≥</td>
+<td>大于等于</td>
+</tr>
+<tr>
+<td>＞</td>
+<td>＞</td>
+<td>大于</td>
+</tr>
+<tr>
+<td>＝＝</td>
+<td>＝</td>
+<td>等于</td>
+</tr>
+<tr>
+<td>！＝</td>
+<td>≠</td>
+<td>不等于</td>
+</tr>
+</tbody></table>
+<p>Python语言使用保留字not、and和or对条件进行逻辑运算或组着。<br><br>保留字not表示单个条件的“否”关系，and表示多个条件之间的“与”关系，保留字or表示多个条件之间的“或”关系。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;not True</span><br><span class="line">False</span><br><span class="line">&gt;&gt;&gt;a = 80</span><br><span class="line">&gt;&gt;&gt;( a &gt; 100) or ( a &gt; 50 and a &lt; 90)</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
+<h2 id="4-4程序的异常处理"><a href="#4-4程序的异常处理" class="headerlink" title="4.4程序的异常处理"></a>4.4程序的异常处理</h2><p>Python语言使用保留字try和except进行异常处理，基本的语法格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">try:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">except:</span><br><span class="line">    &lt;语句块2&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="4-5实例解析——猜数字游戏"><a href="#4-5实例解析——猜数字游戏" class="headerlink" title="4.5实例解析——猜数字游戏"></a>4.5实例解析——猜数字游戏</h2>]]></content>
       <categories>
         <category>Python</category>
         <category>二级</category>
@@ -1335,23 +1335,6 @@
       </tags>
   </entry>
   <entry>
-    <title>8-18</title>
-    <url>/2021/08/18/8-18/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
-<span id="more"></span>
->中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
-]]></content>
-      <categories>
-        <category>日常记录</category>
-      </categories>
-      <tags>
-        <tag>生活片段</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>8.Python计算生态</title>
     <url>/2021/09/05/8-Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81/</url>
     <content><![CDATA[<p>Python计算生态</p>
@@ -1526,6 +1509,42 @@
       </tags>
   </entry>
   <entry>
+    <title>8-18</title>
+    <url>/2021/08/18/8-18/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
+<span id="more"></span>
+>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
+]]></content>
+      <categories>
+        <category>日常记录</category>
+      </categories>
+      <tags>
+        <tag>生活片段</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
+    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</p>
+<span id="more"></span>
+
+<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
+<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
+<p>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
+<p>成功帮助舍友解决</p>
+]]></content>
+      <categories>
+        <category>电脑</category>
+      </categories>
+      <tags>
+        <tag>电脑</tag>
+        <tag>磁盘</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>github+hexo 个人博客更换主题</title>
     <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
     <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
@@ -1559,6 +1578,297 @@
         <tag>hexo</tag>
         <tag>博客</tag>
         <tag>主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo的安装和在github部署博客</title>
+    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<p>hexo的安装和在github部署博客</p>
+<span id="more"></span>
+
+<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io </code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>打开 git 下 git bash 输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
+<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
+
+<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
+<hr>
+<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
+]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo部署各种错误的解决方式</title>
+    <url>/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<p>hexo部署各种错误的解决方式</p>
+<span id="more"></span>
+
+<h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\blog\aikeblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:394:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\blog\aikeblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
+
+<h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol>
+<li>删除<code>.deploy_git</code>文件夹;</li>
+<li>输入 git<br><code>config --global core.autocrlf false</code></li>
+<li>然后，依次执行：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>问题解决。暴力直接，有效。</p>
+<h1 id="2-fatal-unable-to-access-‘https-github-com-git-39-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git-39-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git&#39;: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git&#39;">https://github.com/.../.git&#39;</a>: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
+        <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo 新建分类和标签</title>
+    <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
+    <content><![CDATA[<p>hexo 新建分类和标签</p>
+<span id="more"></span>
+
+<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
+<h2 id="1-创建“分类”选项"><a href="#1-创建“分类”选项" class="headerlink" title="1.创建“分类”选项"></a>1.创建“分类”选项</h2><p>生成“分类”页并添加 tpye 属性,进入博客目录。执行命令下方命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+
+<p>categories 文件夹下会有 index.md 这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2019-04-24 15:30:30</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>保存并关闭文件。</p>
+<p>给文章添加“categories”属性</p>
+<p>打开需要添加分类的文章，为其添加 categories 属性。下方的 categories:Hexo 表示这篇文章添加到到“Hexo”这个分类。注意：一篇文章只会添加到一个分类中，如果是多个默认放到第一个分类中。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 添加分类及标签</span><br><span class="line">date: 2017-05-26 12:12:57</span><br><span class="line">categories: Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了 categories: xxx 的文章才会被收录到首页的“分类”中。</p>
+<h2 id="2-创建“标签”选项"><a href="#2-创建“标签”选项" class="headerlink" title="2.创建“标签”选项"></a>2.创建“标签”选项</h2><p>生成“标签”页并添加 tpye 属性</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+
+<p>在 tags 文件夹下，找到 index.md 这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-22 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>添加 type: “tags”到内容中，添加后是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>保存并关闭文件。</p>
+<p>给文章添加“tags”属性,打开需要添加标签的文章，为其添加 tags 属性。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 添加分类及标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">categories:</span><br><span class="line">           - Hexo</span><br><span class="line">tags:</span><br><span class="line">           - 博客</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+        <tag>新建分类标签</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>修改github.io站点域名</title>
+    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
+    <content><![CDATA[<p>修改github.io站点域名</p>
+<span id="more"></span>
+
+<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
+<ul>
+<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
+<ul>
+<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&utm_medium=cpc&utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&utm_medium=se-cpc-op&utm_campaign=10045&utm_content=&utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&utm_adplace=AdPlace039520">华为云</a></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
+<ul>
+<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE3.png"></li>
+<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE1.png"></li>
+</ul>
+</blockquote>
+<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
+<ul>
+<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE2.png"></li>
+</ul>
+</blockquote>
+<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
+<ul>
+<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>注册域名</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>虚拟机安装macOS系统</title>
+    <url>/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<p>VMware虚拟机安装macOS全过程详解</p>
+<span id="more"></span>
+
+<p>参考链接</p>
+<p><a href="https://www.pc-daily.com/xitong/75975.html">虚拟机安装macos系统（VMware虚拟机安装macOS详细</a></p>
+<p><a href="https://blog.csdn.net/Simon_477/article/details/110252233">虚拟机VMware安装苹果系统macOS，超级详细教程，附文件下载，真教程！！</a></p>
+<p><a href="https://baijiahao.baidu.com/s?id=1697367423466273816&wfr=spider&for=pc">如何使用虚拟机VMware安装苹果macOS系统</a></p>
+<h5 id="1-安装虚拟机VMware"><a href="#1-安装虚拟机VMware" class="headerlink" title="1 安装虚拟机VMware"></a>1 安装虚拟机VMware</h5><p><a href="https://mp.weixin.qq.com/s?__biz=MzIyNjAxMjEwOQ==&mid=2247502732&idx=5&sn=27221e888444d6c36ac62f4767337215&chksm=e874752edf03fc38cadb220b2e77654f32248976e7fa2af240ba7f1e0c0527541ebba5725643&scene=21#wechat_redirect">VMware16</a></p>
+<h5 id="2-安装解锁工具unlocker"><a href="#2-安装解锁工具unlocker" class="headerlink" title="2  安装解锁工具unlocker"></a>2  安装解锁工具unlocker</h5><p>解锁虚拟机安装macOS限制工具</p>
+<p><a href="http://www.winwin7.com/soft/9473.html#xiazai">unlocker v3.0.3</a></p>
+<blockquote>
+<ul>
+<li><strong><a href="https://blog.csdn.net/puspos/article/details/108900141">运行unlocker中win-install时，出现file not found-darwin.</a></strong></li>
+</ul>
+</blockquote>
+<h5 id="3-虚拟机安装-maOS"><a href="#3-虚拟机安装-maOS" class="headerlink" title="3 虚拟机安装 maOS"></a>3 虚拟机安装 maOS</h5><p><a href="https://www.mhero.com/macos">macOS系统下载</a></p>
+<p><a href="https://cloud.mfpud.com/VirtualCDR/44EE85B8FF68F7428C0AE7B3AA27661E/">macOS kealos 10.15</a> （非百度云盘）</p>
+<p><a href="https://sysin.org/blog/macOS/">Apple macOS 下载汇总（系统、应用和技巧）</a></p>
+<blockquote>
+<ul>
+<li>报错<a href="https://www.bilibili.com/read/cv13362122"><strong>客户机操作系统已禁用 CPU</strong></a></li>
+</ul>
+</blockquote>
+<h5 id="4-解决安装后屏幕适应问题"><a href="#4-解决安装后屏幕适应问题" class="headerlink" title="4 解决安装后屏幕适应问题"></a>4 解决安装后屏幕适应问题</h5><p>安装VMware Tools，用到步骤二中darwin.iso</p>
+<h5 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h5><p><a href="https://baijiahao.baidu.com/s?id=1691924549832120099&wfr=spider&for=pc">虚拟机中的Mac系统怎么优化</a></p>
+<p><a href="https://blog.csdn.net/SSS_Benjamin/article/details/89296164">VMware 15 上Mac虚拟机卡顿情况的优化</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/337036027">全网最详细的VMware虚拟机安装MacOS系统教程，没有之一！！！附全部资源</a></p>
+<p><strong>网络</strong></p>
+<p><a href="https://m.kafan.cn/A/gvx45wd73r.html">mac虚拟机如何开启wifi</a></p>
+<p><a href="https://blog.csdn.net/kof820/article/details/50515115?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_antiscanv2&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_antiscanv2&utm_relevant_index=1">VMware虚拟机mac系统以太网无法上网</a></p>
+<p><strong>app store</strong></p>
+<p><a href="https://jingyan.baidu.com/article/e75aca852cd5a9142fdac610.html">app store 购买过程中出错 错误500解决方法</a></p>
+]]></content>
+      <tags>
+        <tag>虚拟机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>选课</title>
+    <url>/2021/08/28/%E9%80%89%E8%AF%BE/</url>
+    <content><![CDATA[<p>又是一年开学季，选课的日子又来了。</p>
+<span id="more"></span>
+
+<h2 id="1-选课"><a href="#1-选课" class="headerlink" title="1. 选课"></a>1. 选课</h2><p>这学期课程内容比较少，选修8门已经满了，课表如下：<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.8.29_%E8%AF%BE%E8%A1%A8.png"></p>
+<!-- 选修就只有[李伟](https://faculty.xidian.edu.cn/LW7/zh_CN/index.htm)老师的**数学建模**， -->
+<p>学院选修在<strong>系统工程</strong>和<strong>经济法概论</strong>中选择了前者。<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.8.29_%E9%80%89%E8%AF%BE1.png"><br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.8.29_%E9%80%89%E8%AF%BE2.png"><br>这学期学分一共就15.6分，严格说是15.55学分。<del>相比其他大院少了不止一点</del>。<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.8.29_%E9%80%89%E8%AF%BE0.png"></p>
+<h2 id="2-课程统计"><a href="#2-课程统计" class="headerlink" title="2. 课程统计"></a>2. 课程统计</h2><table>
+<thead>
+<tr>
+<th>课程名称</th>
+<th>课程类别</th>
+<th>课程性质</th>
+<th>开课单位</th>
+<th>授课教师</th>
+<th>学分</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>概率论与数理统计</td>
+<td>通识教育基础课</td>
+<td>必修</td>
+<td>数学与统计学院</td>
+<td>赵彦</td>
+<td>2.5</td>
+</tr>
+<tr>
+<td>数据库原理与应用</td>
+<td>大类基础课</td>
+<td>必修</td>
+<td>经济与管理学院</td>
+<td><a href="https://faculty.xidian.edu.cn/yangzhaojun/zh_CN/index.htm">杨朝君</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td>大学生职业发展</td>
+<td>拓展提高</td>
+<td>必修</td>
+<td>本科生院</td>
+<td>安翔</td>
+<td>1</td>
+</tr>
+<tr>
+<td>形势与政策(Ⅲ)</td>
+<td>通识教育基础课</td>
+<td>必修</td>
+<td>马克思主义学院</td>
+<td>樊稳</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>经管类学科导论(II)</td>
+<td>通识教育核心课</td>
+<td>必修</td>
+<td>经济与管理学院</td>
+<td><a href="https://faculty.xidian.edu.cn/CX5/zh_CN/index.htm">陈希</a>,<a href="https://faculty.xidian.edu.cn/SJ1/zh_CN/index.htm">尚娟</a></td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>系统工程</td>
+<td>大类基础课</td>
+<td>学院选修（任选）</td>
+<td>经济与管理学院</td>
+<td><a href="https://faculty.xidian.edu.cn/LAJ/zh_CN/index.htm">刘爱军</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td>大学英语中级(I)</td>
+<td>通识教育基础课</td>
+<td>必修</td>
+<td>外国语学院</td>
+<td>赵蓉</td>
+<td>2</td>
+</tr>
+<tr>
+<td>马克思主义基本原理</td>
+<td>通识教育基础课</td>
+<td>必修</td>
+<td>马克思主义学院</td>
+<td>刘向舒</td>
+<td>3</td>
+</tr>
+<tr>
+<td>大学体育(Ⅲ)</td>
+<td>通识教育基础课</td>
+<td>必修</td>
+<td>体育部</td>
+<td></td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>运筹学</td>
+<td>大类基础课</td>
+<td>必修</td>
+<td>经济与管理学院</td>
+<td>赵彦</td>
+<td>2</td>
+</tr>
+</tbody></table>
+<!-- 数学建模|公共任选课|公共任选| |[李伟](https://faculty.xidian.edu.cn/LW7/zh_CN/index.htm)|1 -->]]></content>
+      <categories>
+        <category>大学生活</category>
+      </categories>
+      <tags>
+        <tag>选课</tag>
+        <tag>大学生活</tag>
       </tags>
   </entry>
   <entry>
@@ -2028,276 +2338,6 @@
       <tags>
         <tag>Python</tag>
         <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
-    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</p>
-<span id="more"></span>
-
-<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
-<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
-<p>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
-<p>成功帮助舍友解决</p>
-]]></content>
-      <categories>
-        <category>电脑</category>
-      </categories>
-      <tags>
-        <tag>电脑</tag>
-        <tag>磁盘</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo 新建分类和标签</title>
-    <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
-    <content><![CDATA[<p>hexo 新建分类和标签</p>
-<span id="more"></span>
-
-<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
-<h2 id="1-创建“分类”选项"><a href="#1-创建“分类”选项" class="headerlink" title="1.创建“分类”选项"></a>1.创建“分类”选项</h2><p>生成“分类”页并添加 tpye 属性,进入博客目录。执行命令下方命令</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-
-<p>categories 文件夹下会有 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2019-04-24 15:30:30</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存并关闭文件。</p>
-<p>给文章添加“categories”属性</p>
-<p>打开需要添加分类的文章，为其添加 categories 属性。下方的 categories:Hexo 表示这篇文章添加到到“Hexo”这个分类。注意：一篇文章只会添加到一个分类中，如果是多个默认放到第一个分类中。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 添加分类及标签</span><br><span class="line">date: 2017-05-26 12:12:57</span><br><span class="line">categories: Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了 categories: xxx 的文章才会被收录到首页的“分类”中。</p>
-<h2 id="2-创建“标签”选项"><a href="#2-创建“标签”选项" class="headerlink" title="2.创建“标签”选项"></a>2.创建“标签”选项</h2><p>生成“标签”页并添加 tpye 属性</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-
-<p>在 tags 文件夹下，找到 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-22 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>添加 type: “tags”到内容中，添加后是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存并关闭文件。</p>
-<p>给文章添加“tags”属性,打开需要添加标签的文章，为其添加 tags 属性。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 添加分类及标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">categories:</span><br><span class="line">           - Hexo</span><br><span class="line">tags:</span><br><span class="line">           - 博客</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-        <tag>新建分类标签</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo的安装和在github部署博客</title>
-    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<p>hexo的安装和在github部署博客</p>
-<span id="more"></span>
-
-<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io </code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<p>打开 git 下 git bash 输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
-
-<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
-<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
-
-<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
-<hr>
-<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
-]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo部署各种错误的解决方式</title>
-    <url>/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<p>hexo部署各种错误的解决方式</p>
-<span id="more"></span>
-
-<h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\blog\aikeblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:394:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\blog\aikeblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
-
-<h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p>
-<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol>
-<li>删除<code>.deploy_git</code>文件夹;</li>
-<li>输入 git<br><code>config --global core.autocrlf false</code></li>
-<li>然后，依次执行：</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>问题解决。暴力直接，有效。</p>
-<h1 id="2-fatal-unable-to-access-‘https-github-com-git-39-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git-39-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git&#39;: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git&#39;">https://github.com/.../.git&#39;</a>: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
-        <tag>bug</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>修改github.io站点域名</title>
-    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
-    <content><![CDATA[<p>修改github.io站点域名</p>
-<span id="more"></span>
-
-<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
-<ul>
-<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
-<ul>
-<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&utm_medium=cpc&utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&utm_medium=se-cpc-op&utm_campaign=10045&utm_content=&utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&utm_adplace=AdPlace039520">华为云</a></li>
-</ul>
-</blockquote>
-</li>
-</ul>
-</blockquote>
-<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
-<ul>
-<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE3.png"></li>
-<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE1.png"></li>
-</ul>
-</blockquote>
-<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
-<ul>
-<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE2.png"></li>
-</ul>
-</blockquote>
-<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
-<ul>
-<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
-</ul>
-</blockquote>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>注册域名</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>选课</title>
-    <url>/2021/08/28/%E9%80%89%E8%AF%BE/</url>
-    <content><![CDATA[<p>又是一年开学季，选课的日子又来了。</p>
-<span id="more"></span>
-
-<h2 id="1-选课"><a href="#1-选课" class="headerlink" title="1. 选课"></a>1. 选课</h2><p>这学期课程内容比较少，选修8门已经满了，课表如下：<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.8.29_%E8%AF%BE%E8%A1%A8.png"></p>
-<!-- 选修就只有[李伟](https://faculty.xidian.edu.cn/LW7/zh_CN/index.htm)老师的**数学建模**， -->
-<p>学院选修在<strong>系统工程</strong>和<strong>经济法概论</strong>中选择了前者。<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.8.29_%E9%80%89%E8%AF%BE1.png"><br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.8.29_%E9%80%89%E8%AF%BE2.png"><br>这学期学分一共就15.6分，严格说是15.55学分。<del>相比其他大院少了不止一点</del>。<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.8.29_%E9%80%89%E8%AF%BE0.png"></p>
-<h2 id="2-课程统计"><a href="#2-课程统计" class="headerlink" title="2. 课程统计"></a>2. 课程统计</h2><table>
-<thead>
-<tr>
-<th>课程名称</th>
-<th>课程类别</th>
-<th>课程性质</th>
-<th>开课单位</th>
-<th>授课教师</th>
-<th>学分</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>概率论与数理统计</td>
-<td>通识教育基础课</td>
-<td>必修</td>
-<td>数学与统计学院</td>
-<td>赵彦</td>
-<td>2.5</td>
-</tr>
-<tr>
-<td>数据库原理与应用</td>
-<td>大类基础课</td>
-<td>必修</td>
-<td>经济与管理学院</td>
-<td><a href="https://faculty.xidian.edu.cn/yangzhaojun/zh_CN/index.htm">杨朝君</a></td>
-<td>2</td>
-</tr>
-<tr>
-<td>大学生职业发展</td>
-<td>拓展提高</td>
-<td>必修</td>
-<td>本科生院</td>
-<td>安翔</td>
-<td>1</td>
-</tr>
-<tr>
-<td>形势与政策(Ⅲ)</td>
-<td>通识教育基础课</td>
-<td>必修</td>
-<td>马克思主义学院</td>
-<td>樊稳</td>
-<td>0.3</td>
-</tr>
-<tr>
-<td>经管类学科导论(II)</td>
-<td>通识教育核心课</td>
-<td>必修</td>
-<td>经济与管理学院</td>
-<td><a href="https://faculty.xidian.edu.cn/CX5/zh_CN/index.htm">陈希</a>,<a href="https://faculty.xidian.edu.cn/SJ1/zh_CN/index.htm">尚娟</a></td>
-<td>0.25</td>
-</tr>
-<tr>
-<td>系统工程</td>
-<td>大类基础课</td>
-<td>学院选修（任选）</td>
-<td>经济与管理学院</td>
-<td><a href="https://faculty.xidian.edu.cn/LAJ/zh_CN/index.htm">刘爱军</a></td>
-<td>2</td>
-</tr>
-<tr>
-<td>大学英语中级(I)</td>
-<td>通识教育基础课</td>
-<td>必修</td>
-<td>外国语学院</td>
-<td>赵蓉</td>
-<td>2</td>
-</tr>
-<tr>
-<td>马克思主义基本原理</td>
-<td>通识教育基础课</td>
-<td>必修</td>
-<td>马克思主义学院</td>
-<td>刘向舒</td>
-<td>3</td>
-</tr>
-<tr>
-<td>大学体育(Ⅲ)</td>
-<td>通识教育基础课</td>
-<td>必修</td>
-<td>体育部</td>
-<td></td>
-<td>0.5</td>
-</tr>
-<tr>
-<td>运筹学</td>
-<td>大类基础课</td>
-<td>必修</td>
-<td>经济与管理学院</td>
-<td>赵彦</td>
-<td>2</td>
-</tr>
-</tbody></table>
-<!-- 数学建模|公共任选课|公共任选| |[李伟](https://faculty.xidian.edu.cn/LW7/zh_CN/index.htm)|1 -->]]></content>
-      <categories>
-        <category>大学生活</category>
-      </categories>
-      <tags>
-        <tag>选课</tag>
-        <tag>大学生活</tag>
       </tags>
   </entry>
   <entry>
