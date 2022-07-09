@@ -6,7 +6,7 @@
   <link href="https://aike505.github.io/atom.xml" rel="self"/>
   
   <link href="https://aike505.github.io/"/>
-  <updated>2022-04-26T03:45:47.641Z</updated>
+  <updated>2022-07-09T09:14:36.896Z</updated>
   <id>https://aike505.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java小记</title>
+    <link href="https://aike505.github.io/2022/07/09/java%E5%B0%8F%E8%AE%B0/"/>
+    <id>https://aike505.github.io/2022/07/09/java%E5%B0%8F%E8%AE%B0/</id>
+    <published>2022-07-09T09:13:16.000Z</published>
+    <updated>2022-07-09T09:14:36.896Z</updated>
+    
+    <content type="html"><![CDATA[<p>暂无更多编辑，点击查看文章……</p><span id="more"></span><h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p><strong>Java优势：</strong></p><ul><li>Write Once, Run Anywhere</li></ul><p><strong>Java三大版本</strong></p><ul><li><p>JavaSE：标准版</p></li><li><p>JavaME：嵌入式开发</p></li><li><p>JavaEE：企业级开发</p></li></ul><p><strong>三大名词</strong></p><ul><li><p>JDK：Java Development Kit </p></li><li><p>JRE：Java Runtime Environment</p></li><li><p>JVM：Java Virtual Machine</p></li></ul><blockquote><p>JDK包含JRE,所以下载JDK就可以了，java的跨平台核心是使用了JVM</p></blockquote><h3 id="java开发环境搭建"><a href="#java开发环境搭建" class="headerlink" title="java开发环境搭建"></a>java开发环境搭建</h3><p><strong>JDK的下载与安装</strong></p><ul><li>通过官网获取JDK：<a href="http://www.oracle.com/">http://www.oracle.com</a></li></ul><p><strong>配置环境变量</strong></p><ul><li>系统变量里添加JAVA_HOME</li></ul><p><img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20220708195550794.png" alt="image-20220708195550794"></p><ul><li><p>在系统变量path路径添加bin目录<img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20220708201946532.png"></p></li><li><p>同样在系统变量path路径添加jre/bin目录<img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20220708202021623.png" alt="image-20220708202021623"></p><blockquote><p>Java8之后安装jdk不再提供jre的安装，可以通过命令导出：管理员身份打开cmd,切换到java安装路径，输入命令<code> bin\jlink.exe --module-path jmods --add-modules java.desktop --output jre</code> 即可</p></blockquote></li><li><p>在用户变量中添加Classpath：<code>.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar</code></p><p><img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20220708212742988.png" alt="image-20220708212742988"></p></li><li><p>测试jdk安装是否成功</p><p><img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20220708202242207.png" alt="image-20220708202242207"></p></li></ul><p><strong>JDK目录介绍</strong></p><ul><li>bin：放可执行程序</li><li>include：java是用c和c++编写的，这里引入c语言的头文件</li><li>jre：java的运行环境</li><li>lib：放一些类库文件</li></ul><p><strong>HelloWorld及简单语法规则</strong></p><ul><li>新建一个.java文件</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">System.out.print(<span class="string">&quot;Hello,World!&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><p>cmd里编译和运行</p><p><img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20220708210028376.png" alt="image-20220708210028376"></p></li></ul><p><strong>Notepad++安装和使用</strong></p><p><strong>IDEA安装</strong></p><ul><li>IDE：集成开发环境</li><li>IDEA官网：<a href="https://www.jetbrains.com/">https://www.jetbrains.com/</a></li><li>IDEA常见优化配置</li></ul><blockquote><p>vscode虽然说对java已经很好的支持了，某些功能还是不尽人意，毕竟idea才是开发java的神器，对于java开发的功能可以说都有，市场占有率超过65%。</p></blockquote><h3 id="java基础"><a href="#java基础" class="headerlink" title="java基础"></a>java基础</h3>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;暂无更多编辑，点击查看文章……&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>虚拟机安装macOS系统</title>
@@ -466,31 +483,6 @@
     <category term="博客" scheme="https://aike505.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
     <category term="主题" scheme="https://aike505.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo部署各种错误的解决方式</title>
-    <link href="https://aike505.github.io/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/"/>
-    <id>https://aike505.github.io/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</id>
-    <published>2021-07-22T09:32:13.000Z</published>
-    <updated>2021-09-07T06:30:15.781Z</updated>
-    
-    <content type="html"><![CDATA[<p>hexo部署各种错误的解决方式</p><span id="more"></span><h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\blog\aikeblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:394:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\blog\aikeblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure><h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol><li>删除<code>.deploy_git</code>文件夹;</li><li>输入 git<br><code>config --global core.autocrlf false</code></li><li>然后，依次执行：</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>问题解决。暴力直接，有效。</p><h1 id="2-fatal-unable-to-access-‘https-github-com-git-39-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git-39-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git&#39;: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git&#39;">https://github.com/.../.git&#39;</a>: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;hexo部署各种错误的解决方式&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="hexo博客" scheme="https://aike505.github.io/categories/hexo%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-    <category term="hexo" scheme="https://aike505.github.io/tags/hexo/"/>
-    
-    <category term="部署博客" scheme="https://aike505.github.io/tags/%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/"/>
-    
-    <category term="bug" scheme="https://aike505.github.io/tags/bug/"/>
     
   </entry>
   

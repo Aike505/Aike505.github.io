@@ -2399,4 +2399,89 @@
         <tag>推送百度</tag>
       </tags>
   </entry>
+  <entry>
+    <title>java小记</title>
+    <url>/2022/07/09/java%E5%B0%8F%E8%AE%B0/</url>
+    <content><![CDATA[<p>暂无更多编辑，点击查看文章……</p>
+<span id="more"></span>
+
+<h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p><strong>Java优势：</strong></p>
+<ul>
+<li>Write Once, Run Anywhere</li>
+</ul>
+<p><strong>Java三大版本</strong></p>
+<ul>
+<li><p>JavaSE：标准版</p>
+</li>
+<li><p>JavaME：嵌入式开发</p>
+</li>
+<li><p>JavaEE：企业级开发</p>
+</li>
+</ul>
+<p><strong>三大名词</strong></p>
+<ul>
+<li><p>JDK：Java Development Kit </p>
+</li>
+<li><p>JRE：Java Runtime Environment</p>
+</li>
+<li><p>JVM：Java Virtual Machine</p>
+</li>
+</ul>
+<blockquote>
+<p>JDK包含JRE,所以下载JDK就可以了，java的跨平台核心是使用了JVM</p>
+</blockquote>
+<h3 id="java开发环境搭建"><a href="#java开发环境搭建" class="headerlink" title="java开发环境搭建"></a>java开发环境搭建</h3><p><strong>JDK的下载与安装</strong></p>
+<ul>
+<li>通过官网获取JDK：<a href="http://www.oracle.com/">http://www.oracle.com</a></li>
+</ul>
+<p><strong>配置环境变量</strong></p>
+<ul>
+<li>系统变量里添加JAVA_HOME</li>
+</ul>
+<p><img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20220708195550794.png" alt="image-20220708195550794"></p>
+<ul>
+<li><p>在系统变量path路径添加bin目录<img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20220708201946532.png"></p>
+</li>
+<li><p>同样在系统变量path路径添加jre/bin目录<img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20220708202021623.png" alt="image-20220708202021623"></p>
+<blockquote>
+<p>Java8之后安装jdk不再提供jre的安装，可以通过命令导出：管理员身份打开cmd,切换到java安装路径，输入命令<code> bin\jlink.exe --module-path jmods --add-modules java.desktop --output jre</code> 即可</p>
+</blockquote>
+</li>
+<li><p>在用户变量中添加Classpath：<code>.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar</code></p>
+<p><img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20220708212742988.png" alt="image-20220708212742988"></p>
+</li>
+<li><p>测试jdk安装是否成功</p>
+<p><img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20220708202242207.png" alt="image-20220708202242207"></p>
+</li>
+</ul>
+<p><strong>JDK目录介绍</strong></p>
+<ul>
+<li>bin：放可执行程序</li>
+<li>include：java是用c和c++编写的，这里引入c语言的头文件</li>
+<li>jre：java的运行环境</li>
+<li>lib：放一些类库文件</li>
+</ul>
+<p><strong>HelloWorld及简单语法规则</strong></p>
+<ul>
+<li>新建一个.java文件</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		System.out.print(<span class="string">&quot;Hello,World!&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>cmd里编译和运行</p>
+<p><img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20220708210028376.png" alt="image-20220708210028376"></p>
+</li>
+</ul>
+<p><strong>Notepad++安装和使用</strong></p>
+<p><strong>IDEA安装</strong></p>
+<ul>
+<li>IDE：集成开发环境</li>
+<li>IDEA官网：<a href="https://www.jetbrains.com/">https://www.jetbrains.com/</a></li>
+<li>IDEA常见优化配置</li>
+</ul>
+<blockquote>
+<p>vscode虽然说对java已经很好的支持了，某些功能还是不尽人意，毕竟idea才是开发java的神器，对于java开发的功能可以说都有，市场占有率超过65%。</p>
+</blockquote>
+<h3 id="java基础"><a href="#java基础" class="headerlink" title="java基础"></a>java基础</h3>]]></content>
+  </entry>
 </search>
