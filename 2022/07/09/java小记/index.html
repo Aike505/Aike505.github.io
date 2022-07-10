@@ -490,14 +490,14 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>401字</p>
+        <p>1.1k字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
       <a class='notlink'>
         <i class="fas fa-hourglass-half" aria-hidden="true"></i>
         <p>阅读时长≈</p>
-        <p>1分</p>
+        <p>4分</p>
       </a>
     </div>
   
@@ -599,7 +599,156 @@
 <blockquote>
 <p>vscode虽然说对java已经很好的支持了，某些功能还是不尽人意，毕竟idea才是开发java的神器，对于java开发的功能可以说都有，市场占有率超过65%。</p>
 </blockquote>
-<h3 id="java基础"><a href="#java基础" class="headerlink" title="java基础"></a>java基础</h3>
+<h3 id="java基础语法"><a href="#java基础语法" class="headerlink" title="java基础语法"></a>java基础语法</h3><p><strong>注释</strong></p>
+<ul>
+<li>单行注释：// 注释</li>
+<li>多行注释：/* 注释 */</li>
+<li>文档注释: /** 注释 */</li>
+</ul>
+<blockquote>
+<p>书写注释是一个非常好的习惯，特别在BAT大厂里</p>
+</blockquote>
+<p><strong>标识符</strong><!----></p>
+<ul>
+<li><p>类名、变量名以及方法名。</p>
+</li>
+<li><p>标识符开头以字母(A-Z或者a-z)、美元符($)和下划线(_)组成</p>
+</li>
+<li><p>大小写敏感</p>
+</li>
+<li><p>可以使用中文</p>
+</li>
+</ul>
+<p><strong>数据类型</strong></p>
+<ul>
+<li><p>强类型语言：对于变量使用要求比较严格，所有变量必须先定义后才能使用</p>
+</li>
+<li><p>弱类型语言：随时定义和使用，javascript、python都是</p>
+</li>
+<li><p>基本类型</p>
+<ul>
+<li>数值类型<ul>
+<li>整数类型<ul>
+<li>byte  1个字节范围-128-127</li>
+<li>short  2个字节范围-32768-32767</li>
+<li>int  4个字节范围21亿左右</li>
+<li>long  8个字节范围</li>
+</ul>
+</li>
+<li>浮点类型<ul>
+<li>float  4个字节范围</li>
+<li>double   8个字节范围</li>
+</ul>
+</li>
+<li>字符类型<ul>
+<li>char  2个字节</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>boolean类型<ul>
+<li>True  占一位</li>
+<li>False  </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>八大基本数据类型，这里基本类型和c语言基本没看出差别，字符串不属于基本类型  </p>
+</blockquote>
+<ul>
+<li>引用类型<ul>
+<li>类</li>
+<li>接口</li>
+<li>数组</li>
+</ul>
+</li>
+</ul>
+<p><strong>类型转换</strong></p>
+<ul>
+<li><p>优先级：byte,short,char==&gt;int==&gt;long==&gt;float==&gt;double</p>
+</li>
+<li><p>强制转换：(类型)变量名  高==&gt;低</p>
+</li>
+<li><p>自动转换：低–&gt;高</p>
+</li>
+</ul>
+<blockquote>
+<p>先转换类型再计算</p>
+</blockquote>
+<p><strong>变量</strong></p>
+<ul>
+<li>变量作用域<ul>
+<li>类变量：定义前加一个static，用的时候可以不用声明值，全局可用</li>
+<li>实例变量：写在方法外面，可以不赋值，全局可用，使用要new一个对象</li>
+<li>局部变量：普通的定义，必须给初始化值，只在某个方法里有用</li>
+</ul>
+</li>
+<li>变量命名规范<ul>
+<li>见名知意</li>
+<li>类成员变量：首字母小写驼峰原则   monthSalary</li>
+<li>局部变量：首字母小写驼峰原则</li>
+<li>常量：全部大写可以加下划线</li>
+<li>类名：首字母大写驼峰原则  GoodMan()</li>
+<li>方法名：首字母小写驼峰原则  runRun()</li>
+</ul>
+</li>
+</ul>
+<p><strong>常量</strong></p>
+<ul>
+<li><p>用final声明，用大学字母表示</p>
+<blockquote>
+<p>比如写个PI等于多少，后面一直用而且值不变</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>运算符</strong></p>
+<ul>
+<li><p>算术运算符 + - * /  % ++ –</p>
+<blockquote>
+<p>有long结果为long，没有long 都是int，int不能强制转成string</p>
+<p>乘方计算：java里不能用2^3，需要借助工具Math.pow(2,3)</p>
+</blockquote>
+</li>
+<li><p>赋值运算符 =</p>
+</li>
+<li><p>关系运算符 &gt; &lt; &gt;= &lt;= == !=</p>
+</li>
+<li><p>逻辑运算符 &amp;&amp; || !</p>
+<blockquote>
+<p>&amp;&amp; 都真为真，执行短路运算，检测到一个假后面的都不计算，值也不变    </p>
+<p>|| 有真就真</p>
+<p>！真变假，假变真</p>
+</blockquote>
+</li>
+<li><p>位运算符 &amp; | ^ ~ &gt;&gt; &lt;&lt; &gt;&gt;&gt;</p>
+<blockquote>
+<p>&amp; 同1才是1</p>
+<p>| 有1就是1</p>
+<p>^ 不一样就是1</p>
+<p>~ 0变1，1变0</p>
+<p>&lt;&lt; 左移 *2</p>
+<p>/&gt;&gt; 右移 /2</p>
+</blockquote>
+</li>
+<li><p>条件运算符 ? :</p>
+<blockquote>
+<p>x ? y : z</p>
+<p>如果x==true，结果为y，否则为z</p>
+</blockquote>
+</li>
+<li><p>扩展赋值运算符 += -= *= /=</p>
+<blockquote>
+<p>字符串拼接</p>
+<ul>
+<li> “ “+a+b，先转换成字符串再拼接</li>
+<li>a+b+” “,先运算在转成字符串拼接</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+
         </div>
         <hr />
         
@@ -681,10 +830,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2022-07-09T17:14:36+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2022-07-10T09:29:55+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2022年7月9日</p>
+    <p>最后更新于 2022年7月10日</p>
   </a>
 </div>
 
@@ -965,7 +1114,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-text">java开发环境搭建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#java%E5%9F%BA%E7%A1%80"><span class="toc-text">java基础</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-text">java开发环境搭建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="toc-text">java基础语法</span></a></li></ol>
     </div>
   </section>
 
@@ -1239,7 +1388,7 @@
       <span class="badge-subject">PV</span><span class="badge-value bg-brightgreen" id="busuanzi_value_site_pv"></span>
     </div>
     <div class="github-badge">
-      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">18.9k</span>
+      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">19.6k</span>
     </div>
 </footer>
 
