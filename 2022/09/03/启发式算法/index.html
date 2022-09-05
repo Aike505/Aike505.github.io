@@ -522,6 +522,12 @@
           <p>暂无更多编辑，点击查看文章……</p>
 <span id="more"></span>
 
+<!-- 显示公式块 -->
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>
+
 <p><strong>启发式算法</strong>（heuristic algorithm)是相对于<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%9C%80%E4%BC%98%E5%8C%96?fromModule=lemma_inlink">最优化</a>算法提出的。一个问题的最优算法求得该问题每个实例的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%9C%80%E4%BC%98%E8%A7%A3/5208902?fromModule=lemma_inlink">最优解</a>。启发式算法可以这样定义：一个基于直观或经验构造的算法，在可接受的花费（指计算时间和空间）下给出待解决组合优化问题每一个实例的一个<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%8F%AF%E8%A1%8C%E8%A7%A3/962143?fromModule=lemma_inlink">可行解</a>，该可行解与最优解的偏离程度一般不能被预计。现阶段，启发式算法以仿自然体算法为主，主要有<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%9A%81%E7%BE%A4%E7%AE%97%E6%B3%95/9646604?fromModule=lemma_inlink">蚁群算法</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%A8%A1%E6%8B%9F%E9%80%80%E7%81%AB%E6%B3%95/10423893?fromModule=lemma_inlink">模拟退火法</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/16600562?fromModule=lemma_inlink">神经网络</a>等</p>
 <p><strong>启发式搜索</strong>(Heuristically Search)又称为有信息搜索(Informed Search)，它是利用问题拥有的启发信息来引导搜索，达到减少搜索范围、降低问题复杂度的目的，这种利用启发信息的搜索过程称为启发式搜索。</p>
 <ul>
@@ -578,11 +584,7 @@
 <li>适应度越大，说明距离最优解越近，需要局部搜索</li>
 <li>适应度越小，说明距离最优解越远，需要全局搜索</li>
 </ul>
-<p>$$<br>w_i^d =<br>    \begin{cases}<br>        w_{min} + (w_{max} - w_{min}) * \frac{f_{max}^d - f(x_i^d)}{f_{max}^d - f_{average}^d},&amp;f(x_i^d) \geq f_{average}^d\</p>
-<pre><code>    w_i^d = w_&#123;max&#125;,&amp;f(x_i^d) &lt; f_&#123;average&#125;^d
-\end&#123;cases&#125;
-</code></pre>
-<p>$$</p>
+<p>$$<br>w_i^d =<br>    \begin{cases}<br>        w_{min} + (w_{max} - w_{min}) * \frac{f_{max}^d - f(x_i^d)}{f_{max}^d - f_{average}^d},&amp;f(x_i^d) \geq f_{average}^d\<br>        w_i^d = w_{max},&amp;f(x_i^d) &lt; f_{average}^d<br>    \end{cases}<br>$$</p>
 <h5 id="算法改进3：随机惯性权重"><a href="#算法改进3：随机惯性权重" class="headerlink" title="算法改进3：随机惯性权重"></a>算法改进3：随机惯性权重</h5><ul>
 <li>避免迭代前期局部搜索能力的不足</li>
 <li>避免迭代后期全局搜索能力的不足</li>
@@ -778,7 +780,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2022-09-03T12:08:50+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2022-09-03T12:54:47+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
     <p>最后更新于 2022年9月3日</p>
