@@ -535,9 +535,9 @@
 <li>2)有助于加速求解过程和找到较优解的方法是启发式方法。</li>
 </ul>
 <h4 id="粒子群优化算法PSO（Particle-Swarm-Optimization）"><a href="#粒子群优化算法PSO（Particle-Swarm-Optimization）" class="headerlink" title="粒子群优化算法PSO（Particle Swarm Optimization）"></a>粒子群优化算法PSO（Particle Swarm Optimization）</h4><h5 id="算法解释"><a href="#算法解释" class="headerlink" title="算法解释"></a>算法解释</h5><p><strong>PSO</strong>中，每个优化问题的解都是搜索空间中的一只鸟。我们称之为“粒子”。所有的粒子都有一个由被优化的函数决定的适应值(fitnessvalue)，每个粒子还有一个速度决定他们飞翔的方向和距离。然后粒子们就追随当前的最优粒子在解空间中搜索。</p>
-<img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20220902222937338.png" alt="粒子群算法图解" style="zoom: 67%;" />
+<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/image-20220902222937338.png" alt="粒子群算法图解" style="zoom: 67%;" />
 
-<h5 id="核心公式和参数解释"><a href="#核心公式和参数解释" class="headerlink" title="核心公式和参数解释"></a>核心公式和参数解释</h5><img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20220902223137587.png" alt="image-20220902223137587" style="zoom: 67%;" />
+<h5 id="核心公式和参数解释"><a href="#核心公式和参数解释" class="headerlink" title="核心公式和参数解释"></a>核心公式和参数解释</h5><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/image-20220902223137587.png" alt="image-20220902223137587" style="zoom: 67%;" />
 
 <p><code>x(d) = x(d-1) + v(d-1)*t</code>（每一步运动的时间 t 一般取1）</p>
 <p>v(d)：第d次迭代时，第i个粒子的速度</p>
@@ -560,7 +560,7 @@
 <li>重新计算粒子的适应度：计算第i个粒子的适应度new_fit</li>
 <li>找到全局最优的粒子：new_pbest，new_gbest</li>
 </ol>
-<img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20220902223325443.png" alt="image-20220902223325443" style="zoom:67%;" />
+<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/image-20220902223325443.png" alt="image-20220902223325443" style="zoom:67%;" />
 
 <h5 id="算法改进1：线性递减递减权重LDIW（Linear-Decreasing-Inertia-Weight）"><a href="#算法改进1：线性递减递减权重LDIW（Linear-Decreasing-Inertia-Weight）" class="headerlink" title="算法改进1：线性递减递减权重LDIW（Linear Decreasing Inertia Weight）"></a>算法改进1：线性递减递减权重LDIW（Linear Decreasing Inertia Weight）</h5><p>惯性权重w与迭代次数K有关</p>
 <ul>
@@ -780,10 +780,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2022-09-03T12:54:47+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2022-09-05T18:13:44+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2022年9月3日</p>
+    <p>最后更新于 2022年9月5日</p>
   </a>
 </div>
 
