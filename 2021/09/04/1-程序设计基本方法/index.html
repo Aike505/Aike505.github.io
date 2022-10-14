@@ -1,542 +1,294 @@
-<!--      　　　___           ___           ___           ___           ___                    ___           ___       ___           ___     
-　　　　　　   /\  \         /\  \         /\__\         |\__\         /\  \                  /\  \         /\__\     /\  \         /\  \    
-  　　　　　　 \:\  \       /::\  \       /:/  /         |:|  |       /::\  \                /::\  \       /:/  /    /::\  \       /::\  \   
-          　　  \:\  \     /:/\:\  \     /:/__/          |:|  |      /:/\ \  \              /:/\:\  \     /:/  /    /:/\:\  \     /:/\:\  \  
-          　　  /::\  \   /::\~\:\  \   /::\  \ ___      |:|__|__   _\:\~\ \  \            /::\~\:\__\   /:/  /    /:/  \:\  \   /:/  \:\  \ 
-          　　 /:/\:\__\ /:/\:\ \:\__\ /:/\:\  /\__\ ____/::::\__\ /\ \:\ \ \__\          /:/\:\ \:|__| /:/__/    /:/__/ \:\__\ /:/__/_\:\__\
-        　　  /:/  \/__/ \/_|::\/:/  / \/__\:\/:/  / \::::/~~/~    \:\ \:\ \/__/          \:\~\:\/:/  / \:\  \    \:\  \ /:/  / \:\  /\ \/__/
-        　　 /:/  /         |:|::/  /       \::/  /   ~~|:|~~|      \:\ \:\__\             \:\ \::/  /   \:\  \    \:\  /:/  /   \:\ \:\__\  
-        　　 \/__/          |:|\/__/        /:/  /      |:|  |       \:\/:/  /              \:\/:/  /     \:\  \    \:\/:/  /     \:\/:/  /  
-        　　                |:|  |         /:/  /       |:|  |        \::/  /                \::/__/       \:\__\    \::/  /       \::/  /   
-        　　                 \|__|         \/__/         \|__|         \/__/                  ~~            \/__/     \/__/         \/__/    
 
-   ┌───┐   ┌───┬───┬───┬───┐   ┌───┬───┬───┬───┐   ┌───┬───┬───┬───┐  ┌───┬───┬───┐
-   │ Esc  │   │  F1  │  F2  │  F3  │  F4  │   │  F5  │  F6  │  F7  │  F8  │   │  F9  │ F10  │ F11  │ F12  │  │ P/S  │ S L  │ P/B  │
-   └───┘   └───┴───┴───┴───┘   └───┴───┴───┴───┘   └───┴───┴───┴───┘  └───┴───┴───┘
-   ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐ ┌───┬───┬───┐
-   │ ~ `  │ ! 1  │ @ 2  │ # 3  │ $ 4  │ % 5  │ ^ 6  │ & 7  │ * 8  │ ( 9  │ ) 0  │ _ -  │ + =  │    BacSp     │ │ Ins  │ Hom  │ PUp  │
-   ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤ ├───┼───┼───┤
-   │   Tab    │  Q   │  W   │  E   │  R   │  T   │  Y   │  U   │  I   │  O   │  P   │ { [  │ } ]  │   | \    │ │ Del  │ End  │ PDn  │
-   ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤ └───┴───┴───┘
-   │    Caps    │  A   │  S   │  D   │  F   │  G   │  H   │  J   │  K   │  L   │ : ;  │ " '  │     Enter      │
-   ├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────────┤         ┌───┐
-   │     Shift      │  Z   │  X   │  C   │  V   │  B   │  N   │  M   │ < ,  │ > .  │ ? /  │       Shift        │         │  ↑  │
-   ├─────┬──┴─┬─┴──┬┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬────┤ ┌───┼───┼───┐
-   │   Ctrl   │        │  Alt   │                     Space                    │   Alt  │   Fn   │   ＝   │  Ctrl  │ │  ←  │  ↓  │  →  │
-   └─────┴────┴────┴───────────────────────┴────┴────┴────┴────┘ └───┴───┴───┘
 
-              写字楼里写字间，写字间里程序员；程序人员写程序，又拿程序换酒钱。酒醒只在网上坐，酒醉还来网下眠；酒醉酒醒日复日，网上网下年复年。
-              但愿老死电脑间，不愿鞠躬老板前；奔驰宝马贵者趣，公交自行程序员。别人笑我忒疯癫，我笑自己命太贱；不见满街漂亮妹，哪个归得程序员？
--->
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-  <title>1.程序设计基本方法 | Aike-blog</title>
-  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Aike">
   <meta name="keywords" content="Python,hexo博客">
   
+    <meta name="description" content="程序设计基本方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1.程序设计基本方法">
+<meta property="og:url" content="https://aike505.github.io/2021/09/04/1-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:site_name" content="Aike-blog">
+<meta property="og:description" content="程序设计基本方法">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95_1.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95_2.png">
+<meta property="article:published_time" content="2021-09-04T14:30:44.000Z">
+<meta property="article:modified_time" content="2021-09-06T06:21:07.279Z">
+<meta property="article:author" content="Aike">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="二级">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95.png">
+  
+  
+  
+  <title>1.程序设计基本方法 - Aike-blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
   
 
-  
-  <link rel="alternate" href="/atom.xml" title="Aike-blog" type="application/atom+xml">
-  
 
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!-- meta -->
-  
-  <!-- 360 -->
-  <meta name="360-site-verification" content="d98acd5dccc92e495179410dd58186be" />
-  <!-- 360自动收录 -->
-  <script>
-    (function () {
-      var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
-      document.write('<script src="' + src + '" id="sozz"><\/script>');
-    })();
-  </script>
-  <!-- sogou -->
-  <meta name="sogou_site_verification" content="l0yGeAV56W" />
-  <!-- link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
-  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
-  
 
-  
-  <link rel="shortcut icon" type='image/x-icon' href="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/avatar.png">
-  
 
-  
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.1.1/css/style.css">
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"aike505.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
-  
-
-  <script>
-    function setLoadingBarProgress(num) {
-      document.getElementById('loading-bar').style.width = num + "%";
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
 
   
-  
-  <!-- Google Adsense -->
-  <script data-ad-client="ca-pub-1913211097936916" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Aike-blog" type="application/atom+xml">
+</head>
+
+
 <body>
-
-  <!-- 深色模式添加2021-10-3 16:20:26 -->
-  <script>
-    if (localStorage.getItem('dark') === '1') {
-    document.body.classList.add('dark');
-    }
-    else if (new Date().getHours() >= 22 || new Date().getHours() < 7) {
-    document.body.classList.add('dark');
-    } 
-    else if (matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.body.classList.add('dark');
-    }
-</script>
-<a onclick="switchNightMode()" id="sma">
-    <i class="fa fa-moon-o" id="nightMode" aria-hidden="true"></i>
-</a>
-
-
   
-  
-<div class="cover-wrapper">
-  <cover class='cover post half'>
+
+  <header>
     
-    
-  <h1 class='title'>Aike's BLOG</h1>
 
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
 
-  <div class="m_search">
-    <form name="searchform" class="form u-search-form">
-      <input type="text" class="input u-search-input" placeholder="世界之大，探索一下！" />
-      <i class="icon fas fa-search fa-fw"></i>
-    </form>
-  </div>
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
 
-<div class='menu navgation'>
-  <ul class='h-list'>
-    
-      
-        <li>
-          <a class="nav home" href="/"
-            
-            
-            id="home">
-            <i class='fas fa-home fa-fw'></i>&nbsp;主页
-          </a>
-        </li>
-      
-        <li>
-          <a class="nav home" href="/categories/"
-            
-            
-            id="categories">
-            <i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
-          </a>
-        </li>
-      
-        <li>
-          <a class="nav home" href="/tags/"
-            
-            
-            id="tags">
-            <i class='fas fa-tags fa-fw'></i>&nbsp;标签
-          </a>
-        </li>
-      
-        <li>
-          <a class="nav home" href="/friends/"
-            
-            
-            id="friends">
-            <i class='fas fa-users fa-fw'></i>&nbsp;朋友
-          </a>
-        </li>
-      
-        <li>
-          <a class="nav home" href="/comments/"
-            
-            
-            id="comments">
-            <i class='fas fa-comments fa-fw'></i>&nbsp;留言
-          </a>
-        </li>
-      
-        <li>
-          <a class="nav home" href="/video"
-            
-            
-            id="video">
-            <i class='fas fa-film fa-fw'></i>&nbsp;视频
-          </a>
-        </li>
-      
-    
-  </ul>
-</div>
-
-    
-    <br>
-    <!-- Hitokoto 一言 -->
-    <!--<p id="hitokoto"></p>
-			<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
-      <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>-->
-    <!-- 打字特效 -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <div style="text-align: center;font-weight: bold;color: #1BC3FB;">
-      <span id="subtitle"></span>
-      <span id="typed-cursor"></span>
-    </div>
-    <script>
-      var typed = new Typed("#subtitle", { strings: ["Live a good life, write some good code !!!", "愿自己的努力终将获得回报。", "花开不是为了花落，而是为了开的更加灿烂。", "没有伞的孩子必须努力奔跑！", "欲望以提升热忱，毅力以磨平高山。", "如果放弃太早，你永远都不知道自己会错过什么。", "没有礁石，就没有美丽的浪花；没有挫折，就没有壮丽的人生。"], startDelay: 1000, typeSpeed: 100, loop: !0, backSpeed: 60, backDelay: 2000, showCursor: !0 })
-    </script>
-  </cover>
-  <header class="l_header pure">
-  <div id="loading-bar-wrapper">
-    <div id="loading-bar" class="pure"></div>
-  </div>
-
-	<div class='wrapper'>
-		<div class="nav-main container container--flex">
-      <a class="logo flat-box" href='/' >
-        
-          Aike-blog
-        
-      </a>
-			<div class='menu navgation'>
-				<ul class='h-list'>
-          
-  					
-  						<li>
-								<a class="nav flat-box" href="/"
-                  
-                  
-                  id="home">
-									<i class='fas fa-home fa-fw'></i>&nbsp;主页
-								</a>
-							</li>
-      			
-  						<li>
-								<a class="nav flat-box" href="/archives/"
-                  
-                  
-                  id="archives">
-									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
-								</a>
-							</li>
-      			
-  						<li>
-								<a class="nav flat-box" href="/friends/"
-                  
-                  
-                  id="friends">
-									<i class='fas fa-users fa-fw'></i>&nbsp;朋友
-								</a>
-							</li>
-      			
-  						<li>
-								<a class="nav flat-box" href="/comments/"
-                  
-                  
-                  id="comments">
-									<i class='fas fa-comments fa-fw'></i>&nbsp;留言
-								</a>
-							</li>
-      			
-  						<li>
-								<a class="nav flat-box" href="/about/"
-                  
-                  
-                    target="_blank"
-                  
-                  id="about">
-									<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
-								</a>
-							</li>
-      			
-  						<li>
-								<a class="nav flat-box" href="/box/"
-                  
-                  
-                    target="_blank"
-                  
-                  id="box">
-									<i class='fas fa-tools fa-fw'></i>&nbsp;百宝箱
-								</a>
-							</li>
-      			
-  						<li>
-								<a class="nav flat-box" href="/images/"
-                  
-                  
-                    target="_blank"
-                  
-                  id="images">
-									<i class='fas fa-images fa-fw'></i>&nbsp;图床
-								</a>
-							</li>
-      			
-      		
-				</ul>
-			</div>
-
-			
-				<div class="m_search">
-					<form name="searchform" class="form u-search-form">
-						<input type="text" class="input u-search-input" placeholder="搜索" />
-						<i class="icon fas fa-search fa-fw"></i>
-					</form>
-				</div>
-			
-			<ul class='switcher h-list'>
-				
-					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
-				
-				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
-			</ul>
-		</div>
-
-		<div class='nav-sub container container--flex'>
-			<a class="logo flat-box"></a>
-			<ul class='switcher h-list'>
-				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
-        
-          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
-        
-			</ul>
-		</div>
-	</div>
-</header>
-	<aside class="menu-phone">
-    <header>
-		<nav class="menu navgation">
-      <ul>
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
           
-            <li>
-							<a class="nav flat-box" href="/"
-                
-                
-                id="home">
-								<i class='fas fa-home fa-fw'></i>&nbsp;主页
-							</a>
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
             </li>
           
-            <li>
-							<a class="nav flat-box" href="/archives/"
-                
-                
-                id="archives">
-								<i class='fas fa-archive fa-fw'></i>&nbsp;归档
-							</a>
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
             </li>
           
-            <li>
-							<a class="nav flat-box" href="/friends/"
-                
-                
-                id="friends">
-								<i class='fas fa-users fa-fw'></i>&nbsp;朋友
-							</a>
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
             </li>
           
-            <li>
-							<a class="nav flat-box" href="/comments/"
-                
-                
-                id="comments">
-								<i class='fas fa-comments fa-fw'></i>&nbsp;留言
-							</a>
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
             </li>
           
-            <li>
-							<a class="nav flat-box" href="/images/"
-                
-                
-                id="images">
-								<i class='fas fa-images fa-fw'></i>&nbsp;图床
-							</a>
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
             </li>
           
-            <li>
-							<a class="nav flat-box" href="/box/"
-                
-                
-                id="box">
-								<i class='fas fa-tools fa-fw'></i>&nbsp;百宝箱
-							</a>
-            </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
           
-            <li>
-							<a class="nav flat-box" target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_51995286?spm=1010.2135.3001.5421"
-                
-                
-                id="https:blog.csdn.netweixin_51995286?spm=1010.2135.3001.5421">
-								<i class='fab fa-cuttlefish fa-fw'></i>&nbsp;CSDN
-							</a>
-            </li>
-          
-            <li>
-							<a class="nav flat-box" target="_blank" rel="noopener" href="http://cov.itrhx.com/"
-                
-                
-                id="http:cov.itrhx.com">
-								<i class='fas fa-heart fa-fw'></i>&nbsp;肺炎疫情图
-							</a>
-            </li>
-          
-       
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
       </ul>
-		</nav>
-    </header>
-	</aside>
-<script>setLoadingBarProgress(40);</script>
-
-</div>
-
-  <div class="l_body">
-    <div class='body-wrapper'>
-      <div class='l_main'>
-  
+    </div>
+  </div>
+</nav>
 
   
-    <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
-      
 
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="1.程序设计基本方法"></span>
+          
+        </div>
 
-  <section class='meta'>
-    
-    
-    <div class="meta" id="header-meta">
-      
-        
-  
-    <h1 class="title">
-      <a href="/2021/09/04/1-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95/">
-        1.程序设计基本方法
-      </a>
-    </h1>
-  
-
-
-      
-      <div class='new-meta-box'>
         
           
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2021-09-04 22:30" pubdate>
+          2021年9月4日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
         
-          
-            
-  <div class='new-meta-item author'>
-    <a href="https://Aike505.github.io" rel="nofollow">
-      
-        <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/avatar.png">
-      
-      <p>Aike</p>
-    </a>
+          434 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          4 分钟
+        
+      </span>
+    
+
+    
+    
   </div>
 
 
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2021-09-04</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  
-  <div class='new-meta-item category'>
-    <a href='/categories/Python/%E4%BA%8C%E7%BA%A7/' rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>Python&nbsp;/&nbsp;二级</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            
-  
-    <div class="new-meta-item browse busuanzi">
-      <a class='notlink'>
-        <i class="fas fa-eye" aria-hidden="true"></i>
-        <p>
-          <span id="busuanzi_value_page_pv">
-            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
-          </span>
-        </p>
-      </a>
-    </div>
-  
-
-
-          
-        
-          
-            
-  
-    <div class="new-meta-item wordcount">
-      <a class='notlink'>
-        <i class="fas fa-keyboard" aria-hidden="true"></i>
-        <p>字数统计:</p>
-        <p>331字</p>
-      </a>
-    </div>
-    <div class="new-meta-item readtime">
-      <a class='notlink'>
-        <i class="fas fa-hourglass-half" aria-hidden="true"></i>
-        <p>阅读时长≈</p>
-        <p>1分</p>
-      </a>
-    </div>
-  
-
-          
-        
-          
-            
-
-          
         
       </div>
-      
-        <hr>
+
       
     </div>
-  </section>
+  </div>
+</div>
 
+</div>
 
-      <section class="article typo">
-        <div class="article-entry" itemprop="articleBody">
-          <p>程序设计基本方法</p>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">1.程序设计基本方法</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>程序设计基本方法</p>
 <span id="more"></span>
 <h1 id="1-程序设计基本方法"><a href="#1-程序设计基本方法" class="headerlink" title="1.程序设计基本方法"></a>1.程序设计基本方法</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95.png"><h2 id="1-1高级编程语言两类执行机制"><a href="#1-1高级编程语言两类执行机制" class="headerlink" title="1.1高级编程语言两类执行机制"></a>1.1高级编程语言两类执行机制</h2>| 语言|执行机制 |示例|区别</li>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95.png" srcset="/img/loading.gif" lazyload><h2 id="1-1高级编程语言两类执行机制"><a href="#1-1高级编程语言两类执行机制" class="headerlink" title="1.1高级编程语言两类执行机制"></a>1.1高级编程语言两类执行机制</h2>| 语言|执行机制 |示例|区别</li>
 </ul>
 <p>-|-|-|-<br>静态语言|编译执行|如C语言、Java语言|编译是一次性地翻译，一旦程序被编译，不再需要编译程序或者源代码。<br>脚本语言|解释执行|如Python语言、JavaScript语言、PHP语言|解释则在每次程序运行时都需要解释器和源代码。</p>
 <ul>
-<li><p>编译是将源代码转换成目标代码的过程，通常，<br>源代码是高级语言代码，目标代码是机器语言代<br>码，执行编译的计算机程序称为编译器<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95_1.png"></p>
+<li><p>编译是将源代码转换成目标代码的过程，通常，<br>源代码是高级语言代码，目标代码是机器语言代<br>码，执行编译的计算机程序称为编译器<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95_1.png" srcset="/img/loading.gif" lazyload></p>
 </li>
-<li><p>解释是将源代码逐条转换成目标代码同时逐条运<br>行目标代码的过程。执行解释的计算机程序称为<br>解释器。<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95_2.png"></p>
+<li><p>解释是将源代码逐条转换成目标代码同时逐条运<br>行目标代码的过程。执行解释的计算机程序称为<br>解释器。<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95_2.png" srcset="/img/loading.gif" lazyload></p>
 </li>
 </ul>
 <h2 id="1-2-Python解释器的两个重要工具"><a href="#1-2-Python解释器的两个重要工具" class="headerlink" title="1.2 Python解释器的两个重要工具"></a>1.2 Python解释器的两个重要工具</h2><p>IDLE：Python集成开发环境，用来编写和调试<br>Python代码；<br><br>Pip：Python第三方库安装工具，用来在当前计算<br>机上安装第三方库</p>
@@ -544,910 +296,378 @@
 <p>关于python的安装，发展历史，程序设计IPO方法，Pythond优缺点为避免繁琐，这里不予过多介绍，有问题的可以<strong>留言</strong>或自己百度解决~~</p>
 </blockquote>
 
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Python/" class="category-chain-item">Python</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/Python/%E4%BA%8C%E7%BA%A7/" class="category-chain-item">二级</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Python/">#Python</a>
+      
+        <a href="/tags/%E4%BA%8C%E7%BA%A7/">#二级</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>1.程序设计基本方法</div>
+      <div>https://aike505.github.io/2021/09/04/1-程序设计基本方法/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Aike</div>
         </div>
-        <hr />
-        
-          <div id="reward">
-  
-  <div>您的喜欢是作者写作最大的动力！❤️</div>
-  
-  <div class="reward">
-    <a href="https://github.com/Kaiyuan/donate-page" target="_blank" class=" tr3" title="Github"><span
-        id="github"></span></a>
-    <ul id="RewardBox" class="list pos-f tr3">
       
       
-      <li id="AliPayOR" title="支付宝打赏">AliPay</li>
-      
-      
-      <li id="WeChatPayOR" title="微信打赏">WeChatPay</li>
-      
-      
-      <li id="QQPayOR" title="QQ打赏">QQPay</li>
-      
-    </ul>
-    <div id="RewardText" class="tr3">Donate</div>
-    <div id="QRBox" class="pos-f left-100">
-      <div id="MainBox"></div>
-    </div>
-  </div>
-</div>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
-<script>
-  jQuery(document).ready(function () {
-    var QRBox = $('#QRBox');
-    var MainBox = $('#MainBox');
-    var AliPayOR = 'https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/alipay.png';
-    var WeChatPayOR = 'https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/weixin_.png';
-    var QQPayOR = 'https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/1736134512_monny.png';
-
-    function showQR(QR) {
-      if (QR) {
-        MainBox.css('background-image', 'url(' + QR + ')');
-      }
-      $('#RewardText,#RewardBox,#github').addClass('blur');
-      QRBox.fadeIn(300, function (argument) {
-        MainBox.addClass('showQR');
-      });
-    }
-
-    $('#RewardBox>li').click(function (event) {
-      var thisID = $(this).attr('id');
-      if (thisID === 'AliPayOR') {
-        showQR(AliPayOR);
-      } else if (thisID === 'WeChatPayOR') {
-        showQR(WeChatPayOR);
-      } else if (thisID === 'QQPayOR') {
-        showQR(QQPayOR);
-      }
-    });
-
-    MainBox.click(function (event) {
-      MainBox.removeClass('showQR').addClass('hideQR');
-      setTimeout(function (a) {
-        QRBox.fadeOut(300, function (argument) {
-          MainBox.removeClass('hideQR');
-        });
-        $('#RewardText,#RewardBox,#github').removeClass('blur');
-      }, 600);
-
-    });
-  });
-</script>
-
-        
-        
-          
-
-
-  <section class='meta' id="footer-meta">
-    <hr>
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-09-06T14:21:07+08:00">
-  <a class='notlink'>
-    <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2021年9月6日</p>
-  </a>
-</div>
-
-        
-      
-        
-          
-  
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Python/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>Python</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E4%BA%8C%E7%BA%A7/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>二级</p></a></div>
-
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
-    
-      
-        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://aike505.github.io/2021/09/04/1-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95/&title=1.程序设计基本方法 | Aike-blog&pics=https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/avatar.png&summary=程序设计基本方法"
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://aike505.github.io/2021/09/04/1-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95/&title=1.程序设计基本方法 | Aike-blog&pics=https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/avatar.png&summary=程序设计基本方法"
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
-          
-        </a>
-      
-    
-      
-        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAAD4ElEQVR42u3aS27CQBAFQO5/6WQbKeC81z0mLIpVZPB4pojU9OfxiF9fP14/r1x/Jrl+feX6+u/1r3d47IUDBw4cOOKj5ktff/LVu79Xa5ny3bZ34cCBAweOsxzX4a09cLtaflfyheVBFwcOHDhwfCbHLKnLA3ayzzac48CBAweOT+DIy3/5vW2NLoHAgQMHDhyfwJGX29qkKy/YzQqReYJ3uFaKAwcOHDi6SFeX9j7571vmO3DgwIEDRzkVtkmfZqMJs9RrFlyf3IUDBw4cONYcs1G5GV8e/NovI39utCscOHDgwHGIox1WS4p3m8LiPiudDVjgwIEDB44NR5Ji5a75Z9ok8Do9m1X/cODAgQPHezjymzdJ3SzpaoN0W6DEgQMHDhxnOfLHJwlbfoD9sdvE7+UTceDAgQPHmqMtqG3GHXL6PGFr76qLjzhw4MCBY8SRLzSTzkcl2kNu1nl5HQcOHDhwLDju3typsblhG6lNO3HgwIEDx5qjTZk2id8MIh+/SwJwlILiwIEDB44Fx+xhm0rabHxh0+JKfkbgwIEDB46zHJvQODtGG873a17v8JHEZBw4cODAMeKY/X33sF0bYocpKA4cOHDguI1jUxBsi4B3FAeHYRsHDhw4cBzNgPLWUR7k2ibQ7Bj79XHgwIEDx30c7bHzNs+sYNfuar8+Dhw4cODYc1wHrTaJOhUIZ4N6m0COAwcOHDhOcWzKecmoXLt+G1bbEmdRUsSBAwcOHCVHOzydjw7sRx9mYw35KV4mbzhw4MCBY8HRBrNZa2qzzmzQIUd/ch0HDhw4cCw4kk3kB94E41miuL/3SQqHAwcOHDhu48gP1jai8s+3jaXZXXUMx4EDBw4cMUeOkjeN8gBcDLSVHNEXjAMHDhw4DnHkjaJ86bzMl0C3AXs2MIEDBw4cOE5xtI2cNui2W0/ebXGjNXHgwIEDx5pjv8U2uM5aSl+jV5tk4sCBAweOUxz5RtvEb9PEakE3rbLh94YDBw4cOMpq2P4AmyGDJIhu0rY6o8WBAwcOHDHH/jCbcYdNw6n9BfHHTwccOHDgwLHm2KRqZwt2m1xzU458ci8OHDhw4FhwbA7TvtsON8waSMV/QV4cxIEDBw4ch9pOyfFOBchZUbItFG4KiDhw4MCBI+dog2JeRkzKi/ln2qLhMIHEgQMHDhyHOPKWTxIIZ+N0s1bTLA37o0SIAwcOHDjeyLFJ8/Ir7b1tCfLlWXDgwIEDxz9xzMJncsg8MWuxivkOHDhw4MCx5pgVB08NtM2Cen6KN7WdcODAgQNHWUprH5xzb9K8O0YocODAgQPHiOMbeuDsby009REAAAAASUVORK5CYII='>
-        
-          <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
-        
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://aike505.github.io/2021/09/04/1-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95/&title=1.程序设计基本方法 | Aike-blog&pics=https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/avatar.png&summary=程序设计基本方法"
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
-          
-        </a>
-      
-    
-      
-        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAAD4ElEQVR42u3aS27CQBAFQO5/6WQbKeC81z0mLIpVZPB4pojU9OfxiF9fP14/r1x/Jrl+feX6+u/1r3d47IUDBw4cOOKj5ktff/LVu79Xa5ny3bZ34cCBAweOsxzX4a09cLtaflfyheVBFwcOHDhwfCbHLKnLA3ayzzac48CBAweOT+DIy3/5vW2NLoHAgQMHDhyfwJGX29qkKy/YzQqReYJ3uFaKAwcOHDi6SFeX9j7571vmO3DgwIEDRzkVtkmfZqMJs9RrFlyf3IUDBw4cONYcs1G5GV8e/NovI39utCscOHDgwHGIox1WS4p3m8LiPiudDVjgwIEDB44NR5Ji5a75Z9ok8Do9m1X/cODAgQPHezjymzdJ3SzpaoN0W6DEgQMHDhxnOfLHJwlbfoD9sdvE7+UTceDAgQPHmqMtqG3GHXL6PGFr76qLjzhw4MCBY8SRLzSTzkcl2kNu1nl5HQcOHDhwLDju3typsblhG6lNO3HgwIEDx5qjTZk2id8MIh+/SwJwlILiwIEDB44Fx+xhm0rabHxh0+JKfkbgwIEDB46zHJvQODtGG873a17v8JHEZBw4cODAMeKY/X33sF0bYocpKA4cOHDguI1jUxBsi4B3FAeHYRsHDhw4cBzNgPLWUR7k2ibQ7Bj79XHgwIEDx30c7bHzNs+sYNfuar8+Dhw4cODYc1wHrTaJOhUIZ4N6m0COAwcOHDhOcWzKecmoXLt+G1bbEmdRUsSBAwcOHCVHOzydjw7sRx9mYw35KV4mbzhw4MCBY8HRBrNZa2qzzmzQIUd/ch0HDhw4cCw4kk3kB94E41miuL/3SQqHAwcOHDhu48gP1jai8s+3jaXZXXUMx4EDBw4cMUeOkjeN8gBcDLSVHNEXjAMHDhw4DnHkjaJ86bzMl0C3AXs2MIEDBw4cOE5xtI2cNui2W0/ebXGjNXHgwIEDx5pjv8U2uM5aSl+jV5tk4sCBAweOUxz5RtvEb9PEakE3rbLh94YDBw4cOMpq2P4AmyGDJIhu0rY6o8WBAwcOHDHH/jCbcYdNw6n9BfHHTwccOHDgwLHm2KRqZwt2m1xzU458ci8OHDhw4FhwbA7TvtsON8waSMV/QV4cxIEDBw4ch9pOyfFOBchZUbItFG4KiDhw4MCBI+dog2JeRkzKi/ln2qLhMIHEgQMHDhyHOPKWTxIIZ+N0s1bTLA37o0SIAwcOHDjeyLFJ8/Ir7b1tCfLlWXDgwIEDxz9xzMJncsg8MWuxivkOHDhw4MCx5pgVB08NtM2Cen6KN7WdcODAgQNHWUprH5xzb9K8O0YocODAgQPHiOMbeuDsby009REAAAAASUVORK5CYII='>
-        
-          <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png">
-        
-        </a>
-      
-    
-  </div>
-</div>
-
-
-
-        
-      
-    </div>
-  </section>
-
-
-        
-        
-            <div class="prev-next">
-                
-                    <section class="prev">
-                        <span class="art-item-left">
-                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
-                            <h4>
-                                <a href="/2021/09/04/2-Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0/" rel="prev" title="2.Python语言基本语法元素">
-                                  
-                                      2.Python语言基本语法元素
-                                  
-                                </a>
-                            </h4>
-                            
-                                
-                                <h6 class="tags">
-                                    <a class="tag" href="/tags/Python/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;Python</a> <a class="tag" href="/tags/%E4%BA%8C%E7%BA%A7/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;二级</a>
-                                </h6>
-                            
-                        </span>
-                    </section>
-                
-                
-                    <section class="next">
-                        <span class="art-item-right" aria-hidden="true">
-                            <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
-                            <h4>
-                                <a href="/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/" rel="prev" title="C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决">
-                                    
-                                        C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决
-                                    
-                                </a>
-                            </h4>
-                            
-                                
-                                <h6 class="tags">
-                                    <a class="tag" href="/tags/%E7%94%B5%E8%84%91/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;电脑</a> <a class="tag" href="/tags/%E7%A3%81%E7%9B%98/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;磁盘</a>
-                                </h6>
-                            
-                        </span>
-                    </section>
-                
-            </div>
-        
-      </section>
-    </article>
-  
-
-  
-    <!-- 显示推荐文章和评论 -->
-
-
-
-  <article class="post white-box comments">
-    <section class="article typo">
-      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2021年9月4日</div>
+        </div>
       
       
       
-      
-        <section id="comments">
-          <div id="valine_container" class="valine_thread">
-            <i class="fas fa-spinner fa-spin fa-fw"></i>
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
           </div>
-        </section>
+        </div>
       
-    </section>
-  </article>
-
-
-  
-
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
 
 
 
-<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/09/04/2-Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0/" title="2.Python语言基本语法元素">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">2.Python语言基本语法元素</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/" title="C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决">
+                        <span class="hidden-mobile">C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
 
+            
+          </article>
+        </div>
+      </div>
+    </div>
 
-
-  <script>
-    window.subData = {
-      title: '1.程序设计基本方法',
-      tools: true
-    }
-  </script>
-
-
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
 </div>
-<aside class='l_side'>
-  
-    
-    
-      
-        
-          
-          
-            <section class='widget author'>
-  <div class='content pure'>
-    
-      <div class='avatar'>
-        <img class='avatar' src='https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/avatar.png'/>
-      </div>
-    
-    
-      <div class='text'>
-        
-          <h2>๑۩ﺴ&nbsp;&nbsp;Aike&nbsp;&nbsp;ﺴ۩๑</h2>
-        
-        
-        
-      </div>
-    
-    <!-- 彩色滚动字体 -->
-    <div id="binft" align="center"></div>
-    <script>
-      var binft = function (r) {
-        function t() {
-          return b[Math.floor(Math.random() * b.length)]
-        }  
-        function e() {
-          return String.fromCharCode(94 * Math.random() + 33)
-        }
-        function n(r) {
-          for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
-            var l = document.createElement("span");
-            l.textContent = e(), l.style.color = t(), n.appendChild(l)
-          }
-          return n
-        }
-        function i() {
-          var t = o[c.skillI];
-          c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
-        }
-        var l = "",
-        o = ["Stay Hungry, Stay Foolish!"].map(function (r) {
-        return r + ""
-        }),
-        a = 2,
-        g = 1,
-        s = 5,
-        d = 75,
-        b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
-        c = {
-          text: "",
-          prefixP: -s,
-          skillI: 0,
-          skillP: 0,
-          direction: "forward",
-          delay: a,
-          step: g
-        };
-        i()
-        };
-        binft(document.getElementById('binft'));
-    </script>
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="https://github.com/Aike505/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
-          
-            <a href="https://blog.csdn.net/weixin_51995286?spm=1010.2135.3001.5421"
-              class="social fab fa-cuttlefish flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
-          
-            <a href="https://www.zhihu.com/people/fu-sheng-wei-xie-92-72"
-              class="social fab fa-zhihu flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
-          
-            <a href="mailto:admin@itrhx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
-          
-            <a href="http://wpa.qq.com/msgrd?v=3&uin=1736134512&site=qq&menu=yes"
-              class="social fab fa-qq flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
-      </div>
-    
+
+
+
+  </aside>
+
+
+    </div>
   </div>
-</section>
-
-          
-        
-      
-        
-          
-          
-            
-  <section class='widget toc-wrapper'>
-    
-<header class='pure'>
-  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
-  
-    <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
-  
-</header>
-
-    <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95"><span class="toc-text">1.程序设计基本方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E4%B8%A4%E7%B1%BB%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6"><span class="toc-text">1.1高级编程语言两类执行机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-Python%E8%A7%A3%E9%87%8A%E5%99%A8%E7%9A%84%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E5%B7%A5%E5%85%B7"><span class="toc-text">1.2 Python解释器的两个重要工具</span></a></li></ol></li></ol>
-    </div>
-  </section>
+</div>
 
 
-          
-        
-      
-        
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
-  <div><i class="fas fa-handshake fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;欢迎光临</div>
-  
-    <a class="rightBtn"
-    
-      rel="external nofollow noopener noreferrer"
-    
-    
-      target="_blank"
-    
-    href="https://www.revolvermaps.com/"
-    title="https://www.revolvermaps.com/">
-    <i class="fas fa-info-circle fa-fw"></i></a>
-  
-</header>
-
-  <div class='content pure'>
-    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script src=" https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.1.1/js/ip.js"></script><br><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5eyl60h41k1&amp;m=6&amp;h=122&amp;c=ff0000&amp;r=30" async="async"></script>
-  </div>
-</section>
-
-          
-        
-      
-        
-          
-          
-            
-  <section class='widget category'>
-    
-<header class='pure'>
-  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
-  
-    <a class="rightBtn"
-    
-      rel="nofollow"
-    
-    
-    href="/categories/"
-    title="categories/">
-    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
-  
-</header>
-
-    <div class='content pure'>
-      <ul class="entry">
-        
-          <li><a class="flat-box" title="/categories/Python/" href="/categories/Python/"><div class='name'>Python</div><div class='badge'>(11)</div></a></li>
-        
-          <li><a class="flat-box child" title="/categories/Python/%E4%BA%8C%E7%BA%A7/" href="/categories/Python/%E4%BA%8C%E7%BA%A7/"><div class='name'>二级</div><div class='badge'>(11)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/hexo%E5%8D%9A%E5%AE%A2/" href="/categories/hexo%E5%8D%9A%E5%AE%A2/"><div class='name'>hexo博客</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB/" href="/categories/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB/"><div class='name'>大学生活</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/" href="/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"><div class='name'>日常记录</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E7%94%B5%E8%84%91/" href="/categories/%E7%94%B5%E8%84%91/"><div class='name'>电脑</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E7%BD%91%E7%AB%99/" href="/categories/%E7%BD%91%E7%AB%99/"><div class='name'>网站</div><div class='badge'>(2)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
 
 
-          
-        
-      
-        
-          
-          
-            
-  <section class='widget tagcloud'>
-    
-<header class='pure'>
-  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
-  
-    <a class="rightBtn"
-    
-      rel="nofollow"
-    
-    
-    href="/tags/"
-    title="tags/">
-    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
-  
-</header>
-
-    <div class='content pure'>
-      <a href="/tags/Python/" style="font-size: 24px; color: #555">Python</a> <a href="/tags/bug/" style="font-size: 14px; color: #999">bug</a> <a href="/tags/hexo/" style="font-size: 21.5px; color: #666">hexo</a> <a href="/tags/%E4%B8%BB%E9%A2%98/" style="font-size: 14px; color: #999">主题</a> <a href="/tags/%E4%BA%8C%E7%BA%A7/" style="font-size: 24px; color: #555">二级</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 16.5px; color: #888">博客</a> <a href="/tags/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB/" style="font-size: 14px; color: #999">大学生活</a> <a href="/tags/%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/" style="font-size: 14px; color: #999">推送百度</a> <a href="/tags/%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE/" style="font-size: 14px; color: #999">新建分类标签</a> <a href="/tags/%E6%B3%A8%E5%86%8C%E5%9F%9F%E5%90%8D/" style="font-size: 14px; color: #999">注册域名</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E7%89%87%E6%AE%B5/" style="font-size: 19px; color: #777">生活片段</a> <a href="/tags/%E7%94%B5%E8%84%91/" style="font-size: 14px; color: #999">电脑</a> <a href="/tags/%E7%A3%81%E7%9B%98/" style="font-size: 14px; color: #999">磁盘</a> <a href="/tags/%E7%BD%91%E7%AB%99/" style="font-size: 14px; color: #999">网站</a> <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" style="font-size: 14px; color: #999">虚拟机</a> <a href="/tags/%E9%80%89%E8%AF%BE/" style="font-size: 14px; color: #999">选课</a> <a href="/tags/%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/" style="font-size: 16.5px; color: #888">部署博客</a>
-    </div>
-  </section>
-
-          
-        
-      
-        
-          
-          
-            
-
-
-  <section class='widget music'>
-    
-<header class='pure'>
-  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
-  
-    <a class="rightBtn"
-    
-      rel="external nofollow noopener noreferrer"
-    
-    
-      target="_blank"
-    
-    href="https://y.qq.com/n/ryqq/playlist/1242772682"
-    title="https://y.qq.com/n/ryqq/playlist/1242772682">
-    <i class="far fa-heart fa-fw"></i></a>
-  
-</header>
-
-    <div class='content pure'>
-      
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
-  <div class="aplayer"
-    data-theme="#1BCDFC"
-    
-    
-    data-mode="circulation"
-    data-server="tencent"
-    data-type="playlist"
-    data-id="1242772682"
-    data-volume="0.7">
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
-
-
-    </div>
-  </section>
-
-
-          
-        
-      
-    
 
   
-</aside>
 
-<footer id="footer" class="clearfix">
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
     
+
     
-      <div class="social-wrapper">
-        
-          
-            <a href="https://github.com/Aike505/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
-          
-            <a href="https://blog.csdn.net/weixin_51995286?spm=1010.2135.3001.5421"
-              class="social fab fa-cuttlefish flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
-          
-            <a href="https://www.zhihu.com/people/fu-sheng-wei-xie-92-72"
-              class="social fab fa-zhihu flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
-          
-            <a href="mailto:admin@itrhx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
-          
-            <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1736134512&amp;site=qq&amp;menu=yes"
-              class="social fab fa-qq flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
     
-    <br>
-    Copyright <i class="far fa-copyright"></i> 2021-2022
-    <a href="https://www.zkxdu.top/" target="_blank"> Aike-blog </a>丨
-    <!-- <img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.9/images/icp.png" style="width:18px;height:18px;margin-bottom:-2px" alt="ICP">
-    <a href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备19003281号-4</a>丨 -->
-    <img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.9/images/moeicp.png" style="width:18px;height:18px;margin-bottom:-3px" alt="MOE ICP">
-    <a href="https://icp.gov.moe/?keyword=20222031" target="_blank">萌ICP备20222031号</a>丨
-    <!-- 网站运行时间 -->
-    <span id="timeDate">正在载入...</span><span id="times"><span><i class="fa fa-spinner fa-spin"> </i></span></span>
-    <script>
-    var now = new Date(); 
-    function createtime() {
-      var grt= new Date("07/19/2021 17:38:00");//建站时间2021-07-19
-      now.setTime(now.getTime()+250); 
-      days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
-      hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
-      if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
-      mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
-      seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
-      snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-      document.getElementById("timeDate").innerHTML = "本站已运行 "
-      document.getElementById("times").innerHTML = dnum +" 天 " + hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
-      /*document.getElementById("times").style.color="#0056FF";*/
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
       }
-      setInterval("createtime()",250);
-    </script>丨
-    <!--<a href="/sitemap.xml" target="_blank">站点地图</a>丨-->
-    <a href="https://tongji.baidu.com/web/welcome/ico?s=df0bc7c6bdbd80356ba4db429724ccad" target="_blank">百度统计</a>丨
-    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1275909280'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1275909280%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script><br><br>
-    <div class="github-badge">
-      <a style="color: #fff" rel="license" href="https://hexo.io/" target="_blank" title="由 Hexo 强力驱动">
-      <span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo</span></a>
-    </div>
-    <div class="github-badge">
-      <a style="color: #fff" rel="license" href="https://github.com/" target="_blank" title="静态网页托管于 GitHub Pages 和 Coding Pages">
-      <span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen">GitHub & Coding</span></a>
-    </div>
-    <div class="github-badge">
-      <a style="color: #fff" rel="license" href="https://www.aliyun.com/" target="_blank" title="阿里云提供域名相关服务">
-      <span class="badge-subject">DNS</span><span class="badge-value bg-blueviolet">Aliyun</span></a>
-    </div>
-    <div class="github-badge">
-      <a style="color: #fff" rel="license" href="https://www.jsdelivr.com/" target="_blank" title="jsDelivr 提供 CDN 加速服务">
-      <span class="badge-subject">CDN</span><span class="badge-value bg-orange">jsDelivr</span></a>
-    </div>
-    <div class="github-badge">
-        <a style="color: #fff" rel="license" href="https://xaoxuu.com/wiki/material-x/" target="_blank" title="站点使用 Material X 主题">
-      <span class="badge-subject">Theme</span><span class="badge-value bg-blue">Material X</span></a>
-    </div>
-    <div class="github-badge">
-      <a style="color: #fff" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可">
-      <span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span></a>
-    </div>
-    <div class="github-badge">
-      <a style="color: #fff" rel="license" href="https://996.icu/" target="_blank" title="支持 996.ICU">
-      <span class="badge-subject">Link</span><span class="badge-value bg-red">996.ICU</span></a>
-    </div>
-    <div class="github-badge">
-      <span class="badge-subject">UV</span><span class="badge-value bg-orange" id="busuanzi_value_site_uv"></span>
-    </div>
-    <div class="github-badge">
-      <span class="badge-subject">PV</span><span class="badge-value bg-brightgreen" id="busuanzi_value_site_pv"></span>
-    </div>
-    <div class="github-badge">
-      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">23.3k</span>
-    </div>
-</footer>
-
-
-      <script>setLoadingBarProgress(60);</script>
-    </div>
-    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-
-  <script>
-    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
-    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
-    var ALGOLIA_API_KEY = "";
-    var ALGOLIA_APP_ID = "";
-    var ALGOLIA_INDEX_NAME = "";
-    var AZURE_SERVICE_NAME = "";
-    var AZURE_INDEX_NAME = "";
-    var AZURE_QUERY_KEY = "";
-    var BAIDU_API_ID = "";
-    var SEARCH_SERVICE = "hexo" || "hexo";
-    var ROOT = "/"||"/";
-    if(!ROOT.endsWith('/'))ROOT += '/';
-  </script>
-
-<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
-
-
-  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
-  <script type="text/javascript">
-    $(function() {
-      const $reveal = $('.reveal');
-      if ($reveal.length === 0) return;
-      const sr = ScrollReveal({ distance: 0 });
-      sr.reveal('.reveal');
-    });
-  </script>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
-  <script type="text/javascript">
-    $(function() {
-      Waves.attach('.flat-btn', ['waves-button']);
-      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
-      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
-      Waves.attach('.flat-box', ['waves-block']);
-      Waves.attach('.float-box', ['waves-block', 'waves-float']);
-      Waves.attach('.waves-image');
-      Waves.init();
-    });
-  </script>
-
-
-  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  
-    
+      var text = subtitle.getAttribute('data-typed-text');
       
-<script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.1.1/js/volantis.min.js"></script>
-
-    
-  
-  <script>
-  var GUEST_INFO = ['nick','mail','link'];
-  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-    return GUEST_INFO.indexOf(item) > -1
-  });
-  var notify = 'true' == true;
-  var verify = 'true' == true;
-  var valine = new Valine();
-  valine.init({
-    el: '#valine_container',
-    notify: notify,
-    verify: verify,
-    guest_info: guest_info,
-    
-    appId: "GinV886jrXbVlIzLkmwXk4sK-gzGzoHsz",
-    appKey: "j9i9yQGuy4842ORVq2K8AWda",
-    placeholder: "快来评论吧~",
-    pageSize:'10',
-    avatar:'monsterid',
-    lang:'zh-cn',
-    highlight:'true'
-  })
+        typing(text);
+      
+    })(window, document);
   </script>
 
 
 
-  
-<script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.1.1/js/app.js"></script>
-
-
 
   
-<script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.1.1/js/search.js"></script>
+    <script  src="/js/img-lazyload.js" ></script>
+  
 
 
 
 
-
-<!-- 复制 -->
-<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+  
 <script>
-  let COPY_SUCCESS = "复制成功";
-  let COPY_FAILURE = "复制失败";
-  /*页面载入完成后，创建复制按钮*/
-  !function (e, t, a) {
-    /* code */
-    var initCopyCode = function(){
-      var copyHtml = '';
-      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
-      copyHtml += '  <i class="fa fa-copy"></i><span>复制</span>';
-      copyHtml += '</button>';
-      $(".highlight .code pre").before(copyHtml);
-      var clipboard = new ClipboardJS('.btn-copy', {
-        target: function(trigger) {
-          return trigger.nextElementSibling;
-        }
-      });
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
 
-      clipboard.on('success', function(e) {
-        //您可以加入成功提示
-        console.info('Action:', e.action);
-        console.info('Text:', e.text);
-        console.info('Trigger:', e.trigger);
-        success_prompt(COPY_SUCCESS);
-        e.clearSelection();
-      });
-      clipboard.on('error', function(e) {
-        //您可以加入失败提示
-        console.error('Action:', e.action);
-        console.error('Trigger:', e.trigger);
-        fail_prompt(COPY_FAILURE);
-      });
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
     }
-    initCopyCode();
 
-  }(window, document);
-
-  /**
-   * 弹出式提示框，默认1.5秒自动消失
-   * @param message 提示信息
-   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
-   * @param time 消失时间
-   */
-  var prompt = function (message, style, time)
-  {
-      style = (style === undefined) ? 'alert-success' : style;
-      time = (time === undefined) ? 1500 : time*1000;
-      $('<div>')
-          .appendTo('body')
-          .addClass('alert ' + style)
-          .html(message)
-          .show()
-          .delay(time)
-          .fadeOut();
-  };
-
-  // 成功提示
-  var success_prompt = function(message, time)
-  {
-      prompt(message, 'alert-success', time);
-  };
-
-  // 失败提示
-  var fail_prompt = function(message, time)
-  {
-      prompt(message, 'alert-danger', time);
-  };
-
-  // 提醒
-  var warning_prompt = function(message, time)
-  {
-      prompt(message, 'alert-warning', time);
-  };
-
-  // 信息提示
-  var info_prompt = function(message, time)
-  {
-      prompt(message, 'alert-info', time);
-  };
-
-</script>
-
-
-<!-- fancybox -->
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<script>
-  let LAZY_LOAD_IMAGE = "";
-  $(".article-entry").find("fancybox").find("img").each(function () {
-      var element = document.createElement("a");
-      $(element).attr("data-fancybox", "gallery");
-      $(element).attr("href", $(this).attr("src"));
-      /* 图片采用懒加载处理时,
-       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
-       * 那么此处将原本的属性名src替换为对应属性名data-original,
-       * 修改如下
-       */
-       if (LAZY_LOAD_IMAGE) {
-         $(element).attr("href", $(this).attr("data-original"));
-       }
-      $(this).wrap(element);
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
   });
 </script>
 
 
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
 
 
 
-  <script>setLoadingBarProgress(100);</script>
-  <!-- 单击显示文字 -->
-  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/ClickShowText.js"></script> -->
-  <!-- 点击冒点 -->
-  <canvas width="1777" height="841" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none;"></canvas><script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
-  <!-- 浏览器搞笑标题 -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/FunnyTitle.js"></script>
-  <!-- 样式一（鼠标点击更换样式） -->
-  <!--<script src="https://g.joyinshare.com/hc/ribbon.min.js" type="text/javascript"></script>-->
-  <!-- 样式二（飘动的彩带） -->
-  <!--<script src="https://g.joyinshare.com/hc/piao.js" type="text/javascript"></script>-->
-  <!-- 数字雨 -->
-  <canvas id="canvas" width="1920" height="1080"></canvas>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/DigitalRain.js"></script>
-  <!--动态线条背景-->
-  <!--<script type="text/javascript" color="27,195,251" opacity='0.7' zIndex="-5" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>-->
-  <!-- 速度优化脚本 -->
-  <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/instantclick-1.2.2.js" type="module"></script>
-  <!-- 悟空 -->
-  <!--<div id="wukong"><marquee direction="right"><img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/images/wukong.gif"></marquee></div>-->
-  <!-- 雪花 -->
-  <!--<script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/snow1.js"></script> -->
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>
