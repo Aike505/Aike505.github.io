@@ -42,26 +42,26 @@
 </blockquote>
 <h2 id="10-1-Python第三方库的获取与安装"><a href="#10-1-Python第三方库的获取与安装" class="headerlink" title="10.1 Python第三方库的获取与安装"></a>10.1 Python第三方库的获取与安装</h2><p>Python第三方库依照安装方式灵活性和难易程度有三个方法：<strong>pip工具安装</strong>、<strong>自定义安装</strong>和<strong>文件安装</strong>。</p>
 <h3 id="10-1-1-pip工具安装"><a href="#10-1-1-pip工具安装" class="headerlink" title="10.1.1 pip工具安装"></a>10.1.1 pip工具安装</h3><p>最常用且最高效的Python第三方库安装方式是采用pip工具安装。pip是Python官方提供并维护的在线第三方库安装工具。<br><br><code>pip install&lt;拟安装库名称&gt;</code></p>
-<figure class="highlight maxima"><table><tr><td class="code"><pre><code class="hljs maxima">:\&gt;pip install pygame<br>...<br>Installing collected packages: pygame<br>Successfully installed pygame-<span class="hljs-number">1.9</span><span class="hljs-number">.2b1</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install pygame</span><br><span class="line">...</span><br><span class="line">Installing collected packages: pygame</span><br><span class="line">Successfully installed pygame-1.9.2b1</span><br></pre></td></tr></table></figure>
 
 <p>pip常用指令,可以通过<code>pip help</code>查看：</p>
-<figure class="highlight erlang"><table><tr><td class="code"><pre><code class="hljs erlang">C:\Users\<span class="hljs-number">86159</span>&gt;pip -h<br><br>Usage:<br>  pip &lt;command&gt; [options]<br><br>Commands:<br>  install                     Install packages.<br>  download                    Download packages.<br>  uninstall                   Uninstall packages.<br>  freeze                      Output installed packages in requirements format.<br>  list                        List installed packages.<br>  show                        Show information about installed packages.<br>  check                       Verify installed packages have compatible dependencies.<br>  config                      Manage local <span class="hljs-keyword">and</span> global configuration.<br>  search                      Search PyPI for packages.<br>  cache                       Inspect <span class="hljs-keyword">and</span> manage pip&#x27;s wheel cache.<br>  wheel                       Build wheels from your requirements.<br>  hash                        Compute hashes <span class="hljs-keyword">of</span> package archives.<br>  completion                  A helper command used for command completion.<br>  debug                       Show information useful for debugging.<br>  help                        Show help for commands.<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C:\Users\86159&gt;pip -h</span><br><span class="line"></span><br><span class="line">Usage:</span><br><span class="line">  pip &lt;command&gt; [options]</span><br><span class="line"></span><br><span class="line">Commands:</span><br><span class="line">  install                     Install packages.</span><br><span class="line">  download                    Download packages.</span><br><span class="line">  uninstall                   Uninstall packages.</span><br><span class="line">  freeze                      Output installed packages in requirements format.</span><br><span class="line">  list                        List installed packages.</span><br><span class="line">  show                        Show information about installed packages.</span><br><span class="line">  check                       Verify installed packages have compatible dependencies.</span><br><span class="line">  config                      Manage local and global configuration.</span><br><span class="line">  search                      Search PyPI for packages.</span><br><span class="line">  cache                       Inspect and manage pip&#x27;s wheel cache.</span><br><span class="line">  wheel                       Build wheels from your requirements.</span><br><span class="line">  hash                        Compute hashes of package archives.</span><br><span class="line">  completion                  A helper command used for command completion.</span><br><span class="line">  debug                       Show information useful for debugging.</span><br><span class="line">  help                        Show help for commands.</span><br></pre></td></tr></table></figure>
 
 <h3 id="10-1-2-自定义安装"><a href="#10-1-2-自定义安装" class="headerlink" title="10.1.2 自定义安装"></a>10.1.2 自定义安装</h3><p>自定义安装指按照第三方库提供的步骤和方式安装。第三方库都有主页用于维护库的代码和文档。以科学计算用的numpy为例，开发者维护的官方主页是：<a href="http://www.numpy.org/">http://www.numpy.org/</a><br><br>浏览该网页找到下载链接，如下：<a href="https://www.scipy.org/scipylib/download.html">https://www.scipy.org/scipylib/download.html</a><br><br>进入根据指示步骤安装。</p>
 <h3 id="10-1-3-文件安装"><a href="#10-1-3-文件安装" class="headerlink" title="10.1.3 文件安装"></a>10.1.3 文件安装</h3><p>为了解决这类第三方库安装问题，美国加州大学尔湾分校提供了一个页面，帮助Python用户获得Windows可直接安装的第三方库文件，链接地址如下：<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">https://www.lfd.uci.edu/~gohlke/pythonlibs/</a><br><br>这里以scipy为例说明，首先在上述页面中找到scipy库对应的内容。选择其中的.whl文件下载，这里选择适用于Python 3.5版本解释器和32位系统的对应文件：scipy- 0 . 1 7 . 1 - cp3 5 - cp3 5m-win3 2 .whl，下载该文件到D:\pycodes目录。<br>然后，采用pip命令安装该文件。<br></p>
-<figure class="highlight asciidoc"><table><tr><td class="code"><pre><code class="hljs asciidoc"><span class="hljs-meta">:\&gt;pip install D:\pycodes\scipy-0.17.1-cp35-cp35m-win32.whl</span><br>Processing d:\pycodes\scipy-0.17.1-cp35-cp35m-win32.whl<br>Installing collected packages: scipy<br>Successfully installed scipy-0.17.1<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install D:\pycodes\scipy-0.17.1-cp35-cp35m-win32.whl</span><br><span class="line">Processing d:\pycodes\scipy-0.17.1-cp35-cp35m-win32.whl</span><br><span class="line">Installing collected packages: scipy</span><br><span class="line">Successfully installed scipy-0.17.1</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>对于上述三种安装方式，一般优先选择采用pip工具安装，如果安装失败，则选择自定义安装或者文件安装。另外，如果需要在没有网络条件下安装Python第三方库，请直接采用文件安装方式。其中，.whl文件可以通过pip download指令在有网络条件的情况下获得。</p>
 </blockquote>
 <h2 id="10-2-pyinstaller库"><a href="#10-2-pyinstaller库" class="headerlink" title="10.2 pyinstaller库"></a>10.2 pyinstaller库</h2><h3 id="10-2-1-pyinstaller库概述"><a href="#10-2-1-pyinstaller库概述" class="headerlink" title="10.2.1 pyinstaller库概述"></a>10.2.1 pyinstaller库概述</h3><p>PyInstaller是一个十分有用的Python第三方库，它能够在Windows、Linux、Mac OS X等操作系统下将Python源文件打包，变成直接可运行的可执行文件。<br><br><br>通过对源文件打包，Python程序可以在没有安装Python的环境中运行，也可以作为一个独立文件方便传递和管理。</p>
-<figure class="highlight cmake"><table><tr><td class="code"><pre><code class="hljs cmake">:\&gt;pip <span class="hljs-keyword">install</span> PyInstaller<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install PyInstaller</span><br></pre></td></tr></table></figure>
 
 <h3 id="10-2-2-PyInstaller库与程序打包"><a href="#10-2-2-PyInstaller库与程序打包" class="headerlink" title="10.2.2 PyInstaller库与程序打包"></a>10.2.2 PyInstaller库与程序打包</h3><p>使用PyInstaller库对Python源文件打包十分简单，使用方法如下：</p>
-<figure class="highlight bnf"><table><tr><td class="code"><pre><code class="hljs bnf">:\&gt;PyInstaller <span class="hljs-attribute">&lt;Python源程序文件名&gt;</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;PyInstaller &lt;Python源程序文件名&gt;</span><br></pre></td></tr></table></figure>
 
 <p>执行完毕后，源文件所在目录将生成dist和build两个文件夹。最终的打包程序在dist内部与源文件同名的目录中。<br><br><br>可以通过-F参数对Python源文件生成一个独立的可执行文件，如下：<br><br></p>
-<figure class="highlight reasonml"><table><tr><td class="code"><pre><code class="hljs reasonml">:\&gt;PyInstaller -F <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">SnowView</span>.</span></span>py<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;PyInstaller -F SnowView.py</span><br></pre></td></tr></table></figure>
 
 <p>执行后在dist目录中出现了SnowView.exe文件，没有任何依赖库，执行它即可显示雪景效果。</p>
 <table>
@@ -93,9 +93,9 @@
 </tr>
 </tbody></table>
 <h2 id="10-3-jieba库"><a href="#10-3-jieba库" class="headerlink" title="10.3 jieba库"></a>10.3 jieba库</h2><h3 id="10-3-1-jieba库概述"><a href="#10-3-1-jieba库概述" class="headerlink" title="10.3.1 jieba库概述"></a>10.3.1 jieba库概述</h3><p>jieba（“结巴”）是Python中一个重要的第三方中文分词函数库。<br><br><br>jieba库安装：</p>
-<figure class="highlight cmake"><table><tr><td class="code"><pre><code class="hljs cmake">:\&gt;pip <span class="hljs-keyword">install</span> jieba<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install jieba</span><br></pre></td></tr></table></figure>
 <p>jieba库支持三种分词模式：<strong>精确模式</strong>，将句子最精确地切开，适合文本分析；<strong>全模式</strong>，把句子中所有可以成词的词语都扫描出来，速度非常快，但是不能解决歧义；<strong>搜索引擎模式</strong>，在精确模式基础上，对长词再次切分，提高召回率，适合用于搜索引擎分词。<br><br><br>对中文分词来说，jieba库只需要一行代码即可。</p>
-<figure class="highlight mipsasm"><table><tr><td class="code"><pre><code class="hljs mipsasm">&gt;&gt;&gt;import <span class="hljs-keyword">jieba</span><br><span class="hljs-keyword"></span>&gt;&gt;&gt;<span class="hljs-keyword">jieba.lcut(&quot;全国计算机等级考试&quot;)</span><br><span class="hljs-keyword"></span><span class="hljs-keyword">Building </span><span class="hljs-keyword">prefix </span><span class="hljs-keyword">dict </span>from the default <span class="hljs-keyword">dictionary </span>...<br>Loading model from <span class="hljs-keyword">cache </span>C:\AppData\Local\Temp\<span class="hljs-keyword">jieba.cache</span><br><span class="hljs-keyword"></span>Loading model cost <span class="hljs-number">1</span>.<span class="hljs-number">001</span> seconds.<br><span class="hljs-keyword">Prefix </span><span class="hljs-keyword">dict </span>has <span class="hljs-keyword">been </span><span class="hljs-keyword">built </span>succesfully.<br>[<span class="hljs-string">&#x27;全国&#x27;</span>,<span class="hljs-string">&#x27;计算机&#x27;</span>,<span class="hljs-string">&#x27;等级&#x27;</span>,<span class="hljs-string">&#x27;考试&#x27;</span>]<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;import jieba</span><br><span class="line">&gt;&gt;&gt;jieba.lcut(&quot;全国计算机等级考试&quot;)</span><br><span class="line">Building prefix dict from the default dictionary ...</span><br><span class="line">Loading model from cache C:\AppData\Local\Temp\jieba.cache</span><br><span class="line">Loading model cost 1.001 seconds.</span><br><span class="line">Prefix dict has been built succesfully.</span><br><span class="line">[&#x27;全国&#x27;,&#x27;计算机&#x27;,&#x27;等级&#x27;,&#x27;考试&#x27;]</span><br></pre></td></tr></table></figure>
 
 
 <h3 id="10-3-2-jieba库与中文分词"><a href="#10-3-2-jieba库与中文分词" class="headerlink" title="10.3.2 jieba库与中文分词"></a>10.3.2 jieba库与中文分词</h3><table>
@@ -122,13 +122,13 @@
 <td>顾名思义，用来向jieba词库增加新的单词。</td>
 </tr>
 </tbody></table>
-<figure class="highlight mel"><table><tr><td class="code"><pre><code class="hljs mel">&gt;&gt;&gt;import jieba<br>&gt;&gt;&gt;<span class="hljs-keyword">ls</span> = jieba.lcut(<span class="hljs-string">&quot;全国计算机等级考试Python科目&quot;</span>)<br>&gt;&gt;&gt;<span class="hljs-keyword">print</span>(<span class="hljs-keyword">ls</span>)<br>[<span class="hljs-string">&#x27;全国&#x27;</span>,<span class="hljs-string">&#x27;计算机&#x27;</span>,<span class="hljs-string">&#x27;等级&#x27;</span>,<span class="hljs-string">&#x27;考试&#x27;</span>,<span class="hljs-string">&#x27;Python&#x27;</span>,<span class="hljs-string">&#x27;科目&#x27;</span>]<br><br>&gt;&gt;&gt;import jieba<br>&gt;&gt;&gt;<span class="hljs-keyword">ls</span> = jieba.lcut(<span class="hljs-string">&quot;全国计算机等级考试Python科目&quot;</span>, cut_all=True)<br>&gt;&gt;&gt;<span class="hljs-keyword">print</span>(<span class="hljs-keyword">ls</span>)<br>[<span class="hljs-string">&#x27;全国&#x27;</span>,<span class="hljs-string">&#x27;国计&#x27;</span>,<span class="hljs-string">&#x27;计算&#x27;</span>,<span class="hljs-string">&#x27;计算机&#x27;</span>,<span class="hljs-string">&#x27;算机&#x27;</span>,<span class="hljs-string">&#x27;等级&#x27;</span>,<span class="hljs-string">&#x27;考试&#x27;</span>,<span class="hljs-string">&#x27;Python&#x27;</span>,<span class="hljs-string">&#x27;科目&#x27;</span>]<br><br>&gt;&gt;&gt;import jieba<br>&gt;&gt;&gt;<span class="hljs-keyword">ls</span> = jieba.lcut_for_search(<span class="hljs-string">&quot;全国计算机等级考试Python科目&quot;</span>)<br>&gt;&gt;&gt;<span class="hljs-keyword">print</span>(<span class="hljs-keyword">ls</span>)<br>[<span class="hljs-string">&#x27;全国&#x27;</span>,<span class="hljs-string">&#x27;计算&#x27;</span>,<span class="hljs-string">&#x27;算机&#x27;</span>,<span class="hljs-string">&#x27;计算机&#x27;</span>,<span class="hljs-string">&#x27;等级&#x27;</span>,<span class="hljs-string">&#x27;考试&#x27;</span>,<span class="hljs-string">&#x27;Python&#x27;</span>,<span class="hljs-string">&#x27;科目&#x27;</span>]<br><br>&gt;&gt;&gt;import jieba<br>&gt;&gt;&gt;jieba.add_word(<span class="hljs-string">&quot;Python科目&quot;</span>)<br>&gt;&gt;&gt;<span class="hljs-keyword">ls</span> = jieba.lcut(<span class="hljs-string">&quot;全国计算机等级考试Python科目&quot;</span>)<br>&gt;&gt;&gt;<span class="hljs-keyword">print</span>(<span class="hljs-keyword">ls</span>)<br>[<span class="hljs-string">&#x27;全国&#x27;</span>,<span class="hljs-string">&#x27;计算机&#x27;</span>,<span class="hljs-string">&#x27;等级&#x27;</span>,<span class="hljs-string">&#x27;考试&#x27;</span>,<span class="hljs-string">&#x27;Python科目&#x27;</span>]<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;import jieba</span><br><span class="line">&gt;&gt;&gt;ls = jieba.lcut(&quot;全国计算机等级考试Python科目&quot;)</span><br><span class="line">&gt;&gt;&gt;print(ls)</span><br><span class="line">[&#x27;全国&#x27;,&#x27;计算机&#x27;,&#x27;等级&#x27;,&#x27;考试&#x27;,&#x27;Python&#x27;,&#x27;科目&#x27;]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;import jieba</span><br><span class="line">&gt;&gt;&gt;ls = jieba.lcut(&quot;全国计算机等级考试Python科目&quot;, cut_all=True)</span><br><span class="line">&gt;&gt;&gt;print(ls)</span><br><span class="line">[&#x27;全国&#x27;,&#x27;国计&#x27;,&#x27;计算&#x27;,&#x27;计算机&#x27;,&#x27;算机&#x27;,&#x27;等级&#x27;,&#x27;考试&#x27;,&#x27;Python&#x27;,&#x27;科目&#x27;]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;import jieba</span><br><span class="line">&gt;&gt;&gt;ls = jieba.lcut_for_search(&quot;全国计算机等级考试Python科目&quot;)</span><br><span class="line">&gt;&gt;&gt;print(ls)</span><br><span class="line">[&#x27;全国&#x27;,&#x27;计算&#x27;,&#x27;算机&#x27;,&#x27;计算机&#x27;,&#x27;等级&#x27;,&#x27;考试&#x27;,&#x27;Python&#x27;,&#x27;科目&#x27;]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;import jieba</span><br><span class="line">&gt;&gt;&gt;jieba.add_word(&quot;Python科目&quot;)</span><br><span class="line">&gt;&gt;&gt;ls = jieba.lcut(&quot;全国计算机等级考试Python科目&quot;)</span><br><span class="line">&gt;&gt;&gt;print(ls)</span><br><span class="line">[&#x27;全国&#x27;,&#x27;计算机&#x27;,&#x27;等级&#x27;,&#x27;考试&#x27;,&#x27;Python科目&#x27;]</span><br></pre></td></tr></table></figure>
 
 <h2 id="10-4-worldcloud库"><a href="#10-4-worldcloud库" class="headerlink" title="10.4 worldcloud库"></a>10.4 worldcloud库</h2><h3 id="10-4-1-worldcloud库概述"><a href="#10-4-1-worldcloud库概述" class="headerlink" title="10.4.1 worldcloud库概述"></a>10.4.1 worldcloud库概述</h3><p>wordcloud库是专门用于根据文本生成词云的Python第三方库，十分常用且有趣。<br><br><br>装wordcloud库在Windows的cmd命令行使用如下命令：<code>:\&gt;pip install wordcloud</code><br><br><br>wordcloud库的使用十分简单，以一个字符串为例。其中，产生词云只需要一行语句，在第三行，并可以将词云保存为图片。</p>
-<figure class="highlight stylus"><table><tr><td class="code"><pre><code class="hljs stylus">&gt;&gt;&gt;from wordcloud import WordCloud<br>&gt;&gt;&gt;txt=<span class="hljs-string">&#x27;I like python. I am learning python&#x27;</span><br>&gt;&gt;&gt;wordcloud = WordCloud()<span class="hljs-selector-class">.generate</span>(txt)<br>&gt;&gt;&gt;wordcloud<span class="hljs-selector-class">.to_file</span>(<span class="hljs-string">&#x27;testcloud.png&#x27;</span>)<br>&lt;wordcloud<span class="hljs-selector-class">.wordcloud</span><span class="hljs-selector-class">.WordCloud</span> <span class="hljs-selector-tag">object</span> at <span class="hljs-number">0</span>x000001583E26D208&gt;<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;from wordcloud import WordCloud</span><br><span class="line">&gt;&gt;&gt;txt=&#x27;I like python. I am learning python&#x27;</span><br><span class="line">&gt;&gt;&gt;wordcloud = WordCloud().generate(txt)</span><br><span class="line">&gt;&gt;&gt;wordcloud.to_file(&#x27;testcloud.png&#x27;)</span><br><span class="line">&lt;wordcloud.wordcloud.WordCloud object at 0x000001583E26D208&gt;</span><br></pre></td></tr></table></figure>
 
 <h3 id="10-4-2-worldcloud库与可视化词云"><a href="#10-4-2-worldcloud库与可视化词云" class="headerlink" title="10.4.2 worldcloud库与可视化词云"></a>10.4.2 worldcloud库与可视化词云</h3><p>在生成词云时，wordcloud默认会以空格或标点为分隔符对目标文本进行分词处理。对于中文文本，分词处理需要由用户来完成。<br><br>一般步骤是先将文本分词处理，然后以空格拼接，再调用wordcloud库函数。</p>
-<figure class="highlight haxe"><table><tr><td class="code"><pre><code class="hljs haxe"><span class="hljs-keyword">import</span> jieba<br>from wordcloud <span class="hljs-keyword">import</span> WordCloud<br>txt = <span class="hljs-string">&#x27;程序设计语言是计算机能够理解和识别用户操作意图的一种交互体系，它按</span><br><span class="hljs-string">照特定规则组织计算机指令，使计算机能够自动进行各种运算处理。&#x27;</span><br>words = jieba.lcut(txt) <span class="hljs-meta"># 精确分词</span><br><span class="hljs-keyword">new</span><span class="hljs-type">txt</span> = <span class="hljs-string">&#x27; &#x27;</span>.join(words) <span class="hljs-meta"># 空格拼接</span><br>wordcloud = WordCloud(font_path=<span class="hljs-string">&quot;msyh.ttc&quot;</span>).generate(<span class="hljs-keyword">new</span><span class="hljs-type">txt</span>)<br>wordcloud.to_file(<span class="hljs-string">&#x27;词云中文例子图.png&#x27;</span>) <span class="hljs-meta"># 保存图片</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import jieba</span><br><span class="line">from wordcloud import WordCloud</span><br><span class="line">txt = &#x27;程序设计语言是计算机能够理解和识别用户操作意图的一种交互体系，它按</span><br><span class="line">照特定规则组织计算机指令，使计算机能够自动进行各种运算处理。&#x27;</span><br><span class="line">words = jieba.lcut(txt) # 精确分词</span><br><span class="line">newtxt = &#x27; &#x27;.join(words) # 空格拼接</span><br><span class="line">wordcloud = WordCloud(font_path=&quot;msyh.ttc&quot;).generate(newtxt)</span><br><span class="line">wordcloud.to_file(&#x27;词云中文例子图.png&#x27;) # 保存图片</span><br></pre></td></tr></table></figure>
 
 <p>wordcloud库的核心是WordColoud类，所有的功能都封装在WordCloud类中。使用时需要实<br>例化一个WordColoud类的对象，并调用其generate(text)方法将text文本转化为词云。<br><br><br>WordCloud对象创建的常用参数:</p>
 <table>
@@ -312,6 +312,230 @@
       </tags>
   </entry>
   <entry>
+    <title>2.Python语言基本语法元素</title>
+    <url>/2021/09/04/2-Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0/</url>
+    <content><![CDATA[<p>Python语言基本语法元素</p>
+<span id="more"></span>
+<h1 id="2-Python语言基本语法元素"><a href="#2-Python语言基本语法元素" class="headerlink" title="2.Python语言基本语法元素"></a>2.Python语言基本语法元素</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_2.Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0.png"><blockquote>
+<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>程序的基本语法元素：程序的格式框架、缩进、注释、变量、命名、保留字、数据类型、赋值语句、引用<br><br><br>基本输入输出函数：input()、eval()、print()<br><br><br>源程序的书写风格</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2-1程序的格式"><a href="#2-1程序的格式" class="headerlink" title="2.1程序的格式"></a>2.1程序的格式</h2><h3 id="2-1-1缩进"><a href="#2-1-1缩进" class="headerlink" title="2.1.1缩进"></a>2.1.1缩进</h3><ul>
+<li>Python语言采用严格的“缩进”来表明程序的格式框架。缩进指每一行代码开始前的空白区域，用来表示代码之间的包含和层次关系</li>
+<li>1个缩进 = 4个空格</li>
+<li>缩进是Python语言中表明程序框架的唯一手段<h3 id="2-1-2注释"><a href="#2-1-2注释" class="headerlink" title="2.1.2注释"></a>2.1.2注释</h3></li>
+<li>注释是代码中的辅助性文字，会被编译或解释器略去，不被计算机执行，一般用于程序员对代码的说明。Python语言采用#表示一行注释的开始，<br>多行注释用’’’或”””将内容前后包含<h3 id="2-1-3续行符"><a href="#2-1-3续行符" class="headerlink" title="2.1.3续行符"></a>2.1.3续行符</h3></li>
+<li>Python程序是逐行编写的，每行代码长度并无限制，但从程序员角度，单行代码太长并不利于阅读，因此，Python提供“续行符”将代码分割为多行表达。续行符由反斜杠()符号表达。</li>
+</ul>
+<h2 id="2-2语法元素的名称"><a href="#2-2语法元素的名称" class="headerlink" title="2.2语法元素的名称"></a>2.2语法元素的名称</h2><h3 id="2-2-1变量"><a href="#2-2-1变量" class="headerlink" title="2.2.1变量"></a>2.2.1变量</h3><ul>
+<li>变量是保存和表示数据值的一种语法元素，在程序中十分常见。顾名思义，变量的值是可以改变的，能够通过赋值（使用等号=表达）方式被修改，例如：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;a = 99</span><br><span class="line">&gt;&gt;&gt;a = a + 1</span><br><span class="line">&gt;&gt;&gt;print(a)</span><br><span class="line">100</span><br></pre></td></tr></table></figure>
+<h3 id="2-2-2命名"><a href="#2-2-2命名" class="headerlink" title="2.2.2命名"></a>2.2.2命名</h3></li>
+<li>Python语言允许采用大写字母、小写字母、数字、下划线(_)和汉字等字符及其组合给变量命名，但名字的首字符不能是数字，中间不能出现空格，长度没有限制</li>
+<li>注意：<strong>标识符对大小写敏感</strong>，python和Python是两个不同的名字<h3 id="2-2-3保留字"><a href="#2-2-3保留字" class="headerlink" title="2.2.3保留字"></a>2.2.3保留字</h3></li>
+<li>保留字，也称为关键字，指被编程语言内部定义并保留使用的标识符。</li>
+<li>程序员编写程序不能定义与保留字相同的标识符。</li>
+<li>每种程序设计语言都有一套保留字，保留字一般用来构成程序整体框架、表达关键值和具有结构性的复杂语义等。</li>
+<li>掌握一门编程语言首先要熟记其所对应的保留字。</li>
+<li> Python 3.x保留字列表 (33个)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>and</td>
+<td>elif</td>
+<td>import</td>
+<td>raise</td>
+</tr>
+<tr>
+<td>as</td>
+<td>else</td>
+<td>in</td>
+<td>return</td>
+</tr>
+<tr>
+<td>assert</td>
+<td>except</td>
+<td>is</td>
+<td>try</td>
+</tr>
+<tr>
+<td>break</td>
+<td>finally</td>
+<td>lambda</td>
+<td>while</td>
+</tr>
+<tr>
+<td>class</td>
+<td>for</td>
+<td>nonlocal</td>
+<td>with</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>from</td>
+<td>not</td>
+<td>yield</td>
+</tr>
+<tr>
+<td>def</td>
+<td>global</td>
+<td>or</td>
+<td>True</td>
+</tr>
+<tr>
+<td>del</td>
+<td>if</td>
+<td>pass</td>
+<td>False</td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="2-2-4数据类型"><a href="#2-2-4数据类型" class="headerlink" title="2.2.4数据类型"></a>2.2.4数据类型</h3><ul>
+<li>Python语言支持多种数据类型，最简单的包括数字类型、字符串类型，略微复杂的包括元组类型、集合类型、列表类型、字典类型等。<blockquote>
+<p>数据类型各种编程语言大同小异，文章后面章节也会详细介绍，这里就不再赘述。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2-3程序的语句元素"><a href="#2-3程序的语句元素" class="headerlink" title="2.3程序的语句元素"></a>2.3程序的语句元素</h2><h3 id="2-3-1表达式"><a href="#2-3-1表达式" class="headerlink" title="2.3.1表达式"></a>2.3.1表达式</h3><ul>
+<li>产生或计算新数据值的代码片段称为表达式。表达式类似数学中的计算公式，以表达单一功能为目的，运算后产生运算结果，运算结果的类型由操作符或运算符决定。</li>
+<li>表达式一般由数据和操作符等构成，这是构成Python语句的重要部分。<h3 id="2-3-2赋值语句"><a href="#2-3-2赋值语句" class="headerlink" title="2.3.2赋值语句"></a>2.3.2赋值语句</h3></li>
+<li>Python语言中，= 表示“赋值”，即将等号右侧的值计算后将结果值赋给左侧变量，包含等号（=）的语句称为“赋值语句”<br><br><code>&lt;变量&gt; = &lt;表达式&gt;</code></li>
+<li>同步赋值语句：同时给多个变量赋值<br><br><code>&lt;变量1&gt;, …, &lt;变量N&gt; = &lt;表达式1&gt;, …, &lt;表达式N&gt;</code><h3 id="2-3-3引用"><a href="#2-3-3引用" class="headerlink" title="2.3.3引用"></a>2.3.3引用</h3></li>
+<li>Python程序会经常使用当前程序之外已有的功能代码，这个过程叫“引用”。Python语言使用import保留字引用当前程序以外的功能库，使用方式如下：<br><br><code>import &lt;功能库名称&gt;</code></li>
+<li>引用功能库之后，采用<code>&lt;功能库名称&gt;.&lt;函数名称&gt;()</code>方式调用具体功能<h3 id="2-3-4其他语句"><a href="#2-3-4其他语句" class="headerlink" title="2.3.4其他语句"></a>2.3.4其他语句</h3></li>
+<li>除了赋值语句外，Python程序还包括一些其他的语句类型，例如，分支语句和循环语句等。更多的分支和循环内容将在第4章介绍。这里不再赘述。<h2 id="2-4基本输入输出函数"><a href="#2-4基本输入输出函数" class="headerlink" title="2.4基本输入输出函数"></a>2.4基本输入输出函数</h2></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>语法</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>input</td>
+<td>&lt;变量&gt; = input(&lt;提示性文字&gt;</td>
+<td>获得用户输入之前，input()函数可以包含一些提示性文字</td>
+</tr>
+<tr>
+<td>eval</td>
+<td>eval(&lt;字符串&gt;)</td>
+<td>eval(&lt;字符串&gt;)函数是Python语言中一个十分重要的函数，它能够以Python表达式的方式解析并执行字符串，将返回结果输出</td>
+</tr>
+<tr>
+<td>print()</td>
+<td>1.print(&lt;待输出字符串&gt;)<br>2.print(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;)<br>3.print(&lt;输出字符串模板&gt;.format(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;))<br>4.print(&lt;待输出内容&gt;, end=”&lt;增加的输出结尾&gt;”)</td>
+<td>1.仅用于输出字符串<br>2.仅用于输出一个或多个变量<br>3.用于混合输出字符串与变量值<br>4.对print()函数的end参数进行赋值</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.程序的控制结构</title>
+    <url>/2021/09/05/4-%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<p>程序的控制结构</p>
+<span id="more"></span>
+<h1 id="4-程序的控制结构"><a href="#4-程序的控制结构" class="headerlink" title="4.程序的控制结构"></a>4.程序的控制结构</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_4.%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84.png"><h2 id="4-1顺序结构"><a href="#4-1顺序结构" class="headerlink" title="4.1顺序结构"></a>4.1顺序结构</h2>顺序结构是程序按照线性顺序依次执行的一种运行<br>方式<h2 id="4-2分支结构"><a href="#4-2分支结构" class="headerlink" title="4.2分支结构"></a>4.2分支结构</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#单分支结构: if语句</span><br><span class="line">if &lt;条件&gt;:</span><br><span class="line">    语句块</span><br><span class="line"></span><br><span class="line">#二分支结构：if-else</span><br><span class="line">if &lt;条件&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;</span><br><span class="line"></span><br><span class="line">#多分支结构：if-elif-else</span><br><span class="line">if &lt;条件1&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">elif &lt;条件2&gt;:</span><br><span class="line">    &lt;语句块2&gt;</span><br><span class="line">... </span><br><span class="line">else:</span><br><span class="line">    &lt;语句块N&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="4-3循环结构"><a href="#4-3循环结构" class="headerlink" title="4.3循环结构"></a>4.3循环结构</h2><h3 id="4-3-1遍历循环-for"><a href="#4-3-1遍历循环-for" class="headerlink" title="4.3.1遍历循环: for"></a>4.3.1遍历循环: for</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for &lt;循环变量&gt; in &lt;遍历结构&gt;:</span><br><span class="line">    &lt;语句块&gt;</span><br></pre></td></tr></table></figure>
+遍历循环还有一种扩展模式，使用方法如下：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for &lt;循环变量&gt; in &lt;遍历结构&gt;:       </span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;</span><br></pre></td></tr></table></figure>
+当for循环正常执行之后，程序会继续执行else语句中内容。else语句只在循环正常执行之后才执行并结束，因此，可以在&lt;语句块2&gt;中放置判断循环执行情况的语句。</li>
+</ul>
+<h3 id="4-3-2无限循环-while"><a href="#4-3-2无限循环-while" class="headerlink" title="4.3.2无限循环: while"></a>4.3.2无限循环: while</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">while &lt;条件&gt;:</span><br><span class="line">    &lt;语句块&gt;  </span><br><span class="line"></span><br><span class="line">while &lt;条件&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;  </span><br></pre></td></tr></table></figure>
+<h3 id="4-3-3循环控制-break和continue"><a href="#4-3-3循环控制-break和continue" class="headerlink" title="4.3.3循环控制: break和continue"></a>4.3.3循环控制: break和continue</h3><table>
+<thead>
+<tr>
+<th>语句</th>
+<th>区别</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>continue</td>
+<td>只结束本次循环，不终止整个循环的执行</td>
+</tr>
+<tr>
+<td>break</td>
+<td>具备结束循环的能力</td>
+</tr>
+</tbody></table>
+<h2 id="4-4判断条件组合"><a href="#4-4判断条件组合" class="headerlink" title="4.4判断条件组合"></a>4.4判断条件组合</h2><p>Python关系操作符</p>
+<table>
+<thead>
+<tr>
+<th>操作符</th>
+<th>数学符号</th>
+<th>操作符含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>＜</td>
+<td>﹤</td>
+<td>小于</td>
+</tr>
+<tr>
+<td>＜＝</td>
+<td>≤</td>
+<td>小于等于</td>
+</tr>
+<tr>
+<td>＞＝</td>
+<td>≥</td>
+<td>大于等于</td>
+</tr>
+<tr>
+<td>＞</td>
+<td>＞</td>
+<td>大于</td>
+</tr>
+<tr>
+<td>＝＝</td>
+<td>＝</td>
+<td>等于</td>
+</tr>
+<tr>
+<td>！＝</td>
+<td>≠</td>
+<td>不等于</td>
+</tr>
+</tbody></table>
+<p>Python语言使用保留字not、and和or对条件进行逻辑运算或组着。<br><br>保留字not表示单个条件的“否”关系，and表示多个条件之间的“与”关系，保留字or表示多个条件之间的“或”关系。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;not True</span><br><span class="line">False</span><br><span class="line">&gt;&gt;&gt;a = 80</span><br><span class="line">&gt;&gt;&gt;( a &gt; 100) or ( a &gt; 50 and a &lt; 90)</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
+<h2 id="4-4程序的异常处理"><a href="#4-4程序的异常处理" class="headerlink" title="4.4程序的异常处理"></a>4.4程序的异常处理</h2><p>Python语言使用保留字try和except进行异常处理，基本的语法格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">try:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">except:</span><br><span class="line">    &lt;语句块2&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="4-5实例解析——猜数字游戏"><a href="#4-5实例解析——猜数字游戏" class="headerlink" title="4.5实例解析——猜数字游戏"></a>4.5实例解析——猜数字游戏</h2>]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>3.Python基本数据类型</title>
     <url>/2021/09/04/3-Python%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB/</url>
     <content><![CDATA[<p>Python基本数据类型</p>
@@ -383,7 +607,7 @@
 <td>取虚部</td>
 </tr>
 </tbody></table>
-<figure class="highlight python-repl"><table><tr><td class="code"><pre><code class="hljs python-repl"><span class="hljs-meta">&gt;&gt;&gt;</span> <span class="python">z = <span class="hljs-number">1.23e4</span>+<span class="hljs-number">4.56e4j</span></span><br><span class="hljs-meta">&gt;&gt;&gt;</span> <span class="python">z.real</span><br>12300.0<br><span class="hljs-meta">&gt;&gt;&gt;</span> <span class="python">z.imag</span><br>45600.0<br>&gt;&gt;&gt;1.23e4+5.67e4j.imag # 先获得5.67e4j的虚部，再与1.23e4进行求和计算<br>69000.0<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; z = 1.23e4+4.56e4j</span><br><span class="line">&gt;&gt;&gt; z.real</span><br><span class="line">12300.0</span><br><span class="line">&gt;&gt;&gt; z.imag</span><br><span class="line">45600.0</span><br><span class="line">&gt;&gt;&gt;1.23e4+5.67e4j.imag # 先获得5.67e4j的虚部，再与1.23e4进行求和计算</span><br><span class="line">69000.0</span><br></pre></td></tr></table></figure>
 <h2 id="3-2数字类型的运算"><a href="#3-2数字类型的运算" class="headerlink" title="3.2数字类型的运算"></a>3.2数字类型的运算</h2><h3 id="3-2-1数值运算操作符"><a href="#3-2-1数值运算操作符" class="headerlink" title="3.2.1数值运算操作符"></a>3.2.1数值运算操作符</h3><p>Python提供了9个运算操作符，如表所示：</p>
 <table>
 <thead>
@@ -493,7 +717,7 @@
 <ul>
 <li>&lt;填充&gt;、&lt;对齐&gt;和&lt;宽度&gt;主要用于对显示格式的规范。</li>
 <li>&lt;.精度&gt;&lt;类型&gt;主要用于对数值本身的规范</li>
-<li>对于整数类型，输出格式包括6种：<br><br>• b: 输出整数的二进制方式；<br><br>• c: 输出整数对应的Unicode字符；<br><br>• d: 输出整数的十进制方式；<br><br>• o: 输出整数的八进制方式；<br><br>• x: 输出整数的小写十六进制方式；<br><br>• X: 输出整数的大写十六进制方式；<br><figure class="highlight dust"><table><tr><td class="code"><pre><code class="hljs dust"><span class="xml">&gt;&gt;&gt;&quot;</span><span class="hljs-template-variable">&#123;0:b&#125;</span><span class="xml">,</span><span class="hljs-template-variable">&#123;0:c&#125;</span><span class="xml">,</span><span class="hljs-template-variable">&#123;0:d&#125;</span><span class="xml">,</span><span class="hljs-template-variable">&#123;0:o&#125;</span><span class="xml">,</span><span class="hljs-template-variable">&#123;0:x&#125;</span><span class="xml">,</span><span class="hljs-template-variable">&#123;0:X&#125;</span><span class="xml">&quot;.format(425)</span><br><span class="xml">&#x27;110101001,Ʃ,425,651,1a9,1A9&#x27;</span><br></code></pre></td></tr></table></figure>
+<li>对于整数类型，输出格式包括6种：<br><br>• b: 输出整数的二进制方式；<br><br>• c: 输出整数对应的Unicode字符；<br><br>• d: 输出整数的十进制方式；<br><br>• o: 输出整数的八进制方式；<br><br>• x: 输出整数的小写十六进制方式；<br><br>• X: 输出整数的大写十六进制方式；<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;&quot;&#123;0:b&#125;,&#123;0:c&#125;,&#123;0:d&#125;,&#123;0:o&#125;,&#123;0:x&#125;,&#123;0:X&#125;&quot;.format(425)</span><br><span class="line">&#x27;110101001,Ʃ,425,651,1a9,1A9&#x27;</span><br></pre></td></tr></table></figure>
 <h2 id="3-4字符串类型的操作"><a href="#3-4字符串类型的操作" class="headerlink" title="3.4字符串类型的操作"></a>3.4字符串类型的操作</h2><h3 id="3-4-1字符串操作符"><a href="#3-4-1字符串操作符" class="headerlink" title="3.4.1字符串操作符"></a>3.4.1字符串操作符</h3>基本的字符串操作符：</li>
 </ul>
 <table>
@@ -635,230 +859,6 @@
       </tags>
   </entry>
   <entry>
-    <title>2.Python语言基本语法元素</title>
-    <url>/2021/09/04/2-Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0/</url>
-    <content><![CDATA[<p>Python语言基本语法元素</p>
-<span id="more"></span>
-<h1 id="2-Python语言基本语法元素"><a href="#2-Python语言基本语法元素" class="headerlink" title="2.Python语言基本语法元素"></a>2.Python语言基本语法元素</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_2.Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0.png"><blockquote>
-<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>程序的基本语法元素：程序的格式框架、缩进、注释、变量、命名、保留字、数据类型、赋值语句、引用<br><br><br>基本输入输出函数：input()、eval()、print()<br><br><br>源程序的书写风格</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="2-1程序的格式"><a href="#2-1程序的格式" class="headerlink" title="2.1程序的格式"></a>2.1程序的格式</h2><h3 id="2-1-1缩进"><a href="#2-1-1缩进" class="headerlink" title="2.1.1缩进"></a>2.1.1缩进</h3><ul>
-<li>Python语言采用严格的“缩进”来表明程序的格式框架。缩进指每一行代码开始前的空白区域，用来表示代码之间的包含和层次关系</li>
-<li>1个缩进 = 4个空格</li>
-<li>缩进是Python语言中表明程序框架的唯一手段<h3 id="2-1-2注释"><a href="#2-1-2注释" class="headerlink" title="2.1.2注释"></a>2.1.2注释</h3></li>
-<li>注释是代码中的辅助性文字，会被编译或解释器略去，不被计算机执行，一般用于程序员对代码的说明。Python语言采用#表示一行注释的开始，<br>多行注释用’’’或”””将内容前后包含<h3 id="2-1-3续行符"><a href="#2-1-3续行符" class="headerlink" title="2.1.3续行符"></a>2.1.3续行符</h3></li>
-<li>Python程序是逐行编写的，每行代码长度并无限制，但从程序员角度，单行代码太长并不利于阅读，因此，Python提供“续行符”将代码分割为多行表达。续行符由反斜杠()符号表达。</li>
-</ul>
-<h2 id="2-2语法元素的名称"><a href="#2-2语法元素的名称" class="headerlink" title="2.2语法元素的名称"></a>2.2语法元素的名称</h2><h3 id="2-2-1变量"><a href="#2-2-1变量" class="headerlink" title="2.2.1变量"></a>2.2.1变量</h3><ul>
-<li>变量是保存和表示数据值的一种语法元素，在程序中十分常见。顾名思义，变量的值是可以改变的，能够通过赋值（使用等号=表达）方式被修改，例如：<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><code class="hljs livecodeserver">&gt;&gt;&gt;<span class="hljs-keyword">a</span> = <span class="hljs-number">99</span><br>&gt;&gt;&gt;<span class="hljs-keyword">a</span> = <span class="hljs-keyword">a</span> + <span class="hljs-number">1</span><br>&gt;&gt;&gt;print(<span class="hljs-keyword">a</span>)<br><span class="hljs-number">100</span><br></code></pre></td></tr></table></figure>
-<h3 id="2-2-2命名"><a href="#2-2-2命名" class="headerlink" title="2.2.2命名"></a>2.2.2命名</h3></li>
-<li>Python语言允许采用大写字母、小写字母、数字、下划线(_)和汉字等字符及其组合给变量命名，但名字的首字符不能是数字，中间不能出现空格，长度没有限制</li>
-<li>注意：<strong>标识符对大小写敏感</strong>，python和Python是两个不同的名字<h3 id="2-2-3保留字"><a href="#2-2-3保留字" class="headerlink" title="2.2.3保留字"></a>2.2.3保留字</h3></li>
-<li>保留字，也称为关键字，指被编程语言内部定义并保留使用的标识符。</li>
-<li>程序员编写程序不能定义与保留字相同的标识符。</li>
-<li>每种程序设计语言都有一套保留字，保留字一般用来构成程序整体框架、表达关键值和具有结构性的复杂语义等。</li>
-<li>掌握一门编程语言首先要熟记其所对应的保留字。</li>
-<li> Python 3.x保留字列表 (33个)</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>and</td>
-<td>elif</td>
-<td>import</td>
-<td>raise</td>
-</tr>
-<tr>
-<td>as</td>
-<td>else</td>
-<td>in</td>
-<td>return</td>
-</tr>
-<tr>
-<td>assert</td>
-<td>except</td>
-<td>is</td>
-<td>try</td>
-</tr>
-<tr>
-<td>break</td>
-<td>finally</td>
-<td>lambda</td>
-<td>while</td>
-</tr>
-<tr>
-<td>class</td>
-<td>for</td>
-<td>nonlocal</td>
-<td>with</td>
-</tr>
-<tr>
-<td>continue</td>
-<td>from</td>
-<td>not</td>
-<td>yield</td>
-</tr>
-<tr>
-<td>def</td>
-<td>global</td>
-<td>or</td>
-<td>True</td>
-</tr>
-<tr>
-<td>del</td>
-<td>if</td>
-<td>pass</td>
-<td>False</td>
-</tr>
-<tr>
-<td>None</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<h3 id="2-2-4数据类型"><a href="#2-2-4数据类型" class="headerlink" title="2.2.4数据类型"></a>2.2.4数据类型</h3><ul>
-<li>Python语言支持多种数据类型，最简单的包括数字类型、字符串类型，略微复杂的包括元组类型、集合类型、列表类型、字典类型等。<blockquote>
-<p>数据类型各种编程语言大同小异，文章后面章节也会详细介绍，这里就不再赘述。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="2-3程序的语句元素"><a href="#2-3程序的语句元素" class="headerlink" title="2.3程序的语句元素"></a>2.3程序的语句元素</h2><h3 id="2-3-1表达式"><a href="#2-3-1表达式" class="headerlink" title="2.3.1表达式"></a>2.3.1表达式</h3><ul>
-<li>产生或计算新数据值的代码片段称为表达式。表达式类似数学中的计算公式，以表达单一功能为目的，运算后产生运算结果，运算结果的类型由操作符或运算符决定。</li>
-<li>表达式一般由数据和操作符等构成，这是构成Python语句的重要部分。<h3 id="2-3-2赋值语句"><a href="#2-3-2赋值语句" class="headerlink" title="2.3.2赋值语句"></a>2.3.2赋值语句</h3></li>
-<li>Python语言中，= 表示“赋值”，即将等号右侧的值计算后将结果值赋给左侧变量，包含等号（=）的语句称为“赋值语句”<br><br><code>&lt;变量&gt; = &lt;表达式&gt;</code></li>
-<li>同步赋值语句：同时给多个变量赋值<br><br><code>&lt;变量1&gt;, …, &lt;变量N&gt; = &lt;表达式1&gt;, …, &lt;表达式N&gt;</code><h3 id="2-3-3引用"><a href="#2-3-3引用" class="headerlink" title="2.3.3引用"></a>2.3.3引用</h3></li>
-<li>Python程序会经常使用当前程序之外已有的功能代码，这个过程叫“引用”。Python语言使用import保留字引用当前程序以外的功能库，使用方式如下：<br><br><code>import &lt;功能库名称&gt;</code></li>
-<li>引用功能库之后，采用<code>&lt;功能库名称&gt;.&lt;函数名称&gt;()</code>方式调用具体功能<h3 id="2-3-4其他语句"><a href="#2-3-4其他语句" class="headerlink" title="2.3.4其他语句"></a>2.3.4其他语句</h3></li>
-<li>除了赋值语句外，Python程序还包括一些其他的语句类型，例如，分支语句和循环语句等。更多的分支和循环内容将在第4章介绍。这里不再赘述。<h2 id="2-4基本输入输出函数"><a href="#2-4基本输入输出函数" class="headerlink" title="2.4基本输入输出函数"></a>2.4基本输入输出函数</h2></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>函数</th>
-<th>语法</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>input</td>
-<td>&lt;变量&gt; = input(&lt;提示性文字&gt;</td>
-<td>获得用户输入之前，input()函数可以包含一些提示性文字</td>
-</tr>
-<tr>
-<td>eval</td>
-<td>eval(&lt;字符串&gt;)</td>
-<td>eval(&lt;字符串&gt;)函数是Python语言中一个十分重要的函数，它能够以Python表达式的方式解析并执行字符串，将返回结果输出</td>
-</tr>
-<tr>
-<td>print()</td>
-<td>1.print(&lt;待输出字符串&gt;)<br>2.print(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;)<br>3.print(&lt;输出字符串模板&gt;.format(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;))<br>4.print(&lt;待输出内容&gt;, end=”&lt;增加的输出结尾&gt;”)</td>
-<td>1.仅用于输出字符串<br>2.仅用于输出一个或多个变量<br>3.用于混合输出字符串与变量值<br>4.对print()函数的end参数进行赋值</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4.程序的控制结构</title>
-    <url>/2021/09/05/4-%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<p>程序的控制结构</p>
-<span id="more"></span>
-<h1 id="4-程序的控制结构"><a href="#4-程序的控制结构" class="headerlink" title="4.程序的控制结构"></a>4.程序的控制结构</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_4.%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84.png"><h2 id="4-1顺序结构"><a href="#4-1顺序结构" class="headerlink" title="4.1顺序结构"></a>4.1顺序结构</h2>顺序结构是程序按照线性顺序依次执行的一种运行<br>方式<h2 id="4-2分支结构"><a href="#4-2分支结构" class="headerlink" title="4.2分支结构"></a>4.2分支结构</h2><figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-meta">#单分支结构: <span class="hljs-meta-keyword">if</span>语句</span><br>if <span class="hljs-params">&lt;条件&gt;</span>:<br>    语句块<br><br><span class="hljs-meta">#二分支结构：<span class="hljs-meta-keyword">if</span>-<span class="hljs-meta-keyword">else</span></span><br>if <span class="hljs-params">&lt;条件&gt;</span>:<br>    <span class="hljs-params">&lt;语句块<span class="hljs-number">1</span>&gt;</span><br><span class="hljs-symbol">else:</span><br>    <span class="hljs-params">&lt;语句块<span class="hljs-number">2</span>&gt;</span><br><br><span class="hljs-meta">#多分支结构：<span class="hljs-meta-keyword">if</span>-<span class="hljs-meta-keyword">elif</span>-<span class="hljs-meta-keyword">else</span></span><br>if <span class="hljs-params">&lt;条件<span class="hljs-number">1</span>&gt;</span>:<br>    <span class="hljs-params">&lt;语句块<span class="hljs-number">1</span>&gt;</span><br>elif <span class="hljs-params">&lt;条件<span class="hljs-number">2</span>&gt;</span>:<br>    <span class="hljs-params">&lt;语句块<span class="hljs-number">2</span>&gt;</span><br>... <br><span class="hljs-symbol">else:</span><br>    <span class="hljs-params">&lt;语句块N&gt;</span><br></code></pre></td></tr></table></figure>
-<h2 id="4-3循环结构"><a href="#4-3循环结构" class="headerlink" title="4.3循环结构"></a>4.3循环结构</h2><h3 id="4-3-1遍历循环-for"><a href="#4-3-1遍历循环-for" class="headerlink" title="4.3.1遍历循环: for"></a>4.3.1遍历循环: for</h3><figure class="highlight bnf"><table><tr><td class="code"><pre><code class="hljs bnf">for <span class="hljs-attribute">&lt;循环变量&gt;</span> in <span class="hljs-attribute">&lt;遍历结构&gt;</span>:<br>    <span class="hljs-attribute">&lt;语句块&gt;</span><br></code></pre></td></tr></table></figure>
-遍历循环还有一种扩展模式，使用方法如下：<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts">for <span class="hljs-params">&lt;循环变量&gt;</span> in <span class="hljs-params">&lt;遍历结构&gt;</span>:       <br>    <span class="hljs-params">&lt;语句块<span class="hljs-number">1</span>&gt;</span><br><span class="hljs-symbol">else:</span><br>    <span class="hljs-params">&lt;语句块<span class="hljs-number">2</span>&gt;</span><br></code></pre></td></tr></table></figure>
-当for循环正常执行之后，程序会继续执行else语句中内容。else语句只在循环正常执行之后才执行并结束，因此，可以在&lt;语句块2&gt;中放置判断循环执行情况的语句。</li>
-</ul>
-<h3 id="4-3-2无限循环-while"><a href="#4-3-2无限循环-while" class="headerlink" title="4.3.2无限循环: while"></a>4.3.2无限循环: while</h3><figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts">while <span class="hljs-params">&lt;条件&gt;</span>:<br>    <span class="hljs-params">&lt;语句块&gt;</span>  <br><br>while <span class="hljs-params">&lt;条件&gt;</span>:<br>    <span class="hljs-params">&lt;语句块<span class="hljs-number">1</span>&gt;</span><br><span class="hljs-symbol">else:</span><br>    <span class="hljs-params">&lt;语句块<span class="hljs-number">2</span>&gt;</span>  <br></code></pre></td></tr></table></figure>
-<h3 id="4-3-3循环控制-break和continue"><a href="#4-3-3循环控制-break和continue" class="headerlink" title="4.3.3循环控制: break和continue"></a>4.3.3循环控制: break和continue</h3><table>
-<thead>
-<tr>
-<th>语句</th>
-<th>区别</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>continue</td>
-<td>只结束本次循环，不终止整个循环的执行</td>
-</tr>
-<tr>
-<td>break</td>
-<td>具备结束循环的能力</td>
-</tr>
-</tbody></table>
-<h2 id="4-4判断条件组合"><a href="#4-4判断条件组合" class="headerlink" title="4.4判断条件组合"></a>4.4判断条件组合</h2><p>Python关系操作符</p>
-<table>
-<thead>
-<tr>
-<th>操作符</th>
-<th>数学符号</th>
-<th>操作符含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>＜</td>
-<td>﹤</td>
-<td>小于</td>
-</tr>
-<tr>
-<td>＜＝</td>
-<td>≤</td>
-<td>小于等于</td>
-</tr>
-<tr>
-<td>＞＝</td>
-<td>≥</td>
-<td>大于等于</td>
-</tr>
-<tr>
-<td>＞</td>
-<td>＞</td>
-<td>大于</td>
-</tr>
-<tr>
-<td>＝＝</td>
-<td>＝</td>
-<td>等于</td>
-</tr>
-<tr>
-<td>！＝</td>
-<td>≠</td>
-<td>不等于</td>
-</tr>
-</tbody></table>
-<p>Python语言使用保留字not、and和or对条件进行逻辑运算或组着。<br><br>保留字not表示单个条件的“否”关系，and表示多个条件之间的“与”关系，保留字or表示多个条件之间的“或”关系。</p>
-<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><code class="hljs livecodeserver">&gt;&gt;&gt;<span class="hljs-keyword">not</span> True<br>False<br>&gt;&gt;&gt;<span class="hljs-keyword">a</span> = <span class="hljs-number">80</span><br>&gt;&gt;&gt;( <span class="hljs-keyword">a</span> &gt; <span class="hljs-number">100</span>) <span class="hljs-keyword">or</span> ( <span class="hljs-keyword">a</span> &gt; <span class="hljs-number">50</span> <span class="hljs-keyword">and</span> <span class="hljs-keyword">a</span> &lt; <span class="hljs-number">90</span>)<br>True<br></code></pre></td></tr></table></figure>
-<h2 id="4-4程序的异常处理"><a href="#4-4程序的异常处理" class="headerlink" title="4.4程序的异常处理"></a>4.4程序的异常处理</h2><p>Python语言使用保留字try和except进行异常处理，基本的语法格式如下：</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">try:</span><br>    <span class="hljs-params">&lt;语句块<span class="hljs-number">1</span>&gt;</span><br><span class="hljs-symbol">except:</span><br>    <span class="hljs-params">&lt;语句块<span class="hljs-number">2</span>&gt;</span><br></code></pre></td></tr></table></figure>
-<h2 id="4-5实例解析——猜数字游戏"><a href="#4-5实例解析——猜数字游戏" class="headerlink" title="4.5实例解析——猜数字游戏"></a>4.5实例解析——猜数字游戏</h2>]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>5.函数和代码复用</title>
     <url>/2021/09/05/5-%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8/</url>
     <content><![CDATA[<p>函数和代码复用</p>
@@ -867,15 +867,15 @@
 <li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_5.%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8.png"></li>
 </ul>
 <h2 id="5-1函数的基本使用"><a href="#5-1函数的基本使用" class="headerlink" title="5.1函数的基本使用"></a>5.1函数的基本使用</h2><h3 id="5-1-1函数的定义"><a href="#5-1-1函数的定义" class="headerlink" title="5.1.1函数的定义"></a>5.1.1函数的定义</h3><p>Python定义一个函数使用def保留字，语法形式<br>如下：</p>
-<figure class="highlight bnf"><table><tr><td class="code"><pre><code class="hljs bnf">def <span class="hljs-attribute">&lt;函数名&gt;</span>(<span class="hljs-attribute">&lt;参数列表&gt;</span>):<br>    <span class="hljs-attribute">&lt;函数体&gt;</span><br>return <span class="hljs-attribute">&lt;返回值列表&gt;</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;参数列表&gt;):</span><br><span class="line">    &lt;函数体&gt;</span><br><span class="line">return &lt;返回值列表&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="5-1-2函数的使用"><a href="#5-1-2函数的使用" class="headerlink" title="5.1.2函数的使用"></a>5.1.2函数的使用</h3><p>&lt;函数名&gt;(&lt;实际赋值参数列表&gt;</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 定义一个对整数n求阶乘的函数</span><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fact</span>(<span class="hljs-params">n</span>):</span><br>  s = <span class="hljs-number">1</span><br>  <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, n+<span class="hljs-number">1</span>):<br>    s *= i<br>  <span class="hljs-keyword">return</span> s<br><span class="hljs-comment"># 调用整数阶乘的函数</span><br><span class="hljs-built_in">print</span>(fact(<span class="hljs-number">100</span>))<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 定义一个对整数n求阶乘的函数</span><br><span class="line">def fact(n):</span><br><span class="line">  s = 1</span><br><span class="line">  for i in range(1, n+1):</span><br><span class="line">    s *= i</span><br><span class="line">  return s</span><br><span class="line"># 调用整数阶乘的函数</span><br><span class="line">print(fact(100))</span><br></pre></td></tr></table></figure>
 <p>函数定义-&gt;函数调用-&gt;函数执行-&gt;函数返回</p>
-<h2 id="5-2函数的传递"><a href="#5-2函数的传递" class="headerlink" title="5.2函数的传递"></a>5.2函数的传递</h2><h3 id="5-2-1可选参数传递"><a href="#5-2-1可选参数传递" class="headerlink" title="5.2.1可选参数传递"></a>5.2.1可选参数传递</h3><figure class="highlight bnf"><table><tr><td class="code"><pre><code class="hljs bnf">def <span class="hljs-attribute">&lt;函数名&gt;</span>(<span class="hljs-attribute">&lt;非可选参数列表&gt;</span>, <span class="hljs-attribute">&lt;可选参数&gt;</span> = <span class="hljs-attribute">&lt;默认值&gt;</span>):<br>  <span class="hljs-attribute">&lt;函数体&gt;</span><br>  return <span class="hljs-attribute">&lt;返回值列表&gt;</span><br></code></pre></td></tr></table></figure>
+<h2 id="5-2函数的传递"><a href="#5-2函数的传递" class="headerlink" title="5.2函数的传递"></a>5.2函数的传递</h2><h3 id="5-2-1可选参数传递"><a href="#5-2-1可选参数传递" class="headerlink" title="5.2.1可选参数传递"></a>5.2.1可选参数传递</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;非可选参数列表&gt;, &lt;可选参数&gt; = &lt;默认值&gt;):</span><br><span class="line">  &lt;函数体&gt;</span><br><span class="line">  return &lt;返回值列表&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="5-2-2参数名称传递"><a href="#5-2-2参数名称传递" class="headerlink" title="5.2.2参数名称传递"></a>5.2.2参数名称传递</h3><p>&lt;函数名&gt;(&lt;参数名&gt; = &lt;实际值&gt;)</p>
-<figure class="highlight gradle"><table><tr><td class="code"><pre><code class="hljs gradle">&gt;&gt;&gt;<span class="hljs-keyword">def</span> <span class="hljs-keyword">multiply</span>(x, y = <span class="hljs-number">10</span>):<br>        <span class="hljs-keyword">print</span>(x*y)<br>&gt;&gt;&gt;<span class="hljs-keyword">multiply</span>(x = <span class="hljs-number">99</span>)<br><span class="hljs-number">990</span><br>&gt;&gt;&gt;<span class="hljs-keyword">multiply</span>(y = <span class="hljs-number">2</span>, x = <span class="hljs-number">99</span>)<br><span class="hljs-number">198</span><br><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">        print(x*y)</span><br><span class="line">&gt;&gt;&gt;multiply(x = 99)</span><br><span class="line">990</span><br><span class="line">&gt;&gt;&gt;multiply(y = 2, x = 99)</span><br><span class="line">198</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h3 id="5-2-3函数的返回值"><a href="#5-2-3函数的返回值" class="headerlink" title="5.2.3函数的返回值"></a>5.2.3函数的返回值</h3><p>return语句可以出现在函数中的任何部分，同时可以将0个、1个或多个函数运算的结果返回给函数被调用处的变量。</p>
-<figure class="highlight gradle"><table><tr><td class="code"><pre><code class="hljs gradle">&gt;&gt;&gt;<span class="hljs-keyword">def</span> <span class="hljs-keyword">multiply</span>(x, y = <span class="hljs-number">10</span>):<br><span class="hljs-keyword">return</span> x*y<br>&gt;&gt;&gt;s = <span class="hljs-keyword">multiply</span>(<span class="hljs-number">99</span>, <span class="hljs-number">2</span>)<br>&gt;&gt;&gt;<span class="hljs-keyword">print</span>(s)<br><span class="hljs-number">198</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">return x*y</span><br><span class="line">&gt;&gt;&gt;s = multiply(99, 2)</span><br><span class="line">&gt;&gt;&gt;print(s)</span><br><span class="line">198</span><br></pre></td></tr></table></figure>
 
 <h2 id="5-3变量的作用域"><a href="#5-3变量的作用域" class="headerlink" title="5.3变量的作用域"></a>5.3变量的作用域</h2><table>
 <thead>
@@ -924,186 +924,6 @@
       </tags>
   </entry>
   <entry>
-    <title>7.文件和数据格式化</title>
-    <url>/2021/09/05/7-%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/</url>
-    <content><![CDATA[<p>文件和数据格式化</p>
-<span id="more"></span>
-<h1 id="7-文件和数据格式化"><a href="#7-文件和数据格式化" class="headerlink" title="7.文件和数据格式化"></a>7.文件和数据格式化</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96.png"></li>
-</ul>
-<h2 id="7-1文件类型"><a href="#7-1文件类型" class="headerlink" title="7.1文件类型"></a>7.1文件类型</h2><table>
-<thead>
-<tr>
-<th>类型</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>文本文件</td>
-<td>文本文件一般由单一特定编码的字符组成，如UTF-8编码，内容容易统一展示和阅读。</td>
-</tr>
-<tr>
-<td>二进制</td>
-<td>二进制文件直接由比特0和比特1组成，文件内部数据的组织格式与文件用途有关。二进制是信息按照非字符但特定格式形成的文件，如，png格式的图片文件、avi格式的视频文件。</td>
-</tr>
-</tbody></table>
-<p>二进制文件和文本文件最主要的区别在于是否有统一的字符编码。</p>
-<blockquote>
-<p>Python对文本文件和二进制文件采用统一的操作步骤，即“<strong>打开-操作-关闭</strong>”</p>
-</blockquote>
-<h2 id="7-2文件的使用"><a href="#7-2文件的使用" class="headerlink" title="7.2文件的使用"></a>7.2文件的使用</h2><h3 id="7-2-1文件的打开"><a href="#7-2-1文件的打开" class="headerlink" title="7.2.1文件的打开"></a>7.2.1文件的打开</h3><p>Python通过open()函数打开一个文件，并返回一个操作这个文件的变量，语法形式如下：<br><br>&lt;变量名&gt; = open(&lt;文件路径及文件名&gt;, &lt;打开模式&gt;)</p>
-<table>
-<thead>
-<tr>
-<th>打开模式</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>‘r’</td>
-<td>只读模式，如果文件不存在，返回异常FileNotFoundError，默认值</td>
-</tr>
-<tr>
-<td>‘w’</td>
-<td>覆盖写模式，文件不存在则创建，存在则完全覆盖源文件</td>
-</tr>
-<tr>
-<td>‘x’</td>
-<td>创建写模式，文件不存在则创建，存在则返回异FileExistsError ‘a’</td>
-</tr>
-<tr>
-<td>‘b’</td>
-<td>二进制文件模式</td>
-</tr>
-<tr>
-<td>‘t’</td>
-<td>文本文件模式，默认值</td>
-</tr>
-<tr>
-<td>‘+’</td>
-<td>与r/w/x/a一同使用，在原功能基础上增加同时读写功能</td>
-</tr>
-</tbody></table>
-<h3 id="7-2-2文件的关闭"><a href="#7-2-2文件的关闭" class="headerlink" title="7.2.2文件的关闭"></a>7.2.2文件的关闭</h3><p>&lt;变量名&gt;.close()</p>
-<h3 id="7-2-3文件的读"><a href="#7-2-3文件的读" class="headerlink" title="7.2.3文件的读"></a>7.2.3文件的读</h3><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>f.read(size=-1)</td>
-<td>从文件中读入整个文件内容。参数可选，如果给出，读入前size长度的字符串或字节流</td>
-</tr>
-<tr>
-<td>f.readline(size = -1)</td>
-<td>从文件中读入一行内容。参数可选，如果给出，读入该行前size长度的字符串或字节流</td>
-</tr>
-<tr>
-<td>f.readlines(hint=-1)</td>
-<td>从文件中读入所有行，以每行为元素形成一个列表。参数可选，如果给出，读入hint行</td>
-</tr>
-<tr>
-<td>f.seek(offset)</td>
-<td>改变当前文件操作指针的位置，offset的值：0：文件开头； 2: 文件结尾</td>
-</tr>
-</tbody></table>
-<p>f = open(&lt;文件路径及名称&gt;,”r”)<br><br>for line in f:<br><br><code># 处理一行数据</code><br><br>f.close()</p>
-<figure class="highlight arduino"><table><tr><td class="code"><pre><code class="hljs arduino">f = <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;D://b.txt&quot;</span>, <span class="hljs-string">&quot;r&quot;</span>)<br><span class="hljs-keyword">for</span> line in f:<br>    <span class="hljs-built_in">print</span>(line)<br>f.<span class="hljs-built_in">close</span>()<br><br>&gt;&gt;<br>新年都未有芳华，二月初惊见草芽。<br><br>白雪却嫌春色晚，故穿庭树作飞花。<br></code></pre></td></tr></table></figure>
-<h3 id="7-2-4文件的写"><a href="#7-2-4文件的写" class="headerlink" title="7.2.4文件的写"></a>7.2.4文件的写</h3><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>f.write(s)</td>
-<td>向文件写入一个字符串或字节流</td>
-</tr>
-<tr>
-<td>f.writelines(lines)</td>
-<td>将一个元素为字符串的列表写入文件</td>
-</tr>
-</tbody></table>
-<p><strong>f.write(s)</strong>  向文件写入字符串s，每次写入后，将会记录一个写入指针。该方法可以反复调用，将在写入指针后分批写入内容，直至文件被关闭。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell"><span class="hljs-meta">&gt;</span><span class="bash">&gt;&gt;f = open(<span class="hljs-string">&quot;D://c.txt&quot;</span>, <span class="hljs-string">&quot;w&quot;</span>)</span><br><span class="hljs-meta">&gt;</span><span class="bash">&gt;&gt;f.write(<span class="hljs-string">&#x27;新年都未有芳华\n&#x27;</span>)</span><br><span class="hljs-meta">&gt;</span><span class="bash">&gt;&gt;f.write(<span class="hljs-string">&#x27;二月初惊见草芽\n&#x27;</span>)</span><br><span class="hljs-meta">&gt;</span><span class="bash">&gt;&gt;f.write(<span class="hljs-string">&#x27;白雪却嫌春色晚\n&#x27;</span>)</span><br><span class="hljs-meta">&gt;</span><span class="bash">&gt;&gt;f.write(<span class="hljs-string">&#x27;故穿庭树作飞花\n&#x27;</span>)</span><br><span class="hljs-meta">&gt;</span><span class="bash">&gt;&gt;f.close()</span><br><span class="hljs-meta"></span><br><span class="hljs-meta">&gt;</span><span class="bash">&gt;</span><br>新年都未有芳华<br>二月初惊见草芽<br>白雪却嫌春色晚<br>故穿庭树作飞花<br></code></pre></td></tr></table></figure>
-<p><strong>f.writelines(lines)</strong> 直接将列表类型的各元素连接起来写入文件f。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell"><span class="hljs-meta">&gt;</span><span class="bash">&gt;&gt;ls = [<span class="hljs-string">&#x27;新年都未有芳华\n&#x27;</span>,<span class="hljs-string">&#x27;二月初惊见草芽\n&#x27;</span>,<span class="hljs-string">&#x27;白雪却嫌春色晚\n&#x27;</span>,<span class="hljs-string">&#x27;故穿庭树作飞花\n&#x27;</span>]</span><br><span class="hljs-meta">&gt;</span><span class="bash">&gt;&gt;f = open(<span class="hljs-string">&quot;D://c.txt&quot;</span>, <span class="hljs-string">&quot;w&quot;</span>)</span><br><span class="hljs-meta">&gt;</span><span class="bash">&gt;&gt;f.writelines(ls)</span><br><span class="hljs-meta">&gt;</span><span class="bash">&gt;&gt;f.close()</span><br></code></pre></td></tr></table></figure>
-
-<h2 id="7-3数据的维度"><a href="#7-3数据的维度" class="headerlink" title="7.3数据的维度"></a>7.3数据的维度</h2><p>一维数据由对等关系的有序或无序数据构成，采用线性方式组织，对应于数学中数组的概念。<br></p>
-<ul>
-<li>一维数据<blockquote>
-<p>北京、上海、天津、重庆</p>
-</blockquote>
-</li>
-</ul>
-<p>二维数据，也称表格数据，由关联关系数据构成，采用二维表格方式组织，对应于数学中的矩阵，常见的表格都属于二维数据。<br><br>高维数据由键值对类型的数据构成，采用对象方式组织，可以多层嵌套。<br></p>
-<ul>
-<li><p>二维数据<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96_1.png"></p>
-</li>
-<li><p>高维数据<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96_2.png"></p>
-</li>
-</ul>
-<p>一维数据的存储</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>采用空格分隔元素</td>
-<td>例如：<br>北京 上海 天津 重庆</td>
-</tr>
-<tr>
-<td>采用逗号分隔元素</td>
-<td>例如：<br>北京,上海,天津,重庆</td>
-</tr>
-<tr>
-<td>采用换行分隔包括</td>
-<td>例如：<br>北京<br>上海<br>天津<br>重庆</td>
-</tr>
-<tr>
-<td>其他特殊符号分隔，以分号分隔为例</td>
-<td>例如：<br>北京;上海;天津;重庆</td>
-</tr>
-</tbody></table>
-<h2 id="7-4实例解析：国家财政数据趋势演算"><a href="#7-4实例解析：国家财政数据趋势演算" class="headerlink" title="7.4实例解析：国家财政数据趋势演算"></a>7.4实例解析：国家财政数据趋势演算</h2>]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日常记录</title>
-    <url>/2021/08/17/8-17/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg " width = "300"  height = "200">
-<span id="more"></span>
->今天看完了《平凡的世界》第三部（*利用学驾校时间看的手机*），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:
->>* 平凡又平庸的我们努力奔向爱情。      
->>* 在这平凡的世界里努力过好平凡的生活。
->>* 我这个平凡的世界里平凡的人觉得遥不可及。
-
-<blockquote>
-<p>同时，今天是keep打卡第一天 fighting~</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg"></p>
-]]></content>
-      <categories>
-        <category>日常记录</category>
-      </categories>
-      <tags>
-        <tag>生活片段</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>6.组合数据类型</title>
     <url>/2021/09/05/6-%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
     <content><![CDATA[<p>组合数据类型</p>
@@ -1112,7 +932,7 @@
 <li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_6.%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png"></li>
 </ul>
 <h2 id="6-1集合"><a href="#6-1集合" class="headerlink" title="6.1集合"></a>6.1集合</h2><p>集合类型是一个元素集合，元素之间无序，相同元素在<br>集合中唯一存在。</p>
-<figure class="highlight angelscript"><table><tr><td class="code"><pre><code class="hljs angelscript">&gt;&gt;&gt;S = &#123;<span class="hljs-number">1010</span>, <span class="hljs-string">&quot;1010&quot;</span>, <span class="hljs-number">78.9</span>&#125;<br>&gt;&gt;&gt;type(S)<br>&lt;<span class="hljs-keyword">class</span> &#x27;<span class="hljs-symbol">set</span>&#x27;&gt;<br>&gt;&gt;&gt;<span class="hljs-symbol">len</span>(<span class="hljs-symbol">S</span>)<br><span class="hljs-symbol">3</span><br>&gt;&gt;&gt;<span class="hljs-symbol">print</span>(<span class="hljs-symbol">S</span>)<br>&#123;<span class="hljs-number">78.9</span>, <span class="hljs-number">1010</span>,<span class="hljs-string">&#x27;1010&#x27;</span>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;S = &#123;1010, &quot;1010&quot;, 78.9&#125;</span><br><span class="line">&gt;&gt;&gt;type(S)</span><br><span class="line">&lt;class &#x27;set&#x27;&gt;</span><br><span class="line">&gt;&gt;&gt;len(S)</span><br><span class="line">3</span><br><span class="line">&gt;&gt;&gt;print(S)</span><br><span class="line">&#123;78.9, 1010,&#x27;1010&#x27;&#125;</span><br></pre></td></tr></table></figure>
 <p>集合类型的操作符</p>
 <table>
 <thead>
@@ -1239,7 +1059,7 @@
 <h3 id="6-2-4列表的删除操作"><a href="#6-2-4列表的删除操作" class="headerlink" title="6.2.4列表的删除操作"></a>6.2.4列表的删除操作</h3><p>del &lt;列表变量&gt;[&lt;索引序号&gt;] 或 <br><br>del &lt;列表变量&gt;[&lt;索引起始&gt;: &lt;索引结束&gt;]</p>
 <h2 id="6-3字典"><a href="#6-3字典" class="headerlink" title="6.3字典"></a>6.3字典</h2><h3 id="6-3-1字典定义"><a href="#6-3-1字典定义" class="headerlink" title="6.3.1字典定义"></a>6.3.1字典定义</h3><p>Python语言中的字典使用大括号{}建立，每个元<br>素是一个键值对，使用方式如下：{&lt;键1&gt;:&lt;值1&gt;, &lt;键2&gt;:&lt;值2&gt;, … , &lt;键n&gt;:&lt;值n&gt;}</p>
 <h3 id="6-3-2字典索引"><a href="#6-3-2字典索引" class="headerlink" title="6.3.2字典索引"></a>6.3.2字典索引</h3><p>字典中键值对的索引模式如下，采用中括号格式：<br><br>&lt;值&gt; = &lt;字典变量&gt;[&lt;键&gt;]</p>
-<figure class="highlight 1c"><table><tr><td class="code"><pre><code class="hljs 1c">&gt;&gt;&gt;d = &#123;<span class="hljs-string">&quot;201801&quot;</span>:<span class="hljs-string">&quot;小明&quot;</span>,<span class="hljs-string">&quot;201802&quot;</span>:<span class="hljs-string">&quot;小红&quot;&quot;201803&quot;</span>:<span class="hljs-string">&quot;小白&quot;</span>&#125;<br>&gt;&gt;&gt;d[<span class="hljs-string">&quot;201802&quot;</span>] = &#x27;新小红&#x27;<br>&gt;&gt;&gt;print(d)<br>&#123;&#x27;<span class="hljs-number">201801</span>&#x27;: &#x27;小明&#x27;,&#x27;<span class="hljs-number">201803</span>&#x27;: &#x27;小白&#x27;,&#x27;<span class="hljs-number">201802</span>&#x27;: &#x27;新小红&#x27;<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;d = &#123;&quot;201801&quot;:&quot;小明&quot;,&quot;201802&quot;:&quot;小红&quot;&quot;201803&quot;:&quot;小白&quot;&#125;</span><br><span class="line">&gt;&gt;&gt;d[&quot;201802&quot;] = &#x27;新小红&#x27;</span><br><span class="line">&gt;&gt;&gt;print(d)</span><br><span class="line">&#123;&#x27;201801&#x27;: &#x27;小明&#x27;,&#x27;201803&#x27;: &#x27;小白&#x27;,&#x27;201802&#x27;: &#x27;新小红&#x27;</span><br></pre></td></tr></table></figure>
 
 <h3 id="6-3-3字典的操作函数"><a href="#6-3-3字典的操作函数" class="headerlink" title="6.3.3字典的操作函数"></a>6.3.3字典的操作函数</h3><table>
 <thead>
@@ -1303,9 +1123,9 @@
 </tr>
 </tbody></table>
 <p>此外，如果希望删除字典中某一个元素，可以使用Python保留字<strong>del</strong>。</p>
-<figure class="highlight 1c"><table><tr><td class="code"><pre><code class="hljs 1c">&gt;&gt;&gt;d = &#123;<span class="hljs-string">&quot;201801&quot;</span>:<span class="hljs-string">&quot;小明&quot;</span>, <span class="hljs-string">&quot;201802&quot;</span>:<span class="hljs-string">&quot;小红&quot;</span>, <span class="hljs-string">&quot;201803&quot;</span>:<span class="hljs-string">&quot;小白&quot;</span>&#125;<br>&gt;&gt;&gt;del d[<span class="hljs-string">&quot;201801&quot;</span>]<br>&gt;&gt;&gt;print(d)<br>&#123;&#x27;<span class="hljs-number">201802</span>&#x27;: &#x27;小红&#x27;, &#x27;<span class="hljs-number">201803</span>&#x27;: &#x27;小白&#x27;&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;d = &#123;&quot;201801&quot;:&quot;小明&quot;, &quot;201802&quot;:&quot;小红&quot;, &quot;201803&quot;:&quot;小白&quot;&#125;</span><br><span class="line">&gt;&gt;&gt;del d[&quot;201801&quot;]</span><br><span class="line">&gt;&gt;&gt;print(d)</span><br><span class="line">&#123;&#x27;201802&#x27;: &#x27;小红&#x27;, &#x27;201803&#x27;: &#x27;小白&#x27;&#125;</span><br></pre></td></tr></table></figure>
 <p>字典类型也支持保留字<strong>in</strong>，用来判断一个键是否在字典中。如果在则返回True，否则返回False。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell"><span class="hljs-meta">&gt;</span><span class="bash">&gt;&gt;d = &#123;<span class="hljs-string">&quot;201801&quot;</span>:<span class="hljs-string">&quot;小明&quot;</span>, <span class="hljs-string">&quot;201802&quot;</span>:<span class="hljs-string">&quot;小红&quot;</span>, <span class="hljs-string">&quot;201803&quot;</span>:<span class="hljs-string">&quot;小白&quot;</span>&#125;</span><br><span class="hljs-meta">&gt;</span><span class="bash">&gt;&gt;<span class="hljs-string">&quot;201801&quot;</span> <span class="hljs-keyword">in</span> d</span><br>True<br><span class="hljs-meta">&gt;</span><span class="bash">&gt;&gt;<span class="hljs-string">&quot;201804&quot;</span> <span class="hljs-keyword">in</span> d</span><br>False<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;d = &#123;&quot;201801&quot;:&quot;小明&quot;, &quot;201802&quot;:&quot;小红&quot;, &quot;201803&quot;:&quot;小白&quot;&#125;</span><br><span class="line">&gt;&gt;&gt;&quot;201801&quot; in d</span><br><span class="line">True</span><br><span class="line">&gt;&gt;&gt;&quot;201804&quot; in d</span><br><span class="line">False</span><br></pre></td></tr></table></figure>
 
 <h3 id="6-3-4字典的遍历"><a href="#6-3-4字典的遍历" class="headerlink" title="6.3.4字典的遍历"></a>6.3.4字典的遍历</h3><p>与其他组合类型一样，字典可以遍历循环对其元素进行遍历，基本语法结构如下：<br><br>for &lt;变量名&gt; in &lt;字典名&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;语句块&gt;</p>
 <h2 id="6-4实例解析：文本词频统计"><a href="#6-4实例解析：文本词频统计" class="headerlink" title="6.4实例解析：文本词频统计"></a>6.4实例解析：文本词频统计</h2>]]></content>
@@ -1319,13 +1139,177 @@
       </tags>
   </entry>
   <entry>
-    <title>日常记录</title>
-    <url>/2021/08/16/8-16/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200">
+    <title>7.文件和数据格式化</title>
+    <url>/2021/09/05/7-%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/</url>
+    <content><![CDATA[<p>文件和数据格式化</p>
 <span id="more"></span>
-> 一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以**平凡**的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处>~<
+<h1 id="7-文件和数据格式化"><a href="#7-文件和数据格式化" class="headerlink" title="7.文件和数据格式化"></a>7.文件和数据格式化</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96.png"></li>
+</ul>
+<h2 id="7-1文件类型"><a href="#7-1文件类型" class="headerlink" title="7.1文件类型"></a>7.1文件类型</h2><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>文本文件</td>
+<td>文本文件一般由单一特定编码的字符组成，如UTF-8编码，内容容易统一展示和阅读。</td>
+</tr>
+<tr>
+<td>二进制</td>
+<td>二进制文件直接由比特0和比特1组成，文件内部数据的组织格式与文件用途有关。二进制是信息按照非字符但特定格式形成的文件，如，png格式的图片文件、avi格式的视频文件。</td>
+</tr>
+</tbody></table>
+<p>二进制文件和文本文件最主要的区别在于是否有统一的字符编码。</p>
+<blockquote>
+<p>Python对文本文件和二进制文件采用统一的操作步骤，即“<strong>打开-操作-关闭</strong>”</p>
+</blockquote>
+<h2 id="7-2文件的使用"><a href="#7-2文件的使用" class="headerlink" title="7.2文件的使用"></a>7.2文件的使用</h2><h3 id="7-2-1文件的打开"><a href="#7-2-1文件的打开" class="headerlink" title="7.2.1文件的打开"></a>7.2.1文件的打开</h3><p>Python通过open()函数打开一个文件，并返回一个操作这个文件的变量，语法形式如下：<br><br>&lt;变量名&gt; = open(&lt;文件路径及文件名&gt;, &lt;打开模式&gt;)</p>
+<table>
+<thead>
+<tr>
+<th>打开模式</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>‘r’</td>
+<td>只读模式，如果文件不存在，返回异常FileNotFoundError，默认值</td>
+</tr>
+<tr>
+<td>‘w’</td>
+<td>覆盖写模式，文件不存在则创建，存在则完全覆盖源文件</td>
+</tr>
+<tr>
+<td>‘x’</td>
+<td>创建写模式，文件不存在则创建，存在则返回异FileExistsError ‘a’</td>
+</tr>
+<tr>
+<td>‘b’</td>
+<td>二进制文件模式</td>
+</tr>
+<tr>
+<td>‘t’</td>
+<td>文本文件模式，默认值</td>
+</tr>
+<tr>
+<td>‘+’</td>
+<td>与r/w/x/a一同使用，在原功能基础上增加同时读写功能</td>
+</tr>
+</tbody></table>
+<h3 id="7-2-2文件的关闭"><a href="#7-2-2文件的关闭" class="headerlink" title="7.2.2文件的关闭"></a>7.2.2文件的关闭</h3><p>&lt;变量名&gt;.close()</p>
+<h3 id="7-2-3文件的读"><a href="#7-2-3文件的读" class="headerlink" title="7.2.3文件的读"></a>7.2.3文件的读</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>f.read(size=-1)</td>
+<td>从文件中读入整个文件内容。参数可选，如果给出，读入前size长度的字符串或字节流</td>
+</tr>
+<tr>
+<td>f.readline(size = -1)</td>
+<td>从文件中读入一行内容。参数可选，如果给出，读入该行前size长度的字符串或字节流</td>
+</tr>
+<tr>
+<td>f.readlines(hint=-1)</td>
+<td>从文件中读入所有行，以每行为元素形成一个列表。参数可选，如果给出，读入hint行</td>
+</tr>
+<tr>
+<td>f.seek(offset)</td>
+<td>改变当前文件操作指针的位置，offset的值：0：文件开头； 2: 文件结尾</td>
+</tr>
+</tbody></table>
+<p>f = open(&lt;文件路径及名称&gt;,”r”)<br><br>for line in f:<br><br><code># 处理一行数据</code><br><br>f.close()</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">f = open(&quot;D://b.txt&quot;, &quot;r&quot;)</span><br><span class="line">for line in f:</span><br><span class="line">    print(line)</span><br><span class="line">f.close()</span><br><span class="line"></span><br><span class="line">&gt;&gt;</span><br><span class="line">新年都未有芳华，二月初惊见草芽。</span><br><span class="line"></span><br><span class="line">白雪却嫌春色晚，故穿庭树作飞花。</span><br></pre></td></tr></table></figure>
+<h3 id="7-2-4文件的写"><a href="#7-2-4文件的写" class="headerlink" title="7.2.4文件的写"></a>7.2.4文件的写</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>f.write(s)</td>
+<td>向文件写入一个字符串或字节流</td>
+</tr>
+<tr>
+<td>f.writelines(lines)</td>
+<td>将一个元素为字符串的列表写入文件</td>
+</tr>
+</tbody></table>
+<p><strong>f.write(s)</strong>  向文件写入字符串s，每次写入后，将会记录一个写入指针。该方法可以反复调用，将在写入指针后分批写入内容，直至文件被关闭。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;f = open(&quot;D://c.txt&quot;, &quot;w&quot;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;新年都未有芳华\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;二月初惊见草芽\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;白雪却嫌春色晚\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;故穿庭树作飞花\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.close()</span><br><span class="line"></span><br><span class="line">&gt;&gt;</span><br><span class="line">新年都未有芳华</span><br><span class="line">二月初惊见草芽</span><br><span class="line">白雪却嫌春色晚</span><br><span class="line">故穿庭树作飞花</span><br></pre></td></tr></table></figure>
+<p><strong>f.writelines(lines)</strong> 直接将列表类型的各元素连接起来写入文件f。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;ls = [&#x27;新年都未有芳华\n&#x27;,&#x27;二月初惊见草芽\n&#x27;,&#x27;白雪却嫌春色晚\n&#x27;,&#x27;故穿庭树作飞花\n&#x27;]</span><br><span class="line">&gt;&gt;&gt;f = open(&quot;D://c.txt&quot;, &quot;w&quot;)</span><br><span class="line">&gt;&gt;&gt;f.writelines(ls)</span><br><span class="line">&gt;&gt;&gt;f.close()</span><br></pre></td></tr></table></figure>
 
-<p> <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210814.jpg"></p>
+<h2 id="7-3数据的维度"><a href="#7-3数据的维度" class="headerlink" title="7.3数据的维度"></a>7.3数据的维度</h2><p>一维数据由对等关系的有序或无序数据构成，采用线性方式组织，对应于数学中数组的概念。<br></p>
+<ul>
+<li>一维数据<blockquote>
+<p>北京、上海、天津、重庆</p>
+</blockquote>
+</li>
+</ul>
+<p>二维数据，也称表格数据，由关联关系数据构成，采用二维表格方式组织，对应于数学中的矩阵，常见的表格都属于二维数据。<br><br>高维数据由键值对类型的数据构成，采用对象方式组织，可以多层嵌套。<br></p>
+<ul>
+<li><p>二维数据<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96_1.png"></p>
+</li>
+<li><p>高维数据<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96_2.png"></p>
+</li>
+</ul>
+<p>一维数据的存储</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>采用空格分隔元素</td>
+<td>例如：<br>北京 上海 天津 重庆</td>
+</tr>
+<tr>
+<td>采用逗号分隔元素</td>
+<td>例如：<br>北京,上海,天津,重庆</td>
+</tr>
+<tr>
+<td>采用换行分隔包括</td>
+<td>例如：<br>北京<br>上海<br>天津<br>重庆</td>
+</tr>
+<tr>
+<td>其他特殊符号分隔，以分号分隔为例</td>
+<td>例如：<br>北京;上海;天津;重庆</td>
+</tr>
+</tbody></table>
+<h2 id="7-4实例解析：国家财政数据趋势演算"><a href="#7-4实例解析：国家财政数据趋势演算" class="headerlink" title="7.4实例解析：国家财政数据趋势演算"></a>7.4实例解析：国家财政数据趋势演算</h2>]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日常记录</title>
+    <url>/2021/08/17/8-17/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg " width = "300"  height = "200">
+<span id="more"></span>
+>今天看完了《平凡的世界》第三部（*利用学驾校时间看的手机*），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:
+>>* 平凡又平庸的我们努力奔向爱情。      
+>>* 在这平凡的世界里努力过好平凡的生活。
+>>* 我这个平凡的世界里平凡的人觉得遥不可及。
+
+<blockquote>
+<p>同时，今天是keep打卡第一天 fighting~</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg"></p>
 ]]></content>
       <categories>
         <category>日常记录</category>
@@ -1335,14 +1319,13 @@
       </tags>
   </entry>
   <entry>
-    <title>8-18</title>
-    <url>/2021/08/18/8-18/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
+    <title>日常记录</title>
+    <url>/2021/08/16/8-16/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200">
 <span id="more"></span>
->中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
+> 一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以**平凡**的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处>~<
+
+<p> <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210814.jpg"></p>
 ]]></content>
       <categories>
         <category>日常记录</category>
@@ -1523,6 +1506,23 @@
       <tags>
         <tag>Python</tag>
         <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>8-18</title>
+    <url>/2021/08/18/8-18/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
+<span id="more"></span>
+>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
+]]></content>
+      <categories>
+        <category>日常记录</category>
+      </categories>
+      <tags>
+        <tag>生活片段</tag>
       </tags>
   </entry>
   <entry>
@@ -1980,10 +1980,10 @@
 </tr>
 </tbody></table>
 <p>以1千万次循环为主体，模拟实际程序的核心模块，用time.sleep()来模拟实际程序的其他模块。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">import <span class="hljs-selector-tag">time</span><br>def coreLoop():<br>  limit = <span class="hljs-number">10</span>**<span class="hljs-number">8</span><br>  while (limit &gt; <span class="hljs-number">0</span>):<br>    limit -= <span class="hljs-number">1</span><br>def <span class="hljs-built_in">otherLoop1</span>():<br>  time.<span class="hljs-built_in">sleep</span>(<span class="hljs-number">0.2</span>)<br>def <span class="hljs-built_in">otherLoop2</span>():<br>  time.<span class="hljs-built_in">sleep</span>(<span class="hljs-number">0.4</span>)<br><br>def <span class="hljs-built_in">main</span>():<br>  startTime = time.<span class="hljs-built_in">localtime</span>()<br>  <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;程序开始时间：&#x27;</span>, time.<span class="hljs-built_in">strftime</span>(<span class="hljs-string">&#x27;%Y-%m-%d %H:%M:%S&#x27;</span>, startTime))<br>  startPerfCounter = time.<span class="hljs-built_in">perf_counter</span>()<br>  <span class="hljs-built_in">otherLoop1</span>()<br>  otherLoop1PerfCounter = time.<span class="hljs-built_in">perf_counter</span>()<br>  otherLoop1Perf = otherLoop1PerfCounter - startPerfCounter<br>  <span class="hljs-built_in">coreLoop</span>()<br>  coreLoopPerfCounter = time.<span class="hljs-built_in">perf_counter</span>()<br>  coreLoopPerf = coreLoopPerfCounter - otherLoop1PerfCounter<br>  <span class="hljs-built_in">otherLoop2</span>()<br>  otherLoop2PerfCounter = time.<span class="hljs-built_in">perf_counter</span>()<br>  otherLoop2Perf = otherLoop2PerfCounter - coreLoopPerfCounter<br>  endPerfCounter = time.<span class="hljs-built_in">perf_counter</span>()<br>  totalPerf = endPerfCounter - startPerfCounter<br>  endTime = time.<span class="hljs-built_in">localtime</span>()<br>  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;模块1运行时间是:&#123;&#125;秒&quot;</span>.<span class="hljs-built_in">format</span>(otherLoop1Perf))<br>  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;核心模块运行时间是:&#123;&#125;秒&quot;</span>.<span class="hljs-built_in">format</span>(coreLoopPerf))<br>  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;模块2运行时间是:&#123;&#125;秒&quot;</span>.<span class="hljs-built_in">format</span>(otherLoop2Perf))<br>  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;程序运行总时间是:&#123;&#125;秒&quot;</span>.<span class="hljs-built_in">format</span>(totalPerf))<br>  <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;程序结束时间：&#x27;</span>, time.<span class="hljs-built_in">strftime</span>(<span class="hljs-string">&#x27;%Y-%m-%d %H:%M:%S&#x27;</span>, endTime))<br><br><span class="hljs-built_in">main</span>()<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import time</span><br><span class="line">def coreLoop():</span><br><span class="line">  limit = 10**8</span><br><span class="line">  while (limit &gt; 0):</span><br><span class="line">    limit -= 1</span><br><span class="line">def otherLoop1():</span><br><span class="line">  time.sleep(0.2)</span><br><span class="line">def otherLoop2():</span><br><span class="line">  time.sleep(0.4)</span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">  startTime = time.localtime()</span><br><span class="line">  print(&#x27;程序开始时间：&#x27;, time.strftime(&#x27;%Y-%m-%d %H:%M:%S&#x27;, startTime))</span><br><span class="line">  startPerfCounter = time.perf_counter()</span><br><span class="line">  otherLoop1()</span><br><span class="line">  otherLoop1PerfCounter = time.perf_counter()</span><br><span class="line">  otherLoop1Perf = otherLoop1PerfCounter - startPerfCounter</span><br><span class="line">  coreLoop()</span><br><span class="line">  coreLoopPerfCounter = time.perf_counter()</span><br><span class="line">  coreLoopPerf = coreLoopPerfCounter - otherLoop1PerfCounter</span><br><span class="line">  otherLoop2()</span><br><span class="line">  otherLoop2PerfCounter = time.perf_counter()</span><br><span class="line">  otherLoop2Perf = otherLoop2PerfCounter - coreLoopPerfCounter</span><br><span class="line">  endPerfCounter = time.perf_counter()</span><br><span class="line">  totalPerf = endPerfCounter - startPerfCounter</span><br><span class="line">  endTime = time.localtime()</span><br><span class="line">  print(&quot;模块1运行时间是:&#123;&#125;秒&quot;.format(otherLoop1Perf))</span><br><span class="line">  print(&quot;核心模块运行时间是:&#123;&#125;秒&quot;.format(coreLoopPerf))</span><br><span class="line">  print(&quot;模块2运行时间是:&#123;&#125;秒&quot;.format(otherLoop2Perf))</span><br><span class="line">  print(&quot;程序运行总时间是:&#123;&#125;秒&quot;.format(totalPerf))</span><br><span class="line">  print(&#x27;程序结束时间：&#x27;, time.strftime(&#x27;%Y-%m-%d %H:%M:%S&#x27;, endTime))</span><br><span class="line"></span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
 
 <p>程序运行的输出效果如下</p>
-<figure class="highlight makefile"><table><tr><td class="code"><pre><code class="hljs makefile">程序开始时间： 2017-12-26 13:46:39<br><span class="hljs-section">模块1运行时间是:0.20003105182731706秒</span><br><span class="hljs-section">核心模块运行时间是:5.987101639820927秒</span><br><span class="hljs-section">模块2运行时间是:0.40018931343066555秒</span><br><span class="hljs-section">程序运行总时间是:6.587323585324574秒</span><br>程序结束时间： 2017-12-26 13:46:4<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">程序开始时间： 2017-12-26 13:46:39</span><br><span class="line">模块1运行时间是:0.20003105182731706秒</span><br><span class="line">核心模块运行时间是:5.987101639820927秒</span><br><span class="line">模块2运行时间是:0.40018931343066555秒</span><br><span class="line">程序运行总时间是:6.587323585324574秒</span><br><span class="line">程序结束时间： 2017-12-26 13:46:4</span><br></pre></td></tr></table></figure>
 <h2 id="9-4-实例解析：雪景艺术绘图"><a href="#9-4-实例解析：雪景艺术绘图" class="headerlink" title="9.4 实例解析：雪景艺术绘图"></a>9.4 实例解析：雪景艺术绘图</h2>]]></content>
       <categories>
         <category>Python</category>
@@ -1992,42 +1992,6 @@
       <tags>
         <tag>Python</tag>
         <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>github+hexo 个人博客更换主题</title>
-    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
-<span id="more"></span>
-
-<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
-<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure>
-
-<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
-<blockquote>
-<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
-</blockquote>
-<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
-<blockquote>
-<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
-</blockquote>
-<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo g</span><br><span class="hljs-attribute">hexo d</span><br></code></pre></td></tr></table></figure>
-
-<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
-<blockquote>
-<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
-</blockquote>
-<figure class="highlight 1c"><table><tr><td class="code"><pre><code class="hljs 1c">hexo cl <span class="hljs-meta">&amp; hexo g -d</span><br></code></pre></td></tr></table></figure>
-
-<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
-]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-        <tag>主题</tag>
       </tags>
   </entry>
   <entry>
@@ -2050,6 +2014,72 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo的安装和在github部署博客</title>
+    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<p>hexo的安装和在github部署博客</p>
+<span id="more"></span>
+
+<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io </code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>打开 git 下 git bash 输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
+<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
+
+<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
+<hr>
+<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
+]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>github+hexo 个人博客更换主题</title>
+    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
+<span id="more"></span>
+
+<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
+<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
+<blockquote>
+<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
+</blockquote>
+<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
+<blockquote>
+<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
+</blockquote>
+<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
+<blockquote>
+<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></table></figure>
+
+<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
+]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+        <tag>主题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo 新建分类和标签</title>
     <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
     <content><![CDATA[<p>hexo 新建分类和标签</p>
@@ -2057,29 +2087,29 @@
 
 <p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
 <h2 id="1-创建“分类”选项"><a href="#1-创建“分类”选项" class="headerlink" title="1.创建“分类”选项"></a>1.创建“分类”选项</h2><p>生成“分类”页并添加 tpye 属性,进入博客目录。执行命令下方命令</p>
-<figure class="highlight haxe"><table><tr><td class="code"><pre><code class="hljs haxe">hexo <span class="hljs-keyword">new</span> <span class="hljs-type">page</span> categories<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
 
 <p>categories 文件夹下会有 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">分类</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2019-04-24 15:30:30</span><br><span class="hljs-attr">type:</span> <span class="hljs-string">categories</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2019-04-24 15:30:30</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
 <p>保存并关闭文件。</p>
 <p>给文章添加“categories”属性</p>
 <p>打开需要添加分类的文章，为其添加 categories 属性。下方的 categories:Hexo 表示这篇文章添加到到“Hexo”这个分类。注意：一篇文章只会添加到一个分类中，如果是多个默认放到第一个分类中。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">hexo</span> <span class="hljs-string">添加分类及标签</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2017-05-26 12:12:57</span><br><span class="hljs-attr">categories:</span> <span class="hljs-string">Hexo</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 添加分类及标签</span><br><span class="line">date: 2017-05-26 12:12:57</span><br><span class="line">categories: Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
 <p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了 categories: xxx 的文章才会被收录到首页的“分类”中。</p>
 <h2 id="2-创建“标签”选项"><a href="#2-创建“标签”选项" class="headerlink" title="2.创建“标签”选项"></a>2.创建“标签”选项</h2><p>生成“标签”页并添加 tpye 属性</p>
-<figure class="highlight haxe"><table><tr><td class="code"><pre><code class="hljs haxe">hexo <span class="hljs-keyword">new</span> <span class="hljs-type">page</span> tags<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
 
 <p>在 tags 文件夹下，找到 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">标签</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2019-04-22 14:22:08</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-22 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
 <p>添加 type: “tags”到内容中，添加后是这样的：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">标签</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2019-04-24 15:40:24</span><br><span class="hljs-attr">type:</span> <span class="hljs-string">tags</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
 <p>保存并关闭文件。</p>
 <p>给文章添加“tags”属性,打开需要添加标签的文章，为其添加 tags 属性。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">Hexo</span> <span class="hljs-string">添加分类及标签</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2019-04-24 15:40:24</span><br><span class="hljs-attr">categories:</span><br>           <span class="hljs-bullet">-</span> <span class="hljs-string">Hexo</span><br><span class="hljs-attr">tags:</span><br>           <span class="hljs-bullet">-</span> <span class="hljs-string">博客</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 添加分类及标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">categories:</span><br><span class="line">           - Hexo</span><br><span class="line">tags:</span><br><span class="line">           - 博客</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>hexo博客</category>
@@ -2089,6 +2119,128 @@
         <tag>博客</tag>
         <tag>新建分类标签</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>hexo部署各种错误的解决方式</title>
+    <url>/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<p>hexo部署各种错误的解决方式</p>
+<span id="more"></span>
+
+<h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\blog\aikeblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:394:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\blog\aikeblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
+
+<h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol>
+<li>删除<code>.deploy_git</code>文件夹;</li>
+<li>输入 git<br><code>config --global core.autocrlf false</code></li>
+<li>然后，依次执行：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>问题解决。暴力直接，有效。</p>
+<h1 id="2-fatal-unable-to-access-‘https-github-com-git-39-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git-39-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git&#39;: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git&#39;">https://github.com/.../.git&#39;</a>: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
+        <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python库学习</title>
+    <url>/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p>python中常用库的学习笔记</p>
+<span id="more"></span>
+
+<h3 id="pandas库"><a href="#pandas库" class="headerlink" title="pandas库"></a>pandas库</h3><p>pandas 是基于Numpy的一种工具，主要用于数据分析任务。Pandas 纳入了大量库和一些标准的数据模型，提供了高校第操作大型数据集所需要的工具。pandas 的名称来自面板数据（panel data）和python数据分析（data analysis）。</p>
+<ul>
+<li>可以从CSV、JSON、SQL、Microsoft Excel导入数据</li>
+<li>主要数据结构Series（一维数据）和DataFrame（二维数据）</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># pandas 简单实例</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mydataset = &#123;</span><br><span class="line">	<span class="string">&#x27;sites&#x27;</span>:[<span class="string">&#x27;Google&#x27;</span>,<span class="string">&#x27;Runoob&#x27;</span>,<span class="string">&#x27;Wiki&#x27;</span>],</span><br><span class="line">	<span class="string">&#x27;number&#x27;</span>:[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">	&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.DataFrame(mydataset)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line">    sites  number</span><br><span class="line"><span class="number">0</span>  Google       <span class="number">1</span></span><br><span class="line"><span class="number">1</span>  Runoob       <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    Wiki       <span class="number">3</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Pandas-Series"><a href="#Pandas-Series" class="headerlink" title="Pandas Series"></a>Pandas Series</h4><ul>
+<li><p>pandas series类似表格的一列，类似一维数组。</p>
+</li>
+<li><p>可以用list 和key/value对象创建Series</p>
+</li>
+<li><p>由索引（index）和列组成</p>
+</li>
+</ul>
+<p>Series构造方法如下：</p>
+<p><code> pandas.Series(data,index,dtype,name,copy)</code></p>
+<p>data：数据(ndarray类型)    index：索引标签，默认从0开始    dtype：数据类型，默认自己判断    name：名称    copy：拷贝数据，默认False</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(a)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">0</span>    <span class="number">1</span></span><br><span class="line"><span class="number">1</span>    <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    <span class="number">3</span></span><br><span class="line">dtype: int64</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>sites = &#123;<span class="number">1</span>: <span class="string">&quot;Google&quot;</span>, <span class="number">2</span>: <span class="string">&quot;Runoob&quot;</span>, <span class="number">3</span>: <span class="string">&quot;Wiki&quot;</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(sites, index = [<span class="number">1</span>, <span class="number">2</span>], name=<span class="string">&quot;aike&quot;</span> )</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">1</span>    Google</span><br><span class="line"><span class="number">2</span>    Runoob</span><br><span class="line">Name: aike, dtype: <span class="built_in">object</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Pandas-DataFrame"><a href="#Pandas-DataFrame" class="headerlink" title="Pandas DataFrame"></a>Pandas DataFrame</h4><ul>
+<li>表格类型数据</li>
+<li>既有行索引，也有列索引</li>
+</ul>
+<p>DataFrame构造方法：</p>
+<p><code>pandas.DataFrame(data,index,columns,dtype,copy)</code></p>
+<p>columns：列标签，默认为RangeIndex（0,1,2，……，n）</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>data = [[<span class="string">&#x27;Google&#x27;</span>,<span class="number">10</span>],[<span class="string">&#x27;Runoob&#x27;</span>,<span class="number">12</span>],[<span class="string">&#x27;Wike&#x27;</span>,<span class="number">13</span>]]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df = pd.DataFrame(data,columns=[<span class="string">&#x27;Site&#x27;</span>,<span class="string">&#x27;Age&#x27;</span>],dtype=<span class="built_in">float</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df</span><br><span class="line">     Site   Age</span><br><span class="line"><span class="number">0</span>  Google  <span class="number">10.0</span></span><br><span class="line"><span class="number">1</span>  Runoob  <span class="number">12.0</span></span><br><span class="line"><span class="number">2</span>    Wike  <span class="number">13.0</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>loc[ ]：返回指定索引的行</p>
+</li>
+<li><p>loc[[ ]]：返回多行数据</p>
+</li>
+</ul>
+<h4 id="Pandas-CSV文件"><a href="#Pandas-CSV文件" class="headerlink" title="Pandas CSV文件"></a>Pandas CSV文件</h4><p>CSV（<strong>C</strong>omma-<strong>S</strong>eparated <strong>V</strong>alues，逗号分隔值）一般用逗号分割，以纯文本数据存储表格数据（数字和文本）。</p>
+<ul>
+<li>pd.to_string( )：返回DataFrame类型数据</li>
+<li>pd.read_csv( )：读取csv数据</li>
+<li>pd.to_csv( )：将DataFrame存储为csv文件</li>
+<li>df.head(n)：读取回前n行</li>
+<li>df.tail(n)：读取尾部几行</li>
+<li>df.info( )：返回表格基本信息（行列数、各列数据类型）</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import pandas as pd</span><br><span class="line">df = pd.read_csv(&#x27;nba.csv&#x27;)</span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
+
+<h4 id="Pandas-JSON"><a href="#Pandas-JSON" class="headerlink" title="Pandas JSON"></a>Pandas JSON</h4><p>JSON（<strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation，JavaScript对象表示法），存储和交换文本信息的语法。</p>
+<ul>
+<li>Json可转换为DataFrame</li>
+<li>可以从url中读取json数据</li>
+<li>读取内嵌json<ul>
+<li>pd.json_normalize(data, record_path, meta)</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 Python JSON 模块载入数据</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;nested_list.json&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = json.loads(f.read())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 展平数据</span></span><br><span class="line">df_nested_list = pd.json_normalize(data, record_path =[<span class="string">&#x27;students&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span>(df_nested_list)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>安装glom模块：用.来访问内嵌对象的属性</li>
+</ul>
+<h4 id="Pandas-数据清洗"><a href="#Pandas-数据清洗" class="headerlink" title="Pandas 数据清洗"></a>Pandas 数据清洗</h4><ul>
+<li>缺失</li>
+<li>格式错误</li>
+<li>错误数据或重复数据</li>
+</ul>
+<h5 id="清洗空值"><a href="#清洗空值" class="headerlink" title="清洗空值"></a>清洗空值</h5><ul>
+<li>dropna( )：删除包含空字段的行</li>
+</ul>
+<p><code>DataFrame.dropna(axis=0, how=&#39;any&#39;, thresh=None, subset=None, inplace=False)</code></p>
+<h3 id="pdfminer库"><a href="#pdfminer库" class="headerlink" title="pdfminer库"></a>pdfminer库</h3><p><strong>问题描述</strong></p>
+<p>利用python读取PDF文本内容</p>
+<p><strong>运行环境</strong></p>
+<p>python 3.6</p>
+<p><strong>需要安装的库</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install pdfminer</span><br><span class="line">pip install pdfminer3k</span><br></pre></td></tr></table></figure>
+
+<p><strong>实现的源代码</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyocr <span class="comment"># 图像处理库，进行ocr识别</span></span><br><span class="line"><span class="keyword">import</span> importlib <span class="comment"># Python中import语句的实现</span></span><br><span class="line"><span class="keyword">import</span> sys <span class="comment"># 针对与Python解释器相关的变量和方法</span></span><br><span class="line"><span class="keyword">import</span> time <span class="comment"># 基础时间库</span></span><br><span class="line"></span><br><span class="line">importlib.reload(sys)</span><br><span class="line">time1 = time.time()</span><br><span class="line"><span class="comment"># print(&#x27;初始时间为：&#x27;,time1)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os.path</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span> PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span>  PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFResourceManager, PDFPageInterpreter</span><br><span class="line"><span class="keyword">from</span> pdfminer.converter <span class="keyword">import</span> PDFPageAggregator</span><br><span class="line"><span class="keyword">from</span> pdfminer.layout <span class="keyword">import</span> LTTextBoxHorizontal,LAParams</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFTextExtractionNotAllowed</span><br><span class="line"></span><br><span class="line">text_path = <span class="string">r&#x27;D:\文档\预测与决策\第2章 非模型预测方法.pdf&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse</span>():</span></span><br><span class="line">    <span class="comment">#解析PDF文本，并保存到TXT文件中</span></span><br><span class="line">    fp = <span class="built_in">open</span>(text_path,<span class="string">&#x27;rb&#x27;</span>)</span><br><span class="line">    <span class="comment">#用文件对象创建一个PDF文档分析器</span></span><br><span class="line">    parser = PDFParser(fp)</span><br><span class="line">    <span class="comment">#创建一个PDF文档</span></span><br><span class="line">    doc = PDFDocument()</span><br><span class="line">    <span class="comment">#连接分析器，与文档对象</span></span><br><span class="line">    parser.set_document(doc)</span><br><span class="line">    doc.set_parser(parser)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#提供初始化密码，如果没有密码，就创建一个空的字符串</span></span><br><span class="line">    doc.initialize()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#检测文档是否提供txt转换，不提供就忽略</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> doc.is_extractable:</span><br><span class="line">        <span class="keyword">raise</span> PDFTextExtractionNotAllowed</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment">#创建PDF,资源管理器，来共享资源</span></span><br><span class="line">        rsrcmgr = PDFResourceManager()</span><br><span class="line">        <span class="comment">#创建一个PDF设备对象</span></span><br><span class="line">        laparams = LAParams()</span><br><span class="line">        device = PDFPageAggregator(rsrcmgr,laparams=laparams)</span><br><span class="line">        <span class="comment">#创建一个PDF解释器其对象</span></span><br><span class="line">        interpreter = PDFPageInterpreter(rsrcmgr,device)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#循环遍历列表，每次处理一个page内容</span></span><br><span class="line">        <span class="comment">#doc.get_pages()获取page列表</span></span><br><span class="line">        <span class="keyword">for</span> page <span class="keyword">in</span> doc.get_pages():</span><br><span class="line">            interpreter.process_page(page)</span><br><span class="line">            <span class="comment">#接受该页面的LTPage对象</span></span><br><span class="line">            layout = device.get_result()</span><br><span class="line">            <span class="comment"># 这里layout是一个LTPage对象 里面存放着 这个page解析出的各种对象</span></span><br><span class="line">            <span class="comment"># 一般包括LTTextBox, LTFigure, LTImage, LTTextBoxHorizontal 等等</span></span><br><span class="line">            <span class="comment"># 想要获取文本就获得对象的text属性，</span></span><br><span class="line">            <span class="keyword">for</span> x <span class="keyword">in</span> layout:</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">isinstance</span>(x,LTTextBoxHorizontal)):</span><br><span class="line">                    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">r&#x27;C:\Users\86159\Desktop\2.txt&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                        results = x.get_text()</span><br><span class="line">                        <span class="built_in">print</span>(results)</span><br><span class="line">                        f.write(results + <span class="string">&quot;\n&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    parse()</span><br><span class="line">    time2 = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;总共消耗时间为：&#x27;</span>,time2-time1)</span><br></pre></td></tr></table></figure>
+
+<p><strong>结果分析</strong></p>
+<p>将读取的文字存在一个TXT文档里面</p>
+<p>pdfminer只能识别pdf里的文字，而不会读取pdf里图片里的文字内容</p>
+<p><strong>参考链接</strong></p>
+<p><a href="https://www.cnblogs.com/wj-1314/p/9429816.html">https://www.cnblogs.com/wj-1314/p/9429816.html</a></p>
+]]></content>
   </entry>
   <entry>
     <title>java小记</title>
@@ -2156,7 +2308,7 @@
 <ul>
 <li>新建一个.java文件</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Hello</span></span>&#123;<br>	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>&#123;<br>		System.out.print(<span class="hljs-string">&quot;Hello,World!&quot;</span>);<br>	&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		System.out.print(<span class="string">&quot;Hello,World!&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><p>cmd里编译和运行</p>
@@ -2325,198 +2477,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>hexo部署各种错误的解决方式</title>
-    <url>/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<p>hexo部署各种错误的解决方式</p>
-<span id="more"></span>
-
-<h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p>
-<figure class="highlight taggerscript"><table><tr><td class="code"><pre><code class="hljs taggerscript">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054<br>FATAL &#123;<br>  err: Error: Spawn failed<br>      at ChildProcess.&lt;anonymous&gt; (E:<span class="hljs-symbol">\b</span>log<span class="hljs-symbol">\a</span>ikeblog<span class="hljs-symbol">\n</span>ode_modules<span class="hljs-symbol">\h</span>exo-util<span class="hljs-symbol">\l</span>ib<span class="hljs-symbol">\s</span>pawn.js:51:21)<br>      at ChildProcess.emit (node:events:394:28)<br>      at ChildProcess.cp.emit (E:<span class="hljs-symbol">\b</span>log<span class="hljs-symbol">\a</span>ikeblog<span class="hljs-symbol">\n</span>ode_modules<span class="hljs-symbol">\c</span>ross-spawn<span class="hljs-symbol">\l</span>ib<span class="hljs-symbol">\e</span>noent.js:34:29)<br>      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;<br>    code: 128<br>  &#125;<br>&#125; Something&#x27;s wrong. Maybe you can find the solution here: <span class="hljs-variable">%s https://hexo.io/docs/troubleshooting.html</span><br></code></pre></td></tr></table></figure>
-
-<h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p>
-<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol>
-<li>删除<code>.deploy_git</code>文件夹;</li>
-<li>输入 git<br><code>config --global core.autocrlf false</code></li>
-<li>然后，依次执行：</li>
-</ol>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo clean</span><br><span class="hljs-attribute">hexo g</span><br><span class="hljs-attribute">hexo d</span><br></code></pre></td></tr></table></figure>
-
-<p>问题解决。暴力直接，有效。</p>
-<h1 id="2-fatal-unable-to-access-‘https-github-com-git-39-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git-39-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git&#39;: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git&#39;">https://github.com/.../.git&#39;</a>: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p>
-<figure class="highlight tcl"><table><tr><td class="code"><pre><code class="hljs tcl">git config --<span class="hljs-keyword">global</span> --<span class="hljs-keyword">unset</span> <span class="hljs-keyword">http</span>.proxy<br>git config --<span class="hljs-keyword">global</span> --<span class="hljs-keyword">unset</span> https.proxy<br></code></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
-        <tag>bug</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo的安装和在github部署博客</title>
-    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<p>hexo的安装和在github部署博客</p>
-<span id="more"></span>
-
-<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
-<figure class="highlight cmake"><table><tr><td class="code"><pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span> hexo-cli -g<br>hexo init aikeblog<br>cd aikeblog<br>npm <span class="hljs-keyword">install</span><br>hexo s<br></code></pre></td></tr></table></figure>
-
-<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io </code></p>
-<figure class="highlight ada"><table><tr><td class="code"><pre><code class="hljs ada">npm install hexo-deployer-git <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
-
-<p>打开 git 下 git bash 输入：</p>
-<figure class="highlight verilog"><table><tr><td class="code"><pre><code class="hljs verilog">git <span class="hljs-keyword">config</span> --<span class="hljs-keyword">global</span> user<span class="hljs-variable">.name</span> <span class="hljs-string">&quot;aikeblog&quot;</span><br>git <span class="hljs-keyword">config</span> --<span class="hljs-keyword">global</span> user<span class="hljs-variable">.email</span> <span class="hljs-string">&quot;1736134512@qq.com&quot;</span><br>ssh-keygen -t rsa -C <span class="hljs-string">&quot;1736134512@qq.com&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
-<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">url:</span> https:<span class="hljs-comment">//Aike505.github.io</span><br><span class="hljs-symbol">root:</span> /<br><span class="hljs-symbol">deploy:</span><br><span class="hljs-symbol">    type:</span> git<br><span class="hljs-symbol">    repo:</span> https:<span class="hljs-comment">//github.com/Aike505/Aike505.github.io.git</span><br><span class="hljs-symbol">    branch:</span> main<br></code></pre></td></tr></table></figure>
-
-<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
-<hr>
-<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
-]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python库学习</title>
-    <url>/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p>python中常用库的学习笔记</p>
-<span id="more"></span>
-
-<h3 id="pandas库"><a href="#pandas库" class="headerlink" title="pandas库"></a>pandas库</h3><p>pandas 是基于Numpy的一种工具，主要用于数据分析任务。Pandas 纳入了大量库和一些标准的数据模型，提供了高校第操作大型数据集所需要的工具。pandas 的名称来自面板数据（panel data）和python数据分析（data analysis）。</p>
-<ul>
-<li>可以从CSV、JSON、SQL、Microsoft Excel导入数据</li>
-<li>主要数据结构Series（一维数据）和DataFrame（二维数据）</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># pandas 简单实例</span><br><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd<br><span class="hljs-meta">&gt;&gt;&gt; </span>mydataset = &#123;<br>	<span class="hljs-string">&#x27;sites&#x27;</span>:[<span class="hljs-string">&#x27;Google&#x27;</span>,<span class="hljs-string">&#x27;Runoob&#x27;</span>,<span class="hljs-string">&#x27;Wiki&#x27;</span>],<br>	<span class="hljs-string">&#x27;number&#x27;</span>:[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]<br>	&#125;<br><span class="hljs-meta">&gt;&gt;&gt; </span>myvar = pd.DataFrame(mydataset)<br><span class="hljs-meta">&gt;&gt;&gt; </span>myvar<br>    sites  number<br><span class="hljs-number">0</span>  Google       <span class="hljs-number">1</span><br><span class="hljs-number">1</span>  Runoob       <span class="hljs-number">2</span><br><span class="hljs-number">2</span>    Wiki       <span class="hljs-number">3</span><br></code></pre></td></tr></table></figure>
-
-<h4 id="Pandas-Series"><a href="#Pandas-Series" class="headerlink" title="Pandas Series"></a>Pandas Series</h4><ul>
-<li><p>pandas series类似表格的一列，类似一维数组。</p>
-</li>
-<li><p>可以用list 和key/value对象创建Series</p>
-</li>
-<li><p>由索引（index）和列组成</p>
-</li>
-</ul>
-<p>Series构造方法如下：</p>
-<p><code> pandas.Series(data,index,dtype,name,copy)</code></p>
-<p>data：数据(ndarray类型)    index：索引标签，默认从0开始    dtype：数据类型，默认自己判断    name：名称    copy：拷贝数据，默认False</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd<br><span class="hljs-meta">&gt;&gt;&gt; </span>a = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]<br><span class="hljs-meta">&gt;&gt;&gt; </span>myvar = pd.Series(a)<br><span class="hljs-meta">&gt;&gt;&gt; </span>myvar<br><span class="hljs-number">0</span>    <span class="hljs-number">1</span><br><span class="hljs-number">1</span>    <span class="hljs-number">2</span><br><span class="hljs-number">2</span>    <span class="hljs-number">3</span><br>dtype: int64<br><span class="hljs-meta">&gt;&gt;&gt; </span>sites = &#123;<span class="hljs-number">1</span>: <span class="hljs-string">&quot;Google&quot;</span>, <span class="hljs-number">2</span>: <span class="hljs-string">&quot;Runoob&quot;</span>, <span class="hljs-number">3</span>: <span class="hljs-string">&quot;Wiki&quot;</span>&#125;<br><span class="hljs-meta">&gt;&gt;&gt; </span>myvar = pd.Series(sites, index = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>], name=<span class="hljs-string">&quot;aike&quot;</span> )<br><span class="hljs-meta">&gt;&gt;&gt; </span>myvar<br><span class="hljs-number">1</span>    Google<br><span class="hljs-number">2</span>    Runoob<br>Name: aike, dtype: <span class="hljs-built_in">object</span><br></code></pre></td></tr></table></figure>
-
-<h4 id="Pandas-DataFrame"><a href="#Pandas-DataFrame" class="headerlink" title="Pandas DataFrame"></a>Pandas DataFrame</h4><ul>
-<li>表格类型数据</li>
-<li>既有行索引，也有列索引</li>
-</ul>
-<p>DataFrame构造方法：</p>
-<p><code>pandas.DataFrame(data,index,columns,dtype,copy)</code></p>
-<p>columns：列标签，默认为RangeIndex（0,1,2，……，n）</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd<br><span class="hljs-meta">&gt;&gt;&gt; </span>data = [[<span class="hljs-string">&#x27;Google&#x27;</span>,<span class="hljs-number">10</span>],[<span class="hljs-string">&#x27;Runoob&#x27;</span>,<span class="hljs-number">12</span>],[<span class="hljs-string">&#x27;Wike&#x27;</span>,<span class="hljs-number">13</span>]]<br><span class="hljs-meta">&gt;&gt;&gt; </span>df = pd.DataFrame(data,columns=[<span class="hljs-string">&#x27;Site&#x27;</span>,<span class="hljs-string">&#x27;Age&#x27;</span>],dtype=<span class="hljs-built_in">float</span>)<br><span class="hljs-meta">&gt;&gt;&gt; </span>df<br>     Site   Age<br><span class="hljs-number">0</span>  Google  <span class="hljs-number">10.0</span><br><span class="hljs-number">1</span>  Runoob  <span class="hljs-number">12.0</span><br><span class="hljs-number">2</span>    Wike  <span class="hljs-number">13.0</span><br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><p>loc[ ]：返回指定索引的行</p>
-</li>
-<li><p>loc[[ ]]：返回多行数据</p>
-</li>
-</ul>
-<h4 id="Pandas-CSV文件"><a href="#Pandas-CSV文件" class="headerlink" title="Pandas CSV文件"></a>Pandas CSV文件</h4><p>CSV（<strong>C</strong>omma-<strong>S</strong>eparated <strong>V</strong>alues，逗号分隔值）一般用逗号分割，以纯文本数据存储表格数据（数字和文本）。</p>
-<ul>
-<li>pd.to_string( )：返回DataFrame类型数据</li>
-<li>pd.read_csv( )：读取csv数据</li>
-<li>pd.to_csv( )：将DataFrame存储为csv文件</li>
-<li>df.head(n)：读取回前n行</li>
-<li>df.tail(n)：读取尾部几行</li>
-<li>df.info( )：返回表格基本信息（行列数、各列数据类型）</li>
-</ul>
-<figure class="highlight stylus"><table><tr><td class="code"><pre><code class="hljs stylus">import pandas as pd<br>df = pd<span class="hljs-selector-class">.read_csv</span>(<span class="hljs-string">&#x27;nba.csv&#x27;</span>)<br><span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(df)</span></span><br></code></pre></td></tr></table></figure>
-
-<h4 id="Pandas-JSON"><a href="#Pandas-JSON" class="headerlink" title="Pandas JSON"></a>Pandas JSON</h4><p>JSON（<strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation，JavaScript对象表示法），存储和交换文本信息的语法。</p>
-<ul>
-<li>Json可转换为DataFrame</li>
-<li>可以从url中读取json数据</li>
-<li>读取内嵌json<ul>
-<li>pd.json_normalize(data, record_path, meta)</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd<br><span class="hljs-keyword">import</span> json<br><br><span class="hljs-comment"># 使用 Python JSON 模块载入数据</span><br><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&#x27;nested_list.json&#x27;</span>,<span class="hljs-string">&#x27;r&#x27;</span>) <span class="hljs-keyword">as</span> f:<br>    data = json.loads(f.read())<br><br><span class="hljs-comment"># 展平数据</span><br>df_nested_list = pd.json_normalize(data, record_path =[<span class="hljs-string">&#x27;students&#x27;</span>])<br><span class="hljs-built_in">print</span>(df_nested_list)<br></code></pre></td></tr></table></figure>
-
-<ul>
-<li>安装glom模块：用.来访问内嵌对象的属性</li>
-</ul>
-<h4 id="Pandas-数据清洗"><a href="#Pandas-数据清洗" class="headerlink" title="Pandas 数据清洗"></a>Pandas 数据清洗</h4><ul>
-<li>缺失</li>
-<li>格式错误</li>
-<li>错误数据或重复数据</li>
-</ul>
-<h5 id="清洗空值"><a href="#清洗空值" class="headerlink" title="清洗空值"></a>清洗空值</h5><ul>
-<li>dropna( )：删除包含空字段的行</li>
-</ul>
-<p><code>DataFrame.dropna(axis=0, how=&#39;any&#39;, thresh=None, subset=None, inplace=False)</code></p>
-<h3 id="pdfminer库"><a href="#pdfminer库" class="headerlink" title="pdfminer库"></a>pdfminer库</h3><p><strong>问题描述</strong></p>
-<p>利用python读取PDF文本内容</p>
-<p><strong>运行环境</strong></p>
-<p>python 3.6</p>
-<p><strong>需要安装的库</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">pip install pdfminer<br>pip install pdfminer3k<br></code></pre></td></tr></table></figure>
-
-<p><strong>实现的源代码</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> pyocr <span class="hljs-comment"># 图像处理库，进行ocr识别</span><br><span class="hljs-keyword">import</span> importlib <span class="hljs-comment"># Python中import语句的实现</span><br><span class="hljs-keyword">import</span> sys <span class="hljs-comment"># 针对与Python解释器相关的变量和方法</span><br><span class="hljs-keyword">import</span> time <span class="hljs-comment"># 基础时间库</span><br><br>importlib.reload(sys)<br>time1 = time.time()<br><span class="hljs-comment"># print(&#x27;初始时间为：&#x27;,time1)</span><br><br><span class="hljs-keyword">import</span> os.path<br><span class="hljs-keyword">from</span> pdfminer.pdfparser <span class="hljs-keyword">import</span> PDFParser,PDFDocument<br><span class="hljs-keyword">from</span> pdfminer.pdfparser <span class="hljs-keyword">import</span>  PDFParser,PDFDocument<br><span class="hljs-keyword">from</span> pdfminer.pdfinterp <span class="hljs-keyword">import</span> PDFResourceManager, PDFPageInterpreter<br><span class="hljs-keyword">from</span> pdfminer.converter <span class="hljs-keyword">import</span> PDFPageAggregator<br><span class="hljs-keyword">from</span> pdfminer.layout <span class="hljs-keyword">import</span> LTTextBoxHorizontal,LAParams<br><span class="hljs-keyword">from</span> pdfminer.pdfinterp <span class="hljs-keyword">import</span> PDFTextExtractionNotAllowed<br><br>text_path = <span class="hljs-string">r&#x27;D:\文档\预测与决策\第2章 非模型预测方法.pdf&#x27;</span><br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse</span>():</span><br>    <span class="hljs-comment">#解析PDF文本，并保存到TXT文件中</span><br>    fp = <span class="hljs-built_in">open</span>(text_path,<span class="hljs-string">&#x27;rb&#x27;</span>)<br>    <span class="hljs-comment">#用文件对象创建一个PDF文档分析器</span><br>    parser = PDFParser(fp)<br>    <span class="hljs-comment">#创建一个PDF文档</span><br>    doc = PDFDocument()<br>    <span class="hljs-comment">#连接分析器，与文档对象</span><br>    parser.set_document(doc)<br>    doc.set_parser(parser)<br><br>    <span class="hljs-comment">#提供初始化密码，如果没有密码，就创建一个空的字符串</span><br>    doc.initialize()<br><br>    <span class="hljs-comment">#检测文档是否提供txt转换，不提供就忽略</span><br>    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> doc.is_extractable:<br>        <span class="hljs-keyword">raise</span> PDFTextExtractionNotAllowed<br>    <span class="hljs-keyword">else</span>:<br>        <span class="hljs-comment">#创建PDF,资源管理器，来共享资源</span><br>        rsrcmgr = PDFResourceManager()<br>        <span class="hljs-comment">#创建一个PDF设备对象</span><br>        laparams = LAParams()<br>        device = PDFPageAggregator(rsrcmgr,laparams=laparams)<br>        <span class="hljs-comment">#创建一个PDF解释器其对象</span><br>        interpreter = PDFPageInterpreter(rsrcmgr,device)<br><br>        <span class="hljs-comment">#循环遍历列表，每次处理一个page内容</span><br>        <span class="hljs-comment">#doc.get_pages()获取page列表</span><br>        <span class="hljs-keyword">for</span> page <span class="hljs-keyword">in</span> doc.get_pages():<br>            interpreter.process_page(page)<br>            <span class="hljs-comment">#接受该页面的LTPage对象</span><br>            layout = device.get_result()<br>            <span class="hljs-comment"># 这里layout是一个LTPage对象 里面存放着 这个page解析出的各种对象</span><br>            <span class="hljs-comment"># 一般包括LTTextBox, LTFigure, LTImage, LTTextBoxHorizontal 等等</span><br>            <span class="hljs-comment"># 想要获取文本就获得对象的text属性，</span><br>            <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> layout:<br>                <span class="hljs-keyword">if</span>(<span class="hljs-built_in">isinstance</span>(x,LTTextBoxHorizontal)):<br>                    <span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">r&#x27;C:\Users\86159\Desktop\2.txt&#x27;</span>,<span class="hljs-string">&#x27;a&#x27;</span>,encoding=<span class="hljs-string">&#x27;utf-8&#x27;</span>) <span class="hljs-keyword">as</span> f:<br>                        results = x.get_text()<br>                        <span class="hljs-built_in">print</span>(results)<br>                        f.write(results + <span class="hljs-string">&quot;\n&quot;</span>)<br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&#x27;__main__&#x27;</span>:<br>    parse()<br>    time2 = time.time()<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;总共消耗时间为：&#x27;</span>,time2-time1)<br></code></pre></td></tr></table></figure>
-
-<p><strong>结果分析</strong></p>
-<p>将读取的文字存在一个TXT文档里面</p>
-<p>pdfminer只能识别pdf里的文字，而不会读取pdf里图片里的文字内容</p>
-<p><strong>参考链接</strong></p>
-<p><a href="https://www.cnblogs.com/wj-1314/p/9429816.html">https://www.cnblogs.com/wj-1314/p/9429816.html</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>修改github.io站点域名</title>
-    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
-    <content><![CDATA[<p>修改github.io站点域名</p>
-<span id="more"></span>
-
-<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
-<ul>
-<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
-<ul>
-<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&utm_medium=cpc&utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&utm_medium=se-cpc-op&utm_campaign=10045&utm_content=&utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&utm_adplace=AdPlace039520">华为云</a></li>
-</ul>
-</blockquote>
-</li>
-</ul>
-</blockquote>
-<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
-<ul>
-<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE3.png"></li>
-<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE1.png"></li>
-</ul>
-</blockquote>
-<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
-<ul>
-<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE2.png"></li>
-</ul>
-</blockquote>
-<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
-<ul>
-<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
-</ul>
-</blockquote>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>注册域名</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>启发式算法</title>
     <url>/2022/09/03/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<p>暂无更多编辑，点击查看文章……</p>
@@ -2621,7 +2581,7 @@
 </ul>
 </li>
 </ul>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab"><span class="hljs-comment">% particleswarm基础使用1</span><br>narvs = <span class="hljs-number">2</span>; <span class="hljs-comment">% 变量个数</span><br>x_lb = [<span class="hljs-number">-15</span> <span class="hljs-number">15</span>]; <span class="hljs-comment">% x的下界（长度等于变量个数，每个变量对于一个下界约束）</span><br>x_ub = [<span class="hljs-number">15</span> <span class="hljs-number">15</span>]; <span class="hljs-comment">% x的上界</span><br>[x,fval,exitflag,output] = particleswarm(@fun2,narvs,x_lb,x_ub)<br><br><span class="hljs-comment">% particleswarm基础使用2</span><br>narvs = <span class="hljs-number">30</span>;<br>x_lb = <span class="hljs-number">-30</span>*<span class="hljs-built_in">ones</span>(<span class="hljs-number">1</span>,<span class="hljs-number">30</span>);<br>x_ub = <span class="hljs-number">30</span>*<span class="hljs-built_in">ones</span>(<span class="hljs-number">1</span>,<span class="hljs-number">30</span>);<br>[x,fval,exitflag,output] = particleswarm(@fun3,narvs,x_lb,x_ub)<br><br><span class="hljs-comment">% 修改函数的参数</span><br><span class="hljs-comment">%% 绘制最佳函数值岁迭代次数的变化图</span><br>options = optimoptions(<span class="hljs-string">&#x27;particleswarm&#x27;</span>,<span class="hljs-string">&#x27;PlotFcn&#x27;</span>,<span class="hljs-string">&#x27;pswplotbestf&#x27;</span>)<br>[x,fval] = particleswarm(@fun3,narvs,x_lb,x_ub,options)<br><br><span class="hljs-comment">%% 不考虑计算时间，同时修改三个控制迭代退出的参数</span><br>tic<br>options = optimoptions(<span class="hljs-string">&#x27;particleswarm&#x27;</span>,<span class="hljs-string">&#x27;FunctionTolerance&#x27;</span>,<span class="hljs-number">1e-12</span>,<span class="hljs-string">&#x27;MaxStallIterations&#x27;</span>,<span class="hljs-number">100</span>,<span class="hljs-string">&#x27;MaxIterations&#x27;</span>,<span class="hljs-number">100000</span>);<br>[x,fval] = particleswarm(@fun3,narvs,x_lb,x_ub,options)<br>toc<br></code></pre></td></tr></table></figure>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="comment">% particleswarm基础使用1</span></span><br><span class="line">narvs = <span class="number">2</span>; <span class="comment">% 变量个数</span></span><br><span class="line">x_lb = [<span class="number">-15</span> <span class="number">15</span>]; <span class="comment">% x的下界（长度等于变量个数，每个变量对于一个下界约束）</span></span><br><span class="line">x_ub = [<span class="number">15</span> <span class="number">15</span>]; <span class="comment">% x的上界</span></span><br><span class="line">[x,fval,exitflag,output] = particleswarm(@fun2,narvs,x_lb,x_ub)</span><br><span class="line"></span><br><span class="line"><span class="comment">% particleswarm基础使用2</span></span><br><span class="line">narvs = <span class="number">30</span>;</span><br><span class="line">x_lb = <span class="number">-30</span>*<span class="built_in">ones</span>(<span class="number">1</span>,<span class="number">30</span>);</span><br><span class="line">x_ub = <span class="number">30</span>*<span class="built_in">ones</span>(<span class="number">1</span>,<span class="number">30</span>);</span><br><span class="line">[x,fval,exitflag,output] = particleswarm(@fun3,narvs,x_lb,x_ub)</span><br><span class="line"></span><br><span class="line"><span class="comment">% 修改函数的参数</span></span><br><span class="line"><span class="comment">%% 绘制最佳函数值岁迭代次数的变化图</span></span><br><span class="line">options = optimoptions(<span class="string">&#x27;particleswarm&#x27;</span>,<span class="string">&#x27;PlotFcn&#x27;</span>,<span class="string">&#x27;pswplotbestf&#x27;</span>)</span><br><span class="line">[x,fval] = particleswarm(@fun3,narvs,x_lb,x_ub,options)</span><br><span class="line"></span><br><span class="line"><span class="comment">%% 不考虑计算时间，同时修改三个控制迭代退出的参数</span></span><br><span class="line">tic</span><br><span class="line">options = optimoptions(<span class="string">&#x27;particleswarm&#x27;</span>,<span class="string">&#x27;FunctionTolerance&#x27;</span>,<span class="number">1e-12</span>,<span class="string">&#x27;MaxStallIterations&#x27;</span>,<span class="number">100</span>,<span class="string">&#x27;MaxIterations&#x27;</span>,<span class="number">100000</span>);</span><br><span class="line">[x,fval] = particleswarm(@fun3,narvs,x_lb,x_ub,options)</span><br><span class="line">toc</span><br></pre></td></tr></table></figure>
 
 <table>
 <thead>
@@ -2701,6 +2661,46 @@
 ]]></content>
   </entry>
   <entry>
+    <title>修改github.io站点域名</title>
+    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
+    <content><![CDATA[<p>修改github.io站点域名</p>
+<span id="more"></span>
+
+<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
+<ul>
+<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
+<ul>
+<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&utm_medium=cpc&utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&utm_medium=se-cpc-op&utm_campaign=10045&utm_content=&utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&utm_adplace=AdPlace039520">华为云</a></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
+<ul>
+<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE3.png"></li>
+<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE1.png"></li>
+</ul>
+</blockquote>
+<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
+<ul>
+<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE2.png"></li>
+</ul>
+</blockquote>
+<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
+<ul>
+<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>注册域名</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>网站推送百度</title>
     <url>/2021/07/21/%E7%BD%91%E7%AB%99%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/</url>
     <content><![CDATA[<p>网站推送百度</p>
@@ -2716,10 +2716,10 @@
 <h3 id="让百度收录你的站点"><a href="#让百度收录你的站点" class="headerlink" title="让百度收录你的站点"></a>让百度收录你的站点</h3><p>我们首先要做的就是让各大搜索引擎收录你的站点，我们在刚建站的时候各个搜索引擎是没有收录我们网站的，在搜索引擎中输入 site:&lt;域名&gt;,如果如下图所示就是说明我们的网站并没有被百度收录。我们可以直接点击下面的“网址提交”来提交我们的网站<br><img src="https://s4.51cto.com/images/blog/202106/22/6dca78a397d5cb996e219e39237d52d8.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="></p>
 <h3 id="验证网站所有权"><a href="#验证网站所有权" class="headerlink" title="验证网站所有权"></a>验证网站所有权</h3><p>登录百度站长平台：<a href="http://zhanzhang.baidu.com,只要有百度旗下的账号就可以登录,登录成功之后在站点管理中点击添加网站然后输入你的站点地址,建议输入的网站为www开头的,不要输入github.io的,因为github是不允许百度的spider爬取github上的内容的,所以如果想让你的站点被百度收录,只能使用自己购买的域名/">http://zhanzhang.baidu.com，只要有百度旗下的账号就可以登录，登录成功之后在站点管理中点击添加网站然后输入你的站点地址，建议输入的网站为www开头的，不要输入github.io的，因为github是不允许百度的spider爬取github上的内容的，所以如果想让你的站点被百度收录，只能使用自己购买的域名</a><br><img src="https://s4.51cto.com/images/blog/202106/22/1de31ec351ed9e8fa0a666a331366853.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br>在选择完网站的类型之后需要验证网站的所有权，验证网站所有权的方式有三种：文件验证。html 标签验证和 cname 解析验证，使用哪一种方式都可以，都是比较简单的，但是一定要注意，使用文件验证文件存放的位置需要放在 source 文件夹下，如果是 html 文件那么 hexo 就会将其编译，所以必须要加上的 layout:false，这样就不会被 hexo 编译。（如果验证文件是 txt 格式的就不需要），其他两种方式也是很简单的，我个人推荐文件验证和 cname 验证，cname 验证最为简单，只需加一条解析就好~<br><img src="https://s4.51cto.com/images/blog/202106/22/9e7c57829371e8553e48120c984c4533.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="></p>
 <h3 id="生成网站地图"><a href="#生成网站地图" class="headerlink" title="生成网站地图"></a>生成网站地图</h3><p>我们需要使用 npm 自动生成网站的 sitemap，然后将生成的 sitemap 提交到百度和其他搜索引擎</p>
-<h4 id="安装-sitemap-插件"><a href="#安装-sitemap-插件" class="headerlink" title="安装 sitemap 插件"></a>安装 sitemap 插件</h4><figure class="highlight mipsasm"><table><tr><td class="code"><pre><code class="hljs mipsasm">npm <span class="hljs-keyword">install </span>hexo-generator-sitemap --save<br>npm <span class="hljs-keyword">install </span>hexo-generator-<span class="hljs-keyword">baidu-sitemap </span>--save<br></code></pre></td></tr></table></figure>
+<h4 id="安装-sitemap-插件"><a href="#安装-sitemap-插件" class="headerlink" title="安装 sitemap 插件"></a>安装 sitemap 插件</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
 
 <h4 id="修改博客配置文件"><a href="#修改博客配置文件" class="headerlink" title="修改博客配置文件"></a>修改博客配置文件</h4><p>在根目录配置文件中修改 url 为你的站点地址</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><code class="hljs vim"># URL<br>## If your site <span class="hljs-keyword">is</span> <span class="hljs-keyword">put</span> in <span class="hljs-keyword">a</span> subdirectory, <span class="hljs-keyword">set</span> url <span class="hljs-keyword">as</span> <span class="hljs-string">&#x27;http://yoursite.com/child&#x27;</span> <span class="hljs-built_in">and</span> root <span class="hljs-keyword">as</span> <span class="hljs-string">&#x27;/child/&#x27;</span><br>ur<span class="hljs-variable">l:</span> http://cherryblog.site<br>roo<span class="hljs-variable">t:</span> /<br>permalink: :title.html<br>permalink_default<span class="hljs-variable">s:</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># URL</span><br><span class="line">## If your site is put in a subdirectory, set url as &#x27;http://yoursite.com/child&#x27; and root as &#x27;/child/&#x27;</span><br><span class="line">url: http://cherryblog.site</span><br><span class="line">root: /</span><br><span class="line">permalink: :title.html</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
 
 <p>执行完之后就会在网站根目录生成 sitemap.xml 文件和 baidusitemap.xml 文件，可以通过<a href="http://www.cherryblog.site/baidusitemap.xml,%E6%9F%A5%E7%9C%8B%E8%AF%A5%E6%96%87%E4%BB%B6%E6%98%AF%E5%90%A6%E7%94%9F%E6%88%90%EF%BC%8C%E5%85%B6%E4%B8%ADsitemap.xml%E6%96%87%E4%BB%B6%E6%98%AF%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E9%80%9A%E7%94%A8%E7%9A%84%E6%96%87%E4%BB%B6%EF%BC%8Cbaidusitemap.xml%E6%98%AF%E7%99%BE%E5%BA%A6%E4%B8%93%E7%94%A8%E7%9A%84sitemap%E6%96%87%E4%BB%B6%E3%80%82">http://www.cherryblog.site/baidusitemap.xml,查看该文件是否生成，其中sitemap.xml文件是搜索引擎通用的文件，baidusitemap.xml是百度专用的sitemap文件。</a></p>
 <h4 id="向百度提交链接"><a href="#向百度提交链接" class="headerlink" title="向百度提交链接"></a>向百度提交链接</h4><p>然后我们就可以将我们生成的 sitemap 文件提交给百度，还是在百度站长平台，找到链接提交，这里我们可以看到有两种提交方式，自动提交和手动提交，自动提交又分为主动推送、自动推送和 sitemap</p>
@@ -2727,23 +2727,23 @@
 <p>如何选择链接提交方式 1、主动推送：最为快速的提交方式，推荐您将站点当天新产出链接立即通过此方式推送给百度，以保证新链接可以及时被百度收录。 2、自动推送：最为便捷的提交方式，请将自动推送的 JS 代码部署在站点的每一个页面源代码中，部署代码的页面在每次被浏览时，链接会被自动推送给百度。可以与主动推送配合使用。 3、sitemap：您可以定期将网站链接放到 sitemap 中，然后将 sitemap 提交给百度。百度会周期性的抓取检查您提交的 sitemap，对其中的链接进行处理，但收录速度慢于主动推送。 4、手动提交：一次性提交链接给百度，可以使用此种方式。<br>一般主动提交比手动提交效果好，这里介绍主动提交的三种方法 从效率上来说：<br>主动推送&gt;自动推送&gt;sitemap<br><img src="https://s4.51cto.com/images/blog/202106/22/701583918691a71b88c48f98385d2660.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="></p>
 </blockquote>
 <h4 id="主动推送"><a href="#主动推送" class="headerlink" title="主动推送"></a>主动推送</h4><p>安装插件 npm install hexo-baidu-url-submit –save 然后再根目录的配置文件中新增字段</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">baidu_url_submit:</span><br><span class="hljs-symbol">    count:</span> <span class="hljs-number">100</span> <span class="hljs-meta"># 提交最新的一个链接</span><br><span class="hljs-symbol">    host:</span> www.cherryblog.site <span class="hljs-meta"># 在百度站长平台中注册的域名</span><br><span class="hljs-symbol">    token:</span> <span class="hljs-number">8</span>OGYpxowYnhgVsUM <span class="hljs-meta"># 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span><br><span class="hljs-symbol">    path:</span> baidu_urls.txt <span class="hljs-meta"># 文本文档的地址， 新链接会保存在此文本文档里</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">    count: 100 # 提交最新的一个链接</span><br><span class="line">    host: www.cherryblog.site # 在百度站长平台中注册的域名</span><br><span class="line">    token: 8OGYpxowYnhgVsUM # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span><br><span class="line">    path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里</span><br></pre></td></tr></table></figure>
 
 <p>在加入新的 deploye</p>
-<figure class="highlight elm"><table><tr><td class="code"><pre><code class="hljs elm"><span class="hljs-title">deploy</span>:<br> - <span class="hljs-keyword">type</span>:baidu_url_submitter<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> - type:baidu_url_submitter</span><br></pre></td></tr></table></figure>
 
 <p>这样执行 hexo deploy 的时候，新的链接就会被推送了</p>
 <h4 id="设置自动推送"><a href="#设置自动推送" class="headerlink" title="设置自动推送"></a>设置自动推送</h4><p>主题配置文件下设置,将 baidu_push 设置为 true：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO</span><br><span class="hljs-attr">baidu_push:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO</span><br><span class="line">baidu_push: true</span><br></pre></td></tr></table></figure>
 
 <p>然后就会将一下代码自动推送到百度，位置是 themes\next\layout_scripts\baidu_push.swig,这样每次访问博客中的页面就会自动向百度提交 sitemap</p>
-<figure class="highlight django"><table><tr><td class="code"><pre><code class="hljs django"><span class="hljs-template-tag">&#123;% <span class="hljs-name"><span class="hljs-name">if</span></span> theme.baidu_push %&#125;</span><span class="xml"></span><br><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="javascript"><span class="xml">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>&#123;</span></span><br><span class="javascript"><span class="xml">    <span class="hljs-keyword">var</span> bp = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&#x27;script&#x27;</span>);</span></span><br><span class="javascript"><span class="xml">    <span class="hljs-keyword">var</span> curProtocol = <span class="hljs-built_in">window</span>.location.protocol.split(<span class="hljs-string">&#x27;:&#x27;</span>)[<span class="hljs-number">0</span>];</span></span><br><span class="javascript"><span class="xml">    <span class="hljs-keyword">if</span> (curProtocol === <span class="hljs-string">&#x27;https&#x27;</span>) &#123;</span></span><br><span class="javascript"><span class="xml">        bp.src = <span class="hljs-string">&#x27;https://zz.bdstatic.com/linksubmit/push.js&#x27;</span>;</span></span><br><span class="javascript"><span class="xml">    &#125;</span></span><br><span class="javascript"><span class="xml">    <span class="hljs-keyword">else</span> &#123;</span></span><br><span class="javascript"><span class="xml">        bp.src = <span class="hljs-string">&#x27;http://push.zhanzhang.baidu.com/push.js&#x27;</span>;</span></span><br><span class="javascript"><span class="xml">    &#125;</span></span><br><span class="javascript"><span class="xml">    <span class="hljs-keyword">var</span> s = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&quot;script&quot;</span>)[<span class="hljs-number">0</span>];</span></span><br><span class="javascript"><span class="xml">    s.parentNode.insertBefore(bp, s);</span></span><br><span class="javascript"><span class="xml">&#125;)();</span></span><br><span class="javascript"><span class="xml"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><br><span class="xml"></span><span class="hljs-template-tag">&#123;% <span class="hljs-name"><span class="hljs-name">endif</span></span> %&#125;</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.baidu_push %&#125;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">(function()&#123;</span><br><span class="line">    var bp = document.createElement(&#x27;script&#x27;);</span><br><span class="line">    var curProtocol = window.location.protocol.split(&#x27;:&#x27;)[0];</span><br><span class="line">    if (curProtocol === &#x27;https&#x27;) &#123;</span><br><span class="line">        bp.src = &#x27;https://zz.bdstatic.com/linksubmit/push.js&#x27;;</span><br><span class="line">    &#125;</span><br><span class="line">    else &#123;</span><br><span class="line">        bp.src = &#x27;http://push.zhanzhang.baidu.com/push.js&#x27;;</span><br><span class="line">    &#125;</span><br><span class="line">    var s = document.getElementsByTagName(&quot;script&quot;)[0];</span><br><span class="line">    s.parentNode.insertBefore(bp, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 
 <h4 id="sitemap"><a href="#sitemap" class="headerlink" title="sitemap"></a>sitemap</h4><p>将我们上一步生成的 sitemap 文件提交到百度就可以了~<br><img src="https://s4.51cto.com/images/blog/202106/22/513d8354340674c8e34c702a7170bfcd.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br>我记得被百度收录过程还是蛮久的，一度让我以为我的方法有问题，提交链接在站长工具中有显示大概是有两天的时候，站点被百度收录大概花了半个月= =，让大家看一下现在的成果 在百度搜索 site:cherryblog.site 已经可以搜索到结果<br><img src="https://s4.51cto.com/images/blog/202106/22/d5a493c8610e5b0a2358409ae7b80d80.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br><img src="https://s4.51cto.com/images/blog/202106/22/126048d3e903efc6a60f2955195b62b9.jpeg?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br>输入关键字的名字也可以在第二页就找到呢，好开森~<br><img src="https://s4.51cto.com/images/blog/202106/22/411785831c166b05d56a09742d57dc6e.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="></p>
 <h3 id="让-google-收录你的站点"><a href="#让-google-收录你的站点" class="headerlink" title="让 google 收录你的站点"></a>让 google 收录你的站点</h3><p>相比于百度，google 的效率实在不能更快，貌似十分钟左右站点就被收录了，其实方法是和百度是一样的，都是先验证你的站点所有权，然后提交 sitemap google 站点平台：<a href="https://www.google.com/webmasters/%EF%BC%8C">https://www.google.com/webmasters/，</a> 然后就是注册账号、验证站点、提交 sitemap，一步一步来就好，过不了过久就可以被 google 收录了<br><img src="https://s4.51cto.com/images/blog/202106/22/b2a2053612c4e55157c88401bf4c7384.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br><img src="https://s4.51cto.com/images/blog/202106/22/b3063be3f3bba0404d1401ef5edbb73c.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br><img src="https://s4.51cto.com/images/blog/202106/22/d4bdeab31727e86d482f5de88f78675c.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="></p>
 <h3 id="让其他搜索引擎收录你的站点"><a href="#让其他搜索引擎收录你的站点" class="headerlink" title="让其他搜索引擎收录你的站点"></a>让其他搜索引擎收录你的站点</h3><p>除了百度和 google 两大搜索引擎，还有搜狗、360 等其他的搜索引擎，流程都是一样的 ，大家就自行选择添加哈，这里就不再赘述了~</p>
 <h3 id="优化你的-url"><a href="#优化你的-url" class="headerlink" title="优化你的 url"></a>优化你的 url</h3><p>seo 搜索引擎优化认为，网站的最佳结构是用户从首页点击三次就可以到达任何一个页面，但是我们使用 hexo 编译的站点打开文章的 url 是：sitename/year/mounth/day/title 四层的结构，这样的 url 结构很不利于 seo，爬虫就会经常爬不到我们的文章，于是，我们可以将 url 直接改成 sitename/title 的形式，并且 title 最好是用英文，在根目录的配置文件下修改 permalink 如下：</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">url:</span> http:<span class="hljs-comment">//cherryblog.site</span><br><span class="hljs-symbol">root:</span> /<br><span class="hljs-symbol">permalink:</span> :title.html<br><span class="hljs-symbol">permalink_defaults:</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: http://cherryblog.site</span><br><span class="line">root: /</span><br><span class="line">permalink: :title.html</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
 
 <hr>
 <hr>
@@ -2757,46 +2757,6 @@
       <tags>
         <tag>网站</tag>
         <tag>推送百度</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>虚拟机安装macOS系统</title>
-    <url>/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<p>VMware虚拟机安装macOS全过程详解</p>
-<span id="more"></span>
-
-<p>参考链接</p>
-<p><a href="https://www.pc-daily.com/xitong/75975.html">虚拟机安装macos系统（VMware虚拟机安装macOS详细</a></p>
-<p><a href="https://blog.csdn.net/Simon_477/article/details/110252233">虚拟机VMware安装苹果系统macOS，超级详细教程，附文件下载，真教程！！</a></p>
-<p><a href="https://baijiahao.baidu.com/s?id=1697367423466273816&wfr=spider&for=pc">如何使用虚拟机VMware安装苹果macOS系统</a></p>
-<h5 id="1-安装虚拟机VMware"><a href="#1-安装虚拟机VMware" class="headerlink" title="1 安装虚拟机VMware"></a>1 安装虚拟机VMware</h5><p><a href="https://mp.weixin.qq.com/s?__biz=MzIyNjAxMjEwOQ==&mid=2247502732&idx=5&sn=27221e888444d6c36ac62f4767337215&chksm=e874752edf03fc38cadb220b2e77654f32248976e7fa2af240ba7f1e0c0527541ebba5725643&scene=21#wechat_redirect">VMware16</a></p>
-<h5 id="2-安装解锁工具unlocker"><a href="#2-安装解锁工具unlocker" class="headerlink" title="2  安装解锁工具unlocker"></a>2  安装解锁工具unlocker</h5><p>解锁虚拟机安装macOS限制工具</p>
-<p><a href="http://www.winwin7.com/soft/9473.html#xiazai">unlocker v3.0.3</a></p>
-<blockquote>
-<ul>
-<li><strong><a href="https://blog.csdn.net/puspos/article/details/108900141">运行unlocker中win-install时，出现file not found-darwin.</a></strong></li>
-</ul>
-</blockquote>
-<h5 id="3-虚拟机安装-maOS"><a href="#3-虚拟机安装-maOS" class="headerlink" title="3 虚拟机安装 maOS"></a>3 虚拟机安装 maOS</h5><p><a href="https://www.mhero.com/macos">macOS系统下载</a></p>
-<p><a href="https://cloud.mfpud.com/VirtualCDR/44EE85B8FF68F7428C0AE7B3AA27661E/">macOS kealos 10.15</a> （非百度云盘）</p>
-<p><a href="https://sysin.org/blog/macOS/">Apple macOS 下载汇总（系统、应用和技巧）</a></p>
-<blockquote>
-<ul>
-<li>报错<a href="https://www.bilibili.com/read/cv13362122"><strong>客户机操作系统已禁用 CPU</strong></a></li>
-</ul>
-</blockquote>
-<h5 id="4-解决安装后屏幕适应问题"><a href="#4-解决安装后屏幕适应问题" class="headerlink" title="4 解决安装后屏幕适应问题"></a>4 解决安装后屏幕适应问题</h5><p>安装VMware Tools，用到步骤二中darwin.iso</p>
-<h5 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h5><p><a href="https://baijiahao.baidu.com/s?id=1691924549832120099&wfr=spider&for=pc">虚拟机中的Mac系统怎么优化</a></p>
-<p><a href="https://blog.csdn.net/SSS_Benjamin/article/details/89296164">VMware 15 上Mac虚拟机卡顿情况的优化</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/337036027">全网最详细的VMware虚拟机安装MacOS系统教程，没有之一！！！附全部资源</a></p>
-<p><strong>网络</strong></p>
-<p><a href="https://m.kafan.cn/A/gvx45wd73r.html">mac虚拟机如何开启wifi</a></p>
-<p><a href="https://blog.csdn.net/kof820/article/details/50515115?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_antiscanv2&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_antiscanv2&utm_relevant_index=1">VMware虚拟机mac系统以太网无法上网</a></p>
-<p><strong>app store</strong></p>
-<p><a href="https://jingyan.baidu.com/article/e75aca852cd5a9142fdac610.html">app store 购买过程中出错 错误500解决方法</a></p>
-]]></content>
-      <tags>
-        <tag>虚拟机</tag>
       </tags>
   </entry>
   <entry>
@@ -2907,6 +2867,46 @@
       <tags>
         <tag>选课</tag>
         <tag>大学生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>虚拟机安装macOS系统</title>
+    <url>/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<p>VMware虚拟机安装macOS全过程详解</p>
+<span id="more"></span>
+
+<p>参考链接</p>
+<p><a href="https://www.pc-daily.com/xitong/75975.html">虚拟机安装macos系统（VMware虚拟机安装macOS详细</a></p>
+<p><a href="https://blog.csdn.net/Simon_477/article/details/110252233">虚拟机VMware安装苹果系统macOS，超级详细教程，附文件下载，真教程！！</a></p>
+<p><a href="https://baijiahao.baidu.com/s?id=1697367423466273816&wfr=spider&for=pc">如何使用虚拟机VMware安装苹果macOS系统</a></p>
+<h5 id="1-安装虚拟机VMware"><a href="#1-安装虚拟机VMware" class="headerlink" title="1 安装虚拟机VMware"></a>1 安装虚拟机VMware</h5><p><a href="https://mp.weixin.qq.com/s?__biz=MzIyNjAxMjEwOQ==&mid=2247502732&idx=5&sn=27221e888444d6c36ac62f4767337215&chksm=e874752edf03fc38cadb220b2e77654f32248976e7fa2af240ba7f1e0c0527541ebba5725643&scene=21#wechat_redirect">VMware16</a></p>
+<h5 id="2-安装解锁工具unlocker"><a href="#2-安装解锁工具unlocker" class="headerlink" title="2  安装解锁工具unlocker"></a>2  安装解锁工具unlocker</h5><p>解锁虚拟机安装macOS限制工具</p>
+<p><a href="http://www.winwin7.com/soft/9473.html#xiazai">unlocker v3.0.3</a></p>
+<blockquote>
+<ul>
+<li><strong><a href="https://blog.csdn.net/puspos/article/details/108900141">运行unlocker中win-install时，出现file not found-darwin.</a></strong></li>
+</ul>
+</blockquote>
+<h5 id="3-虚拟机安装-maOS"><a href="#3-虚拟机安装-maOS" class="headerlink" title="3 虚拟机安装 maOS"></a>3 虚拟机安装 maOS</h5><p><a href="https://www.mhero.com/macos">macOS系统下载</a></p>
+<p><a href="https://cloud.mfpud.com/VirtualCDR/44EE85B8FF68F7428C0AE7B3AA27661E/">macOS kealos 10.15</a> （非百度云盘）</p>
+<p><a href="https://sysin.org/blog/macOS/">Apple macOS 下载汇总（系统、应用和技巧）</a></p>
+<blockquote>
+<ul>
+<li>报错<a href="https://www.bilibili.com/read/cv13362122"><strong>客户机操作系统已禁用 CPU</strong></a></li>
+</ul>
+</blockquote>
+<h5 id="4-解决安装后屏幕适应问题"><a href="#4-解决安装后屏幕适应问题" class="headerlink" title="4 解决安装后屏幕适应问题"></a>4 解决安装后屏幕适应问题</h5><p>安装VMware Tools，用到步骤二中darwin.iso</p>
+<h5 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h5><p><a href="https://baijiahao.baidu.com/s?id=1691924549832120099&wfr=spider&for=pc">虚拟机中的Mac系统怎么优化</a></p>
+<p><a href="https://blog.csdn.net/SSS_Benjamin/article/details/89296164">VMware 15 上Mac虚拟机卡顿情况的优化</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/337036027">全网最详细的VMware虚拟机安装MacOS系统教程，没有之一！！！附全部资源</a></p>
+<p><strong>网络</strong></p>
+<p><a href="https://m.kafan.cn/A/gvx45wd73r.html">mac虚拟机如何开启wifi</a></p>
+<p><a href="https://blog.csdn.net/kof820/article/details/50515115?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_antiscanv2&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_antiscanv2&utm_relevant_index=1">VMware虚拟机mac系统以太网无法上网</a></p>
+<p><strong>app store</strong></p>
+<p><a href="https://jingyan.baidu.com/article/e75aca852cd5a9142fdac610.html">app store 购买过程中出错 错误500解决方法</a></p>
+]]></content>
+      <tags>
+        <tag>虚拟机</tag>
       </tags>
   </entry>
 </search>

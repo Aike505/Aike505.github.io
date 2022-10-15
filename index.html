@@ -1,1021 +1,436 @@
-
-
-<!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="Aike">
-  <meta name="keywords" content="Python,hexo博客">
-  
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Aike-blog">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>下雨天不打伞</title><meta name="keywords" content="Python,hexo博客"><meta name="author" content="Aike"><meta name="copyright" content="Aike"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="下雨天不打伞">
 <meta property="og:url" content="https://aike505.github.io/index.html">
-<meta property="og:site_name" content="Aike-blog">
+<meta property="og:site_name" content="下雨天不打伞">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151110537.jpg">
 <meta property="article:author" content="Aike">
 <meta property="article:tag" content="Python,hexo博客">
-<meta name="twitter:card" content="summary_large_image">
-  
-  
-    <meta name="referrer" content="no-referrer-when-downgrade">
-  
-  
-  <title>Aike-blog</title>
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
-
-
-
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"aike505.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
-
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151110537.jpg"><link rel="shortcut icon" href="/img/avatar.png"><link rel="canonical" href="https://aike505.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
     }
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-  
-
-
-  
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Aike-blog" type="application/atom+xml">
-</head>
-
-
-<body>
-  
-
-  <header>
-    
-
-<div class="header-inner" style="height: 100vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>Aike</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                <i class="iconfont icon-home-fill"></i>
-                首页
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/">
-                <i class="iconfont icon-archive-fill"></i>
-                归档
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/">
-                <i class="iconfont icon-category-fill"></i>
-                分类
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                标签
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                关于
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/friends/">
-                <i class="iconfont icon-friends"></i>
-                friends
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
-                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="iconfont icon-books"></i>
-                文档
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                
-                  
-                  
-                  
-                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/">
-                    
-                    主题博客
-                  </a>
-                
-                  
-                  
-                  
-                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/">
-                    
-                    配置指南
-                  </a>
-                
-                  
-                  
-                  
-                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/icon/">
-                    
-                    图标用法
-                  </a>
-                
-              </div>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
-            </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-  
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="下雨天不打伞"></span>
-          
-        </div>
-
-        
-      </div>
-
-      
-        <div class="scroll-down-bar">
-          <i class="iconfont icon-arrowdown"></i>
-        </div>
-      
-    </div>
-  </div>
-</div>
-
-</div>
-
-  </header>
-
-  <main>
-    
-      <div class="container nopadding-x-md">
-        <div id="board"
-          style="margin-top: 0">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/" target="_self">
-          <img src="/img/bg.jpg" srcset="/img/loading.gif" lazyload alt="python库学习">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/" target="_self">
-          python库学习
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/" target="_self">
-        <div>
-          python中常用库的学习笔记
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-09-23 23:34" pubdate>
-              2022-09-23
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2022/09/03/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/" target="_self">
-          <img src="/img/bg.jpg" srcset="/img/loading.gif" lazyload alt="启发式算法">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/09/03/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/" target="_self">
-          启发式算法
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2022/09/03/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/" target="_self">
-        <div>
-          暂无更多编辑，点击查看文章……
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-09-03 12:08" pubdate>
-              2022-09-03
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2022/07/09/java%E5%B0%8F%E8%AE%B0/" target="_self">
-          <img src="/img/bg.jpg" srcset="/img/loading.gif" lazyload alt="java小记">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/07/09/java%E5%B0%8F%E8%AE%B0/" target="_self">
-          java小记
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2022/07/09/java%E5%B0%8F%E8%AE%B0/" target="_self">
-        <div>
-          暂无更多编辑，点击查看文章……
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-07-09 17:13" pubdate>
-              2022-07-09
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/" target="_self">
-          <img src="/img/bg.jpg" srcset="/img/loading.gif" lazyload alt="虚拟机安装macOS系统">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/" target="_self">
-          虚拟机安装macOS系统
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/" target="_self">
-        <div>
-          VMware虚拟机安装macOS全过程详解
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-04-26 11:43" pubdate>
-              2022-04-26
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/">#虚拟机</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2021/09/05/11-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88/" target="_self">
-          <img src="/img/bg.jpg" srcset="/img/loading.gif" lazyload alt="11.Python第三方库纵览">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/09/05/11-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88/" target="_self">
-          11.Python第三方库纵览
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2021/09/05/11-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88/" target="_self">
-        <div>
-          Python第三方库纵览
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-09-05 10:08" pubdate>
-              2021-09-05
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Python/" class="category-chain-item">Python</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Python/%E4%BA%8C%E7%BA%A7/" class="category-chain-item">二级</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/%E4%BA%8C%E7%BA%A7/">#二级</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2021/09/05/10-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88/" target="_self">
-          <img src="/img/bg.jpg" srcset="/img/loading.gif" lazyload alt="10.Python第三方库概览">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/09/05/10-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88/" target="_self">
-          10.Python第三方库概览
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2021/09/05/10-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88/" target="_self">
-        <div>
-          Python第三方库概览
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-09-05 10:07" pubdate>
-              2021-09-05
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Python/" class="category-chain-item">Python</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Python/%E4%BA%8C%E7%BA%A7/" class="category-chain-item">二级</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/%E4%BA%8C%E7%BA%A7/">#二级</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2021/09/05/9-Python%E6%A0%87%E5%87%86%E5%BA%93%E6%A6%82%E8%A7%88/" target="_self">
-          <img src="/img/bg.jpg" srcset="/img/loading.gif" lazyload alt="9.Python标准库概览">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/09/05/9-Python%E6%A0%87%E5%87%86%E5%BA%93%E6%A6%82%E8%A7%88/" target="_self">
-          9.Python标准库概览
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2021/09/05/9-Python%E6%A0%87%E5%87%86%E5%BA%93%E6%A6%82%E8%A7%88/" target="_self">
-        <div>
-          Python标准库概览
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-09-05 10:07" pubdate>
-              2021-09-05
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Python/" class="category-chain-item">Python</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Python/%E4%BA%8C%E7%BA%A7/" class="category-chain-item">二级</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/%E4%BA%8C%E7%BA%A7/">#二级</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2021/09/05/8-Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81/" target="_self">
-          <img src="/img/bg.jpg" srcset="/img/loading.gif" lazyload alt="8.Python计算生态">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/09/05/8-Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81/" target="_self">
-          8.Python计算生态
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2021/09/05/8-Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81/" target="_self">
-        <div>
-          Python计算生态
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-09-05 10:07" pubdate>
-              2021-09-05
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Python/" class="category-chain-item">Python</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Python/%E4%BA%8C%E7%BA%A7/" class="category-chain-item">二级</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/%E4%BA%8C%E7%BA%A7/">#二级</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2021/09/05/7-%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/" target="_self">
-          <img src="/img/bg.jpg" srcset="/img/loading.gif" lazyload alt="7.文件和数据格式化">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/09/05/7-%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/" target="_self">
-          7.文件和数据格式化
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2021/09/05/7-%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/" target="_self">
-        <div>
-          文件和数据格式化
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-09-05 10:07" pubdate>
-              2021-09-05
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Python/" class="category-chain-item">Python</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Python/%E4%BA%8C%E7%BA%A7/" class="category-chain-item">二级</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/%E4%BA%8C%E7%BA%A7/">#二级</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2021/09/05/6-%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" target="_self">
-          <img src="/img/bg.jpg" srcset="/img/loading.gif" lazyload alt="6.组合数据类型">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/09/05/6-%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" target="_self">
-          6.组合数据类型
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2021/09/05/6-%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" target="_self">
-        <div>
-          组合数据类型
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-09-05 10:06" pubdate>
-              2021-09-05
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Python/" class="category-chain-item">Python</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Python/%E4%BA%8C%E7%BA%A7/" class="category-chain-item">二级</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/%E4%BA%8C%E7%BA%A7/">#二级</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-
-
-  <nav aria-label="navigation">
-    <span class="pagination" id="pagination">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/#board">2</a><a class="page-number" href="/page/3/#board">3</a><a class="extend next" rel="next" href="/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
-    </span>
-  </nav>
-
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-  
-    <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
-    </div>
-  
-  
-  
-  
-</div>
-
-  </footer>
-
-  <!-- Scripts -->
-  
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '下雨天不打伞',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-10-15 11:39:34'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
       }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
-
-
-
-
+    }
   
-    <script  src="/js/img-lazyload.js" ></script>
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="下雨天不打伞" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151110537.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">17</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">下雨天不打伞</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/" title="python库学习"><img class="post_bg" src="/img/default_top.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="python库学习"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/" title="python库学习">python库学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-09-23T15:34:17.000Z" title="发表于 2022-09-23 23:34:17">2022-09-23</time></span></div><div class="content">python中常用库的学习笔记
+
+
+pandas库pandas 是基于Numpy的一种工具，主要用于数据分析任务。Pandas 纳入了大量库和一些标准的数据模型，提供了高校第操作大型数据集所需要的工具。pandas 的名称来自面板数据（panel data）和python数据分析（data analysis）。
+
+可以从CSV、JSON、SQL、Microsoft Excel导入数据
+主要数据结构Series（一维数据）和DataFrame（二维数据）
+
+123456789101112# pandas 简单实例&gt;&gt;&gt; import pandas as pd&gt;&gt;&gt; mydataset = &#123;	&#x27;sites&#x27;:[&#x27;Google&#x27;,&#x27;Runoob&#x27;,&#x27;Wiki&#x27;],	&#x27;number&#x27;:[1,2,3]	&#125;&gt;&gt;&gt; myvar = pd.DataFrame(mydataset)&gt;&gt;&gt; myvar    sit ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/09/03/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/" title="启发式算法"><img class="post_bg" src="/img/default_top.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="启发式算法"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/09/03/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/" title="启发式算法">启发式算法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-09-03T04:08:22.000Z" title="发表于 2022-09-03 12:08:22">2022-09-03</time></span></div><div class="content">暂无更多编辑，点击查看文章……
 
 
 
 
-  <script  src="/js/local-search.js" ></script>
+
+    MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+
+
+启发式算法（heuristic algorithm)是相对于最优化算法提出的。一个问题的最优算法求得该问题每个实例的最优解。启发式算法可以这样定义：一个基于直观或经验构造的算法，在可接受的花费（指计算时间和空间）下给出待解决组合优化问题每一个实例的一个可行解，该可行解与最优解的偏离程度一般不能被预计。现阶段，启发式算法以仿自然体算法为主，主要有蚁群算法、模拟退火法、神经网络等
+启发式搜索(Heuristically Search)又称为有信息搜索(Informed Search)，它是利用问题拥有的启发信息来引导搜索，达到减少搜索范围、降低问题复杂度的目的，这种利用启发信息的搜索过程称为启发式搜索。
+
+1)任何有助于找到问题的最优解，但不能保证找到最优解的方法均是启发式方法;
+2)有助于加速求解过程和找到较优解的方法是启发式方法。
+
+粒子群优化算法PSO（Particl ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/07/09/java%E5%B0%8F%E8%AE%B0/" title="java小记"><img class="post_bg" src="/img/default_top.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="java小记"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/09/java%E5%B0%8F%E8%AE%B0/" title="java小记">java小记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-09T09:13:16.000Z" title="发表于 2022-07-09 17:13:16">2022-07-09</time></span></div><div class="content">暂无更多编辑，点击查看文章……
+
+
+写在前面Java优势：
+
+Write Once, Run Anywhere
+
+Java三大版本
+
+JavaSE：标准版
+
+JavaME：嵌入式开发
+
+JavaEE：企业级开发
+
+
+三大名词
+
+JDK：Java Development Kit 
+
+JRE：Java Runtime Environment
+
+JVM：Java Virtual Machine
+
+
+
+JDK包含JRE,所以下载JDK就可以了，java的跨平台核心是使用了JVM
+
+java开发环境搭建JDK的下载与安装
+
+通过官网获取JDK：http://www.oracle.com
+
+配置环境变量
+
+系统变量里添加JAVA_HOME
+
+
+
+在系统变量path路径添加bin目录
+
+同样在系统变量path路径添加jre/bin目录
+
+Java8之后安装jdk不再提供jre的安装，可以通过命令导出：管理员身份打开cmd,切换到java安装路径，输入命令 bin\jlink.exe --module-path jmods --add-modules java.desktop --output jre ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/" title="虚拟机安装macOS系统"><img class="post_bg" src="/img/default_top.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="虚拟机安装macOS系统"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/" title="虚拟机安装macOS系统">虚拟机安装macOS系统</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-04-26T03:43:54.000Z" title="发表于 2022-04-26 11:43:54">2022-04-26</time></span></div><div class="content">VMware虚拟机安装macOS全过程详解
+
+
+参考链接
+虚拟机安装macos系统（VMware虚拟机安装macOS详细
+虚拟机VMware安装苹果系统macOS，超级详细教程，附文件下载，真教程！！
+如何使用虚拟机VMware安装苹果macOS系统
+1 安装虚拟机VMwareVMware16
+2  安装解锁工具unlocker解锁虚拟机安装macOS限制工具
+unlocker v3.0.3
+
+
+运行unlocker中win-install时，出现file not found-darwin.
+
+
+3 虚拟机安装 maOSmacOS系统下载
+macOS kealos 10.15 （非百度云盘）
+Apple macOS 下载汇总（系统、应用和技巧）
+
+
+报错客户机操作系统已禁用 CPU
+
+
+4 解决安装后屏幕适应问题安装VMware Tools，用到步骤二中darwin.iso
+优化虚拟机中的Mac系统怎么优化
+VMware 15 上Mac虚拟机卡顿情况的优化
+全网最详细的VMware虚拟机安装MacOS系统教程，没有之一！！！附全部资源
+网络
+mac虚拟机如何开启wifi
+VMware虚 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/05/11-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88/" title="11.Python第三方库纵览"><img class="post_bg" src="/img/default_top.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="11.Python第三方库纵览"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/05/11-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88/" title="11.Python第三方库纵览">11.Python第三方库纵览</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-09-05T02:08:23.000Z" title="发表于 2021-09-05 10:08:23">2021-09-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Python/">Python</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/Python/%E4%BA%8C%E7%BA%A7/">二级</a></span></div><div class="content">Python第三方库纵览
+
+11.Python第三方库纵览
+思维导图
+
+
+考纲考点更广泛的Python计算生态，只要求了解第三方库的名称，不限于以下领域: 网络爬虫、数据分析、文本处理、数据可视化、用户图形界面、机器学习、Web开发、游戏开发等
 
 
 
 
+方向
+第三方库
+介绍
 
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
 
 
-  
+网络爬虫方向
+requestsscrapy
+requests库是一个简洁且简单的处理HTTP请求的第三方库，它的最大优点是程序编写过程更接近正常URL访问过程。scrapy是Python开发的一个快速的、高层次的Web获取框架。
 
-  <noscript>
-    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
-  </noscript>
-</body>
-</html>
+
+数据分析方向
+numpyscipypandas
+numpy是Python的一种开源数值计算扩展第三方库，用于处理数据类型相同的多维数组（ndarray），简称“数组”scipy是一款方便、易于使用、专为科学和工程设计的Python工具包。pandas是基于numpy扩展的一个重要第三方库，它是为了解决数据分析任务而创建的。
+
+
+文本处理方向
+pdfmineropenpyxlpython-docxbeautifulsoup4
+pdfminer是一个可以从PDF文档中提取各类信息的第 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/09/05/10-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88/" title="10.Python第三方库概览"><img class="post_bg" src="/img/default_top.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="10.Python第三方库概览"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/05/10-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88/" title="10.Python第三方库概览">10.Python第三方库概览</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-09-05T02:07:57.000Z" title="发表于 2021-09-05 10:07:57">2021-09-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Python/">Python</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/Python/%E4%BA%8C%E7%BA%A7/">二级</a></span></div><div class="content">Python第三方库概览
+
+10.Python第三方库概览
+思维导图
+
+
+考纲考点第三方库的获取和安装脚本程序转变为可执行程序的第三方库:PyInstaller库(必选)第三方库: jieba库(必选)、wordcloud库（可选）
+
+10.1 Python第三方库的获取与安装Python第三方库依照安装方式灵活性和难易程度有三个方法：pip工具安装、自定义安装和文件安装。
+10.1.1 pip工具安装最常用且最高效的Python第三方库安装方式是采用pip工具安装。pip是Python官方提供并维护的在线第三方库安装工具。pip install&lt;拟安装库名称&gt;
+1234:\&gt;pip install pygame...Installing collected packages: pygameSuccessfully installed pygame-1.9.2b1
+
+pip常用指令,可以通过pip help查看：
+123456789101112131415161718192021C:\Users\86159&gt;pip -hUsage:  pip &lt;comma ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/05/9-Python%E6%A0%87%E5%87%86%E5%BA%93%E6%A6%82%E8%A7%88/" title="9.Python标准库概览"><img class="post_bg" src="/img/default_top.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="9.Python标准库概览"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/05/9-Python%E6%A0%87%E5%87%86%E5%BA%93%E6%A6%82%E8%A7%88/" title="9.Python标准库概览">9.Python标准库概览</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-09-05T02:07:40.000Z" title="发表于 2021-09-05 10:07:40">2021-09-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Python/">Python</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/Python/%E4%BA%8C%E7%BA%A7/">二级</a></span></div><div class="content">Python标准库概览
+
+9.Python标准库概览
+思维导图
+
+
+考纲考点 标准库: turtle库(必选) 标准库: random库(必选)、time库(可选）
+
+9.1 turtle库turtle（海龟）是Python重要的标准库之一，它能够进行基本的图形绘制。
+9.1.1 对turtle库的引用使用import保留字对turtle库的引用有如下三种方式:
+
+
+
+方式
+调用
+示例
+
+
+
+import turtle
+turtle.&lt;函数名&gt;()形式
+import turtle    turtle.circle(200) 
+
+
+from turtle import *
+&lt;函数名&gt;()
+from turtle import * circle(200)
+
+
+import turtle as t
+t.&lt;函数名&gt;()
+import turtle as t t.circle(200)
+
+
+
+turtle库包含100多个功能函数，主要包括窗体函数、画笔状态函数、画笔运动函数等三类。
+
+9.1.2 窗体函数turtle.setup(width, height,  ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/09/05/8-Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81/" title="8.Python计算生态"><img class="post_bg" src="/img/default_top.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="8.Python计算生态"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/05/8-Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81/" title="8.Python计算生态">8.Python计算生态</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-09-05T02:07:23.000Z" title="发表于 2021-09-05 10:07:23">2021-09-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Python/">Python</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/Python/%E4%BA%8C%E7%BA%A7/">二级</a></span></div><div class="content">Python计算生态
+
+8.Python计算生态
+思维导图
+
+8.1计算思维人类在认识世界、改造世界过程中表现出三种基本的思维特征：以实验和验证为特征的实证思维 ，以物理学科为代表；以推理和演绎为特征的逻辑思维，以数学学科为代表；以设计和构造为特征的计算思维，以计算机学科为代表。计算思维的本质是抽象（Abstraction）和自动化（Automation）
+8.2程序设计方法
+
+
+方法
+解释
+
+
+
+自顶而下的设计
+一个解决复杂问题行之有效的方法,基本思想是以一个总问题开始，试图把它表达为很多小问题组成的解决方案。再用同样的技术依次攻破每个小问题，最终问题变得非常小，以至于可以很容易解决。然后只需把所有的碎片组合起来，就可以得到一个程序。
+
+
+自底向上执行
+开展测试的更好办法也是将程序分成小部分逐个测试执行中等规模程序的最好方法是从结构图最底层开始，而不是从顶部开始，然后逐步上升。或者说，先运行和测试每一个基本函数，再测试由基础函数组成的整体函数，这样有助于定位错误
+
+
+8.3Python标准库有一部分Python计算生态随Python安装包一起发布，用户可以随时使用，被称为Python ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/05/7-%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/" title="7.文件和数据格式化"><img class="post_bg" src="/img/default_top.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="7.文件和数据格式化"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/05/7-%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/" title="7.文件和数据格式化">7.文件和数据格式化</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-09-05T02:07:09.000Z" title="发表于 2021-09-05 10:07:09">2021-09-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Python/">Python</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/Python/%E4%BA%8C%E7%BA%A7/">二级</a></span></div><div class="content">文件和数据格式化
+
+7.文件和数据格式化
+思维导图
+
+7.1文件类型
+
+
+类型
+含义
+
+
+
+文本文件
+文本文件一般由单一特定编码的字符组成，如UTF-8编码，内容容易统一展示和阅读。
+
+
+二进制
+二进制文件直接由比特0和比特1组成，文件内部数据的组织格式与文件用途有关。二进制是信息按照非字符但特定格式形成的文件，如，png格式的图片文件、avi格式的视频文件。
+
+
+二进制文件和文本文件最主要的区别在于是否有统一的字符编码。
+
+Python对文本文件和二进制文件采用统一的操作步骤，即“打开-操作-关闭”
+
+7.2文件的使用7.2.1文件的打开Python通过open()函数打开一个文件，并返回一个操作这个文件的变量，语法形式如下：&lt;变量名&gt; = open(&lt;文件路径及文件名&gt;, &lt;打开模式&gt;)
+
+
+
+打开模式
+含义
+
+
+
+‘r’
+只读模式，如果文件不存在，返回异常FileNotFoundError，默认值
+
+
+‘w’
+覆盖写模式，文件不存在则创建，存在则完全覆盖源文件
+
+
+‘x’
+创建写模式，文件不存在则创建，存在则返回异FileExistsError ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/09/05/6-%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="6.组合数据类型"><img class="post_bg" src="/img/default_top.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="6.组合数据类型"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/05/6-%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="6.组合数据类型">6.组合数据类型</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-09-05T02:06:50.000Z" title="发表于 2021-09-05 10:06:50">2021-09-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Python/">Python</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/Python/%E4%BA%8C%E7%BA%A7/">二级</a></span></div><div class="content">组合数据类型
+
+6.组合数据类型
+思维导图
+
+6.1集合集合类型是一个元素集合，元素之间无序，相同元素在集合中唯一存在。
+1234567&gt;&gt;&gt;S = &#123;1010, &quot;1010&quot;, 78.9&#125;&gt;&gt;&gt;type(S)&lt;class &#x27;set&#x27;&gt;&gt;&gt;&gt;len(S)3&gt;&gt;&gt;print(S)&#123;78.9, 1010,&#x27;1010&#x27;&#125;
+集合类型的操作符
+
+
+
+操作符的运算
+描述
+
+
+
+S – T
+返回一个新集合，包括在集合S中但不在集合T中的元素
+
+
+S &amp; T
+返回一个新集合，包括同时在集合S和T中的元素
+
+
+S^T
+返回一个新集合，包括集合S和T中非共同元素
+
+
+S∣T
+返回一个新集合，包括集合S和T中所有元素
+
+
+
+图例
+
+集合类型常用的操作函数和方法
+
+
+
+函数或方法
+描述
+
+
+
+S.add(x)
+如果数据项x不在集合S中，将x增加到s
+
+
+S.remove(x)
+如果x在集合S中，移除该元素；不在产生Key ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="page-number" href="/page/3/#content-inner">3</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151110537.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Aike</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">17</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Aike505" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1736134512@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1736134512&amp;site=qq&amp;menu=yes" target="_blank" title=""><i class="fab fa-qq"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/" title="python库学习"><img src="/img/default_top.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="python库学习"/></a><div class="content"><a class="title" href="/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/" title="python库学习">python库学习</a><time datetime="2022-09-23T15:34:17.000Z" title="发表于 2022-09-23 23:34:17">2022-09-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/03/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/" title="启发式算法"><img src="/img/default_top.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="启发式算法"/></a><div class="content"><a class="title" href="/2022/09/03/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/" title="启发式算法">启发式算法</a><time datetime="2022-09-03T04:08:22.000Z" title="发表于 2022-09-03 12:08:22">2022-09-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/09/java%E5%B0%8F%E8%AE%B0/" title="java小记"><img src="/img/default_top.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="java小记"/></a><div class="content"><a class="title" href="/2022/07/09/java%E5%B0%8F%E8%AE%B0/" title="java小记">java小记</a><time datetime="2022-07-09T09:13:16.000Z" title="发表于 2022-07-09 17:13:16">2022-07-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/" title="虚拟机安装macOS系统"><img src="/img/default_top.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="虚拟机安装macOS系统"/></a><div class="content"><a class="title" href="/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/" title="虚拟机安装macOS系统">虚拟机安装macOS系统</a><time datetime="2022-04-26T03:43:54.000Z" title="发表于 2022-04-26 11:43:54">2022-04-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/09/05/11-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88/" title="11.Python第三方库纵览"><img src="/img/default_top.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="11.Python第三方库纵览"/></a><div class="content"><a class="title" href="/2021/09/05/11-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88/" title="11.Python第三方库纵览">11.Python第三方库纵览</a><time datetime="2021-09-05T02:08:23.000Z" title="发表于 2021-09-05 10:08:23">2021-09-05</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python/"><span class="card-category-list-name">Python</span><span class="card-category-list-count">11</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python/%E4%BA%8C%E7%BA%A7/"><span class="card-category-list-name">二级</span><span class="card-category-list-count">11</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/hexo%E5%8D%9A%E5%AE%A2/"><span class="card-category-list-name">hexo博客</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB/"><span class="card-category-list-name">大学生活</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"><span class="card-category-list-name">日常记录</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%94%B5%E8%84%91/"><span class="card-category-list-name">电脑</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%BD%91%E7%AB%99/"><span class="card-category-list-name">网站</span><span class="card-category-list-count">2</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Python/" style="font-size: 1.5em; color: #99a9bf">Python</a> <a href="/tags/bug/" style="font-size: 1.1em; color: #999">bug</a> <a href="/tags/hexo/" style="font-size: 1.4em; color: #99a5b6">hexo</a> <a href="/tags/%E4%B8%BB%E9%A2%98/" style="font-size: 1.1em; color: #999">主题</a> <a href="/tags/%E4%BA%8C%E7%BA%A7/" style="font-size: 1.5em; color: #99a9bf">二级</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.2em; color: #999da3">博客</a> <a href="/tags/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB/" style="font-size: 1.1em; color: #999">大学生活</a> <a href="/tags/%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/" style="font-size: 1.1em; color: #999">推送百度</a> <a href="/tags/%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE/" style="font-size: 1.1em; color: #999">新建分类标签</a> <a href="/tags/%E6%B3%A8%E5%86%8C%E5%9F%9F%E5%90%8D/" style="font-size: 1.1em; color: #999">注册域名</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E7%89%87%E6%AE%B5/" style="font-size: 1.3em; color: #99a1ac">生活片段</a> <a href="/tags/%E7%94%B5%E8%84%91/" style="font-size: 1.1em; color: #999">电脑</a> <a href="/tags/%E7%A3%81%E7%9B%98/" style="font-size: 1.1em; color: #999">磁盘</a> <a href="/tags/%E7%BD%91%E7%AB%99/" style="font-size: 1.1em; color: #999">网站</a> <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" style="font-size: 1.1em; color: #999">虚拟机</a> <a href="/tags/%E9%80%89%E8%AF%BE/" style="font-size: 1.1em; color: #999">选课</a> <a href="/tags/%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/" style="font-size: 1.2em; color: #999da3">部署博客</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">九月 2022</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/07/"><span class="card-archive-list-date">七月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">四月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">12</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/08/"><span class="card-archive-list-date">八月 2021</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/07/"><span class="card-archive-list-date">七月 2021</span><span class="card-archive-list-count">5</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">26</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-10-15T03:39:33.225Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Aike</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
