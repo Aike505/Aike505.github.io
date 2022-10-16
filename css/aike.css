@@ -1,3 +1,4 @@
+/* 背景切换 */
 /* 由于全屏会出bug，所以直接给他隐藏 */
 
 .winbox {
@@ -131,4 +132,22 @@ button#go-up:hover #percent {
     width: 38px;
     height: 38px;
     font-size: 18px;
+}
+
+/* 导航栏居中 */
+#nav .menus_items {
+    /* display: inline; 这个带不带都可以，本来就是inline */
+    position: absolute;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 子菜单栏横向居中 */
+#nav .menus_items .menus_item:hover .menus_item_child{
+    display: flex;
+}
+/* 这里的5是代表导航栏的第二个元素，即有子菜单的元素，可以按自己需求修改 */
+.menus_items .menus_item:nth-child(5) .menus_item_child {
+    left: -65px;
 }
