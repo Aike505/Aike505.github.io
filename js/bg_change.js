@@ -36,3 +36,74 @@ function changeBg(s, flag) {
     } else bg.style.backgroundImage = s
     if (!flag) { saveData('blogbg', s) }
 }
+
+// 以下为2.0新增内容
+
+// 创建窗口
+var winbox = ''
+
+function createWinbox() {
+    let div = document.createElement('div')
+    document.body.appendChild(div)
+    winbox = WinBox({
+        id: 'changeBgBox',
+        index: 999,
+        title: "切换背景",
+        x: "center",
+        y: "center",
+        minwidth: '300px',
+        height: "60%",
+        background: 'var(--leonus-blue)',
+        onmaximize: () => { div.innerHTML = `<style>body::-webkit-scrollbar {display: none;}div#changeBgBox {width: 100% !important;}</style>` },
+        onrestore: () => { div.innerHTML = '' }
+    });
+    winResize();
+    window.addEventListener('resize', winResize)
+
+    // 每一类我放了一个演示，直接往下复制粘贴 a标签 就可以，需要注意的是 函数里面的链接 冒号前面需要添加反斜杠\进行转义
+    winbox.body.innerHTML = `
+    <div id="article-container" style="padding:10px;">
+    
+    <p><button onclick="localStorage.removeItem('blogbg');location.reload();" style="background:#5fcdff;display:block;width:100%;padding: 15px 0;border-radius:6px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 点我恢复默认背景</button></p>
+    <h2 id="图片（手机）"><a href="#图片（手机）" class="headerlink" title="图片（手机）"></a>图片（手机）</h2>
+    <div class="bgbox">
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210160953481.jpg)" class="pimgbox" onclick="changeBg('url(https\://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210160953481.jpg)')"></a>
+    </div>
+    
+    <h2 id="图片（电脑）"><a href="#图片（电脑）" class="headerlink" title="图片（电脑）"></a>图片（电脑）</h2>
+    <div class="bgbox">
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151229279.jpg)" class="imgbox" onclick="changeBg('url(https\://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151229279.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151228677.jpg)" class="imgbox" onclick="changeBg('url(https\://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151228677.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151826055.jpg)" class="imgbox" onclick="changeBg('url(https\://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151826055.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151228758.jpg)" class="imgbox" onclick="changeBg('url(https\://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151228758.jpg)')"></a>
+    </div>
+    
+    
+    
+    <h2 id="渐变色"><a href="#渐变色" class="headerlink" title="渐变色"></a>渐变色</h2>
+    <div class="bgbox">
+    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, #eecda3, #ef629f)" onclick="changeBg('linear-gradient(to right, #eecda3, #ef629f)')"></a>
+    </div>
+    
+    <h2 id="纯色"><a href="#纯色" class="headerlink" title="纯色"></a>纯色</h2>
+    <div class="bgbox">
+    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #7D9D9C" onclick="changeBg('#7D9D9C')"></a> 
+    </div>
+`;
+}
+
+// 适应窗口大小
+function winResize() {
+    var offsetWid = document.documentElement.clientWidth;
+    if (offsetWid <= 768) {
+        winbox.resize(offsetWid * 0.95 + "px", "90%").move("center", "center");
+    } else {
+        winbox.resize(offsetWid * 0.6 + "px", "70%").move("center", "center");
+    }
+}
+
+// 切换状态，窗口已创建则控制窗口显示和隐藏，没窗口则创建窗口
+function toggleWinbox() {
+    if (document.querySelector('#changeBgBox')) winbox.toggleClass('hide');
+    else createWinbox();
+}
