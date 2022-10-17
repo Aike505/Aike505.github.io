@@ -1,3 +1,62 @@
+/* 透明效果 */
+/* 首页文章卡片 */
+#recent-posts > .recent-post-item{
+  background:rgba(255, 255, 255, 0.9);
+}
+/* 首页侧栏卡片 */
+.card-widget{
+background:rgba(255, 255, 255, 0.9)!important;
+}
+/* 文章页面正文背景 */
+div#post{
+background: rgba(255, 255, 255, 0.9);
+}
+/* 分页页面 */
+div#page{
+background: rgba(255, 255, 255, 0.9);
+}
+/* 归档页面 */
+div#archive{
+background: rgba(255, 255, 255, 0.9);
+}
+/* 标签页面 */
+div#tag{
+background: rgba(255, 255, 255, 0.9);
+}
+/* 分类页面 */
+div#category{
+background: rgba(255, 255, 255, 0.9);
+}
+/* 页脚透明 */
+#footer{
+  background: transparent!important;
+}
+/* 页脚黑色透明玻璃效果移除 */
+#footer::before{
+    background: transparent!important;
+  }
+/* 头图透明 */
+#page-header{
+  background: transparent!important;
+}
+/* 头图遮罩层透明 */
+#page-header::before{
+  background: transparent!important;
+  }
+/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
+#page-header.post-bg:before {
+  background-color: transparent!important;
+}
+/*夜间模式伪类遮罩层透明*/
+[data-theme="dark"]
+  #footer::before{
+      background: transparent!important;
+    }
+[data-theme="dark"]
+  #page-header::before{
+    background: transparent!important;
+    }
+
 /* 背景切换 */
 /* 由于全屏会出bug，所以直接给他隐藏 */
 
@@ -245,124 +304,6 @@ button#go-up:hover #percent {
 }
 
 
-/* 评论暗背景 */
-:root{
-    --heo-white: #fff;
-    --heo-blue: #286dea;
-    --heo-none: rgba(0,0,0,0);
-    --heo-gray: #999999;
-  }
-  [data-theme=light] {
-    --heo-fontcolor: #000;
-    --heo-background: #fff;
-    --heo-maskbg: rgba(255, 255, 255, 0.6);
-    --heo-navbg: rgba(255, 255, 255, 0.9);;
-    --heo-hovertext: #286dea;
-    --heo-ahoverbg: #F7F7FA;
-    --heo-lighttext: #ef794f;
-    --heo-secondtext: rgba(0, 0, 0, 0.6);
-    --heo-card-btn-bg: #F7F7FA;
-    --heo-post-blockquote-bg: #f2f5f7;
-    --heo-sceondbg: #F7F7FA;
-  }
-  [data-theme=dark] {
-    --heo-fontcolor: #fff;
-    --heo-background: #1e1e1e;
-    --heo-maskbg: rgba(0,0,0, 0.6);
-    --heo-navbg: rgba(0,0,0, 0.9);
-    --heo-hovertext: #286dea;
-    --heo-ahoverbg: #fff;
-    --heo-lighttext: #f2b94b;
-    --heo-secondtext: rgba(255, 255, 255, 0.6);
-    --heo-card-btn-bg: #3f3f3f;
-    --heo-post-blockquote-bg: #000;
-    --heo-sceondbg: #252627;
-  }
-  
-  /* 评论 */
-  /* ---------------------------------------------------------------- */
-  
-  /* 填写项标题 */
-  .el-input-group__append, .el-input-group__prepend{
-    background-color: var(--heo-sceondbg)!important;
-    color: var(--heo-fontcolor)!important;
-    border: 0px solid var(--heo-blue)!important;
-  }
-  
-  /* 输入框 */
-  .el-input__inner{
-    background: var(--heo-post-blockquote-bg)!important;
-    border: 0px solid var(--heo-blue)!important;
-    color: var(--heo-fontcolor)!important;
-  }
-  
-  /* 评论输入框 */
-  .el-textarea__inner{
-    background: var(--heo-post-blockquote-bg)!important;
-    border: 0px solid var(--heo-blue)!important;
-    color: var(--heo-fontcolor)!important;
-  }
-  
-  /* 评论数量字号 */
-  #twikoo > div.tk-comments > div.tk-comments-container > div.tk-comments-title > span:nth-child(1){
-    display: none!important;
-  }
-  
-  .tk-icon[data-v-2619081a]{
-    transform: translateY(-46px);
-  }
-  
-  /* 加载时背景颜色 */
-  .el-loading-mask{
-    background-color: var(--heo-background)!important;
-  }
-  
-  
-  /* 评论博主标签圆角 */
-  .tk-tag-green{
-    border-radius: 12px!important;
-    border: 0px solid #e1f3d8!important;
-  }
-  
-  [data-theme=dark] .tk-tag-green{
-    background-color: #67c23a21!important;
-  }
-  
-  /* 预览按钮 */
-  .el-button{
-    background: var(--heo-card-btn-bg)!important;
-    border: 0px solid var(--heo-blue)!important;
-    color: var(--heo-fontcolor)!important;
-  }
-  
-  .el-button:hover{
-    background: var(--heo-blue)!important;
-    color: var(--heo-white)!important;
-  }
-  
-  /* 发送按钮正常状态 */
-  .el-button--primary{
-    background-color: var(--heo-blue)!important;
-    border-color: var(--heo-blue)!important;
-    color: var(--heo-white)!important;
-  }
-  
-  /* 发送按钮禁用状态 */
-  .el-button--primary.is-disabled, .el-button--primary.is-disabled:active, .el-button--primary.is-disabled:focus, .el-button--primary.is-disabled:hover{
-    opacity: 0.4;
-  }
-  
-  /* 更多评论的渐变遮罩 */
-  [data-theme=dark] .tk-expand{
-    background: linear-gradient(rgba(29, 31, 32,0), rgba(29, 31, 32,1))!important;
-    color: var(--heo-fontcolor);
-  }
-  
-  /* 评论时间 */
-  .tk-time{
-    color: var(--heo-gray);
-  }
-
 /* 归档显示生肖 */
 svg.icon {
     /* 这里定义svg.icon，避免和Butterfly自带的note标签冲突 */
@@ -434,3 +375,33 @@ div#quit-board.fixedcomment {
   div#quit-board.fixedcomment {
     background: rgba(147, 146, 128, 0.3);
   }
+
+/* 夜间模式 */
+[data-theme="dark"]
+  #aside-content .card-widget{
+      background: rgba(0, 0, 0, 0.5)!important;
+    }
+[data-theme="dark"]
+  div#post{
+    background: rgba(0, 0, 0, 0.5)!important;
+    }
+
+/* 阅读模式 */
+.read-mode #aside-content .card-widget{
+  background: rgba(158, 204, 171, 0.5)!important;
+}
+.read-mode div#post{
+background: rgba(158, 204, 171, 0.5)!important;
+}
+
+/* 夜间模式下的阅读模式 */
+[data-theme="dark"]
+  .read-mode #aside-content .card-widget{
+        background: rgba(0, 0, 0, 0.5)!important;
+        color: #ffffff;
+      }
+[data-theme="dark"]  
+  .read-mode div#post{
+      background: rgba(0, 0, 0, 0.5)!important;
+      color: #ffffff;
+      }
