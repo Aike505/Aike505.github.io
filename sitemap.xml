@@ -326,34 +326,7 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/games/2048/index.html</loc>
-    
-    <lastmod>2020-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aike505.github.io/games/PacMan/index.html</loc>
-    
-    <lastmod>2020-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/games/gobang/index.html</loc>
-    
-    <lastmod>2020-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/games/element/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -371,7 +344,34 @@
   </url>
   
   <url>
+    <loc>https://aike505.github.io/games/2048/index.html</loc>
+    
+    <lastmod>2020-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/games/element/index.html</loc>
+    
+    <lastmod>2020-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aike505.github.io/games/piano/index.html</loc>
+    
+    <lastmod>2020-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/games/gobang/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
