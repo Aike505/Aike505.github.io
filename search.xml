@@ -924,6 +924,164 @@
       </tags>
   </entry>
   <entry>
+    <title>7.文件和数据格式化</title>
+    <url>/2021/09/05/7-%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/</url>
+    <content><![CDATA[<p>文件和数据格式化</p>
+<span id="more"></span>
+<h1 id="7-文件和数据格式化"><a href="#7-文件和数据格式化" class="headerlink" title="7.文件和数据格式化"></a>7.文件和数据格式化</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96.png"></li>
+</ul>
+<h2 id="7-1文件类型"><a href="#7-1文件类型" class="headerlink" title="7.1文件类型"></a>7.1文件类型</h2><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>文本文件</td>
+<td>文本文件一般由单一特定编码的字符组成，如UTF-8编码，内容容易统一展示和阅读。</td>
+</tr>
+<tr>
+<td>二进制</td>
+<td>二进制文件直接由比特0和比特1组成，文件内部数据的组织格式与文件用途有关。二进制是信息按照非字符但特定格式形成的文件，如，png格式的图片文件、avi格式的视频文件。</td>
+</tr>
+</tbody></table>
+<p>二进制文件和文本文件最主要的区别在于是否有统一的字符编码。</p>
+<blockquote>
+<p>Python对文本文件和二进制文件采用统一的操作步骤，即“<strong>打开-操作-关闭</strong>”</p>
+</blockquote>
+<h2 id="7-2文件的使用"><a href="#7-2文件的使用" class="headerlink" title="7.2文件的使用"></a>7.2文件的使用</h2><h3 id="7-2-1文件的打开"><a href="#7-2-1文件的打开" class="headerlink" title="7.2.1文件的打开"></a>7.2.1文件的打开</h3><p>Python通过open()函数打开一个文件，并返回一个操作这个文件的变量，语法形式如下：<br><br>&lt;变量名&gt; = open(&lt;文件路径及文件名&gt;, &lt;打开模式&gt;)</p>
+<table>
+<thead>
+<tr>
+<th>打开模式</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>‘r’</td>
+<td>只读模式，如果文件不存在，返回异常FileNotFoundError，默认值</td>
+</tr>
+<tr>
+<td>‘w’</td>
+<td>覆盖写模式，文件不存在则创建，存在则完全覆盖源文件</td>
+</tr>
+<tr>
+<td>‘x’</td>
+<td>创建写模式，文件不存在则创建，存在则返回异FileExistsError ‘a’</td>
+</tr>
+<tr>
+<td>‘b’</td>
+<td>二进制文件模式</td>
+</tr>
+<tr>
+<td>‘t’</td>
+<td>文本文件模式，默认值</td>
+</tr>
+<tr>
+<td>‘+’</td>
+<td>与r/w/x/a一同使用，在原功能基础上增加同时读写功能</td>
+</tr>
+</tbody></table>
+<h3 id="7-2-2文件的关闭"><a href="#7-2-2文件的关闭" class="headerlink" title="7.2.2文件的关闭"></a>7.2.2文件的关闭</h3><p>&lt;变量名&gt;.close()</p>
+<h3 id="7-2-3文件的读"><a href="#7-2-3文件的读" class="headerlink" title="7.2.3文件的读"></a>7.2.3文件的读</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>f.read(size=-1)</td>
+<td>从文件中读入整个文件内容。参数可选，如果给出，读入前size长度的字符串或字节流</td>
+</tr>
+<tr>
+<td>f.readline(size = -1)</td>
+<td>从文件中读入一行内容。参数可选，如果给出，读入该行前size长度的字符串或字节流</td>
+</tr>
+<tr>
+<td>f.readlines(hint=-1)</td>
+<td>从文件中读入所有行，以每行为元素形成一个列表。参数可选，如果给出，读入hint行</td>
+</tr>
+<tr>
+<td>f.seek(offset)</td>
+<td>改变当前文件操作指针的位置，offset的值：0：文件开头； 2: 文件结尾</td>
+</tr>
+</tbody></table>
+<p>f = open(&lt;文件路径及名称&gt;,”r”)<br><br>for line in f:<br><br><code># 处理一行数据</code><br><br>f.close()</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">f = open(&quot;D://b.txt&quot;, &quot;r&quot;)</span><br><span class="line">for line in f:</span><br><span class="line">    print(line)</span><br><span class="line">f.close()</span><br><span class="line"></span><br><span class="line">&gt;&gt;</span><br><span class="line">新年都未有芳华，二月初惊见草芽。</span><br><span class="line"></span><br><span class="line">白雪却嫌春色晚，故穿庭树作飞花。</span><br></pre></td></tr></table></figure>
+<h3 id="7-2-4文件的写"><a href="#7-2-4文件的写" class="headerlink" title="7.2.4文件的写"></a>7.2.4文件的写</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>f.write(s)</td>
+<td>向文件写入一个字符串或字节流</td>
+</tr>
+<tr>
+<td>f.writelines(lines)</td>
+<td>将一个元素为字符串的列表写入文件</td>
+</tr>
+</tbody></table>
+<p><strong>f.write(s)</strong>  向文件写入字符串s，每次写入后，将会记录一个写入指针。该方法可以反复调用，将在写入指针后分批写入内容，直至文件被关闭。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;f = open(&quot;D://c.txt&quot;, &quot;w&quot;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;新年都未有芳华\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;二月初惊见草芽\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;白雪却嫌春色晚\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;故穿庭树作飞花\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.close()</span><br><span class="line"></span><br><span class="line">&gt;&gt;</span><br><span class="line">新年都未有芳华</span><br><span class="line">二月初惊见草芽</span><br><span class="line">白雪却嫌春色晚</span><br><span class="line">故穿庭树作飞花</span><br></pre></td></tr></table></figure>
+<p><strong>f.writelines(lines)</strong> 直接将列表类型的各元素连接起来写入文件f。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;ls = [&#x27;新年都未有芳华\n&#x27;,&#x27;二月初惊见草芽\n&#x27;,&#x27;白雪却嫌春色晚\n&#x27;,&#x27;故穿庭树作飞花\n&#x27;]</span><br><span class="line">&gt;&gt;&gt;f = open(&quot;D://c.txt&quot;, &quot;w&quot;)</span><br><span class="line">&gt;&gt;&gt;f.writelines(ls)</span><br><span class="line">&gt;&gt;&gt;f.close()</span><br></pre></td></tr></table></figure>
+
+<h2 id="7-3数据的维度"><a href="#7-3数据的维度" class="headerlink" title="7.3数据的维度"></a>7.3数据的维度</h2><p>一维数据由对等关系的有序或无序数据构成，采用线性方式组织，对应于数学中数组的概念。<br></p>
+<ul>
+<li>一维数据<blockquote>
+<p>北京、上海、天津、重庆</p>
+</blockquote>
+</li>
+</ul>
+<p>二维数据，也称表格数据，由关联关系数据构成，采用二维表格方式组织，对应于数学中的矩阵，常见的表格都属于二维数据。<br><br>高维数据由键值对类型的数据构成，采用对象方式组织，可以多层嵌套。<br></p>
+<ul>
+<li><p>二维数据<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96_1.png"></p>
+</li>
+<li><p>高维数据<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96_2.png"></p>
+</li>
+</ul>
+<p>一维数据的存储</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>采用空格分隔元素</td>
+<td>例如：<br>北京 上海 天津 重庆</td>
+</tr>
+<tr>
+<td>采用逗号分隔元素</td>
+<td>例如：<br>北京,上海,天津,重庆</td>
+</tr>
+<tr>
+<td>采用换行分隔包括</td>
+<td>例如：<br>北京<br>上海<br>天津<br>重庆</td>
+</tr>
+<tr>
+<td>其他特殊符号分隔，以分号分隔为例</td>
+<td>例如：<br>北京;上海;天津;重庆</td>
+</tr>
+</tbody></table>
+<h2 id="7-4实例解析：国家财政数据趋势演算"><a href="#7-4实例解析：国家财政数据趋势演算" class="headerlink" title="7.4实例解析：国家财政数据趋势演算"></a>7.4实例解析：国家财政数据趋势演算</h2>]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>6.组合数据类型</title>
     <url>/2021/09/05/6-%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
     <content><![CDATA[<p>组合数据类型</p>
@@ -1139,180 +1297,6 @@
       </tags>
   </entry>
   <entry>
-    <title>7.文件和数据格式化</title>
-    <url>/2021/09/05/7-%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/</url>
-    <content><![CDATA[<p>文件和数据格式化</p>
-<span id="more"></span>
-<h1 id="7-文件和数据格式化"><a href="#7-文件和数据格式化" class="headerlink" title="7.文件和数据格式化"></a>7.文件和数据格式化</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96.png"></li>
-</ul>
-<h2 id="7-1文件类型"><a href="#7-1文件类型" class="headerlink" title="7.1文件类型"></a>7.1文件类型</h2><table>
-<thead>
-<tr>
-<th>类型</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>文本文件</td>
-<td>文本文件一般由单一特定编码的字符组成，如UTF-8编码，内容容易统一展示和阅读。</td>
-</tr>
-<tr>
-<td>二进制</td>
-<td>二进制文件直接由比特0和比特1组成，文件内部数据的组织格式与文件用途有关。二进制是信息按照非字符但特定格式形成的文件，如，png格式的图片文件、avi格式的视频文件。</td>
-</tr>
-</tbody></table>
-<p>二进制文件和文本文件最主要的区别在于是否有统一的字符编码。</p>
-<blockquote>
-<p>Python对文本文件和二进制文件采用统一的操作步骤，即“<strong>打开-操作-关闭</strong>”</p>
-</blockquote>
-<h2 id="7-2文件的使用"><a href="#7-2文件的使用" class="headerlink" title="7.2文件的使用"></a>7.2文件的使用</h2><h3 id="7-2-1文件的打开"><a href="#7-2-1文件的打开" class="headerlink" title="7.2.1文件的打开"></a>7.2.1文件的打开</h3><p>Python通过open()函数打开一个文件，并返回一个操作这个文件的变量，语法形式如下：<br><br>&lt;变量名&gt; = open(&lt;文件路径及文件名&gt;, &lt;打开模式&gt;)</p>
-<table>
-<thead>
-<tr>
-<th>打开模式</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>‘r’</td>
-<td>只读模式，如果文件不存在，返回异常FileNotFoundError，默认值</td>
-</tr>
-<tr>
-<td>‘w’</td>
-<td>覆盖写模式，文件不存在则创建，存在则完全覆盖源文件</td>
-</tr>
-<tr>
-<td>‘x’</td>
-<td>创建写模式，文件不存在则创建，存在则返回异FileExistsError ‘a’</td>
-</tr>
-<tr>
-<td>‘b’</td>
-<td>二进制文件模式</td>
-</tr>
-<tr>
-<td>‘t’</td>
-<td>文本文件模式，默认值</td>
-</tr>
-<tr>
-<td>‘+’</td>
-<td>与r/w/x/a一同使用，在原功能基础上增加同时读写功能</td>
-</tr>
-</tbody></table>
-<h3 id="7-2-2文件的关闭"><a href="#7-2-2文件的关闭" class="headerlink" title="7.2.2文件的关闭"></a>7.2.2文件的关闭</h3><p>&lt;变量名&gt;.close()</p>
-<h3 id="7-2-3文件的读"><a href="#7-2-3文件的读" class="headerlink" title="7.2.3文件的读"></a>7.2.3文件的读</h3><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>f.read(size=-1)</td>
-<td>从文件中读入整个文件内容。参数可选，如果给出，读入前size长度的字符串或字节流</td>
-</tr>
-<tr>
-<td>f.readline(size = -1)</td>
-<td>从文件中读入一行内容。参数可选，如果给出，读入该行前size长度的字符串或字节流</td>
-</tr>
-<tr>
-<td>f.readlines(hint=-1)</td>
-<td>从文件中读入所有行，以每行为元素形成一个列表。参数可选，如果给出，读入hint行</td>
-</tr>
-<tr>
-<td>f.seek(offset)</td>
-<td>改变当前文件操作指针的位置，offset的值：0：文件开头； 2: 文件结尾</td>
-</tr>
-</tbody></table>
-<p>f = open(&lt;文件路径及名称&gt;,”r”)<br><br>for line in f:<br><br><code># 处理一行数据</code><br><br>f.close()</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">f = open(&quot;D://b.txt&quot;, &quot;r&quot;)</span><br><span class="line">for line in f:</span><br><span class="line">    print(line)</span><br><span class="line">f.close()</span><br><span class="line"></span><br><span class="line">&gt;&gt;</span><br><span class="line">新年都未有芳华，二月初惊见草芽。</span><br><span class="line"></span><br><span class="line">白雪却嫌春色晚，故穿庭树作飞花。</span><br></pre></td></tr></table></figure>
-<h3 id="7-2-4文件的写"><a href="#7-2-4文件的写" class="headerlink" title="7.2.4文件的写"></a>7.2.4文件的写</h3><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>f.write(s)</td>
-<td>向文件写入一个字符串或字节流</td>
-</tr>
-<tr>
-<td>f.writelines(lines)</td>
-<td>将一个元素为字符串的列表写入文件</td>
-</tr>
-</tbody></table>
-<p><strong>f.write(s)</strong>  向文件写入字符串s，每次写入后，将会记录一个写入指针。该方法可以反复调用，将在写入指针后分批写入内容，直至文件被关闭。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;f = open(&quot;D://c.txt&quot;, &quot;w&quot;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;新年都未有芳华\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;二月初惊见草芽\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;白雪却嫌春色晚\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.write(&#x27;故穿庭树作飞花\n&#x27;)</span><br><span class="line">&gt;&gt;&gt;f.close()</span><br><span class="line"></span><br><span class="line">&gt;&gt;</span><br><span class="line">新年都未有芳华</span><br><span class="line">二月初惊见草芽</span><br><span class="line">白雪却嫌春色晚</span><br><span class="line">故穿庭树作飞花</span><br></pre></td></tr></table></figure>
-<p><strong>f.writelines(lines)</strong> 直接将列表类型的各元素连接起来写入文件f。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;ls = [&#x27;新年都未有芳华\n&#x27;,&#x27;二月初惊见草芽\n&#x27;,&#x27;白雪却嫌春色晚\n&#x27;,&#x27;故穿庭树作飞花\n&#x27;]</span><br><span class="line">&gt;&gt;&gt;f = open(&quot;D://c.txt&quot;, &quot;w&quot;)</span><br><span class="line">&gt;&gt;&gt;f.writelines(ls)</span><br><span class="line">&gt;&gt;&gt;f.close()</span><br></pre></td></tr></table></figure>
-
-<h2 id="7-3数据的维度"><a href="#7-3数据的维度" class="headerlink" title="7.3数据的维度"></a>7.3数据的维度</h2><p>一维数据由对等关系的有序或无序数据构成，采用线性方式组织，对应于数学中数组的概念。<br></p>
-<ul>
-<li>一维数据<blockquote>
-<p>北京、上海、天津、重庆</p>
-</blockquote>
-</li>
-</ul>
-<p>二维数据，也称表格数据，由关联关系数据构成，采用二维表格方式组织，对应于数学中的矩阵，常见的表格都属于二维数据。<br><br>高维数据由键值对类型的数据构成，采用对象方式组织，可以多层嵌套。<br></p>
-<ul>
-<li><p>二维数据<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96_1.png"></p>
-</li>
-<li><p>高维数据<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_7.%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96_2.png"></p>
-</li>
-</ul>
-<p>一维数据的存储</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>采用空格分隔元素</td>
-<td>例如：<br>北京 上海 天津 重庆</td>
-</tr>
-<tr>
-<td>采用逗号分隔元素</td>
-<td>例如：<br>北京,上海,天津,重庆</td>
-</tr>
-<tr>
-<td>采用换行分隔包括</td>
-<td>例如：<br>北京<br>上海<br>天津<br>重庆</td>
-</tr>
-<tr>
-<td>其他特殊符号分隔，以分号分隔为例</td>
-<td>例如：<br>北京;上海;天津;重庆</td>
-</tr>
-</tbody></table>
-<h2 id="7-4实例解析：国家财政数据趋势演算"><a href="#7-4实例解析：国家财政数据趋势演算" class="headerlink" title="7.4实例解析：国家财政数据趋势演算"></a>7.4实例解析：国家财政数据趋势演算</h2>]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日常记录</title>
-    <url>/2021/08/16/8-16/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200">
-<span id="more"></span>
-> 一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以**平凡**的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处>~<
-
-<p> <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210814.jpg"></p>
-]]></content>
-      <categories>
-        <category>日常记录</category>
-      </categories>
-      <tags>
-        <tag>生活片段</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>日常记录</title>
     <url>/2021/08/17/8-17/</url>
     <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg " width = "300"  height = "200">
@@ -1335,177 +1319,36 @@
       </tags>
   </entry>
   <entry>
-    <title>8.Python计算生态</title>
-    <url>/2021/09/05/8-Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81/</url>
-    <content><![CDATA[<p>Python计算生态</p>
+    <title>日常记录</title>
+    <url>/2021/08/16/8-16/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200">
 <span id="more"></span>
-<h1 id="8-Python计算生态"><a href="#8-Python计算生态" class="headerlink" title="8.Python计算生态"></a>8.Python计算生态</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_8.Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81.png"></li>
-</ul>
-<h2 id="8-1计算思维"><a href="#8-1计算思维" class="headerlink" title="8.1计算思维"></a>8.1计算思维</h2><p>人类在认识世界、改造世界过程中表现出<em>三种基本的思维特征</em>：以实验和验证为特征的<strong>实证思维</strong> ，以物理学科为代表；以推理和演绎为特征的<strong>逻辑思维</strong>，以数学学科为代表；以设计和构造为特征的<strong>计算思维</strong>，以计算机学科为代表。<br><br>计算思维的本质是<strong>抽象</strong>（Abstraction）和<strong>自动化</strong>（Automation）</p>
-<h2 id="8-2程序设计方法"><a href="#8-2程序设计方法" class="headerlink" title="8.2程序设计方法"></a>8.2程序设计方法</h2><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>解释</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>自顶而下的设计</td>
-<td>一个解决复杂问题行之有效的方法,基本思想是以一个总问题开始，试图把它表达为很多小问题组成的解决方案。再用同样的技术依次攻破每个小问题，最终问题变得非常小，以至于可以很容易解决。然后只需把所有的碎片组合起来，就可以得到一个程序。</td>
-</tr>
-<tr>
-<td>自底向上执行</td>
-<td>开展测试的更好办法也是将程序分成小部分逐个测试执行中等规模程序的最好方法是从结构图最底层开始，而不是从顶部开始，然后逐步上升。或者说，先运行和测试每一个基本函数，再测试由基础函数组成的整体函数，这样有助于定位错误</td>
-</tr>
-</tbody></table>
-<h2 id="8-3Python标准库"><a href="#8-3Python标准库" class="headerlink" title="8.3Python标准库"></a>8.3Python标准库</h2><p>有一部分Python计算生态随Python安装包一起发布，用户可以随时使用，被称为Python标准库。<br><br>受限于Python安装包的设定大小，标准库数量270个左右。</p>
-<h2 id="8-4Python第三方库"><a href="#8-4Python第三方库" class="headerlink" title="8.4Python第三方库"></a>8.4Python第三方库</h2><p>更广泛的Python计算生态采用额外安装方式服务用户，被称为Python第三方库。这些第三方库由全球各行业专家、工程师和爱好者开发，没有顶层设计，由开发者采用“尽力而为”的方式维护。Python通过新一代安装工具pip管理大部分Python第三方库的安装。</p>
-<h2 id="8-5基本的Python内置函数"><a href="#8-5基本的Python内置函数" class="headerlink" title="8.5基本的Python内置函数"></a>8.5基本的Python内置函数</h2><p>Python解释器提供了68个内置函数（下面介绍32个）</p>
-<table>
-<thead>
-<tr>
-<th>函数名称</th>
-<th>函数说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>abs(x)</td>
-<td>x的绝对值<br>如果x是复数，返回复数的模</td>
-</tr>
-<tr>
-<td>all(x)</td>
-<td>组合类型变量x中所有元素都为真时返回True，否则返回False；若x为空，返回True</td>
-</tr>
-<tr>
-<td>any(x)</td>
-<td>组合类型变量x中任一元素都为真时返回True，否则返回False；若x为空，返回False</td>
-</tr>
-<tr>
-<td>bin(x)</td>
-<td>将整数x转换为等值的二进制字符串</td>
-</tr>
-<tr>
-<td>bin(1010)</td>
-<td>的结果是’0b1111110010’</td>
-</tr>
-<tr>
-<td>bool(x)</td>
-<td>将x转换为Boolean类型，即True或False<br>bool(‘’) 的结果是False</td>
-</tr>
-<tr>
-<td>chr(i)</td>
-<td>返回Unicode为i的字符<br>chr(9996)的结果是’✌ ‘</td>
-</tr>
-<tr>
-<td>complex(r,i)</td>
-<td>创建一个复数 r + i*1j，其中i可以省略<br>complex(10,10)的结果是10+10j</td>
-</tr>
-<tr>
-<td>dict()</td>
-<td>创建字典类型<br>dict()的结果是一个空字典{}</td>
-</tr>
-<tr>
-<td>divmod(a,b)</td>
-<td>返回a和b的商及余数<br>divmod(10,3)结果是一个(3,1)</td>
-</tr>
-<tr>
-<td>eval(s)</td>
-<td>计算字符串s作为Python表达式的值<br>eval(‘1+99’)的结果是100</td>
-</tr>
-<tr>
-<td>exec(s)</td>
-<td>计算字符串s作为Python语句的值<br>exec(‘a = 1+999’)运行后，变量a的值为1000</td>
-</tr>
-<tr>
-<td>float(x)</td>
-<td>将x转换成浮点数<br>float(1010)的结果是1010.0</td>
-</tr>
-<tr>
-<td>hex(x)</td>
-<td>将整数转换为16进制字符串<br>hex(1010)的结果是’0x3f2’</td>
-</tr>
-<tr>
-<td>input(s)</td>
-<td>获取用户输入，其中s是字符串，作为提示信息<br>s可选</td>
-</tr>
-<tr>
-<td>int(x)</td>
-<td>将x转换成整数<br>int(9.9)的结果是9</td>
-</tr>
-<tr>
-<td>list(x)</td>
-<td>创建或将变量x转换成一个列表类型<br>list({10,9,8})的结果是[8,9,10]</td>
-</tr>
-<tr>
-<td>max(a1,a2,…)</td>
-<td>返回参数的最大值<br>max(1,2,3,4,5)的结果是5</td>
-</tr>
-<tr>
-<td>min(a1,a2,…)</td>
-<td>返回参数的最小值<br>min(1,2,3,4,5)的结果是1</td>
-</tr>
-<tr>
-<td>oct(x)</td>
-<td>将整数x转换成等值的八进制字符串形式<br>oct(1010)的结果是’0o1762’</td>
-</tr>
-<tr>
-<td>open(fname, m)</td>
-<td>打开文件，包括文本方式和二进制方式等<br>其中，m部分可以省略，默认是以文本可读形式打开</td>
-</tr>
-<tr>
-<td>ord(c)</td>
-<td>返回一个字符的Unicode编码值<br>ord(‘字’)的结果是23383</td>
-</tr>
-<tr>
-<td>pow(x,y)</td>
-<td>返回x的y次幂<br>pow(2,pow(2,2))的结果是16</td>
-</tr>
-<tr>
-<td>print(x)</td>
-<td>打印变量或字符串x<br>print()的end参数用来表示输出的结尾字符</td>
-</tr>
-<tr>
-<td>range(a,b,s)</td>
-<td>从a到b(不含)以s为步长产生一个序列<br>list(range(1,10,3))的结果是[1, 4, 7]</td>
-</tr>
-<tr>
-<td>reversed(r)</td>
-<td>返回组合类型r的逆序迭代形式<br>for i in reversed([1,2,3])将逆序遍历列表</td>
-</tr>
-<tr>
-<td>round(n)</td>
-<td>四舍五入方式计算n<br>round(10.6)的结果是11</td>
-</tr>
-<tr>
-<td>set(x)</td>
-<td>将组合数据类型x转换成集合类型<br>set([1,1,1,1])的结果是{1}</td>
-</tr>
-<tr>
-<td>sorted(x)</td>
-<td>对组合数据类型x进行排序，默认从小到大<br>sorted([1,3,5,2,4])的结果是[1,2,3,4,5]</td>
-</tr>
-<tr>
-<td>str(x)</td>
-<td>将x转换为等值的字符串类型<br>str(0x1010)的结果是’4112’</td>
-</tr>
-<tr>
-<td>sum(x)</td>
-<td>对组合数据类型x计算求和结果<br>sum([1,3,5,2,4])的结果是15</td>
-</tr>
-<tr>
-<td>type(x)</td>
-<td>返回变量x的数据类型<br>type({1:2})的结果是&lt;class&nbsp;’dict’&gt;</td>
-</tr>
-</tbody></table>
-<h2 id="8-5实例解析：Web页面元素提取"><a href="#8-5实例解析：Web页面元素提取" class="headerlink" title="8.5实例解析：Web页面元素提取"></a>8.5实例解析：Web页面元素提取</h2>]]></content>
+> 一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以**平凡**的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处>~<
+
+<p> <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210814.jpg"></p>
+]]></content>
       <categories>
-        <category>Python</category>
-        <category>二级</category>
+        <category>日常记录</category>
       </categories>
       <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
+        <tag>生活片段</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>8-18</title>
+    <url>/2021/08/18/8-18/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
+<span id="more"></span>
+>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
+]]></content>
+      <categories>
+        <category>日常记录</category>
+      </categories>
+      <tags>
+        <tag>生活片段</tag>
       </tags>
   </entry>
   <entry>
@@ -1978,20 +1821,177 @@
       </tags>
   </entry>
   <entry>
-    <title>8-18</title>
-    <url>/2021/08/18/8-18/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
+    <title>8.Python计算生态</title>
+    <url>/2021/09/05/8-Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81/</url>
+    <content><![CDATA[<p>Python计算生态</p>
 <span id="more"></span>
->中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
-]]></content>
+<h1 id="8-Python计算生态"><a href="#8-Python计算生态" class="headerlink" title="8.Python计算生态"></a>8.Python计算生态</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_8.Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81.png"></li>
+</ul>
+<h2 id="8-1计算思维"><a href="#8-1计算思维" class="headerlink" title="8.1计算思维"></a>8.1计算思维</h2><p>人类在认识世界、改造世界过程中表现出<em>三种基本的思维特征</em>：以实验和验证为特征的<strong>实证思维</strong> ，以物理学科为代表；以推理和演绎为特征的<strong>逻辑思维</strong>，以数学学科为代表；以设计和构造为特征的<strong>计算思维</strong>，以计算机学科为代表。<br><br>计算思维的本质是<strong>抽象</strong>（Abstraction）和<strong>自动化</strong>（Automation）</p>
+<h2 id="8-2程序设计方法"><a href="#8-2程序设计方法" class="headerlink" title="8.2程序设计方法"></a>8.2程序设计方法</h2><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>自顶而下的设计</td>
+<td>一个解决复杂问题行之有效的方法,基本思想是以一个总问题开始，试图把它表达为很多小问题组成的解决方案。再用同样的技术依次攻破每个小问题，最终问题变得非常小，以至于可以很容易解决。然后只需把所有的碎片组合起来，就可以得到一个程序。</td>
+</tr>
+<tr>
+<td>自底向上执行</td>
+<td>开展测试的更好办法也是将程序分成小部分逐个测试执行中等规模程序的最好方法是从结构图最底层开始，而不是从顶部开始，然后逐步上升。或者说，先运行和测试每一个基本函数，再测试由基础函数组成的整体函数，这样有助于定位错误</td>
+</tr>
+</tbody></table>
+<h2 id="8-3Python标准库"><a href="#8-3Python标准库" class="headerlink" title="8.3Python标准库"></a>8.3Python标准库</h2><p>有一部分Python计算生态随Python安装包一起发布，用户可以随时使用，被称为Python标准库。<br><br>受限于Python安装包的设定大小，标准库数量270个左右。</p>
+<h2 id="8-4Python第三方库"><a href="#8-4Python第三方库" class="headerlink" title="8.4Python第三方库"></a>8.4Python第三方库</h2><p>更广泛的Python计算生态采用额外安装方式服务用户，被称为Python第三方库。这些第三方库由全球各行业专家、工程师和爱好者开发，没有顶层设计，由开发者采用“尽力而为”的方式维护。Python通过新一代安装工具pip管理大部分Python第三方库的安装。</p>
+<h2 id="8-5基本的Python内置函数"><a href="#8-5基本的Python内置函数" class="headerlink" title="8.5基本的Python内置函数"></a>8.5基本的Python内置函数</h2><p>Python解释器提供了68个内置函数（下面介绍32个）</p>
+<table>
+<thead>
+<tr>
+<th>函数名称</th>
+<th>函数说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>abs(x)</td>
+<td>x的绝对值<br>如果x是复数，返回复数的模</td>
+</tr>
+<tr>
+<td>all(x)</td>
+<td>组合类型变量x中所有元素都为真时返回True，否则返回False；若x为空，返回True</td>
+</tr>
+<tr>
+<td>any(x)</td>
+<td>组合类型变量x中任一元素都为真时返回True，否则返回False；若x为空，返回False</td>
+</tr>
+<tr>
+<td>bin(x)</td>
+<td>将整数x转换为等值的二进制字符串</td>
+</tr>
+<tr>
+<td>bin(1010)</td>
+<td>的结果是’0b1111110010’</td>
+</tr>
+<tr>
+<td>bool(x)</td>
+<td>将x转换为Boolean类型，即True或False<br>bool(‘’) 的结果是False</td>
+</tr>
+<tr>
+<td>chr(i)</td>
+<td>返回Unicode为i的字符<br>chr(9996)的结果是’✌ ‘</td>
+</tr>
+<tr>
+<td>complex(r,i)</td>
+<td>创建一个复数 r + i*1j，其中i可以省略<br>complex(10,10)的结果是10+10j</td>
+</tr>
+<tr>
+<td>dict()</td>
+<td>创建字典类型<br>dict()的结果是一个空字典{}</td>
+</tr>
+<tr>
+<td>divmod(a,b)</td>
+<td>返回a和b的商及余数<br>divmod(10,3)结果是一个(3,1)</td>
+</tr>
+<tr>
+<td>eval(s)</td>
+<td>计算字符串s作为Python表达式的值<br>eval(‘1+99’)的结果是100</td>
+</tr>
+<tr>
+<td>exec(s)</td>
+<td>计算字符串s作为Python语句的值<br>exec(‘a = 1+999’)运行后，变量a的值为1000</td>
+</tr>
+<tr>
+<td>float(x)</td>
+<td>将x转换成浮点数<br>float(1010)的结果是1010.0</td>
+</tr>
+<tr>
+<td>hex(x)</td>
+<td>将整数转换为16进制字符串<br>hex(1010)的结果是’0x3f2’</td>
+</tr>
+<tr>
+<td>input(s)</td>
+<td>获取用户输入，其中s是字符串，作为提示信息<br>s可选</td>
+</tr>
+<tr>
+<td>int(x)</td>
+<td>将x转换成整数<br>int(9.9)的结果是9</td>
+</tr>
+<tr>
+<td>list(x)</td>
+<td>创建或将变量x转换成一个列表类型<br>list({10,9,8})的结果是[8,9,10]</td>
+</tr>
+<tr>
+<td>max(a1,a2,…)</td>
+<td>返回参数的最大值<br>max(1,2,3,4,5)的结果是5</td>
+</tr>
+<tr>
+<td>min(a1,a2,…)</td>
+<td>返回参数的最小值<br>min(1,2,3,4,5)的结果是1</td>
+</tr>
+<tr>
+<td>oct(x)</td>
+<td>将整数x转换成等值的八进制字符串形式<br>oct(1010)的结果是’0o1762’</td>
+</tr>
+<tr>
+<td>open(fname, m)</td>
+<td>打开文件，包括文本方式和二进制方式等<br>其中，m部分可以省略，默认是以文本可读形式打开</td>
+</tr>
+<tr>
+<td>ord(c)</td>
+<td>返回一个字符的Unicode编码值<br>ord(‘字’)的结果是23383</td>
+</tr>
+<tr>
+<td>pow(x,y)</td>
+<td>返回x的y次幂<br>pow(2,pow(2,2))的结果是16</td>
+</tr>
+<tr>
+<td>print(x)</td>
+<td>打印变量或字符串x<br>print()的end参数用来表示输出的结尾字符</td>
+</tr>
+<tr>
+<td>range(a,b,s)</td>
+<td>从a到b(不含)以s为步长产生一个序列<br>list(range(1,10,3))的结果是[1, 4, 7]</td>
+</tr>
+<tr>
+<td>reversed(r)</td>
+<td>返回组合类型r的逆序迭代形式<br>for i in reversed([1,2,3])将逆序遍历列表</td>
+</tr>
+<tr>
+<td>round(n)</td>
+<td>四舍五入方式计算n<br>round(10.6)的结果是11</td>
+</tr>
+<tr>
+<td>set(x)</td>
+<td>将组合数据类型x转换成集合类型<br>set([1,1,1,1])的结果是{1}</td>
+</tr>
+<tr>
+<td>sorted(x)</td>
+<td>对组合数据类型x进行排序，默认从小到大<br>sorted([1,3,5,2,4])的结果是[1,2,3,4,5]</td>
+</tr>
+<tr>
+<td>str(x)</td>
+<td>将x转换为等值的字符串类型<br>str(0x1010)的结果是’4112’</td>
+</tr>
+<tr>
+<td>sum(x)</td>
+<td>对组合数据类型x计算求和结果<br>sum([1,3,5,2,4])的结果是15</td>
+</tr>
+<tr>
+<td>type(x)</td>
+<td>返回变量x的数据类型<br>type({1:2})的结果是&lt;class&nbsp;’dict’&gt;</td>
+</tr>
+</tbody></table>
+<h2 id="8-5实例解析：Web页面元素提取"><a href="#8-5实例解析：Web页面元素提取" class="headerlink" title="8.5实例解析：Web页面元素提取"></a>8.5实例解析：Web页面元素提取</h2>]]></content>
       <categories>
-        <category>日常记录</category>
+        <category>Python</category>
+        <category>二级</category>
       </categories>
       <tags>
-        <tag>生活片段</tag>
+        <tag>Python</tag>
+        <tag>二级</tag>
       </tags>
   </entry>
   <entry>
@@ -2011,42 +2011,6 @@
       <tags>
         <tag>电脑</tag>
         <tag>磁盘</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>github+hexo 个人博客更换主题</title>
-    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
-<span id="more"></span>
-
-<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
-<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
-<blockquote>
-<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
-</blockquote>
-<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
-<blockquote>
-<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
-</blockquote>
-<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
-<blockquote>
-<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></table></figure>
-
-<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
-]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-        <tag>主题</tag>
       </tags>
   </entry>
   <entry>
@@ -2091,6 +2055,42 @@
       </tags>
   </entry>
   <entry>
+    <title>github+hexo 个人博客更换主题</title>
+    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
+<span id="more"></span>
+
+<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
+<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
+<blockquote>
+<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
+</blockquote>
+<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
+<blockquote>
+<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
+</blockquote>
+<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
+<blockquote>
+<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></table></figure>
+
+<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
+]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+        <tag>主题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo的安装和在github部署博客</title>
     <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
     <content><![CDATA[<p>hexo的安装和在github部署博客</p>
@@ -2118,6 +2118,36 @@
       <tags>
         <tag>hexo</tag>
         <tag>部署博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo部署各种错误的解决方式</title>
+    <url>/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<p>hexo部署各种错误的解决方式</p>
+<span id="more"></span>
+
+<h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\blog\aikeblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:394:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\blog\aikeblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
+
+<h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol>
+<li>删除<code>.deploy_git</code>文件夹;</li>
+<li>输入 git<br><code>config --global core.autocrlf false</code></li>
+<li>然后，依次执行：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>问题解决。暴力直接，有效。</p>
+<h1 id="2-fatal-unable-to-access-‘https-github-com-git-39-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git-39-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git&#39;: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git&#39;">https://github.com/.../.git&#39;</a>: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
+        <tag>bug</tag>
       </tags>
   </entry>
   <entry>
@@ -2353,36 +2383,6 @@
 </li>
 </ul>
 ]]></content>
-  </entry>
-  <entry>
-    <title>hexo部署各种错误的解决方式</title>
-    <url>/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<p>hexo部署各种错误的解决方式</p>
-<span id="more"></span>
-
-<h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\blog\aikeblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:394:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\blog\aikeblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
-
-<h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p>
-<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol>
-<li>删除<code>.deploy_git</code>文件夹;</li>
-<li>输入 git<br><code>config --global core.autocrlf false</code></li>
-<li>然后，依次执行：</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>问题解决。暴力直接，有效。</p>
-<h1 id="2-fatal-unable-to-access-‘https-github-com-git-39-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git-39-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git&#39;: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git&#39;">https://github.com/.../.git&#39;</a>: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
-        <tag>bug</tag>
-      </tags>
   </entry>
   <entry>
     <title>修改github.io站点域名</title>
@@ -2701,46 +2701,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>虚拟机安装macOS系统</title>
-    <url>/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<p>VMware虚拟机安装macOS全过程详解</p>
-<span id="more"></span>
-
-<p>参考链接</p>
-<p><a href="https://www.pc-daily.com/xitong/75975.html">虚拟机安装macos系统（VMware虚拟机安装macOS详细</a></p>
-<p><a href="https://blog.csdn.net/Simon_477/article/details/110252233">虚拟机VMware安装苹果系统macOS，超级详细教程，附文件下载，真教程！！</a></p>
-<p><a href="https://baijiahao.baidu.com/s?id=1697367423466273816&wfr=spider&for=pc">如何使用虚拟机VMware安装苹果macOS系统</a></p>
-<h5 id="1-安装虚拟机VMware"><a href="#1-安装虚拟机VMware" class="headerlink" title="1 安装虚拟机VMware"></a>1 安装虚拟机VMware</h5><p><a href="https://mp.weixin.qq.com/s?__biz=MzIyNjAxMjEwOQ==&mid=2247502732&idx=5&sn=27221e888444d6c36ac62f4767337215&chksm=e874752edf03fc38cadb220b2e77654f32248976e7fa2af240ba7f1e0c0527541ebba5725643&scene=21#wechat_redirect">VMware16</a></p>
-<h5 id="2-安装解锁工具unlocker"><a href="#2-安装解锁工具unlocker" class="headerlink" title="2  安装解锁工具unlocker"></a>2  安装解锁工具unlocker</h5><p>解锁虚拟机安装macOS限制工具</p>
-<p><a href="http://www.winwin7.com/soft/9473.html#xiazai">unlocker v3.0.3</a></p>
-<blockquote>
-<ul>
-<li><strong><a href="https://blog.csdn.net/puspos/article/details/108900141">运行unlocker中win-install时，出现file not found-darwin.</a></strong></li>
-</ul>
-</blockquote>
-<h5 id="3-虚拟机安装-maOS"><a href="#3-虚拟机安装-maOS" class="headerlink" title="3 虚拟机安装 maOS"></a>3 虚拟机安装 maOS</h5><p><a href="https://www.mhero.com/macos">macOS系统下载</a></p>
-<p><a href="https://cloud.mfpud.com/VirtualCDR/44EE85B8FF68F7428C0AE7B3AA27661E/">macOS kealos 10.15</a> （非百度云盘）</p>
-<p><a href="https://sysin.org/blog/macOS/">Apple macOS 下载汇总（系统、应用和技巧）</a></p>
-<blockquote>
-<ul>
-<li>报错<a href="https://www.bilibili.com/read/cv13362122"><strong>客户机操作系统已禁用 CPU</strong></a></li>
-</ul>
-</blockquote>
-<h5 id="4-解决安装后屏幕适应问题"><a href="#4-解决安装后屏幕适应问题" class="headerlink" title="4 解决安装后屏幕适应问题"></a>4 解决安装后屏幕适应问题</h5><p>安装VMware Tools，用到步骤二中darwin.iso</p>
-<h5 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h5><p><a href="https://baijiahao.baidu.com/s?id=1691924549832120099&wfr=spider&for=pc">虚拟机中的Mac系统怎么优化</a></p>
-<p><a href="https://blog.csdn.net/SSS_Benjamin/article/details/89296164">VMware 15 上Mac虚拟机卡顿情况的优化</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/337036027">全网最详细的VMware虚拟机安装MacOS系统教程，没有之一！！！附全部资源</a></p>
-<p><strong>网络</strong></p>
-<p><a href="https://m.kafan.cn/A/gvx45wd73r.html">mac虚拟机如何开启wifi</a></p>
-<p><a href="https://blog.csdn.net/kof820/article/details/50515115?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_antiscanv2&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_antiscanv2&utm_relevant_index=1">VMware虚拟机mac系统以太网无法上网</a></p>
-<p><strong>app store</strong></p>
-<p><a href="https://jingyan.baidu.com/article/e75aca852cd5a9142fdac610.html">app store 购买过程中出错 错误500解决方法</a></p>
-]]></content>
-      <tags>
-        <tag>虚拟机</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>网站推送百度</title>
     <url>/2021/07/21/%E7%BD%91%E7%AB%99%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/</url>
     <content><![CDATA[<p>网站推送百度</p>
@@ -2797,6 +2757,46 @@
       <tags>
         <tag>网站</tag>
         <tag>推送百度</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>虚拟机安装macOS系统</title>
+    <url>/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<p>VMware虚拟机安装macOS全过程详解</p>
+<span id="more"></span>
+
+<p>参考链接</p>
+<p><a href="https://www.pc-daily.com/xitong/75975.html">虚拟机安装macos系统（VMware虚拟机安装macOS详细</a></p>
+<p><a href="https://blog.csdn.net/Simon_477/article/details/110252233">虚拟机VMware安装苹果系统macOS，超级详细教程，附文件下载，真教程！！</a></p>
+<p><a href="https://baijiahao.baidu.com/s?id=1697367423466273816&wfr=spider&for=pc">如何使用虚拟机VMware安装苹果macOS系统</a></p>
+<h5 id="1-安装虚拟机VMware"><a href="#1-安装虚拟机VMware" class="headerlink" title="1 安装虚拟机VMware"></a>1 安装虚拟机VMware</h5><p><a href="https://mp.weixin.qq.com/s?__biz=MzIyNjAxMjEwOQ==&mid=2247502732&idx=5&sn=27221e888444d6c36ac62f4767337215&chksm=e874752edf03fc38cadb220b2e77654f32248976e7fa2af240ba7f1e0c0527541ebba5725643&scene=21#wechat_redirect">VMware16</a></p>
+<h5 id="2-安装解锁工具unlocker"><a href="#2-安装解锁工具unlocker" class="headerlink" title="2  安装解锁工具unlocker"></a>2  安装解锁工具unlocker</h5><p>解锁虚拟机安装macOS限制工具</p>
+<p><a href="http://www.winwin7.com/soft/9473.html#xiazai">unlocker v3.0.3</a></p>
+<blockquote>
+<ul>
+<li><strong><a href="https://blog.csdn.net/puspos/article/details/108900141">运行unlocker中win-install时，出现file not found-darwin.</a></strong></li>
+</ul>
+</blockquote>
+<h5 id="3-虚拟机安装-maOS"><a href="#3-虚拟机安装-maOS" class="headerlink" title="3 虚拟机安装 maOS"></a>3 虚拟机安装 maOS</h5><p><a href="https://www.mhero.com/macos">macOS系统下载</a></p>
+<p><a href="https://cloud.mfpud.com/VirtualCDR/44EE85B8FF68F7428C0AE7B3AA27661E/">macOS kealos 10.15</a> （非百度云盘）</p>
+<p><a href="https://sysin.org/blog/macOS/">Apple macOS 下载汇总（系统、应用和技巧）</a></p>
+<blockquote>
+<ul>
+<li>报错<a href="https://www.bilibili.com/read/cv13362122"><strong>客户机操作系统已禁用 CPU</strong></a></li>
+</ul>
+</blockquote>
+<h5 id="4-解决安装后屏幕适应问题"><a href="#4-解决安装后屏幕适应问题" class="headerlink" title="4 解决安装后屏幕适应问题"></a>4 解决安装后屏幕适应问题</h5><p>安装VMware Tools，用到步骤二中darwin.iso</p>
+<h5 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h5><p><a href="https://baijiahao.baidu.com/s?id=1691924549832120099&wfr=spider&for=pc">虚拟机中的Mac系统怎么优化</a></p>
+<p><a href="https://blog.csdn.net/SSS_Benjamin/article/details/89296164">VMware 15 上Mac虚拟机卡顿情况的优化</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/337036027">全网最详细的VMware虚拟机安装MacOS系统教程，没有之一！！！附全部资源</a></p>
+<p><strong>网络</strong></p>
+<p><a href="https://m.kafan.cn/A/gvx45wd73r.html">mac虚拟机如何开启wifi</a></p>
+<p><a href="https://blog.csdn.net/kof820/article/details/50515115?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_antiscanv2&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_antiscanv2&utm_relevant_index=1">VMware虚拟机mac系统以太网无法上网</a></p>
+<p><strong>app store</strong></p>
+<p><a href="https://jingyan.baidu.com/article/e75aca852cd5a9142fdac610.html">app store 购买过程中出错 错误500解决方法</a></p>
+]]></content>
+      <tags>
+        <tag>虚拟机</tag>
       </tags>
   </entry>
   <entry>
