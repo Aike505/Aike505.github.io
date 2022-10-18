@@ -142,15 +142,9 @@
     padding: 0;
   }
   
-  #nav-totop {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s;
-  }
-  /* .nav-button {
+  .nav-button {
     cursor: pointer;
-  } */
+  }
   div#menus {
     display: flex;
     align-items: center;
@@ -448,6 +442,9 @@
   #nav #search-button {
     font-size: 1.3em;
   }
+  #nav #background-button {
+    font-size: 1.3em;
+  }
   
   #page-header.not-top-img #nav .back-home-button {
     color: var(--aike-fontcolor);
@@ -577,3 +574,5 @@
   .back-menu-item-icon.loading img {
     width: 25px;
   }
+
+  
