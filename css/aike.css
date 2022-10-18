@@ -3,54 +3,67 @@
 #recent-posts>.recent-post-item {
     background: rgba(255, 255, 255, 0.9);
 }
+
 /* 首页侧栏卡片 */
 .card-widget {
     background: rgba(255, 255, 255, 0.9) !important;
 }
+
 /* 文章页面正文背景 */
 div#post {
     background: rgba(255, 255, 255, 0.9);
 }
+
 /* 分页页面 */
 div#page {
     background: rgba(255, 255, 255, 0.9);
 }
+
 /* 归档页面 */
 div#archive {
     background: rgba(255, 255, 255, 0.9);
 }
+
 /* 标签页面 */
 div#tag {
     background: rgba(255, 255, 255, 0.9);
 }
+
 /* 分类页面 */
 div#category {
     background: rgba(255, 255, 255, 0.9);
 }
+
 /* 页脚透明 */
 #footer {
     background: transparent !important;
 }
+
 /* 页脚黑色透明玻璃效果移除 */
 #footer::before {
     background: transparent !important;
 }
+
 /* 头图透明 */
 #page-header {
     background: transparent !important;
 }
+
 /* 头图遮罩层透明 */
 #page-header::before {
     background: transparent !important;
 }
+
 /*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
 #page-header.post-bg:before {
     background-color: transparent !important;
 }
+
 /*夜间模式伪类遮罩层透明*/
 [data-theme="dark"] #footer::before {
     background: transparent !important;
 }
+
 [data-theme="dark"] #page-header::before {
     background: transparent !important;
 }
@@ -59,22 +72,28 @@ div#category {
 [data-theme="dark"] #aside-content .card-widget {
     background: rgba(0, 0, 0, 0.5) !important;
 }
+
 [data-theme="dark"] div#post {
     background: rgba(0, 0, 0, 0.5) !important;
 }
+
 [data-theme="dark"] #recent-posts .recent-post-item {
     background: rgba(0, 0, 0, 0.5) !important;
 }
+
 [data-theme="dark"] div#archive, div#page {
     background: rgba(0, 0, 0, 0.5) !important;
 }
+
 /* 阅读模式 */
 .read-mode #aside-content .card-widget {
     background: rgba(158, 204, 171, 0.5) !important;
 }
+
 .read-mode div#post {
     background: rgba(158, 204, 171, 0.5) !important;
 }
+
 /* 夜间模式下的阅读模式 */
 [data-theme="dark"] .read-mode #aside-content .card-widget {
     background: rgba(0, 0, 0, 0.5) !important;
@@ -93,21 +112,26 @@ div#category {
     border-radius: 12px;
     overflow: hidden;
 }
+
 .wb-full {
     display: none;
 }
+
 .wb-min {
     background-position: center;
 }
+
 [data-theme='dark'] .wb-body,
 [data-theme='dark'] #changeBgBox {
     background: #333 !important;
 }
+
 .bgbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .pimgbox,
 .imgbox,
 .box {
@@ -115,17 +139,21 @@ div#category {
     margin: 10px;
     background-size: cover
 }
+
 .pimgbox,
 .imgbox {
     border-radius: 10px;
     overflow: hidden;
 }
+
 .pimgbox {
     height: 240px;
 }
+
 .imgbox {
     height: 95px;
 }
+
 .box {
     height: 100px;
 }
@@ -149,6 +177,7 @@ div#category {
 } */
 
 @media screen and (max-width: 768px) {
+
     /* 背景 */
     .pimgbox,
     .imgbox,
@@ -156,9 +185,11 @@ div#category {
         height: 73px;
         width: 135px;
     }
+
     .pimgbox {
         height: 205px;
     }
+
     /* 老用户如果不再使用页面版可删除下面代码 */
     /* #color {
         width: 141px;
@@ -188,17 +219,21 @@ button#go-up #percent {
     font-weight: bold;
     font-size: 15px !important;
 }
+
 button#go-up span {
     font-size: 12px !important;
     margin-right: -1px;
 }
+
 /* 鼠标滑动到按钮上时显示返回顶部图标 */
 button#go-up:hover i {
     display: block !important;
 }
+
 button#go-up:hover #percent {
     display: none !important;
 }
+
 #rightside>div>a,
 #rightside>div>button {
     display: flex;
