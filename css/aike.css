@@ -1,37 +1,37 @@
 /* 透明效果 */
 /* 首页文章卡片 */
 #recent-posts>.recent-post-item {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.7);
 }
 
 /* 首页侧栏卡片 */
 .card-widget {
-    background: rgba(255, 255, 255, 0.9) !important;
+    background: rgba(255, 255, 255, 0.7) !important;
 }
 
 /* 文章页面正文背景 */
 div#post {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.7);
 }
 
 /* 分页页面 */
 div#page {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.7);
 }
 
 /* 归档页面 */
 div#archive {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.7);
 }
 
 /* 标签页面 */
 div#tag {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.7);
 }
 
 /* 分类页面 */
 div#category {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.7);
 }
 
 /* 页脚透明 */
@@ -70,38 +70,38 @@ div#category {
 
 /* 夜间模式 */
 [data-theme="dark"] #aside-content .card-widget {
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.3) !important;
 }
 
 [data-theme="dark"] div#post {
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.3) !important;
 }
 
 [data-theme="dark"] #recent-posts .recent-post-item {
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.3) !important;
 }
 
 [data-theme="dark"] div#archive, div#page {
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.3) !important;
 }
 
 /* 阅读模式 */
 .read-mode #aside-content .card-widget {
-    background: rgba(158, 204, 171, 0.5) !important;
+    background: rgba(158, 204, 171, 0.3) !important;
 }
 
 .read-mode div#post {
-    background: rgba(158, 204, 171, 0.5) !important;
+    background: rgba(158, 204, 171, 0.3) !important;
 }
 
 /* 夜间模式下的阅读模式 */
 [data-theme="dark"] .read-mode #aside-content .card-widget {
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.3) !important;
     color: #ffffff;
 }
 
 [data-theme="dark"] .read-mode div#post {
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.3) !important;
     color: #ffffff;
 }
 
