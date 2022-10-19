@@ -312,6 +312,230 @@
       </tags>
   </entry>
   <entry>
+    <title>2.Python语言基本语法元素</title>
+    <url>/2021/09/04/2-Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0/</url>
+    <content><![CDATA[<p>Python语言基本语法元素</p>
+<span id="more"></span>
+<h1 id="2-Python语言基本语法元素"><a href="#2-Python语言基本语法元素" class="headerlink" title="2.Python语言基本语法元素"></a>2.Python语言基本语法元素</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_2.Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0.png"><blockquote>
+<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>程序的基本语法元素：程序的格式框架、缩进、注释、变量、命名、保留字、数据类型、赋值语句、引用<br><br><br>基本输入输出函数：input()、eval()、print()<br><br><br>源程序的书写风格</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2-1程序的格式"><a href="#2-1程序的格式" class="headerlink" title="2.1程序的格式"></a>2.1程序的格式</h2><h3 id="2-1-1缩进"><a href="#2-1-1缩进" class="headerlink" title="2.1.1缩进"></a>2.1.1缩进</h3><ul>
+<li>Python语言采用严格的“缩进”来表明程序的格式框架。缩进指每一行代码开始前的空白区域，用来表示代码之间的包含和层次关系</li>
+<li>1个缩进 = 4个空格</li>
+<li>缩进是Python语言中表明程序框架的唯一手段<h3 id="2-1-2注释"><a href="#2-1-2注释" class="headerlink" title="2.1.2注释"></a>2.1.2注释</h3></li>
+<li>注释是代码中的辅助性文字，会被编译或解释器略去，不被计算机执行，一般用于程序员对代码的说明。Python语言采用#表示一行注释的开始，<br>多行注释用’’’或”””将内容前后包含<h3 id="2-1-3续行符"><a href="#2-1-3续行符" class="headerlink" title="2.1.3续行符"></a>2.1.3续行符</h3></li>
+<li>Python程序是逐行编写的，每行代码长度并无限制，但从程序员角度，单行代码太长并不利于阅读，因此，Python提供“续行符”将代码分割为多行表达。续行符由反斜杠()符号表达。</li>
+</ul>
+<h2 id="2-2语法元素的名称"><a href="#2-2语法元素的名称" class="headerlink" title="2.2语法元素的名称"></a>2.2语法元素的名称</h2><h3 id="2-2-1变量"><a href="#2-2-1变量" class="headerlink" title="2.2.1变量"></a>2.2.1变量</h3><ul>
+<li>变量是保存和表示数据值的一种语法元素，在程序中十分常见。顾名思义，变量的值是可以改变的，能够通过赋值（使用等号=表达）方式被修改，例如：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;a = 99</span><br><span class="line">&gt;&gt;&gt;a = a + 1</span><br><span class="line">&gt;&gt;&gt;print(a)</span><br><span class="line">100</span><br></pre></td></tr></table></figure>
+<h3 id="2-2-2命名"><a href="#2-2-2命名" class="headerlink" title="2.2.2命名"></a>2.2.2命名</h3></li>
+<li>Python语言允许采用大写字母、小写字母、数字、下划线(_)和汉字等字符及其组合给变量命名，但名字的首字符不能是数字，中间不能出现空格，长度没有限制</li>
+<li>注意：<strong>标识符对大小写敏感</strong>，python和Python是两个不同的名字<h3 id="2-2-3保留字"><a href="#2-2-3保留字" class="headerlink" title="2.2.3保留字"></a>2.2.3保留字</h3></li>
+<li>保留字，也称为关键字，指被编程语言内部定义并保留使用的标识符。</li>
+<li>程序员编写程序不能定义与保留字相同的标识符。</li>
+<li>每种程序设计语言都有一套保留字，保留字一般用来构成程序整体框架、表达关键值和具有结构性的复杂语义等。</li>
+<li>掌握一门编程语言首先要熟记其所对应的保留字。</li>
+<li> Python 3.x保留字列表 (33个)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>and</td>
+<td>elif</td>
+<td>import</td>
+<td>raise</td>
+</tr>
+<tr>
+<td>as</td>
+<td>else</td>
+<td>in</td>
+<td>return</td>
+</tr>
+<tr>
+<td>assert</td>
+<td>except</td>
+<td>is</td>
+<td>try</td>
+</tr>
+<tr>
+<td>break</td>
+<td>finally</td>
+<td>lambda</td>
+<td>while</td>
+</tr>
+<tr>
+<td>class</td>
+<td>for</td>
+<td>nonlocal</td>
+<td>with</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>from</td>
+<td>not</td>
+<td>yield</td>
+</tr>
+<tr>
+<td>def</td>
+<td>global</td>
+<td>or</td>
+<td>True</td>
+</tr>
+<tr>
+<td>del</td>
+<td>if</td>
+<td>pass</td>
+<td>False</td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="2-2-4数据类型"><a href="#2-2-4数据类型" class="headerlink" title="2.2.4数据类型"></a>2.2.4数据类型</h3><ul>
+<li>Python语言支持多种数据类型，最简单的包括数字类型、字符串类型，略微复杂的包括元组类型、集合类型、列表类型、字典类型等。<blockquote>
+<p>数据类型各种编程语言大同小异，文章后面章节也会详细介绍，这里就不再赘述。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2-3程序的语句元素"><a href="#2-3程序的语句元素" class="headerlink" title="2.3程序的语句元素"></a>2.3程序的语句元素</h2><h3 id="2-3-1表达式"><a href="#2-3-1表达式" class="headerlink" title="2.3.1表达式"></a>2.3.1表达式</h3><ul>
+<li>产生或计算新数据值的代码片段称为表达式。表达式类似数学中的计算公式，以表达单一功能为目的，运算后产生运算结果，运算结果的类型由操作符或运算符决定。</li>
+<li>表达式一般由数据和操作符等构成，这是构成Python语句的重要部分。<h3 id="2-3-2赋值语句"><a href="#2-3-2赋值语句" class="headerlink" title="2.3.2赋值语句"></a>2.3.2赋值语句</h3></li>
+<li>Python语言中，= 表示“赋值”，即将等号右侧的值计算后将结果值赋给左侧变量，包含等号（=）的语句称为“赋值语句”<br><br><code>&lt;变量&gt; = &lt;表达式&gt;</code></li>
+<li>同步赋值语句：同时给多个变量赋值<br><br><code>&lt;变量1&gt;, …, &lt;变量N&gt; = &lt;表达式1&gt;, …, &lt;表达式N&gt;</code><h3 id="2-3-3引用"><a href="#2-3-3引用" class="headerlink" title="2.3.3引用"></a>2.3.3引用</h3></li>
+<li>Python程序会经常使用当前程序之外已有的功能代码，这个过程叫“引用”。Python语言使用import保留字引用当前程序以外的功能库，使用方式如下：<br><br><code>import &lt;功能库名称&gt;</code></li>
+<li>引用功能库之后，采用<code>&lt;功能库名称&gt;.&lt;函数名称&gt;()</code>方式调用具体功能<h3 id="2-3-4其他语句"><a href="#2-3-4其他语句" class="headerlink" title="2.3.4其他语句"></a>2.3.4其他语句</h3></li>
+<li>除了赋值语句外，Python程序还包括一些其他的语句类型，例如，分支语句和循环语句等。更多的分支和循环内容将在第4章介绍。这里不再赘述。<h2 id="2-4基本输入输出函数"><a href="#2-4基本输入输出函数" class="headerlink" title="2.4基本输入输出函数"></a>2.4基本输入输出函数</h2></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>语法</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>input</td>
+<td>&lt;变量&gt; = input(&lt;提示性文字&gt;</td>
+<td>获得用户输入之前，input()函数可以包含一些提示性文字</td>
+</tr>
+<tr>
+<td>eval</td>
+<td>eval(&lt;字符串&gt;)</td>
+<td>eval(&lt;字符串&gt;)函数是Python语言中一个十分重要的函数，它能够以Python表达式的方式解析并执行字符串，将返回结果输出</td>
+</tr>
+<tr>
+<td>print()</td>
+<td>1.print(&lt;待输出字符串&gt;)<br>2.print(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;)<br>3.print(&lt;输出字符串模板&gt;.format(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;))<br>4.print(&lt;待输出内容&gt;, end=”&lt;增加的输出结尾&gt;”)</td>
+<td>1.仅用于输出字符串<br>2.仅用于输出一个或多个变量<br>3.用于混合输出字符串与变量值<br>4.对print()函数的end参数进行赋值</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.程序的控制结构</title>
+    <url>/2021/09/05/4-%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<p>程序的控制结构</p>
+<span id="more"></span>
+<h1 id="4-程序的控制结构"><a href="#4-程序的控制结构" class="headerlink" title="4.程序的控制结构"></a>4.程序的控制结构</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_4.%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84.png"><h2 id="4-1顺序结构"><a href="#4-1顺序结构" class="headerlink" title="4.1顺序结构"></a>4.1顺序结构</h2>顺序结构是程序按照线性顺序依次执行的一种运行<br>方式<h2 id="4-2分支结构"><a href="#4-2分支结构" class="headerlink" title="4.2分支结构"></a>4.2分支结构</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#单分支结构: if语句</span><br><span class="line">if &lt;条件&gt;:</span><br><span class="line">    语句块</span><br><span class="line"></span><br><span class="line">#二分支结构：if-else</span><br><span class="line">if &lt;条件&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;</span><br><span class="line"></span><br><span class="line">#多分支结构：if-elif-else</span><br><span class="line">if &lt;条件1&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">elif &lt;条件2&gt;:</span><br><span class="line">    &lt;语句块2&gt;</span><br><span class="line">... </span><br><span class="line">else:</span><br><span class="line">    &lt;语句块N&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="4-3循环结构"><a href="#4-3循环结构" class="headerlink" title="4.3循环结构"></a>4.3循环结构</h2><h3 id="4-3-1遍历循环-for"><a href="#4-3-1遍历循环-for" class="headerlink" title="4.3.1遍历循环: for"></a>4.3.1遍历循环: for</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for &lt;循环变量&gt; in &lt;遍历结构&gt;:</span><br><span class="line">    &lt;语句块&gt;</span><br></pre></td></tr></table></figure>
+遍历循环还有一种扩展模式，使用方法如下：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for &lt;循环变量&gt; in &lt;遍历结构&gt;:       </span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;</span><br></pre></td></tr></table></figure>
+当for循环正常执行之后，程序会继续执行else语句中内容。else语句只在循环正常执行之后才执行并结束，因此，可以在&lt;语句块2&gt;中放置判断循环执行情况的语句。</li>
+</ul>
+<h3 id="4-3-2无限循环-while"><a href="#4-3-2无限循环-while" class="headerlink" title="4.3.2无限循环: while"></a>4.3.2无限循环: while</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">while &lt;条件&gt;:</span><br><span class="line">    &lt;语句块&gt;  </span><br><span class="line"></span><br><span class="line">while &lt;条件&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;  </span><br></pre></td></tr></table></figure>
+<h3 id="4-3-3循环控制-break和continue"><a href="#4-3-3循环控制-break和continue" class="headerlink" title="4.3.3循环控制: break和continue"></a>4.3.3循环控制: break和continue</h3><table>
+<thead>
+<tr>
+<th>语句</th>
+<th>区别</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>continue</td>
+<td>只结束本次循环，不终止整个循环的执行</td>
+</tr>
+<tr>
+<td>break</td>
+<td>具备结束循环的能力</td>
+</tr>
+</tbody></table>
+<h2 id="4-4判断条件组合"><a href="#4-4判断条件组合" class="headerlink" title="4.4判断条件组合"></a>4.4判断条件组合</h2><p>Python关系操作符</p>
+<table>
+<thead>
+<tr>
+<th>操作符</th>
+<th>数学符号</th>
+<th>操作符含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>＜</td>
+<td>﹤</td>
+<td>小于</td>
+</tr>
+<tr>
+<td>＜＝</td>
+<td>≤</td>
+<td>小于等于</td>
+</tr>
+<tr>
+<td>＞＝</td>
+<td>≥</td>
+<td>大于等于</td>
+</tr>
+<tr>
+<td>＞</td>
+<td>＞</td>
+<td>大于</td>
+</tr>
+<tr>
+<td>＝＝</td>
+<td>＝</td>
+<td>等于</td>
+</tr>
+<tr>
+<td>！＝</td>
+<td>≠</td>
+<td>不等于</td>
+</tr>
+</tbody></table>
+<p>Python语言使用保留字not、and和or对条件进行逻辑运算或组着。<br><br>保留字not表示单个条件的“否”关系，and表示多个条件之间的“与”关系，保留字or表示多个条件之间的“或”关系。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;not True</span><br><span class="line">False</span><br><span class="line">&gt;&gt;&gt;a = 80</span><br><span class="line">&gt;&gt;&gt;( a &gt; 100) or ( a &gt; 50 and a &lt; 90)</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
+<h2 id="4-4程序的异常处理"><a href="#4-4程序的异常处理" class="headerlink" title="4.4程序的异常处理"></a>4.4程序的异常处理</h2><p>Python语言使用保留字try和except进行异常处理，基本的语法格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">try:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">except:</span><br><span class="line">    &lt;语句块2&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="4-5实例解析——猜数字游戏"><a href="#4-5实例解析——猜数字游戏" class="headerlink" title="4.5实例解析——猜数字游戏"></a>4.5实例解析——猜数字游戏</h2>]]></content>
+      <categories>
+        <category>Python</category>
+        <category>二级</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>二级</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>3.Python基本数据类型</title>
     <url>/2021/09/04/3-Python%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB/</url>
     <content><![CDATA[<p>Python基本数据类型</p>
@@ -625,230 +849,6 @@
 </tr>
 </tbody></table>
 <h2 id="3-6实例解析——凯撒密码"><a href="#3-6实例解析——凯撒密码" class="headerlink" title="3.6实例解析——凯撒密码"></a>3.6实例解析——凯撒密码</h2>]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2.Python语言基本语法元素</title>
-    <url>/2021/09/04/2-Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0/</url>
-    <content><![CDATA[<p>Python语言基本语法元素</p>
-<span id="more"></span>
-<h1 id="2-Python语言基本语法元素"><a href="#2-Python语言基本语法元素" class="headerlink" title="2.Python语言基本语法元素"></a>2.Python语言基本语法元素</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_2.Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0.png"><blockquote>
-<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>程序的基本语法元素：程序的格式框架、缩进、注释、变量、命名、保留字、数据类型、赋值语句、引用<br><br><br>基本输入输出函数：input()、eval()、print()<br><br><br>源程序的书写风格</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="2-1程序的格式"><a href="#2-1程序的格式" class="headerlink" title="2.1程序的格式"></a>2.1程序的格式</h2><h3 id="2-1-1缩进"><a href="#2-1-1缩进" class="headerlink" title="2.1.1缩进"></a>2.1.1缩进</h3><ul>
-<li>Python语言采用严格的“缩进”来表明程序的格式框架。缩进指每一行代码开始前的空白区域，用来表示代码之间的包含和层次关系</li>
-<li>1个缩进 = 4个空格</li>
-<li>缩进是Python语言中表明程序框架的唯一手段<h3 id="2-1-2注释"><a href="#2-1-2注释" class="headerlink" title="2.1.2注释"></a>2.1.2注释</h3></li>
-<li>注释是代码中的辅助性文字，会被编译或解释器略去，不被计算机执行，一般用于程序员对代码的说明。Python语言采用#表示一行注释的开始，<br>多行注释用’’’或”””将内容前后包含<h3 id="2-1-3续行符"><a href="#2-1-3续行符" class="headerlink" title="2.1.3续行符"></a>2.1.3续行符</h3></li>
-<li>Python程序是逐行编写的，每行代码长度并无限制，但从程序员角度，单行代码太长并不利于阅读，因此，Python提供“续行符”将代码分割为多行表达。续行符由反斜杠()符号表达。</li>
-</ul>
-<h2 id="2-2语法元素的名称"><a href="#2-2语法元素的名称" class="headerlink" title="2.2语法元素的名称"></a>2.2语法元素的名称</h2><h3 id="2-2-1变量"><a href="#2-2-1变量" class="headerlink" title="2.2.1变量"></a>2.2.1变量</h3><ul>
-<li>变量是保存和表示数据值的一种语法元素，在程序中十分常见。顾名思义，变量的值是可以改变的，能够通过赋值（使用等号=表达）方式被修改，例如：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;a = 99</span><br><span class="line">&gt;&gt;&gt;a = a + 1</span><br><span class="line">&gt;&gt;&gt;print(a)</span><br><span class="line">100</span><br></pre></td></tr></table></figure>
-<h3 id="2-2-2命名"><a href="#2-2-2命名" class="headerlink" title="2.2.2命名"></a>2.2.2命名</h3></li>
-<li>Python语言允许采用大写字母、小写字母、数字、下划线(_)和汉字等字符及其组合给变量命名，但名字的首字符不能是数字，中间不能出现空格，长度没有限制</li>
-<li>注意：<strong>标识符对大小写敏感</strong>，python和Python是两个不同的名字<h3 id="2-2-3保留字"><a href="#2-2-3保留字" class="headerlink" title="2.2.3保留字"></a>2.2.3保留字</h3></li>
-<li>保留字，也称为关键字，指被编程语言内部定义并保留使用的标识符。</li>
-<li>程序员编写程序不能定义与保留字相同的标识符。</li>
-<li>每种程序设计语言都有一套保留字，保留字一般用来构成程序整体框架、表达关键值和具有结构性的复杂语义等。</li>
-<li>掌握一门编程语言首先要熟记其所对应的保留字。</li>
-<li> Python 3.x保留字列表 (33个)</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>and</td>
-<td>elif</td>
-<td>import</td>
-<td>raise</td>
-</tr>
-<tr>
-<td>as</td>
-<td>else</td>
-<td>in</td>
-<td>return</td>
-</tr>
-<tr>
-<td>assert</td>
-<td>except</td>
-<td>is</td>
-<td>try</td>
-</tr>
-<tr>
-<td>break</td>
-<td>finally</td>
-<td>lambda</td>
-<td>while</td>
-</tr>
-<tr>
-<td>class</td>
-<td>for</td>
-<td>nonlocal</td>
-<td>with</td>
-</tr>
-<tr>
-<td>continue</td>
-<td>from</td>
-<td>not</td>
-<td>yield</td>
-</tr>
-<tr>
-<td>def</td>
-<td>global</td>
-<td>or</td>
-<td>True</td>
-</tr>
-<tr>
-<td>del</td>
-<td>if</td>
-<td>pass</td>
-<td>False</td>
-</tr>
-<tr>
-<td>None</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<h3 id="2-2-4数据类型"><a href="#2-2-4数据类型" class="headerlink" title="2.2.4数据类型"></a>2.2.4数据类型</h3><ul>
-<li>Python语言支持多种数据类型，最简单的包括数字类型、字符串类型，略微复杂的包括元组类型、集合类型、列表类型、字典类型等。<blockquote>
-<p>数据类型各种编程语言大同小异，文章后面章节也会详细介绍，这里就不再赘述。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="2-3程序的语句元素"><a href="#2-3程序的语句元素" class="headerlink" title="2.3程序的语句元素"></a>2.3程序的语句元素</h2><h3 id="2-3-1表达式"><a href="#2-3-1表达式" class="headerlink" title="2.3.1表达式"></a>2.3.1表达式</h3><ul>
-<li>产生或计算新数据值的代码片段称为表达式。表达式类似数学中的计算公式，以表达单一功能为目的，运算后产生运算结果，运算结果的类型由操作符或运算符决定。</li>
-<li>表达式一般由数据和操作符等构成，这是构成Python语句的重要部分。<h3 id="2-3-2赋值语句"><a href="#2-3-2赋值语句" class="headerlink" title="2.3.2赋值语句"></a>2.3.2赋值语句</h3></li>
-<li>Python语言中，= 表示“赋值”，即将等号右侧的值计算后将结果值赋给左侧变量，包含等号（=）的语句称为“赋值语句”<br><br><code>&lt;变量&gt; = &lt;表达式&gt;</code></li>
-<li>同步赋值语句：同时给多个变量赋值<br><br><code>&lt;变量1&gt;, …, &lt;变量N&gt; = &lt;表达式1&gt;, …, &lt;表达式N&gt;</code><h3 id="2-3-3引用"><a href="#2-3-3引用" class="headerlink" title="2.3.3引用"></a>2.3.3引用</h3></li>
-<li>Python程序会经常使用当前程序之外已有的功能代码，这个过程叫“引用”。Python语言使用import保留字引用当前程序以外的功能库，使用方式如下：<br><br><code>import &lt;功能库名称&gt;</code></li>
-<li>引用功能库之后，采用<code>&lt;功能库名称&gt;.&lt;函数名称&gt;()</code>方式调用具体功能<h3 id="2-3-4其他语句"><a href="#2-3-4其他语句" class="headerlink" title="2.3.4其他语句"></a>2.3.4其他语句</h3></li>
-<li>除了赋值语句外，Python程序还包括一些其他的语句类型，例如，分支语句和循环语句等。更多的分支和循环内容将在第4章介绍。这里不再赘述。<h2 id="2-4基本输入输出函数"><a href="#2-4基本输入输出函数" class="headerlink" title="2.4基本输入输出函数"></a>2.4基本输入输出函数</h2></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>函数</th>
-<th>语法</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>input</td>
-<td>&lt;变量&gt; = input(&lt;提示性文字&gt;</td>
-<td>获得用户输入之前，input()函数可以包含一些提示性文字</td>
-</tr>
-<tr>
-<td>eval</td>
-<td>eval(&lt;字符串&gt;)</td>
-<td>eval(&lt;字符串&gt;)函数是Python语言中一个十分重要的函数，它能够以Python表达式的方式解析并执行字符串，将返回结果输出</td>
-</tr>
-<tr>
-<td>print()</td>
-<td>1.print(&lt;待输出字符串&gt;)<br>2.print(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;)<br>3.print(&lt;输出字符串模板&gt;.format(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;))<br>4.print(&lt;待输出内容&gt;, end=”&lt;增加的输出结尾&gt;”)</td>
-<td>1.仅用于输出字符串<br>2.仅用于输出一个或多个变量<br>3.用于混合输出字符串与变量值<br>4.对print()函数的end参数进行赋值</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>Python</category>
-        <category>二级</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>二级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4.程序的控制结构</title>
-    <url>/2021/09/05/4-%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<p>程序的控制结构</p>
-<span id="more"></span>
-<h1 id="4-程序的控制结构"><a href="#4-程序的控制结构" class="headerlink" title="4.程序的控制结构"></a>4.程序的控制结构</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_4.%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84.png"><h2 id="4-1顺序结构"><a href="#4-1顺序结构" class="headerlink" title="4.1顺序结构"></a>4.1顺序结构</h2>顺序结构是程序按照线性顺序依次执行的一种运行<br>方式<h2 id="4-2分支结构"><a href="#4-2分支结构" class="headerlink" title="4.2分支结构"></a>4.2分支结构</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#单分支结构: if语句</span><br><span class="line">if &lt;条件&gt;:</span><br><span class="line">    语句块</span><br><span class="line"></span><br><span class="line">#二分支结构：if-else</span><br><span class="line">if &lt;条件&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;</span><br><span class="line"></span><br><span class="line">#多分支结构：if-elif-else</span><br><span class="line">if &lt;条件1&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">elif &lt;条件2&gt;:</span><br><span class="line">    &lt;语句块2&gt;</span><br><span class="line">... </span><br><span class="line">else:</span><br><span class="line">    &lt;语句块N&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="4-3循环结构"><a href="#4-3循环结构" class="headerlink" title="4.3循环结构"></a>4.3循环结构</h2><h3 id="4-3-1遍历循环-for"><a href="#4-3-1遍历循环-for" class="headerlink" title="4.3.1遍历循环: for"></a>4.3.1遍历循环: for</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for &lt;循环变量&gt; in &lt;遍历结构&gt;:</span><br><span class="line">    &lt;语句块&gt;</span><br></pre></td></tr></table></figure>
-遍历循环还有一种扩展模式，使用方法如下：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for &lt;循环变量&gt; in &lt;遍历结构&gt;:       </span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;</span><br></pre></td></tr></table></figure>
-当for循环正常执行之后，程序会继续执行else语句中内容。else语句只在循环正常执行之后才执行并结束，因此，可以在&lt;语句块2&gt;中放置判断循环执行情况的语句。</li>
-</ul>
-<h3 id="4-3-2无限循环-while"><a href="#4-3-2无限循环-while" class="headerlink" title="4.3.2无限循环: while"></a>4.3.2无限循环: while</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">while &lt;条件&gt;:</span><br><span class="line">    &lt;语句块&gt;  </span><br><span class="line"></span><br><span class="line">while &lt;条件&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;  </span><br></pre></td></tr></table></figure>
-<h3 id="4-3-3循环控制-break和continue"><a href="#4-3-3循环控制-break和continue" class="headerlink" title="4.3.3循环控制: break和continue"></a>4.3.3循环控制: break和continue</h3><table>
-<thead>
-<tr>
-<th>语句</th>
-<th>区别</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>continue</td>
-<td>只结束本次循环，不终止整个循环的执行</td>
-</tr>
-<tr>
-<td>break</td>
-<td>具备结束循环的能力</td>
-</tr>
-</tbody></table>
-<h2 id="4-4判断条件组合"><a href="#4-4判断条件组合" class="headerlink" title="4.4判断条件组合"></a>4.4判断条件组合</h2><p>Python关系操作符</p>
-<table>
-<thead>
-<tr>
-<th>操作符</th>
-<th>数学符号</th>
-<th>操作符含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>＜</td>
-<td>﹤</td>
-<td>小于</td>
-</tr>
-<tr>
-<td>＜＝</td>
-<td>≤</td>
-<td>小于等于</td>
-</tr>
-<tr>
-<td>＞＝</td>
-<td>≥</td>
-<td>大于等于</td>
-</tr>
-<tr>
-<td>＞</td>
-<td>＞</td>
-<td>大于</td>
-</tr>
-<tr>
-<td>＝＝</td>
-<td>＝</td>
-<td>等于</td>
-</tr>
-<tr>
-<td>！＝</td>
-<td>≠</td>
-<td>不等于</td>
-</tr>
-</tbody></table>
-<p>Python语言使用保留字not、and和or对条件进行逻辑运算或组着。<br><br>保留字not表示单个条件的“否”关系，and表示多个条件之间的“与”关系，保留字or表示多个条件之间的“或”关系。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;not True</span><br><span class="line">False</span><br><span class="line">&gt;&gt;&gt;a = 80</span><br><span class="line">&gt;&gt;&gt;( a &gt; 100) or ( a &gt; 50 and a &lt; 90)</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
-<h2 id="4-4程序的异常处理"><a href="#4-4程序的异常处理" class="headerlink" title="4.4程序的异常处理"></a>4.4程序的异常处理</h2><p>Python语言使用保留字try和except进行异常处理，基本的语法格式如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">try:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">except:</span><br><span class="line">    &lt;语句块2&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="4-5实例解析——猜数字游戏"><a href="#4-5实例解析——猜数字游戏" class="headerlink" title="4.5实例解析——猜数字游戏"></a>4.5实例解析——猜数字游戏</h2>]]></content>
       <categories>
         <category>Python</category>
         <category>二级</category>
@@ -1313,23 +1313,6 @@
       </tags>
   </entry>
   <entry>
-    <title>8-18</title>
-    <url>/2021/08/18/8-18/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
-<span id="more"></span>
->中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
-]]></content>
-      <categories>
-        <category>日常记录</category>
-      </categories>
-      <tags>
-        <tag>生活片段</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>日常记录</title>
     <url>/2021/08/17/8-17/</url>
     <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg " width = "300"  height = "200">
@@ -1343,6 +1326,23 @@
 <p>同时，今天是keep打卡第一天 fighting~</p>
 </blockquote>
 <p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg"></p>
+]]></content>
+      <categories>
+        <category>日常记录</category>
+      </categories>
+      <tags>
+        <tag>生活片段</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>8-18</title>
+    <url>/2021/08/18/8-18/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
+<span id="more"></span>
+>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
 ]]></content>
       <categories>
         <category>日常记录</category>
@@ -2014,6 +2014,42 @@
       </tags>
   </entry>
   <entry>
+    <title>github+hexo 个人博客更换主题</title>
+    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
+<span id="more"></span>
+
+<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
+<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
+<blockquote>
+<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
+</blockquote>
+<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
+<blockquote>
+<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
+</blockquote>
+<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
+<blockquote>
+<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></table></figure>
+
+<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
+]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+        <tag>主题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo 新建分类和标签</title>
     <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
     <content><![CDATA[<p>hexo 新建分类和标签</p>
@@ -2052,42 +2088,6 @@
         <tag>hexo</tag>
         <tag>博客</tag>
         <tag>新建分类标签</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>github+hexo 个人博客更换主题</title>
-    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
-<span id="more"></span>
-
-<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
-<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
-<blockquote>
-<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
-</blockquote>
-<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
-<blockquote>
-<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
-</blockquote>
-<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
-<blockquote>
-<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></table></figure>
-
-<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
-]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-        <tag>主题</tag>
       </tags>
   </entry>
   <entry>
@@ -2760,6 +2760,46 @@
       </tags>
   </entry>
   <entry>
+    <title>虚拟机安装macOS系统</title>
+    <url>/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<p>VMware虚拟机安装macOS全过程详解</p>
+<span id="more"></span>
+
+<p>参考链接</p>
+<p><a href="https://www.pc-daily.com/xitong/75975.html">虚拟机安装macos系统（VMware虚拟机安装macOS详细</a></p>
+<p><a href="https://blog.csdn.net/Simon_477/article/details/110252233">虚拟机VMware安装苹果系统macOS，超级详细教程，附文件下载，真教程！！</a></p>
+<p><a href="https://baijiahao.baidu.com/s?id=1697367423466273816&wfr=spider&for=pc">如何使用虚拟机VMware安装苹果macOS系统</a></p>
+<h5 id="1-安装虚拟机VMware"><a href="#1-安装虚拟机VMware" class="headerlink" title="1 安装虚拟机VMware"></a>1 安装虚拟机VMware</h5><p><a href="https://mp.weixin.qq.com/s?__biz=MzIyNjAxMjEwOQ==&mid=2247502732&idx=5&sn=27221e888444d6c36ac62f4767337215&chksm=e874752edf03fc38cadb220b2e77654f32248976e7fa2af240ba7f1e0c0527541ebba5725643&scene=21#wechat_redirect">VMware16</a></p>
+<h5 id="2-安装解锁工具unlocker"><a href="#2-安装解锁工具unlocker" class="headerlink" title="2  安装解锁工具unlocker"></a>2  安装解锁工具unlocker</h5><p>解锁虚拟机安装macOS限制工具</p>
+<p><a href="http://www.winwin7.com/soft/9473.html#xiazai">unlocker v3.0.3</a></p>
+<blockquote>
+<ul>
+<li><strong><a href="https://blog.csdn.net/puspos/article/details/108900141">运行unlocker中win-install时，出现file not found-darwin.</a></strong></li>
+</ul>
+</blockquote>
+<h5 id="3-虚拟机安装-maOS"><a href="#3-虚拟机安装-maOS" class="headerlink" title="3 虚拟机安装 maOS"></a>3 虚拟机安装 maOS</h5><p><a href="https://www.mhero.com/macos">macOS系统下载</a></p>
+<p><a href="https://cloud.mfpud.com/VirtualCDR/44EE85B8FF68F7428C0AE7B3AA27661E/">macOS kealos 10.15</a> （非百度云盘）</p>
+<p><a href="https://sysin.org/blog/macOS/">Apple macOS 下载汇总（系统、应用和技巧）</a></p>
+<blockquote>
+<ul>
+<li>报错<a href="https://www.bilibili.com/read/cv13362122"><strong>客户机操作系统已禁用 CPU</strong></a></li>
+</ul>
+</blockquote>
+<h5 id="4-解决安装后屏幕适应问题"><a href="#4-解决安装后屏幕适应问题" class="headerlink" title="4 解决安装后屏幕适应问题"></a>4 解决安装后屏幕适应问题</h5><p>安装VMware Tools，用到步骤二中darwin.iso</p>
+<h5 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h5><p><a href="https://baijiahao.baidu.com/s?id=1691924549832120099&wfr=spider&for=pc">虚拟机中的Mac系统怎么优化</a></p>
+<p><a href="https://blog.csdn.net/SSS_Benjamin/article/details/89296164">VMware 15 上Mac虚拟机卡顿情况的优化</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/337036027">全网最详细的VMware虚拟机安装MacOS系统教程，没有之一！！！附全部资源</a></p>
+<p><strong>网络</strong></p>
+<p><a href="https://m.kafan.cn/A/gvx45wd73r.html">mac虚拟机如何开启wifi</a></p>
+<p><a href="https://blog.csdn.net/kof820/article/details/50515115?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_antiscanv2&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_antiscanv2&utm_relevant_index=1">VMware虚拟机mac系统以太网无法上网</a></p>
+<p><strong>app store</strong></p>
+<p><a href="https://jingyan.baidu.com/article/e75aca852cd5a9142fdac610.html">app store 购买过程中出错 错误500解决方法</a></p>
+]]></content>
+      <tags>
+        <tag>虚拟机</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>选课</title>
     <url>/2021/08/28/%E9%80%89%E8%AF%BE/</url>
     <content><![CDATA[<p>又是一年开学季，选课的日子又来了。</p>
@@ -2867,46 +2907,6 @@
       <tags>
         <tag>选课</tag>
         <tag>大学生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>虚拟机安装macOS系统</title>
-    <url>/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<p>VMware虚拟机安装macOS全过程详解</p>
-<span id="more"></span>
-
-<p>参考链接</p>
-<p><a href="https://www.pc-daily.com/xitong/75975.html">虚拟机安装macos系统（VMware虚拟机安装macOS详细</a></p>
-<p><a href="https://blog.csdn.net/Simon_477/article/details/110252233">虚拟机VMware安装苹果系统macOS，超级详细教程，附文件下载，真教程！！</a></p>
-<p><a href="https://baijiahao.baidu.com/s?id=1697367423466273816&wfr=spider&for=pc">如何使用虚拟机VMware安装苹果macOS系统</a></p>
-<h5 id="1-安装虚拟机VMware"><a href="#1-安装虚拟机VMware" class="headerlink" title="1 安装虚拟机VMware"></a>1 安装虚拟机VMware</h5><p><a href="https://mp.weixin.qq.com/s?__biz=MzIyNjAxMjEwOQ==&mid=2247502732&idx=5&sn=27221e888444d6c36ac62f4767337215&chksm=e874752edf03fc38cadb220b2e77654f32248976e7fa2af240ba7f1e0c0527541ebba5725643&scene=21#wechat_redirect">VMware16</a></p>
-<h5 id="2-安装解锁工具unlocker"><a href="#2-安装解锁工具unlocker" class="headerlink" title="2  安装解锁工具unlocker"></a>2  安装解锁工具unlocker</h5><p>解锁虚拟机安装macOS限制工具</p>
-<p><a href="http://www.winwin7.com/soft/9473.html#xiazai">unlocker v3.0.3</a></p>
-<blockquote>
-<ul>
-<li><strong><a href="https://blog.csdn.net/puspos/article/details/108900141">运行unlocker中win-install时，出现file not found-darwin.</a></strong></li>
-</ul>
-</blockquote>
-<h5 id="3-虚拟机安装-maOS"><a href="#3-虚拟机安装-maOS" class="headerlink" title="3 虚拟机安装 maOS"></a>3 虚拟机安装 maOS</h5><p><a href="https://www.mhero.com/macos">macOS系统下载</a></p>
-<p><a href="https://cloud.mfpud.com/VirtualCDR/44EE85B8FF68F7428C0AE7B3AA27661E/">macOS kealos 10.15</a> （非百度云盘）</p>
-<p><a href="https://sysin.org/blog/macOS/">Apple macOS 下载汇总（系统、应用和技巧）</a></p>
-<blockquote>
-<ul>
-<li>报错<a href="https://www.bilibili.com/read/cv13362122"><strong>客户机操作系统已禁用 CPU</strong></a></li>
-</ul>
-</blockquote>
-<h5 id="4-解决安装后屏幕适应问题"><a href="#4-解决安装后屏幕适应问题" class="headerlink" title="4 解决安装后屏幕适应问题"></a>4 解决安装后屏幕适应问题</h5><p>安装VMware Tools，用到步骤二中darwin.iso</p>
-<h5 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h5><p><a href="https://baijiahao.baidu.com/s?id=1691924549832120099&wfr=spider&for=pc">虚拟机中的Mac系统怎么优化</a></p>
-<p><a href="https://blog.csdn.net/SSS_Benjamin/article/details/89296164">VMware 15 上Mac虚拟机卡顿情况的优化</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/337036027">全网最详细的VMware虚拟机安装MacOS系统教程，没有之一！！！附全部资源</a></p>
-<p><strong>网络</strong></p>
-<p><a href="https://m.kafan.cn/A/gvx45wd73r.html">mac虚拟机如何开启wifi</a></p>
-<p><a href="https://blog.csdn.net/kof820/article/details/50515115?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_antiscanv2&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_antiscanv2&utm_relevant_index=1">VMware虚拟机mac系统以太网无法上网</a></p>
-<p><strong>app store</strong></p>
-<p><a href="https://jingyan.baidu.com/article/e75aca852cd5a9142fdac610.html">app store 购买过程中出错 错误500解决方法</a></p>
-]]></content>
-      <tags>
-        <tag>虚拟机</tag>
       </tags>
   </entry>
 </search>

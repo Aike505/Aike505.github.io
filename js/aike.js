@@ -279,7 +279,6 @@ function FixedCommentBtn() {
   }
 }
 
-// 导航栏顶部修改
 //切换页面先初始化一遍，确保开始时是原生状态。所以要加pjax重载。
 RemoveFixedComment();
 document.getElementById('page-name').innerText = document.title.split(' | 下雨天不打伞')[0];
