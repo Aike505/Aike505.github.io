@@ -99,7 +99,7 @@ div#category {
     transition: all .3s ease-in-out;
 }
 
-[data-theme="dark"] div#archive, div#page {
+[data-theme="dark"] div#archive, div#page, div#category, div#tag{
     background: rgba(0, 0, 0, 0.3) !important;
     border-radius: 12px;
     box-shadow: 0 8px 15px -5px #2c2d300c;
