@@ -297,7 +297,7 @@
     padding: 0 calc((100% - 1420px) / 2);
     transition: 0.3s;
     background: var(--aike-maskbgdeep);
-    backdrop-filter: saturate(180%) blur(20px);
+    /* backdrop-filter: saturate(180%) blur(20px); */
     transition: none !important;
     -webkit-transition: none !important;
     -moz-transition: none !important;
@@ -439,12 +439,12 @@
   #nav .menus_items .menus_item > a > i:last-child {
     display: none;
   }
-  #nav #search-button {
+  #nav #menus .nav-button {
     font-size: 1.3em;
-  }
-  #nav #background-button {
+  } 
+  #nav #menus .menus_items {
     font-size: 1.3em;
-  }
+  } 
   
   #page-header.not-top-img #nav .back-home-button {
     color: var(--aike-fontcolor);
@@ -503,6 +503,7 @@
   .back-home-button .back-menu-list-group .back-menu-list-title {
     margin: 8px 0 0 16px;
     transition: 0.3s;
+    font-size: 14px;
   }
   .back-home-button .back-menu-list {
     display: flex;
