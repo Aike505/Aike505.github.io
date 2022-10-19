@@ -78,8 +78,9 @@ function createWinbox() {
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210180819845.jpg)" class="pimgbox" onclick="changeBg('url(https\://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210180819845.jpg)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210180819843.jpg)" class="pimgbox" onclick="changeBg('url(https\://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210180819843.jpg)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210180819840.jpg)" class="pimgbox" onclick="changeBg('url(https\://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210180819840.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2022/10/20/3hiBYHSruVqgZKl.png)" class="pimgbox" onclick="changeBg('url(https\://s2.loli.net/2022/10/20/3hiBYHSruVqgZKl.png)')"></a>
+
     </div>
-    
     <h2 id="图片（电脑）"><a href="#图片（电脑）" class="headerlink" title="图片（电脑）"></a>图片（电脑）</h2>
     <div class="bgbox">
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151229279.jpg)" class="imgbox" onclick="changeBg('url(https\://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151229279.jpg)')"></a>
