@@ -118,7 +118,11 @@ div#category {
     transition: all .3s ease-in-out;
 }
 
-[data-theme="dark"] div#archive, [data-theme="dark"] div#page, [data-theme="dark"] div#category, [data-theme="dark"] div#tag, [data-theme="dark"] div#category-bar{
+[data-theme="dark"] div#archive, 
+[data-theme="dark"] div#page, 
+[data-theme="dark"] div#category, 
+[data-theme="dark"] div#tag, 
+[data-theme="dark"] div#category-bar{
     background: rgba(0, 0, 0, 0.3) !important;
     border-radius: 12px;
     box-shadow: 0 8px 15px -5px #2c2d300c;
