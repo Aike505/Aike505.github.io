@@ -1,9 +1,18 @@
+#twikoo .el-textarea textarea {
+    min-height: 130px !important;
+    background-size: 90px;
+}
+
 :root {
     --aike-border: 1px solid rgba(211, 211, 211, 0.8);
 }
 /* 透明效果 */
 /* 首页文章卡片 */
 #recent-posts>.recent-post-item {
+    background: rgba(255, 255, 255, 0.7);
+}
+/* 首页分类导航条 */
+#recent-posts #category-bar {
     background: rgba(255, 255, 255, 0.7);
 }
 
@@ -36,6 +45,7 @@ div#tag {
 div#category {
     background: rgba(255, 255, 255, 0.7);
 }
+
 
 /* 页脚透明 */
 #footer {
@@ -99,7 +109,16 @@ div#category {
     transition: all .3s ease-in-out;
 }
 
-[data-theme="dark"] div#archive, div#page, div#category, div#tag{
+[data-theme="dark"] #recent-posts .category-bar {
+    background: rgba(0, 0, 0, 0.3) !important;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px -5px #2c2d300c;
+    border: var(--aike-border);
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
+
+[data-theme="dark"] div#archive, [data-theme="dark"] div#page, [data-theme="dark"] div#category, [data-theme="dark"] div#tag, [data-theme="dark"] div#category-bar{
     background: rgba(0, 0, 0, 0.3) !important;
     border-radius: 12px;
     box-shadow: 0 8px 15px -5px #2c2d300c;
