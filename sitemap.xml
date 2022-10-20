@@ -308,7 +308,7 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/box/index.html</loc>
+    <loc>https://aike505.github.io/box/about/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -317,7 +317,7 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/box/about/index.html</loc>
+    <loc>https://aike505.github.io/box/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -335,7 +335,7 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/games/cat/index.html</loc>
+    <loc>https://aike505.github.io/games/PacMan/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -344,7 +344,7 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/games/PacMan/index.html</loc>
+    <loc>https://aike505.github.io/games/cat/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -362,7 +362,7 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/games/piano/index.html</loc>
+    <loc>https://aike505.github.io/games/element/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -371,7 +371,7 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/games/element/index.html</loc>
+    <loc>https://aike505.github.io/games/piano/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -390,20 +390,6 @@
   
   <url>
     <loc>https://aike505.github.io/tags/Python/</loc>
-    <lastmod>2022-10-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/tags/%E7%94%B5%E8%84%91/</loc>
-    <lastmod>2022-10-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/tags/%E7%A3%81%E7%9B%98/</loc>
     <lastmod>2022-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -431,21 +417,14 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://aike505.github.io/tags/%E7%94%B5%E8%84%91/</loc>
     <lastmod>2022-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/bug/</loc>
-    <lastmod>2022-10-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/tags/java/</loc>
+    <loc>https://aike505.github.io/tags/%E7%A3%81%E7%9B%98/</loc>
     <lastmod>2022-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -459,6 +438,20 @@
   </url>
   
   <url>
+    <loc>https://aike505.github.io/tags/%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2022-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/tags/java/</loc>
+    <lastmod>2022-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://aike505.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2022-10-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -466,7 +459,21 @@
   </url>
   
   <url>
+    <loc>https://aike505.github.io/tags/bug/</loc>
+    <lastmod>2022-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://aike505.github.io/tags/%E6%B3%A8%E5%86%8C%E5%9F%9F%E5%90%8D/</loc>
+    <lastmod>2022-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/tags/%E6%95%B0%E6%A8%A1/</loc>
     <lastmod>2022-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -507,13 +514,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://aike505.github.io/tags/%E6%95%B0%E6%A8%A1/</loc>
-    <lastmod>2022-10-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -531,14 +531,14 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://aike505.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/</loc>
     <lastmod>2022-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aike505.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/</loc>
+    <loc>https://aike505.github.io/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2022-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
