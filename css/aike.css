@@ -553,3 +553,10 @@ div#quit-board.fixedcomment {
     border-top-color: #1edafbe5;	/*上边框颜色*/
     border-left-color: #1ef4fbec;	/*左边框颜色*/
   }
+
+
+/* 加载样式 */
+.loading-img {
+    background: url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210182137363.jpg) no-repeat center center;
+    background-size: cover;
+  }
