@@ -203,6 +203,109 @@
       </tags>
   </entry>
   <entry>
+    <title>11.Python第三方库纵览</title>
+    <url>/2021/09/05/11-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88/</url>
+    <content><![CDATA[<p>Python第三方库纵览</p>
+<span id="more"></span>
+<h1 id="11-Python第三方库纵览"><a href="#11-Python第三方库纵览" class="headerlink" title="11.Python第三方库纵览"></a>11.Python第三方库纵览</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_11.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88.png"></li>
+</ul>
+<blockquote>
+<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>更广泛的Python计算生态，只要求了解第三方库的名称，不限于以下领域: 网络爬虫、数据分析、文本处理、数据可视化、用户图形界面、机器学习、Web开发、游戏开发等</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>方向</th>
+<th>第三方库</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>网络爬虫方向</td>
+<td>requests<br>scrapy</td>
+<td>requests库是一个简洁且简单的处理HTTP请求的第三方库，它的最大优点是程序编写过程更接近正常URL访问过程。<br>scrapy是Python开发的一个快速的、高层次的Web获取框架。</td>
+</tr>
+<tr>
+<td>数据分析方向</td>
+<td>numpy<br>scipy<br>pandas</td>
+<td>numpy是Python的一种开源数值计算扩展第三方库，用于处理数据类型相同的多维数组（ndarray），简称“数组”<br>scipy是一款方便、易于使用、专为科学和工程设计的Python工具包。<br>pandas是基于numpy扩展的一个重要第三方库，它是为了解决数据分析任务而创建的。</td>
+</tr>
+<tr>
+<td>文本处理方向</td>
+<td>pdfminer<br>openpyxl<br>python-docx<br>beautifulsoup4</td>
+<td>pdfminer是一个可以从PDF文档中提取各类信息的第三方库<br>openpyxl是一个处理Microsoft Excel文档Python第三方库<br>python-docx是一个处理Microsoft Word文档的Python第三方库<br>beautifulsoup4库，也称为Beautiful Soup库或bs4库，用于解析和处理HTML和XML</td>
+</tr>
+<tr>
+<td>数据可视化</td>
+<td>matplotlib<br>TVTK<br>mayavi</td>
+<td>matplotlib是提供数据绘图功能的第三方库，主要进行二维图表数据展示，广泛用于科学计算的数据可视化<br>TVTK库在标准的VTK库之上用Traits库进行封装的Python第三方库<br>mayavi基于VTK开发，完全用Python编写，提供了一个更为方便实用的可视化软件</td>
+</tr>
+<tr>
+<td>用户图形界面方向</td>
+<td>pyqt5<br>wxpython<br>pygtk</td>
+<td>Python语言当前最好的GUI第三方库，它可以在Windows、Linux和Mac OS X等操作系统上跨平台使用<br>wxPython是Python语言的一套优秀的GUI图形库，它是跨平台GUI库wxWidgets的Python封装<br>pygtk是基于GTK+的Python语言封装，它提供了各式的可视元素和功能，能够轻松创建具有图形用户界面的程序。</td>
+</tr>
+<tr>
+<td>机器学习方向</td>
+<td>Scikit-learn<br>TensorFlow<br>Theano</td>
+<td>Scikit-learn是一个简单且高效的数据挖掘和数据分析工具<br>TensorFlow是谷歌公司基于DistBelief进行研发的第二代人工智能学习系统，也是用来支撑著名的AlphaGo系统的后台框架<br>Theano为执行深度学习中大规模神经网络算法的运算而设计，擅长处理多维数组</td>
+</tr>
+<tr>
+<td>Web开发方向</td>
+<td>Django<br>Pyramid<br>Flask</td>
+<td>Django是Python生态中最流行的开源Web应用框架<br>Pyramid是一个通用、开源的Python Web应用程序开发框架<br>Flask是轻量级Web应用框架，相比Django和Pyramid，它也被称为微框架</td>
+</tr>
+<tr>
+<td>游戏开发方向</td>
+<td>Pygame<br>Panda3D<br>cocos2d</td>
+<td>Pygame是在SDL库基础上进行封装的、面向游戏开发入门的Python第三方库，除了制作游戏外，还用于制作多媒体应用程序<br>Panda3D是一个开源、跨平台的3D渲染和游戏开发库,简答说，它是一个3D游戏引擎，由迪士尼和卡耐基梅隆大学娱乐技术中心共同进行开发<br>cocos2d是一个构建2D游戏和图形界面交互式应用的框架，它包括C++、JavaScript、Swift、Python等多个版本</td>
+</tr>
+</tbody></table>
+<p>Python语言有超过12万个第三方库，覆盖信息技术几乎所有领域。即使每个方向，也会有大量的专业人员开发多个第三方库来给出具体设计。除了本章所提到的方向外，这里再列出5个<strong>有趣且有用</strong>的Python第三方库，展示Python在工程实践方面强大的魅力。</p>
+<table>
+<thead>
+<tr>
+<th>更多第三方库</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PIL</td>
+<td>PIL库是Python语言在图像处理方面的重要第三方库，支持图像存储、显示和处理，它能够处理几乎所有图片格式，可以完成对图像的缩放、剪裁、叠加以及向图像添加线条、图像和文字等操作。</td>
+</tr>
+<tr>
+<td>SymPy</td>
+<td>SymPy是一个支持符号计算的Python第三方库，它是一个全功能的计算机代数系统。SymPy代码简洁、易于理解，支持符号计算、高精度计算、模式匹配、绘图、解方程、微积分、组合数学、离散数学、几何学、概率与统计、物理学等领域计算和应用。</td>
+</tr>
+<tr>
+<td>NLTK</td>
+<td>NLTK是一个非常重要的自然语言处理Python第三方库，它支持多种语言，尤其对中文支持良好。NLTK可以进行语料处理、文本统计、内容理解、情感分析等多种应用，具备非常可靠的应用价值。</td>
+</tr>
+<tr>
+<td>WeRoBot</td>
+<td>WeRoBot 是一个微信公众号开发框架，也称为的微信机器人框架。WeRoBot可以解析微信服务器发来的消息，并将消息转换成成Message或者Event类型。</td>
+</tr>
+<tr>
+<td>MyQR</td>
+<td>MyQR是一个能够产生基本二维码、艺术二维码和动态效果二维码的Python第三方库。图11.1给出了一些MyQR生成二维码的实例。</td>
+</tr>
+</tbody></table>
+<ul>
+<li>图11.1<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_11.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88_1.png"></li>
+</ul>
+<blockquote>
+<h2 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h2><p>本章通过8个具体方向30个Python功能库的简要介绍纵览Python语言计算生态的丰富性，希望读者能够从Python基础语法出发，看到更广阔的程序设计生态，进一步“理解和运用计算生态”，掌握符合信息时代需要的程序设计能力。<br><br>国家计算机等级考试不仅仅是一场考试，更是检验能力提升的手段，加油!<br><br><br>点击<a href="https://python123.io/student/series/1/">这里</a>获取所有章节pdf<br>点击<a href="https://python123.io/python/songtian/5ed87dc83b5ca9663fd4761d">这里</a>获取更多内容</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2.Python语言基本语法元素</title>
     <url>/2021/09/04/2-Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0/</url>
     <content><![CDATA[<p>Python语言基本语法元素</p>
@@ -334,109 +437,6 @@
 <td>1.仅用于输出字符串<br>2.仅用于输出一个或多个变量<br>3.用于混合输出字符串与变量值<br>4.对print()函数的end参数进行赋值</td>
 </tr>
 </tbody></table>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>11.Python第三方库纵览</title>
-    <url>/2021/09/05/11-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88/</url>
-    <content><![CDATA[<p>Python第三方库纵览</p>
-<span id="more"></span>
-<h1 id="11-Python第三方库纵览"><a href="#11-Python第三方库纵览" class="headerlink" title="11.Python第三方库纵览"></a>11.Python第三方库纵览</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_11.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88.png"></li>
-</ul>
-<blockquote>
-<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>更广泛的Python计算生态，只要求了解第三方库的名称，不限于以下领域: 网络爬虫、数据分析、文本处理、数据可视化、用户图形界面、机器学习、Web开发、游戏开发等</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>方向</th>
-<th>第三方库</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>网络爬虫方向</td>
-<td>requests<br>scrapy</td>
-<td>requests库是一个简洁且简单的处理HTTP请求的第三方库，它的最大优点是程序编写过程更接近正常URL访问过程。<br>scrapy是Python开发的一个快速的、高层次的Web获取框架。</td>
-</tr>
-<tr>
-<td>数据分析方向</td>
-<td>numpy<br>scipy<br>pandas</td>
-<td>numpy是Python的一种开源数值计算扩展第三方库，用于处理数据类型相同的多维数组（ndarray），简称“数组”<br>scipy是一款方便、易于使用、专为科学和工程设计的Python工具包。<br>pandas是基于numpy扩展的一个重要第三方库，它是为了解决数据分析任务而创建的。</td>
-</tr>
-<tr>
-<td>文本处理方向</td>
-<td>pdfminer<br>openpyxl<br>python-docx<br>beautifulsoup4</td>
-<td>pdfminer是一个可以从PDF文档中提取各类信息的第三方库<br>openpyxl是一个处理Microsoft Excel文档Python第三方库<br>python-docx是一个处理Microsoft Word文档的Python第三方库<br>beautifulsoup4库，也称为Beautiful Soup库或bs4库，用于解析和处理HTML和XML</td>
-</tr>
-<tr>
-<td>数据可视化</td>
-<td>matplotlib<br>TVTK<br>mayavi</td>
-<td>matplotlib是提供数据绘图功能的第三方库，主要进行二维图表数据展示，广泛用于科学计算的数据可视化<br>TVTK库在标准的VTK库之上用Traits库进行封装的Python第三方库<br>mayavi基于VTK开发，完全用Python编写，提供了一个更为方便实用的可视化软件</td>
-</tr>
-<tr>
-<td>用户图形界面方向</td>
-<td>pyqt5<br>wxpython<br>pygtk</td>
-<td>Python语言当前最好的GUI第三方库，它可以在Windows、Linux和Mac OS X等操作系统上跨平台使用<br>wxPython是Python语言的一套优秀的GUI图形库，它是跨平台GUI库wxWidgets的Python封装<br>pygtk是基于GTK+的Python语言封装，它提供了各式的可视元素和功能，能够轻松创建具有图形用户界面的程序。</td>
-</tr>
-<tr>
-<td>机器学习方向</td>
-<td>Scikit-learn<br>TensorFlow<br>Theano</td>
-<td>Scikit-learn是一个简单且高效的数据挖掘和数据分析工具<br>TensorFlow是谷歌公司基于DistBelief进行研发的第二代人工智能学习系统，也是用来支撑著名的AlphaGo系统的后台框架<br>Theano为执行深度学习中大规模神经网络算法的运算而设计，擅长处理多维数组</td>
-</tr>
-<tr>
-<td>Web开发方向</td>
-<td>Django<br>Pyramid<br>Flask</td>
-<td>Django是Python生态中最流行的开源Web应用框架<br>Pyramid是一个通用、开源的Python Web应用程序开发框架<br>Flask是轻量级Web应用框架，相比Django和Pyramid，它也被称为微框架</td>
-</tr>
-<tr>
-<td>游戏开发方向</td>
-<td>Pygame<br>Panda3D<br>cocos2d</td>
-<td>Pygame是在SDL库基础上进行封装的、面向游戏开发入门的Python第三方库，除了制作游戏外，还用于制作多媒体应用程序<br>Panda3D是一个开源、跨平台的3D渲染和游戏开发库,简答说，它是一个3D游戏引擎，由迪士尼和卡耐基梅隆大学娱乐技术中心共同进行开发<br>cocos2d是一个构建2D游戏和图形界面交互式应用的框架，它包括C++、JavaScript、Swift、Python等多个版本</td>
-</tr>
-</tbody></table>
-<p>Python语言有超过12万个第三方库，覆盖信息技术几乎所有领域。即使每个方向，也会有大量的专业人员开发多个第三方库来给出具体设计。除了本章所提到的方向外，这里再列出5个<strong>有趣且有用</strong>的Python第三方库，展示Python在工程实践方面强大的魅力。</p>
-<table>
-<thead>
-<tr>
-<th>更多第三方库</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>PIL</td>
-<td>PIL库是Python语言在图像处理方面的重要第三方库，支持图像存储、显示和处理，它能够处理几乎所有图片格式，可以完成对图像的缩放、剪裁、叠加以及向图像添加线条、图像和文字等操作。</td>
-</tr>
-<tr>
-<td>SymPy</td>
-<td>SymPy是一个支持符号计算的Python第三方库，它是一个全功能的计算机代数系统。SymPy代码简洁、易于理解，支持符号计算、高精度计算、模式匹配、绘图、解方程、微积分、组合数学、离散数学、几何学、概率与统计、物理学等领域计算和应用。</td>
-</tr>
-<tr>
-<td>NLTK</td>
-<td>NLTK是一个非常重要的自然语言处理Python第三方库，它支持多种语言，尤其对中文支持良好。NLTK可以进行语料处理、文本统计、内容理解、情感分析等多种应用，具备非常可靠的应用价值。</td>
-</tr>
-<tr>
-<td>WeRoBot</td>
-<td>WeRoBot 是一个微信公众号开发框架，也称为的微信机器人框架。WeRoBot可以解析微信服务器发来的消息，并将消息转换成成Message或者Event类型。</td>
-</tr>
-<tr>
-<td>MyQR</td>
-<td>MyQR是一个能够产生基本二维码、艺术二维码和动态效果二维码的Python第三方库。图11.1给出了一些MyQR生成二维码的实例。</td>
-</tr>
-</tbody></table>
-<ul>
-<li>图11.1<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_11.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88_1.png"></li>
-</ul>
-<blockquote>
-<h2 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h2><p>本章通过8个具体方向30个Python功能库的简要介绍纵览Python语言计算生态的丰富性，希望读者能够从Python基础语法出发，看到更广阔的程序设计生态，进一步“理解和运用计算生态”，掌握符合信息时代需要的程序设计能力。<br><br>国家计算机等级考试不仅仅是一场考试，更是检验能力提升的手段，加油!<br><br><br>点击<a href="https://python123.io/student/series/1/">这里</a>获取所有章节pdf<br>点击<a href="https://python123.io/python/songtian/5ed87dc83b5ca9663fd4761d">这里</a>获取更多内容</p>
-</blockquote>
 ]]></content>
       <categories>
         <category>学习笔记</category>
@@ -1280,6 +1280,25 @@
   </entry>
   <entry>
     <title>日常记录</title>
+    <url>/2021/08/17/8-17/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg " width = "300"  height = "200">
+<span id="more"></span>
+>今天看完了《平凡的世界》第三部（*利用学驾校时间看的手机*），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:
+>>* 平凡又平庸的我们努力奔向爱情。      
+>>* 在这平凡的世界里努力过好平凡的生活。
+>>* 我这个平凡的世界里平凡的人觉得遥不可及。
+
+<blockquote>
+<p>同时，今天是keep打卡第一天 fighting~</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg"></p>
+]]></content>
+      <categories>
+        <category>生活点滴</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>日常记录</title>
     <url>/2021/08/16/8-16/</url>
     <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200">
 <span id="more"></span>
@@ -1300,25 +1319,6 @@
 ![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
 ![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
 ![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
-]]></content>
-      <categories>
-        <category>生活点滴</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>日常记录</title>
-    <url>/2021/08/17/8-17/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg " width = "300"  height = "200">
-<span id="more"></span>
->今天看完了《平凡的世界》第三部（*利用学驾校时间看的手机*），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:
->>* 平凡又平庸的我们努力奔向爱情。      
->>* 在这平凡的世界里努力过好平凡的生活。
->>* 我这个平凡的世界里平凡的人觉得遥不可及。
-
-<blockquote>
-<p>同时，今天是keep打卡第一天 fighting~</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg"></p>
 ]]></content>
       <categories>
         <category>生活点滴</category>
@@ -1494,6 +1494,102 @@
       </categories>
       <tags>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
+    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</p>
+<span id="more"></span>
+
+<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
+<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
+<p>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
+<p>成功帮助舍友解决</p>
+]]></content>
+      <categories>
+        <category>实用教程</category>
+      </categories>
+      <tags>
+        <tag>电脑</tag>
+        <tag>磁盘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo 新建分类和标签</title>
+    <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
+    <content><![CDATA[<p>hexo 新建分类和标签</p>
+<span id="more"></span>
+
+<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
+<h2 id="1-创建“分类”选项"><a href="#1-创建“分类”选项" class="headerlink" title="1.创建“分类”选项"></a>1.创建“分类”选项</h2><p>生成“分类”页并添加 tpye 属性,进入博客目录。执行命令下方命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+
+<p>categories 文件夹下会有 index.md 这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2019-04-24 15:30:30</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>保存并关闭文件。</p>
+<p>给文章添加“categories”属性</p>
+<p>打开需要添加分类的文章，为其添加 categories 属性。下方的 categories:Hexo 表示这篇文章添加到到“Hexo”这个分类。注意：一篇文章只会添加到一个分类中，如果是多个默认放到第一个分类中。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 添加分类及标签</span><br><span class="line">date: 2017-05-26 12:12:57</span><br><span class="line">categories: Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了 categories: xxx 的文章才会被收录到首页的“分类”中。</p>
+<h2 id="2-创建“标签”选项"><a href="#2-创建“标签”选项" class="headerlink" title="2.创建“标签”选项"></a>2.创建“标签”选项</h2><p>生成“标签”页并添加 tpye 属性</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+
+<p>在 tags 文件夹下，找到 index.md 这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-22 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>添加 type: “tags”到内容中，添加后是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>保存并关闭文件。</p>
+<p>给文章添加“tags”属性,打开需要添加标签的文章，为其添加 tags 属性。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 添加分类及标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">categories:</span><br><span class="line">           - Hexo</span><br><span class="line">tags:</span><br><span class="line">           - 博客</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+        <tag>新建分类标签</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>github+hexo 个人博客更换主题</title>
+    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
+<span id="more"></span>
+
+<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
+<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
+<blockquote>
+<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
+</blockquote>
+<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
+<blockquote>
+<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
+</blockquote>
+<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
+<blockquote>
+<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></table></figure>
+
+<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+        <tag>主题</tag>
       </tags>
   </entry>
   <entry>
@@ -1964,114 +2060,509 @@
       </tags>
   </entry>
   <entry>
-    <title>github+hexo 个人博客更换主题</title>
-    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
-<span id="more"></span>
-
-<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
-<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
-<blockquote>
-<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
-</blockquote>
-<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
-<blockquote>
-<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
-</blockquote>
-<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
-<blockquote>
-<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></table></figure>
-
-<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-        <tag>主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
-    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</p>
-<span id="more"></span>
-
-<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
-<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
-<p>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
-<p>成功帮助舍友解决</p>
-]]></content>
-      <categories>
-        <category>实用教程</category>
-      </categories>
-      <tags>
-        <tag>电脑</tag>
-        <tag>磁盘</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo 新建分类和标签</title>
-    <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
-    <content><![CDATA[<p>hexo 新建分类和标签</p>
-<span id="more"></span>
-
-<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
-<h2 id="1-创建“分类”选项"><a href="#1-创建“分类”选项" class="headerlink" title="1.创建“分类”选项"></a>1.创建“分类”选项</h2><p>生成“分类”页并添加 tpye 属性,进入博客目录。执行命令下方命令</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-
-<p>categories 文件夹下会有 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2019-04-24 15:30:30</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存并关闭文件。</p>
-<p>给文章添加“categories”属性</p>
-<p>打开需要添加分类的文章，为其添加 categories 属性。下方的 categories:Hexo 表示这篇文章添加到到“Hexo”这个分类。注意：一篇文章只会添加到一个分类中，如果是多个默认放到第一个分类中。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 添加分类及标签</span><br><span class="line">date: 2017-05-26 12:12:57</span><br><span class="line">categories: Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了 categories: xxx 的文章才会被收录到首页的“分类”中。</p>
-<h2 id="2-创建“标签”选项"><a href="#2-创建“标签”选项" class="headerlink" title="2.创建“标签”选项"></a>2.创建“标签”选项</h2><p>生成“标签”页并添加 tpye 属性</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-
-<p>在 tags 文件夹下，找到 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-22 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>添加 type: “tags”到内容中，添加后是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存并关闭文件。</p>
-<p>给文章添加“tags”属性,打开需要添加标签的文章，为其添加 tags 属性。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 添加分类及标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">categories:</span><br><span class="line">           - Hexo</span><br><span class="line">tags:</span><br><span class="line">           - 博客</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-        <tag>新建分类标签</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo备忘录</title>
     <url>/2022/10/21/hexo%E5%A4%87%E5%BF%98%E5%BD%95/</url>
-    <content><![CDATA[<h3 id="1-常用指令"><a href="#1-常用指令" class="headerlink" title="1.常用指令"></a>1.常用指令</h3><p><code>Hexo n</code> 标题 创建一篇文章<br><code>Hexo init</code> 初始化博客<br><code>Hexo clean</code> 清理文件<br><code>Hexo g</code> 生成静态文件<br><code>Hexo d</code> 部署博客<br><code>hexo server</code> 启动本地服务<br><code>hexo render</code> 渲染文件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: # 网站标题</span><br><span class="line">categories: # 分类(只能单线)</span><br><span class="line">  - category_1</span><br><span class="line">  - category_1_1</span><br><span class="line">  - category_1_1_1</span><br><span class="line">tags:  # 标签(可以多标)</span><br><span class="line">  - tag_1</span><br><span class="line">  - tag_2</span><br><span class="line">type: &quot;&quot; # 指定这个页面的类型(比如categories/tags)</span><br><span class="line">cover: # 封面图片,注意不能用../命令,双引号有无均可</span><br><span class="line">comments: # 评论开关 true/false</span><br><span class="line">date: # 创建时间</span><br><span class="line">updated:  # 更新时间</span><br><span class="line">description: # 网站描述</span><br><span class="line">aside: # 侧边栏开关</span><br><span class="line">top_img: # 文章banner图,如果有cover的话默认用的是cover(这个可以给_post之外的用),其隐藏前缀目录为Website/public/注意格式应为:images/xxx,但是这样会使_posts里文章的相关文章封面失效,需要用URL</span><br></pre></td></tr></table></figure>
-<h3 id="7-嵌入自适应B站视频"><a href="#7-嵌入自适应B站视频" class="headerlink" title="7.嵌入自适应B站视频"></a>7.嵌入自适应B站视频</h3><div style="position: relative; padding: 30% 45%;">
+    <content><![CDATA[<h2 id="1-常用指令"><a href="#1-常用指令" class="headerlink" title="1. 常用指令"></a>1. 常用指令</h2><p><code>hexo cl</code> 清理文件<br><code>hexo g</code> 生成静态文件<br><code>hexo d</code> 部署博客<br><code>hexo s</code> 启动本地服务<br><code>hexo n 标题</code> 创建一篇文章<br><code>hexo new page 标题</code> 创建一个新页面</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: # 网站标题</span><br><span class="line">categories: # 分类(只能单线)</span><br><span class="line">  - category_1</span><br><span class="line">  - category_1_1</span><br><span class="line">  - category_1_1_1</span><br><span class="line">tags:  # 标签(可以多标)</span><br><span class="line">  - tag_1</span><br><span class="line">  - tag_2</span><br><span class="line">type: &quot;&quot; # 指定这个页面的类型(比如categories/tags)</span><br><span class="line">cover: # 封面图片,注意不能用../命令,双引号有无均可</span><br><span class="line">comments: # 评论开关 true/false</span><br><span class="line">date: # 创建时间</span><br><span class="line">updated:  # 更新时间</span><br><span class="line">description: # 网站描述</span><br><span class="line">aside: # 侧边栏开关</span><br><span class="line">top_img: # 文章banner图,如果有cover的话默认用的是cover(这个可以给_post之外的用),其隐藏前缀目录为Website/public/注意格式应为:images/xxx,但是这样会使_posts里文章的相关文章封面失效,需要用URL</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Post Front-matter</button></li><li class="tab"><button type="button" data-href="#-2">Page Front-matter</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title:</span><br><span class="line">date:</span><br><span class="line">updated:</span><br><span class="line">tags:</span><br><span class="line">categories:</span><br><span class="line">keywords:</span><br><span class="line">description:</span><br><span class="line">top_img:</span><br><span class="line">comments:</span><br><span class="line">cover:</span><br><span class="line">toc:</span><br><span class="line">toc_number:</span><br><span class="line">toc_style_simple:</span><br><span class="line">copyright:</span><br><span class="line">copyright_author:</span><br><span class="line">copyright_author_href:</span><br><span class="line">copyright_url:</span><br><span class="line">copyright_info:</span><br><span class="line">mathjax:</span><br><span class="line">katex:</span><br><span class="line">aplayer:</span><br><span class="line">highlight_shrink:</span><br><span class="line">aside:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>写法</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>title</td>
+<td>【必需】文章标题</td>
+</tr>
+<tr>
+<td>date</td>
+<td>【必需】文章创建日期</td>
+</tr>
+<tr>
+<td>updated</td>
+<td>【可选】文章更新日期</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>【可选】文章标籤</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>【可选】文章分类</td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>【可选】文章关键字</td>
+</tr>
+<tr>
+<td>description</td>
+<td>【可选】文章描述</td>
+</tr>
+<tr>
+<td>top_img</td>
+<td>【可选】文章顶部图片</td>
+</tr>
+<tr>
+<td>cover</td>
+<td>【可选】文章缩略图(如果没有设置top_img,文章页顶部将显示缩略图，可设为false/图片地址/留空)</td>
+</tr>
+<tr>
+<td>comments</td>
+<td>【可选】显示文章评论模块(默认 true)</td>
+</tr>
+<tr>
+<td>toc</td>
+<td>【可选】显示文章TOC(默认为设置中toc的enable配置)</td>
+</tr>
+<tr>
+<td>toc_number</td>
+<td>【可选】显示toc_number(默认为设置中toc的number配置)</td>
+</tr>
+<tr>
+<td>toc_style_simple</td>
+<td>【可选】显示 toc 简洁模式</td>
+</tr>
+<tr>
+<td>copyright</td>
+<td>【可选】显示文章版权模块(默认为设置中post_copyright的enable配置)</td>
+</tr>
+<tr>
+<td>copyright_author</td>
+<td>【可选】文章版权模块的文章作者</td>
+</tr>
+<tr>
+<td>copyright_author_href</td>
+<td>【可选】文章版权模块的文章作者链接</td>
+</tr>
+<tr>
+<td>copyright_url</td>
+<td>【可选】文章版权模块的文章连结链接</td>
+</tr>
+<tr>
+<td>copyright_info</td>
+<td>【可选】文章版权模块的版权声明文字</td>
+</tr>
+<tr>
+<td>mathjax</td>
+<td>【可选】显示mathjax(当设置mathjax的per_page: false时，才需要配置，默认 false)</td>
+</tr>
+<tr>
+<td>katex</td>
+<td>【可选】显示katex(当设置katex的per_page: false时，才需要配置，默认 false)</td>
+</tr>
+<tr>
+<td>aplayer</td>
+<td>【可选】在需要的页面加载aplayer的js和css,请参考文章下面的音乐 配置</td>
+</tr>
+<tr>
+<td>highlight_shrink</td>
+<td>【可选】配置代码框是否展开(true/false)(默认为设置中highlight_shrink的配置)</td>
+</tr>
+<tr>
+<td>aside</td>
+<td>【可选】显示侧边栏 (默认 true)</td>
+</tr>
+</tbody></table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title:</span><br><span class="line">date:</span><br><span class="line">updated:</span><br><span class="line">type:</span><br><span class="line">comments:</span><br><span class="line">description:</span><br><span class="line">keywords:</span><br><span class="line">top_img:</span><br><span class="line">mathjax:</span><br><span class="line">katex:</span><br><span class="line">aside:</span><br><span class="line">aplayer:</span><br><span class="line">highlight_shrink:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>写法</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>title</td>
+<td>【必需】页面标题</td>
+</tr>
+<tr>
+<td>date</td>
+<td>【必需】页面创建日期</td>
+</tr>
+<tr>
+<td>type</td>
+<td>【必需】标籤、分类和友情链接三个页面需要配置</td>
+</tr>
+<tr>
+<td>updated</td>
+<td>【可选】页面更新日期</td>
+</tr>
+<tr>
+<td>description</td>
+<td>【可选】页面描述</td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>【可选】页面关键字</td>
+</tr>
+<tr>
+<td>comments</td>
+<td>【可选】显示页面评论模块(默认 true)</td>
+</tr>
+<tr>
+<td>top_img</td>
+<td>【可选】页面顶部图片</td>
+</tr>
+<tr>
+<td>mathjax</td>
+<td>【可选】显示mathjax(当设置mathjax的per_page: false时，才需要配置，默认 false)</td>
+</tr>
+<tr>
+<td>katex</td>
+<td>【可选】显示katex(当设置katex的per_page: false时，才需要配置，默认 false)</td>
+</tr>
+<tr>
+<td>aside</td>
+<td>【可选】显示侧边栏 (默认 true)</td>
+</tr>
+<tr>
+<td>aplayer</td>
+<td>【可选】在需要的页面加载aplayer的js和css,请参考文章下面的音乐 配置</td>
+</tr>
+<tr>
+<td>highlight_shrink</td>
+<td>【可选】配置代码框是否展开(true/false)(默认为设置中highlight_shrink的配置)</td>
+</tr>
+</tbody></table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+
+<hr>
+
+<h2 id="2-复选框列表-checkbox"><a href="#2-复选框列表-checkbox" class="headerlink" title="2. 复选框列表 checkbox"></a>2. 复选框列表 checkbox</h2><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">标签语法</button></li><li class="tab"><button type="button" data-href="#-2">样式预览</button></li><li class="tab"><button type="button" data-href="#-3">示例源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% checkbox 样式参数（可选）, 文本（支持简单md） %&#125;</span><br></pre></td></tr></table></figure>
+<!-- endtab 复选框列表 -->
+<!-- tab 配置参数 -->
+<ol>
+<li>样式: plus, minus, times</li>
+<li>颜色: red ,yellow, green, cyan, blue, gray, gray</li>
+<li>选中状态: checked</li>
+</ol><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% checkbox 纯文本测试 %&#125;</span><br><span class="line">&#123;% checkbox checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %&#125;</span><br><span class="line">&#123;% checkbox red, 支持自定义颜色 %&#125;</span><br><span class="line">&#123;% checkbox green checked, 绿色 + 默认选中 %&#125;</span><br><span class="line">&#123;% checkbox yellow checked, 黄色 + 默认选中 %&#125;</span><br><span class="line">&#123;% checkbox cyan checked, 青色 + 默认选中 %&#125;</span><br><span class="line">&#123;% checkbox blue checked, 蓝色 + 默认选中 %&#125;</span><br><span class="line">&#123;% checkbox plus green checked, 增加 %&#125;</span><br><span class="line">&#123;% checkbox minus yellow checked, 减少 %&#125;</span><br><span class="line">&#123;% checkbox times red checked, 叉 %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+<hr>
+
+<h2 id="3-外挂标签"><a href="#3-外挂标签" class="headerlink" title="3. 外挂标签"></a>3. 外挂标签</h2><h3 id="3-1-引用note"><a href="#3-1-引用note" class="headerlink" title="3.1 引用note"></a>3.1 引用note</h3><h4 id="3-1-1-内置图标"><a href="#3-1-1-内置图标" class="headerlink" title="3.1.1 内置图标"></a>3.1.1 内置图标</h4><div class="tabs" id="内置图标"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#内置图标-1">通用设置</button></li><li class="tab"><button type="button" data-href="#内置图标-2">simple</button></li><li class="tab"><button type="button" data-href="#内置图标-3">modern</button></li><li class="tab"><button type="button" data-href="#内置图标-4">flat</button></li><li class="tab"><button type="button" data-href="#内置图标-5">disabled</button></li><li class="tab"><button type="button" data-href="#内置图标-6">no-icon</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="内置图标-1"><p>修改<code>主题配置文件</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">note:</span><br><span class="line">  # Note tag style values:</span><br><span class="line">  #  - simple    bs-callout old alert style. Default.</span><br><span class="line">  #  - modern    bs-callout new (v2-v3) alert style.</span><br><span class="line">  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.</span><br><span class="line">  #  - disabled  disable all CSS styles import of note tag.</span><br><span class="line">  style: simple</span><br><span class="line">  icons: false</span><br><span class="line">  border_radius: 3</span><br><span class="line">  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).</span><br><span class="line">  # Offset also applied to label tag variables. This option can work with disabled note tag.</span><br><span class="line">  light_bg_offset: 0</span><br></pre></td></tr></table></figure>
+<p><code>icons</code>和<code>light_bg_offset</code>只对方法一生效</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note [class] [no-icon] [style] %&#125;</span><br><span class="line">Any content (support inline tags too.io).</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>用法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>class</td>
+<td>【可选】标识，不同的标识有不同的配色（ default / primary / success / info / warning / danger ）</td>
+</tr>
+<tr>
+<td>icon</td>
+<td>【可选】不显示 icon</td>
+</tr>
+<tr>
+<td>style</td>
+<td>【可选】可以覆盖配置中的 style（simple/modern/flat/disabled）</td>
+</tr>
+</tbody></table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="内置图标-2"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note simple %&#125;</span><br><span class="line">默认 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note default simple %&#125;</span><br><span class="line">default 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary simple %&#125;</span><br><span class="line">primary 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success simple %&#125;</span><br><span class="line">success 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info simple %&#125;</span><br><span class="line">info 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning simple %&#125;</span><br><span class="line">warning 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger simple %&#125;</span><br><span class="line">danger 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="note simple"><p>默认 提示块标籤</p>
+</div>
+
+<div class="note default simple"><p>default 提示块标籤</p>
+</div>
+
+<div class="note primary simple"><p>primary 提示块标籤</p>
+</div>
+
+<div class="note success simple"><p>success 提示块标籤</p>
+</div>
+
+<div class="note info simple"><p>info 提示块标籤</p>
+</div>
+
+<div class="note warning simple"><p>warning 提示块标籤</p>
+</div>
+
+<div class="note danger simple"><p>danger 提示块标籤</p>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="内置图标-3"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note modern %&#125;</span><br><span class="line">默认 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note default modern %&#125;</span><br><span class="line">default 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary modern %&#125;</span><br><span class="line">primary 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success modern %&#125;</span><br><span class="line">success 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info modern %&#125;</span><br><span class="line">info 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning modern %&#125;</span><br><span class="line">warning 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger modern %&#125;</span><br><span class="line">danger 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="note modern"><p>默认 提示块标籤</p>
+</div>
+
+<div class="note default modern"><p>default 提示块标籤</p>
+</div>
+
+<div class="note primary modern"><p>primary 提示块标籤</p>
+</div>
+
+<div class="note success modern"><p>success 提示块标籤</p>
+</div>
+
+<div class="note info modern"><p>info 提示块标籤</p>
+</div>
+
+<div class="note warning modern"><p>warning 提示块标籤</p>
+</div>
+
+<div class="note danger modern"><p>danger 提示块标籤</p>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="内置图标-4"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note flat %&#125;</span><br><span class="line">默认 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note default flat %&#125;</span><br><span class="line">default 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary flat %&#125;</span><br><span class="line">primary 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success flat %&#125;</span><br><span class="line">success 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info flat %&#125;</span><br><span class="line">info 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning flat %&#125;</span><br><span class="line">warning 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger flat %&#125;</span><br><span class="line">danger 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="note flat"><p>默认 提示块标籤</p>
+</div>
+
+<div class="note default flat"><p>default 提示块标籤</p>
+</div>
+
+<div class="note primary flat"><p>primary 提示块标籤</p>
+</div>
+
+<div class="note success flat"><p>success 提示块标籤</p>
+</div>
+
+<div class="note info flat"><p>info 提示块标籤</p>
+</div>
+
+<div class="note warning flat"><p>warning 提示块标籤</p>
+</div>
+
+<div class="note danger flat"><p>danger 提示块标籤</p>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="内置图标-5"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note disabled %&#125;</span><br><span class="line">默认 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note default disabled %&#125;</span><br><span class="line">default 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary disabled %&#125;</span><br><span class="line">primary 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success disabled %&#125;</span><br><span class="line">success 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info disabled %&#125;</span><br><span class="line">info 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning disabled %&#125;</span><br><span class="line">warning 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary disabled %&#125;</span><br><span class="line">primary 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="note disabled"><p>默认 提示块标籤</p>
+</div>
+
+<div class="note default disabled"><p>default 提示块标籤</p>
+</div>
+
+<div class="note primary disabled"><p>primary 提示块标籤</p>
+</div>
+
+<div class="note success disabled"><p>success 提示块标籤</p>
+</div>
+
+<div class="note info disabled"><p>info 提示块标籤</p>
+</div>
+
+<div class="note warning disabled"><p>warning 提示块标籤</p>
+</div>
+
+<div class="note danger disabled"><p>danger 提示块标籤</p>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="内置图标-6"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note no-icon %&#125;</span><br><span class="line">默认 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note default no-icon %&#125;</span><br><span class="line">default 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary no-icon %&#125;</span><br><span class="line">primary 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success no-icon %&#125;</span><br><span class="line">success 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info no-icon %&#125;</span><br><span class="line">info 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning no-icon %&#125;</span><br><span class="line">warning 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger no-icon %&#125;</span><br><span class="line">danger 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note no-icon flat"><p>默认 提示块标籤</p>
+</div>
+
+<div class="note default no-icon flat"><p>default 提示块标籤</p>
+</div>
+
+<div class="note primary no-icon flat"><p>primary 提示块标籤</p>
+</div>
+
+<div class="note success no-icon flat"><p>success 提示块标籤</p>
+</div>
+
+<div class="note info no-icon flat"><p>info 提示块标籤</p>
+</div>
+
+<div class="note warning no-icon flat"><p>warning 提示块标籤</p>
+</div>
+
+<div class="note danger no-icon flat"><p>danger 提示块标籤</p>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h4 id="3-1-2-自定义图标"><a href="#3-1-2-自定义图标" class="headerlink" title="3.1.2 自定义图标"></a>3.1.2 自定义图标</h4><div class="tabs" id="内置图标"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#内置图标-1">simple</button></li><li class="tab"><button type="button" data-href="#内置图标-2">modern</button></li><li class="tab"><button type="button" data-href="#内置图标-3">flat</button></li><li class="tab"><button type="button" data-href="#内置图标-4">disabled</button></li><li class="tab"><button type="button" data-href="#内置图标-5">no-icon</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="内置图标-1"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note &#x27;fab fa-cc-visa&#x27; simple %&#125;</span><br><span class="line">你是刷 Visa 还是是 UnionPay</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note red &#x27;fas fa-bullhorn&#x27; simple %&#125;</span><br><span class="line">2021 年快到了....</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note pink &#x27;fas fa-car-crash&#x27; simple %&#125;</span><br><span class="line">小心开车 安全至上</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note green &#x27;fas fa-fan&#x27; simple%&#125;</span><br><span class="line">这是三片呢？还是四片？</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note orange &#x27;fas fa-battery-half&#x27; simple %&#125;</span><br><span class="line">该充电了哦！</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note purple &#x27;far fa-hand-scissors&#x27; simple %&#125;</span><br><span class="line">剪刀石头布</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note blue &#x27;fab fa-internet-explorer&#x27; simple %&#125;</span><br><span class="line">前端最讨厌的浏览器</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note icon-padding simple"><i class="note-icon fab fa-cc-visa"></i><p>你是刷 Visa 还是是 UnionPay</p>
+</div>
+<div class="note red icon-padding simple"><i class="note-icon fas fa-bullhorn"></i><p>2021 年快到了….</p>
+</div>
+<div class="note pink icon-padding simple"><i class="note-icon fas fa-car-crash"></i><p>小心开车 安全至上</p>
+</div>
+<div class="note green icon-padding simple"><i class="note-icon fas fa-fan"></i><p>这是三片呢？还是四片？</p>
+</div>
+<div class="note orange icon-padding simple"><i class="note-icon fas fa-battery-half"></i><p>该充电了哦！</p>
+</div>
+<div class="note purple icon-padding simple"><i class="note-icon far fa-hand-scissors"></i><p>剪刀石头布</p>
+</div>
+<div class="note blue icon-padding simple"><i class="note-icon fab fa-internet-explorer"></i><p>前端最讨厌的浏览器</p>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="内置图标-2"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note &#x27;fab fa-cc-visa&#x27; modern %&#125;</span><br><span class="line">你是刷 Visa 还是是 UnionPay</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note red &#x27;fas fa-bullhorn&#x27; modern %&#125;</span><br><span class="line">2021 年快到了....</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note pink &#x27;fas fa-car-crash&#x27; modern %&#125;</span><br><span class="line">小心开车 安全至上</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note green &#x27;fas fa-fan&#x27; modern%&#125;</span><br><span class="line">这是三片呢？还是四片？</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note orange &#x27;fas fa-battery-half&#x27; modern %&#125;</span><br><span class="line">该充电了哦！</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note purple &#x27;far fa-hand-scissors&#x27; modern %&#125;</span><br><span class="line">剪刀石头布</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note blue &#x27;fab fa-internet-explorer&#x27; modern %&#125;</span><br><span class="line">前端最讨厌的浏览器</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="note icon-padding modern"><i class="note-icon fab fa-cc-visa"></i><p>你是刷 Visa 还是是 UnionPay</p>
+</div>
+<div class="note red icon-padding modern"><i class="note-icon fas fa-bullhorn"></i><p>2021 年快到了….</p>
+</div>
+<div class="note pink icon-padding modern"><i class="note-icon fas fa-car-crash"></i><p>小心开车 安全至上</p>
+</div>
+<div class="note green icon-padding modern"><i class="note-icon fas fa-fan"></i><p>这是三片呢？还是四片？</p>
+</div>
+<div class="note orange icon-padding modern"><i class="note-icon fas fa-battery-half"></i><p>该充电了哦！</p>
+</div>
+<div class="note purple icon-padding modern"><i class="note-icon far fa-hand-scissors"></i><p>剪刀石头布</p>
+</div>
+<div class="note blue icon-padding modern"><i class="note-icon fab fa-internet-explorer"></i><p>前端最讨厌的浏览器</p>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="内置图标-3"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note &#x27;fab fa-cc-visa&#x27; flat %&#125;</span><br><span class="line">你是刷 Visa 还是是 UnionPay</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note red &#x27;fas fa-bullhorn&#x27; flat %&#125;</span><br><span class="line">2021 年快到了....</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note pink &#x27;fas fa-car-crash&#x27; flat %&#125;</span><br><span class="line">小心开车 安全至上</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note green &#x27;fas fa-fan&#x27; flat%&#125;</span><br><span class="line">这是三片呢？还是四片？</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note orange &#x27;fas fa-battery-half&#x27; flat %&#125;</span><br><span class="line">该充电了哦！</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note purple &#x27;far fa-hand-scissors&#x27; flat %&#125;</span><br><span class="line">剪刀石头布</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note blue &#x27;fab fa-internet-explorer&#x27; flat %&#125;</span><br><span class="line">前端最讨厌的浏览器</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="note icon-padding flat"><i class="note-icon fab fa-cc-visa"></i><p>你是刷 Visa 还是是 UnionPay</p>
+</div>
+<div class="note red icon-padding flat"><i class="note-icon fas fa-bullhorn"></i><p>2021 年快到了….</p>
+</div>
+<div class="note pink icon-padding flat"><i class="note-icon fas fa-car-crash"></i><p>小心开车 安全至上</p>
+</div>
+<div class="note green icon-padding flat"><i class="note-icon fas fa-fan"></i><p>这是三片呢？还是四片？</p>
+</div>
+<div class="note orange icon-padding flat"><i class="note-icon fas fa-battery-half"></i><p>该充电了哦！</p>
+</div>
+<div class="note purple icon-padding flat"><i class="note-icon far fa-hand-scissors"></i><p>剪刀石头布</p>
+</div>
+<div class="note blue icon-padding flat"><i class="note-icon fab fa-internet-explorer"></i><p>前端最讨厌的浏览器</p>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="内置图标-4"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note &#x27;fab fa-cc-visa&#x27; disabled  %&#125;</span><br><span class="line">你是刷 Visa 还是是 UnionPay</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note red &#x27;fas fa-bullhorn&#x27; disabled  %&#125;</span><br><span class="line">2021 年快到了....</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note pink &#x27;fas fa-car-crash&#x27; disabled  %&#125;</span><br><span class="line">小心开车 安全至上</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note green &#x27;fas fa-fan&#x27; disabled %&#125;</span><br><span class="line">这是三片呢？还是四片？</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note orange &#x27;fas fa-battery-half&#x27; disabled  %&#125;</span><br><span class="line">该充电了哦！</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note purple &#x27;far fa-hand-scissors&#x27; disabled  %&#125;</span><br><span class="line">剪刀石头布</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note blue &#x27;fab fa-internet-explorer&#x27; disabled  %&#125;</span><br><span class="line">前端最讨厌的浏览器</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="note icon-padding disabled"><i class="note-icon fab fa-cc-visa"></i><p>你是刷 Visa 还是是 UnionPay</p>
+</div>
+<div class="note red icon-padding disabled"><i class="note-icon fas fa-bullhorn"></i><p>2021 年快到了….</p>
+</div>
+<div class="note pink icon-padding disabled"><i class="note-icon fas fa-car-crash"></i><p>小心开车 安全至上</p>
+</div>
+<div class="note green icon-padding disabled"><i class="note-icon fas fa-fan"></i><p>这是三片呢？还是四片？</p>
+</div>
+<div class="note orange icon-padding disabled"><i class="note-icon fas fa-battery-half"></i><p>该充电了哦！</p>
+</div>
+<div class="note purple icon-padding disabled"><i class="note-icon far fa-hand-scissors"></i><p>剪刀石头布</p>
+</div>
+<div class="note blue icon-padding disabled"><i class="note-icon fab fa-internet-explorer"></i><p>前端最讨厌的浏览器</p>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="内置图标-5"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note no-icon %&#125;</span><br><span class="line">你是刷 Visa 还是 UnionPay</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note blue no-icon %&#125;</span><br><span class="line">2021 年快到了....</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note pink no-icon %&#125;</span><br><span class="line">小心开车 安全至上</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note red no-icon %&#125;</span><br><span class="line">这是三片呢？还是四片？</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note orange no-icon %&#125;</span><br><span class="line">你是刷 Visa 还是 UnionPay</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note purple no-icon %&#125;</span><br><span class="line">剪刀石头布</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note green no-icon %&#125;</span><br><span class="line">前端最讨厌的浏览器</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note no-icon flat"><p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="note blue no-icon flat"><p>2021 年快到了….</p>
+</div>
+<div class="note pink no-icon flat"><p>小心开车 安全至上</p>
+</div>
+<div class="note red no-icon flat"><p>这是三片呢？还是四片？</p>
+</div>
+<div class="note orange no-icon flat"><p>你是刷 Visa 还是 UnionPay</p>
+</div>
+<div class="note purple no-icon flat"><p>剪刀石头布</p>
+</div>
+<div class="note green no-icon flat"><p>前端最讨厌的浏览器</p>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h3 id="3-2相册"><a href="#3-2相册" class="headerlink" title="3.2相册"></a>3.2相册</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% gallery %&#125;</span><br><span class="line">markdown 图片格式</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-3相册图库"><a href="#3-3相册图库" class="headerlink" title="3.3相册图库"></a>3.3相册图库</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;gallery-group-main&quot;&gt;</span><br><span class="line">  &#123;% galleryGroup name description link img-url %&#125; &#123;% galleryGroup name</span><br><span class="line">  description link img-url %&#125; &#123;% galleryGroup name description link img-url %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-4时间线"><a href="#3-4时间线" class="headerlink" title="3.4时间线"></a>3.4时间线</h3><div class="tabs" id="时间线"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#时间线-1">样式预览</button></li><li class="tab"><button type="button" data-href="#时间线-2">示例源码</button></li><li class="tab"><button type="button" data-href="#时间线-3">标签语法</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="时间线-1"><div class="timeline red"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>2022</p>
+</div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>01-02</p>
+</div></div><div class='timeline-item-content'><p>這是測試頁面</p>
+</div></div></div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="时间线-2"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% timeline 2022,red %&#125;</span><br><span class="line"></span><br><span class="line">&lt;!-- timeline 01-02 --&gt;</span><br><span class="line"></span><br><span class="line">這是測試頁面</span><br><span class="line"></span><br><span class="line">&lt;!-- endtimeline --&gt;</span><br><span class="line"></span><br><span class="line">&#123;% endtimeline %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="时间线-3"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% timeline 时间节点标题,颜色 %&#125;</span><br><span class="line"></span><br><span class="line">&lt;!-- timeline 时间节点 --&gt;</span><br><span class="line"></span><br><span class="line">正文内容</span><br><span class="line"></span><br><span class="line">&lt;!-- endtimeline --&gt;</span><br><span class="line"></span><br><span class="line">&#123;% endtimeline %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h3 id="3-5-绘图"><a href="#3-5-绘图" class="headerlink" title="3.5 绘图"></a>3.5 绘图</h3><div class="tabs" id="绘图"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#绘图-1">样式预览</button></li><li class="tab"><button type="button" data-href="#绘图-2">示例源码</button></li><li class="tab"><button type="button" data-href="#绘图-3">标签语法</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="绘图-1"><div class="mermaid-wrap"><pre class="mermaid-src" hidden>
+  pie
+title Key elements in Product X
+&quot;Calcium&quot; : 42.96
+&quot;Potassium&quot; : 50.05
+&quot;Magnesium&quot; : 10.01
+&quot;Iron&quot; : 5
+  </pre></div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="绘图-2"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">pie</span><br><span class="line">title Key elements in Product X</span><br><span class="line">&quot;Calcium&quot; : 42.96</span><br><span class="line">&quot;Potassium&quot; : 50.05</span><br><span class="line">&quot;Magnesium&quot; : 10.01</span><br><span class="line">&quot;Iron&quot; : 5</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="绘图-3"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">内容</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<p>使用 mermaid 标签可以绘制 Flowchart（流程图）、Sequence diagram（时序图 ）、Class Diagram（类别图）、State Diagram（状态图）、Gantt（甘特图）和 Pie Chart（圆形图），具体可以查看 <a href="https://mermaid-js.github.io/mermaid/#/">mermaid</a> 文档</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h3 id="3-6-按钮"><a href="#3-6-按钮" class="headerlink" title="3.6 按钮"></a>3.6 按钮</h3><div class="tabs" id="按钮"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#按钮-1">Inline</button></li><li class="tab"><button type="button" data-href="#按钮-2">Block</button></li><li class="tab"><button type="button" data-href="#按钮-3">option</button></li><li class="tab"><button type="button" data-href="#按钮-4">option-outline</button></li><li class="tab"><button type="button" data-href="#按钮-5">语法</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="按钮-1"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">This is my website, click the button &#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly %&#125;</span><br><span class="line">This is my website, click the button &#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,,outline%&#125;</span><br></pre></td></tr></table></figure>
+<p>This is my website, click the button <a class="btn-beautify " href="https://butterfly.js.org" 
+  title="Butterfly"><span>Butterfly</span></a><br>This is my website, click the button <a class="btn-beautify outline" href="https://butterfly.js.org" 
+  title="Butterfly"><span>Butterfly</span></a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="按钮-2"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">This is my website, click the button &#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,far fa-hand-point-right,block larger %&#125;</span><br><span class="line">This is my website, click the button &#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,far fa-hand-point-right,block center larger %&#125;</span><br><span class="line">This is my website, click the button &#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,far fa-hand-point-right,block right blue larger %&#125;</span><br></pre></td></tr></table></figure>
+<p>This is my website, click the button <a class="btn-beautify block larger" href="https://butterfly.js.org" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><br>This is my website, click the button <a class="btn-beautify block center larger" href="https://butterfly.js.org" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><br>This is my website, click the button <a class="btn-beautify block right blue larger" href="https://butterfly.js.org" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="按钮-3"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;btn-center&quot;&gt;</span><br><span class="line">&#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,far fa-hand-point-right,larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,far fa-hand-point-right,blue larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,far fa-hand-point-right,pink larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,far fa-hand-point-right,red larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,far fa-hand-point-right,purple larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,far fa-hand-point-right,orange larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,far fa-hand-point-right,green larger %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<div class="btn-center">
+<a class="btn-beautify larger" href="https://butterfly.js.org" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a>
+<a class="btn-beautify blue larger" href="https://butterfly.js.org" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a>
+<a class="btn-beautify pink larger" href="https://butterfly.js.org" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a>
+<a class="btn-beautify red larger" href="https://butterfly.js.org" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a>
+<a class="btn-beautify purple larger" href="https://butterfly.js.org" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a>
+<a class="btn-beautify orange larger" href="https://butterfly.js.org" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a>
+<a class="btn-beautify green larger" href="https://butterfly.js.org" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="按钮-4"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;btn-center&quot;&gt;</span><br><span class="line">&#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,far fa-hand-point-right,outline larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,far fa-hand-point-right,outline blue larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,far fa-hand-point-right,outline pink larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,far fa-hand-point-right,outline red larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,far fa-hand-point-right,outline purple larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,far fa-hand-point-right,outline orange larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://butterfly.js.org&#x27;,Butterfly,far fa-hand-point-right,outline green larger %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<div class="btn-center">
+<a class="btn-beautify outline larger" href="https://butterfly.js.org" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a>
+<a class="btn-beautify outline blue larger" href="https://butterfly.js.org" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a>
+<a class="btn-beautify outline pink larger" href="https://butterfly.js.org" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a>
+<a class="btn-beautify outline red larger" href="https://butterfly.js.org" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a>
+<a class="btn-beautify outline purple larger" href="https://butterfly.js.org" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a>
+<a class="btn-beautify outline orange larger" href="https://butterfly.js.org" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a>
+<a class="btn-beautify outline green larger" href="https://butterfly.js.org" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="按钮-5"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% btn [url],[text],[icon],[color] [style] [layout] [position] [size] %&#125;</span><br><span class="line"></span><br><span class="line">  [url]         : 链接</span><br><span class="line">  [text]        : 按钮文字</span><br><span class="line">  [icon]        : [可选] 图标</span><br><span class="line">  [color]       : [可选] 按钮背景顔色(默认style时）</span><br><span class="line">                        按钮字体和边框顔色(outline时)</span><br><span class="line">                        default/blue/pink/red/purple/orange/green</span><br><span class="line">  [style]       : [可选] 按钮样式 默认实心</span><br><span class="line">                        outline/留空</span><br><span class="line">  [layout]      : [可选] 按钮佈局 默认为line</span><br><span class="line">                        block/留空</span><br><span class="line">  [position]    : [可选] 按钮位置 前提是设置了layout为block 默认为左边</span><br><span class="line">                        center/right/留空</span><br><span class="line">  [size]        : [可选] 按钮大小</span><br><span class="line">                        larger/留空</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+
+<h3 id="3-7收缩框"><a href="#3-7收缩框" class="headerlink" title="3.7收缩框"></a>3.7收缩框</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% hideToggle 我是谁 %&#125;</span><br><span class="line">爷是:</span><br><span class="line">zkkk123</span><br><span class="line">&#123;% endhideToggle %&#125;</span><br></pre></td></tr></table></figure>
+<details class="toggle" ><summary class="toggle-button" style="">我是谁</summary><div class="toggle-content"><p>爷是:<br>zkkk123</p>
+</div></details>
+
+<h3 id="3-8Block块"><a href="#3-8Block块" class="headerlink" title="3.8Block块"></a>3.8Block块</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% hideBlock 我是谁 %&#125;</span><br><span class="line">爷是:</span><br><span class="line">Weidows</span><br><span class="line">&#123;% endhideBlock %&#125;</span><br></pre></td></tr></table></figure>
+<div class="hide-block"><button type="button" class="hide-button" style="">我是谁
+    </button><div class="hide-content"><p>爷是:<br>Weidows</p>
+</div></div>
+
+<h3 id="3-9-Audio"><a href="#3-9-Audio" class="headerlink" title="3.9 Audio"></a>3.9 Audio</h3><audio controls="" preload="" __idm_id__="269361153">
+  <source
+    src="http://music.163.com/song/media/outer/url?id=574566207.mp3"
+    type="audio/mp3"
+  />
+  Your browser does not support the audio tag.
+</audio>
+
+<h2 id="3-10-tab-标签块"><a href="#3-10-tab-标签块" class="headerlink" title="3.10.tab(标签块)"></a>3.10.tab(标签块)</h2><div class="tabs" id="test2"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#test2-1">第一个Tab</button></li><li class="tab"><button type="button" data-href="#test2-2"><i class="fab fa-apple-pay" style="text-align: center;"></i></button></li><li class="tab"><button type="button" data-href="#test2-3"><i class="fas fa-bomb"></i>炸弹</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="test2-1"><p><strong>tab名字为第一个Tab</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test2-2"><p><strong>只有图标 没有Tab名字</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test2-3"><p><strong>名字+icon</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs test2 %&#125;</span><br><span class="line">&lt;!-- tab 第一个Tab --&gt;</span><br><span class="line">**tab名字为第一个Tab**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab @fab fa-apple-pay --&gt;</span><br><span class="line">**只有图标 没有Tab名字**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab 炸弹@fas fa-bomb --&gt;</span><br><span class="line">**名字+icon**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-嵌入自适应B站视频"><a href="#5-嵌入自适应B站视频" class="headerlink" title="5.嵌入自适应B站视频"></a>5.嵌入自适应B站视频</h2><div style="position: relative; padding: 30% 45%;">
 <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="//player.bilibili.com/player.html?aid=52516662&bvid=BV19p4y1Q7ph&cid=91773304&page=1&as_wide=1&high_quality=1&danmaku=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 </div>
+
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div style=&quot;position: relative; padding: 30% 45%;&quot;&gt;</span><br><span class="line">&lt;iframe style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot; src=&quot;//player.bilibili.com/player.html?aid=52516662&amp;bvid=BV19p4y1Q7ph&amp;cid=91773304&amp;page=1&amp;as_wide=1&amp;high_quality=1&amp;danmaku=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
-<h3 id="13-tab-标签块"><a href="#13-tab-标签块" class="headerlink" title="13.tab(标签块)"></a>13.tab(标签块)</h3><div class="tabs" id="test2"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#test2-1">第一个Tab</button></li><li class="tab"><button type="button" data-href="#test2-2"><i class="fab fa-apple-pay" style="text-align: center;"></i></button></li><li class="tab"><button type="button" data-href="#test2-3"><i class="fas fa-bomb"></i>炸弹</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="test2-1"><p><strong>tab名字为第一个Tab</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test2-2"><p><strong>只有图标 没有Tab名字</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test2-3"><p><strong>名字+icon</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs test2 %&#125;</span><br><span class="line">&lt;!-- tab 第一个Tab --&gt;</span><br><span class="line">**tab名字为第一个Tab**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab @fab fa-apple-pay --&gt;</span><br><span class="line">**只有图标 没有Tab名字**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab 炸弹@fas fa-bomb --&gt;</span><br><span class="line">**名字+icon**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>]]></content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></content>
       <categories>
         <category>博客相关</category>
       </categories>
@@ -2137,6 +2628,144 @@
         <tag>hexo</tag>
         <tag>部署博客</tag>
         <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python库学习</title>
+    <url>/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p>python中常用库的学习笔记</p>
+<span id="more"></span>
+
+<h3 id="pandas库"><a href="#pandas库" class="headerlink" title="pandas库"></a>pandas库</h3><p>pandas 是基于Numpy的一种工具，主要用于数据分析任务。Pandas 纳入了大量库和一些标准的数据模型，提供了高校第操作大型数据集所需要的工具。pandas 的名称来自面板数据（panel data）和python数据分析（data analysis）。</p>
+<ul>
+<li>可以从CSV、JSON、SQL、Microsoft Excel导入数据</li>
+<li>主要数据结构Series（一维数据）和DataFrame（二维数据）</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># pandas 简单实例</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mydataset = &#123;</span><br><span class="line">	<span class="string">&#x27;sites&#x27;</span>:[<span class="string">&#x27;Google&#x27;</span>,<span class="string">&#x27;Runoob&#x27;</span>,<span class="string">&#x27;Wiki&#x27;</span>],</span><br><span class="line">	<span class="string">&#x27;number&#x27;</span>:[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">	&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.DataFrame(mydataset)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line">    sites  number</span><br><span class="line"><span class="number">0</span>  Google       <span class="number">1</span></span><br><span class="line"><span class="number">1</span>  Runoob       <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    Wiki       <span class="number">3</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Pandas-Series"><a href="#Pandas-Series" class="headerlink" title="Pandas Series"></a>Pandas Series</h4><ul>
+<li><p>pandas series类似表格的一列，类似一维数组。</p>
+</li>
+<li><p>可以用list 和key/value对象创建Series</p>
+</li>
+<li><p>由索引（index）和列组成</p>
+</li>
+</ul>
+<p>Series构造方法如下：</p>
+<p><code> pandas.Series(data,index,dtype,name,copy)</code></p>
+<p>data：数据(ndarray类型)    index：索引标签，默认从0开始    dtype：数据类型，默认自己判断    name：名称    copy：拷贝数据，默认False</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(a)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">0</span>    <span class="number">1</span></span><br><span class="line"><span class="number">1</span>    <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    <span class="number">3</span></span><br><span class="line">dtype: int64</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>sites = &#123;<span class="number">1</span>: <span class="string">&quot;Google&quot;</span>, <span class="number">2</span>: <span class="string">&quot;Runoob&quot;</span>, <span class="number">3</span>: <span class="string">&quot;Wiki&quot;</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(sites, index = [<span class="number">1</span>, <span class="number">2</span>], name=<span class="string">&quot;aike&quot;</span> )</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">1</span>    Google</span><br><span class="line"><span class="number">2</span>    Runoob</span><br><span class="line">Name: aike, dtype: <span class="built_in">object</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Pandas-DataFrame"><a href="#Pandas-DataFrame" class="headerlink" title="Pandas DataFrame"></a>Pandas DataFrame</h4><ul>
+<li>表格类型数据</li>
+<li>既有行索引，也有列索引</li>
+</ul>
+<p>DataFrame构造方法：</p>
+<p><code>pandas.DataFrame(data,index,columns,dtype,copy)</code></p>
+<p>columns：列标签，默认为RangeIndex（0,1,2，……，n）</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>data = [[<span class="string">&#x27;Google&#x27;</span>,<span class="number">10</span>],[<span class="string">&#x27;Runoob&#x27;</span>,<span class="number">12</span>],[<span class="string">&#x27;Wike&#x27;</span>,<span class="number">13</span>]]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df = pd.DataFrame(data,columns=[<span class="string">&#x27;Site&#x27;</span>,<span class="string">&#x27;Age&#x27;</span>],dtype=<span class="built_in">float</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df</span><br><span class="line">     Site   Age</span><br><span class="line"><span class="number">0</span>  Google  <span class="number">10.0</span></span><br><span class="line"><span class="number">1</span>  Runoob  <span class="number">12.0</span></span><br><span class="line"><span class="number">2</span>    Wike  <span class="number">13.0</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>loc[ ]：返回指定索引的行</p>
+</li>
+<li><p>loc[[ ]]：返回多行数据</p>
+</li>
+</ul>
+<h4 id="Pandas-CSV文件"><a href="#Pandas-CSV文件" class="headerlink" title="Pandas CSV文件"></a>Pandas CSV文件</h4><p>CSV（<strong>C</strong>omma-<strong>S</strong>eparated <strong>V</strong>alues，逗号分隔值）一般用逗号分割，以纯文本数据存储表格数据（数字和文本）。</p>
+<ul>
+<li>pd.to_string( )：返回DataFrame类型数据</li>
+<li>pd.read_csv( )：读取csv数据</li>
+<li>pd.to_csv( )：将DataFrame存储为csv文件</li>
+<li>df.head(n)：读取回前n行</li>
+<li>df.tail(n)：读取尾部几行</li>
+<li>df.info( )：返回表格基本信息（行列数、各列数据类型）</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import pandas as pd</span><br><span class="line">df = pd.read_csv(&#x27;nba.csv&#x27;)</span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
+
+<h4 id="Pandas-JSON"><a href="#Pandas-JSON" class="headerlink" title="Pandas JSON"></a>Pandas JSON</h4><p>JSON（<strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation，JavaScript对象表示法），存储和交换文本信息的语法。</p>
+<ul>
+<li>Json可转换为DataFrame</li>
+<li>可以从url中读取json数据</li>
+<li>读取内嵌json<ul>
+<li>pd.json_normalize(data, record_path, meta)</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 Python JSON 模块载入数据</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;nested_list.json&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = json.loads(f.read())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 展平数据</span></span><br><span class="line">df_nested_list = pd.json_normalize(data, record_path =[<span class="string">&#x27;students&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span>(df_nested_list)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>安装glom模块：用.来访问内嵌对象的属性</li>
+</ul>
+<h4 id="Pandas-数据清洗"><a href="#Pandas-数据清洗" class="headerlink" title="Pandas 数据清洗"></a>Pandas 数据清洗</h4><ul>
+<li>缺失</li>
+<li>格式错误</li>
+<li>错误数据或重复数据</li>
+</ul>
+<h5 id="清洗空值"><a href="#清洗空值" class="headerlink" title="清洗空值"></a>清洗空值</h5><ul>
+<li>dropna( )：删除包含空字段的行</li>
+</ul>
+<p><code>DataFrame.dropna(axis=0, how=&#39;any&#39;, thresh=None, subset=None, inplace=False)</code></p>
+<h3 id="pdfminer库"><a href="#pdfminer库" class="headerlink" title="pdfminer库"></a>pdfminer库</h3><p><strong>问题描述</strong></p>
+<p>利用python读取PDF文本内容</p>
+<p><strong>运行环境</strong></p>
+<p>python 3.6</p>
+<p><strong>需要安装的库</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install pdfminer</span><br><span class="line">pip install pdfminer3k</span><br></pre></td></tr></table></figure>
+
+<p><strong>实现的源代码</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyocr <span class="comment"># 图像处理库，进行ocr识别</span></span><br><span class="line"><span class="keyword">import</span> importlib <span class="comment"># Python中import语句的实现</span></span><br><span class="line"><span class="keyword">import</span> sys <span class="comment"># 针对与Python解释器相关的变量和方法</span></span><br><span class="line"><span class="keyword">import</span> time <span class="comment"># 基础时间库</span></span><br><span class="line"></span><br><span class="line">importlib.reload(sys)</span><br><span class="line">time1 = time.time()</span><br><span class="line"><span class="comment"># print(&#x27;初始时间为：&#x27;,time1)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os.path</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span> PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span>  PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFResourceManager, PDFPageInterpreter</span><br><span class="line"><span class="keyword">from</span> pdfminer.converter <span class="keyword">import</span> PDFPageAggregator</span><br><span class="line"><span class="keyword">from</span> pdfminer.layout <span class="keyword">import</span> LTTextBoxHorizontal,LAParams</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFTextExtractionNotAllowed</span><br><span class="line"></span><br><span class="line">text_path = <span class="string">r&#x27;D:\文档\预测与决策\第2章 非模型预测方法.pdf&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse</span>():</span></span><br><span class="line">    <span class="comment">#解析PDF文本，并保存到TXT文件中</span></span><br><span class="line">    fp = <span class="built_in">open</span>(text_path,<span class="string">&#x27;rb&#x27;</span>)</span><br><span class="line">    <span class="comment">#用文件对象创建一个PDF文档分析器</span></span><br><span class="line">    parser = PDFParser(fp)</span><br><span class="line">    <span class="comment">#创建一个PDF文档</span></span><br><span class="line">    doc = PDFDocument()</span><br><span class="line">    <span class="comment">#连接分析器，与文档对象</span></span><br><span class="line">    parser.set_document(doc)</span><br><span class="line">    doc.set_parser(parser)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#提供初始化密码，如果没有密码，就创建一个空的字符串</span></span><br><span class="line">    doc.initialize()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#检测文档是否提供txt转换，不提供就忽略</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> doc.is_extractable:</span><br><span class="line">        <span class="keyword">raise</span> PDFTextExtractionNotAllowed</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment">#创建PDF,资源管理器，来共享资源</span></span><br><span class="line">        rsrcmgr = PDFResourceManager()</span><br><span class="line">        <span class="comment">#创建一个PDF设备对象</span></span><br><span class="line">        laparams = LAParams()</span><br><span class="line">        device = PDFPageAggregator(rsrcmgr,laparams=laparams)</span><br><span class="line">        <span class="comment">#创建一个PDF解释器其对象</span></span><br><span class="line">        interpreter = PDFPageInterpreter(rsrcmgr,device)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#循环遍历列表，每次处理一个page内容</span></span><br><span class="line">        <span class="comment">#doc.get_pages()获取page列表</span></span><br><span class="line">        <span class="keyword">for</span> page <span class="keyword">in</span> doc.get_pages():</span><br><span class="line">            interpreter.process_page(page)</span><br><span class="line">            <span class="comment">#接受该页面的LTPage对象</span></span><br><span class="line">            layout = device.get_result()</span><br><span class="line">            <span class="comment"># 这里layout是一个LTPage对象 里面存放着 这个page解析出的各种对象</span></span><br><span class="line">            <span class="comment"># 一般包括LTTextBox, LTFigure, LTImage, LTTextBoxHorizontal 等等</span></span><br><span class="line">            <span class="comment"># 想要获取文本就获得对象的text属性，</span></span><br><span class="line">            <span class="keyword">for</span> x <span class="keyword">in</span> layout:</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">isinstance</span>(x,LTTextBoxHorizontal)):</span><br><span class="line">                    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">r&#x27;C:\Users\86159\Desktop\2.txt&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                        results = x.get_text()</span><br><span class="line">                        <span class="built_in">print</span>(results)</span><br><span class="line">                        f.write(results + <span class="string">&quot;\n&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    parse()</span><br><span class="line">    time2 = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;总共消耗时间为：&#x27;</span>,time2-time1)</span><br></pre></td></tr></table></figure>
+
+<p><strong>结果分析</strong></p>
+<p>将读取的文字存在一个TXT文档里面</p>
+<p>pdfminer只能识别pdf里的文字，而不会读取pdf里图片里的文字内容</p>
+<p><strong>参考链接</strong></p>
+<p><a href="https://www.cnblogs.com/wj-1314/p/9429816.html">https://www.cnblogs.com/wj-1314/p/9429816.html</a></p>
+]]></content>
+      <categories>
+        <category>写写代码</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>修改github.io站点域名</title>
+    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
+    <content><![CDATA[<p>修改github.io站点域名</p>
+<span id="more"></span>
+
+<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
+<ul>
+<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
+<ul>
+<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&utm_medium=cpc&utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&utm_medium=se-cpc-op&utm_campaign=10045&utm_content=&utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&utm_adplace=AdPlace039520">华为云</a></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
+<ul>
+<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE3.png"></li>
+<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE1.png"></li>
+</ul>
+</blockquote>
+<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
+<ul>
+<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE2.png"></li>
+</ul>
+</blockquote>
+<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
+<ul>
+<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>注册域名</tag>
       </tags>
   </entry>
   <entry>
@@ -2380,144 +3009,6 @@
       </tags>
   </entry>
   <entry>
-    <title>python库学习</title>
-    <url>/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p>python中常用库的学习笔记</p>
-<span id="more"></span>
-
-<h3 id="pandas库"><a href="#pandas库" class="headerlink" title="pandas库"></a>pandas库</h3><p>pandas 是基于Numpy的一种工具，主要用于数据分析任务。Pandas 纳入了大量库和一些标准的数据模型，提供了高校第操作大型数据集所需要的工具。pandas 的名称来自面板数据（panel data）和python数据分析（data analysis）。</p>
-<ul>
-<li>可以从CSV、JSON、SQL、Microsoft Excel导入数据</li>
-<li>主要数据结构Series（一维数据）和DataFrame（二维数据）</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># pandas 简单实例</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mydataset = &#123;</span><br><span class="line">	<span class="string">&#x27;sites&#x27;</span>:[<span class="string">&#x27;Google&#x27;</span>,<span class="string">&#x27;Runoob&#x27;</span>,<span class="string">&#x27;Wiki&#x27;</span>],</span><br><span class="line">	<span class="string">&#x27;number&#x27;</span>:[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">	&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.DataFrame(mydataset)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line">    sites  number</span><br><span class="line"><span class="number">0</span>  Google       <span class="number">1</span></span><br><span class="line"><span class="number">1</span>  Runoob       <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    Wiki       <span class="number">3</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="Pandas-Series"><a href="#Pandas-Series" class="headerlink" title="Pandas Series"></a>Pandas Series</h4><ul>
-<li><p>pandas series类似表格的一列，类似一维数组。</p>
-</li>
-<li><p>可以用list 和key/value对象创建Series</p>
-</li>
-<li><p>由索引（index）和列组成</p>
-</li>
-</ul>
-<p>Series构造方法如下：</p>
-<p><code> pandas.Series(data,index,dtype,name,copy)</code></p>
-<p>data：数据(ndarray类型)    index：索引标签，默认从0开始    dtype：数据类型，默认自己判断    name：名称    copy：拷贝数据，默认False</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(a)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">0</span>    <span class="number">1</span></span><br><span class="line"><span class="number">1</span>    <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    <span class="number">3</span></span><br><span class="line">dtype: int64</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>sites = &#123;<span class="number">1</span>: <span class="string">&quot;Google&quot;</span>, <span class="number">2</span>: <span class="string">&quot;Runoob&quot;</span>, <span class="number">3</span>: <span class="string">&quot;Wiki&quot;</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(sites, index = [<span class="number">1</span>, <span class="number">2</span>], name=<span class="string">&quot;aike&quot;</span> )</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">1</span>    Google</span><br><span class="line"><span class="number">2</span>    Runoob</span><br><span class="line">Name: aike, dtype: <span class="built_in">object</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="Pandas-DataFrame"><a href="#Pandas-DataFrame" class="headerlink" title="Pandas DataFrame"></a>Pandas DataFrame</h4><ul>
-<li>表格类型数据</li>
-<li>既有行索引，也有列索引</li>
-</ul>
-<p>DataFrame构造方法：</p>
-<p><code>pandas.DataFrame(data,index,columns,dtype,copy)</code></p>
-<p>columns：列标签，默认为RangeIndex（0,1,2，……，n）</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>data = [[<span class="string">&#x27;Google&#x27;</span>,<span class="number">10</span>],[<span class="string">&#x27;Runoob&#x27;</span>,<span class="number">12</span>],[<span class="string">&#x27;Wike&#x27;</span>,<span class="number">13</span>]]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df = pd.DataFrame(data,columns=[<span class="string">&#x27;Site&#x27;</span>,<span class="string">&#x27;Age&#x27;</span>],dtype=<span class="built_in">float</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df</span><br><span class="line">     Site   Age</span><br><span class="line"><span class="number">0</span>  Google  <span class="number">10.0</span></span><br><span class="line"><span class="number">1</span>  Runoob  <span class="number">12.0</span></span><br><span class="line"><span class="number">2</span>    Wike  <span class="number">13.0</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>loc[ ]：返回指定索引的行</p>
-</li>
-<li><p>loc[[ ]]：返回多行数据</p>
-</li>
-</ul>
-<h4 id="Pandas-CSV文件"><a href="#Pandas-CSV文件" class="headerlink" title="Pandas CSV文件"></a>Pandas CSV文件</h4><p>CSV（<strong>C</strong>omma-<strong>S</strong>eparated <strong>V</strong>alues，逗号分隔值）一般用逗号分割，以纯文本数据存储表格数据（数字和文本）。</p>
-<ul>
-<li>pd.to_string( )：返回DataFrame类型数据</li>
-<li>pd.read_csv( )：读取csv数据</li>
-<li>pd.to_csv( )：将DataFrame存储为csv文件</li>
-<li>df.head(n)：读取回前n行</li>
-<li>df.tail(n)：读取尾部几行</li>
-<li>df.info( )：返回表格基本信息（行列数、各列数据类型）</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import pandas as pd</span><br><span class="line">df = pd.read_csv(&#x27;nba.csv&#x27;)</span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
-
-<h4 id="Pandas-JSON"><a href="#Pandas-JSON" class="headerlink" title="Pandas JSON"></a>Pandas JSON</h4><p>JSON（<strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation，JavaScript对象表示法），存储和交换文本信息的语法。</p>
-<ul>
-<li>Json可转换为DataFrame</li>
-<li>可以从url中读取json数据</li>
-<li>读取内嵌json<ul>
-<li>pd.json_normalize(data, record_path, meta)</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 Python JSON 模块载入数据</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;nested_list.json&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = json.loads(f.read())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 展平数据</span></span><br><span class="line">df_nested_list = pd.json_normalize(data, record_path =[<span class="string">&#x27;students&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span>(df_nested_list)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>安装glom模块：用.来访问内嵌对象的属性</li>
-</ul>
-<h4 id="Pandas-数据清洗"><a href="#Pandas-数据清洗" class="headerlink" title="Pandas 数据清洗"></a>Pandas 数据清洗</h4><ul>
-<li>缺失</li>
-<li>格式错误</li>
-<li>错误数据或重复数据</li>
-</ul>
-<h5 id="清洗空值"><a href="#清洗空值" class="headerlink" title="清洗空值"></a>清洗空值</h5><ul>
-<li>dropna( )：删除包含空字段的行</li>
-</ul>
-<p><code>DataFrame.dropna(axis=0, how=&#39;any&#39;, thresh=None, subset=None, inplace=False)</code></p>
-<h3 id="pdfminer库"><a href="#pdfminer库" class="headerlink" title="pdfminer库"></a>pdfminer库</h3><p><strong>问题描述</strong></p>
-<p>利用python读取PDF文本内容</p>
-<p><strong>运行环境</strong></p>
-<p>python 3.6</p>
-<p><strong>需要安装的库</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install pdfminer</span><br><span class="line">pip install pdfminer3k</span><br></pre></td></tr></table></figure>
-
-<p><strong>实现的源代码</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyocr <span class="comment"># 图像处理库，进行ocr识别</span></span><br><span class="line"><span class="keyword">import</span> importlib <span class="comment"># Python中import语句的实现</span></span><br><span class="line"><span class="keyword">import</span> sys <span class="comment"># 针对与Python解释器相关的变量和方法</span></span><br><span class="line"><span class="keyword">import</span> time <span class="comment"># 基础时间库</span></span><br><span class="line"></span><br><span class="line">importlib.reload(sys)</span><br><span class="line">time1 = time.time()</span><br><span class="line"><span class="comment"># print(&#x27;初始时间为：&#x27;,time1)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os.path</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span> PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span>  PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFResourceManager, PDFPageInterpreter</span><br><span class="line"><span class="keyword">from</span> pdfminer.converter <span class="keyword">import</span> PDFPageAggregator</span><br><span class="line"><span class="keyword">from</span> pdfminer.layout <span class="keyword">import</span> LTTextBoxHorizontal,LAParams</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFTextExtractionNotAllowed</span><br><span class="line"></span><br><span class="line">text_path = <span class="string">r&#x27;D:\文档\预测与决策\第2章 非模型预测方法.pdf&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse</span>():</span></span><br><span class="line">    <span class="comment">#解析PDF文本，并保存到TXT文件中</span></span><br><span class="line">    fp = <span class="built_in">open</span>(text_path,<span class="string">&#x27;rb&#x27;</span>)</span><br><span class="line">    <span class="comment">#用文件对象创建一个PDF文档分析器</span></span><br><span class="line">    parser = PDFParser(fp)</span><br><span class="line">    <span class="comment">#创建一个PDF文档</span></span><br><span class="line">    doc = PDFDocument()</span><br><span class="line">    <span class="comment">#连接分析器，与文档对象</span></span><br><span class="line">    parser.set_document(doc)</span><br><span class="line">    doc.set_parser(parser)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#提供初始化密码，如果没有密码，就创建一个空的字符串</span></span><br><span class="line">    doc.initialize()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#检测文档是否提供txt转换，不提供就忽略</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> doc.is_extractable:</span><br><span class="line">        <span class="keyword">raise</span> PDFTextExtractionNotAllowed</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment">#创建PDF,资源管理器，来共享资源</span></span><br><span class="line">        rsrcmgr = PDFResourceManager()</span><br><span class="line">        <span class="comment">#创建一个PDF设备对象</span></span><br><span class="line">        laparams = LAParams()</span><br><span class="line">        device = PDFPageAggregator(rsrcmgr,laparams=laparams)</span><br><span class="line">        <span class="comment">#创建一个PDF解释器其对象</span></span><br><span class="line">        interpreter = PDFPageInterpreter(rsrcmgr,device)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#循环遍历列表，每次处理一个page内容</span></span><br><span class="line">        <span class="comment">#doc.get_pages()获取page列表</span></span><br><span class="line">        <span class="keyword">for</span> page <span class="keyword">in</span> doc.get_pages():</span><br><span class="line">            interpreter.process_page(page)</span><br><span class="line">            <span class="comment">#接受该页面的LTPage对象</span></span><br><span class="line">            layout = device.get_result()</span><br><span class="line">            <span class="comment"># 这里layout是一个LTPage对象 里面存放着 这个page解析出的各种对象</span></span><br><span class="line">            <span class="comment"># 一般包括LTTextBox, LTFigure, LTImage, LTTextBoxHorizontal 等等</span></span><br><span class="line">            <span class="comment"># 想要获取文本就获得对象的text属性，</span></span><br><span class="line">            <span class="keyword">for</span> x <span class="keyword">in</span> layout:</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">isinstance</span>(x,LTTextBoxHorizontal)):</span><br><span class="line">                    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">r&#x27;C:\Users\86159\Desktop\2.txt&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                        results = x.get_text()</span><br><span class="line">                        <span class="built_in">print</span>(results)</span><br><span class="line">                        f.write(results + <span class="string">&quot;\n&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    parse()</span><br><span class="line">    time2 = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;总共消耗时间为：&#x27;</span>,time2-time1)</span><br></pre></td></tr></table></figure>
-
-<p><strong>结果分析</strong></p>
-<p>将读取的文字存在一个TXT文档里面</p>
-<p>pdfminer只能识别pdf里的文字，而不会读取pdf里图片里的文字内容</p>
-<p><strong>参考链接</strong></p>
-<p><a href="https://www.cnblogs.com/wj-1314/p/9429816.html">https://www.cnblogs.com/wj-1314/p/9429816.html</a></p>
-]]></content>
-      <categories>
-        <category>写写代码</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>修改github.io站点域名</title>
-    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
-    <content><![CDATA[<p>修改github.io站点域名</p>
-<span id="more"></span>
-
-<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
-<ul>
-<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
-<ul>
-<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&utm_medium=cpc&utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&utm_medium=se-cpc-op&utm_campaign=10045&utm_content=&utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&utm_adplace=AdPlace039520">华为云</a></li>
-</ul>
-</blockquote>
-</li>
-</ul>
-</blockquote>
-<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
-<ul>
-<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE3.png"></li>
-<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE1.png"></li>
-</ul>
-</blockquote>
-<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
-<ul>
-<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE2.png"></li>
-</ul>
-</blockquote>
-<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
-<ul>
-<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
-</ul>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>注册域名</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>启发式算法</title>
     <url>/2022/09/03/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<p>暂无更多编辑，点击查看文章……</p>
@@ -2708,65 +3199,6 @@
       </tags>
   </entry>
   <entry>
-    <title>网站推送百度</title>
-    <url>/2021/07/21/%E7%BD%91%E7%AB%99%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/</url>
-    <content><![CDATA[<p>网站推送百度</p>
-<span id="more"></span>
-
-<blockquote>
-<p>首先说一下吧，我是在配置_config.yml 时<code>hexo g</code>一直报错(缺少什么文件吧 QTQ)，尝试一天后失败告终，后来想想可能对我用处也不大。但这篇文章是我找到最详细的了，发布时间也比较新，所有拿来分享。</p>
-</blockquote>
-<h3 id="seo-优化"><a href="#seo-优化" class="headerlink" title="seo 优化"></a>seo 优化</h3><p>推广是一个烦人的事情啊喂，特别是对于我们搞技术的来说，可能就不擅长推广，那么怎么才能让别人知道我们呢，我们就要想办法让别人通过搜索就可以搜索到你博客的内容，给我们带来自然流量，这就需要 seo 优化,让我们的站点变得对搜索引擎友好</p>
-<blockquote>
-<p>SEO 是由英文 Search Engine Optimization 缩写而来， 中文意译为“搜索引擎优化”。SEO 是指通过站内优化比如网站结构调整、网站内容建设、网站代码优化等以及站外优化。</p>
-</blockquote>
-<h3 id="让百度收录你的站点"><a href="#让百度收录你的站点" class="headerlink" title="让百度收录你的站点"></a>让百度收录你的站点</h3><p>我们首先要做的就是让各大搜索引擎收录你的站点，我们在刚建站的时候各个搜索引擎是没有收录我们网站的，在搜索引擎中输入 site:&lt;域名&gt;,如果如下图所示就是说明我们的网站并没有被百度收录。我们可以直接点击下面的“网址提交”来提交我们的网站<br><img src="https://s4.51cto.com/images/blog/202106/22/6dca78a397d5cb996e219e39237d52d8.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="></p>
-<h3 id="验证网站所有权"><a href="#验证网站所有权" class="headerlink" title="验证网站所有权"></a>验证网站所有权</h3><p>登录百度站长平台：<a href="http://zhanzhang.baidu.com,只要有百度旗下的账号就可以登录,登录成功之后在站点管理中点击添加网站然后输入你的站点地址,建议输入的网站为www开头的,不要输入github.io的,因为github是不允许百度的spider爬取github上的内容的,所以如果想让你的站点被百度收录,只能使用自己购买的域名/">http://zhanzhang.baidu.com，只要有百度旗下的账号就可以登录，登录成功之后在站点管理中点击添加网站然后输入你的站点地址，建议输入的网站为www开头的，不要输入github.io的，因为github是不允许百度的spider爬取github上的内容的，所以如果想让你的站点被百度收录，只能使用自己购买的域名</a><br><img src="https://s4.51cto.com/images/blog/202106/22/1de31ec351ed9e8fa0a666a331366853.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br>在选择完网站的类型之后需要验证网站的所有权，验证网站所有权的方式有三种：文件验证。html 标签验证和 cname 解析验证，使用哪一种方式都可以，都是比较简单的，但是一定要注意，使用文件验证文件存放的位置需要放在 source 文件夹下，如果是 html 文件那么 hexo 就会将其编译，所以必须要加上的 layout:false，这样就不会被 hexo 编译。（如果验证文件是 txt 格式的就不需要），其他两种方式也是很简单的，我个人推荐文件验证和 cname 验证，cname 验证最为简单，只需加一条解析就好~<br><img src="https://s4.51cto.com/images/blog/202106/22/9e7c57829371e8553e48120c984c4533.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="></p>
-<h3 id="生成网站地图"><a href="#生成网站地图" class="headerlink" title="生成网站地图"></a>生成网站地图</h3><p>我们需要使用 npm 自动生成网站的 sitemap，然后将生成的 sitemap 提交到百度和其他搜索引擎</p>
-<h4 id="安装-sitemap-插件"><a href="#安装-sitemap-插件" class="headerlink" title="安装 sitemap 插件"></a>安装 sitemap 插件</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
-
-<h4 id="修改博客配置文件"><a href="#修改博客配置文件" class="headerlink" title="修改博客配置文件"></a>修改博客配置文件</h4><p>在根目录配置文件中修改 url 为你的站点地址</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># URL</span><br><span class="line">## If your site is put in a subdirectory, set url as &#x27;http://yoursite.com/child&#x27; and root as &#x27;/child/&#x27;</span><br><span class="line">url: http://cherryblog.site</span><br><span class="line">root: /</span><br><span class="line">permalink: :title.html</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
-
-<p>执行完之后就会在网站根目录生成 sitemap.xml 文件和 baidusitemap.xml 文件，可以通过<a href="http://www.cherryblog.site/baidusitemap.xml,%E6%9F%A5%E7%9C%8B%E8%AF%A5%E6%96%87%E4%BB%B6%E6%98%AF%E5%90%A6%E7%94%9F%E6%88%90%EF%BC%8C%E5%85%B6%E4%B8%ADsitemap.xml%E6%96%87%E4%BB%B6%E6%98%AF%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E9%80%9A%E7%94%A8%E7%9A%84%E6%96%87%E4%BB%B6%EF%BC%8Cbaidusitemap.xml%E6%98%AF%E7%99%BE%E5%BA%A6%E4%B8%93%E7%94%A8%E7%9A%84sitemap%E6%96%87%E4%BB%B6%E3%80%82">http://www.cherryblog.site/baidusitemap.xml,查看该文件是否生成，其中sitemap.xml文件是搜索引擎通用的文件，baidusitemap.xml是百度专用的sitemap文件。</a></p>
-<h4 id="向百度提交链接"><a href="#向百度提交链接" class="headerlink" title="向百度提交链接"></a>向百度提交链接</h4><p>然后我们就可以将我们生成的 sitemap 文件提交给百度，还是在百度站长平台，找到链接提交，这里我们可以看到有两种提交方式，自动提交和手动提交，自动提交又分为主动推送、自动推送和 sitemap</p>
-<blockquote>
-<p>如何选择链接提交方式 1、主动推送：最为快速的提交方式，推荐您将站点当天新产出链接立即通过此方式推送给百度，以保证新链接可以及时被百度收录。 2、自动推送：最为便捷的提交方式，请将自动推送的 JS 代码部署在站点的每一个页面源代码中，部署代码的页面在每次被浏览时，链接会被自动推送给百度。可以与主动推送配合使用。 3、sitemap：您可以定期将网站链接放到 sitemap 中，然后将 sitemap 提交给百度。百度会周期性的抓取检查您提交的 sitemap，对其中的链接进行处理，但收录速度慢于主动推送。 4、手动提交：一次性提交链接给百度，可以使用此种方式。<br>一般主动提交比手动提交效果好，这里介绍主动提交的三种方法 从效率上来说：<br>主动推送&gt;自动推送&gt;sitemap<br><img src="https://s4.51cto.com/images/blog/202106/22/701583918691a71b88c48f98385d2660.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="></p>
-</blockquote>
-<h4 id="主动推送"><a href="#主动推送" class="headerlink" title="主动推送"></a>主动推送</h4><p>安装插件 npm install hexo-baidu-url-submit –save 然后再根目录的配置文件中新增字段</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">    count: 100 # 提交最新的一个链接</span><br><span class="line">    host: www.cherryblog.site # 在百度站长平台中注册的域名</span><br><span class="line">    token: 8OGYpxowYnhgVsUM # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span><br><span class="line">    path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里</span><br></pre></td></tr></table></figure>
-
-<p>在加入新的 deploye</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> - type:baidu_url_submitter</span><br></pre></td></tr></table></figure>
-
-<p>这样执行 hexo deploy 的时候，新的链接就会被推送了</p>
-<h4 id="设置自动推送"><a href="#设置自动推送" class="headerlink" title="设置自动推送"></a>设置自动推送</h4><p>主题配置文件下设置,将 baidu_push 设置为 true：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO</span><br><span class="line">baidu_push: true</span><br></pre></td></tr></table></figure>
-
-<p>然后就会将一下代码自动推送到百度，位置是 themes\next\layout_scripts\baidu_push.swig,这样每次访问博客中的页面就会自动向百度提交 sitemap</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.baidu_push %&#125;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">(function()&#123;</span><br><span class="line">    var bp = document.createElement(&#x27;script&#x27;);</span><br><span class="line">    var curProtocol = window.location.protocol.split(&#x27;:&#x27;)[0];</span><br><span class="line">    if (curProtocol === &#x27;https&#x27;) &#123;</span><br><span class="line">        bp.src = &#x27;https://zz.bdstatic.com/linksubmit/push.js&#x27;;</span><br><span class="line">    &#125;</span><br><span class="line">    else &#123;</span><br><span class="line">        bp.src = &#x27;http://push.zhanzhang.baidu.com/push.js&#x27;;</span><br><span class="line">    &#125;</span><br><span class="line">    var s = document.getElementsByTagName(&quot;script&quot;)[0];</span><br><span class="line">    s.parentNode.insertBefore(bp, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="sitemap"><a href="#sitemap" class="headerlink" title="sitemap"></a>sitemap</h4><p>将我们上一步生成的 sitemap 文件提交到百度就可以了~<br><img src="https://s4.51cto.com/images/blog/202106/22/513d8354340674c8e34c702a7170bfcd.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br>我记得被百度收录过程还是蛮久的，一度让我以为我的方法有问题，提交链接在站长工具中有显示大概是有两天的时候，站点被百度收录大概花了半个月= =，让大家看一下现在的成果 在百度搜索 site:cherryblog.site 已经可以搜索到结果<br><img src="https://s4.51cto.com/images/blog/202106/22/d5a493c8610e5b0a2358409ae7b80d80.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br><img src="https://s4.51cto.com/images/blog/202106/22/126048d3e903efc6a60f2955195b62b9.jpeg?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br>输入关键字的名字也可以在第二页就找到呢，好开森~<br><img src="https://s4.51cto.com/images/blog/202106/22/411785831c166b05d56a09742d57dc6e.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="></p>
-<h3 id="让-google-收录你的站点"><a href="#让-google-收录你的站点" class="headerlink" title="让 google 收录你的站点"></a>让 google 收录你的站点</h3><p>相比于百度，google 的效率实在不能更快，貌似十分钟左右站点就被收录了，其实方法是和百度是一样的，都是先验证你的站点所有权，然后提交 sitemap google 站点平台：<a href="https://www.google.com/webmasters/%EF%BC%8C">https://www.google.com/webmasters/，</a> 然后就是注册账号、验证站点、提交 sitemap，一步一步来就好，过不了过久就可以被 google 收录了<br><img src="https://s4.51cto.com/images/blog/202106/22/b2a2053612c4e55157c88401bf4c7384.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br><img src="https://s4.51cto.com/images/blog/202106/22/b3063be3f3bba0404d1401ef5edbb73c.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br><img src="https://s4.51cto.com/images/blog/202106/22/d4bdeab31727e86d482f5de88f78675c.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="></p>
-<h3 id="让其他搜索引擎收录你的站点"><a href="#让其他搜索引擎收录你的站点" class="headerlink" title="让其他搜索引擎收录你的站点"></a>让其他搜索引擎收录你的站点</h3><p>除了百度和 google 两大搜索引擎，还有搜狗、360 等其他的搜索引擎，流程都是一样的 ，大家就自行选择添加哈，这里就不再赘述了~</p>
-<h3 id="优化你的-url"><a href="#优化你的-url" class="headerlink" title="优化你的 url"></a>优化你的 url</h3><p>seo 搜索引擎优化认为，网站的最佳结构是用户从首页点击三次就可以到达任何一个页面，但是我们使用 hexo 编译的站点打开文章的 url 是：sitename/year/mounth/day/title 四层的结构，这样的 url 结构很不利于 seo，爬虫就会经常爬不到我们的文章，于是，我们可以将 url 直接改成 sitename/title 的形式，并且 title 最好是用英文，在根目录的配置文件下修改 permalink 如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: http://cherryblog.site</span><br><span class="line">root: /</span><br><span class="line">permalink: :title.html</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
-
-<hr>
-<hr>
-<blockquote>
-<p>相关链接：<br><a href="https://blog.51cto.com/u_8865295/3032268">【Hexo 实战】SEO（百度、Google）设置</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>网站</tag>
-        <tag>推送百度</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>虚拟机安装macOS系统</title>
     <url>/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/</url>
     <content><![CDATA[<p>VMware虚拟机安装macOS全过程详解</p>
@@ -2917,6 +3349,65 @@
       <tags>
         <tag>选课</tag>
         <tag>大学生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网站推送百度</title>
+    <url>/2021/07/21/%E7%BD%91%E7%AB%99%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/</url>
+    <content><![CDATA[<p>网站推送百度</p>
+<span id="more"></span>
+
+<blockquote>
+<p>首先说一下吧，我是在配置_config.yml 时<code>hexo g</code>一直报错(缺少什么文件吧 QTQ)，尝试一天后失败告终，后来想想可能对我用处也不大。但这篇文章是我找到最详细的了，发布时间也比较新，所有拿来分享。</p>
+</blockquote>
+<h3 id="seo-优化"><a href="#seo-优化" class="headerlink" title="seo 优化"></a>seo 优化</h3><p>推广是一个烦人的事情啊喂，特别是对于我们搞技术的来说，可能就不擅长推广，那么怎么才能让别人知道我们呢，我们就要想办法让别人通过搜索就可以搜索到你博客的内容，给我们带来自然流量，这就需要 seo 优化,让我们的站点变得对搜索引擎友好</p>
+<blockquote>
+<p>SEO 是由英文 Search Engine Optimization 缩写而来， 中文意译为“搜索引擎优化”。SEO 是指通过站内优化比如网站结构调整、网站内容建设、网站代码优化等以及站外优化。</p>
+</blockquote>
+<h3 id="让百度收录你的站点"><a href="#让百度收录你的站点" class="headerlink" title="让百度收录你的站点"></a>让百度收录你的站点</h3><p>我们首先要做的就是让各大搜索引擎收录你的站点，我们在刚建站的时候各个搜索引擎是没有收录我们网站的，在搜索引擎中输入 site:&lt;域名&gt;,如果如下图所示就是说明我们的网站并没有被百度收录。我们可以直接点击下面的“网址提交”来提交我们的网站<br><img src="https://s4.51cto.com/images/blog/202106/22/6dca78a397d5cb996e219e39237d52d8.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="></p>
+<h3 id="验证网站所有权"><a href="#验证网站所有权" class="headerlink" title="验证网站所有权"></a>验证网站所有权</h3><p>登录百度站长平台：<a href="http://zhanzhang.baidu.com,只要有百度旗下的账号就可以登录,登录成功之后在站点管理中点击添加网站然后输入你的站点地址,建议输入的网站为www开头的,不要输入github.io的,因为github是不允许百度的spider爬取github上的内容的,所以如果想让你的站点被百度收录,只能使用自己购买的域名/">http://zhanzhang.baidu.com，只要有百度旗下的账号就可以登录，登录成功之后在站点管理中点击添加网站然后输入你的站点地址，建议输入的网站为www开头的，不要输入github.io的，因为github是不允许百度的spider爬取github上的内容的，所以如果想让你的站点被百度收录，只能使用自己购买的域名</a><br><img src="https://s4.51cto.com/images/blog/202106/22/1de31ec351ed9e8fa0a666a331366853.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br>在选择完网站的类型之后需要验证网站的所有权，验证网站所有权的方式有三种：文件验证。html 标签验证和 cname 解析验证，使用哪一种方式都可以，都是比较简单的，但是一定要注意，使用文件验证文件存放的位置需要放在 source 文件夹下，如果是 html 文件那么 hexo 就会将其编译，所以必须要加上的 layout:false，这样就不会被 hexo 编译。（如果验证文件是 txt 格式的就不需要），其他两种方式也是很简单的，我个人推荐文件验证和 cname 验证，cname 验证最为简单，只需加一条解析就好~<br><img src="https://s4.51cto.com/images/blog/202106/22/9e7c57829371e8553e48120c984c4533.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="></p>
+<h3 id="生成网站地图"><a href="#生成网站地图" class="headerlink" title="生成网站地图"></a>生成网站地图</h3><p>我们需要使用 npm 自动生成网站的 sitemap，然后将生成的 sitemap 提交到百度和其他搜索引擎</p>
+<h4 id="安装-sitemap-插件"><a href="#安装-sitemap-插件" class="headerlink" title="安装 sitemap 插件"></a>安装 sitemap 插件</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
+
+<h4 id="修改博客配置文件"><a href="#修改博客配置文件" class="headerlink" title="修改博客配置文件"></a>修改博客配置文件</h4><p>在根目录配置文件中修改 url 为你的站点地址</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># URL</span><br><span class="line">## If your site is put in a subdirectory, set url as &#x27;http://yoursite.com/child&#x27; and root as &#x27;/child/&#x27;</span><br><span class="line">url: http://cherryblog.site</span><br><span class="line">root: /</span><br><span class="line">permalink: :title.html</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
+
+<p>执行完之后就会在网站根目录生成 sitemap.xml 文件和 baidusitemap.xml 文件，可以通过<a href="http://www.cherryblog.site/baidusitemap.xml,%E6%9F%A5%E7%9C%8B%E8%AF%A5%E6%96%87%E4%BB%B6%E6%98%AF%E5%90%A6%E7%94%9F%E6%88%90%EF%BC%8C%E5%85%B6%E4%B8%ADsitemap.xml%E6%96%87%E4%BB%B6%E6%98%AF%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E9%80%9A%E7%94%A8%E7%9A%84%E6%96%87%E4%BB%B6%EF%BC%8Cbaidusitemap.xml%E6%98%AF%E7%99%BE%E5%BA%A6%E4%B8%93%E7%94%A8%E7%9A%84sitemap%E6%96%87%E4%BB%B6%E3%80%82">http://www.cherryblog.site/baidusitemap.xml,查看该文件是否生成，其中sitemap.xml文件是搜索引擎通用的文件，baidusitemap.xml是百度专用的sitemap文件。</a></p>
+<h4 id="向百度提交链接"><a href="#向百度提交链接" class="headerlink" title="向百度提交链接"></a>向百度提交链接</h4><p>然后我们就可以将我们生成的 sitemap 文件提交给百度，还是在百度站长平台，找到链接提交，这里我们可以看到有两种提交方式，自动提交和手动提交，自动提交又分为主动推送、自动推送和 sitemap</p>
+<blockquote>
+<p>如何选择链接提交方式 1、主动推送：最为快速的提交方式，推荐您将站点当天新产出链接立即通过此方式推送给百度，以保证新链接可以及时被百度收录。 2、自动推送：最为便捷的提交方式，请将自动推送的 JS 代码部署在站点的每一个页面源代码中，部署代码的页面在每次被浏览时，链接会被自动推送给百度。可以与主动推送配合使用。 3、sitemap：您可以定期将网站链接放到 sitemap 中，然后将 sitemap 提交给百度。百度会周期性的抓取检查您提交的 sitemap，对其中的链接进行处理，但收录速度慢于主动推送。 4、手动提交：一次性提交链接给百度，可以使用此种方式。<br>一般主动提交比手动提交效果好，这里介绍主动提交的三种方法 从效率上来说：<br>主动推送&gt;自动推送&gt;sitemap<br><img src="https://s4.51cto.com/images/blog/202106/22/701583918691a71b88c48f98385d2660.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="></p>
+</blockquote>
+<h4 id="主动推送"><a href="#主动推送" class="headerlink" title="主动推送"></a>主动推送</h4><p>安装插件 npm install hexo-baidu-url-submit –save 然后再根目录的配置文件中新增字段</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">    count: 100 # 提交最新的一个链接</span><br><span class="line">    host: www.cherryblog.site # 在百度站长平台中注册的域名</span><br><span class="line">    token: 8OGYpxowYnhgVsUM # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span><br><span class="line">    path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里</span><br></pre></td></tr></table></figure>
+
+<p>在加入新的 deploye</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> - type:baidu_url_submitter</span><br></pre></td></tr></table></figure>
+
+<p>这样执行 hexo deploy 的时候，新的链接就会被推送了</p>
+<h4 id="设置自动推送"><a href="#设置自动推送" class="headerlink" title="设置自动推送"></a>设置自动推送</h4><p>主题配置文件下设置,将 baidu_push 设置为 true：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO</span><br><span class="line">baidu_push: true</span><br></pre></td></tr></table></figure>
+
+<p>然后就会将一下代码自动推送到百度，位置是 themes\next\layout_scripts\baidu_push.swig,这样每次访问博客中的页面就会自动向百度提交 sitemap</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.baidu_push %&#125;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">(function()&#123;</span><br><span class="line">    var bp = document.createElement(&#x27;script&#x27;);</span><br><span class="line">    var curProtocol = window.location.protocol.split(&#x27;:&#x27;)[0];</span><br><span class="line">    if (curProtocol === &#x27;https&#x27;) &#123;</span><br><span class="line">        bp.src = &#x27;https://zz.bdstatic.com/linksubmit/push.js&#x27;;</span><br><span class="line">    &#125;</span><br><span class="line">    else &#123;</span><br><span class="line">        bp.src = &#x27;http://push.zhanzhang.baidu.com/push.js&#x27;;</span><br><span class="line">    &#125;</span><br><span class="line">    var s = document.getElementsByTagName(&quot;script&quot;)[0];</span><br><span class="line">    s.parentNode.insertBefore(bp, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="sitemap"><a href="#sitemap" class="headerlink" title="sitemap"></a>sitemap</h4><p>将我们上一步生成的 sitemap 文件提交到百度就可以了~<br><img src="https://s4.51cto.com/images/blog/202106/22/513d8354340674c8e34c702a7170bfcd.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br>我记得被百度收录过程还是蛮久的，一度让我以为我的方法有问题，提交链接在站长工具中有显示大概是有两天的时候，站点被百度收录大概花了半个月= =，让大家看一下现在的成果 在百度搜索 site:cherryblog.site 已经可以搜索到结果<br><img src="https://s4.51cto.com/images/blog/202106/22/d5a493c8610e5b0a2358409ae7b80d80.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br><img src="https://s4.51cto.com/images/blog/202106/22/126048d3e903efc6a60f2955195b62b9.jpeg?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br>输入关键字的名字也可以在第二页就找到呢，好开森~<br><img src="https://s4.51cto.com/images/blog/202106/22/411785831c166b05d56a09742d57dc6e.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="></p>
+<h3 id="让-google-收录你的站点"><a href="#让-google-收录你的站点" class="headerlink" title="让 google 收录你的站点"></a>让 google 收录你的站点</h3><p>相比于百度，google 的效率实在不能更快，貌似十分钟左右站点就被收录了，其实方法是和百度是一样的，都是先验证你的站点所有权，然后提交 sitemap google 站点平台：<a href="https://www.google.com/webmasters/%EF%BC%8C">https://www.google.com/webmasters/，</a> 然后就是注册账号、验证站点、提交 sitemap，一步一步来就好，过不了过久就可以被 google 收录了<br><img src="https://s4.51cto.com/images/blog/202106/22/b2a2053612c4e55157c88401bf4c7384.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br><img src="https://s4.51cto.com/images/blog/202106/22/b3063be3f3bba0404d1401ef5edbb73c.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="><br><img src="https://s4.51cto.com/images/blog/202106/22/d4bdeab31727e86d482f5de88f78675c.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk="></p>
+<h3 id="让其他搜索引擎收录你的站点"><a href="#让其他搜索引擎收录你的站点" class="headerlink" title="让其他搜索引擎收录你的站点"></a>让其他搜索引擎收录你的站点</h3><p>除了百度和 google 两大搜索引擎，还有搜狗、360 等其他的搜索引擎，流程都是一样的 ，大家就自行选择添加哈，这里就不再赘述了~</p>
+<h3 id="优化你的-url"><a href="#优化你的-url" class="headerlink" title="优化你的 url"></a>优化你的 url</h3><p>seo 搜索引擎优化认为，网站的最佳结构是用户从首页点击三次就可以到达任何一个页面，但是我们使用 hexo 编译的站点打开文章的 url 是：sitename/year/mounth/day/title 四层的结构，这样的 url 结构很不利于 seo，爬虫就会经常爬不到我们的文章，于是，我们可以将 url 直接改成 sitename/title 的形式，并且 title 最好是用英文，在根目录的配置文件下修改 permalink 如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: http://cherryblog.site</span><br><span class="line">root: /</span><br><span class="line">permalink: :title.html</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
+
+<hr>
+<hr>
+<blockquote>
+<p>相关链接：<br><a href="https://blog.51cto.com/u_8865295/3032268">【Hexo 实战】SEO（百度、Google）设置</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>网站</tag>
+        <tag>推送百度</tag>
       </tags>
   </entry>
 </search>
