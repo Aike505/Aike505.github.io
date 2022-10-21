@@ -6,7 +6,7 @@
   <link href="https://aike505.github.io/atom.xml" rel="self"/>
   
   <link href="https://aike505.github.io/"/>
-  <updated>2022-10-20T02:23:22.412Z</updated>
+  <updated>2022-10-21T04:30:30.107Z</updated>
   <id>https://aike505.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo备忘录</title>
+    <link href="https://aike505.github.io/2022/10/21/hexo%E5%A4%87%E5%BF%98%E5%BD%95/"/>
+    <id>https://aike505.github.io/2022/10/21/hexo%E5%A4%87%E5%BF%98%E5%BD%95/</id>
+    <published>2022-10-21T04:23:07.000Z</published>
+    <updated>2022-10-21T04:30:30.107Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-常用指令"><a href="#1-常用指令" class="headerlink" title="1.常用指令"></a>1.常用指令</h3><p><code>Hexo n</code> 标题 创建一篇文章<br><code>Hexo init</code> 初始化博客<br><code>Hexo clean</code> 清理文件<br><code>Hexo g</code> 生成静态文件<br><code>Hexo d</code> 部署博客<br><code>hexo server</code> 启动本地服务<br><code>hexo render</code> 渲染文件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">title: # 网站标题</span><br><span class="line">categories: # 分类(只能单线)</span><br><span class="line">  - category_1</span><br><span class="line">  - category_1_1</span><br><span class="line">  - category_1_1_1</span><br><span class="line">tags:  # 标签(可以多标)</span><br><span class="line">  - tag_1</span><br><span class="line">  - tag_2</span><br><span class="line">type: &quot;&quot; # 指定这个页面的类型(比如categories/tags)</span><br><span class="line">cover: # 封面图片,注意不能用../命令,双引号有无均可</span><br><span class="line">comments: # 评论开关 true/false</span><br><span class="line">date: # 创建时间</span><br><span class="line">updated:  # 更新时间</span><br><span class="line">description: # 网站描述</span><br><span class="line">aside: # 侧边栏开关</span><br><span class="line">top_img: # 文章banner图,如果有cover的话默认用的是cover(这个可以给_post之外的用),其隐藏前缀目录为Website/public/注意格式应为:images/xxx,但是这样会使_posts里文章的相关文章封面失效,需要用URL</span><br></pre></td></tr></table></figure><h3 id="7-嵌入自适应B站视频"><a href="#7-嵌入自适应B站视频" class="headerlink" title="7.嵌入自适应B站视频"></a>7.嵌入自适应B站视频</h3><div style="position: relative; padding: 30% 45%;"><iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="//player.bilibili.com/player.html?aid=52516662&bvid=BV19p4y1Q7ph&cid=91773304&page=1&as_wide=1&high_quality=1&danmaku=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe></div><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=&quot;position: relative; padding: 30% 45%;&quot;&gt;</span><br><span class="line">&lt;iframe style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot; src=&quot;//player.bilibili.com/player.html?aid=52516662&amp;bvid=BV19p4y1Q7ph&amp;cid=91773304&amp;page=1&amp;as_wide=1&amp;high_quality=1&amp;danmaku=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure><h3 id="13-tab-标签块"><a href="#13-tab-标签块" class="headerlink" title="13.tab(标签块)"></a>13.tab(标签块)</h3><div class="tabs" id="test2"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#test2-1">第一个Tab</button></li><li class="tab"><button type="button" data-href="#test2-2"><i class="fab fa-apple-pay" style="text-align: center;"></i></button></li><li class="tab"><button type="button" data-href="#test2-3"><i class="fas fa-bomb"></i>炸弹</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="test2-1"><p><strong>tab名字为第一个Tab</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test2-2"><p><strong>只有图标 没有Tab名字</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test2-3"><p><strong>名字+icon</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#123;% tabs test2 %&#125;</span><br><span class="line">&lt;!-- tab 第一个Tab --&gt;</span><br><span class="line">**tab名字为第一个Tab**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab @fab fa-apple-pay --&gt;</span><br><span class="line">**只有图标 没有Tab名字**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab 炸弹@fas fa-bomb --&gt;</span><br><span class="line">**名字+icon**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;1-常用指令&quot;&gt;&lt;a href=&quot;#1-常用指令&quot; class=&quot;headerlink&quot; title=&quot;1.常用指令&quot;&gt;&lt;/a&gt;1.常用指令&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Hexo n&lt;/code&gt; 标题 创建一篇文章&lt;br&gt;&lt;code&gt;Hexo init&lt;/code</summary>
+      
+    
+    
+    
+    <category term="博客相关" scheme="https://aike505.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/"/>
+    
+    
+    <category term="hexo" scheme="https://aike505.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>python库学习</title>
@@ -407,25 +431,6 @@
     
     
     <summary type="html">&lt;img src=&quot;https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg &quot; width = &quot;300&quot;  height = &quot;200&quot;&gt;</summary>
-    
-    
-    
-    <category term="生活点滴" scheme="https://aike505.github.io/categories/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>日常记录</title>
-    <link href="https://aike505.github.io/2021/08/16/8-16/"/>
-    <id>https://aike505.github.io/2021/08/16/8-16/</id>
-    <published>2021-08-16T14:45:39.000Z</published>
-    <updated>2022-10-20T02:21:42.509Z</updated>
-    
-    <content type="html"><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200"><span id="more"></span>> 一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以**平凡**的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处>~<<p> <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg"><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210814.jpg"></p>]]></content>
-    
-    
-    <summary type="html">&lt;img src=&quot;https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg &quot; width = &quot;300&quot;  height = &quot;200&quot;&gt;</summary>
     
     
     
