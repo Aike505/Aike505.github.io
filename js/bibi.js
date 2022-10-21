@@ -24,7 +24,7 @@ function getNew() {
         items = res.data.items
         nowNum += items.length
         if (page == 1) {
-            document.querySelector('.bb-info').innerHTML = '<i class="far fa-comment-alt"></i> My bibi(' + total + ')'
+            document.querySelector('.bb-info').innerHTML = '<i class="far fa-comment-alt"></i> 空间消息(' + total + ')'
         }
         page += 1
     }).then(() => {

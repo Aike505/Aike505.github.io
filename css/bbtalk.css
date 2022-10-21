@@ -128,6 +128,7 @@
     margin-top: 20px;
     transition: all 0.25s;
     user-select: none;
+    border: var(--aike-border);
 }
 
 #bibi .bb-card:hover {
