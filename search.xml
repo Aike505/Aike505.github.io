@@ -28,319 +28,173 @@
       </tags>
   </entry>
   <entry>
-    <title>3.Python基本数据类型</title>
-    <url>/2021/09/04/3-Python%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB/</url>
-    <content><![CDATA[<p>Python基本数据类型</p>
+    <title>10.Python第三方库概览</title>
+    <url>/2021/09/05/10-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88/</url>
+    <content><![CDATA[<p>Python第三方库概览</p>
 <span id="more"></span>
-<h1 id="3-Python-基本数据类型"><a href="#3-Python-基本数据类型" class="headerlink" title="3.Python 基本数据类型"></a>3.Python 基本数据类型</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_3.%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png"><h2 id="数字类型"><a href="#数字类型" class="headerlink" title="数字类型"></a>数字类型</h2><h3 id="3-1-1整数类型"><a href="#3-1-1整数类型" class="headerlink" title="3.1.1整数类型"></a>3.1.1整数类型</h3>整数(int)的4种进制的表示：</li>
+<h1 id="10-Python第三方库概览"><a href="#10-Python第三方库概览" class="headerlink" title="10.Python第三方库概览"></a>10.Python第三方库概览</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_10.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88.png"></li>
 </ul>
+<blockquote>
+<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>第三方库的获取和安装<br><br>脚本程序转变为可执行程序的第三方库:PyInstaller库(必选)<br><br>第三方库: jieba库(必选)、wordcloud库（可选）</p>
+</blockquote>
+<h2 id="10-1-Python第三方库的获取与安装"><a href="#10-1-Python第三方库的获取与安装" class="headerlink" title="10.1 Python第三方库的获取与安装"></a>10.1 Python第三方库的获取与安装</h2><p>Python第三方库依照安装方式灵活性和难易程度有三个方法：<strong>pip工具安装</strong>、<strong>自定义安装</strong>和<strong>文件安装</strong>。</p>
+<h3 id="10-1-1-pip工具安装"><a href="#10-1-1-pip工具安装" class="headerlink" title="10.1.1 pip工具安装"></a>10.1.1 pip工具安装</h3><p>最常用且最高效的Python第三方库安装方式是采用pip工具安装。pip是Python官方提供并维护的在线第三方库安装工具。<br><br><code>pip install&lt;拟安装库名称&gt;</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install pygame</span><br><span class="line">...</span><br><span class="line">Installing collected packages: pygame</span><br><span class="line">Successfully installed pygame-1.9.2b1</span><br></pre></td></tr></table></figure>
+
+<p>pip常用指令,可以通过<code>pip help</code>查看：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C:\Users\86159&gt;pip -h</span><br><span class="line"></span><br><span class="line">Usage:</span><br><span class="line">  pip &lt;command&gt; [options]</span><br><span class="line"></span><br><span class="line">Commands:</span><br><span class="line">  install                     Install packages.</span><br><span class="line">  download                    Download packages.</span><br><span class="line">  uninstall                   Uninstall packages.</span><br><span class="line">  freeze                      Output installed packages in requirements format.</span><br><span class="line">  list                        List installed packages.</span><br><span class="line">  show                        Show information about installed packages.</span><br><span class="line">  check                       Verify installed packages have compatible dependencies.</span><br><span class="line">  config                      Manage local and global configuration.</span><br><span class="line">  search                      Search PyPI for packages.</span><br><span class="line">  cache                       Inspect and manage pip&#x27;s wheel cache.</span><br><span class="line">  wheel                       Build wheels from your requirements.</span><br><span class="line">  hash                        Compute hashes of package archives.</span><br><span class="line">  completion                  A helper command used for command completion.</span><br><span class="line">  debug                       Show information useful for debugging.</span><br><span class="line">  help                        Show help for commands.</span><br></pre></td></tr></table></figure>
+
+<h3 id="10-1-2-自定义安装"><a href="#10-1-2-自定义安装" class="headerlink" title="10.1.2 自定义安装"></a>10.1.2 自定义安装</h3><p>自定义安装指按照第三方库提供的步骤和方式安装。第三方库都有主页用于维护库的代码和文档。以科学计算用的numpy为例，开发者维护的官方主页是：<a href="http://www.numpy.org/">http://www.numpy.org/</a><br><br>浏览该网页找到下载链接，如下：<a href="https://www.scipy.org/scipylib/download.html">https://www.scipy.org/scipylib/download.html</a><br><br>进入根据指示步骤安装。</p>
+<h3 id="10-1-3-文件安装"><a href="#10-1-3-文件安装" class="headerlink" title="10.1.3 文件安装"></a>10.1.3 文件安装</h3><p>为了解决这类第三方库安装问题，美国加州大学尔湾分校提供了一个页面，帮助Python用户获得Windows可直接安装的第三方库文件，链接地址如下：<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">https://www.lfd.uci.edu/~gohlke/pythonlibs/</a><br><br>这里以scipy为例说明，首先在上述页面中找到scipy库对应的内容。选择其中的.whl文件下载，这里选择适用于Python 3.5版本解释器和32位系统的对应文件：scipy- 0 . 1 7 . 1 - cp3 5 - cp3 5m-win3 2 .whl，下载该文件到D:\pycodes目录。<br>然后，采用pip命令安装该文件。<br></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install D:\pycodes\scipy-0.17.1-cp35-cp35m-win32.whl</span><br><span class="line">Processing d:\pycodes\scipy-0.17.1-cp35-cp35m-win32.whl</span><br><span class="line">Installing collected packages: scipy</span><br><span class="line">Successfully installed scipy-0.17.1</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>对于上述三种安装方式，一般优先选择采用pip工具安装，如果安装失败，则选择自定义安装或者文件安装。另外，如果需要在没有网络条件下安装Python第三方库，请直接采用文件安装方式。其中，.whl文件可以通过pip download指令在有网络条件的情况下获得。</p>
+</blockquote>
+<h2 id="10-2-pyinstaller库"><a href="#10-2-pyinstaller库" class="headerlink" title="10.2 pyinstaller库"></a>10.2 pyinstaller库</h2><h3 id="10-2-1-pyinstaller库概述"><a href="#10-2-1-pyinstaller库概述" class="headerlink" title="10.2.1 pyinstaller库概述"></a>10.2.1 pyinstaller库概述</h3><p>PyInstaller是一个十分有用的Python第三方库，它能够在Windows、Linux、Mac OS X等操作系统下将Python源文件打包，变成直接可运行的可执行文件。<br><br><br>通过对源文件打包，Python程序可以在没有安装Python的环境中运行，也可以作为一个独立文件方便传递和管理。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install PyInstaller</span><br></pre></td></tr></table></figure>
+
+<h3 id="10-2-2-PyInstaller库与程序打包"><a href="#10-2-2-PyInstaller库与程序打包" class="headerlink" title="10.2.2 PyInstaller库与程序打包"></a>10.2.2 PyInstaller库与程序打包</h3><p>使用PyInstaller库对Python源文件打包十分简单，使用方法如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;PyInstaller &lt;Python源程序文件名&gt;</span><br></pre></td></tr></table></figure>
+
+<p>执行完毕后，源文件所在目录将生成dist和build两个文件夹。最终的打包程序在dist内部与源文件同名的目录中。<br><br><br>可以通过-F参数对Python源文件生成一个独立的可执行文件，如下：<br><br></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;PyInstaller -F SnowView.py</span><br></pre></td></tr></table></figure>
+
+<p>执行后在dist目录中出现了SnowView.exe文件，没有任何依赖库，执行它即可显示雪景效果。</p>
 <table>
 <thead>
 <tr>
-<th>进制种类</th>
-<th>引导符号</th>
-<th>描述</th>
+<th>参数</th>
+<th>功能</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>十进制</td>
-<td>无</td>
-<td>默认情况，例：1010，-1010</td>
+<td>-h, –help</td>
+<td>查看帮助</td>
 </tr>
 <tr>
-<td>二进制</td>
-<td>ob或oB</td>
-<td>由数字0和1组成，例：0b1010,0B1010</td>
+<td>–clean</td>
+<td>清理打包过程中的临时文件</td>
 </tr>
 <tr>
-<td>八进制</td>
-<td>0o或0O</td>
-<td>由数字0到7组成，例：0o1010,0O1010</td>
+<td>-D, –onedir</td>
+<td>默认值，生成dist目录</td>
 </tr>
 <tr>
-<td>十六进制</td>
-<td>0x或0X</td>
-<td>由字符0到9，a到f或A到F组成，例：0x1010,0X1010</td>
+<td>-F, –onefile</td>
+<td>在dist文件夹中只生成独立的打包文件</td>
+</tr>
+<tr>
+<td>-i &lt;图标文件名.ico &gt;</td>
+<td>指定打包程序使用的图标（icon）文件</td>
 </tr>
 </tbody></table>
-<h3 id="3-1-2浮点类型"><a href="#3-1-2浮点类型" class="headerlink" title="3.1.2浮点类型"></a>3.1.2浮点类型</h3><table>
+<h2 id="10-3-jieba库"><a href="#10-3-jieba库" class="headerlink" title="10.3 jieba库"></a>10.3 jieba库</h2><h3 id="10-3-1-jieba库概述"><a href="#10-3-1-jieba库概述" class="headerlink" title="10.3.1 jieba库概述"></a>10.3.1 jieba库概述</h3><p>jieba（“结巴”）是Python中一个重要的第三方中文分词函数库。<br><br><br>jieba库安装：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install jieba</span><br></pre></td></tr></table></figure>
+<p>jieba库支持三种分词模式：<strong>精确模式</strong>，将句子最精确地切开，适合文本分析；<strong>全模式</strong>，把句子中所有可以成词的词语都扫描出来，速度非常快，但是不能解决歧义；<strong>搜索引擎模式</strong>，在精确模式基础上，对长词再次切分，提高召回率，适合用于搜索引擎分词。<br><br><br>对中文分词来说，jieba库只需要一行代码即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;import jieba</span><br><span class="line">&gt;&gt;&gt;jieba.lcut(&quot;全国计算机等级考试&quot;)</span><br><span class="line">Building prefix dict from the default dictionary ...</span><br><span class="line">Loading model from cache C:\AppData\Local\Temp\jieba.cache</span><br><span class="line">Loading model cost 1.001 seconds.</span><br><span class="line">Prefix dict has been built succesfully.</span><br><span class="line">[&#x27;全国&#x27;,&#x27;计算机&#x27;,&#x27;等级&#x27;,&#x27;考试&#x27;]</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="10-3-2-jieba库与中文分词"><a href="#10-3-2-jieba库与中文分词" class="headerlink" title="10.3.2 jieba库与中文分词"></a>10.3.2 jieba库与中文分词</h3><table>
 <thead>
 <tr>
-<th>类型</th>
-<th>样式</th>
-<th>例子</th>
+<th>模式</th>
+<th>功能</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>科学计数法</td>
-<td><code>&lt;a&gt;e&lt;b&gt;</code>=a×10<sup>b</sup></td>
-<td>1.23e4=12300</td>
+<td>jieba.lcut(s)</td>
+<td>最常用的中文分词函数，用于精准模式，即将字符串分割成等量的中文词组，返回结果是列表类型</td>
 </tr>
 <tr>
-<td>小数类型</td>
-<td>整数.小数</td>
-<td>0.3</td>
+<td>jieba.lcut(s, cut_all = True)</td>
+<td>用于全模式，即将字符串的所有分词可能均列出来，返回结果是列表类型，冗余性最大</td>
+</tr>
+<tr>
+<td>jieba.lcut_for_search(s)</td>
+<td>返回搜索引擎模式，该模式首先执行精确模式，然后再对其中长词进一步切分获得最终结果</td>
+</tr>
+<tr>
+<td>jieba.add_word()</td>
+<td>顾名思义，用来向jieba词库增加新的单词。</td>
 </tr>
 </tbody></table>
-<h3 id="3-1-3复数类型"><a href="#3-1-3复数类型" class="headerlink" title="3.1.3复数类型"></a>3.1.3复数类型</h3><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>z.real</td>
-<td>取实部</td>
-</tr>
-<tr>
-<td>z.iamg</td>
-<td>取虚部</td>
-</tr>
-</tbody></table>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; z = 1.23e4+4.56e4j</span><br><span class="line">&gt;&gt;&gt; z.real</span><br><span class="line">12300.0</span><br><span class="line">&gt;&gt;&gt; z.imag</span><br><span class="line">45600.0</span><br><span class="line">&gt;&gt;&gt;1.23e4+5.67e4j.imag # 先获得5.67e4j的虚部，再与1.23e4进行求和计算</span><br><span class="line">69000.0</span><br></pre></td></tr></table></figure>
-<h2 id="3-2数字类型的运算"><a href="#3-2数字类型的运算" class="headerlink" title="3.2数字类型的运算"></a>3.2数字类型的运算</h2><h3 id="3-2-1数值运算操作符"><a href="#3-2-1数值运算操作符" class="headerlink" title="3.2.1数值运算操作符"></a>3.2.1数值运算操作符</h3><p>Python提供了9个运算操作符，如表所示：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;import jieba</span><br><span class="line">&gt;&gt;&gt;ls = jieba.lcut(&quot;全国计算机等级考试Python科目&quot;)</span><br><span class="line">&gt;&gt;&gt;print(ls)</span><br><span class="line">[&#x27;全国&#x27;,&#x27;计算机&#x27;,&#x27;等级&#x27;,&#x27;考试&#x27;,&#x27;Python&#x27;,&#x27;科目&#x27;]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;import jieba</span><br><span class="line">&gt;&gt;&gt;ls = jieba.lcut(&quot;全国计算机等级考试Python科目&quot;, cut_all=True)</span><br><span class="line">&gt;&gt;&gt;print(ls)</span><br><span class="line">[&#x27;全国&#x27;,&#x27;国计&#x27;,&#x27;计算&#x27;,&#x27;计算机&#x27;,&#x27;算机&#x27;,&#x27;等级&#x27;,&#x27;考试&#x27;,&#x27;Python&#x27;,&#x27;科目&#x27;]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;import jieba</span><br><span class="line">&gt;&gt;&gt;ls = jieba.lcut_for_search(&quot;全国计算机等级考试Python科目&quot;)</span><br><span class="line">&gt;&gt;&gt;print(ls)</span><br><span class="line">[&#x27;全国&#x27;,&#x27;计算&#x27;,&#x27;算机&#x27;,&#x27;计算机&#x27;,&#x27;等级&#x27;,&#x27;考试&#x27;,&#x27;Python&#x27;,&#x27;科目&#x27;]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;import jieba</span><br><span class="line">&gt;&gt;&gt;jieba.add_word(&quot;Python科目&quot;)</span><br><span class="line">&gt;&gt;&gt;ls = jieba.lcut(&quot;全国计算机等级考试Python科目&quot;)</span><br><span class="line">&gt;&gt;&gt;print(ls)</span><br><span class="line">[&#x27;全国&#x27;,&#x27;计算机&#x27;,&#x27;等级&#x27;,&#x27;考试&#x27;,&#x27;Python科目&#x27;]</span><br></pre></td></tr></table></figure>
+
+<h2 id="10-4-worldcloud库"><a href="#10-4-worldcloud库" class="headerlink" title="10.4 worldcloud库"></a>10.4 worldcloud库</h2><h3 id="10-4-1-worldcloud库概述"><a href="#10-4-1-worldcloud库概述" class="headerlink" title="10.4.1 worldcloud库概述"></a>10.4.1 worldcloud库概述</h3><p>wordcloud库是专门用于根据文本生成词云的Python第三方库，十分常用且有趣。<br><br><br>装wordcloud库在Windows的cmd命令行使用如下命令：<code>:\&gt;pip install wordcloud</code><br><br><br>wordcloud库的使用十分简单，以一个字符串为例。其中，产生词云只需要一行语句，在第三行，并可以将词云保存为图片。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;from wordcloud import WordCloud</span><br><span class="line">&gt;&gt;&gt;txt=&#x27;I like python. I am learning python&#x27;</span><br><span class="line">&gt;&gt;&gt;wordcloud = WordCloud().generate(txt)</span><br><span class="line">&gt;&gt;&gt;wordcloud.to_file(&#x27;testcloud.png&#x27;)</span><br><span class="line">&lt;wordcloud.wordcloud.WordCloud object at 0x000001583E26D208&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="10-4-2-worldcloud库与可视化词云"><a href="#10-4-2-worldcloud库与可视化词云" class="headerlink" title="10.4.2 worldcloud库与可视化词云"></a>10.4.2 worldcloud库与可视化词云</h3><p>在生成词云时，wordcloud默认会以空格或标点为分隔符对目标文本进行分词处理。对于中文文本，分词处理需要由用户来完成。<br><br>一般步骤是先将文本分词处理，然后以空格拼接，再调用wordcloud库函数。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import jieba</span><br><span class="line">from wordcloud import WordCloud</span><br><span class="line">txt = &#x27;程序设计语言是计算机能够理解和识别用户操作意图的一种交互体系，它按</span><br><span class="line">照特定规则组织计算机指令，使计算机能够自动进行各种运算处理。&#x27;</span><br><span class="line">words = jieba.lcut(txt) # 精确分词</span><br><span class="line">newtxt = &#x27; &#x27;.join(words) # 空格拼接</span><br><span class="line">wordcloud = WordCloud(font_path=&quot;msyh.ttc&quot;).generate(newtxt)</span><br><span class="line">wordcloud.to_file(&#x27;词云中文例子图.png&#x27;) # 保存图片</span><br></pre></td></tr></table></figure>
+
+<p>wordcloud库的核心是WordColoud类，所有的功能都封装在WordCloud类中。使用时需要实<br>例化一个WordColoud类的对象，并调用其generate(text)方法将text文本转化为词云。<br><br><br>WordCloud对象创建的常用参数:</p>
 <table>
 <thead>
 <tr>
-<th>操作符及运算</th>
-<th>描述</th>
+<th>参数</th>
+<th>功能</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>x+y</td>
-<td>x与y的和</td>
+<td>font_path</td>
+<td>指定字体文件的完整路径，默认None</td>
 </tr>
 <tr>
-<td>x-y</td>
-<td>x与y的差</td>
+<td>width</td>
+<td>生成图片宽度，默认400像素</td>
 </tr>
 <tr>
-<td>x*y</td>
-<td>x与y的积</td>
+<td>height</td>
+<td>生成图片高度，默认200像素</td>
 </tr>
 <tr>
-<td>x/y</td>
-<td>x与y的商，产生结果为浮点数</td>
+<td>mask</td>
+<td>词云形状，默认None，即，方形图</td>
 </tr>
 <tr>
-<td>x//y</td>
-<td>x与y的整数商，即：不大于x与y之商的最大整数</td>
+<td>min_font_size</td>
+<td>词云中最小的字体字号，默认4号</td>
 </tr>
 <tr>
-<td>x%y</td>
-<td>x与y之商的余数，也称为模运算</td>
+<td>font_step</td>
+<td>字号步进间隔，默认1</td>
 </tr>
 <tr>
-<td>-x</td>
-<td>x的负值，即：x*(-1)</td>
+<td>min_font_size</td>
+<td>词云中最大的字体字号，默认None，根据高度自动调节</td>
 </tr>
 <tr>
-<td>+x</td>
-<td>x本身</td>
+<td>max_words</td>
+<td>词云图中最大词数，默认200</td>
 </tr>
 <tr>
-<td>x**y</td>
-<td>x的y次幂，即：x<sup>y</sup></td>
+<td>stopwords</td>
+<td>被排除词列表，排除词不在词云中显示</td>
+</tr>
+<tr>
+<td>background_color</td>
+<td>图片背景颜色，默认黑色</td>
 </tr>
 </tbody></table>
-<p><strong>增强赋值操作符</strong>：+=、-=、*=、/=、//=、%=、**=，用op表示二元运算操作符，增强操作符用法如下：<code>x op= y</code>等价与<code>x = x op y</code></p>
-<h3 id="3-2-2数值运算函数"><a href="#3-2-2数值运算函数" class="headerlink" title="3.2.2数值运算函数"></a>3.2.2数值运算函数</h3><p>内置的数值运算函数：</p>
-<table>
-<thead>
-<tr>
-<th>函数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>abs(x)</td>
-<td>x的绝对值</td>
-</tr>
-<tr>
-<td>divmod(x, y)</td>
-<td>(x//y, x%y)，输出为二元组形式（也称为元组类型）</td>
-</tr>
-<tr>
-<td>pow(x,y)或pow(x,y,z)</td>
-<td><code>(x**y)%z，[..]表示该参数可以省略，即：pow(x,y)，它与x**y相同</code></td>
-</tr>
-<tr>
-<td>round(x)或round(x,d)</td>
-<td>对x四舍五入，保留ndigits位小数。round(x)返回四舍五入的整数值</td>
-</tr>
-<tr>
-<td>max(x1, x2, …, xn)</td>
-<td>x1, x2, …, xn的最大值，n没有限定</td>
-</tr>
-<tr>
-<td>min(x1, x2, …, xn)</td>
-<td>x1, x2, …, xn的最小值，n没有限定</td>
-</tr>
-</tbody></table>
-<h2 id="3-3字符串类型及格式化"><a href="#3-3字符串类型及格式化" class="headerlink" title="3.3字符串类型及格式化"></a>3.3字符串类型及格式化</h2><h3 id="3-3-1字符串的索引"><a href="#3-3-1字符串的索引" class="headerlink" title="3.3.1字符串的索引"></a>3.3.1字符串的索引</h3><p>&lt;字符串或字符串变量&gt;[序号]</p>
-<h3 id="3-3-2字符串的切片"><a href="#3-3-2字符串的切片" class="headerlink" title="3.3.2字符串的切片"></a>3.3.2字符串的切片</h3><p>&lt;字符串或字符串变量&gt;[N: M]</p>
-<h3 id="3-3-3format-的方法的基本使用"><a href="#3-3-3format-的方法的基本使用" class="headerlink" title="3.3.3format()的方法的基本使用"></a>3.3.3format()的方法的基本使用</h3><p>&lt;模板字符串&gt;.format(&lt;逗号分隔的参数&gt;)</p>
-<h3 id="3-3-4format-的方法的格式控制"><a href="#3-3-4format-的方法的格式控制" class="headerlink" title="3.3.4format()的方法的格式控制"></a>3.3.4format()的方法的格式控制</h3><p>{&lt;参数序号&gt;: &lt;格式控制标记&gt;} </p>
-<table>
-<thead>
-<tr>
-<th>:</th>
-<th>&lt;填充&gt;</th>
-<th>&lt;对齐&gt;</th>
-<th>&lt;宽度&gt;</th>
-<th>&lt;,&gt;</th>
-<th>&lt;.精度&gt;</th>
-<th>&lt;类型&gt;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>引导符号</td>
-<td>用于填充的单个字符</td>
-<td>&lt;左对齐<br>&gt;右对齐<br>^中间对齐</td>
-<td>槽的设定输出宽度</td>
-<td>数字的千位分隔符<br>适用于整数和浮点数</td>
-<td>浮点数小数部分的精度<br>或<br>字符串的最大输出长度</td>
-<td>整数类型b,c,d,o,x,X&lt;<br>浮点数类型e,E,f,%</td>
-</tr>
-</tbody></table>
-<p>格式控制标记包括：&lt;填充&gt;&lt;对齐&gt;&lt;宽度&gt;,&lt;.精度&gt;&lt;类型&gt;6个<br>字段，这些字段都是可选的，可以组合使用</p>
-<ul>
-<li>&lt;填充&gt;、&lt;对齐&gt;和&lt;宽度&gt;主要用于对显示格式的规范。</li>
-<li>&lt;.精度&gt;&lt;类型&gt;主要用于对数值本身的规范</li>
-<li>对于整数类型，输出格式包括6种：<br><br>• b: 输出整数的二进制方式；<br><br>• c: 输出整数对应的Unicode字符；<br><br>• d: 输出整数的十进制方式；<br><br>• o: 输出整数的八进制方式；<br><br>• x: 输出整数的小写十六进制方式；<br><br>• X: 输出整数的大写十六进制方式；<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;&quot;&#123;0:b&#125;,&#123;0:c&#125;,&#123;0:d&#125;,&#123;0:o&#125;,&#123;0:x&#125;,&#123;0:X&#125;&quot;.format(425)</span><br><span class="line">&#x27;110101001,Ʃ,425,651,1a9,1A9&#x27;</span><br></pre></td></tr></table></figure>
-<h2 id="3-4字符串类型的操作"><a href="#3-4字符串类型的操作" class="headerlink" title="3.4字符串类型的操作"></a>3.4字符串类型的操作</h2><h3 id="3-4-1字符串操作符"><a href="#3-4-1字符串操作符" class="headerlink" title="3.4.1字符串操作符"></a>3.4.1字符串操作符</h3>基本的字符串操作符：</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>操作符</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>x + y</td>
-<td>连接两个字符串x与y</td>
-</tr>
-<tr>
-<td>x * n 或 n * x</td>
-<td>复制n次字符串x</td>
-</tr>
-<tr>
-<td>x in s</td>
-<td>如果x是s的子串，返回True，否则返回False</td>
-</tr>
-</tbody></table>
-<h3 id="3-4-2字符串处理函数"><a href="#3-4-2字符串处理函数" class="headerlink" title="3.4.2字符串处理函数"></a>3.4.2字符串处理函数</h3><p>字符串处理函数：</p>
-<table>
-<thead>
-<tr>
-<th>函数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>len(x)</td>
-<td>返回字符串x的长度，也可返回其他组合数据类型的元素个数</td>
-</tr>
-<tr>
-<td>str(x)</td>
-<td>返回任意类型x所对应的字符串形式</td>
-</tr>
-<tr>
-<td>chr(x)</td>
-<td>返回Unicode编码x对应的单字符</td>
-</tr>
-<tr>
-<td>ord(x)</td>
-<td>返回单字符x表示的Unicode编码</td>
-</tr>
-<tr>
-<td>hex(x)</td>
-<td>返回整数x对应十六进制数的小写形式字符串</td>
-</tr>
-<tr>
-<td>oct(x)</td>
-<td>返回整数x对应八进制数的小写形式字符串</td>
-</tr>
-</tbody></table>
-<h3 id="3-4-3字符串处理方法"><a href="#3-4-3字符串处理方法" class="headerlink" title="3.4.3字符串处理方法"></a>3.4.3字符串处理方法</h3><p>常用的字符串处理方法</p>
+<p>WordCloud类的常用方法:</p>
 <table>
 <thead>
 <tr>
 <th>方法</th>
-<th>描述</th>
+<th>功能</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>str.lower()</td>
-<td>返回字符串str的副本，全部字符小写</td>
+<td>generate(text)</td>
+<td>由text文本生成词云</td>
 </tr>
 <tr>
-<td>str.upper()</td>
-<td>返回字符串str的副本，全部字符大写</td>
-</tr>
-<tr>
-<td>str.split(sep=None)</td>
-<td>返回一个列表，由str根据sep被分割的部分构成</td>
-</tr>
-<tr>
-<td>str.count(sub)</td>
-<td>返回sub子串出现的次数</td>
-</tr>
-<tr>
-<td>str.replace(old, new)</td>
-<td>返回字符串str的副本，所有old子串被替换为new</td>
-</tr>
-<tr>
-<td>str.center(width, fillchar)</td>
-<td>字符串居中函数，fillchar参数可选</td>
-</tr>
-<tr>
-<td>str.strip(chars)</td>
-<td>从字符串str中去掉在其左侧和右侧chars中列出的字符</td>
-</tr>
-<tr>
-<td>str.join(iter)</td>
-<td>将iter变量的每一个元素后增加一个str字符串</td>
+<td>to_file(filename)</td>
+<td>将词云图保存为名为filename的文件</td>
 </tr>
 </tbody></table>
-<h2 id="3-5类型判断和类型转换"><a href="#3-5类型判断和类型转换" class="headerlink" title="3.5类型判断和类型转换"></a>3.5类型判断和类型转换</h2><p>类型判断函数</p>
-<table>
-<thead>
-<tr>
-<th>函数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>type(x)</td>
-<td>函数对变量x进行类型判断，适用于任何数据类型。</td>
-</tr>
-</tbody></table>
-<p>类型转换函数</p>
-<table>
-<thead>
-<tr>
-<th>函数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>int(x)</td>
-<td>将x转换为整数，x可以是浮点数或字符串</td>
-</tr>
-<tr>
-<td>float(x)</td>
-<td>将x转换为浮点数，x可以是整数或字符串</td>
-</tr>
-<tr>
-<td>str(x)</td>
-<td>将x转换为字符串，x可以是整数或浮点数</td>
-</tr>
-</tbody></table>
-<h2 id="3-6实例解析——凯撒密码"><a href="#3-6实例解析——凯撒密码" class="headerlink" title="3.6实例解析——凯撒密码"></a>3.6实例解析——凯撒密码</h2>]]></content>
+<h2 id="10-5-实例解析：《红楼梦》人物出场词"><a href="#10-5-实例解析：《红楼梦》人物出场词" class="headerlink" title="10.5 实例解析：《红楼梦》人物出场词"></a>10.5 实例解析：《红楼梦》人物出场词</h2>]]></content>
       <categories>
         <category>学习笔记</category>
       </categories>
@@ -664,6 +518,327 @@
 <h2 id="4-4程序的异常处理"><a href="#4-4程序的异常处理" class="headerlink" title="4.4程序的异常处理"></a>4.4程序的异常处理</h2><p>Python语言使用保留字try和except进行异常处理，基本的语法格式如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">try:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">except:</span><br><span class="line">    &lt;语句块2&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="4-5实例解析——猜数字游戏"><a href="#4-5实例解析——猜数字游戏" class="headerlink" title="4.5实例解析——猜数字游戏"></a>4.5实例解析——猜数字游戏</h2>]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>3.Python基本数据类型</title>
+    <url>/2021/09/04/3-Python%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB/</url>
+    <content><![CDATA[<p>Python基本数据类型</p>
+<span id="more"></span>
+<h1 id="3-Python-基本数据类型"><a href="#3-Python-基本数据类型" class="headerlink" title="3.Python 基本数据类型"></a>3.Python 基本数据类型</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_3.%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png"><h2 id="数字类型"><a href="#数字类型" class="headerlink" title="数字类型"></a>数字类型</h2><h3 id="3-1-1整数类型"><a href="#3-1-1整数类型" class="headerlink" title="3.1.1整数类型"></a>3.1.1整数类型</h3>整数(int)的4种进制的表示：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>进制种类</th>
+<th>引导符号</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>十进制</td>
+<td>无</td>
+<td>默认情况，例：1010，-1010</td>
+</tr>
+<tr>
+<td>二进制</td>
+<td>ob或oB</td>
+<td>由数字0和1组成，例：0b1010,0B1010</td>
+</tr>
+<tr>
+<td>八进制</td>
+<td>0o或0O</td>
+<td>由数字0到7组成，例：0o1010,0O1010</td>
+</tr>
+<tr>
+<td>十六进制</td>
+<td>0x或0X</td>
+<td>由字符0到9，a到f或A到F组成，例：0x1010,0X1010</td>
+</tr>
+</tbody></table>
+<h3 id="3-1-2浮点类型"><a href="#3-1-2浮点类型" class="headerlink" title="3.1.2浮点类型"></a>3.1.2浮点类型</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>样式</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>科学计数法</td>
+<td><code>&lt;a&gt;e&lt;b&gt;</code>=a×10<sup>b</sup></td>
+<td>1.23e4=12300</td>
+</tr>
+<tr>
+<td>小数类型</td>
+<td>整数.小数</td>
+<td>0.3</td>
+</tr>
+</tbody></table>
+<h3 id="3-1-3复数类型"><a href="#3-1-3复数类型" class="headerlink" title="3.1.3复数类型"></a>3.1.3复数类型</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>z.real</td>
+<td>取实部</td>
+</tr>
+<tr>
+<td>z.iamg</td>
+<td>取虚部</td>
+</tr>
+</tbody></table>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; z = 1.23e4+4.56e4j</span><br><span class="line">&gt;&gt;&gt; z.real</span><br><span class="line">12300.0</span><br><span class="line">&gt;&gt;&gt; z.imag</span><br><span class="line">45600.0</span><br><span class="line">&gt;&gt;&gt;1.23e4+5.67e4j.imag # 先获得5.67e4j的虚部，再与1.23e4进行求和计算</span><br><span class="line">69000.0</span><br></pre></td></tr></table></figure>
+<h2 id="3-2数字类型的运算"><a href="#3-2数字类型的运算" class="headerlink" title="3.2数字类型的运算"></a>3.2数字类型的运算</h2><h3 id="3-2-1数值运算操作符"><a href="#3-2-1数值运算操作符" class="headerlink" title="3.2.1数值运算操作符"></a>3.2.1数值运算操作符</h3><p>Python提供了9个运算操作符，如表所示：</p>
+<table>
+<thead>
+<tr>
+<th>操作符及运算</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>x+y</td>
+<td>x与y的和</td>
+</tr>
+<tr>
+<td>x-y</td>
+<td>x与y的差</td>
+</tr>
+<tr>
+<td>x*y</td>
+<td>x与y的积</td>
+</tr>
+<tr>
+<td>x/y</td>
+<td>x与y的商，产生结果为浮点数</td>
+</tr>
+<tr>
+<td>x//y</td>
+<td>x与y的整数商，即：不大于x与y之商的最大整数</td>
+</tr>
+<tr>
+<td>x%y</td>
+<td>x与y之商的余数，也称为模运算</td>
+</tr>
+<tr>
+<td>-x</td>
+<td>x的负值，即：x*(-1)</td>
+</tr>
+<tr>
+<td>+x</td>
+<td>x本身</td>
+</tr>
+<tr>
+<td>x**y</td>
+<td>x的y次幂，即：x<sup>y</sup></td>
+</tr>
+</tbody></table>
+<p><strong>增强赋值操作符</strong>：+=、-=、*=、/=、//=、%=、**=，用op表示二元运算操作符，增强操作符用法如下：<code>x op= y</code>等价与<code>x = x op y</code></p>
+<h3 id="3-2-2数值运算函数"><a href="#3-2-2数值运算函数" class="headerlink" title="3.2.2数值运算函数"></a>3.2.2数值运算函数</h3><p>内置的数值运算函数：</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>abs(x)</td>
+<td>x的绝对值</td>
+</tr>
+<tr>
+<td>divmod(x, y)</td>
+<td>(x//y, x%y)，输出为二元组形式（也称为元组类型）</td>
+</tr>
+<tr>
+<td>pow(x,y)或pow(x,y,z)</td>
+<td><code>(x**y)%z，[..]表示该参数可以省略，即：pow(x,y)，它与x**y相同</code></td>
+</tr>
+<tr>
+<td>round(x)或round(x,d)</td>
+<td>对x四舍五入，保留ndigits位小数。round(x)返回四舍五入的整数值</td>
+</tr>
+<tr>
+<td>max(x1, x2, …, xn)</td>
+<td>x1, x2, …, xn的最大值，n没有限定</td>
+</tr>
+<tr>
+<td>min(x1, x2, …, xn)</td>
+<td>x1, x2, …, xn的最小值，n没有限定</td>
+</tr>
+</tbody></table>
+<h2 id="3-3字符串类型及格式化"><a href="#3-3字符串类型及格式化" class="headerlink" title="3.3字符串类型及格式化"></a>3.3字符串类型及格式化</h2><h3 id="3-3-1字符串的索引"><a href="#3-3-1字符串的索引" class="headerlink" title="3.3.1字符串的索引"></a>3.3.1字符串的索引</h3><p>&lt;字符串或字符串变量&gt;[序号]</p>
+<h3 id="3-3-2字符串的切片"><a href="#3-3-2字符串的切片" class="headerlink" title="3.3.2字符串的切片"></a>3.3.2字符串的切片</h3><p>&lt;字符串或字符串变量&gt;[N: M]</p>
+<h3 id="3-3-3format-的方法的基本使用"><a href="#3-3-3format-的方法的基本使用" class="headerlink" title="3.3.3format()的方法的基本使用"></a>3.3.3format()的方法的基本使用</h3><p>&lt;模板字符串&gt;.format(&lt;逗号分隔的参数&gt;)</p>
+<h3 id="3-3-4format-的方法的格式控制"><a href="#3-3-4format-的方法的格式控制" class="headerlink" title="3.3.4format()的方法的格式控制"></a>3.3.4format()的方法的格式控制</h3><p>{&lt;参数序号&gt;: &lt;格式控制标记&gt;} </p>
+<table>
+<thead>
+<tr>
+<th>:</th>
+<th>&lt;填充&gt;</th>
+<th>&lt;对齐&gt;</th>
+<th>&lt;宽度&gt;</th>
+<th>&lt;,&gt;</th>
+<th>&lt;.精度&gt;</th>
+<th>&lt;类型&gt;</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>引导符号</td>
+<td>用于填充的单个字符</td>
+<td>&lt;左对齐<br>&gt;右对齐<br>^中间对齐</td>
+<td>槽的设定输出宽度</td>
+<td>数字的千位分隔符<br>适用于整数和浮点数</td>
+<td>浮点数小数部分的精度<br>或<br>字符串的最大输出长度</td>
+<td>整数类型b,c,d,o,x,X&lt;<br>浮点数类型e,E,f,%</td>
+</tr>
+</tbody></table>
+<p>格式控制标记包括：&lt;填充&gt;&lt;对齐&gt;&lt;宽度&gt;,&lt;.精度&gt;&lt;类型&gt;6个<br>字段，这些字段都是可选的，可以组合使用</p>
+<ul>
+<li>&lt;填充&gt;、&lt;对齐&gt;和&lt;宽度&gt;主要用于对显示格式的规范。</li>
+<li>&lt;.精度&gt;&lt;类型&gt;主要用于对数值本身的规范</li>
+<li>对于整数类型，输出格式包括6种：<br><br>• b: 输出整数的二进制方式；<br><br>• c: 输出整数对应的Unicode字符；<br><br>• d: 输出整数的十进制方式；<br><br>• o: 输出整数的八进制方式；<br><br>• x: 输出整数的小写十六进制方式；<br><br>• X: 输出整数的大写十六进制方式；<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;&quot;&#123;0:b&#125;,&#123;0:c&#125;,&#123;0:d&#125;,&#123;0:o&#125;,&#123;0:x&#125;,&#123;0:X&#125;&quot;.format(425)</span><br><span class="line">&#x27;110101001,Ʃ,425,651,1a9,1A9&#x27;</span><br></pre></td></tr></table></figure>
+<h2 id="3-4字符串类型的操作"><a href="#3-4字符串类型的操作" class="headerlink" title="3.4字符串类型的操作"></a>3.4字符串类型的操作</h2><h3 id="3-4-1字符串操作符"><a href="#3-4-1字符串操作符" class="headerlink" title="3.4.1字符串操作符"></a>3.4.1字符串操作符</h3>基本的字符串操作符：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>操作符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>x + y</td>
+<td>连接两个字符串x与y</td>
+</tr>
+<tr>
+<td>x * n 或 n * x</td>
+<td>复制n次字符串x</td>
+</tr>
+<tr>
+<td>x in s</td>
+<td>如果x是s的子串，返回True，否则返回False</td>
+</tr>
+</tbody></table>
+<h3 id="3-4-2字符串处理函数"><a href="#3-4-2字符串处理函数" class="headerlink" title="3.4.2字符串处理函数"></a>3.4.2字符串处理函数</h3><p>字符串处理函数：</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>len(x)</td>
+<td>返回字符串x的长度，也可返回其他组合数据类型的元素个数</td>
+</tr>
+<tr>
+<td>str(x)</td>
+<td>返回任意类型x所对应的字符串形式</td>
+</tr>
+<tr>
+<td>chr(x)</td>
+<td>返回Unicode编码x对应的单字符</td>
+</tr>
+<tr>
+<td>ord(x)</td>
+<td>返回单字符x表示的Unicode编码</td>
+</tr>
+<tr>
+<td>hex(x)</td>
+<td>返回整数x对应十六进制数的小写形式字符串</td>
+</tr>
+<tr>
+<td>oct(x)</td>
+<td>返回整数x对应八进制数的小写形式字符串</td>
+</tr>
+</tbody></table>
+<h3 id="3-4-3字符串处理方法"><a href="#3-4-3字符串处理方法" class="headerlink" title="3.4.3字符串处理方法"></a>3.4.3字符串处理方法</h3><p>常用的字符串处理方法</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>str.lower()</td>
+<td>返回字符串str的副本，全部字符小写</td>
+</tr>
+<tr>
+<td>str.upper()</td>
+<td>返回字符串str的副本，全部字符大写</td>
+</tr>
+<tr>
+<td>str.split(sep=None)</td>
+<td>返回一个列表，由str根据sep被分割的部分构成</td>
+</tr>
+<tr>
+<td>str.count(sub)</td>
+<td>返回sub子串出现的次数</td>
+</tr>
+<tr>
+<td>str.replace(old, new)</td>
+<td>返回字符串str的副本，所有old子串被替换为new</td>
+</tr>
+<tr>
+<td>str.center(width, fillchar)</td>
+<td>字符串居中函数，fillchar参数可选</td>
+</tr>
+<tr>
+<td>str.strip(chars)</td>
+<td>从字符串str中去掉在其左侧和右侧chars中列出的字符</td>
+</tr>
+<tr>
+<td>str.join(iter)</td>
+<td>将iter变量的每一个元素后增加一个str字符串</td>
+</tr>
+</tbody></table>
+<h2 id="3-5类型判断和类型转换"><a href="#3-5类型判断和类型转换" class="headerlink" title="3.5类型判断和类型转换"></a>3.5类型判断和类型转换</h2><p>类型判断函数</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>type(x)</td>
+<td>函数对变量x进行类型判断，适用于任何数据类型。</td>
+</tr>
+</tbody></table>
+<p>类型转换函数</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int(x)</td>
+<td>将x转换为整数，x可以是浮点数或字符串</td>
+</tr>
+<tr>
+<td>float(x)</td>
+<td>将x转换为浮点数，x可以是整数或字符串</td>
+</tr>
+<tr>
+<td>str(x)</td>
+<td>将x转换为字符串，x可以是整数或浮点数</td>
+</tr>
+</tbody></table>
+<h2 id="3-6实例解析——凯撒密码"><a href="#3-6实例解析——凯撒密码" class="headerlink" title="3.6实例解析——凯撒密码"></a>3.6实例解析——凯撒密码</h2>]]></content>
       <categories>
         <category>学习笔记</category>
       </categories>
@@ -1136,6 +1311,20 @@
       </categories>
   </entry>
   <entry>
+    <title>8-18</title>
+    <url>/2021/08/18/8-18/</url>
+    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
+<span id="more"></span>
+>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
+![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
+]]></content>
+      <categories>
+        <category>生活点滴</category>
+      </categories>
+  </entry>
+  <entry>
     <title>8.Python计算生态</title>
     <url>/2021/09/05/8-Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81/</url>
     <content><![CDATA[<p>Python计算生态</p>
@@ -1308,18 +1497,40 @@
       </tags>
   </entry>
   <entry>
-    <title>8-18</title>
-    <url>/2021/08/18/8-18/</url>
-    <content><![CDATA[<img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200">
+    <title>github+hexo 个人博客更换主题</title>
+    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
 <span id="more"></span>
->中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_173402.jpg)
-![](https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_120805.jpg)
+
+<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
+<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
+<blockquote>
+<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
+</blockquote>
+<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
+<blockquote>
+<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
+</blockquote>
+<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
+<blockquote>
+<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></table></figure>
+
+<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
 ]]></content>
       <categories>
-        <category>生活点滴</category>
+        <category>博客相关</category>
       </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+        <tag>主题</tag>
+      </tags>
   </entry>
   <entry>
     <title>9.Python标准库概览</title>
@@ -1805,217 +2016,6 @@
       <tags>
         <tag>电脑</tag>
         <tag>磁盘</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>10.Python第三方库概览</title>
-    <url>/2021/09/05/10-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88/</url>
-    <content><![CDATA[<p>Python第三方库概览</p>
-<span id="more"></span>
-<h1 id="10-Python第三方库概览"><a href="#10-Python第三方库概览" class="headerlink" title="10.Python第三方库概览"></a>10.Python第三方库概览</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_10.Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88.png"></li>
-</ul>
-<blockquote>
-<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>第三方库的获取和安装<br><br>脚本程序转变为可执行程序的第三方库:PyInstaller库(必选)<br><br>第三方库: jieba库(必选)、wordcloud库（可选）</p>
-</blockquote>
-<h2 id="10-1-Python第三方库的获取与安装"><a href="#10-1-Python第三方库的获取与安装" class="headerlink" title="10.1 Python第三方库的获取与安装"></a>10.1 Python第三方库的获取与安装</h2><p>Python第三方库依照安装方式灵活性和难易程度有三个方法：<strong>pip工具安装</strong>、<strong>自定义安装</strong>和<strong>文件安装</strong>。</p>
-<h3 id="10-1-1-pip工具安装"><a href="#10-1-1-pip工具安装" class="headerlink" title="10.1.1 pip工具安装"></a>10.1.1 pip工具安装</h3><p>最常用且最高效的Python第三方库安装方式是采用pip工具安装。pip是Python官方提供并维护的在线第三方库安装工具。<br><br><code>pip install&lt;拟安装库名称&gt;</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install pygame</span><br><span class="line">...</span><br><span class="line">Installing collected packages: pygame</span><br><span class="line">Successfully installed pygame-1.9.2b1</span><br></pre></td></tr></table></figure>
-
-<p>pip常用指令,可以通过<code>pip help</code>查看：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C:\Users\86159&gt;pip -h</span><br><span class="line"></span><br><span class="line">Usage:</span><br><span class="line">  pip &lt;command&gt; [options]</span><br><span class="line"></span><br><span class="line">Commands:</span><br><span class="line">  install                     Install packages.</span><br><span class="line">  download                    Download packages.</span><br><span class="line">  uninstall                   Uninstall packages.</span><br><span class="line">  freeze                      Output installed packages in requirements format.</span><br><span class="line">  list                        List installed packages.</span><br><span class="line">  show                        Show information about installed packages.</span><br><span class="line">  check                       Verify installed packages have compatible dependencies.</span><br><span class="line">  config                      Manage local and global configuration.</span><br><span class="line">  search                      Search PyPI for packages.</span><br><span class="line">  cache                       Inspect and manage pip&#x27;s wheel cache.</span><br><span class="line">  wheel                       Build wheels from your requirements.</span><br><span class="line">  hash                        Compute hashes of package archives.</span><br><span class="line">  completion                  A helper command used for command completion.</span><br><span class="line">  debug                       Show information useful for debugging.</span><br><span class="line">  help                        Show help for commands.</span><br></pre></td></tr></table></figure>
-
-<h3 id="10-1-2-自定义安装"><a href="#10-1-2-自定义安装" class="headerlink" title="10.1.2 自定义安装"></a>10.1.2 自定义安装</h3><p>自定义安装指按照第三方库提供的步骤和方式安装。第三方库都有主页用于维护库的代码和文档。以科学计算用的numpy为例，开发者维护的官方主页是：<a href="http://www.numpy.org/">http://www.numpy.org/</a><br><br>浏览该网页找到下载链接，如下：<a href="https://www.scipy.org/scipylib/download.html">https://www.scipy.org/scipylib/download.html</a><br><br>进入根据指示步骤安装。</p>
-<h3 id="10-1-3-文件安装"><a href="#10-1-3-文件安装" class="headerlink" title="10.1.3 文件安装"></a>10.1.3 文件安装</h3><p>为了解决这类第三方库安装问题，美国加州大学尔湾分校提供了一个页面，帮助Python用户获得Windows可直接安装的第三方库文件，链接地址如下：<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">https://www.lfd.uci.edu/~gohlke/pythonlibs/</a><br><br>这里以scipy为例说明，首先在上述页面中找到scipy库对应的内容。选择其中的.whl文件下载，这里选择适用于Python 3.5版本解释器和32位系统的对应文件：scipy- 0 . 1 7 . 1 - cp3 5 - cp3 5m-win3 2 .whl，下载该文件到D:\pycodes目录。<br>然后，采用pip命令安装该文件。<br></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install D:\pycodes\scipy-0.17.1-cp35-cp35m-win32.whl</span><br><span class="line">Processing d:\pycodes\scipy-0.17.1-cp35-cp35m-win32.whl</span><br><span class="line">Installing collected packages: scipy</span><br><span class="line">Successfully installed scipy-0.17.1</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>对于上述三种安装方式，一般优先选择采用pip工具安装，如果安装失败，则选择自定义安装或者文件安装。另外，如果需要在没有网络条件下安装Python第三方库，请直接采用文件安装方式。其中，.whl文件可以通过pip download指令在有网络条件的情况下获得。</p>
-</blockquote>
-<h2 id="10-2-pyinstaller库"><a href="#10-2-pyinstaller库" class="headerlink" title="10.2 pyinstaller库"></a>10.2 pyinstaller库</h2><h3 id="10-2-1-pyinstaller库概述"><a href="#10-2-1-pyinstaller库概述" class="headerlink" title="10.2.1 pyinstaller库概述"></a>10.2.1 pyinstaller库概述</h3><p>PyInstaller是一个十分有用的Python第三方库，它能够在Windows、Linux、Mac OS X等操作系统下将Python源文件打包，变成直接可运行的可执行文件。<br><br><br>通过对源文件打包，Python程序可以在没有安装Python的环境中运行，也可以作为一个独立文件方便传递和管理。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install PyInstaller</span><br></pre></td></tr></table></figure>
-
-<h3 id="10-2-2-PyInstaller库与程序打包"><a href="#10-2-2-PyInstaller库与程序打包" class="headerlink" title="10.2.2 PyInstaller库与程序打包"></a>10.2.2 PyInstaller库与程序打包</h3><p>使用PyInstaller库对Python源文件打包十分简单，使用方法如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;PyInstaller &lt;Python源程序文件名&gt;</span><br></pre></td></tr></table></figure>
-
-<p>执行完毕后，源文件所在目录将生成dist和build两个文件夹。最终的打包程序在dist内部与源文件同名的目录中。<br><br><br>可以通过-F参数对Python源文件生成一个独立的可执行文件，如下：<br><br></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;PyInstaller -F SnowView.py</span><br></pre></td></tr></table></figure>
-
-<p>执行后在dist目录中出现了SnowView.exe文件，没有任何依赖库，执行它即可显示雪景效果。</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-h, –help</td>
-<td>查看帮助</td>
-</tr>
-<tr>
-<td>–clean</td>
-<td>清理打包过程中的临时文件</td>
-</tr>
-<tr>
-<td>-D, –onedir</td>
-<td>默认值，生成dist目录</td>
-</tr>
-<tr>
-<td>-F, –onefile</td>
-<td>在dist文件夹中只生成独立的打包文件</td>
-</tr>
-<tr>
-<td>-i &lt;图标文件名.ico &gt;</td>
-<td>指定打包程序使用的图标（icon）文件</td>
-</tr>
-</tbody></table>
-<h2 id="10-3-jieba库"><a href="#10-3-jieba库" class="headerlink" title="10.3 jieba库"></a>10.3 jieba库</h2><h3 id="10-3-1-jieba库概述"><a href="#10-3-1-jieba库概述" class="headerlink" title="10.3.1 jieba库概述"></a>10.3.1 jieba库概述</h3><p>jieba（“结巴”）是Python中一个重要的第三方中文分词函数库。<br><br><br>jieba库安装：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:\&gt;pip install jieba</span><br></pre></td></tr></table></figure>
-<p>jieba库支持三种分词模式：<strong>精确模式</strong>，将句子最精确地切开，适合文本分析；<strong>全模式</strong>，把句子中所有可以成词的词语都扫描出来，速度非常快，但是不能解决歧义；<strong>搜索引擎模式</strong>，在精确模式基础上，对长词再次切分，提高召回率，适合用于搜索引擎分词。<br><br><br>对中文分词来说，jieba库只需要一行代码即可。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;import jieba</span><br><span class="line">&gt;&gt;&gt;jieba.lcut(&quot;全国计算机等级考试&quot;)</span><br><span class="line">Building prefix dict from the default dictionary ...</span><br><span class="line">Loading model from cache C:\AppData\Local\Temp\jieba.cache</span><br><span class="line">Loading model cost 1.001 seconds.</span><br><span class="line">Prefix dict has been built succesfully.</span><br><span class="line">[&#x27;全国&#x27;,&#x27;计算机&#x27;,&#x27;等级&#x27;,&#x27;考试&#x27;]</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="10-3-2-jieba库与中文分词"><a href="#10-3-2-jieba库与中文分词" class="headerlink" title="10.3.2 jieba库与中文分词"></a>10.3.2 jieba库与中文分词</h3><table>
-<thead>
-<tr>
-<th>模式</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>jieba.lcut(s)</td>
-<td>最常用的中文分词函数，用于精准模式，即将字符串分割成等量的中文词组，返回结果是列表类型</td>
-</tr>
-<tr>
-<td>jieba.lcut(s, cut_all = True)</td>
-<td>用于全模式，即将字符串的所有分词可能均列出来，返回结果是列表类型，冗余性最大</td>
-</tr>
-<tr>
-<td>jieba.lcut_for_search(s)</td>
-<td>返回搜索引擎模式，该模式首先执行精确模式，然后再对其中长词进一步切分获得最终结果</td>
-</tr>
-<tr>
-<td>jieba.add_word()</td>
-<td>顾名思义，用来向jieba词库增加新的单词。</td>
-</tr>
-</tbody></table>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;import jieba</span><br><span class="line">&gt;&gt;&gt;ls = jieba.lcut(&quot;全国计算机等级考试Python科目&quot;)</span><br><span class="line">&gt;&gt;&gt;print(ls)</span><br><span class="line">[&#x27;全国&#x27;,&#x27;计算机&#x27;,&#x27;等级&#x27;,&#x27;考试&#x27;,&#x27;Python&#x27;,&#x27;科目&#x27;]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;import jieba</span><br><span class="line">&gt;&gt;&gt;ls = jieba.lcut(&quot;全国计算机等级考试Python科目&quot;, cut_all=True)</span><br><span class="line">&gt;&gt;&gt;print(ls)</span><br><span class="line">[&#x27;全国&#x27;,&#x27;国计&#x27;,&#x27;计算&#x27;,&#x27;计算机&#x27;,&#x27;算机&#x27;,&#x27;等级&#x27;,&#x27;考试&#x27;,&#x27;Python&#x27;,&#x27;科目&#x27;]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;import jieba</span><br><span class="line">&gt;&gt;&gt;ls = jieba.lcut_for_search(&quot;全国计算机等级考试Python科目&quot;)</span><br><span class="line">&gt;&gt;&gt;print(ls)</span><br><span class="line">[&#x27;全国&#x27;,&#x27;计算&#x27;,&#x27;算机&#x27;,&#x27;计算机&#x27;,&#x27;等级&#x27;,&#x27;考试&#x27;,&#x27;Python&#x27;,&#x27;科目&#x27;]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;import jieba</span><br><span class="line">&gt;&gt;&gt;jieba.add_word(&quot;Python科目&quot;)</span><br><span class="line">&gt;&gt;&gt;ls = jieba.lcut(&quot;全国计算机等级考试Python科目&quot;)</span><br><span class="line">&gt;&gt;&gt;print(ls)</span><br><span class="line">[&#x27;全国&#x27;,&#x27;计算机&#x27;,&#x27;等级&#x27;,&#x27;考试&#x27;,&#x27;Python科目&#x27;]</span><br></pre></td></tr></table></figure>
-
-<h2 id="10-4-worldcloud库"><a href="#10-4-worldcloud库" class="headerlink" title="10.4 worldcloud库"></a>10.4 worldcloud库</h2><h3 id="10-4-1-worldcloud库概述"><a href="#10-4-1-worldcloud库概述" class="headerlink" title="10.4.1 worldcloud库概述"></a>10.4.1 worldcloud库概述</h3><p>wordcloud库是专门用于根据文本生成词云的Python第三方库，十分常用且有趣。<br><br><br>装wordcloud库在Windows的cmd命令行使用如下命令：<code>:\&gt;pip install wordcloud</code><br><br><br>wordcloud库的使用十分简单，以一个字符串为例。其中，产生词云只需要一行语句，在第三行，并可以将词云保存为图片。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;from wordcloud import WordCloud</span><br><span class="line">&gt;&gt;&gt;txt=&#x27;I like python. I am learning python&#x27;</span><br><span class="line">&gt;&gt;&gt;wordcloud = WordCloud().generate(txt)</span><br><span class="line">&gt;&gt;&gt;wordcloud.to_file(&#x27;testcloud.png&#x27;)</span><br><span class="line">&lt;wordcloud.wordcloud.WordCloud object at 0x000001583E26D208&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="10-4-2-worldcloud库与可视化词云"><a href="#10-4-2-worldcloud库与可视化词云" class="headerlink" title="10.4.2 worldcloud库与可视化词云"></a>10.4.2 worldcloud库与可视化词云</h3><p>在生成词云时，wordcloud默认会以空格或标点为分隔符对目标文本进行分词处理。对于中文文本，分词处理需要由用户来完成。<br><br>一般步骤是先将文本分词处理，然后以空格拼接，再调用wordcloud库函数。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import jieba</span><br><span class="line">from wordcloud import WordCloud</span><br><span class="line">txt = &#x27;程序设计语言是计算机能够理解和识别用户操作意图的一种交互体系，它按</span><br><span class="line">照特定规则组织计算机指令，使计算机能够自动进行各种运算处理。&#x27;</span><br><span class="line">words = jieba.lcut(txt) # 精确分词</span><br><span class="line">newtxt = &#x27; &#x27;.join(words) # 空格拼接</span><br><span class="line">wordcloud = WordCloud(font_path=&quot;msyh.ttc&quot;).generate(newtxt)</span><br><span class="line">wordcloud.to_file(&#x27;词云中文例子图.png&#x27;) # 保存图片</span><br></pre></td></tr></table></figure>
-
-<p>wordcloud库的核心是WordColoud类，所有的功能都封装在WordCloud类中。使用时需要实<br>例化一个WordColoud类的对象，并调用其generate(text)方法将text文本转化为词云。<br><br><br>WordCloud对象创建的常用参数:</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>font_path</td>
-<td>指定字体文件的完整路径，默认None</td>
-</tr>
-<tr>
-<td>width</td>
-<td>生成图片宽度，默认400像素</td>
-</tr>
-<tr>
-<td>height</td>
-<td>生成图片高度，默认200像素</td>
-</tr>
-<tr>
-<td>mask</td>
-<td>词云形状，默认None，即，方形图</td>
-</tr>
-<tr>
-<td>min_font_size</td>
-<td>词云中最小的字体字号，默认4号</td>
-</tr>
-<tr>
-<td>font_step</td>
-<td>字号步进间隔，默认1</td>
-</tr>
-<tr>
-<td>min_font_size</td>
-<td>词云中最大的字体字号，默认None，根据高度自动调节</td>
-</tr>
-<tr>
-<td>max_words</td>
-<td>词云图中最大词数，默认200</td>
-</tr>
-<tr>
-<td>stopwords</td>
-<td>被排除词列表，排除词不在词云中显示</td>
-</tr>
-<tr>
-<td>background_color</td>
-<td>图片背景颜色，默认黑色</td>
-</tr>
-</tbody></table>
-<p>WordCloud类的常用方法:</p>
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>generate(text)</td>
-<td>由text文本生成词云</td>
-</tr>
-<tr>
-<td>to_file(filename)</td>
-<td>将词云图保存为名为filename的文件</td>
-</tr>
-</tbody></table>
-<h2 id="10-5-实例解析：《红楼梦》人物出场词"><a href="#10-5-实例解析：《红楼梦》人物出场词" class="headerlink" title="10.5 实例解析：《红楼梦》人物出场词"></a>10.5 实例解析：《红楼梦》人物出场词</h2>]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>github+hexo 个人博客更换主题</title>
-    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
-<span id="more"></span>
-
-<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
-<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
-<blockquote>
-<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
-</blockquote>
-<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
-<blockquote>
-<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
-</blockquote>
-<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
-<blockquote>
-<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></table></figure>
-
-<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-        <tag>主题</tag>
       </tags>
   </entry>
   <entry>
@@ -2969,6 +2969,46 @@ title Key elements in Product X
       </tags>
   </entry>
   <entry>
+    <title>修改github.io站点域名</title>
+    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
+    <content><![CDATA[<p>修改github.io站点域名</p>
+<span id="more"></span>
+
+<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
+<ul>
+<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
+<ul>
+<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&utm_medium=cpc&utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&utm_medium=se-cpc-op&utm_campaign=10045&utm_content=&utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&utm_adplace=AdPlace039520">华为云</a></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
+<ul>
+<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE3.png"></li>
+<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE1.png"></li>
+</ul>
+</blockquote>
+<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
+<ul>
+<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE2.png"></li>
+</ul>
+</blockquote>
+<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
+<ul>
+<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>注册域名</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>启发式算法</title>
     <url>/2022/09/03/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<p>暂无更多编辑，点击查看文章……</p>
@@ -3156,46 +3196,6 @@ title Key elements in Product X
       </categories>
       <tags>
         <tag>数模</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>修改github.io站点域名</title>
-    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
-    <content><![CDATA[<p>修改github.io站点域名</p>
-<span id="more"></span>
-
-<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
-<ul>
-<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
-<ul>
-<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&utm_medium=cpc&utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&utm_medium=se-cpc-op&utm_campaign=10045&utm_content=&utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&utm_adplace=AdPlace039520">华为云</a></li>
-</ul>
-</blockquote>
-</li>
-</ul>
-</blockquote>
-<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
-<ul>
-<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE3.png"></li>
-<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE1.png"></li>
-</ul>
-</blockquote>
-<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
-<ul>
-<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE2.png"></li>
-</ul>
-</blockquote>
-<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
-<ul>
-<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
-</ul>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>注册域名</tag>
       </tags>
   </entry>
   <entry>
