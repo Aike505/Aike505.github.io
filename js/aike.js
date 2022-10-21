@@ -74,19 +74,19 @@ function createWinbox() {
     <p><button onclick="localStorage.removeItem('blogbg');location.reload();" style="background:#5fcdff;display:block;width:100%;padding: 15px 0;border-radius:6px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 点我恢复默认背景</button></p>
     <h2 id="图片（手机）"><a href="#图片（手机）" class="headerlink" title="图片（手机）"></a>图片（手机）</h2>
     <div class="bgbox">
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210160953481.jpg)" class="pimgbox" onclick="changeBg('url(https\://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210160953481.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210180819845.jpg)" class="pimgbox" onclick="changeBg('url(https\://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210180819845.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210180819843.jpg)" class="pimgbox" onclick="changeBg('url(https\://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210180819843.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210180819840.jpg)" class="pimgbox" onclick="changeBg('url(https\://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210180819840.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s3.bmp.ovh/imgs/2022/10/21/613b72772e6f3a39.jpg)" class="pimgbox" onclick="changeBg('url(https\:s3.bmp.ovh/imgs/2022/10/21/613b72772e6f3a39.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s3.bmp.ovh/imgs/2022/10/21/d1b96b18c29424b4.jpg)" class="pimgbox" onclick="changeBg('url(https\://s3.bmp.ovh/imgs/2022/10/21/d1b96b18c29424b4.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s3.bmp.ovh/imgs/2022/10/21/fff599cb49a7b0b9.jpg)" class="pimgbox" onclick="changeBg('url(https\://s3.bmp.ovh/imgs/2022/10/21/fff599cb49a7b0b9.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s3.bmp.ovh/imgs/2022/10/21/28fefa289e64cf8a.jpg)" class="pimgbox" onclick="changeBg('url(https\://s3.bmp.ovh/imgs/2022/10/21/28fefa289e64cf8a.jpg)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2022/10/20/3hiBYHSruVqgZKl.png)" class="pimgbox" onclick="changeBg('url(https\://s2.loli.net/2022/10/20/3hiBYHSruVqgZKl.png)')"></a>
 
     </div>
     <h2 id="图片（电脑）"><a href="#图片（电脑）" class="headerlink" title="图片（电脑）"></a>图片（电脑）</h2>
     <div class="bgbox">
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151229279.jpg)" class="imgbox" onclick="changeBg('url(https\://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151229279.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151228677.jpg)" class="imgbox" onclick="changeBg('url(https\://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151228677.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151826055.jpg)" class="imgbox" onclick="changeBg('url(https\://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151826055.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151228758.jpg)" class="imgbox" onclick="changeBg('url(https\://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210151228758.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s3.bmp.ovh/imgs/2022/10/21/e2f70d668441dd87.jpg)" class="imgbox" onclick="changeBg('url(https\://s3.bmp.ovh/imgs/2022/10/21/e2f70d668441dd87.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s3.bmp.ovh/imgs/2022/10/21/966d85c470185cc9.jpg)" class="imgbox" onclick="changeBg('url(https\://s3.bmp.ovh/imgs/2022/10/21/966d85c470185cc9.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s3.bmp.ovh/imgs/2022/10/21/1ec5a40201abe7bd.jpg)" class="imgbox" onclick="changeBg('url(https\://s3.bmp.ovh/imgs/2022/10/21/1ec5a40201abe7bd.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s3.bmp.ovh/imgs/2022/10/21/b5abfc93b10a6701.jpg)" class="imgbox" onclick="changeBg('url(https\://s3.bmp.ovh/imgs/2022/10/21/b5abfc93b10a6701.jpg)')"></a>
     </div>
     
     
