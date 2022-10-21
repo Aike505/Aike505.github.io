@@ -3,7 +3,7 @@ let total = 0
 let nowNum = 0
 let items = []
 let page = 1
-let Url = 'https://kkapi-open-xi.vercel.app/api/ispeak?author=62cfe22a3a91f6ac8ea6803f&page=' // 修改api，记得带参数page
+let Url = 'https://kkapi.zkkk123.cn/api/ispeak?author=635135a4a5372ae2d1b3dd98&page=' // 修改api，记得带参数page
 
 
 window.addEventListener('DOMContentLoaded', () => {
