@@ -109,7 +109,7 @@
   }
   .nav-fixed #nav-totop #percent,
   .page #nav-totop #percent {
-    background: var(--font-color);
+    background: rgba(255,255,255,.7);
     color: var(--card-bg);
   }
   
@@ -211,7 +211,7 @@
     height: 100%;
     content: '\f015';
     box-shadow: 0 0 5px var(--aike-theme);
-    font-family: 'Font Awesome 6 Pro';
+    font-family: 'Font Awesome 5 Free';
     text-align: center;
     color: white;
   }
