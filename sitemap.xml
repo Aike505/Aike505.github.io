@@ -362,15 +362,6 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/box/about/index.html</loc>
-    
-    <lastmod>2020-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aike505.github.io/games/2048/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
@@ -380,7 +371,7 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/games/PacMan/index.html</loc>
+    <loc>https://aike505.github.io/box/about/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -399,6 +390,15 @@
   
   <url>
     <loc>https://aike505.github.io/games/cat/index.html</loc>
+    
+    <lastmod>2020-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/games/PacMan/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -504,14 +504,14 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/%E6%B3%A8%E5%86%8C%E5%9F%9F%E5%90%8D/</loc>
+    <loc>https://aike505.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2022-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://aike505.github.io/tags/%E6%B3%A8%E5%86%8C%E5%9F%9F%E5%90%8D/</loc>
     <lastmod>2022-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
