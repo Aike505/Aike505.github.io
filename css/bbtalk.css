@@ -8,7 +8,7 @@
 #bber-talk {
     cursor: pointer;
     width: 100%;
-    min-height: px;
+    min-height: 50px;
     background: rgba(255, 255, 255, 0.7);
     padding: 0.5rem 1rem;
     border-radius: 14px;
