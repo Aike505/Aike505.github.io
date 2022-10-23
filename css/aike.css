@@ -553,3 +553,38 @@ div#quit-board.fixedcomment {
     background: url(https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/202210182137363.jpg) no-repeat center center;
     background-size: cover;
   }
+
+/* 顶部导航栏修改 */
+[data-theme='dark'] #page-header.not-top-img > #nav {
+    background: rgba(18,18,18,0.0);
+}
+
+[data-theme='dark'] #page-header.not-top-img.nav-fixed.is-top-bar > #nav {
+    background: rgba(18,18,18,0.5);
+}
+
+/* 哔哔首页轮播修改 */
+#bber-talk {
+    border: var(--style-border);
+}
+
+/* 目录导航条修改 */
+div.category-bar-item a,
+a.category-bar-more {
+    color: var(--font-color);
+    transition: none;
+}
+
+div.category-bar-item a,
+a.category-bar-more {
+    border-radius: 8px;
+}
+
+#category-bar {
+    margin: 20px 0px 0px;
+}
+
+ul.talk-list{
+    margin: 0;
+}
+
