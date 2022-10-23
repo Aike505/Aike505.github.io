@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>1.程序设计基本方法</title>
+    <url>/2021/09/04/1-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>程序设计基本方法<br><span id="more"></span></p>
+<h1 id="1-程序设计基本方法"><a href="#1-程序设计基本方法" class="headerlink" title="1.程序设计基本方法"></a>1.程序设计基本方法</h1><ul>
+<li><p>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95.png" alt=""></p>
+<h2 id="1-1高级编程语言两类执行机制"><a href="#1-1高级编程语言两类执行机制" class="headerlink" title="1.1高级编程语言两类执行机制"></a>1.1高级编程语言两类执行机制</h2><p>| 语言|执行机制 |示例|区别<br>-|-|-|-<br>静态语言|编译执行|如C语言、Java语言|编译是一次性地翻译，一旦程序被编译，不再需要编译程序或者源代码。<br>脚本语言|解释执行|如Python语言、JavaScript语言、PHP语言|解释则在每次程序运行时都需要解释器和源代码。</p>
+</li>
+<li><p>编译是将源代码转换成目标代码的过程，通常，<br>源代码是高级语言代码，目标代码是机器语言代<br>码，执行编译的计算机程序称为编译器<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95_1.png" alt=""></p>
+</li>
+<li><p>解释是将源代码逐条转换成目标代码同时逐条运<br>行目标代码的过程。执行解释的计算机程序称为<br>解释器。<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95_2.png" alt=""></p>
+</li>
+</ul>
+<h2 id="1-2-Python解释器的两个重要工具"><a href="#1-2-Python解释器的两个重要工具" class="headerlink" title="1.2 Python解释器的两个重要工具"></a>1.2 Python解释器的两个重要工具</h2><p>IDLE：Python集成开发环境，用来编写和调试<br>Python代码；<br><br>Pip：Python第三方库安装工具，用来在当前计算<br>机上安装第三方库</p>
+<blockquote>
+<p>关于python的安装，发展历史，程序设计IPO方法，Pythond优缺点为避免繁琐，这里不予过多介绍，有问题的可以<strong>留言</strong>或自己百度解决~~</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>10.Python第三方库概览</title>
     <url>/2021/09/05/10-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%A6%82%E8%A7%88/</url>
     <content><![CDATA[<p>Python第三方库概览<br><span id="more"></span></p>
@@ -172,31 +197,6 @@
       </tags>
   </entry>
   <entry>
-    <title>1.程序设计基本方法</title>
-    <url>/2021/09/04/1-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p>程序设计基本方法<br><span id="more"></span></p>
-<h1 id="1-程序设计基本方法"><a href="#1-程序设计基本方法" class="headerlink" title="1.程序设计基本方法"></a>1.程序设计基本方法</h1><ul>
-<li><p>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95.png" alt=""></p>
-<h2 id="1-1高级编程语言两类执行机制"><a href="#1-1高级编程语言两类执行机制" class="headerlink" title="1.1高级编程语言两类执行机制"></a>1.1高级编程语言两类执行机制</h2><p>| 语言|执行机制 |示例|区别<br>-|-|-|-<br>静态语言|编译执行|如C语言、Java语言|编译是一次性地翻译，一旦程序被编译，不再需要编译程序或者源代码。<br>脚本语言|解释执行|如Python语言、JavaScript语言、PHP语言|解释则在每次程序运行时都需要解释器和源代码。</p>
-</li>
-<li><p>编译是将源代码转换成目标代码的过程，通常，<br>源代码是高级语言代码，目标代码是机器语言代<br>码，执行编译的计算机程序称为编译器<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95_1.png" alt=""></p>
-</li>
-<li><p>解释是将源代码逐条转换成目标代码同时逐条运<br>行目标代码的过程。执行解释的计算机程序称为<br>解释器。<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_1.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95_2.png" alt=""></p>
-</li>
-</ul>
-<h2 id="1-2-Python解释器的两个重要工具"><a href="#1-2-Python解释器的两个重要工具" class="headerlink" title="1.2 Python解释器的两个重要工具"></a>1.2 Python解释器的两个重要工具</h2><p>IDLE：Python集成开发环境，用来编写和调试<br>Python代码；<br><br>Pip：Python第三方库安装工具，用来在当前计算<br>机上安装第三方库</p>
-<blockquote>
-<p>关于python的安装，发展历史，程序设计IPO方法，Pythond优缺点为避免繁琐，这里不予过多介绍，有问题的可以<strong>留言</strong>或自己百度解决~~</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>11.Python第三方库纵览</title>
     <url>/2021/09/05/11-Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%BA%B5%E8%A7%88/</url>
     <content><![CDATA[<p>Python第三方库纵览<br><span id="more"></span></p>
@@ -298,6 +298,149 @@
 <blockquote>
 <h2 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h2><p>本章通过8个具体方向30个Python功能库的简要介绍纵览Python语言计算生态的丰富性，希望读者能够从Python基础语法出发，看到更广阔的程序设计生态，进一步“理解和运用计算生态”，掌握符合信息时代需要的程序设计能力。<br><br>国家计算机等级考试不仅仅是一场考试，更是检验能力提升的手段，加油!<br><br><br>点击<a href="https://python123.io/student/series/1/">这里</a>获取所有章节pdf<br>点击<a href="https://python123.io/python/songtian/5ed87dc83b5ca9663fd4761d">这里</a>获取更多内容</p>
 </blockquote>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2.Python语言基本语法元素</title>
+    <url>/2021/09/04/2-Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0/</url>
+    <content><![CDATA[<p>Python语言基本语法元素<br><span id="more"></span></p>
+<h1 id="2-Python语言基本语法元素"><a href="#2-Python语言基本语法元素" class="headerlink" title="2.Python语言基本语法元素"></a>2.Python语言基本语法元素</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_2.Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0.png" alt=""><blockquote>
+<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>程序的基本语法元素：程序的格式框架、缩进、注释、变量、命名、保留字、数据类型、赋值语句、引用<br><br><br>基本输入输出函数：input()、eval()、print()<br><br><br>源程序的书写风格</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2-1程序的格式"><a href="#2-1程序的格式" class="headerlink" title="2.1程序的格式"></a>2.1程序的格式</h2><h3 id="2-1-1缩进"><a href="#2-1-1缩进" class="headerlink" title="2.1.1缩进"></a>2.1.1缩进</h3><ul>
+<li>Python语言采用严格的“缩进”来表明程序的格式框架。缩进指每一行代码开始前的空白区域，用来表示代码之间的包含和层次关系</li>
+<li>1个缩进 = 4个空格</li>
+<li>缩进是Python语言中表明程序框架的唯一手段<h3 id="2-1-2注释"><a href="#2-1-2注释" class="headerlink" title="2.1.2注释"></a>2.1.2注释</h3></li>
+<li>注释是代码中的辅助性文字，会被编译或解释器略去，不被计算机执行，一般用于程序员对代码的说明。Python语言采用#表示一行注释的开始，<br>多行注释用’’’或”””将内容前后包含<h3 id="2-1-3续行符"><a href="#2-1-3续行符" class="headerlink" title="2.1.3续行符"></a>2.1.3续行符</h3></li>
+<li>Python程序是逐行编写的，每行代码长度并无限制，但从程序员角度，单行代码太长并不利于阅读，因此，Python提供“续行符”将代码分割为多行表达。续行符由反斜杠()符号表达。</li>
+</ul>
+<h2 id="2-2语法元素的名称"><a href="#2-2语法元素的名称" class="headerlink" title="2.2语法元素的名称"></a>2.2语法元素的名称</h2><h3 id="2-2-1变量"><a href="#2-2-1变量" class="headerlink" title="2.2.1变量"></a>2.2.1变量</h3><ul>
+<li>变量是保存和表示数据值的一种语法元素，在程序中十分常见。顾名思义，变量的值是可以改变的，能够通过赋值（使用等号=表达）方式被修改，例如：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;a = 99</span><br><span class="line">&gt;&gt;&gt;a = a + 1</span><br><span class="line">&gt;&gt;&gt;print(a)</span><br><span class="line">100</span><br></pre></td></tr></table></figure>
+<h3 id="2-2-2命名"><a href="#2-2-2命名" class="headerlink" title="2.2.2命名"></a>2.2.2命名</h3></li>
+<li>Python语言允许采用大写字母、小写字母、数字、下划线(_)和汉字等字符及其组合给变量命名，但名字的首字符不能是数字，中间不能出现空格，长度没有限制</li>
+<li>注意：<strong>标识符对大小写敏感</strong>，python和Python是两个不同的名字<h3 id="2-2-3保留字"><a href="#2-2-3保留字" class="headerlink" title="2.2.3保留字"></a>2.2.3保留字</h3></li>
+<li>保留字，也称为关键字，指被编程语言内部定义并保留使用的标识符。</li>
+<li>程序员编写程序不能定义与保留字相同的标识符。</li>
+<li>每种程序设计语言都有一套保留字，保留字一般用来构成程序整体框架、表达关键值和具有结构性的复杂语义等。</li>
+<li>掌握一门编程语言首先要熟记其所对应的保留字。</li>
+<li>Python 3.x保留字列表 (33个)</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>and</td>
+<td>elif</td>
+<td>import</td>
+<td>raise</td>
+</tr>
+<tr>
+<td>as</td>
+<td>else</td>
+<td>in</td>
+<td>return</td>
+</tr>
+<tr>
+<td>assert</td>
+<td>except</td>
+<td>is</td>
+<td>try</td>
+</tr>
+<tr>
+<td>break</td>
+<td>finally</td>
+<td>lambda</td>
+<td>while</td>
+</tr>
+<tr>
+<td>class</td>
+<td>for</td>
+<td>nonlocal</td>
+<td>with</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>from</td>
+<td>not</td>
+<td>yield</td>
+</tr>
+<tr>
+<td>def</td>
+<td>global</td>
+<td>or</td>
+<td>True</td>
+</tr>
+<tr>
+<td>del</td>
+<td>if</td>
+<td>pass</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>None</p>
+<h3 id="2-2-4数据类型"><a href="#2-2-4数据类型" class="headerlink" title="2.2.4数据类型"></a>2.2.4数据类型</h3><ul>
+<li>Python语言支持多种数据类型，最简单的包括数字类型、字符串类型，略微复杂的包括元组类型、集合类型、列表类型、字典类型等。<blockquote>
+<p>数据类型各种编程语言大同小异，文章后面章节也会详细介绍，这里就不再赘述。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2-3程序的语句元素"><a href="#2-3程序的语句元素" class="headerlink" title="2.3程序的语句元素"></a>2.3程序的语句元素</h2><h3 id="2-3-1表达式"><a href="#2-3-1表达式" class="headerlink" title="2.3.1表达式"></a>2.3.1表达式</h3><ul>
+<li>产生或计算新数据值的代码片段称为表达式。表达式类似数学中的计算公式，以表达单一功能为目的，运算后产生运算结果，运算结果的类型由操作符或运算符决定。</li>
+<li>表达式一般由数据和操作符等构成，这是构成Python语句的重要部分。<h3 id="2-3-2赋值语句"><a href="#2-3-2赋值语句" class="headerlink" title="2.3.2赋值语句"></a>2.3.2赋值语句</h3></li>
+<li>Python语言中，= 表示“赋值”，即将等号右侧的值计算后将结果值赋给左侧变量，包含等号（=）的语句称为“赋值语句”<br><br><code>&lt;变量&gt; = &lt;表达式&gt;</code></li>
+<li>同步赋值语句：同时给多个变量赋值<br><br><code>&lt;变量1&gt;, …, &lt;变量N&gt; = &lt;表达式1&gt;, …, &lt;表达式N&gt;</code><h3 id="2-3-3引用"><a href="#2-3-3引用" class="headerlink" title="2.3.3引用"></a>2.3.3引用</h3></li>
+<li>Python程序会经常使用当前程序之外已有的功能代码，这个过程叫“引用”。Python语言使用import保留字引用当前程序以外的功能库，使用方式如下：<br><br><code>import &lt;功能库名称&gt;</code></li>
+<li>引用功能库之后，采用<code>&lt;功能库名称&gt;.&lt;函数名称&gt;()</code>方式调用具体功能<h3 id="2-3-4其他语句"><a href="#2-3-4其他语句" class="headerlink" title="2.3.4其他语句"></a>2.3.4其他语句</h3></li>
+<li>除了赋值语句外，Python程序还包括一些其他的语句类型，例如，分支语句和循环语句等。更多的分支和循环内容将在第4章介绍。这里不再赘述。<h2 id="2-4基本输入输出函数"><a href="#2-4基本输入输出函数" class="headerlink" title="2.4基本输入输出函数"></a>2.4基本输入输出函数</h2></li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>语法</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>input</td>
+<td>&lt;变量&gt; = input(&lt;提示性文字&gt;</td>
+<td>获得用户输入之前，input()函数可以包含一些提示性文字</td>
+</tr>
+<tr>
+<td>eval</td>
+<td>eval(&lt;字符串&gt;)</td>
+<td>eval(&lt;字符串&gt;)函数是Python语言中一个十分重要的函数，它能够以Python表达式的方式解析并执行字符串，将返回结果输出</td>
+</tr>
+<tr>
+<td>print()</td>
+<td>1.print(&lt;待输出字符串&gt;)<br>2.print(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;)<br>3.print(&lt;输出字符串模板&gt;.format(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;))<br>4.print(&lt;待输出内容&gt;, end=”&lt;增加的输出结尾&gt;”)</td>
+<td>1.仅用于输出字符串<br>2.仅用于输出一个或多个变量<br>3.用于混合输出字符串与变量值<br>4.对print()函数的end参数进行赋值</td>
+</tr>
+</tbody>
+</table>
+</div>
 ]]></content>
       <categories>
         <category>学习笔记</category>
@@ -658,149 +801,6 @@
 </table>
 </div>
 <h2 id="3-6实例解析——凯撒密码"><a href="#3-6实例解析——凯撒密码" class="headerlink" title="3.6实例解析——凯撒密码"></a>3.6实例解析——凯撒密码</h2>]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2.Python语言基本语法元素</title>
-    <url>/2021/09/04/2-Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0/</url>
-    <content><![CDATA[<p>Python语言基本语法元素<br><span id="more"></span></p>
-<h1 id="2-Python语言基本语法元素"><a href="#2-Python语言基本语法元素" class="headerlink" title="2.Python语言基本语法元素"></a>2.Python语言基本语法元素</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_2.Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0.png" alt=""><blockquote>
-<h2 id="考纲考点"><a href="#考纲考点" class="headerlink" title="考纲考点"></a>考纲考点</h2><p>程序的基本语法元素：程序的格式框架、缩进、注释、变量、命名、保留字、数据类型、赋值语句、引用<br><br><br>基本输入输出函数：input()、eval()、print()<br><br><br>源程序的书写风格</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="2-1程序的格式"><a href="#2-1程序的格式" class="headerlink" title="2.1程序的格式"></a>2.1程序的格式</h2><h3 id="2-1-1缩进"><a href="#2-1-1缩进" class="headerlink" title="2.1.1缩进"></a>2.1.1缩进</h3><ul>
-<li>Python语言采用严格的“缩进”来表明程序的格式框架。缩进指每一行代码开始前的空白区域，用来表示代码之间的包含和层次关系</li>
-<li>1个缩进 = 4个空格</li>
-<li>缩进是Python语言中表明程序框架的唯一手段<h3 id="2-1-2注释"><a href="#2-1-2注释" class="headerlink" title="2.1.2注释"></a>2.1.2注释</h3></li>
-<li>注释是代码中的辅助性文字，会被编译或解释器略去，不被计算机执行，一般用于程序员对代码的说明。Python语言采用#表示一行注释的开始，<br>多行注释用’’’或”””将内容前后包含<h3 id="2-1-3续行符"><a href="#2-1-3续行符" class="headerlink" title="2.1.3续行符"></a>2.1.3续行符</h3></li>
-<li>Python程序是逐行编写的，每行代码长度并无限制，但从程序员角度，单行代码太长并不利于阅读，因此，Python提供“续行符”将代码分割为多行表达。续行符由反斜杠()符号表达。</li>
-</ul>
-<h2 id="2-2语法元素的名称"><a href="#2-2语法元素的名称" class="headerlink" title="2.2语法元素的名称"></a>2.2语法元素的名称</h2><h3 id="2-2-1变量"><a href="#2-2-1变量" class="headerlink" title="2.2.1变量"></a>2.2.1变量</h3><ul>
-<li>变量是保存和表示数据值的一种语法元素，在程序中十分常见。顾名思义，变量的值是可以改变的，能够通过赋值（使用等号=表达）方式被修改，例如：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;a = 99</span><br><span class="line">&gt;&gt;&gt;a = a + 1</span><br><span class="line">&gt;&gt;&gt;print(a)</span><br><span class="line">100</span><br></pre></td></tr></table></figure>
-<h3 id="2-2-2命名"><a href="#2-2-2命名" class="headerlink" title="2.2.2命名"></a>2.2.2命名</h3></li>
-<li>Python语言允许采用大写字母、小写字母、数字、下划线(_)和汉字等字符及其组合给变量命名，但名字的首字符不能是数字，中间不能出现空格，长度没有限制</li>
-<li>注意：<strong>标识符对大小写敏感</strong>，python和Python是两个不同的名字<h3 id="2-2-3保留字"><a href="#2-2-3保留字" class="headerlink" title="2.2.3保留字"></a>2.2.3保留字</h3></li>
-<li>保留字，也称为关键字，指被编程语言内部定义并保留使用的标识符。</li>
-<li>程序员编写程序不能定义与保留字相同的标识符。</li>
-<li>每种程序设计语言都有一套保留字，保留字一般用来构成程序整体框架、表达关键值和具有结构性的复杂语义等。</li>
-<li>掌握一门编程语言首先要熟记其所对应的保留字。</li>
-<li>Python 3.x保留字列表 (33个)</li>
-</ul>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>and</td>
-<td>elif</td>
-<td>import</td>
-<td>raise</td>
-</tr>
-<tr>
-<td>as</td>
-<td>else</td>
-<td>in</td>
-<td>return</td>
-</tr>
-<tr>
-<td>assert</td>
-<td>except</td>
-<td>is</td>
-<td>try</td>
-</tr>
-<tr>
-<td>break</td>
-<td>finally</td>
-<td>lambda</td>
-<td>while</td>
-</tr>
-<tr>
-<td>class</td>
-<td>for</td>
-<td>nonlocal</td>
-<td>with</td>
-</tr>
-<tr>
-<td>continue</td>
-<td>from</td>
-<td>not</td>
-<td>yield</td>
-</tr>
-<tr>
-<td>def</td>
-<td>global</td>
-<td>or</td>
-<td>True</td>
-</tr>
-<tr>
-<td>del</td>
-<td>if</td>
-<td>pass</td>
-<td>False</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>None</p>
-<h3 id="2-2-4数据类型"><a href="#2-2-4数据类型" class="headerlink" title="2.2.4数据类型"></a>2.2.4数据类型</h3><ul>
-<li>Python语言支持多种数据类型，最简单的包括数字类型、字符串类型，略微复杂的包括元组类型、集合类型、列表类型、字典类型等。<blockquote>
-<p>数据类型各种编程语言大同小异，文章后面章节也会详细介绍，这里就不再赘述。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="2-3程序的语句元素"><a href="#2-3程序的语句元素" class="headerlink" title="2.3程序的语句元素"></a>2.3程序的语句元素</h2><h3 id="2-3-1表达式"><a href="#2-3-1表达式" class="headerlink" title="2.3.1表达式"></a>2.3.1表达式</h3><ul>
-<li>产生或计算新数据值的代码片段称为表达式。表达式类似数学中的计算公式，以表达单一功能为目的，运算后产生运算结果，运算结果的类型由操作符或运算符决定。</li>
-<li>表达式一般由数据和操作符等构成，这是构成Python语句的重要部分。<h3 id="2-3-2赋值语句"><a href="#2-3-2赋值语句" class="headerlink" title="2.3.2赋值语句"></a>2.3.2赋值语句</h3></li>
-<li>Python语言中，= 表示“赋值”，即将等号右侧的值计算后将结果值赋给左侧变量，包含等号（=）的语句称为“赋值语句”<br><br><code>&lt;变量&gt; = &lt;表达式&gt;</code></li>
-<li>同步赋值语句：同时给多个变量赋值<br><br><code>&lt;变量1&gt;, …, &lt;变量N&gt; = &lt;表达式1&gt;, …, &lt;表达式N&gt;</code><h3 id="2-3-3引用"><a href="#2-3-3引用" class="headerlink" title="2.3.3引用"></a>2.3.3引用</h3></li>
-<li>Python程序会经常使用当前程序之外已有的功能代码，这个过程叫“引用”。Python语言使用import保留字引用当前程序以外的功能库，使用方式如下：<br><br><code>import &lt;功能库名称&gt;</code></li>
-<li>引用功能库之后，采用<code>&lt;功能库名称&gt;.&lt;函数名称&gt;()</code>方式调用具体功能<h3 id="2-3-4其他语句"><a href="#2-3-4其他语句" class="headerlink" title="2.3.4其他语句"></a>2.3.4其他语句</h3></li>
-<li>除了赋值语句外，Python程序还包括一些其他的语句类型，例如，分支语句和循环语句等。更多的分支和循环内容将在第4章介绍。这里不再赘述。<h2 id="2-4基本输入输出函数"><a href="#2-4基本输入输出函数" class="headerlink" title="2.4基本输入输出函数"></a>2.4基本输入输出函数</h2></li>
-</ul>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>函数</th>
-<th>语法</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>input</td>
-<td>&lt;变量&gt; = input(&lt;提示性文字&gt;</td>
-<td>获得用户输入之前，input()函数可以包含一些提示性文字</td>
-</tr>
-<tr>
-<td>eval</td>
-<td>eval(&lt;字符串&gt;)</td>
-<td>eval(&lt;字符串&gt;)函数是Python语言中一个十分重要的函数，它能够以Python表达式的方式解析并执行字符串，将返回结果输出</td>
-</tr>
-<tr>
-<td>print()</td>
-<td>1.print(&lt;待输出字符串&gt;)<br>2.print(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;)<br>3.print(&lt;输出字符串模板&gt;.format(&lt;变量1&gt;, &lt;变量2&gt;,…, &lt;变量n&gt;))<br>4.print(&lt;待输出内容&gt;, end=”&lt;增加的输出结尾&gt;”)</td>
-<td>1.仅用于输出字符串<br>2.仅用于输出一个或多个变量<br>3.用于混合输出字符串与变量值<br>4.对print()函数的end参数进行赋值</td>
-</tr>
-</tbody>
-</table>
-</div>
-]]></content>
       <categories>
         <category>学习笔记</category>
       </categories>
@@ -1186,19 +1186,6 @@
       </tags>
   </entry>
   <entry>
-    <title>日常记录</title>
-    <url>/2021/08/16/8-16/</url>
-    <content><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200"><br><span id="more"></span></p>
-<blockquote>
-<p>一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以<strong>平凡</strong>的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处&gt;~&lt;</p>
-</blockquote>
-<p> <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg" alt=""><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210814.jpg" alt=""></p>
-]]></content>
-      <categories>
-        <category>生活点滴</category>
-      </categories>
-  </entry>
-  <entry>
     <title>7.文件和数据格式化</title>
     <url>/2021/09/05/7-%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/</url>
     <content><![CDATA[<p>文件和数据格式化<br><span id="more"></span></p>
@@ -1358,6 +1345,19 @@
       <tags>
         <tag>Python</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>日常记录</title>
+    <url>/2021/08/16/8-16/</url>
+    <content><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200"><br><span id="more"></span></p>
+<blockquote>
+<p>一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以<strong>平凡</strong>的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处&gt;~&lt;</p>
+</blockquote>
+<p> <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg" alt=""><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210814.jpg" alt=""></p>
+]]></content>
+      <categories>
+        <category>生活点滴</category>
+      </categories>
   </entry>
   <entry>
     <title>日常记录</title>
@@ -3177,7 +3177,7 @@
 <h3 id="音乐-Aplayer"><a href="#音乐-Aplayer" class="headerlink" title="音乐 Aplayer"></a>音乐 Aplayer</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% aplayerlist %&#125;</span><br><span class="line">&#123;</span><br><span class="line">    &quot;narrow&quot;: false,// （可选）播放器袖珍风格</span><br><span class="line">    &quot;autoplay&quot;: true,// （可选) 自动播放，移动端浏览器暂时不支持此功能</span><br><span class="line">    &quot;mode&quot;: &quot;random&quot;,// （可选）曲目循环类型，有 &#x27;random&#x27;（随机播放）, &#x27;single&#x27; (单曲播放), &#x27;circulation&#x27; (循环播放), &#x27;order&#x27; (列表播放)， 默认：&#x27;circulation&#x27;</span><br><span class="line">    &quot;showlrc&quot;: 3,// （可选）歌词显示配置项，可选项有：1,2,3</span><br><span class="line">    &quot;mutex&quot;: true,// （可选）该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</span><br><span class="line">    &quot;theme&quot;: &quot;#e6d0b2&quot;,// （可选）播放器风格色彩设置，默认：#b7daff</span><br><span class="line">    &quot;preload&quot;: &quot;metadata&quot;,// （可选）音乐文件预载入模式，可选项： &#x27;none&#x27; &#x27;metadata&#x27; &#x27;auto&#x27;, 默认: &#x27;auto&#x27;</span><br><span class="line">    &quot;listmaxheight&quot;: &quot;513px&quot;,// (可选) 该播放列表的最大长度</span><br><span class="line">    &quot;music&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;CoCo&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;Jeff Williams&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;caffeine.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;caffeine.jpeg&quot;,</span><br><span class="line">            &quot;lrc&quot;: &quot;caffeine.txt&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;アイロニ&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;鹿乃&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;irony.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;irony.jpg&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br><span class="line">&#123;% endaplayerlist %&#125;</span><br></pre></td></tr></table></figure>
 <p>简单示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 
-    <div id="aplayer-jPBYmCNE" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-rtmdegaL" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <p>进阶示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
@@ -3431,6 +3431,44 @@ title Key elements in Product X
       </tags>
   </entry>
   <entry>
+    <title>修改github.io站点域名</title>
+    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
+    <content><![CDATA[<p>修改github.io站点域名<br><span id="more"></span></p>
+<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
+<ul>
+<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
+<ul>
+<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&amp;utm_medium=cpc&amp;utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&amp;utm_medium=se-cpc-op&amp;utm_campaign=10045&amp;utm_content=&amp;utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&amp;utm_adplace=AdPlace039520">华为云</a></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
+<ul>
+<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20域名设置3.png" alt=""></li>
+<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20域名设置1.png" alt=""></li>
+</ul>
+</blockquote>
+<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
+<ul>
+<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20域名设置2.png" alt=""></li>
+</ul>
+</blockquote>
+<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
+<ul>
+<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>注册域名</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>python库学习</title>
     <url>/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p>python中常用库的学习笔记<br><span id="more"></span></p>
@@ -3516,44 +3554,6 @@ title Key elements in Product X
       </categories>
       <tags>
         <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>修改github.io站点域名</title>
-    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
-    <content><![CDATA[<p>修改github.io站点域名<br><span id="more"></span></p>
-<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
-<ul>
-<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
-<ul>
-<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&amp;utm_medium=cpc&amp;utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&amp;utm_medium=se-cpc-op&amp;utm_campaign=10045&amp;utm_content=&amp;utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&amp;utm_adplace=AdPlace039520">华为云</a></li>
-</ul>
-</blockquote>
-</li>
-</ul>
-</blockquote>
-<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
-<ul>
-<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20域名设置3.png" alt=""></li>
-<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20域名设置1.png" alt=""></li>
-</ul>
-</blockquote>
-<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
-<ul>
-<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20域名设置2.png" alt=""></li>
-</ul>
-</blockquote>
-<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
-<ul>
-<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
-</ul>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>注册域名</tag>
       </tags>
   </entry>
   <entry>
