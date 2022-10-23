@@ -1,11 +1,3 @@
-/*
- * @Author: aikeblog 1736134512@qq.com
- * @Date: 2022-10-21 19:39:31
- * @LastEditors: aikeblog 1736134512@qq.com
- * @LastEditTime: 2022-10-21 19:39:35
- * @FilePath: \aikeblog\source\js\meting.js
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
 "use strict";
 console.log("\n %c MetingJS v1.2.0 %c https://github.com/metowolf/MetingJS \n", "color: #fadfa3; background: #030307; padding:5px 0;", "background: #fadfa3; padding:5px 0;");
 var aplayers = []
