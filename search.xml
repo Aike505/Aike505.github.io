@@ -450,6 +450,91 @@
       </tags>
   </entry>
   <entry>
+    <title>4.程序的控制结构</title>
+    <url>/2021/09/05/4-%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<p>程序的控制结构<br><span id="more"></span></p>
+<h1 id="4-程序的控制结构"><a href="#4-程序的控制结构" class="headerlink" title="4.程序的控制结构"></a>4.程序的控制结构</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_4.%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84.png" alt=""><h2 id="4-1顺序结构"><a href="#4-1顺序结构" class="headerlink" title="4.1顺序结构"></a>4.1顺序结构</h2>顺序结构是程序按照线性顺序依次执行的一种运行<br>方式<h2 id="4-2分支结构"><a href="#4-2分支结构" class="headerlink" title="4.2分支结构"></a>4.2分支结构</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#单分支结构: if语句</span><br><span class="line">if &lt;条件&gt;:</span><br><span class="line">    语句块</span><br><span class="line"></span><br><span class="line">#二分支结构：if-else</span><br><span class="line">if &lt;条件&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;</span><br><span class="line"></span><br><span class="line">#多分支结构：if-elif-else</span><br><span class="line">if &lt;条件1&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">elif &lt;条件2&gt;:</span><br><span class="line">    &lt;语句块2&gt;</span><br><span class="line">... </span><br><span class="line">else:</span><br><span class="line">    &lt;语句块N&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="4-3循环结构"><a href="#4-3循环结构" class="headerlink" title="4.3循环结构"></a>4.3循环结构</h2><h3 id="4-3-1遍历循环-for"><a href="#4-3-1遍历循环-for" class="headerlink" title="4.3.1遍历循环: for"></a>4.3.1遍历循环: for</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for &lt;循环变量&gt; in &lt;遍历结构&gt;:</span><br><span class="line">    &lt;语句块&gt;</span><br></pre></td></tr></table></figure>
+遍历循环还有一种扩展模式，使用方法如下：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for &lt;循环变量&gt; in &lt;遍历结构&gt;:       </span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;</span><br></pre></td></tr></table></figure>
+当for循环正常执行之后，程序会继续执行else语句中内容。else语句只在循环正常执行之后才执行并结束，因此，可以在&lt;语句块2&gt;中放置判断循环执行情况的语句。</li>
+</ul>
+<h3 id="4-3-2无限循环-while"><a href="#4-3-2无限循环-while" class="headerlink" title="4.3.2无限循环: while"></a>4.3.2无限循环: while</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">while &lt;条件&gt;:</span><br><span class="line">    &lt;语句块&gt;  </span><br><span class="line"></span><br><span class="line">while &lt;条件&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;  </span><br></pre></td></tr></table></figure>
+<h3 id="4-3-3循环控制-break和continue"><a href="#4-3-3循环控制-break和continue" class="headerlink" title="4.3.3循环控制: break和continue"></a>4.3.3循环控制: break和continue</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>语句</th>
+<th>区别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>continue</td>
+<td>只结束本次循环，不终止整个循环的执行</td>
+</tr>
+<tr>
+<td>break</td>
+<td>具备结束循环的能力</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="4-4判断条件组合"><a href="#4-4判断条件组合" class="headerlink" title="4.4判断条件组合"></a>4.4判断条件组合</h2><p>Python关系操作符</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>操作符</th>
+<th>数学符号</th>
+<th>操作符含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>＜</td>
+<td>﹤</td>
+<td>小于</td>
+</tr>
+<tr>
+<td>＜＝</td>
+<td>≤</td>
+<td>小于等于</td>
+</tr>
+<tr>
+<td>＞＝</td>
+<td>≥</td>
+<td>大于等于</td>
+</tr>
+<tr>
+<td>＞</td>
+<td>＞</td>
+<td>大于</td>
+</tr>
+<tr>
+<td>＝＝</td>
+<td>＝</td>
+<td>等于</td>
+</tr>
+<tr>
+<td>！＝</td>
+<td>≠</td>
+<td>不等于</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Python语言使用保留字not、and和or对条件进行逻辑运算或组着。<br><br>保留字not表示单个条件的“否”关系，and表示多个条件之间的“与”关系，保留字or表示多个条件之间的“或”关系。<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;not True</span><br><span class="line">False</span><br><span class="line">&gt;&gt;&gt;a = 80</span><br><span class="line">&gt;&gt;&gt;( a &gt; 100) or ( a &gt; 50 and a &lt; 90)</span><br><span class="line">True</span><br></pre></td></tr></table></figure></p>
+<h2 id="4-4程序的异常处理"><a href="#4-4程序的异常处理" class="headerlink" title="4.4程序的异常处理"></a>4.4程序的异常处理</h2><p>Python语言使用保留字try和except进行异常处理，基本的语法格式如下：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">try:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">except:</span><br><span class="line">    &lt;语句块2&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="4-5实例解析——猜数字游戏"><a href="#4-5实例解析——猜数字游戏" class="headerlink" title="4.5实例解析——猜数字游戏"></a>4.5实例解析——猜数字游戏</h2>]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>3.Python基本数据类型</title>
     <url>/2021/09/04/3-Python%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB/</url>
     <content><![CDATA[<p>Python基本数据类型<br><span id="more"></span></p>
@@ -809,155 +894,6 @@
       </tags>
   </entry>
   <entry>
-    <title>4.程序的控制结构</title>
-    <url>/2021/09/05/4-%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<p>程序的控制结构<br><span id="more"></span></p>
-<h1 id="4-程序的控制结构"><a href="#4-程序的控制结构" class="headerlink" title="4.程序的控制结构"></a>4.程序的控制结构</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_4.%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84.png" alt=""><h2 id="4-1顺序结构"><a href="#4-1顺序结构" class="headerlink" title="4.1顺序结构"></a>4.1顺序结构</h2>顺序结构是程序按照线性顺序依次执行的一种运行<br>方式<h2 id="4-2分支结构"><a href="#4-2分支结构" class="headerlink" title="4.2分支结构"></a>4.2分支结构</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#单分支结构: if语句</span><br><span class="line">if &lt;条件&gt;:</span><br><span class="line">    语句块</span><br><span class="line"></span><br><span class="line">#二分支结构：if-else</span><br><span class="line">if &lt;条件&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;</span><br><span class="line"></span><br><span class="line">#多分支结构：if-elif-else</span><br><span class="line">if &lt;条件1&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">elif &lt;条件2&gt;:</span><br><span class="line">    &lt;语句块2&gt;</span><br><span class="line">... </span><br><span class="line">else:</span><br><span class="line">    &lt;语句块N&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="4-3循环结构"><a href="#4-3循环结构" class="headerlink" title="4.3循环结构"></a>4.3循环结构</h2><h3 id="4-3-1遍历循环-for"><a href="#4-3-1遍历循环-for" class="headerlink" title="4.3.1遍历循环: for"></a>4.3.1遍历循环: for</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for &lt;循环变量&gt; in &lt;遍历结构&gt;:</span><br><span class="line">    &lt;语句块&gt;</span><br></pre></td></tr></table></figure>
-遍历循环还有一种扩展模式，使用方法如下：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for &lt;循环变量&gt; in &lt;遍历结构&gt;:       </span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;</span><br></pre></td></tr></table></figure>
-当for循环正常执行之后，程序会继续执行else语句中内容。else语句只在循环正常执行之后才执行并结束，因此，可以在&lt;语句块2&gt;中放置判断循环执行情况的语句。</li>
-</ul>
-<h3 id="4-3-2无限循环-while"><a href="#4-3-2无限循环-while" class="headerlink" title="4.3.2无限循环: while"></a>4.3.2无限循环: while</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">while &lt;条件&gt;:</span><br><span class="line">    &lt;语句块&gt;  </span><br><span class="line"></span><br><span class="line">while &lt;条件&gt;:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">else:</span><br><span class="line">    &lt;语句块2&gt;  </span><br></pre></td></tr></table></figure>
-<h3 id="4-3-3循环控制-break和continue"><a href="#4-3-3循环控制-break和continue" class="headerlink" title="4.3.3循环控制: break和continue"></a>4.3.3循环控制: break和continue</h3><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>语句</th>
-<th>区别</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>continue</td>
-<td>只结束本次循环，不终止整个循环的执行</td>
-</tr>
-<tr>
-<td>break</td>
-<td>具备结束循环的能力</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="4-4判断条件组合"><a href="#4-4判断条件组合" class="headerlink" title="4.4判断条件组合"></a>4.4判断条件组合</h2><p>Python关系操作符</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>操作符</th>
-<th>数学符号</th>
-<th>操作符含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>＜</td>
-<td>﹤</td>
-<td>小于</td>
-</tr>
-<tr>
-<td>＜＝</td>
-<td>≤</td>
-<td>小于等于</td>
-</tr>
-<tr>
-<td>＞＝</td>
-<td>≥</td>
-<td>大于等于</td>
-</tr>
-<tr>
-<td>＞</td>
-<td>＞</td>
-<td>大于</td>
-</tr>
-<tr>
-<td>＝＝</td>
-<td>＝</td>
-<td>等于</td>
-</tr>
-<tr>
-<td>！＝</td>
-<td>≠</td>
-<td>不等于</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Python语言使用保留字not、and和or对条件进行逻辑运算或组着。<br><br>保留字not表示单个条件的“否”关系，and表示多个条件之间的“与”关系，保留字or表示多个条件之间的“或”关系。<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;not True</span><br><span class="line">False</span><br><span class="line">&gt;&gt;&gt;a = 80</span><br><span class="line">&gt;&gt;&gt;( a &gt; 100) or ( a &gt; 50 and a &lt; 90)</span><br><span class="line">True</span><br></pre></td></tr></table></figure></p>
-<h2 id="4-4程序的异常处理"><a href="#4-4程序的异常处理" class="headerlink" title="4.4程序的异常处理"></a>4.4程序的异常处理</h2><p>Python语言使用保留字try和except进行异常处理，基本的语法格式如下：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">try:</span><br><span class="line">    &lt;语句块1&gt;</span><br><span class="line">except:</span><br><span class="line">    &lt;语句块2&gt;</span><br></pre></td></tr></table></figure></p>
-<h2 id="4-5实例解析——猜数字游戏"><a href="#4-5实例解析——猜数字游戏" class="headerlink" title="4.5实例解析——猜数字游戏"></a>4.5实例解析——猜数字游戏</h2>]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>5.函数和代码复用</title>
-    <url>/2021/09/05/5-%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8/</url>
-    <content><![CDATA[<p>函数和代码复用<br><span id="more"></span></p>
-<h1 id="5-函数和代码复用"><a href="#5-函数和代码复用" class="headerlink" title="5.函数和代码复用"></a>5.函数和代码复用</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_5.%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8.png" alt=""></li>
-</ul>
-<h2 id="5-1函数的基本使用"><a href="#5-1函数的基本使用" class="headerlink" title="5.1函数的基本使用"></a>5.1函数的基本使用</h2><h3 id="5-1-1函数的定义"><a href="#5-1-1函数的定义" class="headerlink" title="5.1.1函数的定义"></a>5.1.1函数的定义</h3><p>Python定义一个函数使用def保留字，语法形式<br>如下：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;参数列表&gt;):</span><br><span class="line">    &lt;函数体&gt;</span><br><span class="line">return &lt;返回值列表&gt;</span><br></pre></td></tr></table></figure></p>
-<h3 id="5-1-2函数的使用"><a href="#5-1-2函数的使用" class="headerlink" title="5.1.2函数的使用"></a>5.1.2函数的使用</h3><p>&lt;函数名&gt;(&lt;实际赋值参数列表&gt;<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 定义一个对整数n求阶乘的函数</span><br><span class="line">def fact(n):</span><br><span class="line">  s = 1</span><br><span class="line">  for i in range(1, n+1):</span><br><span class="line">    s *= i</span><br><span class="line">  return s</span><br><span class="line"># 调用整数阶乘的函数</span><br><span class="line">print(fact(100))</span><br></pre></td></tr></table></figure><br>函数定义-&gt;函数调用-&gt;函数执行-&gt;函数返回</p>
-<h2 id="5-2函数的传递"><a href="#5-2函数的传递" class="headerlink" title="5.2函数的传递"></a>5.2函数的传递</h2><h3 id="5-2-1可选参数传递"><a href="#5-2-1可选参数传递" class="headerlink" title="5.2.1可选参数传递"></a>5.2.1可选参数传递</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;非可选参数列表&gt;, &lt;可选参数&gt; = &lt;默认值&gt;):</span><br><span class="line">  &lt;函数体&gt;</span><br><span class="line">  return &lt;返回值列表&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="5-2-2参数名称传递"><a href="#5-2-2参数名称传递" class="headerlink" title="5.2.2参数名称传递"></a>5.2.2参数名称传递</h3><p>&lt;函数名&gt;(&lt;参数名&gt; = &lt;实际值&gt;)<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">        print(x*y)</span><br><span class="line">&gt;&gt;&gt;multiply(x = 99)</span><br><span class="line">990</span><br><span class="line">&gt;&gt;&gt;multiply(y = 2, x = 99)</span><br><span class="line">198</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
-<h3 id="5-2-3函数的返回值"><a href="#5-2-3函数的返回值" class="headerlink" title="5.2.3函数的返回值"></a>5.2.3函数的返回值</h3><p>return语句可以出现在函数中的任何部分，同时可以将0个、1个或多个函数运算的结果返回给函数被调用处的变量。<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">return x*y</span><br><span class="line">&gt;&gt;&gt;s = multiply(99, 2)</span><br><span class="line">&gt;&gt;&gt;print(s)</span><br><span class="line">198</span><br></pre></td></tr></table></figure></p>
-<h2 id="5-3变量的作用域"><a href="#5-3变量的作用域" class="headerlink" title="5.3变量的作用域"></a>5.3变量的作用域</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>变量</th>
-<th>作用域</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>局部变量</td>
-<td>局部变量指在函数内部使用的变量，仅在函数内部有效，当函数退出时变量将不再存在。但可以用global声明在函数内做为全局变量用。</td>
-</tr>
-<tr>
-<td>全局变量</td>
-<td>全局变量指在函数之外定义的变量，在程序执行全过程有效。</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="5-4代码复用"><a href="#5-4代码复用" class="headerlink" title="5.4代码复用"></a>5.4代码复用</h2><p>函数封装的直接好处是代码复用，任何其他代码只要输入参数即可调用函数，从而避免相同功能代码在被调用处重复编写。<br><br><strong>模块化设计</strong>是使用函数设计程序的思考方法，以功能块为基本单位，一般有两个基本要求：</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>含义</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>紧耦合</td>
-<td>尽可能合理划分功能块，功能块内部耦合紧密</td>
-<td>紧耦合的缺点在于更新一个模块可能导致其它模块变化，复用较困难。</td>
-</tr>
-<tr>
-<td>松耦合</td>
-<td>模块间关系尽可能简单，功能块之间耦合度低</td>
-<td>松耦合一般基于消息或协议实现，系统间交互简单。</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="5-5实例解析——软文的诗词风"><a href="#5-5实例解析——软文的诗词风" class="headerlink" title="5.5实例解析——软文的诗词风"></a>5.5实例解析——软文的诗词风</h2>]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>6.组合数据类型</title>
     <url>/2021/09/05/6-%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
     <content><![CDATA[<p>组合数据类型<br><span id="more"></span></p>
@@ -1186,6 +1122,83 @@
       </tags>
   </entry>
   <entry>
+    <title>5.函数和代码复用</title>
+    <url>/2021/09/05/5-%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8/</url>
+    <content><![CDATA[<p>函数和代码复用<br><span id="more"></span></p>
+<h1 id="5-函数和代码复用"><a href="#5-函数和代码复用" class="headerlink" title="5.函数和代码复用"></a>5.函数和代码复用</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_5.%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8.png" alt=""></li>
+</ul>
+<h2 id="5-1函数的基本使用"><a href="#5-1函数的基本使用" class="headerlink" title="5.1函数的基本使用"></a>5.1函数的基本使用</h2><h3 id="5-1-1函数的定义"><a href="#5-1-1函数的定义" class="headerlink" title="5.1.1函数的定义"></a>5.1.1函数的定义</h3><p>Python定义一个函数使用def保留字，语法形式<br>如下：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;参数列表&gt;):</span><br><span class="line">    &lt;函数体&gt;</span><br><span class="line">return &lt;返回值列表&gt;</span><br></pre></td></tr></table></figure></p>
+<h3 id="5-1-2函数的使用"><a href="#5-1-2函数的使用" class="headerlink" title="5.1.2函数的使用"></a>5.1.2函数的使用</h3><p>&lt;函数名&gt;(&lt;实际赋值参数列表&gt;<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 定义一个对整数n求阶乘的函数</span><br><span class="line">def fact(n):</span><br><span class="line">  s = 1</span><br><span class="line">  for i in range(1, n+1):</span><br><span class="line">    s *= i</span><br><span class="line">  return s</span><br><span class="line"># 调用整数阶乘的函数</span><br><span class="line">print(fact(100))</span><br></pre></td></tr></table></figure><br>函数定义-&gt;函数调用-&gt;函数执行-&gt;函数返回</p>
+<h2 id="5-2函数的传递"><a href="#5-2函数的传递" class="headerlink" title="5.2函数的传递"></a>5.2函数的传递</h2><h3 id="5-2-1可选参数传递"><a href="#5-2-1可选参数传递" class="headerlink" title="5.2.1可选参数传递"></a>5.2.1可选参数传递</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def &lt;函数名&gt;(&lt;非可选参数列表&gt;, &lt;可选参数&gt; = &lt;默认值&gt;):</span><br><span class="line">  &lt;函数体&gt;</span><br><span class="line">  return &lt;返回值列表&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="5-2-2参数名称传递"><a href="#5-2-2参数名称传递" class="headerlink" title="5.2.2参数名称传递"></a>5.2.2参数名称传递</h3><p>&lt;函数名&gt;(&lt;参数名&gt; = &lt;实际值&gt;)<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">        print(x*y)</span><br><span class="line">&gt;&gt;&gt;multiply(x = 99)</span><br><span class="line">990</span><br><span class="line">&gt;&gt;&gt;multiply(y = 2, x = 99)</span><br><span class="line">198</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<h3 id="5-2-3函数的返回值"><a href="#5-2-3函数的返回值" class="headerlink" title="5.2.3函数的返回值"></a>5.2.3函数的返回值</h3><p>return语句可以出现在函数中的任何部分，同时可以将0个、1个或多个函数运算的结果返回给函数被调用处的变量。<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;def multiply(x, y = 10):</span><br><span class="line">return x*y</span><br><span class="line">&gt;&gt;&gt;s = multiply(99, 2)</span><br><span class="line">&gt;&gt;&gt;print(s)</span><br><span class="line">198</span><br></pre></td></tr></table></figure></p>
+<h2 id="5-3变量的作用域"><a href="#5-3变量的作用域" class="headerlink" title="5.3变量的作用域"></a>5.3变量的作用域</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>作用域</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>局部变量</td>
+<td>局部变量指在函数内部使用的变量，仅在函数内部有效，当函数退出时变量将不再存在。但可以用global声明在函数内做为全局变量用。</td>
+</tr>
+<tr>
+<td>全局变量</td>
+<td>全局变量指在函数之外定义的变量，在程序执行全过程有效。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="5-4代码复用"><a href="#5-4代码复用" class="headerlink" title="5.4代码复用"></a>5.4代码复用</h2><p>函数封装的直接好处是代码复用，任何其他代码只要输入参数即可调用函数，从而避免相同功能代码在被调用处重复编写。<br><br><strong>模块化设计</strong>是使用函数设计程序的思考方法，以功能块为基本单位，一般有两个基本要求：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>含义</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>紧耦合</td>
+<td>尽可能合理划分功能块，功能块内部耦合紧密</td>
+<td>紧耦合的缺点在于更新一个模块可能导致其它模块变化，复用较困难。</td>
+</tr>
+<tr>
+<td>松耦合</td>
+<td>模块间关系尽可能简单，功能块之间耦合度低</td>
+<td>松耦合一般基于消息或协议实现，系统间交互简单。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="5-5实例解析——软文的诗词风"><a href="#5-5实例解析——软文的诗词风" class="headerlink" title="5.5实例解析——软文的诗词风"></a>5.5实例解析——软文的诗词风</h2>]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日常记录</title>
+    <url>/2021/08/16/8-16/</url>
+    <content><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200"><br><span id="more"></span></p>
+<blockquote>
+<p>一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以<strong>平凡</strong>的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处&gt;~&lt;</p>
+</blockquote>
+<p> <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg" alt=""><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210814.jpg" alt=""></p>
+]]></content>
+      <categories>
+        <category>生活点滴</category>
+      </categories>
+  </entry>
+  <entry>
     <title>7.文件和数据格式化</title>
     <url>/2021/09/05/7-%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8C%96/</url>
     <content><![CDATA[<p>文件和数据格式化<br><span id="more"></span></p>
@@ -1347,40 +1360,6 @@
       </tags>
   </entry>
   <entry>
-    <title>日常记录</title>
-    <url>/2021/08/16/8-16/</url>
-    <content><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg " width = "300"  height = "200"><br><span id="more"></span></p>
-<blockquote>
-<p>一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以<strong>平凡</strong>的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处&gt;~&lt;</p>
-</blockquote>
-<p> <img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210815.jpg" alt=""><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/20210814.jpg" alt=""></p>
-]]></content>
-      <categories>
-        <category>生活点滴</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>日常记录</title>
-    <url>/2021/08/17/8-17/</url>
-    <content><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg " width = "300"  height = "200"><br><span id="more"></span></p>
-<blockquote>
-<p>今天看完了《平凡的世界》第三部（<em>利用学驾校时间看的手机</em>），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:</p>
-<blockquote>
-<ul>
-<li>平凡又平庸的我们努力奔向爱情。      </li>
-<li>在这平凡的世界里努力过好平凡的生活。</li>
-<li>我这个平凡的世界里平凡的人觉得遥不可及。</li>
-</ul>
-</blockquote>
-<p>同时，今天是keep打卡第一天 fighting~</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg" alt=""></p>
-]]></content>
-      <categories>
-        <category>生活点滴</category>
-      </categories>
-  </entry>
-  <entry>
     <title>8-18</title>
     <url>/2021/08/18/8-18/</url>
     <content><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210818_181936.jpg " width = "300"  height = "200"><br><span id="more"></span></p>
@@ -1391,202 +1370,6 @@
       <categories>
         <category>生活点滴</category>
       </categories>
-  </entry>
-  <entry>
-    <title>8.Python计算生态</title>
-    <url>/2021/09/05/8-Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81/</url>
-    <content><![CDATA[<p>Python计算生态<br><span id="more"></span></p>
-<h1 id="8-Python计算生态"><a href="#8-Python计算生态" class="headerlink" title="8.Python计算生态"></a>8.Python计算生态</h1><ul>
-<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_8.Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81.png" alt=""></li>
-</ul>
-<h2 id="8-1计算思维"><a href="#8-1计算思维" class="headerlink" title="8.1计算思维"></a>8.1计算思维</h2><p>人类在认识世界、改造世界过程中表现出<em>三种基本的思维特征</em>：以实验和验证为特征的<strong>实证思维</strong> ，以物理学科为代表；以推理和演绎为特征的<strong>逻辑思维</strong>，以数学学科为代表；以设计和构造为特征的<strong>计算思维</strong>，以计算机学科为代表。<br><br>计算思维的本质是<strong>抽象</strong>（Abstraction）和<strong>自动化</strong>（Automation）</p>
-<h2 id="8-2程序设计方法"><a href="#8-2程序设计方法" class="headerlink" title="8.2程序设计方法"></a>8.2程序设计方法</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>解释</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>自顶而下的设计</td>
-<td>一个解决复杂问题行之有效的方法,基本思想是以一个总问题开始，试图把它表达为很多小问题组成的解决方案。再用同样的技术依次攻破每个小问题，最终问题变得非常小，以至于可以很容易解决。然后只需把所有的碎片组合起来，就可以得到一个程序。</td>
-</tr>
-<tr>
-<td>自底向上执行</td>
-<td>开展测试的更好办法也是将程序分成小部分逐个测试执行中等规模程序的最好方法是从结构图最底层开始，而不是从顶部开始，然后逐步上升。或者说，先运行和测试每一个基本函数，再测试由基础函数组成的整体函数，这样有助于定位错误</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="8-3Python标准库"><a href="#8-3Python标准库" class="headerlink" title="8.3Python标准库"></a>8.3Python标准库</h2><p>有一部分Python计算生态随Python安装包一起发布，用户可以随时使用，被称为Python标准库。<br><br>受限于Python安装包的设定大小，标准库数量270个左右。</p>
-<h2 id="8-4Python第三方库"><a href="#8-4Python第三方库" class="headerlink" title="8.4Python第三方库"></a>8.4Python第三方库</h2><p>更广泛的Python计算生态采用额外安装方式服务用户，被称为Python第三方库。这些第三方库由全球各行业专家、工程师和爱好者开发，没有顶层设计，由开发者采用“尽力而为”的方式维护。Python通过新一代安装工具pip管理大部分Python第三方库的安装。</p>
-<h2 id="8-5基本的Python内置函数"><a href="#8-5基本的Python内置函数" class="headerlink" title="8.5基本的Python内置函数"></a>8.5基本的Python内置函数</h2><p>Python解释器提供了68个内置函数（下面介绍32个）</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>函数名称</th>
-<th>函数说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>abs(x)</td>
-<td>x的绝对值<br>如果x是复数，返回复数的模</td>
-</tr>
-<tr>
-<td>all(x)</td>
-<td>组合类型变量x中所有元素都为真时返回True，否则返回False；若x为空，返回True</td>
-</tr>
-<tr>
-<td>any(x)</td>
-<td>组合类型变量x中任一元素都为真时返回True，否则返回False；若x为空，返回False</td>
-</tr>
-<tr>
-<td>bin(x)</td>
-<td>将整数x转换为等值的二进制字符串</td>
-</tr>
-<tr>
-<td>bin(1010)</td>
-<td>的结果是’0b1111110010’</td>
-</tr>
-<tr>
-<td>bool(x)</td>
-<td>将x转换为Boolean类型，即True或False<br>bool(‘’) 的结果是False</td>
-</tr>
-<tr>
-<td>chr(i)</td>
-<td>返回Unicode为i的字符<br>chr(9996)的结果是’✌ ‘</td>
-</tr>
-<tr>
-<td>complex(r,i)</td>
-<td>创建一个复数 r + i*1j，其中i可以省略<br>complex(10,10)的结果是10+10j</td>
-</tr>
-<tr>
-<td>dict()</td>
-<td>创建字典类型<br>dict()的结果是一个空字典{}</td>
-</tr>
-<tr>
-<td>divmod(a,b)</td>
-<td>返回a和b的商及余数<br>divmod(10,3)结果是一个(3,1)</td>
-</tr>
-<tr>
-<td>eval(s)</td>
-<td>计算字符串s作为Python表达式的值<br>eval(‘1+99’)的结果是100</td>
-</tr>
-<tr>
-<td>exec(s)</td>
-<td>计算字符串s作为Python语句的值<br>exec(‘a = 1+999’)运行后，变量a的值为1000</td>
-</tr>
-<tr>
-<td>float(x)</td>
-<td>将x转换成浮点数<br>float(1010)的结果是1010.0</td>
-</tr>
-<tr>
-<td>hex(x)</td>
-<td>将整数转换为16进制字符串<br>hex(1010)的结果是’0x3f2’</td>
-</tr>
-<tr>
-<td>input(s)</td>
-<td>获取用户输入，其中s是字符串，作为提示信息<br>s可选</td>
-</tr>
-<tr>
-<td>int(x)</td>
-<td>将x转换成整数<br>int(9.9)的结果是9</td>
-</tr>
-<tr>
-<td>list(x)</td>
-<td>创建或将变量x转换成一个列表类型<br>list({10,9,8})的结果是[8,9,10]</td>
-</tr>
-<tr>
-<td>max(a1,a2,…)</td>
-<td>返回参数的最大值<br>max(1,2,3,4,5)的结果是5</td>
-</tr>
-<tr>
-<td>min(a1,a2,…)</td>
-<td>返回参数的最小值<br>min(1,2,3,4,5)的结果是1</td>
-</tr>
-<tr>
-<td>oct(x)</td>
-<td>将整数x转换成等值的八进制字符串形式<br>oct(1010)的结果是’0o1762’</td>
-</tr>
-<tr>
-<td>open(fname, m)</td>
-<td>打开文件，包括文本方式和二进制方式等<br>其中，m部分可以省略，默认是以文本可读形式打开</td>
-</tr>
-<tr>
-<td>ord(c)</td>
-<td>返回一个字符的Unicode编码值<br>ord(‘字’)的结果是23383</td>
-</tr>
-<tr>
-<td>pow(x,y)</td>
-<td>返回x的y次幂<br>pow(2,pow(2,2))的结果是16</td>
-</tr>
-<tr>
-<td>print(x)</td>
-<td>打印变量或字符串x<br>print()的end参数用来表示输出的结尾字符</td>
-</tr>
-<tr>
-<td>range(a,b,s)</td>
-<td>从a到b(不含)以s为步长产生一个序列<br>list(range(1,10,3))的结果是[1, 4, 7]</td>
-</tr>
-<tr>
-<td>reversed(r)</td>
-<td>返回组合类型r的逆序迭代形式<br>for i in reversed([1,2,3])将逆序遍历列表</td>
-</tr>
-<tr>
-<td>round(n)</td>
-<td>四舍五入方式计算n<br>round(10.6)的结果是11</td>
-</tr>
-<tr>
-<td>set(x)</td>
-<td>将组合数据类型x转换成集合类型<br>set([1,1,1,1])的结果是{1}</td>
-</tr>
-<tr>
-<td>sorted(x)</td>
-<td>对组合数据类型x进行排序，默认从小到大<br>sorted([1,3,5,2,4])的结果是[1,2,3,4,5]</td>
-</tr>
-<tr>
-<td>str(x)</td>
-<td>将x转换为等值的字符串类型<br>str(0x1010)的结果是’4112’</td>
-</tr>
-<tr>
-<td>sum(x)</td>
-<td>对组合数据类型x计算求和结果<br>sum([1,3,5,2,4])的结果是15</td>
-</tr>
-<tr>
-<td>type(x)</td>
-<td>返回变量x的数据类型<br>type({1:2})的结果是<class&nbsp;'dict'></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="8-5实例解析：Web页面元素提取"><a href="#8-5实例解析：Web页面元素提取" class="headerlink" title="8.5实例解析：Web页面元素提取"></a>8.5实例解析：Web页面元素提取</h2>]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
-    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决<br><span id="more"></span></p>
-<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
-<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
-<p>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
-<p>成功帮助舍友解决</p>
-]]></content>
-      <categories>
-        <category>实用教程</category>
-      </categories>
-      <tags>
-        <tag>电脑</tag>
-        <tag>磁盘</tag>
-      </tags>
   </entry>
   <entry>
     <title>9.Python标准库概览</title>
@@ -2064,6 +1847,185 @@
       </tags>
   </entry>
   <entry>
+    <title>8.Python计算生态</title>
+    <url>/2021/09/05/8-Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81/</url>
+    <content><![CDATA[<p>Python计算生态<br><span id="more"></span></p>
+<h1 id="8-Python计算生态"><a href="#8-Python计算生态" class="headerlink" title="8.Python计算生态"></a>8.Python计算生态</h1><ul>
+<li>思维导图<br><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/2021.9.5_8.Python%E8%AE%A1%E7%AE%97%E7%94%9F%E6%80%81.png" alt=""></li>
+</ul>
+<h2 id="8-1计算思维"><a href="#8-1计算思维" class="headerlink" title="8.1计算思维"></a>8.1计算思维</h2><p>人类在认识世界、改造世界过程中表现出<em>三种基本的思维特征</em>：以实验和验证为特征的<strong>实证思维</strong> ，以物理学科为代表；以推理和演绎为特征的<strong>逻辑思维</strong>，以数学学科为代表；以设计和构造为特征的<strong>计算思维</strong>，以计算机学科为代表。<br><br>计算思维的本质是<strong>抽象</strong>（Abstraction）和<strong>自动化</strong>（Automation）</p>
+<h2 id="8-2程序设计方法"><a href="#8-2程序设计方法" class="headerlink" title="8.2程序设计方法"></a>8.2程序设计方法</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>自顶而下的设计</td>
+<td>一个解决复杂问题行之有效的方法,基本思想是以一个总问题开始，试图把它表达为很多小问题组成的解决方案。再用同样的技术依次攻破每个小问题，最终问题变得非常小，以至于可以很容易解决。然后只需把所有的碎片组合起来，就可以得到一个程序。</td>
+</tr>
+<tr>
+<td>自底向上执行</td>
+<td>开展测试的更好办法也是将程序分成小部分逐个测试执行中等规模程序的最好方法是从结构图最底层开始，而不是从顶部开始，然后逐步上升。或者说，先运行和测试每一个基本函数，再测试由基础函数组成的整体函数，这样有助于定位错误</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="8-3Python标准库"><a href="#8-3Python标准库" class="headerlink" title="8.3Python标准库"></a>8.3Python标准库</h2><p>有一部分Python计算生态随Python安装包一起发布，用户可以随时使用，被称为Python标准库。<br><br>受限于Python安装包的设定大小，标准库数量270个左右。</p>
+<h2 id="8-4Python第三方库"><a href="#8-4Python第三方库" class="headerlink" title="8.4Python第三方库"></a>8.4Python第三方库</h2><p>更广泛的Python计算生态采用额外安装方式服务用户，被称为Python第三方库。这些第三方库由全球各行业专家、工程师和爱好者开发，没有顶层设计，由开发者采用“尽力而为”的方式维护。Python通过新一代安装工具pip管理大部分Python第三方库的安装。</p>
+<h2 id="8-5基本的Python内置函数"><a href="#8-5基本的Python内置函数" class="headerlink" title="8.5基本的Python内置函数"></a>8.5基本的Python内置函数</h2><p>Python解释器提供了68个内置函数（下面介绍32个）</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>函数名称</th>
+<th>函数说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>abs(x)</td>
+<td>x的绝对值<br>如果x是复数，返回复数的模</td>
+</tr>
+<tr>
+<td>all(x)</td>
+<td>组合类型变量x中所有元素都为真时返回True，否则返回False；若x为空，返回True</td>
+</tr>
+<tr>
+<td>any(x)</td>
+<td>组合类型变量x中任一元素都为真时返回True，否则返回False；若x为空，返回False</td>
+</tr>
+<tr>
+<td>bin(x)</td>
+<td>将整数x转换为等值的二进制字符串</td>
+</tr>
+<tr>
+<td>bin(1010)</td>
+<td>的结果是’0b1111110010’</td>
+</tr>
+<tr>
+<td>bool(x)</td>
+<td>将x转换为Boolean类型，即True或False<br>bool(‘’) 的结果是False</td>
+</tr>
+<tr>
+<td>chr(i)</td>
+<td>返回Unicode为i的字符<br>chr(9996)的结果是’✌ ‘</td>
+</tr>
+<tr>
+<td>complex(r,i)</td>
+<td>创建一个复数 r + i*1j，其中i可以省略<br>complex(10,10)的结果是10+10j</td>
+</tr>
+<tr>
+<td>dict()</td>
+<td>创建字典类型<br>dict()的结果是一个空字典{}</td>
+</tr>
+<tr>
+<td>divmod(a,b)</td>
+<td>返回a和b的商及余数<br>divmod(10,3)结果是一个(3,1)</td>
+</tr>
+<tr>
+<td>eval(s)</td>
+<td>计算字符串s作为Python表达式的值<br>eval(‘1+99’)的结果是100</td>
+</tr>
+<tr>
+<td>exec(s)</td>
+<td>计算字符串s作为Python语句的值<br>exec(‘a = 1+999’)运行后，变量a的值为1000</td>
+</tr>
+<tr>
+<td>float(x)</td>
+<td>将x转换成浮点数<br>float(1010)的结果是1010.0</td>
+</tr>
+<tr>
+<td>hex(x)</td>
+<td>将整数转换为16进制字符串<br>hex(1010)的结果是’0x3f2’</td>
+</tr>
+<tr>
+<td>input(s)</td>
+<td>获取用户输入，其中s是字符串，作为提示信息<br>s可选</td>
+</tr>
+<tr>
+<td>int(x)</td>
+<td>将x转换成整数<br>int(9.9)的结果是9</td>
+</tr>
+<tr>
+<td>list(x)</td>
+<td>创建或将变量x转换成一个列表类型<br>list({10,9,8})的结果是[8,9,10]</td>
+</tr>
+<tr>
+<td>max(a1,a2,…)</td>
+<td>返回参数的最大值<br>max(1,2,3,4,5)的结果是5</td>
+</tr>
+<tr>
+<td>min(a1,a2,…)</td>
+<td>返回参数的最小值<br>min(1,2,3,4,5)的结果是1</td>
+</tr>
+<tr>
+<td>oct(x)</td>
+<td>将整数x转换成等值的八进制字符串形式<br>oct(1010)的结果是’0o1762’</td>
+</tr>
+<tr>
+<td>open(fname, m)</td>
+<td>打开文件，包括文本方式和二进制方式等<br>其中，m部分可以省略，默认是以文本可读形式打开</td>
+</tr>
+<tr>
+<td>ord(c)</td>
+<td>返回一个字符的Unicode编码值<br>ord(‘字’)的结果是23383</td>
+</tr>
+<tr>
+<td>pow(x,y)</td>
+<td>返回x的y次幂<br>pow(2,pow(2,2))的结果是16</td>
+</tr>
+<tr>
+<td>print(x)</td>
+<td>打印变量或字符串x<br>print()的end参数用来表示输出的结尾字符</td>
+</tr>
+<tr>
+<td>range(a,b,s)</td>
+<td>从a到b(不含)以s为步长产生一个序列<br>list(range(1,10,3))的结果是[1, 4, 7]</td>
+</tr>
+<tr>
+<td>reversed(r)</td>
+<td>返回组合类型r的逆序迭代形式<br>for i in reversed([1,2,3])将逆序遍历列表</td>
+</tr>
+<tr>
+<td>round(n)</td>
+<td>四舍五入方式计算n<br>round(10.6)的结果是11</td>
+</tr>
+<tr>
+<td>set(x)</td>
+<td>将组合数据类型x转换成集合类型<br>set([1,1,1,1])的结果是{1}</td>
+</tr>
+<tr>
+<td>sorted(x)</td>
+<td>对组合数据类型x进行排序，默认从小到大<br>sorted([1,3,5,2,4])的结果是[1,2,3,4,5]</td>
+</tr>
+<tr>
+<td>str(x)</td>
+<td>将x转换为等值的字符串类型<br>str(0x1010)的结果是’4112’</td>
+</tr>
+<tr>
+<td>sum(x)</td>
+<td>对组合数据类型x计算求和结果<br>sum([1,3,5,2,4])的结果是15</td>
+</tr>
+<tr>
+<td>type(x)</td>
+<td>返回变量x的数据类型<br>type({1:2})的结果是<class&nbsp;'dict'></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="8-5实例解析：Web页面元素提取"><a href="#8-5实例解析：Web页面元素提取" class="headerlink" title="8.5实例解析：Web页面元素提取"></a>8.5实例解析：Web页面元素提取</h2>]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>github+hexo 个人博客更换主题</title>
     <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
     <content><![CDATA[<p>Github+hexo 个人博客更换主题</p>
@@ -2093,6 +2055,23 @@
         <tag>hexo</tag>
         <tag>博客</tag>
         <tag>主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
+    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决<br><span id="more"></span></p>
+<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
+<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
+<p>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
+<p>成功帮助舍友解决</p>
+]]></content>
+      <categories>
+        <category>实用教程</category>
+      </categories>
+      <tags>
+        <tag>电脑</tag>
+        <tag>磁盘</tag>
       </tags>
   </entry>
   <entry>
@@ -2129,28 +2108,25 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo的安装和在github部署博客</title>
-    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<p>hexo的安装和在github部署博客<br><span id="more"></span></p>
-<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>打开 git 下 git bash 输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
-<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
-<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
-<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
-<hr>
-<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
+    <title>日常记录</title>
+    <url>/2021/08/17/8-17/</url>
+    <content><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg " width = "300"  height = "200"><br><span id="more"></span></p>
+<blockquote>
+<p>今天看完了《平凡的世界》第三部（<em>利用学驾校时间看的手机</em>），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:</p>
+<blockquote>
+<ul>
+<li>平凡又平庸的我们努力奔向爱情。      </li>
+<li>在这平凡的世界里努力过好平凡的生活。</li>
+<li>我这个平凡的世界里平凡的人觉得遥不可及。</li>
+</ul>
+</blockquote>
+<p>同时，今天是keep打卡第一天 fighting~</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/Aike505/ImgHosting/Aike505-PIC/IMG_20210817_184214.jpg" alt=""></p>
 ]]></content>
       <categories>
-        <category>博客相关</category>
+        <category>生活点滴</category>
       </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
-      </tags>
   </entry>
   <entry>
     <title>hexo备忘录</title>
@@ -3151,7 +3127,7 @@
 <h3 id="音乐-Aplayer"><a href="#音乐-Aplayer" class="headerlink" title="音乐 Aplayer"></a>音乐 Aplayer</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% aplayerlist %&#125;</span><br><span class="line">&#123;</span><br><span class="line">    &quot;narrow&quot;: false,// （可选）播放器袖珍风格</span><br><span class="line">    &quot;autoplay&quot;: true,// （可选) 自动播放，移动端浏览器暂时不支持此功能</span><br><span class="line">    &quot;mode&quot;: &quot;random&quot;,// （可选）曲目循环类型，有 &#x27;random&#x27;（随机播放）, &#x27;single&#x27; (单曲播放), &#x27;circulation&#x27; (循环播放), &#x27;order&#x27; (列表播放)， 默认：&#x27;circulation&#x27;</span><br><span class="line">    &quot;showlrc&quot;: 3,// （可选）歌词显示配置项，可选项有：1,2,3</span><br><span class="line">    &quot;mutex&quot;: true,// （可选）该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</span><br><span class="line">    &quot;theme&quot;: &quot;#e6d0b2&quot;,// （可选）播放器风格色彩设置，默认：#b7daff</span><br><span class="line">    &quot;preload&quot;: &quot;metadata&quot;,// （可选）音乐文件预载入模式，可选项： &#x27;none&#x27; &#x27;metadata&#x27; &#x27;auto&#x27;, 默认: &#x27;auto&#x27;</span><br><span class="line">    &quot;listmaxheight&quot;: &quot;513px&quot;,// (可选) 该播放列表的最大长度</span><br><span class="line">    &quot;music&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;CoCo&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;Jeff Williams&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;caffeine.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;caffeine.jpeg&quot;,</span><br><span class="line">            &quot;lrc&quot;: &quot;caffeine.txt&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;アイロニ&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;鹿乃&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;irony.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;irony.jpg&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br><span class="line">&#123;% endaplayerlist %&#125;</span><br></pre></td></tr></table></figure>
 <p>简单示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 
-    <div id="aplayer-sGBnYiUj" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-isMVyuUh" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <p>进阶示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
@@ -3170,6 +3146,30 @@ title Key elements in Product X
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo的安装和在github部署博客</title>
+    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<p>hexo的安装和在github部署博客<br><span id="more"></span></p>
+<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>打开 git 下 git bash 输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
+<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
+<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
+<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
+<hr>
+<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
       </tags>
   </entry>
   <entry>
