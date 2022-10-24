@@ -1344,8 +1344,8 @@ canvas:not(#ribbon-canvas),
   --tab-botton-bg: #f0f0f0;
   --tab-botton-color: #1f2d3d;
   --tab-button-hover-bg: #dcdcdc;
-  --tab-button-active-bg: rgba(255,255,255,0.7);
-  --card-bg: rgba(255,255,255,0.7);
+  --tab-button-active-bg: #fff;
+  --card-bg: #fff;
   --sidebar-bg: #f6f8fa;
   --btn-hover-color: #ff7242;
   --btn-color: #fff;
@@ -1353,7 +1353,7 @@ canvas:not(#ribbon-canvas),
   --text-bg-hover: rgba(73,177,245,0.7);
   --light-grey: #eee;
   --dark-grey: #cacaca;
-  --white: rgba(255,255,255,0.7);
+  --white: #fff;
   --text-highlight-color: #1f2d3d;
   --blockquote-color: #6a737d;
   --blockquote-bg: rgba(73,177,245,0.1);
