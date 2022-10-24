@@ -83,7 +83,7 @@
 
     /* 夜间模式 */
     [data-theme="dark"] #aside-content .card-widget {
-        background: rgba(47,48,50,1) !important;
+        background: rgba(47,48,50,.5) !important;
         border-radius: 12px;
         box-shadow: 0 8px 15px -5px #2c2d300c;
         border: var(--aike-border);
