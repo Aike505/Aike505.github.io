@@ -74,10 +74,6 @@ function createWinbox() {
     <p><button onclick="localStorage.removeItem('blogbg');location.reload();" style="background:#5fcdff;display:block;width:100%;padding: 15px 0;border-radius:6px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 点我恢复默认背景</button></p>
     <h2 id="图片（手机）"><a href="#图片（手机）" class="headerlink" title="图片（手机）"></a>图片（手机）</h2>
     <div class="bgbox">
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s3.bmp.ovh/imgs/2022/10/21/613b72772e6f3a39.jpg)" class="pimgbox" onclick="changeBg('url(https\:s3.bmp.ovh/imgs/2022/10/21/613b72772e6f3a39.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s3.bmp.ovh/imgs/2022/10/21/d1b96b18c29424b4.jpg)" class="pimgbox" onclick="changeBg('url(https\://s3.bmp.ovh/imgs/2022/10/21/d1b96b18c29424b4.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s3.bmp.ovh/imgs/2022/10/21/fff599cb49a7b0b9.jpg)" class="pimgbox" onclick="changeBg('url(https\://s3.bmp.ovh/imgs/2022/10/21/fff599cb49a7b0b9.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s3.bmp.ovh/imgs/2022/10/21/28fefa289e64cf8a.jpg)" class="pimgbox" onclick="changeBg('url(https\://s3.bmp.ovh/imgs/2022/10/21/28fefa289e64cf8a.jpg)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2022/10/24/vSaeplVUJWcTxXN.jpg)" class="pimgbox" onclick="changeBg('url(https\://s2.loli.net/2022/10/24/vSaeplVUJWcTxXN.jpg)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2022/10/24/sGi5mwVELXR7cj2.jpg)" class="pimgbox" onclick="changeBg('url(https\://s2.loli.net/2022/10/24/sGi5mwVELXR7cj2.jpg)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2022/10/24/w6cuEoIgj3e9Hia.jpg)" class="pimgbox" onclick="changeBg('url(https\://s2.loli.net/2022/10/24/w6cuEoIgj3e9Hia.jpg)')"></a>
