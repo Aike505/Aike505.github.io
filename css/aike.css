@@ -160,6 +160,11 @@ div#category {
     background-position: center;
 }
 
+.wb-header {
+    color: #fff;
+    background: #5fcdff;
+}
+
 [data-theme='dark'] .wb-body,
 [data-theme='dark'] #changeBgBox {
     background: #333 !important;
