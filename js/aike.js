@@ -78,7 +78,10 @@ function createWinbox() {
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s3.bmp.ovh/imgs/2022/10/21/d1b96b18c29424b4.jpg)" class="pimgbox" onclick="changeBg('url(https\://s3.bmp.ovh/imgs/2022/10/21/d1b96b18c29424b4.jpg)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s3.bmp.ovh/imgs/2022/10/21/fff599cb49a7b0b9.jpg)" class="pimgbox" onclick="changeBg('url(https\://s3.bmp.ovh/imgs/2022/10/21/fff599cb49a7b0b9.jpg)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s3.bmp.ovh/imgs/2022/10/21/28fefa289e64cf8a.jpg)" class="pimgbox" onclick="changeBg('url(https\://s3.bmp.ovh/imgs/2022/10/21/28fefa289e64cf8a.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2022/10/20/3hiBYHSruVqgZKl.png)" class="pimgbox" onclick="changeBg('url(https\://s2.loli.net/2022/10/20/3hiBYHSruVqgZKl.png)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2022/10/24/vSaeplVUJWcTxXN.jpg)" class="pimgbox" onclick="changeBg('url(https\://s2.loli.net/2022/10/20/3hiBYHSruVqgZKl.png)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2022/10/24/sGi5mwVELXR7cj2.jpg)" class="pimgbox" onclick="changeBg('url(https\://s2.loli.net/2022/10/20/3hiBYHSruVqgZKl.png)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2022/10/24/w6cuEoIgj3e9Hia.jpg)" class="pimgbox" onclick="changeBg('url(https\://s2.loli.net/2022/10/20/3hiBYHSruVqgZKl.png)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2022/10/24/sjNyRJgvkDGoEHS.jpg)" class="pimgbox" onclick="changeBg('url(https\://s2.loli.net/2022/10/20/3hiBYHSruVqgZKl.png)')"></a>
 
     </div>
     <h2 id="图片（电脑）"><a href="#图片（电脑）" class="headerlink" title="图片（电脑）"></a>图片（电脑）</h2>

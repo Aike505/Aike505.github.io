@@ -555,6 +555,13 @@ div#quit-board.fixedcomment {
   }
 
 /* 顶部导航栏修改 */
+#page-header.not-top-img > #nav {
+    background: rgba(255, 255, 255, 0);
+}
+#page-header.not-top-img.nav-fixed.is-top-bar > #nav {
+    background: rgba(255,255,255,0.7);
+}
+
 [data-theme='dark'] #page-header.not-top-img > #nav {
     background: rgba(18,18,18,0.0);
 }
