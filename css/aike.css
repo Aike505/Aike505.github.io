@@ -116,7 +116,7 @@ div#category {
 [data-theme="dark"] div#category, 
 [data-theme="dark"] div#tag, 
 [data-theme="dark"] div#category-bar{
-    background: rgba(0, 0, 0, 0.3) !important;
+    background: rgba(0, 0, 0, 0) !important;
     border-radius: 12px;
     box-shadow: 0 8px 15px -5px #2c2d300c;
     border: var(--aike-border);
@@ -578,9 +578,19 @@ div#quit-board.fixedcomment {
 /* 哔哔首页轮播修改 */
 #bber-talk {
     border: var(--style-border);
+    margin: 0 0 20px 0;
 }
 
 /* 目录导航条修改 */
+div#category-bar {
+    background: rgb(255,255,255,0);
+}
+
+div.category-in-bar-tips{
+    font-size: 32px;
+    font-weight: bold;
+}
+
 div.category-bar-item a,
 a.category-bar-more {
     color: var(--font-color);
@@ -590,10 +600,6 @@ a.category-bar-more {
 div.category-bar-item a,
 a.category-bar-more {
     border-radius: 8px;
-}
-
-#category-bar {
-    margin: 20px 0px 0px;
 }
 
 ul.talk-list{
