@@ -100,6 +100,10 @@ div#category {
     transition: all .3s ease-in-out;
 }
 
+[data-theme="dark"] #recent-posts {
+    background: rgba(255, 255, 255,0);
+}
+
 [data-theme="dark"] #recent-posts .recent-post-item,
 [data-theme="dark"] #recent-posts #category-bar,
 [data-theme="dark"] #recent-posts #bber-talk {
@@ -582,27 +586,80 @@ div#quit-board.fixedcomment {
 }
 
 /* 目录导航条修改 */
-div#category-bar {
+#category-bar {
     background: rgb(255,255,255,0);
 }
 
-div.category-in-bar-tips{
+.category-in-bar-tips{
     font-size: 32px;
     font-weight: bold;
 }
 
-div.category-bar-item a,
-a.category-bar-more {
-    color: var(--font-color);
-    transition: none;
+.category-bar-item {
+    margin: 0 2px;
 }
 
-div.category-bar-item a,
-a.category-bar-more {
-    border-radius: 8px;
+.category-bar-item a {
+    color: var(--font-color);
+    transition: none;
+    border-radius: 5px;
 }
+
 
 ul.talk-list{
     margin: 0;
 }
 
+/* 导航条分类页面 */
+
+.search-dialog, #container, #sta_chart, #statistic .item, #bber-talk:hover, #post .post-copyright:hover, .cardHover:hover, .error404 #error-wrap .error-content:hover, .layout>div:first-child:not(.recent-posts):hover, #recent-posts>.recent-post-item:hover, #aside-content .card-widget:hover {
+    border-color: var(--aike-blue);
+    box-shadow: none;
+}
+
+div.cardHover, .error404 #error-wrap .error-content, .layout > div:first-child:not(.recent-posts), #recent-posts > .recent-post-item, #aside-content .card-widget, .layout > .recent-posts .pagination > *:not(.space) {
+    background: var(--card-bg);
+}
+
+
+
+.layout>div:first-child:not(.recent-posts) {
+    padding-top: 10px;
+}
+
+.category #category-bar { 
+    background-color: rgba(255,255,255,0);
+    border: none;
+}
+
+/* .category #category-bar { 
+    background-color: rgba(255,255,255,0);
+    border: none;
+} */
+
+
+.category .category-bar-item {
+    margin:0 2px;
+}
+
+a.article-sort-item-img {
+    border: 2px solid #49b1f5;
+    width: 150px;
+    height: 80px;
+}
+
+.article-sort-item-title {
+    line-height: 1.3;
+    font-weight: 600;
+    font-size: 1.2rem !important;
+}
+
+/* 首页下面卡片大小 */
+#recent-posts>.recent-post-item {
+    height: 14rem;
+    border-radius: 12px;
+}
+
+#recent-posts>.recent-post-item .post_cover {
+    border-radius: 12px;
+}
