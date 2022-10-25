@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://aike505.github.io/images/index.html</loc>
+    
+    <lastmod>2022-10-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aike505.github.io/images/daily/index.html</loc>
     
     <lastmod>2022-10-25</lastmod>
@@ -176,15 +185,6 @@
     <loc>https://aike505.github.io/movie/index.html</loc>
     
     <lastmod>2022-10-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/images/index.html</loc>
-    
-    <lastmod>2022-10-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -382,14 +382,14 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/java/</loc>
+    <loc>https://aike505.github.io/tags/bug/</loc>
     <lastmod>2022-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/bug/</loc>
+    <loc>https://aike505.github.io/tags/java/</loc>
     <lastmod>2022-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
