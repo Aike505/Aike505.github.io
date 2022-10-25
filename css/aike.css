@@ -668,6 +668,16 @@
         margin: 5px;
     }
 
+    /* 最新文章图标 */
+.newPost {
+    position: absolute;
+    top: 0;
+    color: rgba(255, 255, 255, 0.92);
+    padding: 0 15px;
+    background-color: #49b0f5b9;
+    border-radius: 0 0 10px 10px;
+    right: 40px;
+}
 
 /* 手机 */
 

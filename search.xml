@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
+    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决<br><span id="more"></span></p>
+<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
+<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
+<p>软件官网:<a href="https://www.disktool.cn/feature.html">https://www.disktool.cn/feature.html</a><br>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
+<p>成功帮助舍友解决</p>
+]]></content>
+      <categories>
+        <category>实用教程</category>
+      </categories>
+      <tags>
+        <tag>电脑</tag>
+        <tag>磁盘</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python程序设计二级考试必看</title>
     <url>/2021/09/04/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E5%BF%85%E7%9C%8B/</url>
     <content><![CDATA[<h1 id="1-程序设计基本方法"><a href="#1-程序设计基本方法" class="headerlink" title="1.程序设计基本方法"></a>1.程序设计基本方法</h1><ul>
@@ -1879,20 +1896,33 @@
       </tags>
   </entry>
   <entry>
-    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
-    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决<br><span id="more"></span></p>
-<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
-<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
-<p>软件官网:<a href="https://www.disktool.cn/feature.html">https://www.disktool.cn/feature.html</a><br>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
-<p>成功帮助舍友解决</p>
+    <title>github+hexo 个人博客更换主题</title>
+    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
+<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
+<blockquote>
+<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
+</blockquote>
+<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
+<blockquote>
+<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
+</blockquote>
+<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
+<blockquote>
+<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></table></figure>
+<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
 ]]></content>
       <categories>
-        <category>实用教程</category>
+        <category>博客相关</category>
       </categories>
       <tags>
-        <tag>电脑</tag>
-        <tag>磁盘</tag>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+        <tag>主题</tag>
       </tags>
   </entry>
   <entry>
@@ -1925,59 +1955,6 @@
         <tag>hexo</tag>
         <tag>博客</tag>
         <tag>新建分类标签</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo的安装和在github部署博客</title>
-    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>打开 git 下 git bash 输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
-<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
-<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
-<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
-<hr>
-<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>github+hexo 个人博客更换主题</title>
-    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
-<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
-<blockquote>
-<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
-</blockquote>
-<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
-<blockquote>
-<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
-</blockquote>
-<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
-<blockquote>
-<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></table></figure>
-<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-        <tag>主题</tag>
       </tags>
   </entry>
   <entry>
@@ -2976,7 +2953,7 @@
 <h3 id="音乐-Aplayer"><a href="#音乐-Aplayer" class="headerlink" title="音乐 Aplayer"></a>音乐 Aplayer</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% aplayerlist %&#125;</span><br><span class="line">&#123;</span><br><span class="line">    &quot;narrow&quot;: false,// （可选）播放器袖珍风格</span><br><span class="line">    &quot;autoplay&quot;: true,// （可选) 自动播放，移动端浏览器暂时不支持此功能</span><br><span class="line">    &quot;mode&quot;: &quot;random&quot;,// （可选）曲目循环类型，有 &#x27;random&#x27;（随机播放）, &#x27;single&#x27; (单曲播放), &#x27;circulation&#x27; (循环播放), &#x27;order&#x27; (列表播放)， 默认：&#x27;circulation&#x27;</span><br><span class="line">    &quot;showlrc&quot;: 3,// （可选）歌词显示配置项，可选项有：1,2,3</span><br><span class="line">    &quot;mutex&quot;: true,// （可选）该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</span><br><span class="line">    &quot;theme&quot;: &quot;#e6d0b2&quot;,// （可选）播放器风格色彩设置，默认：#b7daff</span><br><span class="line">    &quot;preload&quot;: &quot;metadata&quot;,// （可选）音乐文件预载入模式，可选项： &#x27;none&#x27; &#x27;metadata&#x27; &#x27;auto&#x27;, 默认: &#x27;auto&#x27;</span><br><span class="line">    &quot;listmaxheight&quot;: &quot;513px&quot;,// (可选) 该播放列表的最大长度</span><br><span class="line">    &quot;music&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;CoCo&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;Jeff Williams&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;caffeine.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;caffeine.jpeg&quot;,</span><br><span class="line">            &quot;lrc&quot;: &quot;caffeine.txt&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;アイロニ&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;鹿乃&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;irony.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;irony.jpg&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br><span class="line">&#123;% endaplayerlist %&#125;</span><br></pre></td></tr></table></figure>
 <p>简单示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 
-    <div id="aplayer-rEiqsBeI" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-kLhtDNIO" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <p>进阶示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
@@ -2995,6 +2972,29 @@ title Key elements in Product X
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo的安装和在github部署博客</title>
+    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>打开 git 下 git bash 输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
+<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
+<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
+<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
+<hr>
+<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
       </tags>
   </entry>
   <entry>
@@ -3020,237 +3020,6 @@ title Key elements in Product X
         <tag>hexo</tag>
         <tag>部署博客</tag>
         <tag>bug</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>java小记</title>
-    <url>/2022/07/09/java%E5%B0%8F%E8%AE%B0/</url>
-    <content><![CDATA[<h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p><strong>Java优势：</strong></p>
-<ul>
-<li>Write Once, Run Anywhere</li>
-</ul>
-<p><strong>Java三大版本</strong></p>
-<ul>
-<li><p>JavaSE：标准版</p>
-</li>
-<li><p>JavaME：嵌入式开发</p>
-</li>
-<li>JavaEE：企业级开发</li>
-</ul>
-<p><strong>三大名词</strong></p>
-<ul>
-<li><p>JDK：Java Development Kit </p>
-</li>
-<li><p>JRE：Java Runtime Environment</p>
-</li>
-<li><p>JVM：Java Virtual Machine</p>
-</li>
-</ul>
-<blockquote>
-<p>JDK包含JRE,所以下载JDK就可以了，java的跨平台核心是使用了JVM</p>
-</blockquote>
-<h3 id="java开发环境搭建"><a href="#java开发环境搭建" class="headerlink" title="java开发环境搭建"></a>java开发环境搭建</h3><p><strong>JDK的下载与安装</strong></p>
-<ul>
-<li>通过官网获取JDK：<a href="http://www.oracle.com">http://www.oracle.com</a></li>
-</ul>
-<p><strong>配置环境变量</strong></p>
-<ul>
-<li>系统变量里添加JAVA_HOME</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/10/24/FrP9lKiYXqnh2gA.png" alt=""></p>
-<ul>
-<li><p>在系统变量path路径添加bin目录<br><img src="https://s2.loli.net/2022/10/24/ES8Ttlz7h5NGxk1.png" alt=""></p>
-</li>
-<li><p>同样在系统变量path路径添加jre/bin目录<br><img src="https://s2.loli.net/2022/10/24/ZwdtnmxNK97PSLU.png" alt=""></p>
-<blockquote>
-<p>Java8之后安装jdk不再提供jre的安装，可以通过命令导出：管理员身份打开cmd,切换到java安装路径，输入命令<code>bin\jlink.exe --module-path jmods --add-modules java.desktop --output jre</code> 即可</p>
-</blockquote>
-</li>
-<li><p>在用户变量中添加Classpath：<code>.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar</code></p>
-<p><img src="https://s2.loli.net/2022/10/24/HJS8xyYTAvZbKUw.png" alt=""></p>
-</li>
-<li><p>测试jdk安装是否成功</p>
-<p><img src="https://s2.loli.net/2022/10/24/6ANqBMr3ZUYfcl2.png" alt=""></p>
-</li>
-</ul>
-<p><strong>JDK目录介绍</strong></p>
-<ul>
-<li>bin：放可执行程序</li>
-<li>include：java是用c和c++编写的，这里引入c语言的头文件</li>
-<li>jre：java的运行环境</li>
-<li>lib：放一些类库文件</li>
-</ul>
-<p><strong>HelloWorld及简单语法规则</strong></p>
-<ul>
-<li>新建一个.java文件</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		System.out.print(<span class="string">&quot;Hello,World!&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>cmd里编译和运行</p>
-<p><img src="https://s2.loli.net/2022/10/24/EAJq2plhyjnWzZv.png" alt=""></p>
-</li>
-</ul>
-<p><strong>Notepad++安装和使用</strong></p>
-<p><strong>IDEA安装</strong></p>
-<ul>
-<li>IDE：集成开发环境</li>
-<li>IDEA官网：<a href="https://www.jetbrains.com/">https://www.jetbrains.com/</a></li>
-<li>IDEA常见优化配置</li>
-</ul>
-<blockquote>
-<p>vscode虽然说对java已经很好的支持了，某些功能还是不尽人意，毕竟idea才是开发java的神器，对于java开发的功能可以说都有，市场占有率超过65%。</p>
-</blockquote>
-<h3 id="java基础语法"><a href="#java基础语法" class="headerlink" title="java基础语法"></a>java基础语法</h3><p><strong>注释</strong></p>
-<ul>
-<li>单行注释：// 注释</li>
-<li>多行注释：/<em> 注释 </em>/</li>
-<li>文档注释: /<em>* 注释 </em>/</li>
-</ul>
-<blockquote>
-<p>书写注释是一个非常好的习惯，特别在BAT大厂里</p>
-</blockquote>
-<p><strong>标识符</strong><!----></p>
-<ul>
-<li><p>类名、变量名以及方法名。</p>
-</li>
-<li><p>标识符开头以字母(A-Z或者a-z)、美元符($)和下划线(_)组成</p>
-</li>
-<li>大小写敏感</li>
-<li>可以使用中文</li>
-</ul>
-<p><strong>数据类型</strong></p>
-<ul>
-<li>强类型语言：对于变量使用要求比较严格，所有变量必须先定义后才能使用</li>
-<li><p>弱类型语言：随时定义和使用，javascript、python都是</p>
-</li>
-<li><p>基本类型</p>
-<ul>
-<li>数值类型<ul>
-<li>整数类型<ul>
-<li>byte  1个字节范围-128-127</li>
-<li>short  2个字节范围-32768-32767</li>
-<li>int  4个字节范围21亿左右</li>
-<li>long  8个字节范围</li>
-</ul>
-</li>
-<li>浮点类型<ul>
-<li>float  4个字节范围</li>
-<li>double   8个字节范围</li>
-</ul>
-</li>
-<li>字符类型<ul>
-<li>char  2个字节</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>boolean类型<ul>
-<li>True  占一位</li>
-<li>False  </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>八大基本数据类型，这里基本类型和c语言基本没看出差别，字符串不属于基本类型  </p>
-</blockquote>
-<ul>
-<li>引用类型<ul>
-<li>类</li>
-<li>接口</li>
-<li>数组</li>
-</ul>
-</li>
-</ul>
-<p><strong>类型转换</strong></p>
-<ul>
-<li><p>优先级：byte,short,char==&gt;int==&gt;long==&gt;float==&gt;double</p>
-</li>
-<li><p>强制转换：(类型)变量名  高==&gt;低</p>
-</li>
-<li>自动转换：低—&gt;高</li>
-</ul>
-<blockquote>
-<p>先转换类型再计算</p>
-</blockquote>
-<p><strong>变量</strong></p>
-<ul>
-<li>变量作用域<ul>
-<li>类变量：定义前加一个static，用的时候可以不用声明值，全局可用</li>
-<li>实例变量：写在方法外面，可以不赋值，全局可用，使用要new一个对象</li>
-<li>局部变量：普通的定义，必须给初始化值，只在某个方法里有用</li>
-</ul>
-</li>
-<li>变量命名规范<ul>
-<li>见名知意</li>
-<li>类成员变量：首字母小写驼峰原则   monthSalary</li>
-<li>局部变量：首字母小写驼峰原则</li>
-<li>常量：全部大写可以加下划线</li>
-<li>类名：首字母大写驼峰原则  GoodMan()</li>
-<li>方法名：首字母小写驼峰原则  runRun()</li>
-</ul>
-</li>
-</ul>
-<p><strong>常量</strong></p>
-<ul>
-<li><p>用final声明，用大学字母表示</p>
-<blockquote>
-<p>比如写个PI等于多少，后面一直用而且值不变</p>
-</blockquote>
-</li>
-</ul>
-<p><strong>运算符</strong></p>
-<ul>
-<li><p>算术运算符 + - * /  % ++ —</p>
-<blockquote>
-<p>有long结果为long，没有long 都是int，int不能强制转成string</p>
-<p>乘方计算：java里不能用2^3，需要借助工具Math.pow(2,3)</p>
-</blockquote>
-</li>
-<li><p>赋值运算符 =</p>
-</li>
-<li><p>关系运算符 &gt; &lt; &gt;= &lt;= == !=</p>
-</li>
-<li><p>逻辑运算符 &amp;&amp; || !</p>
-<blockquote>
-<p>&amp;&amp; 都真为真，执行短路运算，检测到一个假后面的都不计算，值也不变    </p>
-<p>|| 有真就真</p>
-<p>！真变假，假变真</p>
-</blockquote>
-</li>
-<li><p>位运算符 &amp; | ^ ~ &gt;&gt; &lt;&lt; &gt;&gt;&gt;</p>
-<blockquote>
-<p>&amp; 同1才是1</p>
-<p>| 有1就是1</p>
-<p>^ 不一样就是1</p>
-<p>~ 0变1，1变0</p>
-<p>&lt;&lt; 左移 *2</p>
-<p>/&gt;&gt; 右移 /2</p>
-</blockquote>
-</li>
-<li><p>条件运算符 ? :</p>
-<blockquote>
-<p>x ? y : z</p>
-<p>如果x==true，结果为y，否则为z</p>
-</blockquote>
-</li>
-<li><p>扩展赋值运算符 += -= *= /=</p>
-<blockquote>
-<p>字符串拼接</p>
-<ul>
-<li>“ “+a+b，先转换成字符串再拼接</li>
-<li>a+b+” “,先运算在转成字符串拼接</li>
-</ul>
-</blockquote>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>写写代码</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -3586,6 +3355,237 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </tags>
   </entry>
   <entry>
+    <title>java小记</title>
+    <url>/2022/07/09/java%E5%B0%8F%E8%AE%B0/</url>
+    <content><![CDATA[<h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p><strong>Java优势：</strong></p>
+<ul>
+<li>Write Once, Run Anywhere</li>
+</ul>
+<p><strong>Java三大版本</strong></p>
+<ul>
+<li><p>JavaSE：标准版</p>
+</li>
+<li><p>JavaME：嵌入式开发</p>
+</li>
+<li>JavaEE：企业级开发</li>
+</ul>
+<p><strong>三大名词</strong></p>
+<ul>
+<li><p>JDK：Java Development Kit </p>
+</li>
+<li><p>JRE：Java Runtime Environment</p>
+</li>
+<li><p>JVM：Java Virtual Machine</p>
+</li>
+</ul>
+<blockquote>
+<p>JDK包含JRE,所以下载JDK就可以了，java的跨平台核心是使用了JVM</p>
+</blockquote>
+<h3 id="java开发环境搭建"><a href="#java开发环境搭建" class="headerlink" title="java开发环境搭建"></a>java开发环境搭建</h3><p><strong>JDK的下载与安装</strong></p>
+<ul>
+<li>通过官网获取JDK：<a href="http://www.oracle.com">http://www.oracle.com</a></li>
+</ul>
+<p><strong>配置环境变量</strong></p>
+<ul>
+<li>系统变量里添加JAVA_HOME</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/10/24/FrP9lKiYXqnh2gA.png" alt=""></p>
+<ul>
+<li><p>在系统变量path路径添加bin目录<br><img src="https://s2.loli.net/2022/10/24/ES8Ttlz7h5NGxk1.png" alt=""></p>
+</li>
+<li><p>同样在系统变量path路径添加jre/bin目录<br><img src="https://s2.loli.net/2022/10/24/ZwdtnmxNK97PSLU.png" alt=""></p>
+<blockquote>
+<p>Java8之后安装jdk不再提供jre的安装，可以通过命令导出：管理员身份打开cmd,切换到java安装路径，输入命令<code>bin\jlink.exe --module-path jmods --add-modules java.desktop --output jre</code> 即可</p>
+</blockquote>
+</li>
+<li><p>在用户变量中添加Classpath：<code>.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar</code></p>
+<p><img src="https://s2.loli.net/2022/10/24/HJS8xyYTAvZbKUw.png" alt=""></p>
+</li>
+<li><p>测试jdk安装是否成功</p>
+<p><img src="https://s2.loli.net/2022/10/24/6ANqBMr3ZUYfcl2.png" alt=""></p>
+</li>
+</ul>
+<p><strong>JDK目录介绍</strong></p>
+<ul>
+<li>bin：放可执行程序</li>
+<li>include：java是用c和c++编写的，这里引入c语言的头文件</li>
+<li>jre：java的运行环境</li>
+<li>lib：放一些类库文件</li>
+</ul>
+<p><strong>HelloWorld及简单语法规则</strong></p>
+<ul>
+<li>新建一个.java文件</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		System.out.print(<span class="string">&quot;Hello,World!&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>cmd里编译和运行</p>
+<p><img src="https://s2.loli.net/2022/10/24/EAJq2plhyjnWzZv.png" alt=""></p>
+</li>
+</ul>
+<p><strong>Notepad++安装和使用</strong></p>
+<p><strong>IDEA安装</strong></p>
+<ul>
+<li>IDE：集成开发环境</li>
+<li>IDEA官网：<a href="https://www.jetbrains.com/">https://www.jetbrains.com/</a></li>
+<li>IDEA常见优化配置</li>
+</ul>
+<blockquote>
+<p>vscode虽然说对java已经很好的支持了，某些功能还是不尽人意，毕竟idea才是开发java的神器，对于java开发的功能可以说都有，市场占有率超过65%。</p>
+</blockquote>
+<h3 id="java基础语法"><a href="#java基础语法" class="headerlink" title="java基础语法"></a>java基础语法</h3><p><strong>注释</strong></p>
+<ul>
+<li>单行注释：// 注释</li>
+<li>多行注释：/<em> 注释 </em>/</li>
+<li>文档注释: /<em>* 注释 </em>/</li>
+</ul>
+<blockquote>
+<p>书写注释是一个非常好的习惯，特别在BAT大厂里</p>
+</blockquote>
+<p><strong>标识符</strong><!----></p>
+<ul>
+<li><p>类名、变量名以及方法名。</p>
+</li>
+<li><p>标识符开头以字母(A-Z或者a-z)、美元符($)和下划线(_)组成</p>
+</li>
+<li>大小写敏感</li>
+<li>可以使用中文</li>
+</ul>
+<p><strong>数据类型</strong></p>
+<ul>
+<li>强类型语言：对于变量使用要求比较严格，所有变量必须先定义后才能使用</li>
+<li><p>弱类型语言：随时定义和使用，javascript、python都是</p>
+</li>
+<li><p>基本类型</p>
+<ul>
+<li>数值类型<ul>
+<li>整数类型<ul>
+<li>byte  1个字节范围-128-127</li>
+<li>short  2个字节范围-32768-32767</li>
+<li>int  4个字节范围21亿左右</li>
+<li>long  8个字节范围</li>
+</ul>
+</li>
+<li>浮点类型<ul>
+<li>float  4个字节范围</li>
+<li>double   8个字节范围</li>
+</ul>
+</li>
+<li>字符类型<ul>
+<li>char  2个字节</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>boolean类型<ul>
+<li>True  占一位</li>
+<li>False  </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>八大基本数据类型，这里基本类型和c语言基本没看出差别，字符串不属于基本类型  </p>
+</blockquote>
+<ul>
+<li>引用类型<ul>
+<li>类</li>
+<li>接口</li>
+<li>数组</li>
+</ul>
+</li>
+</ul>
+<p><strong>类型转换</strong></p>
+<ul>
+<li><p>优先级：byte,short,char==&gt;int==&gt;long==&gt;float==&gt;double</p>
+</li>
+<li><p>强制转换：(类型)变量名  高==&gt;低</p>
+</li>
+<li>自动转换：低—&gt;高</li>
+</ul>
+<blockquote>
+<p>先转换类型再计算</p>
+</blockquote>
+<p><strong>变量</strong></p>
+<ul>
+<li>变量作用域<ul>
+<li>类变量：定义前加一个static，用的时候可以不用声明值，全局可用</li>
+<li>实例变量：写在方法外面，可以不赋值，全局可用，使用要new一个对象</li>
+<li>局部变量：普通的定义，必须给初始化值，只在某个方法里有用</li>
+</ul>
+</li>
+<li>变量命名规范<ul>
+<li>见名知意</li>
+<li>类成员变量：首字母小写驼峰原则   monthSalary</li>
+<li>局部变量：首字母小写驼峰原则</li>
+<li>常量：全部大写可以加下划线</li>
+<li>类名：首字母大写驼峰原则  GoodMan()</li>
+<li>方法名：首字母小写驼峰原则  runRun()</li>
+</ul>
+</li>
+</ul>
+<p><strong>常量</strong></p>
+<ul>
+<li><p>用final声明，用大学字母表示</p>
+<blockquote>
+<p>比如写个PI等于多少，后面一直用而且值不变</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>运算符</strong></p>
+<ul>
+<li><p>算术运算符 + - * /  % ++ —</p>
+<blockquote>
+<p>有long结果为long，没有long 都是int，int不能强制转成string</p>
+<p>乘方计算：java里不能用2^3，需要借助工具Math.pow(2,3)</p>
+</blockquote>
+</li>
+<li><p>赋值运算符 =</p>
+</li>
+<li><p>关系运算符 &gt; &lt; &gt;= &lt;= == !=</p>
+</li>
+<li><p>逻辑运算符 &amp;&amp; || !</p>
+<blockquote>
+<p>&amp;&amp; 都真为真，执行短路运算，检测到一个假后面的都不计算，值也不变    </p>
+<p>|| 有真就真</p>
+<p>！真变假，假变真</p>
+</blockquote>
+</li>
+<li><p>位运算符 &amp; | ^ ~ &gt;&gt; &lt;&lt; &gt;&gt;&gt;</p>
+<blockquote>
+<p>&amp; 同1才是1</p>
+<p>| 有1就是1</p>
+<p>^ 不一样就是1</p>
+<p>~ 0变1，1变0</p>
+<p>&lt;&lt; 左移 *2</p>
+<p>/&gt;&gt; 右移 /2</p>
+</blockquote>
+</li>
+<li><p>条件运算符 ? :</p>
+<blockquote>
+<p>x ? y : z</p>
+<p>如果x==true，结果为y，否则为z</p>
+</blockquote>
+</li>
+<li><p>扩展赋值运算符 += -= *= /=</p>
+<blockquote>
+<p>字符串拼接</p>
+<ul>
+<li>“ “+a+b，先转换成字符串再拼接</li>
+<li>a+b+” “,先运算在转成字符串拼接</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>写写代码</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>学车记1</title>
     <url>/2021/08/16/%E5%AD%A6%E8%BD%A6%E8%AE%B01/</url>
     <content><![CDATA[<blockquote>
@@ -3625,46 +3625,6 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       <categories>
         <category>生活点滴</category>
       </categories>
-  </entry>
-  <entry>
-    <title>虚拟机安装macOS系统</title>
-    <url>/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<p>参考链接</p>
-<p><a href="https://www.pc-daily.com/xitong/75975.html">虚拟机安装macos系统（VMware虚拟机安装macOS详细</a></p>
-<p><a href="https://blog.csdn.net/Simon_477/article/details/110252233">虚拟机VMware安装苹果系统macOS，超级详细教程，附文件下载，真教程！！</a></p>
-<p><a href="https://baijiahao.baidu.com/s?id=1697367423466273816&amp;wfr=spider&amp;for=pc">如何使用虚拟机VMware安装苹果macOS系统</a></p>
-<h5 id="1-安装虚拟机VMware"><a href="#1-安装虚拟机VMware" class="headerlink" title="1 安装虚拟机VMware"></a>1 安装虚拟机VMware</h5><p><a href="https://mp.weixin.qq.com/s?__biz=MzIyNjAxMjEwOQ==&amp;mid=2247502732&amp;idx=5&amp;sn=27221e888444d6c36ac62f4767337215&amp;chksm=e874752edf03fc38cadb220b2e77654f32248976e7fa2af240ba7f1e0c0527541ebba5725643&amp;scene=21#wechat_redirect">VMware16</a></p>
-<h5 id="2-安装解锁工具unlocker"><a href="#2-安装解锁工具unlocker" class="headerlink" title="2  安装解锁工具unlocker"></a>2  安装解锁工具unlocker</h5><p>解锁虚拟机安装macOS限制工具</p>
-<p><a href="http://www.winwin7.com/soft/9473.html#xiazai">unlocker v3.0.3</a></p>
-<blockquote>
-<ul>
-<li><strong><a href="https://blog.csdn.net/puspos/article/details/108900141">运行unlocker中win-install时，出现file not found-darwin.</a></strong></li>
-</ul>
-</blockquote>
-<h5 id="3-虚拟机安装-maOS"><a href="#3-虚拟机安装-maOS" class="headerlink" title="3 虚拟机安装 maOS"></a>3 虚拟机安装 maOS</h5><p><a href="https://www.mhero.com/macos">macOS系统下载</a></p>
-<p><a href="https://cloud.mfpud.com/VirtualCDR/44EE85B8FF68F7428C0AE7B3AA27661E/">macOS kealos 10.15</a> （非百度云盘）</p>
-<p><a href="https://sysin.org/blog/macOS/">Apple macOS 下载汇总（系统、应用和技巧）</a></p>
-<blockquote>
-<ul>
-<li>报错<a href="https://www.bilibili.com/read/cv13362122"><strong>客户机操作系统已禁用 CPU</strong></a></li>
-</ul>
-</blockquote>
-<h5 id="4-解决安装后屏幕适应问题"><a href="#4-解决安装后屏幕适应问题" class="headerlink" title="4 解决安装后屏幕适应问题"></a>4 解决安装后屏幕适应问题</h5><p>安装VMware Tools，用到步骤二中darwin.iso</p>
-<h5 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h5><p><a href="https://baijiahao.baidu.com/s?id=1691924549832120099&amp;wfr=spider&amp;for=pc">虚拟机中的Mac系统怎么优化</a></p>
-<p><a href="https://blog.csdn.net/SSS_Benjamin/article/details/89296164">VMware 15 上Mac虚拟机卡顿情况的优化</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/337036027">全网最详细的VMware虚拟机安装MacOS系统教程，没有之一！！！附全部资源</a></p>
-<p><strong>网络</strong></p>
-<p><a href="https://m.kafan.cn/A/gvx45wd73r.html">mac虚拟机如何开启wifi</a></p>
-<p><a href="https://blog.csdn.net/kof820/article/details/50515115?spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&amp;utm_relevant_index=1">VMware虚拟机mac系统以太网无法上网</a></p>
-<p><strong>app store</strong></p>
-<p><a href="https://jingyan.baidu.com/article/e75aca852cd5a9142fdac610.html">app store 购买过程中出错 错误500解决方法</a></p>
-]]></content>
-      <categories>
-        <category>实用教程</category>
-      </categories>
-      <tags>
-        <tag>虚拟机</tag>
-      </tags>
   </entry>
   <entry>
     <title>网站推送百度</title>
@@ -3714,6 +3674,46 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       <tags>
         <tag>网站</tag>
         <tag>推送百度</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>虚拟机安装macOS系统</title>
+    <url>/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<p>参考链接</p>
+<p><a href="https://www.pc-daily.com/xitong/75975.html">虚拟机安装macos系统（VMware虚拟机安装macOS详细</a></p>
+<p><a href="https://blog.csdn.net/Simon_477/article/details/110252233">虚拟机VMware安装苹果系统macOS，超级详细教程，附文件下载，真教程！！</a></p>
+<p><a href="https://baijiahao.baidu.com/s?id=1697367423466273816&amp;wfr=spider&amp;for=pc">如何使用虚拟机VMware安装苹果macOS系统</a></p>
+<h5 id="1-安装虚拟机VMware"><a href="#1-安装虚拟机VMware" class="headerlink" title="1 安装虚拟机VMware"></a>1 安装虚拟机VMware</h5><p><a href="https://mp.weixin.qq.com/s?__biz=MzIyNjAxMjEwOQ==&amp;mid=2247502732&amp;idx=5&amp;sn=27221e888444d6c36ac62f4767337215&amp;chksm=e874752edf03fc38cadb220b2e77654f32248976e7fa2af240ba7f1e0c0527541ebba5725643&amp;scene=21#wechat_redirect">VMware16</a></p>
+<h5 id="2-安装解锁工具unlocker"><a href="#2-安装解锁工具unlocker" class="headerlink" title="2  安装解锁工具unlocker"></a>2  安装解锁工具unlocker</h5><p>解锁虚拟机安装macOS限制工具</p>
+<p><a href="http://www.winwin7.com/soft/9473.html#xiazai">unlocker v3.0.3</a></p>
+<blockquote>
+<ul>
+<li><strong><a href="https://blog.csdn.net/puspos/article/details/108900141">运行unlocker中win-install时，出现file not found-darwin.</a></strong></li>
+</ul>
+</blockquote>
+<h5 id="3-虚拟机安装-maOS"><a href="#3-虚拟机安装-maOS" class="headerlink" title="3 虚拟机安装 maOS"></a>3 虚拟机安装 maOS</h5><p><a href="https://www.mhero.com/macos">macOS系统下载</a></p>
+<p><a href="https://cloud.mfpud.com/VirtualCDR/44EE85B8FF68F7428C0AE7B3AA27661E/">macOS kealos 10.15</a> （非百度云盘）</p>
+<p><a href="https://sysin.org/blog/macOS/">Apple macOS 下载汇总（系统、应用和技巧）</a></p>
+<blockquote>
+<ul>
+<li>报错<a href="https://www.bilibili.com/read/cv13362122"><strong>客户机操作系统已禁用 CPU</strong></a></li>
+</ul>
+</blockquote>
+<h5 id="4-解决安装后屏幕适应问题"><a href="#4-解决安装后屏幕适应问题" class="headerlink" title="4 解决安装后屏幕适应问题"></a>4 解决安装后屏幕适应问题</h5><p>安装VMware Tools，用到步骤二中darwin.iso</p>
+<h5 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h5><p><a href="https://baijiahao.baidu.com/s?id=1691924549832120099&amp;wfr=spider&amp;for=pc">虚拟机中的Mac系统怎么优化</a></p>
+<p><a href="https://blog.csdn.net/SSS_Benjamin/article/details/89296164">VMware 15 上Mac虚拟机卡顿情况的优化</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/337036027">全网最详细的VMware虚拟机安装MacOS系统教程，没有之一！！！附全部资源</a></p>
+<p><strong>网络</strong></p>
+<p><a href="https://m.kafan.cn/A/gvx45wd73r.html">mac虚拟机如何开启wifi</a></p>
+<p><a href="https://blog.csdn.net/kof820/article/details/50515115?spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&amp;utm_relevant_index=1">VMware虚拟机mac系统以太网无法上网</a></p>
+<p><strong>app store</strong></p>
+<p><a href="https://jingyan.baidu.com/article/e75aca852cd5a9142fdac610.html">app store 购买过程中出错 错误500解决方法</a></p>
+]]></content>
+      <categories>
+        <category>实用教程</category>
+      </categories>
+      <tags>
+        <tag>虚拟机</tag>
       </tags>
   </entry>
   <entry>
