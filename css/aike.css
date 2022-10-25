@@ -206,29 +206,6 @@
         height: 100px;
     }
 
-    @media screen and (max-width: 768px) {
-
-        /* 背景 */
-        .pimgbox,
-        .imgbox,
-        .box {
-            height: 73px;
-            width: 135px;
-        }
-
-        .pimgbox {
-            height: 205px;
-        }
-
-        .wb-min {
-            display: none;
-        }
-
-        #changeBgBox .wb-body::-webkit-scrollbar {
-            display: none;
-        }
-    }
-
     /* 在返回顶部图标上显示阅读进度 */
     /* 返回顶部 */
 
@@ -644,9 +621,9 @@
 
     /* 首页下面卡片大小 */
     #recent-posts>.recent-post-item {
-        height: 14rem;
         border-radius: 12px;
     }
+    
 
     #recent-posts>.recent-post-item .post_cover {
         border-radius: 12px;
@@ -654,7 +631,8 @@
 
     
     /* 标签页 */
-    [data-theme='dark'] .tag-cloud-list a, [data-theme='dark'] #aside-content .card-tag-cloud a {
+    [data-theme='dark'] .tag-cloud-list a, 
+    [data-theme='dark'] #aside-content .card-tag-cloud a {
         color: var(--font-color) !important;
     }
 
@@ -674,3 +652,56 @@
         font-size: 1.2rem;
         margin: 5px;
     }
+
+/* 手机 */
+
+
+/* 手机 */
+
+
+/* 手机 */
+
+
+/* 手机 */
+@media screen and (max-width: 768px) {
+
+    /* 背景 */
+    .pimgbox,
+    .imgbox,
+    .box {
+        height: 73px;
+        width: 135px;
+    }
+
+    .pimgbox {
+        height: 205px;
+    }
+
+    .wb-min {
+        display: none;
+    }
+
+    #changeBgBox .wb-body::-webkit-scrollbar {
+        display: none;
+    }
+
+    #recent-posts>.recent-post-item {
+        border: none ! important;
+    }
+
+    /* 卡片封面 */
+    #recent-posts>.recent-post-item .post_cover {
+        height: 180px;
+        border-radius: 12px;
+        border: var(--aike-border);
+        box-sizing: border-box;
+        transition: all .3s ease-in-out;
+    }
+
+}  
+
+@media screen and (min-width: 768px) {
+    #recent-posts>.recent-post-item {
+    height: 14rem;
+    }
+}
