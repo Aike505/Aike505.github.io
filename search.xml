@@ -2953,7 +2953,7 @@
 <h3 id="音乐-Aplayer"><a href="#音乐-Aplayer" class="headerlink" title="音乐 Aplayer"></a>音乐 Aplayer</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% aplayerlist %&#125;</span><br><span class="line">&#123;</span><br><span class="line">    &quot;narrow&quot;: false,// （可选）播放器袖珍风格</span><br><span class="line">    &quot;autoplay&quot;: true,// （可选) 自动播放，移动端浏览器暂时不支持此功能</span><br><span class="line">    &quot;mode&quot;: &quot;random&quot;,// （可选）曲目循环类型，有 &#x27;random&#x27;（随机播放）, &#x27;single&#x27; (单曲播放), &#x27;circulation&#x27; (循环播放), &#x27;order&#x27; (列表播放)， 默认：&#x27;circulation&#x27;</span><br><span class="line">    &quot;showlrc&quot;: 3,// （可选）歌词显示配置项，可选项有：1,2,3</span><br><span class="line">    &quot;mutex&quot;: true,// （可选）该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</span><br><span class="line">    &quot;theme&quot;: &quot;#e6d0b2&quot;,// （可选）播放器风格色彩设置，默认：#b7daff</span><br><span class="line">    &quot;preload&quot;: &quot;metadata&quot;,// （可选）音乐文件预载入模式，可选项： &#x27;none&#x27; &#x27;metadata&#x27; &#x27;auto&#x27;, 默认: &#x27;auto&#x27;</span><br><span class="line">    &quot;listmaxheight&quot;: &quot;513px&quot;,// (可选) 该播放列表的最大长度</span><br><span class="line">    &quot;music&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;CoCo&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;Jeff Williams&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;caffeine.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;caffeine.jpeg&quot;,</span><br><span class="line">            &quot;lrc&quot;: &quot;caffeine.txt&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;アイロニ&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;鹿乃&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;irony.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;irony.jpg&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br><span class="line">&#123;% endaplayerlist %&#125;</span><br></pre></td></tr></table></figure>
 <p>简单示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 
-    <div id="aplayer-RQtcqxIX" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-pcXspVqU" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <p>进阶示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
@@ -2995,31 +2995,6 @@ title Key elements in Product X
       <tags>
         <tag>hexo</tag>
         <tag>部署博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo部署各种错误的解决方式</title>
-    <url>/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\blog\aikeblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:394:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\blog\aikeblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
-<h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p>
-<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol>
-<li>删除<code>.deploy_git</code>文件夹;</li>
-<li>输入 git<br><code>config --global core.autocrlf false</code></li>
-<li>然后，依次执行：</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>问题解决。暴力直接，有效。</p>
-<h1 id="2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git‘: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git">https://github.com/.../.git</a>‘: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
-        <tag>bug</tag>
       </tags>
   </entry>
   <entry>
@@ -3251,6 +3226,31 @@ title Key elements in Product X
       </categories>
       <tags>
         <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo部署各种错误的解决方式</title>
+    <url>/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\blog\aikeblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:394:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\blog\aikeblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
+<h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol>
+<li>删除<code>.deploy_git</code>文件夹;</li>
+<li>输入 git<br><code>config --global core.autocrlf false</code></li>
+<li>然后，依次执行：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>问题解决。暴力直接，有效。</p>
+<h1 id="2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git‘: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git">https://github.com/.../.git</a>‘: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
+        <tag>bug</tag>
       </tags>
   </entry>
   <entry>
@@ -3586,25 +3586,6 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </tags>
   </entry>
   <entry>
-    <title>学车记</title>
-    <url>/2021/08/18/%E5%AD%A6%E8%BD%A6%E8%AE%B0/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="11d9b8ef385cf2415242dbbe52b633cb060f9d062c552d080cb7b0376fa376b1">f4cc23558ba95030556638b09840cfb74a49aceca61bc7044fd1e06cc609067535c76d64473358fda108a0f310ed1e877258b9f7730df8f5b7e62811b35ea3186509c57c8ed7fcf215fb718834d4b1584c9d5c29a6f1fc04c22b012e32586569af4d32ad6f1f72e95da572e6b30857a2fbfba423c76c39451303f91313747e54c856b4c01a04818df1b87c952a9fa02b2261d56872c3a4dac2e9c5573a4e485d04f31a971e698917d2858163679be4c1c2d40f042a489aa348786d4ce342b102668755fcddc0623c125551a53c7269557617ce48616e59848f237850c891699f2386922f1b53c26b09cb2cecabab0401a589d13f9958cc64471bca99afa1a80268bac9cab3162e5be3435c3582fe8a478d74e134eb07082f9751388bf8a1fa1e71e1726cdc29581abb80e7f9f65a4e13339d58936712f5e190629817e82442ba8429610093266138329bb34edcf4e688e3382c342b6b17d55293450909851c8ec4afac4a0b1e40f302c175d17f53f53a32d2136302676c766fcfa4c3ca69114c024909333bdc3224d7ad521ef239538fed2df40958b2734666948ceec8484298ebff1c5402ca551e11bd506ecf1011e1fa778484ca6def5acf8f3920892ecf78b56e9aadd6993fb329b368b290a5a8d965b0d4c5fd341f1d142a1e98510b22b0c9a24351356f340aeb9e89efaddfe530f725da4a0087543923a587a71e15d7d0928894b78d0fd60e5bba3d5ff3094dca23462418e6fbccc6f87d43aa753584e095df71a091ac759a6db268f6e39cfe805eeb69815b9baaf3ed5268ec4d0de70ee2a5d6eee78c3f66e61125ad7d27b11cc4d7739084f56ada6bce0de9a758d51dcf8df10f413a6f694f2d51cdcacf6b9a9bfacc67ee4b7ea465f78dfa59b10715c868e4af5f90a71fbc839a77aeb66b0b2ac5e1bf491a063b629382366d568bba3866f90c76343414fe9d5a1181e4e8a66bad293cbc8bc812466337667e8a424869b798f12ac7b368f4dbe46e2958292f1c2e6b0ac7a95f91470dde41ff457ae4c70adebc10518d917e47ee4cf446f71eb55835538a41a645b4986aed38b1d30ce3b06f213599c054c772679946bce949e60fc9a96f5081298aec9451b7707abdcd3cde5d553691091dba9e6f80ed4a59d5c09a8aab6582ed7657c8621786d2bd3ab457d8f85581296aef92d176da17e38159d213c1b139bf0a37515268a58423f68971bd02acefd9488754546608249ba194dab87dfb8a2f7dc1287da1810d4417c33a57aa19c13029df9c0f9b6dbd18f2f671ef2cc69256c25d897f0fdf893d9144f719965af3e857e95763d4af679382991c3bf3fa36dbb30856b79f8fdf619f2ded76da2ea27d0428bd6ab1ed5de89dfa1b072c17b227c423c795a3e31df2fecb288adf723c8c10175e8f84cb3fafabffc36adb7b23be564db8defb38a17bbf11bce8739c71fb2c3af2720507090096969769ddcf1d40f855d0fb02fa9d7b90bbb44c133ac453672d3c2f7b75c165850314d039e1a5f54229b5f20d03ca48f7b93bcc414f3571a87b923cd03124566fb522922f17671b343e67fc9623cb3cc7dc913e930be0a337a1359fd79b2543d6d8d0b1b60e6b3ab890bd313a40fe1f6f0cfb5827de849d292ee67f8b63bf152f6f3f764aeb39cb9b81cfde017a3834f1c75b7d2d827f8e2860ca8ba7b52d946eee52218fc25013cf3097dc5e5654a802096a0421418e682d11c1bc20d5c34179251ecd1df73f6bcaeb4506190883aa9c8670fcdc5d09735137a047808c8fe7676d5b56734efd60f75c4ba238f73dc07cd4d25aa3add1aab66e2b46626c7ddf3928c197df77fc141daf9dce6d1ac159b415e457d94c1a91cef517c78e9618a1f138cd5015fdd469e8e63dfc993f2f3b9d48b3df5057026c3e6f6f3077c09e893b3505bcefd3188fb8056c79fa0852d5a2d51f6133351fdfb399fb85731d9942abb319caddb00d0a677871b3f7b7810d143c1d589d100a0380d344999c560300290ba014bfd5a7a314a34c5f6df863d0f45795faff411420e4a092a54f10736664bd66b3041839f3ec32341294b65ca5c10a99745d8c225196673e440376d053a6edf4623b5314cb3fb8b53f61eafc132ec8166046180454769041e53b5b31a3ed3aecb985317a38214ed7f0be9808feb41603464c9dab16667e4389036d9c9b2219d2d9d8f908b881d96739e64c4b5619543b57942a3ff90ed0ae4e72ebbbb9429221b64ba97fece891520524978bd0adc54c792c52a31aa21e2c0893ce300c569f5d9ce7df85bafcf4aff44641daac64d61b5e47150613c81371036fd2e1c74b358a7c4594f45a266dcdaaa0f78f7b3ffda5a9f8879a5636c8520f73bcf257f117e731dc8a310fc401258e699841a14abdc2c85b83aa3583e6408b38234d45e52c79845f90bf1d48a90c5e26d48fd1a4f7081e90f9beb64e776ae037bb1a48375120eb4bcd83326f0dcedff59635b44c907f3ee98ceac4d4a6083d64fe9ddeb32a7875f3fc2eb41fa670ba1921ca66e8fd293890fc087b5e6f62272f39d046a5d8f7a43167d564523850322b6ea09db4be040b9bca709175487ac843d296bf2804361ed645b687cb9f181b197381a37ea45d7f96174b6a4af7a9eb721a71402c6ed731a8c2d2ff5e8c0233cb62d4cc57c55187c5c0e2052605bf6e7352d779</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码访问</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>生活点滴</category>
-      </categories>
-  </entry>
-  <entry>
     <title>网站推送百度</title>
     <url>/2021/07/21/%E7%BD%91%E7%AB%99%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/</url>
     <content><![CDATA[<blockquote>
@@ -3655,123 +3636,27 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </tags>
   </entry>
   <entry>
-    <title>选课</title>
-    <url>/2021/08/28/%E9%80%89%E8%AF%BE/</url>
-    <content><![CDATA[<h2 id="1-选课"><a href="#1-选课" class="headerlink" title="1. 选课"></a>1. 选课</h2><p>这学期课程内容比较少，选修8门已经满了，课表如下：<br><img src="https://s2.loli.net/2022/10/24/jg6xSiYkFfhwXsq.jpg" alt=""></p>
-<!-- 选修就只有[李伟](https://faculty.xidian.edu.cn/LW7/zh_CN/index.htm)老师的**数学建模**， -->
-<p>学院选修在<strong>系统工程</strong>和<strong>经济法概论</strong>中选择了前者。<br><img src="https://s2.loli.net/2022/10/24/y2bREU6DQYqshMn.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/DYv1O39FShrnZwU.jpg" alt=""><br>这学期学分一共就15.6分，严格说是15.55学分。<del>相比其他大院少了不止一点</del>。<br><img src="https://s2.loli.net/2022/10/24/3X4U6ZCd2Hf1w5B.jpg" alt=""></p>
-<h2 id="2-课程统计"><a href="#2-课程统计" class="headerlink" title="2. 课程统计"></a>2. 课程统计</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>课程名称</th>
-<th>课程类别</th>
-<th>课程性质</th>
-<th>开课单位</th>
-<th>授课教师</th>
-<th>学分 </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>概率论与数理统计</td>
-<td>通识教育基础课</td>
-<td>必修</td>
-<td>数学与统计学院</td>
-<td>赵彦</td>
-<td>2.5</td>
-</tr>
-<tr>
-<td>数据库原理与应用</td>
-<td>大类基础课</td>
-<td>必修</td>
-<td>经济与管理学院</td>
-<td><a href="https://faculty.xidian.edu.cn/yangzhaojun/zh_CN/index.htm">杨朝君</a></td>
-<td>2</td>
-</tr>
-<tr>
-<td>大学生职业发展</td>
-<td>拓展提高</td>
-<td>必修</td>
-<td>本科生院</td>
-<td>安翔</td>
-<td>1</td>
-</tr>
-<tr>
-<td>形势与政策(Ⅲ)</td>
-<td>通识教育基础课</td>
-<td>必修</td>
-<td>马克思主义学院</td>
-<td>樊稳</td>
-<td>0.3</td>
-</tr>
-<tr>
-<td>经管类学科导论(II)</td>
-<td>通识教育核心课</td>
-<td>必修</td>
-<td>经济与管理学院</td>
-<td><a href="https://faculty.xidian.edu.cn/CX5/zh_CN/index.htm">陈希</a>,<a href="https://faculty.xidian.edu.cn/SJ1/zh_CN/index.htm">尚娟</a></td>
-<td>0.25</td>
-</tr>
-<tr>
-<td>系统工程</td>
-<td>大类基础课</td>
-<td>学院选修（任选）</td>
-<td>经济与管理学院</td>
-<td><a href="https://faculty.xidian.edu.cn/LAJ/zh_CN/index.htm">刘爱军</a></td>
-<td>2</td>
-</tr>
-<tr>
-<td>大学英语中级(I)</td>
-<td>通识教育基础课</td>
-<td>必修</td>
-<td>外国语学院</td>
-<td>赵蓉</td>
-<td>2</td>
-</tr>
-<tr>
-<td>马克思主义基本原理</td>
-<td>通识教育基础课</td>
-<td>必修</td>
-<td>马克思主义学院</td>
-<td>刘向舒</td>
-<td>3</td>
-</tr>
-<tr>
-<td>大学体育(Ⅲ)</td>
-<td>通识教育基础课</td>
-<td>必修</td>
-<td>体育部</td>
-<td></td>
-<td>0.5</td>
-</tr>
-<tr>
-<td>运筹学</td>
-<td>大类基础课</td>
-<td>必修</td>
-<td>经济与管理学院</td>
-<td>赵彦</td>
-<td>2</td>
-</tr>
-<tr>
-<td>&lt;!— 数学建模</td>
-<td>公共任选课</td>
-<td>公共任选</td>
-<td></td>
-<td><a href="https://faculty.xidian.edu.cn/LW7/zh_CN/index.htm">李伟</a></td>
-<td>1 —&gt;</td>
-</tr>
-</tbody>
-</table>
-</div>
+    <title>学车记</title>
+    <url>/2021/08/18/%E5%AD%A6%E8%BD%A6%E8%AE%B0/</url>
+    <content><![CDATA[<h3 id="学车记1"><a href="#学车记1" class="headerlink" title="学车记1"></a>学车记1</h3><details class="folding-tag" blue><summary> 2022-08-16 </summary>
+              <div class='content'>
+              <blockquote><p>一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以<strong>平凡</strong>的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处&gt;~&lt;</p></blockquote><p> <img src="https://s2.loli.net/2022/10/24/XFVj2Lp45G6O9Zu.jpg" alt=""><br> <img src="https://s2.loli.net/2022/10/24/pRKzCZj6twcgUFI.jpg" alt=""></p>
+              </div>
+            </details>
+<h3 id="学车记2"><a href="#学车记2" class="headerlink" title="学车记2"></a>学车记2</h3><details class="folding-tag" blue><summary> 2021-08-17 </summary>
+              <div class='content'>
+              <blockquote><p>今天看完了《平凡的世界》第三部（<em>利用学驾校时间看的手机</em>），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:</p><blockquote><ul><li>平凡又平庸的我们努力奔向爱情。      </li><li>在这平凡的世界里努力过好平凡的生活。</li><li>我这个平凡的世界里平凡的人觉得遥不可及。</li></ul></blockquote><p>同时，今天是keep打卡第一天 fighting~</p></blockquote><p><img src="https://s2.loli.net/2022/10/24/A3tSV7uq4O2EvCw.jpg" alt=""></p>
+              </div>
+            </details>
+<h3 id="学车记3"><a href="#学车记3" class="headerlink" title="学车记3"></a>学车记3</h3><details class="folding-tag" blue><summary> 2021-08-18 </summary>
+              <div class='content'>
+              <p>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。<br><img src="https://s2.loli.net/2022/10/24/EMygeVouihR32Hz.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/TQ6R4bAKCe3MfYh.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/OueoXa2cI1Alr8i.jpg" alt=""></p>
+              </div>
+            </details>
 ]]></content>
       <categories>
         <category>生活点滴</category>
       </categories>
-      <tags>
-        <tag>选课</tag>
-        <tag>大学生活</tag>
-      </tags>
   </entry>
   <entry>
     <title>虚拟机安装macOS系统</title>
@@ -3811,6 +3696,29 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </categories>
       <tags>
         <tag>虚拟机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>选课</title>
+    <url>/2021/08/28/%E9%80%89%E8%AF%BE/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="213bb23c42b2fbb7902be8e50c3198bfc226f7fc7f885b859da4778f5e2d2b04">f4cc23558ba95030556638b09840cfb704f3786c88b878ba14a45b3d167bfac42a44620ebb78b1ce5599f6b8e6d5d041cbc269ae65a01ccd9acf894253ae191875948ae563566b2fd1b6f631f114f4dfbab9a454697ea6b89a29fe8d1f394eceb487dc1e030d322d422b67d25039e07e9392331e79b148d811332b58e8dee95ca5307d1bae4d75f7d2e41fca8773996a591210a5a69e67811159228aaeb02ce04e42736f690b86e53b7451a4649be25935f18d6c97e01fab088aa7ad1ac3fab4207fd627cb5b440511cd6d6ea78b7d4d808b0785adfc1e936df8e1aa13ed23d2f4fcadcaf737d87ba78b45664c308771d183402abf118e0c0f6ef3db0d747702f3c65f88bf7604605932f799780d147fba734382a9b73d52bbff838b15feaedf44c12ac02da335c66f45ee7735dfa27d34e89d55c55eb831b53b240c95b469a6bad08704addaf89d521567182af45041b970e40a1046b7ec38bd3513f106d8dd8575ee6b51fb54d9184d832eb845097f765d90907f60779594f6b7448e92d738ffb43ddcb2ea5a4f9f5ccb131110d3cbd6d74bb3c93400ec75e0d97abf88d7681648bbbbbcb994a8850c3ed62fd0e9676c03b57b0face2ac114ed727e29fa0e9130ad7604961ba080c910896ef56da80184cffcfbd2b8a329b032e4a18fb6b71b11fa517549bff4bf58f1aab0e13890856d0d431c81b08901d69426980773a082da7b976aacda043e2e3791af03ba76efb6d61aa3f12c973eac66c7d24a9d9fa65c1902e22c3cd323bb838d0d536b98338276b0b983f6f5628441edce7ed3ab6539579ad7a558af4e35f8f9fbdb756c96e726442a80c178aee3bc9159a5d12d6321c6787dc58c9270504374d5d942dd7504d134682726a1771055a6f4dc17c1566ff4261d68ef959808a6f664fdac368f881a3a5104877944ab22b585fff8b01c32254c90dfb715c41a6e7ac969f457a6d669bbda9d50234e712d6db37219e91e5998ba938f72d87d23067383f87284a434b775aae80103a07c9707a8af9b8c71eade97d40d6065c3ee4a4c65f35a41a95941f1ef5d0c863bb5e504159997623d0e06f6398cc7eea6593b736a9c13d74ed61545ca9e4c80544b14b6db468389721a9dc34b7031f4d8732ad4fbdf07ad78544d235eb3d22706ff05056690013f2b5af599332629b8e4a3d77439c2d064cf32dc97df42e86794992894fb6b05d9c03c92d1ac8d26e4df44b112ed78579eac16056e53113d1dbbb784039879a8bcb278bca0adece373759c6137d9157ad817c55757843d960192c45bcef569f392529d389670bf9f00dc0beca5c9c65f79c86d1d88274bfa72c3bc0c959a8b9ab14cd3eaa14da12511f47aad2c2a973a96f87ffd4259e56e2b0e60159b02e510671c78a46c82ab779aa153fd38d570f039c078eeb7907eb930e86fdf1c16a333527637f9d258dbe5ababca20632a19a92276c5971ec79659b120a83add8e6305f97c0fb43178135b55c155cfb6b8e02d51cf71b5a21547daca6c81eed64108738ad38b699daff732b4e838ec5a9997e6ca2d186a2934b3d2cc81d154e90a8cb9bda37537001221d0548008ec468a6dce59b4b079028195ee5a66cdab81064624d30f30c3a746d9806c1ed20e4156b5b7d79525d38d66934097df1ff4ad60b706a611b827cf847d00005eac089e06a424d37dcf6a9723951f27f8979d6a7916f50de347217de3f33ad07390094d3e98d3a9f699fde5fd67b6b62a43494116ad434b6bea2f0b7df902d30feefc4e5ea5bfa8550bf40a8e84a82f335c8b7a29f69e0de30180d85090e2a8a41c0183d74a286ab7a3edf23149b11596493117002d01d457e839f9bbdcbeffb3a2e2a95220269dc2968898d3efd2f4fa24634613dba5711d35d750e64efd66dae939efa676fe84ebe7308bad46896878a65baacb1779eee57b0e804a46e0cf16e7485fefe0a0e2b962131699bbe4cc75cd31ee66aed64223944d85905a03609fd4034ef58325ceeab80d5d7ce66396636ce2d8ef923480d41c08fb6b5fe0c798aaf198c889b589cb8890f32636d5483bae3585ee75c369a490d5a5b1096f2d267e5ca3ef1919542bb4bfcad3ee4ff4fafac632a13bc0ab07a651d0a0a5cb1d9eece429827401844a1229702aa1a7fd63f7677a51d2c394bc9e367e790182bc90fb1cbd820161231e9e8b36b754a4a49d0b7b929bbe3472fbd8b215edeee71a4bad84677b6c49c89a63124fdf1fa00b13116c4da8beccd49ea5a0a05fe3290696293a7a5ce3be39a19f76d14ddf334ecf7fb7c47485f14e9d798d2d20e7819837c379102f8d5e27d02678edf38990006c1a3a04d0d94d4351c6e022e0e69858e44f776053e1eb20ea3ec89ceba0080bf8e700889bf896207fd0b41f3d1726a60355ab8fbd2a4bab6b0b7bc50d19b2e58a33e148e77fdd5b62bdea6961742eb8b775f0f439fefb8e830bff7cfcde65c4adff72084298a1f99aa963424d131ab39a299f24c0b701316befc120d73045365e70b69d51e9857fd00cf8eb47f548c817cca05c7f3be5abbdb0e6ae522befc65f088b38e45289feab0114bb1b79255214bfa3d18419c9fe265437e9aefe212a3daaa9a45c1daf97eaf647fde6211ed44125e3df348eb95a3d6a8873bed2a5d33b9fdb5ec44fc78ed9b1852761b69e545cf5cb63f976f66571af91d11ebc499fbee2c2b97c8bfd5e2c556824cc4f3b0c17b609f2643ae0a128ae2ac62985e0843dabfe03457a511a76472f137500fafd086298a2e6455bb4984212282768b67c1315e568380d8d6841394eeeca2f3029d4519514c741110254b3bd8e48bb3a79b06567bdcf78cff73a7e8af6bcf067a4b5ae804cf33a06f64d80e6b04767f4530f657ac512043d55916e4ab5aef83b470b68e2aacacc0b3b2697f61279d18cf07b1e728a35564587d3e0048aea6825ef8c6203ec53600940036d2ec2c2824c28919e6e7af3f4a2cd9597139fb97091eaac36a14cea2d1de09a2ef6ec48a13ab9769678b335406f89762d25b1f9bf59eedc6f6aad7ad1d304fb554378e7976347f0821cc34c7c10b7e26830414dd820402e13b19815db7ce46f49f861ac5e3bcd81d0a55c96fefc5514123ae083a60c45b50e480e007f46b50d5d08bf6120839af9e3f2781d65cfc78bce62ec694ebd2fb9dceabd3ee1ad87f3c70c45823de7839eb2d3f333f98295951f46861b70cef83bd9b49f2b9f0832401bd344d1e291113bac7907dd14204c5a41e39a5a0a4439283d626fac0b8330fdea33eefab718ef6a24d7635043583902c5da0969f86eef1ac796764c177de0e50bc8dfffc3c3574719c3bb4c06c369d10679a0742cec832e1643a74fd29623aff2307f4bf53e6f1d6e5b3060270d6332f2d985af7e6e5c0d605825b5a3825483b4f012d7d9f7eb3c2915832b63b27e95c8b7650602e0552a196e6be1ac1d5992d29ab5343f94b6ed0908934dc3e1ce923209fcc015139239d086ffa77035f9d091c9c0dafae242ace24db961172450a23817268853c1bebd4138c53ad0a639455bddd1697d35b4ceb666797364b126df2c55d4220f8c1351ef559e2cdac4c7f0b569764c060ee4ae8a33e3ec8cb3d7e76375fa3e64cdd7bea50381975f4e4b7a91a621539c03616342eb4ec98e5d48432f2d6ccfc9acd7ae98770ccc6d6b084eb7a0d686911723005b06d7a396a6e32b8c60646b17ff00ca34ade84a89ec1b5466578662c990a45dbc872b9a2d3b4084a563231139104d3500700000f5090ce9a8068313236c0458beef3c1208f33d20d0e2727c9a5a30bb5a3657f8cf4c1cfa3eb3a99d4004b82e4017355cec06e7ad689e86d434f08bcb0be2fc3baf63b0159d2e15a4559380224e5024949709b8aef671382ff13a976ab135e27ac5d7cf83cda292fb2dd219b5b46c52ea61040e01c7028126254ababd376271a62771fbde7b82684eacf9df3b723ae2d799af90d309c2e6a88947e82f516b9ebc57947c6bb26313bfa75784fa756b311628490aa0c111106cc6cb4a9661e92f4698ecec834fe6362b210facd84093662ebcdd639445781959c235651d7ed08151ca38d3268604e53b07ae362ade8c9a89e00eaf3469ca8c593fc6bf32b91ee3af60e2e6a6b89326f578b3a0855aea15c94f544ccc53b15e5f6f1cd5d2272e5523a5b4beb8eee346dce8508626750fde7e021c3b4aa782250612499ee71d4ac1e6e2dacba81da2447a822213c8267bcac7dcb91d730186a32f0c429e1d217d27ff34cd985d9bf5678cd8c9d0887179c426203c96359f9e4db2ad43bfe3cbdb6bcf5f0861a1db30cedacefdb8f2d7a1f144b74a23d5fb1d87d56bc3532f4c500d13bc51165</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码访问</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>生活点滴</category>
+      </categories>
+      <tags>
+        <tag>选课</tag>
+        <tag>大学生活</tag>
       </tags>
   </entry>
 </search>
