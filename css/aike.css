@@ -732,3 +732,47 @@
     }
 }
 
+/* 切换背景窗口 */
+.toggle {
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgb(145 145 145 / 30%);
+    border-radius: 12px;
+}
+
+.toggle {
+    margin-bottom: 20px;
+    border: 1px solid #f0f0f0;
+}
+
+details {
+    display: block;
+}
+
+.toggle>.toggle-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--font-color);
+}
+
+.toggle>.toggle-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--font-color);
+}
+
+summary {
+    display: list-item;
+}
+
+#changeBgBox .toggle>.toggle-content {
+    margin: 0;
+}
+
+.toggle > .toggle-content {
+    margin: 30px 24px;
+}
+#article-container h2:before {
+    margin-left: -24px;
+    font-size: 18px;
+}

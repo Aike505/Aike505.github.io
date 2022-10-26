@@ -73,14 +73,25 @@ function createWinbox() {
     <div id="article-container" style="padding:10px;">
     <p><button onclick="localStorage.removeItem('blogbg');location.reload();" style="background:#5fcdff;display:block;width:100%;padding: 15px 0;border-radius:6px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 点我恢复默认背景</button></p>
     <h2 id="图片（手机）"><a href="#图片（手机）" class="headerlink" title="图片（手机）"></a>图片（手机）</h2>
+    <details class="toggle" style>
+    <summary class="toggle-button" style="">查看电脑壁纸</summary>
+    <div class="toggle-content">
     <div class="bgbox">
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2022/10/24/vSaeplVUJWcTxXN.jpg)" class="pimgbox" onclick="changeBg('url(https\://s2.loli.net/2022/10/24/vSaeplVUJWcTxXN.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2022/10/24/sGi5mwVELXR7cj2.jpg)" class="pimgbox" onclick="changeBg('url(https\://s2.loli.net/2022/10/24/sGi5mwVELXR7cj2.jpg)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2022/10/26/Z4jxr8UioXl7m3B.jpg)" class="pimgbox" onclick="changeBg('url(https\://s2.loli.net/2022/10/26/Z4jxr8UioXl7m3B.jpg)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2022/10/26/FeNJQgSlnuUbT6m.jpg)" class="pimgbox" onclick="changeBg('url(https\://s2.loli.net/2022/10/26/FeNJQgSlnuUbT6m.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s1.imagehub.cc/images/2022/10/26/640.jpg)" class="pimgbox" onclick="changeBg('url(https\://s1.imagehub.cc/images/2022/10/26/640.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s1.imagehub.cc/images/2022/10/26/640-5.jpg)" class="pimgbox" onclick="changeBg('url(https\://s1.imagehub.cc/images/2022/10/26/640-5.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s1.imagehub.cc/images/2022/10/26/640-3.jpg)" class="pimgbox" onclick="changeBg('url(https\://s1.imagehub.cc/images/2022/10/26/640-3.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s1.imagehub.cc/images/2022/10/26/640-2.jpg)" class="pimgbox" onclick="changeBg('url(https\://s1.imagehub.cc/images/2022/10/26/640-2.jpg)')"></a>
+    </div>
+    </div>
+    </details>
 
     </div>
     <h2 id="图片（电脑）"><a href="#图片（电脑）" class="headerlink" title="图片（电脑）"></a>图片（电脑）</h2>
+    <details class="toggle" style>
+    <summary class="toggle-button" style="">查看手机壁纸</summary>
+    <div class="toggle-content">
     <div class="bgbox">
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s3.bmp.ovh/imgs/2022/10/21/966d85c470185cc9.jpg)" class="imgbox" onclick="changeBg('url(https\://s3.bmp.ovh/imgs/2022/10/21/966d85c470185cc9.jpg)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s3.bmp.ovh/imgs/2022/10/21/1ec5a40201abe7bd.jpg)" class="imgbox" onclick="changeBg('url(https\://s3.bmp.ovh/imgs/2022/10/21/1ec5a40201abe7bd.jpg)')"></a>
@@ -93,10 +104,15 @@ function createWinbox() {
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2022/10/24/rl96DLkFVaNTQE4.jpg)" class="imgbox" onclick="changeBg('url(https\://s2.loli.net/2022/10/24/rl96DLkFVaNTQE4.jpg)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2022/10/24/xgtuoriqem4yvlk.jpg)" class="imgbox" onclick="changeBg('url(https\://s2.loli.net/2022/10/24/xgtuoriqem4yvlk.jpg)')"></a>
     </div>
+    </div>
+    </details>
     
     
     
     <h2 id="渐变色"><a href="#渐变色" class="headerlink" title="渐变色"></a>渐变色</h2>
+    <details class="toggle" style>
+    <summary class="toggle-button" style="">查看渐变壁纸</summary>
+    <div class="toggle-content">
     <div class="bgbox">
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, #eecda3, #ef629f)" onclick="changeBg('linear-gradient(to right, #eecda3, #ef629f)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, rgb(255, 110, 127), rgb(191, 233, 255))" onclick="changeBg('linear-gradient(to right, rgb(255, 110, 127), rgb(191, 233, 255)')"></a>
@@ -105,8 +121,13 @@ function createWinbox() {
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, #16bffd, #cb3066)" onclick="changeBg('linear-gradient(to right, #16bffd, #cb3066)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, rgb(192, 192, 170), rgb(28, 239, 255))" onclick="changeBg('linear-gradient(to right, rgb(192, 192, 170), rgb(28, 239, 255))')"></a>
     </div>
+    </div>
+    </details>
     
     <h2 id="纯色"><a href="#纯色" class="headerlink" title="纯色"></a>纯色</h2>
+    <details class="toggle" style>
+    <summary class="toggle-button" style="">查看纯色壁纸</summary>
+    <div class="toggle-content">
     <div class="bgbox">
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #F4E2D8" onclick="changeBg('#F4E2D8')"></a>
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #76BA99" onclick="changeBg('#76BA99')"></a>
@@ -114,7 +135,9 @@ function createWinbox() {
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #9FC088" onclick="changeBg('#9FC088')"></a>
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #7D9D9C" onclick="changeBg('#7D9D9C')"></a>
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #CEAB93" onclick="changeBg('#CEAB93')"></a>
-</div>
+    </div>
+    </div>
+    </details>
 `;
 }
 
