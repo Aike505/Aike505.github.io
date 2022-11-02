@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
-    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决<br><span id="more"></span></p>
-<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
-<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
-<p>软件官网:<a href="https://www.disktool.cn/feature.html">https://www.disktool.cn/feature.html</a><br>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
-<p>成功帮助舍友解决</p>
-]]></content>
-      <categories>
-        <category>实用教程</category>
-      </categories>
-      <tags>
-        <tag>电脑</tag>
-        <tag>磁盘</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python程序设计二级考试必看</title>
     <url>/2021/09/04/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E5%BF%85%E7%9C%8B/</url>
     <content><![CDATA[<h1 id="1-程序设计基本方法"><a href="#1-程序设计基本方法" class="headerlink" title="1.程序设计基本方法"></a>1.程序设计基本方法</h1><ul>
@@ -1896,6 +1879,23 @@
       </tags>
   </entry>
   <entry>
+    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
+    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决<br><span id="more"></span></p>
+<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
+<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
+<p>软件官网:<a href="https://www.disktool.cn/feature.html">https://www.disktool.cn/feature.html</a><br>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
+<p>成功帮助舍友解决</p>
+]]></content>
+      <categories>
+        <category>实用教程</category>
+      </categories>
+      <tags>
+        <tag>电脑</tag>
+        <tag>磁盘</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>github+hexo 个人博客更换主题</title>
     <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
     <content><![CDATA[<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
@@ -1923,6 +1923,123 @@
         <tag>hexo</tag>
         <tag>博客</tag>
         <tag>主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo 新建分类和标签</title>
+    <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
+    <content><![CDATA[<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
+<h2 id="1-创建“分类”选项"><a href="#1-创建“分类”选项" class="headerlink" title="1.创建“分类”选项"></a>1.创建“分类”选项</h2><p>生成“分类”页并添加 tpye 属性,进入博客目录。执行命令下方命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+<p>categories 文件夹下会有 index.md 这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2019-04-24 15:30:30</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>保存并关闭文件。</p>
+<p>给文章添加“categories”属性</p>
+<p>打开需要添加分类的文章，为其添加 categories 属性。下方的 categories:Hexo 表示这篇文章添加到到“Hexo”这个分类。注意：一篇文章只会添加到一个分类中，如果是多个默认放到第一个分类中。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 添加分类及标签</span><br><span class="line">date: 2017-05-26 12:12:57</span><br><span class="line">categories: Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了 categories: xxx 的文章才会被收录到首页的“分类”中。</p>
+<h2 id="2-创建“标签”选项"><a href="#2-创建“标签”选项" class="headerlink" title="2.创建“标签”选项"></a>2.创建“标签”选项</h2><p>生成“标签”页并添加 tpye 属性</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+<p>在 tags 文件夹下，找到 index.md 这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-22 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>添加 type: “tags”到内容中，添加后是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>保存并关闭文件。</p>
+<p>给文章添加“tags”属性,打开需要添加标签的文章，为其添加 tags 属性。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 添加分类及标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">categories:</span><br><span class="line">           - Hexo</span><br><span class="line">tags:</span><br><span class="line">           - 博客</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+        <tag>新建分类标签</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo的安装和在github部署博客</title>
+    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>打开 git 下 git bash 输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
+<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
+<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
+<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
+<hr>
+<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo部署各种错误的解决方式</title>
+    <url>/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\blog\aikeblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:394:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\blog\aikeblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
+<h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol>
+<li>删除<code>.deploy_git</code>文件夹;</li>
+<li>输入 git<br><code>config --global core.autocrlf false</code></li>
+<li>然后，依次执行：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>问题解决。暴力直接，有效。</p>
+<h1 id="2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git‘: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git">https://github.com/.../.git</a>‘: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
+        <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>修改github.io站点域名</title>
+    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
+    <content><![CDATA[<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
+<ul>
+<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
+<ul>
+<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&amp;utm_medium=cpc&amp;utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&amp;utm_medium=se-cpc-op&amp;utm_campaign=10045&amp;utm_content=&amp;utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&amp;utm_adplace=AdPlace039520">华为云</a></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
+<ul>
+<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20域名设置3.png" alt=""></li>
+<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20域名设置1.png" alt=""></li>
+</ul>
+</blockquote>
+<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
+<ul>
+<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20域名设置2.png" alt=""></li>
+</ul>
+</blockquote>
+<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
+<ul>
+<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>注册域名</tag>
       </tags>
   </entry>
   <entry>
@@ -2921,7 +3038,7 @@
 <h3 id="音乐-Aplayer"><a href="#音乐-Aplayer" class="headerlink" title="音乐 Aplayer"></a>音乐 Aplayer</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% aplayerlist %&#125;</span><br><span class="line">&#123;</span><br><span class="line">    &quot;narrow&quot;: false,// （可选）播放器袖珍风格</span><br><span class="line">    &quot;autoplay&quot;: true,// （可选) 自动播放，移动端浏览器暂时不支持此功能</span><br><span class="line">    &quot;mode&quot;: &quot;random&quot;,// （可选）曲目循环类型，有 &#x27;random&#x27;（随机播放）, &#x27;single&#x27; (单曲播放), &#x27;circulation&#x27; (循环播放), &#x27;order&#x27; (列表播放)， 默认：&#x27;circulation&#x27;</span><br><span class="line">    &quot;showlrc&quot;: 3,// （可选）歌词显示配置项，可选项有：1,2,3</span><br><span class="line">    &quot;mutex&quot;: true,// （可选）该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</span><br><span class="line">    &quot;theme&quot;: &quot;#e6d0b2&quot;,// （可选）播放器风格色彩设置，默认：#b7daff</span><br><span class="line">    &quot;preload&quot;: &quot;metadata&quot;,// （可选）音乐文件预载入模式，可选项： &#x27;none&#x27; &#x27;metadata&#x27; &#x27;auto&#x27;, 默认: &#x27;auto&#x27;</span><br><span class="line">    &quot;listmaxheight&quot;: &quot;513px&quot;,// (可选) 该播放列表的最大长度</span><br><span class="line">    &quot;music&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;CoCo&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;Jeff Williams&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;caffeine.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;caffeine.jpeg&quot;,</span><br><span class="line">            &quot;lrc&quot;: &quot;caffeine.txt&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;アイロニ&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;鹿乃&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;irony.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;irony.jpg&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br><span class="line">&#123;% endaplayerlist %&#125;</span><br></pre></td></tr></table></figure>
 <p>简单示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 
-    <div id="aplayer-obxeqXJf" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-SNFFLOPQ" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <p>进阶示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
@@ -2943,83 +3060,90 @@ title Key elements in Product X
       </tags>
   </entry>
   <entry>
-    <title>hexo 新建分类和标签</title>
-    <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
-    <content><![CDATA[<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
-<h2 id="1-创建“分类”选项"><a href="#1-创建“分类”选项" class="headerlink" title="1.创建“分类”选项"></a>1.创建“分类”选项</h2><p>生成“分类”页并添加 tpye 属性,进入博客目录。执行命令下方命令</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-<p>categories 文件夹下会有 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2019-04-24 15:30:30</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>保存并关闭文件。</p>
-<p>给文章添加“categories”属性</p>
-<p>打开需要添加分类的文章，为其添加 categories 属性。下方的 categories:Hexo 表示这篇文章添加到到“Hexo”这个分类。注意：一篇文章只会添加到一个分类中，如果是多个默认放到第一个分类中。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 添加分类及标签</span><br><span class="line">date: 2017-05-26 12:12:57</span><br><span class="line">categories: Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了 categories: xxx 的文章才会被收录到首页的“分类”中。</p>
-<h2 id="2-创建“标签”选项"><a href="#2-创建“标签”选项" class="headerlink" title="2.创建“标签”选项"></a>2.创建“标签”选项</h2><p>生成“标签”页并添加 tpye 属性</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-<p>在 tags 文件夹下，找到 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-22 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>添加 type: “tags”到内容中，添加后是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>保存并关闭文件。</p>
-<p>给文章添加“tags”属性,打开需要添加标签的文章，为其添加 tags 属性。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 添加分类及标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">categories:</span><br><span class="line">           - Hexo</span><br><span class="line">tags:</span><br><span class="line">           - 博客</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+    <title>python库学习</title>
+    <url>/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h3 id="pandas库"><a href="#pandas库" class="headerlink" title="pandas库"></a>pandas库</h3><p>pandas 是基于Numpy的一种工具，主要用于数据分析任务。Pandas 纳入了大量库和一些标准的数据模型，提供了高校第操作大型数据集所需要的工具。pandas 的名称来自面板数据（panel data）和python数据分析（data analysis）。</p>
+<ul>
+<li>可以从CSV、JSON、SQL、Microsoft Excel导入数据</li>
+<li>主要数据结构Series（一维数据）和DataFrame（二维数据）</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># pandas 简单实例</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mydataset = &#123;</span><br><span class="line">	<span class="string">&#x27;sites&#x27;</span>:[<span class="string">&#x27;Google&#x27;</span>,<span class="string">&#x27;Runoob&#x27;</span>,<span class="string">&#x27;Wiki&#x27;</span>],</span><br><span class="line">	<span class="string">&#x27;number&#x27;</span>:[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">	&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.DataFrame(mydataset)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line">    sites  number</span><br><span class="line"><span class="number">0</span>  Google       <span class="number">1</span></span><br><span class="line"><span class="number">1</span>  Runoob       <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    Wiki       <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<h4 id="Pandas-Series"><a href="#Pandas-Series" class="headerlink" title="Pandas Series"></a>Pandas Series</h4><ul>
+<li>pandas series类似表格的一列，类似一维数组。</li>
+<li><p>可以用list 和key/value对象创建Series</p>
+</li>
+<li><p>由索引（index）和列组成</p>
+</li>
+</ul>
+<p>Series构造方法如下：</p>
+<p><code>pandas.Series(data,index,dtype,name,copy)</code></p>
+<p>data：数据(ndarray类型)    index：索引标签，默认从0开始    dtype：数据类型，默认自己判断    name：名称    copy：拷贝数据，默认False</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(a)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">0</span>    <span class="number">1</span></span><br><span class="line"><span class="number">1</span>    <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    <span class="number">3</span></span><br><span class="line">dtype: int64</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>sites = &#123;<span class="number">1</span>: <span class="string">&quot;Google&quot;</span>, <span class="number">2</span>: <span class="string">&quot;Runoob&quot;</span>, <span class="number">3</span>: <span class="string">&quot;Wiki&quot;</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(sites, index = [<span class="number">1</span>, <span class="number">2</span>], name=<span class="string">&quot;aike&quot;</span> )</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">1</span>    Google</span><br><span class="line"><span class="number">2</span>    Runoob</span><br><span class="line">Name: aike, dtype: <span class="built_in">object</span></span><br></pre></td></tr></table></figure>
+<h4 id="Pandas-DataFrame"><a href="#Pandas-DataFrame" class="headerlink" title="Pandas DataFrame"></a>Pandas DataFrame</h4><ul>
+<li>表格类型数据</li>
+<li>既有行索引，也有列索引</li>
+</ul>
+<p>DataFrame构造方法：</p>
+<p><code>pandas.DataFrame(data,index,columns,dtype,copy)</code></p>
+<p>columns：列标签，默认为RangeIndex（0,1,2，……，n）</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>data = [[<span class="string">&#x27;Google&#x27;</span>,<span class="number">10</span>],[<span class="string">&#x27;Runoob&#x27;</span>,<span class="number">12</span>],[<span class="string">&#x27;Wike&#x27;</span>,<span class="number">13</span>]]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df = pd.DataFrame(data,columns=[<span class="string">&#x27;Site&#x27;</span>,<span class="string">&#x27;Age&#x27;</span>],dtype=<span class="built_in">float</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df</span><br><span class="line">     Site   Age</span><br><span class="line"><span class="number">0</span>  Google  <span class="number">10.0</span></span><br><span class="line"><span class="number">1</span>  Runoob  <span class="number">12.0</span></span><br><span class="line"><span class="number">2</span>    Wike  <span class="number">13.0</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>loc[ ]：返回指定索引的行</p>
+</li>
+<li><p>loc[[ ]]：返回多行数据</p>
+</li>
+</ul>
+<h4 id="Pandas-CSV文件"><a href="#Pandas-CSV文件" class="headerlink" title="Pandas CSV文件"></a>Pandas CSV文件</h4><p>CSV（<strong>C</strong>omma-<strong>S</strong>eparated <strong>V</strong>alues，逗号分隔值）一般用逗号分割，以纯文本数据存储表格数据（数字和文本）。</p>
+<ul>
+<li>pd.to_string( )：返回DataFrame类型数据</li>
+<li>pd.read_csv( )：读取csv数据</li>
+<li>pd.to_csv( )：将DataFrame存储为csv文件</li>
+<li>df.head(n)：读取回前n行</li>
+<li>df.tail(n)：读取尾部几行</li>
+<li>df.info( )：返回表格基本信息（行列数、各列数据类型）</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import pandas as pd</span><br><span class="line">df = pd.read_csv(&#x27;nba.csv&#x27;)</span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
+<h4 id="Pandas-JSON"><a href="#Pandas-JSON" class="headerlink" title="Pandas JSON"></a>Pandas JSON</h4><p>JSON（<strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation，JavaScript对象表示法），存储和交换文本信息的语法。</p>
+<ul>
+<li>Json可转换为DataFrame</li>
+<li>可以从url中读取json数据</li>
+<li>读取内嵌json<ul>
+<li>pd.json_normalize(data, record_path, meta)</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 Python JSON 模块载入数据</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;nested_list.json&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = json.loads(f.read())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 展平数据</span></span><br><span class="line">df_nested_list = pd.json_normalize(data, record_path =[<span class="string">&#x27;students&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span>(df_nested_list)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装glom模块：用.来访问内嵌对象的属性</li>
+</ul>
+<h4 id="Pandas-数据清洗"><a href="#Pandas-数据清洗" class="headerlink" title="Pandas 数据清洗"></a>Pandas 数据清洗</h4><ul>
+<li>缺失</li>
+<li>格式错误</li>
+<li>错误数据或重复数据</li>
+</ul>
+<h5 id="清洗空值"><a href="#清洗空值" class="headerlink" title="清洗空值"></a>清洗空值</h5><ul>
+<li>dropna( )：删除包含空字段的行</li>
+</ul>
+<p><code>DataFrame.dropna(axis=0, how=&#39;any&#39;, thresh=None, subset=None, inplace=False)</code></p>
+<h3 id="pdfminer库"><a href="#pdfminer库" class="headerlink" title="pdfminer库"></a>pdfminer库</h3><p><strong>问题描述</strong></p>
+<p>利用python读取PDF文本内容</p>
+<p><strong>运行环境</strong></p>
+<p>python 3.6</p>
+<p><strong>需要安装的库</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install pdfminer</span><br><span class="line">pip install pdfminer3k</span><br></pre></td></tr></table></figure>
+<p><strong>实现的源代码</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyocr <span class="comment"># 图像处理库，进行ocr识别</span></span><br><span class="line"><span class="keyword">import</span> importlib <span class="comment"># Python中import语句的实现</span></span><br><span class="line"><span class="keyword">import</span> sys <span class="comment"># 针对与Python解释器相关的变量和方法</span></span><br><span class="line"><span class="keyword">import</span> time <span class="comment"># 基础时间库</span></span><br><span class="line"></span><br><span class="line">importlib.reload(sys)</span><br><span class="line">time1 = time.time()</span><br><span class="line"><span class="comment"># print(&#x27;初始时间为：&#x27;,time1)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os.path</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span> PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span>  PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFResourceManager, PDFPageInterpreter</span><br><span class="line"><span class="keyword">from</span> pdfminer.converter <span class="keyword">import</span> PDFPageAggregator</span><br><span class="line"><span class="keyword">from</span> pdfminer.layout <span class="keyword">import</span> LTTextBoxHorizontal,LAParams</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFTextExtractionNotAllowed</span><br><span class="line"></span><br><span class="line">text_path = <span class="string">r&#x27;D:\文档\预测与决策\第2章 非模型预测方法.pdf&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse</span>():</span></span><br><span class="line">    <span class="comment">#解析PDF文本，并保存到TXT文件中</span></span><br><span class="line">    fp = <span class="built_in">open</span>(text_path,<span class="string">&#x27;rb&#x27;</span>)</span><br><span class="line">    <span class="comment">#用文件对象创建一个PDF文档分析器</span></span><br><span class="line">    parser = PDFParser(fp)</span><br><span class="line">    <span class="comment">#创建一个PDF文档</span></span><br><span class="line">    doc = PDFDocument()</span><br><span class="line">    <span class="comment">#连接分析器，与文档对象</span></span><br><span class="line">    parser.set_document(doc)</span><br><span class="line">    doc.set_parser(parser)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#提供初始化密码，如果没有密码，就创建一个空的字符串</span></span><br><span class="line">    doc.initialize()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#检测文档是否提供txt转换，不提供就忽略</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> doc.is_extractable:</span><br><span class="line">        <span class="keyword">raise</span> PDFTextExtractionNotAllowed</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment">#创建PDF,资源管理器，来共享资源</span></span><br><span class="line">        rsrcmgr = PDFResourceManager()</span><br><span class="line">        <span class="comment">#创建一个PDF设备对象</span></span><br><span class="line">        laparams = LAParams()</span><br><span class="line">        device = PDFPageAggregator(rsrcmgr,laparams=laparams)</span><br><span class="line">        <span class="comment">#创建一个PDF解释器其对象</span></span><br><span class="line">        interpreter = PDFPageInterpreter(rsrcmgr,device)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#循环遍历列表，每次处理一个page内容</span></span><br><span class="line">        <span class="comment">#doc.get_pages()获取page列表</span></span><br><span class="line">        <span class="keyword">for</span> page <span class="keyword">in</span> doc.get_pages():</span><br><span class="line">            interpreter.process_page(page)</span><br><span class="line">            <span class="comment">#接受该页面的LTPage对象</span></span><br><span class="line">            layout = device.get_result()</span><br><span class="line">            <span class="comment"># 这里layout是一个LTPage对象 里面存放着 这个page解析出的各种对象</span></span><br><span class="line">            <span class="comment"># 一般包括LTTextBox, LTFigure, LTImage, LTTextBoxHorizontal 等等</span></span><br><span class="line">            <span class="comment"># 想要获取文本就获得对象的text属性，</span></span><br><span class="line">            <span class="keyword">for</span> x <span class="keyword">in</span> layout:</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">isinstance</span>(x,LTTextBoxHorizontal)):</span><br><span class="line">                    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">r&#x27;C:\Users\86159\Desktop\2.txt&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                        results = x.get_text()</span><br><span class="line">                        <span class="built_in">print</span>(results)</span><br><span class="line">                        f.write(results + <span class="string">&quot;\n&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    parse()</span><br><span class="line">    time2 = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;总共消耗时间为：&#x27;</span>,time2-time1)</span><br></pre></td></tr></table></figure>
+<p><strong>结果分析</strong></p>
+<p>将读取的文字存在一个TXT文档里面</p>
+<p>pdfminer只能识别pdf里的文字，而不会读取pdf里图片里的文字内容</p>
+<p><strong>参考链接</strong></p>
+<p><a href="https://www.cnblogs.com/wj-1314/p/9429816.html">https://www.cnblogs.com/wj-1314/p/9429816.html</a></p>
 ]]></content>
       <categories>
-        <category>博客相关</category>
+        <category>写写代码</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-        <tag>新建分类标签</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo的安装和在github部署博客</title>
-    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>打开 git 下 git bash 输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
-<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
-<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
-<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
-<hr>
-<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo部署各种错误的解决方式</title>
-    <url>/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\blog\aikeblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:394:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\blog\aikeblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
-<h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p>
-<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol>
-<li>删除<code>.deploy_git</code>文件夹;</li>
-<li>输入 git<br><code>config --global core.autocrlf false</code></li>
-<li>然后，依次执行：</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>问题解决。暴力直接，有效。</p>
-<h1 id="2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git‘: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git">https://github.com/.../.git</a>‘: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
-        <tag>bug</tag>
+        <tag>机器学习</tag>
       </tags>
   </entry>
   <entry>
@@ -3254,130 +3378,6 @@ title Key elements in Product X
       </tags>
   </entry>
   <entry>
-    <title>python库学习</title>
-    <url>/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h3 id="pandas库"><a href="#pandas库" class="headerlink" title="pandas库"></a>pandas库</h3><p>pandas 是基于Numpy的一种工具，主要用于数据分析任务。Pandas 纳入了大量库和一些标准的数据模型，提供了高校第操作大型数据集所需要的工具。pandas 的名称来自面板数据（panel data）和python数据分析（data analysis）。</p>
-<ul>
-<li>可以从CSV、JSON、SQL、Microsoft Excel导入数据</li>
-<li>主要数据结构Series（一维数据）和DataFrame（二维数据）</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># pandas 简单实例</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mydataset = &#123;</span><br><span class="line">	<span class="string">&#x27;sites&#x27;</span>:[<span class="string">&#x27;Google&#x27;</span>,<span class="string">&#x27;Runoob&#x27;</span>,<span class="string">&#x27;Wiki&#x27;</span>],</span><br><span class="line">	<span class="string">&#x27;number&#x27;</span>:[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">	&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.DataFrame(mydataset)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line">    sites  number</span><br><span class="line"><span class="number">0</span>  Google       <span class="number">1</span></span><br><span class="line"><span class="number">1</span>  Runoob       <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    Wiki       <span class="number">3</span></span><br></pre></td></tr></table></figure>
-<h4 id="Pandas-Series"><a href="#Pandas-Series" class="headerlink" title="Pandas Series"></a>Pandas Series</h4><ul>
-<li>pandas series类似表格的一列，类似一维数组。</li>
-<li><p>可以用list 和key/value对象创建Series</p>
-</li>
-<li><p>由索引（index）和列组成</p>
-</li>
-</ul>
-<p>Series构造方法如下：</p>
-<p><code>pandas.Series(data,index,dtype,name,copy)</code></p>
-<p>data：数据(ndarray类型)    index：索引标签，默认从0开始    dtype：数据类型，默认自己判断    name：名称    copy：拷贝数据，默认False</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(a)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">0</span>    <span class="number">1</span></span><br><span class="line"><span class="number">1</span>    <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    <span class="number">3</span></span><br><span class="line">dtype: int64</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>sites = &#123;<span class="number">1</span>: <span class="string">&quot;Google&quot;</span>, <span class="number">2</span>: <span class="string">&quot;Runoob&quot;</span>, <span class="number">3</span>: <span class="string">&quot;Wiki&quot;</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(sites, index = [<span class="number">1</span>, <span class="number">2</span>], name=<span class="string">&quot;aike&quot;</span> )</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">1</span>    Google</span><br><span class="line"><span class="number">2</span>    Runoob</span><br><span class="line">Name: aike, dtype: <span class="built_in">object</span></span><br></pre></td></tr></table></figure>
-<h4 id="Pandas-DataFrame"><a href="#Pandas-DataFrame" class="headerlink" title="Pandas DataFrame"></a>Pandas DataFrame</h4><ul>
-<li>表格类型数据</li>
-<li>既有行索引，也有列索引</li>
-</ul>
-<p>DataFrame构造方法：</p>
-<p><code>pandas.DataFrame(data,index,columns,dtype,copy)</code></p>
-<p>columns：列标签，默认为RangeIndex（0,1,2，……，n）</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>data = [[<span class="string">&#x27;Google&#x27;</span>,<span class="number">10</span>],[<span class="string">&#x27;Runoob&#x27;</span>,<span class="number">12</span>],[<span class="string">&#x27;Wike&#x27;</span>,<span class="number">13</span>]]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df = pd.DataFrame(data,columns=[<span class="string">&#x27;Site&#x27;</span>,<span class="string">&#x27;Age&#x27;</span>],dtype=<span class="built_in">float</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df</span><br><span class="line">     Site   Age</span><br><span class="line"><span class="number">0</span>  Google  <span class="number">10.0</span></span><br><span class="line"><span class="number">1</span>  Runoob  <span class="number">12.0</span></span><br><span class="line"><span class="number">2</span>    Wike  <span class="number">13.0</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>loc[ ]：返回指定索引的行</p>
-</li>
-<li><p>loc[[ ]]：返回多行数据</p>
-</li>
-</ul>
-<h4 id="Pandas-CSV文件"><a href="#Pandas-CSV文件" class="headerlink" title="Pandas CSV文件"></a>Pandas CSV文件</h4><p>CSV（<strong>C</strong>omma-<strong>S</strong>eparated <strong>V</strong>alues，逗号分隔值）一般用逗号分割，以纯文本数据存储表格数据（数字和文本）。</p>
-<ul>
-<li>pd.to_string( )：返回DataFrame类型数据</li>
-<li>pd.read_csv( )：读取csv数据</li>
-<li>pd.to_csv( )：将DataFrame存储为csv文件</li>
-<li>df.head(n)：读取回前n行</li>
-<li>df.tail(n)：读取尾部几行</li>
-<li>df.info( )：返回表格基本信息（行列数、各列数据类型）</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import pandas as pd</span><br><span class="line">df = pd.read_csv(&#x27;nba.csv&#x27;)</span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
-<h4 id="Pandas-JSON"><a href="#Pandas-JSON" class="headerlink" title="Pandas JSON"></a>Pandas JSON</h4><p>JSON（<strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation，JavaScript对象表示法），存储和交换文本信息的语法。</p>
-<ul>
-<li>Json可转换为DataFrame</li>
-<li>可以从url中读取json数据</li>
-<li>读取内嵌json<ul>
-<li>pd.json_normalize(data, record_path, meta)</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 Python JSON 模块载入数据</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;nested_list.json&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = json.loads(f.read())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 展平数据</span></span><br><span class="line">df_nested_list = pd.json_normalize(data, record_path =[<span class="string">&#x27;students&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span>(df_nested_list)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>安装glom模块：用.来访问内嵌对象的属性</li>
-</ul>
-<h4 id="Pandas-数据清洗"><a href="#Pandas-数据清洗" class="headerlink" title="Pandas 数据清洗"></a>Pandas 数据清洗</h4><ul>
-<li>缺失</li>
-<li>格式错误</li>
-<li>错误数据或重复数据</li>
-</ul>
-<h5 id="清洗空值"><a href="#清洗空值" class="headerlink" title="清洗空值"></a>清洗空值</h5><ul>
-<li>dropna( )：删除包含空字段的行</li>
-</ul>
-<p><code>DataFrame.dropna(axis=0, how=&#39;any&#39;, thresh=None, subset=None, inplace=False)</code></p>
-<h3 id="pdfminer库"><a href="#pdfminer库" class="headerlink" title="pdfminer库"></a>pdfminer库</h3><p><strong>问题描述</strong></p>
-<p>利用python读取PDF文本内容</p>
-<p><strong>运行环境</strong></p>
-<p>python 3.6</p>
-<p><strong>需要安装的库</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install pdfminer</span><br><span class="line">pip install pdfminer3k</span><br></pre></td></tr></table></figure>
-<p><strong>实现的源代码</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyocr <span class="comment"># 图像处理库，进行ocr识别</span></span><br><span class="line"><span class="keyword">import</span> importlib <span class="comment"># Python中import语句的实现</span></span><br><span class="line"><span class="keyword">import</span> sys <span class="comment"># 针对与Python解释器相关的变量和方法</span></span><br><span class="line"><span class="keyword">import</span> time <span class="comment"># 基础时间库</span></span><br><span class="line"></span><br><span class="line">importlib.reload(sys)</span><br><span class="line">time1 = time.time()</span><br><span class="line"><span class="comment"># print(&#x27;初始时间为：&#x27;,time1)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os.path</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span> PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span>  PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFResourceManager, PDFPageInterpreter</span><br><span class="line"><span class="keyword">from</span> pdfminer.converter <span class="keyword">import</span> PDFPageAggregator</span><br><span class="line"><span class="keyword">from</span> pdfminer.layout <span class="keyword">import</span> LTTextBoxHorizontal,LAParams</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFTextExtractionNotAllowed</span><br><span class="line"></span><br><span class="line">text_path = <span class="string">r&#x27;D:\文档\预测与决策\第2章 非模型预测方法.pdf&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse</span>():</span></span><br><span class="line">    <span class="comment">#解析PDF文本，并保存到TXT文件中</span></span><br><span class="line">    fp = <span class="built_in">open</span>(text_path,<span class="string">&#x27;rb&#x27;</span>)</span><br><span class="line">    <span class="comment">#用文件对象创建一个PDF文档分析器</span></span><br><span class="line">    parser = PDFParser(fp)</span><br><span class="line">    <span class="comment">#创建一个PDF文档</span></span><br><span class="line">    doc = PDFDocument()</span><br><span class="line">    <span class="comment">#连接分析器，与文档对象</span></span><br><span class="line">    parser.set_document(doc)</span><br><span class="line">    doc.set_parser(parser)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#提供初始化密码，如果没有密码，就创建一个空的字符串</span></span><br><span class="line">    doc.initialize()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#检测文档是否提供txt转换，不提供就忽略</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> doc.is_extractable:</span><br><span class="line">        <span class="keyword">raise</span> PDFTextExtractionNotAllowed</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment">#创建PDF,资源管理器，来共享资源</span></span><br><span class="line">        rsrcmgr = PDFResourceManager()</span><br><span class="line">        <span class="comment">#创建一个PDF设备对象</span></span><br><span class="line">        laparams = LAParams()</span><br><span class="line">        device = PDFPageAggregator(rsrcmgr,laparams=laparams)</span><br><span class="line">        <span class="comment">#创建一个PDF解释器其对象</span></span><br><span class="line">        interpreter = PDFPageInterpreter(rsrcmgr,device)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#循环遍历列表，每次处理一个page内容</span></span><br><span class="line">        <span class="comment">#doc.get_pages()获取page列表</span></span><br><span class="line">        <span class="keyword">for</span> page <span class="keyword">in</span> doc.get_pages():</span><br><span class="line">            interpreter.process_page(page)</span><br><span class="line">            <span class="comment">#接受该页面的LTPage对象</span></span><br><span class="line">            layout = device.get_result()</span><br><span class="line">            <span class="comment"># 这里layout是一个LTPage对象 里面存放着 这个page解析出的各种对象</span></span><br><span class="line">            <span class="comment"># 一般包括LTTextBox, LTFigure, LTImage, LTTextBoxHorizontal 等等</span></span><br><span class="line">            <span class="comment"># 想要获取文本就获得对象的text属性，</span></span><br><span class="line">            <span class="keyword">for</span> x <span class="keyword">in</span> layout:</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">isinstance</span>(x,LTTextBoxHorizontal)):</span><br><span class="line">                    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">r&#x27;C:\Users\86159\Desktop\2.txt&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                        results = x.get_text()</span><br><span class="line">                        <span class="built_in">print</span>(results)</span><br><span class="line">                        f.write(results + <span class="string">&quot;\n&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    parse()</span><br><span class="line">    time2 = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;总共消耗时间为：&#x27;</span>,time2-time1)</span><br></pre></td></tr></table></figure>
-<p><strong>结果分析</strong></p>
-<p>将读取的文字存在一个TXT文档里面</p>
-<p>pdfminer只能识别pdf里的文字，而不会读取pdf里图片里的文字内容</p>
-<p><strong>参考链接</strong></p>
-<p><a href="https://www.cnblogs.com/wj-1314/p/9429816.html">https://www.cnblogs.com/wj-1314/p/9429816.html</a></p>
-]]></content>
-      <categories>
-        <category>写写代码</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>修改github.io站点域名</title>
-    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
-    <content><![CDATA[<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
-<ul>
-<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
-<ul>
-<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&amp;utm_medium=cpc&amp;utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&amp;utm_medium=se-cpc-op&amp;utm_campaign=10045&amp;utm_content=&amp;utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&amp;utm_adplace=AdPlace039520">华为云</a></li>
-</ul>
-</blockquote>
-</li>
-</ul>
-</blockquote>
-<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
-<ul>
-<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20域名设置3.png" alt=""></li>
-<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20域名设置1.png" alt=""></li>
-</ul>
-</blockquote>
-<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
-<ul>
-<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20域名设置2.png" alt=""></li>
-</ul>
-</blockquote>
-<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
-<ul>
-<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
-</ul>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>注册域名</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>启发式算法</title>
     <url>/2022/09/03/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<!-- 显示公式块 -->
@@ -3586,6 +3586,29 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </tags>
   </entry>
   <entry>
+    <title>学车记</title>
+    <url>/2021/08/18/%E5%AD%A6%E8%BD%A6%E8%AE%B0/</url>
+    <content><![CDATA[<h3 id="学车记1"><a href="#学车记1" class="headerlink" title="学车记1"></a>学车记1</h3><details class="folding-tag" blue><summary> 2022-08-16 </summary>
+              <div class='content'>
+              <blockquote><p>一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以<strong>平凡</strong>的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处&gt;~&lt;</p></blockquote><p> <img src="https://s2.loli.net/2022/10/24/XFVj2Lp45G6O9Zu.jpg" alt=""><br> <img src="https://s2.loli.net/2022/10/24/pRKzCZj6twcgUFI.jpg" alt=""></p>
+              </div>
+            </details>
+<h3 id="学车记2"><a href="#学车记2" class="headerlink" title="学车记2"></a>学车记2</h3><details class="folding-tag" blue><summary> 2021-08-17 </summary>
+              <div class='content'>
+              <blockquote><p>今天看完了《平凡的世界》第三部（<em>利用学驾校时间看的手机</em>），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:</p><blockquote><ul><li>平凡又平庸的我们努力奔向爱情。      </li><li>在这平凡的世界里努力过好平凡的生活。</li><li>我这个平凡的世界里平凡的人觉得遥不可及。</li></ul></blockquote><p>同时，今天是keep打卡第一天 fighting~</p></blockquote><p><img src="https://s2.loli.net/2022/10/24/A3tSV7uq4O2EvCw.jpg" alt=""></p>
+              </div>
+            </details>
+<h3 id="学车记3"><a href="#学车记3" class="headerlink" title="学车记3"></a>学车记3</h3><details class="folding-tag" blue><summary> 2021-08-18 </summary>
+              <div class='content'>
+              <p>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。<br><img src="https://s2.loli.net/2022/10/24/EMygeVouihR32Hz.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/TQ6R4bAKCe3MfYh.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/OueoXa2cI1Alr8i.jpg" alt=""></p>
+              </div>
+            </details>
+]]></content>
+      <categories>
+        <category>生活点滴</category>
+      </categories>
+  </entry>
+  <entry>
     <title>网站推送百度</title>
     <url>/2021/07/21/%E7%BD%91%E7%AB%99%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/</url>
     <content><![CDATA[<blockquote>
@@ -3636,27 +3659,27 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </tags>
   </entry>
   <entry>
-    <title>学车记</title>
-    <url>/2021/08/18/%E5%AD%A6%E8%BD%A6%E8%AE%B0/</url>
-    <content><![CDATA[<h3 id="学车记1"><a href="#学车记1" class="headerlink" title="学车记1"></a>学车记1</h3><details class="folding-tag" blue><summary> 2022-08-16 </summary>
-              <div class='content'>
-              <blockquote><p>一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以<strong>平凡</strong>的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处&gt;~&lt;</p></blockquote><p> <img src="https://s2.loli.net/2022/10/24/XFVj2Lp45G6O9Zu.jpg" alt=""><br> <img src="https://s2.loli.net/2022/10/24/pRKzCZj6twcgUFI.jpg" alt=""></p>
-              </div>
-            </details>
-<h3 id="学车记2"><a href="#学车记2" class="headerlink" title="学车记2"></a>学车记2</h3><details class="folding-tag" blue><summary> 2021-08-17 </summary>
-              <div class='content'>
-              <blockquote><p>今天看完了《平凡的世界》第三部（<em>利用学驾校时间看的手机</em>），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:</p><blockquote><ul><li>平凡又平庸的我们努力奔向爱情。      </li><li>在这平凡的世界里努力过好平凡的生活。</li><li>我这个平凡的世界里平凡的人觉得遥不可及。</li></ul></blockquote><p>同时，今天是keep打卡第一天 fighting~</p></blockquote><p><img src="https://s2.loli.net/2022/10/24/A3tSV7uq4O2EvCw.jpg" alt=""></p>
-              </div>
-            </details>
-<h3 id="学车记3"><a href="#学车记3" class="headerlink" title="学车记3"></a>学车记3</h3><details class="folding-tag" blue><summary> 2021-08-18 </summary>
-              <div class='content'>
-              <p>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。<br><img src="https://s2.loli.net/2022/10/24/EMygeVouihR32Hz.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/TQ6R4bAKCe3MfYh.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/OueoXa2cI1Alr8i.jpg" alt=""></p>
-              </div>
-            </details>
-]]></content>
+    <title>选课</title>
+    <url>/2021/08/28/%E9%80%89%E8%AF%BE/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="213bb23c42b2fbb7902be8e50c3198bfc226f7fc7f885b859da4778f5e2d2b04">f4cc23558ba95030556638b09840cfb704f3786c88b878ba14a45b3d167bfac42a44620ebb78b1ce5599f6b8e6d5d041cbc269ae65a01ccd9acf894253ae191875948ae563566b2fd1b6f631f114f4dfbab9a454697ea6b89a29fe8d1f394eceb487dc1e030d322d422b67d25039e07e9392331e79b148d811332b58e8dee95ca5307d1bae4d75f7d2e41fca8773996a591210a5a69e67811159228aaeb02ce04e42736f690b86e53b7451a4649be25935f18d6c97e01fab088aa7ad1ac3fab4207fd627cb5b440511cd6d6ea78b7d4d808b0785adfc1e936df8e1aa13ed23d2f4fcadcaf737d87ba78b45664c308771d183402abf118e0c0f6ef3db0d747702f3c65f88bf7604605932f799780d147fba734382a9b73d52bbff838b15feaedf44c12ac02da335c66f45ee7735dfa27d34e89d55c55eb831b53b240c95b469a6bad08704addaf89d521567182af45041b970e40a1046b7ec38bd3513f106d8dd8575ee6b51fb54d9184d832eb845097f765d90907f60779594f6b7448e92d738ffb43ddcb2ea5a4f9f5ccb131110d3cbd6d74bb3c93400ec75e0d97abf88d7681648bbbbbcb994a8850c3ed62fd0e9676c03b57b0face2ac114ed727e29fa0e9130ad7604961ba080c910896ef56da80184cffcfbd2b8a329b032e4a18fb6b71b11fa517549bff4bf58f1aab0e13890856d0d431c81b08901d69426980773a082da7b976aacda043e2e3791af03ba76efb6d61aa3f12c973eac66c7d24a9d9fa65c1902e22c3cd323bb838d0d536b98338276b0b983f6f5628441edce7ed3ab6539579ad7a558af4e35f8f9fbdb756c96e726442a80c178aee3bc9159a5d12d6321c6787dc58c9270504374d5d942dd7504d134682726a1771055a6f4dc17c1566ff4261d68ef959808a6f664fdac368f881a3a5104877944ab22b585fff8b01c32254c90dfb715c41a6e7ac969f457a6d669bbda9d50234e712d6db37219e91e5998ba938f72d87d23067383f87284a434b775aae80103a07c9707a8af9b8c71eade97d40d6065c3ee4a4c65f35a41a95941f1ef5d0c863bb5e504159997623d0e06f6398cc7eea6593b736a9c13d74ed61545ca9e4c80544b14b6db468389721a9dc34b7031f4d8732ad4fbdf07ad78544d235eb3d22706ff05056690013f2b5af599332629b8e4a3d77439c2d064cf32dc97df42e86794992894fb6b05d9c03c92d1ac8d26e4df44b112ed78579eac16056e53113d1dbbb784039879a8bcb278bca0adece373759c6137d9157ad817c55757843d960192c45bcef569f392529d389670bf9f00dc0beca5c9c65f79c86d1d88274bfa72c3bc0c959a8b9ab14cd3eaa14da12511f47aad2c2a973a96f87ffd4259e56e2b0e60159b02e510671c78a46c82ab779aa153fd38d570f039c078eeb7907eb930e86fdf1c16a333527637f9d258dbe5ababca20632a19a92276c5971ec79659b120a83add8e6305f97c0fb43178135b55c155cfb6b8e02d51cf71b5a21547daca6c81eed64108738ad38b699daff732b4e838ec5a9997e6ca2d186a2934b3d2cc81d154e90a8cb9bda37537001221d0548008ec468a6dce59b4b079028195ee5a66cdab81064624d30f30c3a746d9806c1ed20e4156b5b7d79525d38d66934097df1ff4ad60b706a611b827cf847d00005eac089e06a424d37dcf6a9723951f27f8979d6a7916f50de347217de3f33ad07390094d3e98d3a9f699fde5fd67b6b62a43494116ad434b6bea2f0b7df902d30feefc4e5ea5bfa8550bf40a8e84a82f335c8b7a29f69e0de30180d85090e2a8a41c0183d74a286ab7a3edf23149b11596493117002d01d457e839f9bbdcbeffb3a2e2a95220269dc2968898d3efd2f4fa24634613dba5711d35d750e64efd66dae939efa676fe84ebe7308bad46896878a65baacb1779eee57b0e804a46e0cf16e7485fefe0a0e2b962131699bbe4cc75cd31ee66aed64223944d85905a03609fd4034ef58325ceeab80d5d7ce66396636ce2d8ef923480d41c08fb6b5fe0c798aaf198c889b589cb8890f32636d5483bae3585ee75c369a490d5a5b1096f2d267e5ca3ef1919542bb4bfcad3ee4ff4fafac632a13bc0ab07a651d0a0a5cb1d9eece429827401844a1229702aa1a7fd63f7677a51d2c394bc9e367e790182bc90fb1cbd820161231e9e8b36b754a4a49d0b7b929bbe3472fbd8b215edeee71a4bad84677b6c49c89a63124fdf1fa00b13116c4da8beccd49ea5a0a05fe3290696293a7a5ce3be39a19f76d14ddf334ecf7fb7c47485f14e9d798d2d20e7819837c379102f8d5e27d02678edf38990006c1a3a04d0d94d4351c6e022e0e69858e44f776053e1eb20ea3ec89ceba0080bf8e700889bf896207fd0b41f3d1726a60355ab8fbd2a4bab6b0b7bc50d19b2e58a33e148e77fdd5b62bdea6961742eb8b775f0f439fefb8e830bff7cfcde65c4adff72084298a1f99aa963424d131ab39a299f24c0b701316befc120d73045365e70b69d51e9857fd00cf8eb47f548c817cca05c7f3be5abbdb0e6ae522befc65f088b38e45289feab0114bb1b79255214bfa3d18419c9fe265437e9aefe212a3daaa9a45c1daf97eaf647fde6211ed44125e3df348eb95a3d6a8873bed2a5d33b9fdb5ec44fc78ed9b1852761b69e545cf5cb63f976f66571af91d11ebc499fbee2c2b97c8bfd5e2c556824cc4f3b0c17b609f2643ae0a128ae2ac62985e0843dabfe03457a511a76472f137500fafd086298a2e6455bb4984212282768b67c1315e568380d8d6841394eeeca2f3029d4519514c741110254b3bd8e48bb3a79b06567bdcf78cff73a7e8af6bcf067a4b5ae804cf33a06f64d80e6b04767f4530f657ac512043d55916e4ab5aef83b470b68e2aacacc0b3b2697f61279d18cf07b1e728a35564587d3e0048aea6825ef8c6203ec53600940036d2ec2c2824c28919e6e7af3f4a2cd9597139fb97091eaac36a14cea2d1de09a2ef6ec48a13ab9769678b335406f89762d25b1f9bf59eedc6f6aad7ad1d304fb554378e7976347f0821cc34c7c10b7e26830414dd820402e13b19815db7ce46f49f861ac5e3bcd81d0a55c96fefc5514123ae083a60c45b50e480e007f46b50d5d08bf6120839af9e3f2781d65cfc78bce62ec694ebd2fb9dceabd3ee1ad87f3c70c45823de7839eb2d3f333f98295951f46861b70cef83bd9b49f2b9f0832401bd344d1e291113bac7907dd14204c5a41e39a5a0a4439283d626fac0b8330fdea33eefab718ef6a24d7635043583902c5da0969f86eef1ac796764c177de0e50bc8dfffc3c3574719c3bb4c06c369d10679a0742cec832e1643a74fd29623aff2307f4bf53e6f1d6e5b3060270d6332f2d985af7e6e5c0d605825b5a3825483b4f012d7d9f7eb3c2915832b63b27e95c8b7650602e0552a196e6be1ac1d5992d29ab5343f94b6ed0908934dc3e1ce923209fcc015139239d086ffa77035f9d091c9c0dafae242ace24db961172450a23817268853c1bebd4138c53ad0a639455bddd1697d35b4ceb666797364b126df2c55d4220f8c1351ef559e2cdac4c7f0b569764c060ee4ae8a33e3ec8cb3d7e76375fa3e64cdd7bea50381975f4e4b7a91a621539c03616342eb4ec98e5d48432f2d6ccfc9acd7ae98770ccc6d6b084eb7a0d686911723005b06d7a396a6e32b8c60646b17ff00ca34ade84a89ec1b5466578662c990a45dbc872b9a2d3b4084a563231139104d3500700000f5090ce9a8068313236c0458beef3c1208f33d20d0e2727c9a5a30bb5a3657f8cf4c1cfa3eb3a99d4004b82e4017355cec06e7ad689e86d434f08bcb0be2fc3baf63b0159d2e15a4559380224e5024949709b8aef671382ff13a976ab135e27ac5d7cf83cda292fb2dd219b5b46c52ea61040e01c7028126254ababd376271a62771fbde7b82684eacf9df3b723ae2d799af90d309c2e6a88947e82f516b9ebc57947c6bb26313bfa75784fa756b311628490aa0c111106cc6cb4a9661e92f4698ecec834fe6362b210facd84093662ebcdd639445781959c235651d7ed08151ca38d3268604e53b07ae362ade8c9a89e00eaf3469ca8c593fc6bf32b91ee3af60e2e6a6b89326f578b3a0855aea15c94f544ccc53b15e5f6f1cd5d2272e5523a5b4beb8eee346dce8508626750fde7e021c3b4aa782250612499ee71d4ac1e6e2dacba81da2447a822213c8267bcac7dcb91d730186a32f0c429e1d217d27ff34cd985d9bf5678cd8c9d0887179c426203c96359f9e4db2ad43bfe3cbdb6bcf5f0861a1db30cedacefdb8f2d7a1f144b74a23d5fb1d87d56bc3532f4c500d13bc51165</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码访问</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>生活点滴</category>
       </categories>
+      <tags>
+        <tag>选课</tag>
+        <tag>大学生活</tag>
+      </tags>
   </entry>
   <entry>
     <title>虚拟机安装macOS系统</title>
@@ -3696,29 +3719,6 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </categories>
       <tags>
         <tag>虚拟机</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>选课</title>
-    <url>/2021/08/28/%E9%80%89%E8%AF%BE/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="213bb23c42b2fbb7902be8e50c3198bfc226f7fc7f885b859da4778f5e2d2b04">f4cc23558ba95030556638b09840cfb704f3786c88b878ba14a45b3d167bfac42a44620ebb78b1ce5599f6b8e6d5d041cbc269ae65a01ccd9acf894253ae191875948ae563566b2fd1b6f631f114f4dfbab9a454697ea6b89a29fe8d1f394eceb487dc1e030d322d422b67d25039e07e9392331e79b148d811332b58e8dee95ca5307d1bae4d75f7d2e41fca8773996a591210a5a69e67811159228aaeb02ce04e42736f690b86e53b7451a4649be25935f18d6c97e01fab088aa7ad1ac3fab4207fd627cb5b440511cd6d6ea78b7d4d808b0785adfc1e936df8e1aa13ed23d2f4fcadcaf737d87ba78b45664c308771d183402abf118e0c0f6ef3db0d747702f3c65f88bf7604605932f799780d147fba734382a9b73d52bbff838b15feaedf44c12ac02da335c66f45ee7735dfa27d34e89d55c55eb831b53b240c95b469a6bad08704addaf89d521567182af45041b970e40a1046b7ec38bd3513f106d8dd8575ee6b51fb54d9184d832eb845097f765d90907f60779594f6b7448e92d738ffb43ddcb2ea5a4f9f5ccb131110d3cbd6d74bb3c93400ec75e0d97abf88d7681648bbbbbcb994a8850c3ed62fd0e9676c03b57b0face2ac114ed727e29fa0e9130ad7604961ba080c910896ef56da80184cffcfbd2b8a329b032e4a18fb6b71b11fa517549bff4bf58f1aab0e13890856d0d431c81b08901d69426980773a082da7b976aacda043e2e3791af03ba76efb6d61aa3f12c973eac66c7d24a9d9fa65c1902e22c3cd323bb838d0d536b98338276b0b983f6f5628441edce7ed3ab6539579ad7a558af4e35f8f9fbdb756c96e726442a80c178aee3bc9159a5d12d6321c6787dc58c9270504374d5d942dd7504d134682726a1771055a6f4dc17c1566ff4261d68ef959808a6f664fdac368f881a3a5104877944ab22b585fff8b01c32254c90dfb715c41a6e7ac969f457a6d669bbda9d50234e712d6db37219e91e5998ba938f72d87d23067383f87284a434b775aae80103a07c9707a8af9b8c71eade97d40d6065c3ee4a4c65f35a41a95941f1ef5d0c863bb5e504159997623d0e06f6398cc7eea6593b736a9c13d74ed61545ca9e4c80544b14b6db468389721a9dc34b7031f4d8732ad4fbdf07ad78544d235eb3d22706ff05056690013f2b5af599332629b8e4a3d77439c2d064cf32dc97df42e86794992894fb6b05d9c03c92d1ac8d26e4df44b112ed78579eac16056e53113d1dbbb784039879a8bcb278bca0adece373759c6137d9157ad817c55757843d960192c45bcef569f392529d389670bf9f00dc0beca5c9c65f79c86d1d88274bfa72c3bc0c959a8b9ab14cd3eaa14da12511f47aad2c2a973a96f87ffd4259e56e2b0e60159b02e510671c78a46c82ab779aa153fd38d570f039c078eeb7907eb930e86fdf1c16a333527637f9d258dbe5ababca20632a19a92276c5971ec79659b120a83add8e6305f97c0fb43178135b55c155cfb6b8e02d51cf71b5a21547daca6c81eed64108738ad38b699daff732b4e838ec5a9997e6ca2d186a2934b3d2cc81d154e90a8cb9bda37537001221d0548008ec468a6dce59b4b079028195ee5a66cdab81064624d30f30c3a746d9806c1ed20e4156b5b7d79525d38d66934097df1ff4ad60b706a611b827cf847d00005eac089e06a424d37dcf6a9723951f27f8979d6a7916f50de347217de3f33ad07390094d3e98d3a9f699fde5fd67b6b62a43494116ad434b6bea2f0b7df902d30feefc4e5ea5bfa8550bf40a8e84a82f335c8b7a29f69e0de30180d85090e2a8a41c0183d74a286ab7a3edf23149b11596493117002d01d457e839f9bbdcbeffb3a2e2a95220269dc2968898d3efd2f4fa24634613dba5711d35d750e64efd66dae939efa676fe84ebe7308bad46896878a65baacb1779eee57b0e804a46e0cf16e7485fefe0a0e2b962131699bbe4cc75cd31ee66aed64223944d85905a03609fd4034ef58325ceeab80d5d7ce66396636ce2d8ef923480d41c08fb6b5fe0c798aaf198c889b589cb8890f32636d5483bae3585ee75c369a490d5a5b1096f2d267e5ca3ef1919542bb4bfcad3ee4ff4fafac632a13bc0ab07a651d0a0a5cb1d9eece429827401844a1229702aa1a7fd63f7677a51d2c394bc9e367e790182bc90fb1cbd820161231e9e8b36b754a4a49d0b7b929bbe3472fbd8b215edeee71a4bad84677b6c49c89a63124fdf1fa00b13116c4da8beccd49ea5a0a05fe3290696293a7a5ce3be39a19f76d14ddf334ecf7fb7c47485f14e9d798d2d20e7819837c379102f8d5e27d02678edf38990006c1a3a04d0d94d4351c6e022e0e69858e44f776053e1eb20ea3ec89ceba0080bf8e700889bf896207fd0b41f3d1726a60355ab8fbd2a4bab6b0b7bc50d19b2e58a33e148e77fdd5b62bdea6961742eb8b775f0f439fefb8e830bff7cfcde65c4adff72084298a1f99aa963424d131ab39a299f24c0b701316befc120d73045365e70b69d51e9857fd00cf8eb47f548c817cca05c7f3be5abbdb0e6ae522befc65f088b38e45289feab0114bb1b79255214bfa3d18419c9fe265437e9aefe212a3daaa9a45c1daf97eaf647fde6211ed44125e3df348eb95a3d6a8873bed2a5d33b9fdb5ec44fc78ed9b1852761b69e545cf5cb63f976f66571af91d11ebc499fbee2c2b97c8bfd5e2c556824cc4f3b0c17b609f2643ae0a128ae2ac62985e0843dabfe03457a511a76472f137500fafd086298a2e6455bb4984212282768b67c1315e568380d8d6841394eeeca2f3029d4519514c741110254b3bd8e48bb3a79b06567bdcf78cff73a7e8af6bcf067a4b5ae804cf33a06f64d80e6b04767f4530f657ac512043d55916e4ab5aef83b470b68e2aacacc0b3b2697f61279d18cf07b1e728a35564587d3e0048aea6825ef8c6203ec53600940036d2ec2c2824c28919e6e7af3f4a2cd9597139fb97091eaac36a14cea2d1de09a2ef6ec48a13ab9769678b335406f89762d25b1f9bf59eedc6f6aad7ad1d304fb554378e7976347f0821cc34c7c10b7e26830414dd820402e13b19815db7ce46f49f861ac5e3bcd81d0a55c96fefc5514123ae083a60c45b50e480e007f46b50d5d08bf6120839af9e3f2781d65cfc78bce62ec694ebd2fb9dceabd3ee1ad87f3c70c45823de7839eb2d3f333f98295951f46861b70cef83bd9b49f2b9f0832401bd344d1e291113bac7907dd14204c5a41e39a5a0a4439283d626fac0b8330fdea33eefab718ef6a24d7635043583902c5da0969f86eef1ac796764c177de0e50bc8dfffc3c3574719c3bb4c06c369d10679a0742cec832e1643a74fd29623aff2307f4bf53e6f1d6e5b3060270d6332f2d985af7e6e5c0d605825b5a3825483b4f012d7d9f7eb3c2915832b63b27e95c8b7650602e0552a196e6be1ac1d5992d29ab5343f94b6ed0908934dc3e1ce923209fcc015139239d086ffa77035f9d091c9c0dafae242ace24db961172450a23817268853c1bebd4138c53ad0a639455bddd1697d35b4ceb666797364b126df2c55d4220f8c1351ef559e2cdac4c7f0b569764c060ee4ae8a33e3ec8cb3d7e76375fa3e64cdd7bea50381975f4e4b7a91a621539c03616342eb4ec98e5d48432f2d6ccfc9acd7ae98770ccc6d6b084eb7a0d686911723005b06d7a396a6e32b8c60646b17ff00ca34ade84a89ec1b5466578662c990a45dbc872b9a2d3b4084a563231139104d3500700000f5090ce9a8068313236c0458beef3c1208f33d20d0e2727c9a5a30bb5a3657f8cf4c1cfa3eb3a99d4004b82e4017355cec06e7ad689e86d434f08bcb0be2fc3baf63b0159d2e15a4559380224e5024949709b8aef671382ff13a976ab135e27ac5d7cf83cda292fb2dd219b5b46c52ea61040e01c7028126254ababd376271a62771fbde7b82684eacf9df3b723ae2d799af90d309c2e6a88947e82f516b9ebc57947c6bb26313bfa75784fa756b311628490aa0c111106cc6cb4a9661e92f4698ecec834fe6362b210facd84093662ebcdd639445781959c235651d7ed08151ca38d3268604e53b07ae362ade8c9a89e00eaf3469ca8c593fc6bf32b91ee3af60e2e6a6b89326f578b3a0855aea15c94f544ccc53b15e5f6f1cd5d2272e5523a5b4beb8eee346dce8508626750fde7e021c3b4aa782250612499ee71d4ac1e6e2dacba81da2447a822213c8267bcac7dcb91d730186a32f0c429e1d217d27ff34cd985d9bf5678cd8c9d0887179c426203c96359f9e4db2ad43bfe3cbdb6bcf5f0861a1db30cedacefdb8f2d7a1f144b74a23d5fb1d87d56bc3532f4c500d13bc51165</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码访问</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>生活点滴</category>
-      </categories>
-      <tags>
-        <tag>选课</tag>
-        <tag>大学生活</tag>
       </tags>
   </entry>
 </search>
