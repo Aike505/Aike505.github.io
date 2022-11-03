@@ -18,6 +18,38 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo 新建分类和标签</title>
+    <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
+    <content><![CDATA[<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
+<h2 id="1-创建“分类”选项"><a href="#1-创建“分类”选项" class="headerlink" title="1.创建“分类”选项"></a>1.创建“分类”选项</h2><p>生成“分类”页并添加 tpye 属性,进入博客目录。执行命令下方命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+<p>categories 文件夹下会有 index.md 这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2019-04-24 15:30:30</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>保存并关闭文件。</p>
+<p>给文章添加“categories”属性</p>
+<p>打开需要添加分类的文章，为其添加 categories 属性。下方的 categories:Hexo 表示这篇文章添加到到“Hexo”这个分类。注意：一篇文章只会添加到一个分类中，如果是多个默认放到第一个分类中。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 添加分类及标签</span><br><span class="line">date: 2017-05-26 12:12:57</span><br><span class="line">categories: Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了 categories: xxx 的文章才会被收录到首页的“分类”中。</p>
+<h2 id="2-创建“标签”选项"><a href="#2-创建“标签”选项" class="headerlink" title="2.创建“标签”选项"></a>2.创建“标签”选项</h2><p>生成“标签”页并添加 tpye 属性</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+<p>在 tags 文件夹下，找到 index.md 这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-22 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>添加 type: “tags”到内容中，添加后是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>保存并关闭文件。</p>
+<p>给文章添加“tags”属性,打开需要添加标签的文章，为其添加 tags 属性。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 添加分类及标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">categories:</span><br><span class="line">           - Hexo</span><br><span class="line">tags:</span><br><span class="line">           - 博客</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+        <tag>新建分类标签</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python程序设计二级考试必看</title>
     <url>/2021/09/04/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E5%BF%85%E7%9C%8B/</url>
     <content><![CDATA[<h1 id="1-程序设计基本方法"><a href="#1-程序设计基本方法" class="headerlink" title="1.程序设计基本方法"></a>1.程序设计基本方法</h1><ul>
@@ -1926,35 +1958,51 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo 新建分类和标签</title>
-    <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
-    <content><![CDATA[<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
-<h2 id="1-创建“分类”选项"><a href="#1-创建“分类”选项" class="headerlink" title="1.创建“分类”选项"></a>1.创建“分类”选项</h2><p>生成“分类”页并添加 tpye 属性,进入博客目录。执行命令下方命令</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-<p>categories 文件夹下会有 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2019-04-24 15:30:30</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>保存并关闭文件。</p>
-<p>给文章添加“categories”属性</p>
-<p>打开需要添加分类的文章，为其添加 categories 属性。下方的 categories:Hexo 表示这篇文章添加到到“Hexo”这个分类。注意：一篇文章只会添加到一个分类中，如果是多个默认放到第一个分类中。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 添加分类及标签</span><br><span class="line">date: 2017-05-26 12:12:57</span><br><span class="line">categories: Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了 categories: xxx 的文章才会被收录到首页的“分类”中。</p>
-<h2 id="2-创建“标签”选项"><a href="#2-创建“标签”选项" class="headerlink" title="2.创建“标签”选项"></a>2.创建“标签”选项</h2><p>生成“标签”页并添加 tpye 属性</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-<p>在 tags 文件夹下，找到 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-22 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>添加 type: “tags”到内容中，添加后是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>保存并关闭文件。</p>
-<p>给文章添加“tags”属性,打开需要添加标签的文章，为其添加 tags 属性。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 添加分类及标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">categories:</span><br><span class="line">           - Hexo</span><br><span class="line">tags:</span><br><span class="line">           - 博客</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+    <title>hexo的安装和在github部署博客</title>
+    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>打开 git 下 git bash 输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
+<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
+<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
+<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
+<hr>
+<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
 ]]></content>
       <categories>
         <category>博客相关</category>
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>博客</tag>
-        <tag>新建分类标签</tag>
+        <tag>部署博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo部署各种错误的解决方式</title>
+    <url>/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\blog\aikeblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:394:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\blog\aikeblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
+<h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol>
+<li>删除<code>.deploy_git</code>文件夹;</li>
+<li>输入 git<br><code>config --global core.autocrlf false</code></li>
+<li>然后，依次执行：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>问题解决。暴力直接，有效。</p>
+<h1 id="2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git‘: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git">https://github.com/.../.git</a>‘: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
+        <tag>bug</tag>
       </tags>
   </entry>
   <entry>
@@ -2953,7 +3001,7 @@
 <h3 id="音乐-Aplayer"><a href="#音乐-Aplayer" class="headerlink" title="音乐 Aplayer"></a>音乐 Aplayer</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% aplayerlist %&#125;</span><br><span class="line">&#123;</span><br><span class="line">    &quot;narrow&quot;: false,// （可选）播放器袖珍风格</span><br><span class="line">    &quot;autoplay&quot;: true,// （可选) 自动播放，移动端浏览器暂时不支持此功能</span><br><span class="line">    &quot;mode&quot;: &quot;random&quot;,// （可选）曲目循环类型，有 &#x27;random&#x27;（随机播放）, &#x27;single&#x27; (单曲播放), &#x27;circulation&#x27; (循环播放), &#x27;order&#x27; (列表播放)， 默认：&#x27;circulation&#x27;</span><br><span class="line">    &quot;showlrc&quot;: 3,// （可选）歌词显示配置项，可选项有：1,2,3</span><br><span class="line">    &quot;mutex&quot;: true,// （可选）该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</span><br><span class="line">    &quot;theme&quot;: &quot;#e6d0b2&quot;,// （可选）播放器风格色彩设置，默认：#b7daff</span><br><span class="line">    &quot;preload&quot;: &quot;metadata&quot;,// （可选）音乐文件预载入模式，可选项： &#x27;none&#x27; &#x27;metadata&#x27; &#x27;auto&#x27;, 默认: &#x27;auto&#x27;</span><br><span class="line">    &quot;listmaxheight&quot;: &quot;513px&quot;,// (可选) 该播放列表的最大长度</span><br><span class="line">    &quot;music&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;CoCo&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;Jeff Williams&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;caffeine.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;caffeine.jpeg&quot;,</span><br><span class="line">            &quot;lrc&quot;: &quot;caffeine.txt&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;アイロニ&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;鹿乃&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;irony.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;irony.jpg&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br><span class="line">&#123;% endaplayerlist %&#125;</span><br></pre></td></tr></table></figure>
 <p>简单示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 
-    <div id="aplayer-mAYGqJLK" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-uEapRnjh" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <p>进阶示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
@@ -2972,29 +3020,6 @@ title Key elements in Product X
       </categories>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo的安装和在github部署博客</title>
-    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>打开 git 下 git bash 输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
-<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
-<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
-<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
-<hr>
-<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
       </tags>
   </entry>
   <entry>
@@ -3229,31 +3254,6 @@ title Key elements in Product X
       </tags>
   </entry>
   <entry>
-    <title>hexo部署各种错误的解决方式</title>
-    <url>/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\blog\aikeblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:394:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\blog\aikeblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
-<h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p>
-<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol>
-<li>删除<code>.deploy_git</code>文件夹;</li>
-<li>输入 git<br><code>config --global core.autocrlf false</code></li>
-<li>然后，依次执行：</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>问题解决。暴力直接，有效。</p>
-<h1 id="2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git‘: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git">https://github.com/.../.git</a>‘: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
-        <tag>bug</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>修改github.io站点域名</title>
     <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
     <content><![CDATA[<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
@@ -3288,93 +3288,6 @@ title Key elements in Product X
       </categories>
       <tags>
         <tag>注册域名</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python库学习</title>
-    <url>/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h3 id="pandas库"><a href="#pandas库" class="headerlink" title="pandas库"></a>pandas库</h3><p>pandas 是基于Numpy的一种工具，主要用于数据分析任务。Pandas 纳入了大量库和一些标准的数据模型，提供了高校第操作大型数据集所需要的工具。pandas 的名称来自面板数据（panel data）和python数据分析（data analysis）。</p>
-<ul>
-<li>可以从CSV、JSON、SQL、Microsoft Excel导入数据</li>
-<li>主要数据结构Series（一维数据）和DataFrame（二维数据）</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># pandas 简单实例</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mydataset = &#123;</span><br><span class="line">	<span class="string">&#x27;sites&#x27;</span>:[<span class="string">&#x27;Google&#x27;</span>,<span class="string">&#x27;Runoob&#x27;</span>,<span class="string">&#x27;Wiki&#x27;</span>],</span><br><span class="line">	<span class="string">&#x27;number&#x27;</span>:[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">	&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.DataFrame(mydataset)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line">    sites  number</span><br><span class="line"><span class="number">0</span>  Google       <span class="number">1</span></span><br><span class="line"><span class="number">1</span>  Runoob       <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    Wiki       <span class="number">3</span></span><br></pre></td></tr></table></figure>
-<h4 id="Pandas-Series"><a href="#Pandas-Series" class="headerlink" title="Pandas Series"></a>Pandas Series</h4><ul>
-<li>pandas series类似表格的一列，类似一维数组。</li>
-<li><p>可以用list 和key/value对象创建Series</p>
-</li>
-<li><p>由索引（index）和列组成</p>
-</li>
-</ul>
-<p>Series构造方法如下：</p>
-<p><code>pandas.Series(data,index,dtype,name,copy)</code></p>
-<p>data：数据(ndarray类型)    index：索引标签，默认从0开始    dtype：数据类型，默认自己判断    name：名称    copy：拷贝数据，默认False</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(a)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">0</span>    <span class="number">1</span></span><br><span class="line"><span class="number">1</span>    <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    <span class="number">3</span></span><br><span class="line">dtype: int64</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>sites = &#123;<span class="number">1</span>: <span class="string">&quot;Google&quot;</span>, <span class="number">2</span>: <span class="string">&quot;Runoob&quot;</span>, <span class="number">3</span>: <span class="string">&quot;Wiki&quot;</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(sites, index = [<span class="number">1</span>, <span class="number">2</span>], name=<span class="string">&quot;aike&quot;</span> )</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">1</span>    Google</span><br><span class="line"><span class="number">2</span>    Runoob</span><br><span class="line">Name: aike, dtype: <span class="built_in">object</span></span><br></pre></td></tr></table></figure>
-<h4 id="Pandas-DataFrame"><a href="#Pandas-DataFrame" class="headerlink" title="Pandas DataFrame"></a>Pandas DataFrame</h4><ul>
-<li>表格类型数据</li>
-<li>既有行索引，也有列索引</li>
-</ul>
-<p>DataFrame构造方法：</p>
-<p><code>pandas.DataFrame(data,index,columns,dtype,copy)</code></p>
-<p>columns：列标签，默认为RangeIndex（0,1,2，……，n）</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>data = [[<span class="string">&#x27;Google&#x27;</span>,<span class="number">10</span>],[<span class="string">&#x27;Runoob&#x27;</span>,<span class="number">12</span>],[<span class="string">&#x27;Wike&#x27;</span>,<span class="number">13</span>]]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df = pd.DataFrame(data,columns=[<span class="string">&#x27;Site&#x27;</span>,<span class="string">&#x27;Age&#x27;</span>],dtype=<span class="built_in">float</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df</span><br><span class="line">     Site   Age</span><br><span class="line"><span class="number">0</span>  Google  <span class="number">10.0</span></span><br><span class="line"><span class="number">1</span>  Runoob  <span class="number">12.0</span></span><br><span class="line"><span class="number">2</span>    Wike  <span class="number">13.0</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>loc[ ]：返回指定索引的行</p>
-</li>
-<li><p>loc[[ ]]：返回多行数据</p>
-</li>
-</ul>
-<h4 id="Pandas-CSV文件"><a href="#Pandas-CSV文件" class="headerlink" title="Pandas CSV文件"></a>Pandas CSV文件</h4><p>CSV（<strong>C</strong>omma-<strong>S</strong>eparated <strong>V</strong>alues，逗号分隔值）一般用逗号分割，以纯文本数据存储表格数据（数字和文本）。</p>
-<ul>
-<li>pd.to_string( )：返回DataFrame类型数据</li>
-<li>pd.read_csv( )：读取csv数据</li>
-<li>pd.to_csv( )：将DataFrame存储为csv文件</li>
-<li>df.head(n)：读取回前n行</li>
-<li>df.tail(n)：读取尾部几行</li>
-<li>df.info( )：返回表格基本信息（行列数、各列数据类型）</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import pandas as pd</span><br><span class="line">df = pd.read_csv(&#x27;nba.csv&#x27;)</span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
-<h4 id="Pandas-JSON"><a href="#Pandas-JSON" class="headerlink" title="Pandas JSON"></a>Pandas JSON</h4><p>JSON（<strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation，JavaScript对象表示法），存储和交换文本信息的语法。</p>
-<ul>
-<li>Json可转换为DataFrame</li>
-<li>可以从url中读取json数据</li>
-<li>读取内嵌json<ul>
-<li>pd.json_normalize(data, record_path, meta)</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 Python JSON 模块载入数据</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;nested_list.json&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = json.loads(f.read())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 展平数据</span></span><br><span class="line">df_nested_list = pd.json_normalize(data, record_path =[<span class="string">&#x27;students&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span>(df_nested_list)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>安装glom模块：用.来访问内嵌对象的属性</li>
-</ul>
-<h4 id="Pandas-数据清洗"><a href="#Pandas-数据清洗" class="headerlink" title="Pandas 数据清洗"></a>Pandas 数据清洗</h4><ul>
-<li>缺失</li>
-<li>格式错误</li>
-<li>错误数据或重复数据</li>
-</ul>
-<h5 id="清洗空值"><a href="#清洗空值" class="headerlink" title="清洗空值"></a>清洗空值</h5><ul>
-<li>dropna( )：删除包含空字段的行</li>
-</ul>
-<p><code>DataFrame.dropna(axis=0, how=&#39;any&#39;, thresh=None, subset=None, inplace=False)</code></p>
-<h3 id="pdfminer库"><a href="#pdfminer库" class="headerlink" title="pdfminer库"></a>pdfminer库</h3><p><strong>问题描述</strong></p>
-<p>利用python读取PDF文本内容</p>
-<p><strong>运行环境</strong></p>
-<p>python 3.6</p>
-<p><strong>需要安装的库</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install pdfminer</span><br><span class="line">pip install pdfminer3k</span><br></pre></td></tr></table></figure>
-<p><strong>实现的源代码</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyocr <span class="comment"># 图像处理库，进行ocr识别</span></span><br><span class="line"><span class="keyword">import</span> importlib <span class="comment"># Python中import语句的实现</span></span><br><span class="line"><span class="keyword">import</span> sys <span class="comment"># 针对与Python解释器相关的变量和方法</span></span><br><span class="line"><span class="keyword">import</span> time <span class="comment"># 基础时间库</span></span><br><span class="line"></span><br><span class="line">importlib.reload(sys)</span><br><span class="line">time1 = time.time()</span><br><span class="line"><span class="comment"># print(&#x27;初始时间为：&#x27;,time1)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os.path</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span> PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span>  PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFResourceManager, PDFPageInterpreter</span><br><span class="line"><span class="keyword">from</span> pdfminer.converter <span class="keyword">import</span> PDFPageAggregator</span><br><span class="line"><span class="keyword">from</span> pdfminer.layout <span class="keyword">import</span> LTTextBoxHorizontal,LAParams</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFTextExtractionNotAllowed</span><br><span class="line"></span><br><span class="line">text_path = <span class="string">r&#x27;D:\文档\预测与决策\第2章 非模型预测方法.pdf&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse</span>():</span></span><br><span class="line">    <span class="comment">#解析PDF文本，并保存到TXT文件中</span></span><br><span class="line">    fp = <span class="built_in">open</span>(text_path,<span class="string">&#x27;rb&#x27;</span>)</span><br><span class="line">    <span class="comment">#用文件对象创建一个PDF文档分析器</span></span><br><span class="line">    parser = PDFParser(fp)</span><br><span class="line">    <span class="comment">#创建一个PDF文档</span></span><br><span class="line">    doc = PDFDocument()</span><br><span class="line">    <span class="comment">#连接分析器，与文档对象</span></span><br><span class="line">    parser.set_document(doc)</span><br><span class="line">    doc.set_parser(parser)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#提供初始化密码，如果没有密码，就创建一个空的字符串</span></span><br><span class="line">    doc.initialize()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#检测文档是否提供txt转换，不提供就忽略</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> doc.is_extractable:</span><br><span class="line">        <span class="keyword">raise</span> PDFTextExtractionNotAllowed</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment">#创建PDF,资源管理器，来共享资源</span></span><br><span class="line">        rsrcmgr = PDFResourceManager()</span><br><span class="line">        <span class="comment">#创建一个PDF设备对象</span></span><br><span class="line">        laparams = LAParams()</span><br><span class="line">        device = PDFPageAggregator(rsrcmgr,laparams=laparams)</span><br><span class="line">        <span class="comment">#创建一个PDF解释器其对象</span></span><br><span class="line">        interpreter = PDFPageInterpreter(rsrcmgr,device)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#循环遍历列表，每次处理一个page内容</span></span><br><span class="line">        <span class="comment">#doc.get_pages()获取page列表</span></span><br><span class="line">        <span class="keyword">for</span> page <span class="keyword">in</span> doc.get_pages():</span><br><span class="line">            interpreter.process_page(page)</span><br><span class="line">            <span class="comment">#接受该页面的LTPage对象</span></span><br><span class="line">            layout = device.get_result()</span><br><span class="line">            <span class="comment"># 这里layout是一个LTPage对象 里面存放着 这个page解析出的各种对象</span></span><br><span class="line">            <span class="comment"># 一般包括LTTextBox, LTFigure, LTImage, LTTextBoxHorizontal 等等</span></span><br><span class="line">            <span class="comment"># 想要获取文本就获得对象的text属性，</span></span><br><span class="line">            <span class="keyword">for</span> x <span class="keyword">in</span> layout:</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">isinstance</span>(x,LTTextBoxHorizontal)):</span><br><span class="line">                    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">r&#x27;C:\Users\86159\Desktop\2.txt&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                        results = x.get_text()</span><br><span class="line">                        <span class="built_in">print</span>(results)</span><br><span class="line">                        f.write(results + <span class="string">&quot;\n&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    parse()</span><br><span class="line">    time2 = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;总共消耗时间为：&#x27;</span>,time2-time1)</span><br></pre></td></tr></table></figure>
-<p><strong>结果分析</strong></p>
-<p>将读取的文字存在一个TXT文档里面</p>
-<p>pdfminer只能识别pdf里的文字，而不会读取pdf里图片里的文字内容</p>
-<p><strong>参考链接</strong></p>
-<p><a href="https://www.cnblogs.com/wj-1314/p/9429816.html">https://www.cnblogs.com/wj-1314/p/9429816.html</a></p>
-]]></content>
-      <categories>
-        <category>写写代码</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
       </tags>
   </entry>
   <entry>
@@ -3607,6 +3520,110 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       <categories>
         <category>生活点滴</category>
       </categories>
+  </entry>
+  <entry>
+    <title>python库学习</title>
+    <url>/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h3 id="pandas库"><a href="#pandas库" class="headerlink" title="pandas库"></a>pandas库</h3><p>pandas 是基于Numpy的一种工具，主要用于数据分析任务。Pandas 纳入了大量库和一些标准的数据模型，提供了高校第操作大型数据集所需要的工具。pandas 的名称来自面板数据（panel data）和python数据分析（data analysis）。</p>
+<ul>
+<li>可以从CSV、JSON、SQL、Microsoft Excel导入数据</li>
+<li>主要数据结构Series（一维数据）和DataFrame（二维数据）</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># pandas 简单实例</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mydataset = &#123;</span><br><span class="line">	<span class="string">&#x27;sites&#x27;</span>:[<span class="string">&#x27;Google&#x27;</span>,<span class="string">&#x27;Runoob&#x27;</span>,<span class="string">&#x27;Wiki&#x27;</span>],</span><br><span class="line">	<span class="string">&#x27;number&#x27;</span>:[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">	&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.DataFrame(mydataset)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line">    sites  number</span><br><span class="line"><span class="number">0</span>  Google       <span class="number">1</span></span><br><span class="line"><span class="number">1</span>  Runoob       <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    Wiki       <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<h4 id="Pandas-Series"><a href="#Pandas-Series" class="headerlink" title="Pandas Series"></a>Pandas Series</h4><ul>
+<li>pandas series类似表格的一列，类似一维数组。</li>
+<li><p>可以用list 和key/value对象创建Series</p>
+</li>
+<li><p>由索引（index）和列组成</p>
+</li>
+</ul>
+<p>Series构造方法如下：</p>
+<p><code>pandas.Series(data,index,dtype,name,copy)</code></p>
+<p>data：数据(ndarray类型)    index：索引标签，默认从0开始    dtype：数据类型，默认自己判断    name：名称    copy：拷贝数据，默认False</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(a)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">0</span>    <span class="number">1</span></span><br><span class="line"><span class="number">1</span>    <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    <span class="number">3</span></span><br><span class="line">dtype: int64</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>sites = &#123;<span class="number">1</span>: <span class="string">&quot;Google&quot;</span>, <span class="number">2</span>: <span class="string">&quot;Runoob&quot;</span>, <span class="number">3</span>: <span class="string">&quot;Wiki&quot;</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(sites, index = [<span class="number">1</span>, <span class="number">2</span>], name=<span class="string">&quot;aike&quot;</span> )</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">1</span>    Google</span><br><span class="line"><span class="number">2</span>    Runoob</span><br><span class="line">Name: aike, dtype: <span class="built_in">object</span></span><br></pre></td></tr></table></figure>
+<h4 id="Pandas-DataFrame"><a href="#Pandas-DataFrame" class="headerlink" title="Pandas DataFrame"></a>Pandas DataFrame</h4><ul>
+<li>表格类型数据</li>
+<li>既有行索引，也有列索引</li>
+</ul>
+<p>DataFrame构造方法：</p>
+<p><code>pandas.DataFrame(data,index,columns,dtype,copy)</code></p>
+<p>columns：列标签，默认为RangeIndex（0,1,2，……，n）</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>data = [[<span class="string">&#x27;Google&#x27;</span>,<span class="number">10</span>],[<span class="string">&#x27;Runoob&#x27;</span>,<span class="number">12</span>],[<span class="string">&#x27;Wike&#x27;</span>,<span class="number">13</span>]]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df = pd.DataFrame(data,columns=[<span class="string">&#x27;Site&#x27;</span>,<span class="string">&#x27;Age&#x27;</span>],dtype=<span class="built_in">float</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df</span><br><span class="line">     Site   Age</span><br><span class="line"><span class="number">0</span>  Google  <span class="number">10.0</span></span><br><span class="line"><span class="number">1</span>  Runoob  <span class="number">12.0</span></span><br><span class="line"><span class="number">2</span>    Wike  <span class="number">13.0</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>loc[ ]：返回指定索引的行</p>
+</li>
+<li><p>loc[[ ]]：返回多行数据</p>
+</li>
+</ul>
+<h4 id="Pandas-CSV文件"><a href="#Pandas-CSV文件" class="headerlink" title="Pandas CSV文件"></a>Pandas CSV文件</h4><p>CSV（<strong>C</strong>omma-<strong>S</strong>eparated <strong>V</strong>alues，逗号分隔值）一般用逗号分割，以纯文本数据存储表格数据（数字和文本）。</p>
+<ul>
+<li>pd.to_string( )：返回DataFrame类型数据</li>
+<li>pd.read_csv( )：读取csv数据</li>
+<li>pd.to_csv( )：将DataFrame存储为csv文件</li>
+<li>df.head(n)：读取回前n行</li>
+<li>df.tail(n)：读取尾部几行</li>
+<li>df.info( )：返回表格基本信息（行列数、各列数据类型）</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import pandas as pd</span><br><span class="line">df = pd.read_csv(&#x27;nba.csv&#x27;)</span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
+<h4 id="Pandas-JSON"><a href="#Pandas-JSON" class="headerlink" title="Pandas JSON"></a>Pandas JSON</h4><p>JSON（<strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation，JavaScript对象表示法），存储和交换文本信息的语法。</p>
+<ul>
+<li>Json可转换为DataFrame</li>
+<li>可以从url中读取json数据</li>
+<li>读取内嵌json<ul>
+<li>pd.json_normalize(data, record_path, meta)</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 Python JSON 模块载入数据</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;nested_list.json&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = json.loads(f.read())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 展平数据</span></span><br><span class="line">df_nested_list = pd.json_normalize(data, record_path =[<span class="string">&#x27;students&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span>(df_nested_list)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装glom模块：用.来访问内嵌对象的属性</li>
+</ul>
+<h4 id="Pandas-数据清洗"><a href="#Pandas-数据清洗" class="headerlink" title="Pandas 数据清洗"></a>Pandas 数据清洗</h4><ul>
+<li>缺失</li>
+<li>格式错误</li>
+<li>错误数据或重复数据</li>
+</ul>
+<h5 id="清洗空值"><a href="#清洗空值" class="headerlink" title="清洗空值"></a>清洗空值</h5><ul>
+<li>dropna( )：删除包含空字段的行</li>
+</ul>
+<p><code>DataFrame.dropna(axis=0, how=&#39;any&#39;, thresh=None, subset=None, inplace=False)</code></p>
+<h3 id="pdfminer库"><a href="#pdfminer库" class="headerlink" title="pdfminer库"></a>pdfminer库</h3><p><strong>问题描述</strong></p>
+<p>利用python读取PDF文本内容</p>
+<p><strong>运行环境</strong></p>
+<p>python 3.6</p>
+<p><strong>需要安装的库</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install pdfminer</span><br><span class="line">pip install pdfminer3k</span><br></pre></td></tr></table></figure>
+<p><strong>实现的源代码</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyocr <span class="comment"># 图像处理库，进行ocr识别</span></span><br><span class="line"><span class="keyword">import</span> importlib <span class="comment"># Python中import语句的实现</span></span><br><span class="line"><span class="keyword">import</span> sys <span class="comment"># 针对与Python解释器相关的变量和方法</span></span><br><span class="line"><span class="keyword">import</span> time <span class="comment"># 基础时间库</span></span><br><span class="line"></span><br><span class="line">importlib.reload(sys)</span><br><span class="line">time1 = time.time()</span><br><span class="line"><span class="comment"># print(&#x27;初始时间为：&#x27;,time1)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os.path</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span> PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span>  PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFResourceManager, PDFPageInterpreter</span><br><span class="line"><span class="keyword">from</span> pdfminer.converter <span class="keyword">import</span> PDFPageAggregator</span><br><span class="line"><span class="keyword">from</span> pdfminer.layout <span class="keyword">import</span> LTTextBoxHorizontal,LAParams</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFTextExtractionNotAllowed</span><br><span class="line"></span><br><span class="line">text_path = <span class="string">r&#x27;D:\文档\预测与决策\第2章 非模型预测方法.pdf&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse</span>():</span></span><br><span class="line">    <span class="comment">#解析PDF文本，并保存到TXT文件中</span></span><br><span class="line">    fp = <span class="built_in">open</span>(text_path,<span class="string">&#x27;rb&#x27;</span>)</span><br><span class="line">    <span class="comment">#用文件对象创建一个PDF文档分析器</span></span><br><span class="line">    parser = PDFParser(fp)</span><br><span class="line">    <span class="comment">#创建一个PDF文档</span></span><br><span class="line">    doc = PDFDocument()</span><br><span class="line">    <span class="comment">#连接分析器，与文档对象</span></span><br><span class="line">    parser.set_document(doc)</span><br><span class="line">    doc.set_parser(parser)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#提供初始化密码，如果没有密码，就创建一个空的字符串</span></span><br><span class="line">    doc.initialize()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#检测文档是否提供txt转换，不提供就忽略</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> doc.is_extractable:</span><br><span class="line">        <span class="keyword">raise</span> PDFTextExtractionNotAllowed</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment">#创建PDF,资源管理器，来共享资源</span></span><br><span class="line">        rsrcmgr = PDFResourceManager()</span><br><span class="line">        <span class="comment">#创建一个PDF设备对象</span></span><br><span class="line">        laparams = LAParams()</span><br><span class="line">        device = PDFPageAggregator(rsrcmgr,laparams=laparams)</span><br><span class="line">        <span class="comment">#创建一个PDF解释器其对象</span></span><br><span class="line">        interpreter = PDFPageInterpreter(rsrcmgr,device)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#循环遍历列表，每次处理一个page内容</span></span><br><span class="line">        <span class="comment">#doc.get_pages()获取page列表</span></span><br><span class="line">        <span class="keyword">for</span> page <span class="keyword">in</span> doc.get_pages():</span><br><span class="line">            interpreter.process_page(page)</span><br><span class="line">            <span class="comment">#接受该页面的LTPage对象</span></span><br><span class="line">            layout = device.get_result()</span><br><span class="line">            <span class="comment"># 这里layout是一个LTPage对象 里面存放着 这个page解析出的各种对象</span></span><br><span class="line">            <span class="comment"># 一般包括LTTextBox, LTFigure, LTImage, LTTextBoxHorizontal 等等</span></span><br><span class="line">            <span class="comment"># 想要获取文本就获得对象的text属性，</span></span><br><span class="line">            <span class="keyword">for</span> x <span class="keyword">in</span> layout:</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">isinstance</span>(x,LTTextBoxHorizontal)):</span><br><span class="line">                    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">r&#x27;C:\Users\86159\Desktop\2.txt&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                        results = x.get_text()</span><br><span class="line">                        <span class="built_in">print</span>(results)</span><br><span class="line">                        f.write(results + <span class="string">&quot;\n&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    parse()</span><br><span class="line">    time2 = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;总共消耗时间为：&#x27;</span>,time2-time1)</span><br></pre></td></tr></table></figure>
+<p><strong>结果分析</strong></p>
+<p>将读取的文字存在一个TXT文档里面</p>
+<p>pdfminer只能识别pdf里的文字，而不会读取pdf里图片里的文字内容</p>
+<p><strong>参考链接</strong></p>
+<p><a href="https://www.cnblogs.com/wj-1314/p/9429816.html">https://www.cnblogs.com/wj-1314/p/9429816.html</a></p>
+]]></content>
+      <categories>
+        <category>写写代码</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>建站历程</title>
+    <url>/2022/11/03/%E5%BB%BA%E7%AB%99%E5%8E%86%E7%A8%8B/</url>
+    <content><![CDATA[<div class="timeline blue"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>时间轴样式</p>
+</div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2022-11-03 ICP备案成功</p>
+</div></div><div class='timeline-item-content'><p>收到了ICP备案号，按要求悬挂在了网页底部。</p>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2022-10-29 申请备案</p>
+</div></div><div class='timeline-item-content'><p>服务器买了国内的，愣着干嘛，备案呗。。。</p>
+</div></div></div>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>建站</tag>
+      </tags>
   </entry>
   <entry>
     <title>网站推送百度</title>
