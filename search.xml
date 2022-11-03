@@ -18,38 +18,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo 新建分类和标签</title>
-    <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
-    <content><![CDATA[<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
-<h2 id="1-创建“分类”选项"><a href="#1-创建“分类”选项" class="headerlink" title="1.创建“分类”选项"></a>1.创建“分类”选项</h2><p>生成“分类”页并添加 tpye 属性,进入博客目录。执行命令下方命令</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-<p>categories 文件夹下会有 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2019-04-24 15:30:30</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>保存并关闭文件。</p>
-<p>给文章添加“categories”属性</p>
-<p>打开需要添加分类的文章，为其添加 categories 属性。下方的 categories:Hexo 表示这篇文章添加到到“Hexo”这个分类。注意：一篇文章只会添加到一个分类中，如果是多个默认放到第一个分类中。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 添加分类及标签</span><br><span class="line">date: 2017-05-26 12:12:57</span><br><span class="line">categories: Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了 categories: xxx 的文章才会被收录到首页的“分类”中。</p>
-<h2 id="2-创建“标签”选项"><a href="#2-创建“标签”选项" class="headerlink" title="2.创建“标签”选项"></a>2.创建“标签”选项</h2><p>生成“标签”页并添加 tpye 属性</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-<p>在 tags 文件夹下，找到 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-22 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>添加 type: “tags”到内容中，添加后是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>保存并关闭文件。</p>
-<p>给文章添加“tags”属性,打开需要添加标签的文章，为其添加 tags 属性。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 添加分类及标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">categories:</span><br><span class="line">           - Hexo</span><br><span class="line">tags:</span><br><span class="line">           - 博客</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-        <tag>新建分类标签</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python程序设计二级考试必看</title>
     <url>/2021/09/04/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E5%BF%85%E7%9C%8B/</url>
     <content><![CDATA[<h1 id="1-程序设计基本方法"><a href="#1-程序设计基本方法" class="headerlink" title="1.程序设计基本方法"></a>1.程序设计基本方法</h1><ul>
@@ -1958,6 +1926,38 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo 新建分类和标签</title>
+    <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
+    <content><![CDATA[<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
+<h2 id="1-创建“分类”选项"><a href="#1-创建“分类”选项" class="headerlink" title="1.创建“分类”选项"></a>1.创建“分类”选项</h2><p>生成“分类”页并添加 tpye 属性,进入博客目录。执行命令下方命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+<p>categories 文件夹下会有 index.md 这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2019-04-24 15:30:30</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>保存并关闭文件。</p>
+<p>给文章添加“categories”属性</p>
+<p>打开需要添加分类的文章，为其添加 categories 属性。下方的 categories:Hexo 表示这篇文章添加到到“Hexo”这个分类。注意：一篇文章只会添加到一个分类中，如果是多个默认放到第一个分类中。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 添加分类及标签</span><br><span class="line">date: 2017-05-26 12:12:57</span><br><span class="line">categories: Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了 categories: xxx 的文章才会被收录到首页的“分类”中。</p>
+<h2 id="2-创建“标签”选项"><a href="#2-创建“标签”选项" class="headerlink" title="2.创建“标签”选项"></a>2.创建“标签”选项</h2><p>生成“标签”页并添加 tpye 属性</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+<p>在 tags 文件夹下，找到 index.md 这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-22 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>添加 type: “tags”到内容中，添加后是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>保存并关闭文件。</p>
+<p>给文章添加“tags”属性,打开需要添加标签的文章，为其添加 tags 属性。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 添加分类及标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">categories:</span><br><span class="line">           - Hexo</span><br><span class="line">tags:</span><br><span class="line">           - 博客</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+        <tag>新建分类标签</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo的安装和在github部署博客</title>
     <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
     <content><![CDATA[<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
@@ -2925,31 +2925,31 @@
 <ul>
 <li>颜色<br><code>blue, cyan, green, yellow, red</code></li>
 <li>状态<br>状态填写 <code>open</code> 代表默认打开。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% folding 查看图片测试 %&#125;</span><br><span class="line"></span><br><span class="line">![](https://s3.bmp.ovh/imgs/2022/10/21/13af0161849ebb87.jpg)</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% folding cyan open, 查看默认打开的折叠框 %&#125;</span><br><span class="line"></span><br><span class="line">这是一个默认打开的折叠框。</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% folding green, 查看代码测试 %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% folding yellow, 查看列表测试 %&#125;</span><br><span class="line"></span><br><span class="line">- haha</span><br><span class="line">- hehe</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% folding red, 查看嵌套测试 %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% folding blue, 查看嵌套测试2 %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% folding 查看嵌套测试3 %&#125;</span><br><span class="line"></span><br><span class="line">hahaha &lt;span&gt;&lt;img src=&#x27;https://s3.bmp.ovh/imgs/2022/10/21/13af0161849ebb87.jpg&#x27; style=&#x27;height:24px&#x27;&gt;&lt;/span&gt;</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br></pre></td></tr></table></figure>
-<details class="folding-tag" ><summary> 查看图片测试 </summary>
+<details ><summary> 查看图片测试 </summary>
               <div class='content'>
               <p><img src="https://s3.bmp.ovh/imgs/2022/10/21/13af0161849ebb87.jpg" alt=""></p>
               </div>
             </details>
 </li>
 </ul>
-<details class="folding-tag" cyan open><summary> 查看默认打开的折叠框 </summary>
+<details cyan open><summary> 查看默认打开的折叠框 </summary>
               <div class='content'>
               <p>这是一个默认打开的折叠框。</p>
               </div>
             </details>
-<details class="folding-tag" green><summary> 查看代码测试 </summary>
+<details green><summary> 查看代码测试 </summary>
               <div class='content'>
               
               </div>
             </details>
-<details class="folding-tag" yellow><summary> 查看列表测试 </summary>
+<details yellow><summary> 查看列表测试 </summary>
               <div class='content'>
               <ul><li>haha</li><li>hehe</li></ul>
               </div>
             </details>
-<details class="folding-tag" red><summary> 查看嵌套测试 </summary>
+<details red><summary> 查看嵌套测试 </summary>
               <div class='content'>
-              <details class="folding-tag" blue><summary> 查看嵌套测试2 </summary>              <div class='content'>              <details class="folding-tag" ><summary> 查看嵌套测试3 </summary>              <div class='content'>              <p>hahaha <span><img src='https://s3.bmp.ovh/imgs/2022/10/21/13af0161849ebb87.jpg' style='height:24px'></span></p>              </div>            </details>              </div>            </details>
+              <details blue><summary> 查看嵌套测试2 </summary>              <div class='content'>              <details ><summary> 查看嵌套测试3 </summary>              <div class='content'>              <p>hahaha <span><img src='https://s3.bmp.ovh/imgs/2022/10/21/13af0161849ebb87.jpg' style='height:24px'></span></p>              </div>            </details>              </div>            </details>
               </div>
             </details>
 <h3 id="分栏-tab"><a href="#分栏-tab" class="headerlink" title="分栏 tab"></a>分栏 tab</h3><div class="tabs" id="test2"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#test2-1">第一个Tab</button></li><li class="tab"><button type="button" data-href="#test2-2"><i class="fab fa-apple-pay" style="text-align: center;"></i></button></li><li class="tab"><button type="button" data-href="#test2-3"><i class="fas fa-bomb"></i>炸弹</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="test2-1"><p><strong>tab名字为第一个Tab</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test2-2"><p><strong>只有图标 没有Tab名字</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test2-3"><p><strong>名字+icon</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
@@ -3001,7 +3001,7 @@
 <h3 id="音乐-Aplayer"><a href="#音乐-Aplayer" class="headerlink" title="音乐 Aplayer"></a>音乐 Aplayer</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% aplayerlist %&#125;</span><br><span class="line">&#123;</span><br><span class="line">    &quot;narrow&quot;: false,// （可选）播放器袖珍风格</span><br><span class="line">    &quot;autoplay&quot;: true,// （可选) 自动播放，移动端浏览器暂时不支持此功能</span><br><span class="line">    &quot;mode&quot;: &quot;random&quot;,// （可选）曲目循环类型，有 &#x27;random&#x27;（随机播放）, &#x27;single&#x27; (单曲播放), &#x27;circulation&#x27; (循环播放), &#x27;order&#x27; (列表播放)， 默认：&#x27;circulation&#x27;</span><br><span class="line">    &quot;showlrc&quot;: 3,// （可选）歌词显示配置项，可选项有：1,2,3</span><br><span class="line">    &quot;mutex&quot;: true,// （可选）该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</span><br><span class="line">    &quot;theme&quot;: &quot;#e6d0b2&quot;,// （可选）播放器风格色彩设置，默认：#b7daff</span><br><span class="line">    &quot;preload&quot;: &quot;metadata&quot;,// （可选）音乐文件预载入模式，可选项： &#x27;none&#x27; &#x27;metadata&#x27; &#x27;auto&#x27;, 默认: &#x27;auto&#x27;</span><br><span class="line">    &quot;listmaxheight&quot;: &quot;513px&quot;,// (可选) 该播放列表的最大长度</span><br><span class="line">    &quot;music&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;CoCo&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;Jeff Williams&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;caffeine.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;caffeine.jpeg&quot;,</span><br><span class="line">            &quot;lrc&quot;: &quot;caffeine.txt&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;アイロニ&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;鹿乃&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;irony.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;irony.jpg&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br><span class="line">&#123;% endaplayerlist %&#125;</span><br></pre></td></tr></table></figure>
 <p>简单示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 
-    <div id="aplayer-uEapRnjh" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-mjJTkRPo" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <p>进阶示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
@@ -3020,6 +3020,93 @@ title Key elements in Product X
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python库学习</title>
+    <url>/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h3 id="pandas库"><a href="#pandas库" class="headerlink" title="pandas库"></a>pandas库</h3><p>pandas 是基于Numpy的一种工具，主要用于数据分析任务。Pandas 纳入了大量库和一些标准的数据模型，提供了高校第操作大型数据集所需要的工具。pandas 的名称来自面板数据（panel data）和python数据分析（data analysis）。</p>
+<ul>
+<li>可以从CSV、JSON、SQL、Microsoft Excel导入数据</li>
+<li>主要数据结构Series（一维数据）和DataFrame（二维数据）</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># pandas 简单实例</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mydataset = &#123;</span><br><span class="line">	<span class="string">&#x27;sites&#x27;</span>:[<span class="string">&#x27;Google&#x27;</span>,<span class="string">&#x27;Runoob&#x27;</span>,<span class="string">&#x27;Wiki&#x27;</span>],</span><br><span class="line">	<span class="string">&#x27;number&#x27;</span>:[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">	&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.DataFrame(mydataset)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line">    sites  number</span><br><span class="line"><span class="number">0</span>  Google       <span class="number">1</span></span><br><span class="line"><span class="number">1</span>  Runoob       <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    Wiki       <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<h4 id="Pandas-Series"><a href="#Pandas-Series" class="headerlink" title="Pandas Series"></a>Pandas Series</h4><ul>
+<li>pandas series类似表格的一列，类似一维数组。</li>
+<li><p>可以用list 和key/value对象创建Series</p>
+</li>
+<li><p>由索引（index）和列组成</p>
+</li>
+</ul>
+<p>Series构造方法如下：</p>
+<p><code>pandas.Series(data,index,dtype,name,copy)</code></p>
+<p>data：数据(ndarray类型)    index：索引标签，默认从0开始    dtype：数据类型，默认自己判断    name：名称    copy：拷贝数据，默认False</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(a)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">0</span>    <span class="number">1</span></span><br><span class="line"><span class="number">1</span>    <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    <span class="number">3</span></span><br><span class="line">dtype: int64</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>sites = &#123;<span class="number">1</span>: <span class="string">&quot;Google&quot;</span>, <span class="number">2</span>: <span class="string">&quot;Runoob&quot;</span>, <span class="number">3</span>: <span class="string">&quot;Wiki&quot;</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(sites, index = [<span class="number">1</span>, <span class="number">2</span>], name=<span class="string">&quot;aike&quot;</span> )</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">1</span>    Google</span><br><span class="line"><span class="number">2</span>    Runoob</span><br><span class="line">Name: aike, dtype: <span class="built_in">object</span></span><br></pre></td></tr></table></figure>
+<h4 id="Pandas-DataFrame"><a href="#Pandas-DataFrame" class="headerlink" title="Pandas DataFrame"></a>Pandas DataFrame</h4><ul>
+<li>表格类型数据</li>
+<li>既有行索引，也有列索引</li>
+</ul>
+<p>DataFrame构造方法：</p>
+<p><code>pandas.DataFrame(data,index,columns,dtype,copy)</code></p>
+<p>columns：列标签，默认为RangeIndex（0,1,2，……，n）</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>data = [[<span class="string">&#x27;Google&#x27;</span>,<span class="number">10</span>],[<span class="string">&#x27;Runoob&#x27;</span>,<span class="number">12</span>],[<span class="string">&#x27;Wike&#x27;</span>,<span class="number">13</span>]]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df = pd.DataFrame(data,columns=[<span class="string">&#x27;Site&#x27;</span>,<span class="string">&#x27;Age&#x27;</span>],dtype=<span class="built_in">float</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df</span><br><span class="line">     Site   Age</span><br><span class="line"><span class="number">0</span>  Google  <span class="number">10.0</span></span><br><span class="line"><span class="number">1</span>  Runoob  <span class="number">12.0</span></span><br><span class="line"><span class="number">2</span>    Wike  <span class="number">13.0</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>loc[ ]：返回指定索引的行</p>
+</li>
+<li><p>loc[[ ]]：返回多行数据</p>
+</li>
+</ul>
+<h4 id="Pandas-CSV文件"><a href="#Pandas-CSV文件" class="headerlink" title="Pandas CSV文件"></a>Pandas CSV文件</h4><p>CSV（<strong>C</strong>omma-<strong>S</strong>eparated <strong>V</strong>alues，逗号分隔值）一般用逗号分割，以纯文本数据存储表格数据（数字和文本）。</p>
+<ul>
+<li>pd.to_string( )：返回DataFrame类型数据</li>
+<li>pd.read_csv( )：读取csv数据</li>
+<li>pd.to_csv( )：将DataFrame存储为csv文件</li>
+<li>df.head(n)：读取回前n行</li>
+<li>df.tail(n)：读取尾部几行</li>
+<li>df.info( )：返回表格基本信息（行列数、各列数据类型）</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import pandas as pd</span><br><span class="line">df = pd.read_csv(&#x27;nba.csv&#x27;)</span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
+<h4 id="Pandas-JSON"><a href="#Pandas-JSON" class="headerlink" title="Pandas JSON"></a>Pandas JSON</h4><p>JSON（<strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation，JavaScript对象表示法），存储和交换文本信息的语法。</p>
+<ul>
+<li>Json可转换为DataFrame</li>
+<li>可以从url中读取json数据</li>
+<li>读取内嵌json<ul>
+<li>pd.json_normalize(data, record_path, meta)</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 Python JSON 模块载入数据</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;nested_list.json&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = json.loads(f.read())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 展平数据</span></span><br><span class="line">df_nested_list = pd.json_normalize(data, record_path =[<span class="string">&#x27;students&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span>(df_nested_list)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装glom模块：用.来访问内嵌对象的属性</li>
+</ul>
+<h4 id="Pandas-数据清洗"><a href="#Pandas-数据清洗" class="headerlink" title="Pandas 数据清洗"></a>Pandas 数据清洗</h4><ul>
+<li>缺失</li>
+<li>格式错误</li>
+<li>错误数据或重复数据</li>
+</ul>
+<h5 id="清洗空值"><a href="#清洗空值" class="headerlink" title="清洗空值"></a>清洗空值</h5><ul>
+<li>dropna( )：删除包含空字段的行</li>
+</ul>
+<p><code>DataFrame.dropna(axis=0, how=&#39;any&#39;, thresh=None, subset=None, inplace=False)</code></p>
+<h3 id="pdfminer库"><a href="#pdfminer库" class="headerlink" title="pdfminer库"></a>pdfminer库</h3><p><strong>问题描述</strong></p>
+<p>利用python读取PDF文本内容</p>
+<p><strong>运行环境</strong></p>
+<p>python 3.6</p>
+<p><strong>需要安装的库</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install pdfminer</span><br><span class="line">pip install pdfminer3k</span><br></pre></td></tr></table></figure>
+<p><strong>实现的源代码</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyocr <span class="comment"># 图像处理库，进行ocr识别</span></span><br><span class="line"><span class="keyword">import</span> importlib <span class="comment"># Python中import语句的实现</span></span><br><span class="line"><span class="keyword">import</span> sys <span class="comment"># 针对与Python解释器相关的变量和方法</span></span><br><span class="line"><span class="keyword">import</span> time <span class="comment"># 基础时间库</span></span><br><span class="line"></span><br><span class="line">importlib.reload(sys)</span><br><span class="line">time1 = time.time()</span><br><span class="line"><span class="comment"># print(&#x27;初始时间为：&#x27;,time1)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os.path</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span> PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span>  PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFResourceManager, PDFPageInterpreter</span><br><span class="line"><span class="keyword">from</span> pdfminer.converter <span class="keyword">import</span> PDFPageAggregator</span><br><span class="line"><span class="keyword">from</span> pdfminer.layout <span class="keyword">import</span> LTTextBoxHorizontal,LAParams</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFTextExtractionNotAllowed</span><br><span class="line"></span><br><span class="line">text_path = <span class="string">r&#x27;D:\文档\预测与决策\第2章 非模型预测方法.pdf&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse</span>():</span></span><br><span class="line">    <span class="comment">#解析PDF文本，并保存到TXT文件中</span></span><br><span class="line">    fp = <span class="built_in">open</span>(text_path,<span class="string">&#x27;rb&#x27;</span>)</span><br><span class="line">    <span class="comment">#用文件对象创建一个PDF文档分析器</span></span><br><span class="line">    parser = PDFParser(fp)</span><br><span class="line">    <span class="comment">#创建一个PDF文档</span></span><br><span class="line">    doc = PDFDocument()</span><br><span class="line">    <span class="comment">#连接分析器，与文档对象</span></span><br><span class="line">    parser.set_document(doc)</span><br><span class="line">    doc.set_parser(parser)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#提供初始化密码，如果没有密码，就创建一个空的字符串</span></span><br><span class="line">    doc.initialize()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#检测文档是否提供txt转换，不提供就忽略</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> doc.is_extractable:</span><br><span class="line">        <span class="keyword">raise</span> PDFTextExtractionNotAllowed</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment">#创建PDF,资源管理器，来共享资源</span></span><br><span class="line">        rsrcmgr = PDFResourceManager()</span><br><span class="line">        <span class="comment">#创建一个PDF设备对象</span></span><br><span class="line">        laparams = LAParams()</span><br><span class="line">        device = PDFPageAggregator(rsrcmgr,laparams=laparams)</span><br><span class="line">        <span class="comment">#创建一个PDF解释器其对象</span></span><br><span class="line">        interpreter = PDFPageInterpreter(rsrcmgr,device)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#循环遍历列表，每次处理一个page内容</span></span><br><span class="line">        <span class="comment">#doc.get_pages()获取page列表</span></span><br><span class="line">        <span class="keyword">for</span> page <span class="keyword">in</span> doc.get_pages():</span><br><span class="line">            interpreter.process_page(page)</span><br><span class="line">            <span class="comment">#接受该页面的LTPage对象</span></span><br><span class="line">            layout = device.get_result()</span><br><span class="line">            <span class="comment"># 这里layout是一个LTPage对象 里面存放着 这个page解析出的各种对象</span></span><br><span class="line">            <span class="comment"># 一般包括LTTextBox, LTFigure, LTImage, LTTextBoxHorizontal 等等</span></span><br><span class="line">            <span class="comment"># 想要获取文本就获得对象的text属性，</span></span><br><span class="line">            <span class="keyword">for</span> x <span class="keyword">in</span> layout:</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">isinstance</span>(x,LTTextBoxHorizontal)):</span><br><span class="line">                    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">r&#x27;C:\Users\86159\Desktop\2.txt&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                        results = x.get_text()</span><br><span class="line">                        <span class="built_in">print</span>(results)</span><br><span class="line">                        f.write(results + <span class="string">&quot;\n&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    parse()</span><br><span class="line">    time2 = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;总共消耗时间为：&#x27;</span>,time2-time1)</span><br></pre></td></tr></table></figure>
+<p><strong>结果分析</strong></p>
+<p>将读取的文字存在一个TXT文档里面</p>
+<p>pdfminer只能识别pdf里的文字，而不会读取pdf里图片里的文字内容</p>
+<p><strong>参考链接</strong></p>
+<p><a href="https://www.cnblogs.com/wj-1314/p/9429816.html">https://www.cnblogs.com/wj-1314/p/9429816.html</a></p>
+]]></content>
+      <categories>
+        <category>写写代码</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
       </tags>
   </entry>
   <entry>
@@ -3254,43 +3341,6 @@ title Key elements in Product X
       </tags>
   </entry>
   <entry>
-    <title>修改github.io站点域名</title>
-    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
-    <content><![CDATA[<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
-<ul>
-<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
-<ul>
-<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&amp;utm_medium=cpc&amp;utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&amp;utm_medium=se-cpc-op&amp;utm_campaign=10045&amp;utm_content=&amp;utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&amp;utm_adplace=AdPlace039520">华为云</a></li>
-</ul>
-</blockquote>
-</li>
-</ul>
-</blockquote>
-<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
-<ul>
-<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20域名设置3.png" alt=""></li>
-<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20域名设置1.png" alt=""></li>
-</ul>
-</blockquote>
-<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
-<ul>
-<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20域名设置2.png" alt=""></li>
-</ul>
-</blockquote>
-<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
-<ul>
-<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
-</ul>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>注册域名</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>启发式算法</title>
     <url>/2022/09/03/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<!-- 显示公式块 -->
@@ -3499,19 +3549,56 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </tags>
   </entry>
   <entry>
+    <title>修改github.io站点域名</title>
+    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
+    <content><![CDATA[<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
+<ul>
+<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
+<ul>
+<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&amp;utm_medium=cpc&amp;utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&amp;utm_medium=se-cpc-op&amp;utm_campaign=10045&amp;utm_content=&amp;utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&amp;utm_adplace=AdPlace039520">华为云</a></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
+<ul>
+<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20域名设置3.png" alt=""></li>
+<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20域名设置1.png" alt=""></li>
+</ul>
+</blockquote>
+<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
+<ul>
+<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20域名设置2.png" alt=""></li>
+</ul>
+</blockquote>
+<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
+<ul>
+<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>注册域名</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>学车记</title>
     <url>/2021/08/18/%E5%AD%A6%E8%BD%A6%E8%AE%B0/</url>
-    <content><![CDATA[<h3 id="学车记1"><a href="#学车记1" class="headerlink" title="学车记1"></a>学车记1</h3><details class="folding-tag" blue><summary> 2022-08-16 </summary>
+    <content><![CDATA[<h3 id="学车记1"><a href="#学车记1" class="headerlink" title="学车记1"></a>学车记1</h3><details blue><summary> 2022-08-16 </summary>
               <div class='content'>
               <blockquote><p>一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以<strong>平凡</strong>的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处&gt;~&lt;</p></blockquote><p> <img src="https://s2.loli.net/2022/10/24/XFVj2Lp45G6O9Zu.jpg" alt=""><br> <img src="https://s2.loli.net/2022/10/24/pRKzCZj6twcgUFI.jpg" alt=""></p>
               </div>
             </details>
-<h3 id="学车记2"><a href="#学车记2" class="headerlink" title="学车记2"></a>学车记2</h3><details class="folding-tag" blue><summary> 2021-08-17 </summary>
+<h3 id="学车记2"><a href="#学车记2" class="headerlink" title="学车记2"></a>学车记2</h3><details blue><summary> 2021-08-17 </summary>
               <div class='content'>
               <blockquote><p>今天看完了《平凡的世界》第三部（<em>利用学驾校时间看的手机</em>），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:</p><blockquote><ul><li>平凡又平庸的我们努力奔向爱情。      </li><li>在这平凡的世界里努力过好平凡的生活。</li><li>我这个平凡的世界里平凡的人觉得遥不可及。</li></ul></blockquote><p>同时，今天是keep打卡第一天 fighting~</p></blockquote><p><img src="https://s2.loli.net/2022/10/24/A3tSV7uq4O2EvCw.jpg" alt=""></p>
               </div>
             </details>
-<h3 id="学车记3"><a href="#学车记3" class="headerlink" title="学车记3"></a>学车记3</h3><details class="folding-tag" blue><summary> 2021-08-18 </summary>
+<h3 id="学车记3"><a href="#学车记3" class="headerlink" title="学车记3"></a>学车记3</h3><details blue><summary> 2021-08-18 </summary>
               <div class='content'>
               <p>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。<br><img src="https://s2.loli.net/2022/10/24/EMygeVouihR32Hz.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/TQ6R4bAKCe3MfYh.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/OueoXa2cI1Alr8i.jpg" alt=""></p>
               </div>
@@ -3520,93 +3607,6 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       <categories>
         <category>生活点滴</category>
       </categories>
-  </entry>
-  <entry>
-    <title>python库学习</title>
-    <url>/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h3 id="pandas库"><a href="#pandas库" class="headerlink" title="pandas库"></a>pandas库</h3><p>pandas 是基于Numpy的一种工具，主要用于数据分析任务。Pandas 纳入了大量库和一些标准的数据模型，提供了高校第操作大型数据集所需要的工具。pandas 的名称来自面板数据（panel data）和python数据分析（data analysis）。</p>
-<ul>
-<li>可以从CSV、JSON、SQL、Microsoft Excel导入数据</li>
-<li>主要数据结构Series（一维数据）和DataFrame（二维数据）</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># pandas 简单实例</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mydataset = &#123;</span><br><span class="line">	<span class="string">&#x27;sites&#x27;</span>:[<span class="string">&#x27;Google&#x27;</span>,<span class="string">&#x27;Runoob&#x27;</span>,<span class="string">&#x27;Wiki&#x27;</span>],</span><br><span class="line">	<span class="string">&#x27;number&#x27;</span>:[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">	&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.DataFrame(mydataset)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line">    sites  number</span><br><span class="line"><span class="number">0</span>  Google       <span class="number">1</span></span><br><span class="line"><span class="number">1</span>  Runoob       <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    Wiki       <span class="number">3</span></span><br></pre></td></tr></table></figure>
-<h4 id="Pandas-Series"><a href="#Pandas-Series" class="headerlink" title="Pandas Series"></a>Pandas Series</h4><ul>
-<li>pandas series类似表格的一列，类似一维数组。</li>
-<li><p>可以用list 和key/value对象创建Series</p>
-</li>
-<li><p>由索引（index）和列组成</p>
-</li>
-</ul>
-<p>Series构造方法如下：</p>
-<p><code>pandas.Series(data,index,dtype,name,copy)</code></p>
-<p>data：数据(ndarray类型)    index：索引标签，默认从0开始    dtype：数据类型，默认自己判断    name：名称    copy：拷贝数据，默认False</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(a)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">0</span>    <span class="number">1</span></span><br><span class="line"><span class="number">1</span>    <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    <span class="number">3</span></span><br><span class="line">dtype: int64</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>sites = &#123;<span class="number">1</span>: <span class="string">&quot;Google&quot;</span>, <span class="number">2</span>: <span class="string">&quot;Runoob&quot;</span>, <span class="number">3</span>: <span class="string">&quot;Wiki&quot;</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(sites, index = [<span class="number">1</span>, <span class="number">2</span>], name=<span class="string">&quot;aike&quot;</span> )</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">1</span>    Google</span><br><span class="line"><span class="number">2</span>    Runoob</span><br><span class="line">Name: aike, dtype: <span class="built_in">object</span></span><br></pre></td></tr></table></figure>
-<h4 id="Pandas-DataFrame"><a href="#Pandas-DataFrame" class="headerlink" title="Pandas DataFrame"></a>Pandas DataFrame</h4><ul>
-<li>表格类型数据</li>
-<li>既有行索引，也有列索引</li>
-</ul>
-<p>DataFrame构造方法：</p>
-<p><code>pandas.DataFrame(data,index,columns,dtype,copy)</code></p>
-<p>columns：列标签，默认为RangeIndex（0,1,2，……，n）</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>data = [[<span class="string">&#x27;Google&#x27;</span>,<span class="number">10</span>],[<span class="string">&#x27;Runoob&#x27;</span>,<span class="number">12</span>],[<span class="string">&#x27;Wike&#x27;</span>,<span class="number">13</span>]]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df = pd.DataFrame(data,columns=[<span class="string">&#x27;Site&#x27;</span>,<span class="string">&#x27;Age&#x27;</span>],dtype=<span class="built_in">float</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df</span><br><span class="line">     Site   Age</span><br><span class="line"><span class="number">0</span>  Google  <span class="number">10.0</span></span><br><span class="line"><span class="number">1</span>  Runoob  <span class="number">12.0</span></span><br><span class="line"><span class="number">2</span>    Wike  <span class="number">13.0</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>loc[ ]：返回指定索引的行</p>
-</li>
-<li><p>loc[[ ]]：返回多行数据</p>
-</li>
-</ul>
-<h4 id="Pandas-CSV文件"><a href="#Pandas-CSV文件" class="headerlink" title="Pandas CSV文件"></a>Pandas CSV文件</h4><p>CSV（<strong>C</strong>omma-<strong>S</strong>eparated <strong>V</strong>alues，逗号分隔值）一般用逗号分割，以纯文本数据存储表格数据（数字和文本）。</p>
-<ul>
-<li>pd.to_string( )：返回DataFrame类型数据</li>
-<li>pd.read_csv( )：读取csv数据</li>
-<li>pd.to_csv( )：将DataFrame存储为csv文件</li>
-<li>df.head(n)：读取回前n行</li>
-<li>df.tail(n)：读取尾部几行</li>
-<li>df.info( )：返回表格基本信息（行列数、各列数据类型）</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import pandas as pd</span><br><span class="line">df = pd.read_csv(&#x27;nba.csv&#x27;)</span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
-<h4 id="Pandas-JSON"><a href="#Pandas-JSON" class="headerlink" title="Pandas JSON"></a>Pandas JSON</h4><p>JSON（<strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation，JavaScript对象表示法），存储和交换文本信息的语法。</p>
-<ul>
-<li>Json可转换为DataFrame</li>
-<li>可以从url中读取json数据</li>
-<li>读取内嵌json<ul>
-<li>pd.json_normalize(data, record_path, meta)</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 Python JSON 模块载入数据</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;nested_list.json&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = json.loads(f.read())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 展平数据</span></span><br><span class="line">df_nested_list = pd.json_normalize(data, record_path =[<span class="string">&#x27;students&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span>(df_nested_list)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>安装glom模块：用.来访问内嵌对象的属性</li>
-</ul>
-<h4 id="Pandas-数据清洗"><a href="#Pandas-数据清洗" class="headerlink" title="Pandas 数据清洗"></a>Pandas 数据清洗</h4><ul>
-<li>缺失</li>
-<li>格式错误</li>
-<li>错误数据或重复数据</li>
-</ul>
-<h5 id="清洗空值"><a href="#清洗空值" class="headerlink" title="清洗空值"></a>清洗空值</h5><ul>
-<li>dropna( )：删除包含空字段的行</li>
-</ul>
-<p><code>DataFrame.dropna(axis=0, how=&#39;any&#39;, thresh=None, subset=None, inplace=False)</code></p>
-<h3 id="pdfminer库"><a href="#pdfminer库" class="headerlink" title="pdfminer库"></a>pdfminer库</h3><p><strong>问题描述</strong></p>
-<p>利用python读取PDF文本内容</p>
-<p><strong>运行环境</strong></p>
-<p>python 3.6</p>
-<p><strong>需要安装的库</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install pdfminer</span><br><span class="line">pip install pdfminer3k</span><br></pre></td></tr></table></figure>
-<p><strong>实现的源代码</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyocr <span class="comment"># 图像处理库，进行ocr识别</span></span><br><span class="line"><span class="keyword">import</span> importlib <span class="comment"># Python中import语句的实现</span></span><br><span class="line"><span class="keyword">import</span> sys <span class="comment"># 针对与Python解释器相关的变量和方法</span></span><br><span class="line"><span class="keyword">import</span> time <span class="comment"># 基础时间库</span></span><br><span class="line"></span><br><span class="line">importlib.reload(sys)</span><br><span class="line">time1 = time.time()</span><br><span class="line"><span class="comment"># print(&#x27;初始时间为：&#x27;,time1)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os.path</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span> PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span>  PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFResourceManager, PDFPageInterpreter</span><br><span class="line"><span class="keyword">from</span> pdfminer.converter <span class="keyword">import</span> PDFPageAggregator</span><br><span class="line"><span class="keyword">from</span> pdfminer.layout <span class="keyword">import</span> LTTextBoxHorizontal,LAParams</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFTextExtractionNotAllowed</span><br><span class="line"></span><br><span class="line">text_path = <span class="string">r&#x27;D:\文档\预测与决策\第2章 非模型预测方法.pdf&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse</span>():</span></span><br><span class="line">    <span class="comment">#解析PDF文本，并保存到TXT文件中</span></span><br><span class="line">    fp = <span class="built_in">open</span>(text_path,<span class="string">&#x27;rb&#x27;</span>)</span><br><span class="line">    <span class="comment">#用文件对象创建一个PDF文档分析器</span></span><br><span class="line">    parser = PDFParser(fp)</span><br><span class="line">    <span class="comment">#创建一个PDF文档</span></span><br><span class="line">    doc = PDFDocument()</span><br><span class="line">    <span class="comment">#连接分析器，与文档对象</span></span><br><span class="line">    parser.set_document(doc)</span><br><span class="line">    doc.set_parser(parser)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#提供初始化密码，如果没有密码，就创建一个空的字符串</span></span><br><span class="line">    doc.initialize()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#检测文档是否提供txt转换，不提供就忽略</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> doc.is_extractable:</span><br><span class="line">        <span class="keyword">raise</span> PDFTextExtractionNotAllowed</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment">#创建PDF,资源管理器，来共享资源</span></span><br><span class="line">        rsrcmgr = PDFResourceManager()</span><br><span class="line">        <span class="comment">#创建一个PDF设备对象</span></span><br><span class="line">        laparams = LAParams()</span><br><span class="line">        device = PDFPageAggregator(rsrcmgr,laparams=laparams)</span><br><span class="line">        <span class="comment">#创建一个PDF解释器其对象</span></span><br><span class="line">        interpreter = PDFPageInterpreter(rsrcmgr,device)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#循环遍历列表，每次处理一个page内容</span></span><br><span class="line">        <span class="comment">#doc.get_pages()获取page列表</span></span><br><span class="line">        <span class="keyword">for</span> page <span class="keyword">in</span> doc.get_pages():</span><br><span class="line">            interpreter.process_page(page)</span><br><span class="line">            <span class="comment">#接受该页面的LTPage对象</span></span><br><span class="line">            layout = device.get_result()</span><br><span class="line">            <span class="comment"># 这里layout是一个LTPage对象 里面存放着 这个page解析出的各种对象</span></span><br><span class="line">            <span class="comment"># 一般包括LTTextBox, LTFigure, LTImage, LTTextBoxHorizontal 等等</span></span><br><span class="line">            <span class="comment"># 想要获取文本就获得对象的text属性，</span></span><br><span class="line">            <span class="keyword">for</span> x <span class="keyword">in</span> layout:</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">isinstance</span>(x,LTTextBoxHorizontal)):</span><br><span class="line">                    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">r&#x27;C:\Users\86159\Desktop\2.txt&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                        results = x.get_text()</span><br><span class="line">                        <span class="built_in">print</span>(results)</span><br><span class="line">                        f.write(results + <span class="string">&quot;\n&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    parse()</span><br><span class="line">    time2 = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;总共消耗时间为：&#x27;</span>,time2-time1)</span><br></pre></td></tr></table></figure>
-<p><strong>结果分析</strong></p>
-<p>将读取的文字存在一个TXT文档里面</p>
-<p>pdfminer只能识别pdf里的文字，而不会读取pdf里图片里的文字内容</p>
-<p><strong>参考链接</strong></p>
-<p><a href="https://www.cnblogs.com/wj-1314/p/9429816.html">https://www.cnblogs.com/wj-1314/p/9429816.html</a></p>
-]]></content>
-      <categories>
-        <category>写写代码</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
-      </tags>
   </entry>
   <entry>
     <title>建站历程</title>
@@ -3623,6 +3623,46 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </categories>
       <tags>
         <tag>建站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>虚拟机安装macOS系统</title>
+    <url>/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<p>参考链接</p>
+<p><a href="https://www.pc-daily.com/xitong/75975.html">虚拟机安装macos系统（VMware虚拟机安装macOS详细</a></p>
+<p><a href="https://blog.csdn.net/Simon_477/article/details/110252233">虚拟机VMware安装苹果系统macOS，超级详细教程，附文件下载，真教程！！</a></p>
+<p><a href="https://baijiahao.baidu.com/s?id=1697367423466273816&amp;wfr=spider&amp;for=pc">如何使用虚拟机VMware安装苹果macOS系统</a></p>
+<h5 id="1-安装虚拟机VMware"><a href="#1-安装虚拟机VMware" class="headerlink" title="1 安装虚拟机VMware"></a>1 安装虚拟机VMware</h5><p><a href="https://mp.weixin.qq.com/s?__biz=MzIyNjAxMjEwOQ==&amp;mid=2247502732&amp;idx=5&amp;sn=27221e888444d6c36ac62f4767337215&amp;chksm=e874752edf03fc38cadb220b2e77654f32248976e7fa2af240ba7f1e0c0527541ebba5725643&amp;scene=21#wechat_redirect">VMware16</a></p>
+<h5 id="2-安装解锁工具unlocker"><a href="#2-安装解锁工具unlocker" class="headerlink" title="2  安装解锁工具unlocker"></a>2  安装解锁工具unlocker</h5><p>解锁虚拟机安装macOS限制工具</p>
+<p><a href="http://www.winwin7.com/soft/9473.html#xiazai">unlocker v3.0.3</a></p>
+<blockquote>
+<ul>
+<li><strong><a href="https://blog.csdn.net/puspos/article/details/108900141">运行unlocker中win-install时，出现file not found-darwin.</a></strong></li>
+</ul>
+</blockquote>
+<h5 id="3-虚拟机安装-maOS"><a href="#3-虚拟机安装-maOS" class="headerlink" title="3 虚拟机安装 maOS"></a>3 虚拟机安装 maOS</h5><p><a href="https://www.mhero.com/macos">macOS系统下载</a></p>
+<p><a href="https://cloud.mfpud.com/VirtualCDR/44EE85B8FF68F7428C0AE7B3AA27661E/">macOS kealos 10.15</a> （非百度云盘）</p>
+<p><a href="https://sysin.org/blog/macOS/">Apple macOS 下载汇总（系统、应用和技巧）</a></p>
+<blockquote>
+<ul>
+<li>报错<a href="https://www.bilibili.com/read/cv13362122"><strong>客户机操作系统已禁用 CPU</strong></a></li>
+</ul>
+</blockquote>
+<h5 id="4-解决安装后屏幕适应问题"><a href="#4-解决安装后屏幕适应问题" class="headerlink" title="4 解决安装后屏幕适应问题"></a>4 解决安装后屏幕适应问题</h5><p>安装VMware Tools，用到步骤二中darwin.iso</p>
+<h5 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h5><p><a href="https://baijiahao.baidu.com/s?id=1691924549832120099&amp;wfr=spider&amp;for=pc">虚拟机中的Mac系统怎么优化</a></p>
+<p><a href="https://blog.csdn.net/SSS_Benjamin/article/details/89296164">VMware 15 上Mac虚拟机卡顿情况的优化</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/337036027">全网最详细的VMware虚拟机安装MacOS系统教程，没有之一！！！附全部资源</a></p>
+<p><strong>网络</strong></p>
+<p><a href="https://m.kafan.cn/A/gvx45wd73r.html">mac虚拟机如何开启wifi</a></p>
+<p><a href="https://blog.csdn.net/kof820/article/details/50515115?spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&amp;utm_relevant_index=1">VMware虚拟机mac系统以太网无法上网</a></p>
+<p><strong>app store</strong></p>
+<p><a href="https://jingyan.baidu.com/article/e75aca852cd5a9142fdac610.html">app store 购买过程中出错 错误500解决方法</a></p>
+]]></content>
+      <categories>
+        <category>实用教程</category>
+      </categories>
+      <tags>
+        <tag>虚拟机</tag>
       </tags>
   </entry>
   <entry>
@@ -3673,46 +3713,6 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       <tags>
         <tag>网站</tag>
         <tag>推送百度</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>虚拟机安装macOS系统</title>
-    <url>/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<p>参考链接</p>
-<p><a href="https://www.pc-daily.com/xitong/75975.html">虚拟机安装macos系统（VMware虚拟机安装macOS详细</a></p>
-<p><a href="https://blog.csdn.net/Simon_477/article/details/110252233">虚拟机VMware安装苹果系统macOS，超级详细教程，附文件下载，真教程！！</a></p>
-<p><a href="https://baijiahao.baidu.com/s?id=1697367423466273816&amp;wfr=spider&amp;for=pc">如何使用虚拟机VMware安装苹果macOS系统</a></p>
-<h5 id="1-安装虚拟机VMware"><a href="#1-安装虚拟机VMware" class="headerlink" title="1 安装虚拟机VMware"></a>1 安装虚拟机VMware</h5><p><a href="https://mp.weixin.qq.com/s?__biz=MzIyNjAxMjEwOQ==&amp;mid=2247502732&amp;idx=5&amp;sn=27221e888444d6c36ac62f4767337215&amp;chksm=e874752edf03fc38cadb220b2e77654f32248976e7fa2af240ba7f1e0c0527541ebba5725643&amp;scene=21#wechat_redirect">VMware16</a></p>
-<h5 id="2-安装解锁工具unlocker"><a href="#2-安装解锁工具unlocker" class="headerlink" title="2  安装解锁工具unlocker"></a>2  安装解锁工具unlocker</h5><p>解锁虚拟机安装macOS限制工具</p>
-<p><a href="http://www.winwin7.com/soft/9473.html#xiazai">unlocker v3.0.3</a></p>
-<blockquote>
-<ul>
-<li><strong><a href="https://blog.csdn.net/puspos/article/details/108900141">运行unlocker中win-install时，出现file not found-darwin.</a></strong></li>
-</ul>
-</blockquote>
-<h5 id="3-虚拟机安装-maOS"><a href="#3-虚拟机安装-maOS" class="headerlink" title="3 虚拟机安装 maOS"></a>3 虚拟机安装 maOS</h5><p><a href="https://www.mhero.com/macos">macOS系统下载</a></p>
-<p><a href="https://cloud.mfpud.com/VirtualCDR/44EE85B8FF68F7428C0AE7B3AA27661E/">macOS kealos 10.15</a> （非百度云盘）</p>
-<p><a href="https://sysin.org/blog/macOS/">Apple macOS 下载汇总（系统、应用和技巧）</a></p>
-<blockquote>
-<ul>
-<li>报错<a href="https://www.bilibili.com/read/cv13362122"><strong>客户机操作系统已禁用 CPU</strong></a></li>
-</ul>
-</blockquote>
-<h5 id="4-解决安装后屏幕适应问题"><a href="#4-解决安装后屏幕适应问题" class="headerlink" title="4 解决安装后屏幕适应问题"></a>4 解决安装后屏幕适应问题</h5><p>安装VMware Tools，用到步骤二中darwin.iso</p>
-<h5 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h5><p><a href="https://baijiahao.baidu.com/s?id=1691924549832120099&amp;wfr=spider&amp;for=pc">虚拟机中的Mac系统怎么优化</a></p>
-<p><a href="https://blog.csdn.net/SSS_Benjamin/article/details/89296164">VMware 15 上Mac虚拟机卡顿情况的优化</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/337036027">全网最详细的VMware虚拟机安装MacOS系统教程，没有之一！！！附全部资源</a></p>
-<p><strong>网络</strong></p>
-<p><a href="https://m.kafan.cn/A/gvx45wd73r.html">mac虚拟机如何开启wifi</a></p>
-<p><a href="https://blog.csdn.net/kof820/article/details/50515115?spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&amp;utm_relevant_index=1">VMware虚拟机mac系统以太网无法上网</a></p>
-<p><strong>app store</strong></p>
-<p><a href="https://jingyan.baidu.com/article/e75aca852cd5a9142fdac610.html">app store 购买过程中出错 错误500解决方法</a></p>
-]]></content>
-      <categories>
-        <category>实用教程</category>
-      </categories>
-      <tags>
-        <tag>虚拟机</tag>
       </tags>
   </entry>
   <entry>
