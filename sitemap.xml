@@ -290,7 +290,7 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/box/index.html</loc>
+    <loc>https://aike505.github.io/box/about/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -299,7 +299,7 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/box/about/index.html</loc>
+    <loc>https://aike505.github.io/box/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -317,7 +317,7 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/games/gobang/index.html</loc>
+    <loc>https://aike505.github.io/games/cat/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -335,7 +335,7 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/games/piano/index.html</loc>
+    <loc>https://aike505.github.io/games/gobang/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -353,7 +353,7 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/games/cat/index.html</loc>
+    <loc>https://aike505.github.io/games/piano/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -399,14 +399,14 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/%E5%8D%9A%E5%AE%A2%E4%B9%A6%E5%86%99/</loc>
+    <loc>https://aike505.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2023-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://aike505.github.io/tags/%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE/</loc>
     <lastmod>2023-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -420,7 +420,7 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE/</loc>
+    <loc>https://aike505.github.io/tags/%E5%8D%9A%E5%AE%A2%E4%B9%A6%E5%86%99/</loc>
     <lastmod>2023-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -455,6 +455,13 @@
   </url>
   
   <url>
+    <loc>https://aike505.github.io/tags/%E6%B3%A8%E5%86%8C%E5%9F%9F%E5%90%8D/</loc>
+    <lastmod>2023-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://aike505.github.io/tags/%E6%95%B0%E6%A8%A1/</loc>
     <lastmod>2023-09-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -469,7 +476,14 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/%E6%B3%A8%E5%86%8C%E5%9F%9F%E5%90%8D/</loc>
+    <loc>https://aike505.github.io/tags/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2023-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/tags/%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/</loc>
     <lastmod>2023-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -491,20 +505,6 @@
   
   <url>
     <loc>https://aike505.github.io/tags/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2023-09-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/tags/%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2023-09-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/tags/%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/</loc>
     <lastmod>2023-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
