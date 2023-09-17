@@ -1898,7 +1898,8 @@
   <entry>
     <title>hexo写博客的正确姿态</title>
     <url>/2023/09/17/hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E6%80%81/</url>
-    <content><![CDATA[<p>博客已经可以访问了，接下来学习一些写文章需要用到的命令</p>
+    <content><![CDATA[<div class="note red icon-padding simple"><i class="note-icon fas fa-bullhorn"></i><p>博客已经可以访问了，但是不知道如何撰写和发表文章？接下来学习一些写文章需要用到的命令。</p>
+</div>
 <h3 id="step-1：写文章命令"><a href="#step-1：写文章命令" class="headerlink" title="step 1：写文章命令"></a>step 1：写文章命令</h3><p>写文章首先需要再命令行中通过标题新建文章页面（新建文章保存在博客文件夹目录<code>/source/_posts</code>中），同时如果想丰富博客功能，可以新建其他页面（例如音乐、电影、图册等），使用命令如下：</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;postName&quot;</span> --新建文章</span><br><span class="line"></span><br><span class="line">hexo new page <span class="string">&quot;pageName&quot;</span> -- 新建页面</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <blockquote>
