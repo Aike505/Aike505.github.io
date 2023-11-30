@@ -353,15 +353,6 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/games/element/index.html</loc>
-    
-    <lastmod>2020-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aike505.github.io/games/gobang/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
@@ -372,6 +363,15 @@
   
   <url>
     <loc>https://aike505.github.io/games/piano/index.html</loc>
+    
+    <lastmod>2020-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/games/element/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -410,20 +410,6 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/</loc>
-    <lastmod>2023-11-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/tags/chatgpt/</loc>
-    <lastmod>2023-11-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://aike505.github.io/tags/hexo/</loc>
     <lastmod>2023-11-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -452,6 +438,20 @@
   </url>
   
   <url>
+    <loc>https://aike505.github.io/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2023-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/tags/chatgpt/</loc>
+    <lastmod>2023-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://aike505.github.io/tags/%E5%8D%9A%E5%AE%A2%E4%B9%A6%E5%86%99/</loc>
     <lastmod>2023-11-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -473,6 +473,13 @@
   </url>
   
   <url>
+    <loc>https://aike505.github.io/tags/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2023-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://aike505.github.io/tags/java/</loc>
     <lastmod>2023-11-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -488,13 +495,6 @@
   
   <url>
     <loc>https://aike505.github.io/tags/%E6%B3%A8%E5%86%8C%E5%9F%9F%E5%90%8D/</loc>
-    <lastmod>2023-11-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/tags/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2023-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
