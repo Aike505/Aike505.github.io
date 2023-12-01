@@ -2,16 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://aike505.github.io/images/basketball/index.html</loc>
-    
-    <lastmod>2023-12-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/images/daily/index.html</loc>
+    <loc>https://aike505.github.io/images/mobile/index.html</loc>
     
     <lastmod>2023-12-01</lastmod>
     
@@ -30,6 +21,24 @@
   
   <url>
     <loc>https://aike505.github.io/images/computer/index.html</loc>
+    
+    <lastmod>2023-12-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/images/basketball/index.html</loc>
+    
+    <lastmod>2023-12-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/images/daily/index.html</loc>
     
     <lastmod>2023-12-01</lastmod>
     
@@ -77,15 +86,6 @@
     <loc>https://aike505.github.io/copy/index.html</loc>
     
     <lastmod>2022-10-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/images/mobile/index.html</loc>
-    
-    <lastmod>2022-10-26</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
