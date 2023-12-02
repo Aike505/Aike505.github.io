@@ -64,8 +64,8 @@
   
   <entry>
     <title>Hexo写博客的正确姿态</title>
-    <link href="https://aike505.github.io/2023/09/17/hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E6%80%81/"/>
-    <id>https://aike505.github.io/2023/09/17/hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E6%80%81/</id>
+    <link href="https://aike505.github.io/2023/09/17/Hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E6%80%81/"/>
+    <id>https://aike505.github.io/2023/09/17/Hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E6%80%81/</id>
     <published>2023-09-17T03:50:18.000Z</published>
     <updated>2023-12-02T14:53:52.687Z</updated>
     
@@ -362,16 +362,16 @@
   </entry>
   
   <entry>
-    <title>hexo部署各种错误的解决方式</title>
+    <title>Hexo新手救星：常见部署错误与快速解决指南</title>
     <link href="https://aike505.github.io/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/"/>
     <id>https://aike505.github.io/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</id>
     <published>2021-07-22T09:32:13.000Z</published>
-    <updated>2022-10-24T10:41:28.974Z</updated>
+    <updated>2023-12-02T15:06:25.215Z</updated>
     
     <content type="html"><![CDATA[<h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\blog\aikeblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:394:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\blog\aikeblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure><h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol><li>删除<code>.deploy_git</code>文件夹;</li><li>输入 git<br><code>config --global core.autocrlf false</code></li><li>然后，依次执行：</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>问题解决。暴力直接，有效。</p><h1 id="2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git‘: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git">https://github.com/.../.git</a>‘: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>]]></content>
     
     
-    <summary type="html">hexo部署各种错误的解决方式</summary>
+    <summary type="html">Hexo新手救星：常见部署错误与快速解决指南</summary>
     
     
     
