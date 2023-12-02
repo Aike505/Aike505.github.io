@@ -2182,7 +2182,7 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo写博客的正确姿态</title>
+    <title>Hexo写博客的正确姿态</title>
     <url>/2023/09/17/hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E6%80%81/</url>
     <content><![CDATA[<div class="note red icon-padding simple"><i class="note-icon fas fa-bullhorn"></i><p>博客已经可以访问了，但是不知道如何撰写和发表文章？接下来学习一些写文章需要用到的命令。</p>
 </div>
@@ -2204,8 +2204,8 @@
         <category>博客相关</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>博客书写</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
