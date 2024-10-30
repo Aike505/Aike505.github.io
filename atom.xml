@@ -6,7 +6,7 @@
   <link href="https://aike505.github.io/atom.xml" rel="self"/>
   
   <link href="https://aike505.github.io/"/>
-  <updated>2024-10-30T16:00:35.132Z</updated>
+  <updated>2024-10-30T16:06:54.129Z</updated>
   <id>https://aike505.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://aike505.github.io/2024/10/30/%E6%B7%B1%E5%BA%A6%E6%B5%8B%E8%AF%84%E5%A4%A7%E6%A8%A1%E5%9E%8B/"/>
     <id>https://aike505.github.io/2024/10/30/%E6%B7%B1%E5%BA%A6%E6%B5%8B%E8%AF%84%E5%A4%A7%E6%A8%A1%E5%9E%8B/</id>
     <published>2024-10-30T15:54:12.000Z</published>
-    <updated>2024-10-30T16:00:35.132Z</updated>
+    <updated>2024-10-30T16:06:54.129Z</updated>
     
     <content type="html"><![CDATA[<h3 id="大模型深度测评"><a href="#大模型深度测评" class="headerlink" title="大模型深度测评"></a>大模型深度测评</h3><p>1、评价标准。测试数据集：</p><ol><li>MMLU：测试语言English、AI基础能力测试，美国教育体系下小学到本科57个学科知识，测试能力先验学习和解决问题。GPT4&gt;ChatGLM4&gt;Gemini Pro</li><li>CMMLU：综合性中文评估基准，类似MMLU，主题包括国内九年义务教育到大学高等教育工67个主题，包括具有中国特定答案的任务（驾驶规则、社会基础法规）。BlueLM&gt;通义&gt;GPT-4</li><li>C-EVAL：更广泛的综合性中文评估、包括注会、法考、公考、医师资格证等标准考试，中学到大学主流科目。BlueLM&gt;MagecLM&gt;MindGPT&gt;通义千问</li><li>superClUE：中文特点的评测基准，例如成语诗歌文学题材创作。GPT-4&gt;文心一言&gt;通义千问&gt;OPPO AndesGPT</li></ol><p>参考资料：</p><p><a href="https://www.bilibili.com/video/BV1RA4m1V74W">万字测评！18个主流大模型深度评测，读懂AI现状【深度模评03】</a></p><p><img src="http://png.zkkk123.cn/2024/10/image-20241030174119130.png" alt="image-20241030174119130"></p><p><img src="http://png.zkkk123.cn/2024/10/image-20241030174043279.png" alt="image-20241030174043279"></p>]]></content>
     
@@ -34,6 +34,8 @@
       
     
     
+    
+    <category term="学习笔记" scheme="https://aike505.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
     <category term="大模型" scheme="https://aike505.github.io/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/"/>

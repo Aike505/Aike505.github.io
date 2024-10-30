@@ -4668,6 +4668,9 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
 <p><img src="http://png.zkkk123.cn/2024/10/image-20241030174119130.png" alt="image-20241030174119130"></p>
 <p><img src="http://png.zkkk123.cn/2024/10/image-20241030174043279.png" alt="image-20241030174043279"></p>
 ]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
       <tags>
         <tag>大模型</tag>
       </tags>
