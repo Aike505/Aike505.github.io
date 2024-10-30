@@ -23,207 +23,6 @@
       </tags>
   </entry>
   <entry>
-    <title>chatgpt学习</title>
-    <url>/2023/11/30/chatgpt%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p> 掌握ChatGPT，高效工作：深入理解及实践技巧，避免信息垃圾，精准获取所需。</p>
-<span id="more"></span>
-<h3 id="1-ChatGPT"><a href="#1-ChatGPT" class="headerlink" title="1 ChatGPT"></a>1 <a href="https://www.bilibili.com/video/BV1UP411v7oX/">ChatGPT</a></h3><p>读大量公开文本信息，涌现逻辑思维能力的大语言模型(LLM)</p>
-<p>文字、代码、字符(不考虑多模态)的任务</p>
-<p>训练文本截止(2021年9月)</p>
-<p>无法获取公开知识、未必准确、卸载prompt里(你的想法、背景、爱好它无法感知)</p>
-<p>Prompt(触发和引导大语言模型的输入文本)</p>
-<p>Prompt Engineering(优化prompt设计，改进回答，不同措辞、详细背景信息)</p>
-<p>中文(自然表达、适合中文相关知识和领域，专业领域差)，英文(模型表现更好，国际性信息)</p>
-<h4 id="1-1-ChatGPT-Prompt-Engineering实战"><a href="#1-1-ChatGPT-Prompt-Engineering实战" class="headerlink" title="1.1 ChatGPT Prompt Engineering实战"></a>1.1 ChatGPT Prompt Engineering实战</h4><p>prompt词的分享网站</p>
-<h5 id="1-1-1-Prompt的基础结果"><a href="#1-1-1-Prompt的基础结果" class="headerlink" title="1.1.1 Prompt的基础结果"></a>1.1.1 Prompt的基础结果</h5><p>指令词(事情)、输入(问题、内容)、背景(上下文信息)、输出要求(格式、长度限制)</p>
-<p>猜测(日期、天气、展开对话、文本补充)、输出文本结构范例(提供输入学习、输出要求)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129105726751.png" alt="image-20231129105726751" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129105825779.png" alt="image-20231129105825779" style="zoom:67%;" /></p>
-<h5 id="1-1-2-Prompt-技巧"><a href="#1-1-2-Prompt-技巧" class="headerlink" title="1.1.2 Prompt 技巧"></a>1.1.2 Prompt 技巧</h5><p>设定你的角色(提高相关性和满意度)</p>
-<p>设定chatgpt角色(专业角色，老师律师)</p>
-<p>明确问题(细化)</p>
-<p>提供背景信息(基础信息、现状)</p>
-<p>分阶段提问(复杂任务(出问题、回答问题、评估问题)、简单问题开端、逐步深入)</p>
-<p>引导合理的思维顺序(先展示，让chatgpt合理的思维方式一步步来)</p>
-<p>反馈和迭代(逐步)</p>
-<h5 id="1-1-3-典型场景实践"><a href="#1-1-3-典型场景实践" class="headerlink" title="1.1.3 典型场景实践"></a>1.1.3 典型场景实践</h5><p>Chat with Books(已经公开发行的书籍是幼稚来源，辅助学习(提供问题和作业))</p>
-<p>Chat with Everything()</p>
-<p>独立开发者(引入“产品经理”角色，角色扮演能力实现一个人就是一个团队的效果，引入工作流的角色)</p>
-<p> 翻译能力</p>
-<p>求职场景(工作履历+岗位JD，自动生成每个岗位的建立，Latex代码(ppt可以用)，在Overlea网站生成了，面试演练)</p>
-<p>chatgpt+midjourney(英文，结构化，摄影相机位置、光线、构图(chatgpt懂相机设置))</p>
-<p>随机扩充概念(脑洞)</p>
-<p>图像反向描述(图片输出描述，迭代新的描述)</p>
-<h4 id="1-2-ChatGPT训练原理"><a href="#1-2-ChatGPT训练原理" class="headerlink" title="1.2 ChatGPT训练原理"></a>1.2 ChatGPT训练原理</h4><p>预训练(LLM,基础模型，95%训练时间，LLaMA，GPT3(3000亿token))、监督微调(提示词和回答数据)、奖励模型(评价打分)、强化学习(最大化奖励回答)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129161622713.png" alt="image-20231129161622713" style="zoom:67%;" /></p>
-<p><strong>（1） 预训练 BaseMode</strong>l</p>
-<p>好的提示词逼出好的训练语料，</p>
-<p>词汇表字词化(减少次数，提升翻译)</p>
-<p>迭代训练</p>
-<p>帮助预测下一个单词，而不是回答</p>
-<p>需要开发者继续开发</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129161946581.png" alt="image-20231129161946581" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162120063.png" alt="image-20231129162120063" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162308597.png" alt="image-20231129162308597" style="zoom:67%;" /></p>
-<p><strong>（2）监督微调 SFT Model</strong> </p>
-<p>几天时间，目标(依然预测下一个单词)</p>
-<p>提供模型实例(学习人类的指令)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162619289.png" alt="image-20231129162619289" style="zoom:67%;" /></p>
-<p><strong>（3）奖励建模 Reward Modeling</strong></p>
-<p>不同回答打分的模型</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162821915.png" alt="image-20231129162821915"></p>
-<p><strong>（4）强化学习 Reinforcement Learning</strong></p>
-<p>获取更高得分的答案(更符合人类偏好，中庸，符合一般性，发散性不如Base Model)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162926671.png" alt="image-20231129162926671" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162952118.png" alt="image-20231129162952118" style="zoom:67%;" /></p>
-<h4 id="1-3-人和AI思维模式差异"><a href="#1-3-人和AI思维模式差异" class="headerlink" title="1.3 人和AI思维模式差异"></a>1.3 人和AI思维模式差异</h4><p>提示词功能（缝合人与AI差异）</p>
-<p>提供充足的知识和背景</p>
-<p>提供必要的工具（chatgpt+browsing+plugings）</p>
-<p>允许回溯和检查（本身不带回溯，提问“你的回答是否准确”，反思）</p>
-<p>激发“系统二”慢思考(复杂问题拆解小任务+反思系统(AutoGPT)，更多思考时间，few-shot(提供实施)，think step by step(chatgpt思维展开))</p>
-<p>ChatGPT不想要成功(进修prompt，加入你是这个领域的专家，一般回答质量更好)</p>
-<h4 id="1-4-自定义指令-Custom-Instruction"><a href="#1-4-自定义指令-Custom-Instruction" class="headerlink" title="1.4 自定义指令 Custom Instruction"></a>1.4 自定义指令 Custom Instruction</h4><p>省略每次对话的全局性设置(提高日常使用效率，本身没有提高)</p>
-<p>自己写，针对个人身份(提炼聊天记录)</p>
-<p>简单文字-&gt;更好效果</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129164806642.png" alt="image-20231129164806642"></p>
-<h4 id="1-5-使用技巧"><a href="#1-5-使用技巧" class="headerlink" title="1.5 使用技巧"></a>1.5 使用技巧</h4><p><strong>通用技巧：</strong></p>
-<p>1扮演专家角色回答</p>
-<p>2告诉chatgpt你的身份和能力</p>
-<p>3限制回答长度</p>
-<p>4让chatgpt一步步思考</p>
-<p>5明确要求和目的</p>
-<p>6提供充分背景信息</p>
-<p>7结构化思考prompt</p>
-<p>8系统化设置自定义指令(custom instructions)</p>
-<p><strong>工作相关技巧：</strong></p>
-<p>9生成相关简历(结合JD调整，输出Latex)</p>
-<p>10结合chatgpt写周报(few-shot少示例提示)</p>
-<p>11提供思考方向(脑暴，提供思路)</p>
-<p>12特定角色融入工作流</p>
-<p>13将顶级企业工作方法融入工作流(亚马逊PRFAQ，PEST)</p>
-<p>14帮助写小红书创造内容</p>
-<p>15帮助写视频脚本(few-shot，先找好的脚本示例)</p>
-<p>16将你的想法实现为产品(自然语言编程)</p>
-<p><strong>学习效率提升：</strong></p>
-<p>17用chatgpt总结一本书的内容</p>
-<p>18基于目标，选择性阅读</p>
-<p>19学习过程帮助解释概念，提供示例</p>
-<p>20用chatgpt考察学习成果(费曼学习法，出题)</p>
-<p>21读书笔记和书评</p>
-<p><strong>提升写作效率</strong></p>
-<p>22回复邮件，公文类</p>
-<p>23作为编辑帮助润色文章</p>
-<p>24梳理大纲在进行写作</p>
-<p>25用特定作家的口吻写作</p>
-<p>26用特定作家的口吻翻译</p>
-<p><a href="bookai.top">数十种角色prompt</a></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129170642207.png" alt="image-20231129170642207" style="zoom:67%;" /></p>
-<h4 id="1-6-复杂问题解决"><a href="#1-6-复杂问题解决" class="headerlink" title="1.6 复杂问题解决"></a>1.6 <a href="https://www.bilibili.com/video/BV1Lg4y1c7fk/">复杂问题解决</a></h4><p>简单问题what、where、when</p>
-<p>复杂问题why(知识背景更广,事实推理，不会基于跟人立场、信仰使其逻辑自洽)和how(完成任务，提供目标、路径和工具)</p>
-<p>google 插件(voice control for chatgpt)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129175237433.png" alt="image-20231129175237433" style="zoom:67%;" /></p>
-<p><strong>沟通视窗</strong></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172316317.png" alt="image-20231129172316317" style="zoom:67%;" /></p>
-<blockquote>
-<p>盲区问题：</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172336093.png" alt="image-20231129172336093" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172401575.png" alt="image-20231129172401575" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172424896.png" alt="image-20231129172424896" style="zoom:67%;" /></p>
-<p>公开区：</p>
-<p>检验、扩充认知</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172650406.png" alt="image-20231129172650406" style="zoom:67%;" /></p>
-<p>隐私区:</p>
-<p>21年9月后、专业领域</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172823427.png" alt="image-20231129172823427" style="zoom:67%;" /></p>
-<p>未知区：</p>
-<p>都不知道</p>
-<p>如果……发生，会产生什么影响？</p>
-<p>【提问句式整理】<br>（你不知道，GPT知道）<br>1、元问题：我想了解xxxx，我应该向你问哪些问题？<br>2、请给我列出xxx领域/行业相关的，最常用的50个概念，并做简单解释。如果有英文缩写，请给出完整的英文解释。<br>3、请详细介绍一下elon musk的主要生平事迹。请详细介绍一下tesla这家企业的发展历程。</p>
-<p>（你知道，GPT也知道）<br>检验认知：<br>1、对于xxx主题/技能，你认为哪些是我必须理解和掌握的核心要点？<br>2、我理解的xxx是这样的，你觉得我的理解对吗？<br>3、我对xxx有一些想法，你能帮我批判性地分析一下这些想法的优点和缺点吗？<br>4、我正在考虑xxx的决定，你能帮我分析一下可能的结果和影响吗？</p>
-<p>扩充认知：<br>1、我知道xxx的概念，我想知道更多关于xxx的信息。<br>2、我在xxx问题上遇到困难，你能提供一些可能的解决方案或建议吗？<br>3、我想要深入学习xxx，你能推荐一些进阶的学习资源或学习路径吗？<br>4、我想要在xxx领域有所创新，你能提供一些启发或想法吗？<br>5、我想在xxx领域提升自己，你能根据最新的研究和趋势给我一些建议吗？<br>6、我正在考虑学习xxx，你能给我一些关于这个领域未来发展的观点吗？<br>7、（背景信息xxx），我要做关于xxx的研究，我认为原因是，还有其他可能的原因吗？给出一些可能的研究假设。<br>8、我是一个xx新手，马上要采访这个行业的资深大佬，我应该向他请教哪些有价值的问题？</p>
-<p>（你知道，GPT不知道）<br>介绍背景现象之后可以向gpt发问，你怎么看待这种现象？可能的原因有哪些？这会对xxx产生什么样的影响？你觉得xxx应该怎么做？</p>
-<p>（你和GPT都不知道）<br>如果xxx，这对社会会产生什么影响？</p>
-<p>检验自己认知/能力水平提问句式<br>1、为了测试我对xxx的理解程度，你会问我什么问题来检验我的水平，最少10个。<br>2、我是xx领域的专家，你会问我哪些问题来检验我的专业水平？<br>3、追问一句，这些我都懂，还有更专业更细更深的问题吗？<br>4、你问我答的游戏</p>
-<p>扩展自己能力边界的提问句式我已经很精通xxx了，我想知道我是否还有需要学习的地方？然后不停的问，还有呢还有呢？</p>
-<p>让GPT完成具体任务<br>1、我想做xxx，你能给我提供什么帮助？<br>2、我想要你做xxx，我应该给你输入什么信息？<br>3、直接下指令</p>
-</blockquote>
-<p><strong>达克效应</strong></p>
-<p>反向提问</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129173106787.png" alt="image-20231129173106787"></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129173206123.png" alt="image-20231129173206123" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129173221469.png" alt="image-20231129173221469" style="zoom:67%;" /></p>
-<p>让chatgpt根据自己信息提供推荐</p>
-<p>联网模式</p>
-<p>插件模式(调用第三方插件)</p>
-<p><strong>模拟角色</strong></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129173924046.png" alt="image-20231129173924046" style="zoom: 67%;" /></p>
-<p><strong>扮演一段关系</strong></p>
-<p>感觉到人类的情感和温暖(恐怖)</p>
-<p><strong>扮演几个、几类人</strong></p>
-<p>多个人脑暴，几类人(语料库更多，更准确)</p>
-<p>iphone里的chatgpt app可以语音输入</p>
-<p>世界上大部分有用的知识都沉浸在英语的海洋里面</p>
-<h4 id="1-7-ChatGPT-使用教程"><a href="#1-7-ChatGPT-使用教程" class="headerlink" title="1.7 ChatGPT 使用教程"></a>1.7 <a href="https://www.bilibili.com/video/BV1th4y137yh">ChatGPT 使用教程</a></h4><p>野中郁次郎的SECI模型</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129175659469.png" alt="image-20231129175659469" style="zoom:67%;" /></p>
-<p>理解的是显性知识（主动找的，不是推荐）</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129175744670.png" alt="image-20231129175744670" style="zoom:67%;" /></p>
-<p>得到（知识付费网址）</p>
-<p>搜索pdf(filetype:pdf)</p>
-<p>联网模式（能够使用Pdf语法）</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182140216.png" alt="image-20231129182140216" style="zoom:67%;" /></p>
-<p>快速学习能力：</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182242794.png" alt="image-20231129182242794" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182255861.png" alt="image-20231129182255861" style="zoom:67%;" /></p>
-<p>搜索、提问、自学</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182355395.png" alt="image-20231129182355395" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182418324.png" alt="image-20231129182418324" style="zoom:67%;" /></p>
-<p>3h25次回答(一次多问)</p>
-<p>批判新思维</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129183246973.png" alt="image-20231129183246973" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182908033.png" alt="image-20231129182908033" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129184515233.png" alt="image-20231129184515233" style="zoom:67%;" /></p>
-<p>结构化提问：</p>
-<p>MECE五种方法+几类各种模型</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129183337778.png" alt="image-20231129183337778" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129183438808.png" alt="image-20231129183438808" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129184558855.png" alt="image-20231129184558855"></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129184615178.png" alt="image-20231129184615178" style="zoom:67%;" /></p>
-<h4 id="1-8-GPTs"><a href="#1-8-GPTs" class="headerlink" title="1.8 GPTs"></a>1.8 GPTs</h4><p>opai第一届开发者大会</p>
-<p>数据更新到2023年3月，多模态大整合，自制GPTs</p>
-<p>图片识别能力</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129231036477.png" alt="image-20231129231036477" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129231654562.png" alt="image-20231129231654562" style="zoom:67%;" /></p>
-<h4 id="1-9-ChatGPT插件"><a href="#1-9-ChatGPT插件" class="headerlink" title="1.9 ChatGPT插件"></a>1.9 ChatGPT插件</h4><p><img src="http://png.zkkk123.cn/2023/12/image-20231130101323014.png" alt="image-20231130101323014" style="zoom:67%;" /></p>
-<p>ChatGPT最多支撑同时调用三个插件</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231130101929964.png" alt="image-20231130101929964" style="zoom:67%;" /></p>
-<p>WebPilot(联网功能，唯一推荐，新闻)</p>
-<p>Wolfram(计算数理化(画函数图像，解方程)、推理计算、画图、介绍+图片)</p>
-<p>AI Tool Hunt(找其他AI工具和插件)</p>
-<p>voice over(文字转语音，支持中文、英文、中英混合)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231130103551126.png" alt="image-20231130103551126" style="zoom:67%;" /></p>
-<p>HeyGen(文字转语音，口播视频)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231130103658598.png" alt="image-20231130103658598" style="zoom:67%;" /></p>
-<p>Visia(文字生成视频，找网上视频拼凑而成)</p>
-<p>Video Summary(视频总结，中文需要有字幕)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231130103927180.png" alt="image-20231130103927180" style="zoom:67%;" /></p>
-<p>Scholar AI(查找论文，写综述)</p>
-<p>MixerBox Scholar(找文献、写文献综述，更强、文献质量更高)</p>
-<p>Tutory(个人导师，学习路径)</p>
-<p>Speak(学习语言，模拟对话场景)</p>
-<p>Code Interpreter</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231130104459021.png" alt="image-20231130104459021" style="zoom:67%;" /></p>
-<h3 id="2-0-部署微信AI机器人-chatgpt-on-wechat"><a href="#2-0-部署微信AI机器人-chatgpt-on-wechat" class="headerlink" title="2.0 部署微信AI机器人(chatgpt-on-wechat)"></a><a href="https://www.bilibili.com/video/BV1ZX4y1Y7e9">2.0 部署微信AI机器人(chatgpt-on-wechat)</a></h3><p>tabby(命令提示符工具,github项目)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231130120650093.png" alt="image-20231130120650093" style="zoom:67%;" /></p>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>大模型</tag>
-        <tag>chatgpt</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python程序设计二级考试必看</title>
     <url>/2021/09/04/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E5%BF%85%E7%9C%8B/</url>
     <content><![CDATA[<h1 id="1-程序设计基本方法"><a href="#1-程序设计基本方法" class="headerlink" title="1.程序设计基本方法"></a>1.程序设计基本方法</h1><ul>
@@ -2132,6 +1931,207 @@
       </tags>
   </entry>
   <entry>
+    <title>chatgpt学习</title>
+    <url>/2023/11/30/chatgpt%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p> 掌握ChatGPT，高效工作：深入理解及实践技巧，避免信息垃圾，精准获取所需。</p>
+<span id="more"></span>
+<h3 id="1-ChatGPT"><a href="#1-ChatGPT" class="headerlink" title="1 ChatGPT"></a>1 <a href="https://www.bilibili.com/video/BV1UP411v7oX/">ChatGPT</a></h3><p>读大量公开文本信息，涌现逻辑思维能力的大语言模型(LLM)</p>
+<p>文字、代码、字符(不考虑多模态)的任务</p>
+<p>训练文本截止(2021年9月)</p>
+<p>无法获取公开知识、未必准确、卸载prompt里(你的想法、背景、爱好它无法感知)</p>
+<p>Prompt(触发和引导大语言模型的输入文本)</p>
+<p>Prompt Engineering(优化prompt设计，改进回答，不同措辞、详细背景信息)</p>
+<p>中文(自然表达、适合中文相关知识和领域，专业领域差)，英文(模型表现更好，国际性信息)</p>
+<h4 id="1-1-ChatGPT-Prompt-Engineering实战"><a href="#1-1-ChatGPT-Prompt-Engineering实战" class="headerlink" title="1.1 ChatGPT Prompt Engineering实战"></a>1.1 ChatGPT Prompt Engineering实战</h4><p>prompt词的分享网站</p>
+<h5 id="1-1-1-Prompt的基础结果"><a href="#1-1-1-Prompt的基础结果" class="headerlink" title="1.1.1 Prompt的基础结果"></a>1.1.1 Prompt的基础结果</h5><p>指令词(事情)、输入(问题、内容)、背景(上下文信息)、输出要求(格式、长度限制)</p>
+<p>猜测(日期、天气、展开对话、文本补充)、输出文本结构范例(提供输入学习、输出要求)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129105726751.png" alt="image-20231129105726751" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129105825779.png" alt="image-20231129105825779" style="zoom:67%;" /></p>
+<h5 id="1-1-2-Prompt-技巧"><a href="#1-1-2-Prompt-技巧" class="headerlink" title="1.1.2 Prompt 技巧"></a>1.1.2 Prompt 技巧</h5><p>设定你的角色(提高相关性和满意度)</p>
+<p>设定chatgpt角色(专业角色，老师律师)</p>
+<p>明确问题(细化)</p>
+<p>提供背景信息(基础信息、现状)</p>
+<p>分阶段提问(复杂任务(出问题、回答问题、评估问题)、简单问题开端、逐步深入)</p>
+<p>引导合理的思维顺序(先展示，让chatgpt合理的思维方式一步步来)</p>
+<p>反馈和迭代(逐步)</p>
+<h5 id="1-1-3-典型场景实践"><a href="#1-1-3-典型场景实践" class="headerlink" title="1.1.3 典型场景实践"></a>1.1.3 典型场景实践</h5><p>Chat with Books(已经公开发行的书籍是幼稚来源，辅助学习(提供问题和作业))</p>
+<p>Chat with Everything()</p>
+<p>独立开发者(引入“产品经理”角色，角色扮演能力实现一个人就是一个团队的效果，引入工作流的角色)</p>
+<p> 翻译能力</p>
+<p>求职场景(工作履历+岗位JD，自动生成每个岗位的建立，Latex代码(ppt可以用)，在Overlea网站生成了，面试演练)</p>
+<p>chatgpt+midjourney(英文，结构化，摄影相机位置、光线、构图(chatgpt懂相机设置))</p>
+<p>随机扩充概念(脑洞)</p>
+<p>图像反向描述(图片输出描述，迭代新的描述)</p>
+<h4 id="1-2-ChatGPT训练原理"><a href="#1-2-ChatGPT训练原理" class="headerlink" title="1.2 ChatGPT训练原理"></a>1.2 ChatGPT训练原理</h4><p>预训练(LLM,基础模型，95%训练时间，LLaMA，GPT3(3000亿token))、监督微调(提示词和回答数据)、奖励模型(评价打分)、强化学习(最大化奖励回答)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129161622713.png" alt="image-20231129161622713" style="zoom:67%;" /></p>
+<p><strong>（1） 预训练 BaseMode</strong>l</p>
+<p>好的提示词逼出好的训练语料，</p>
+<p>词汇表字词化(减少次数，提升翻译)</p>
+<p>迭代训练</p>
+<p>帮助预测下一个单词，而不是回答</p>
+<p>需要开发者继续开发</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129161946581.png" alt="image-20231129161946581" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162120063.png" alt="image-20231129162120063" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162308597.png" alt="image-20231129162308597" style="zoom:67%;" /></p>
+<p><strong>（2）监督微调 SFT Model</strong> </p>
+<p>几天时间，目标(依然预测下一个单词)</p>
+<p>提供模型实例(学习人类的指令)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162619289.png" alt="image-20231129162619289" style="zoom:67%;" /></p>
+<p><strong>（3）奖励建模 Reward Modeling</strong></p>
+<p>不同回答打分的模型</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162821915.png" alt="image-20231129162821915"></p>
+<p><strong>（4）强化学习 Reinforcement Learning</strong></p>
+<p>获取更高得分的答案(更符合人类偏好，中庸，符合一般性，发散性不如Base Model)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162926671.png" alt="image-20231129162926671" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162952118.png" alt="image-20231129162952118" style="zoom:67%;" /></p>
+<h4 id="1-3-人和AI思维模式差异"><a href="#1-3-人和AI思维模式差异" class="headerlink" title="1.3 人和AI思维模式差异"></a>1.3 人和AI思维模式差异</h4><p>提示词功能（缝合人与AI差异）</p>
+<p>提供充足的知识和背景</p>
+<p>提供必要的工具（chatgpt+browsing+plugings）</p>
+<p>允许回溯和检查（本身不带回溯，提问“你的回答是否准确”，反思）</p>
+<p>激发“系统二”慢思考(复杂问题拆解小任务+反思系统(AutoGPT)，更多思考时间，few-shot(提供实施)，think step by step(chatgpt思维展开))</p>
+<p>ChatGPT不想要成功(进修prompt，加入你是这个领域的专家，一般回答质量更好)</p>
+<h4 id="1-4-自定义指令-Custom-Instruction"><a href="#1-4-自定义指令-Custom-Instruction" class="headerlink" title="1.4 自定义指令 Custom Instruction"></a>1.4 自定义指令 Custom Instruction</h4><p>省略每次对话的全局性设置(提高日常使用效率，本身没有提高)</p>
+<p>自己写，针对个人身份(提炼聊天记录)</p>
+<p>简单文字-&gt;更好效果</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129164806642.png" alt="image-20231129164806642"></p>
+<h4 id="1-5-使用技巧"><a href="#1-5-使用技巧" class="headerlink" title="1.5 使用技巧"></a>1.5 使用技巧</h4><p><strong>通用技巧：</strong></p>
+<p>1扮演专家角色回答</p>
+<p>2告诉chatgpt你的身份和能力</p>
+<p>3限制回答长度</p>
+<p>4让chatgpt一步步思考</p>
+<p>5明确要求和目的</p>
+<p>6提供充分背景信息</p>
+<p>7结构化思考prompt</p>
+<p>8系统化设置自定义指令(custom instructions)</p>
+<p><strong>工作相关技巧：</strong></p>
+<p>9生成相关简历(结合JD调整，输出Latex)</p>
+<p>10结合chatgpt写周报(few-shot少示例提示)</p>
+<p>11提供思考方向(脑暴，提供思路)</p>
+<p>12特定角色融入工作流</p>
+<p>13将顶级企业工作方法融入工作流(亚马逊PRFAQ，PEST)</p>
+<p>14帮助写小红书创造内容</p>
+<p>15帮助写视频脚本(few-shot，先找好的脚本示例)</p>
+<p>16将你的想法实现为产品(自然语言编程)</p>
+<p><strong>学习效率提升：</strong></p>
+<p>17用chatgpt总结一本书的内容</p>
+<p>18基于目标，选择性阅读</p>
+<p>19学习过程帮助解释概念，提供示例</p>
+<p>20用chatgpt考察学习成果(费曼学习法，出题)</p>
+<p>21读书笔记和书评</p>
+<p><strong>提升写作效率</strong></p>
+<p>22回复邮件，公文类</p>
+<p>23作为编辑帮助润色文章</p>
+<p>24梳理大纲在进行写作</p>
+<p>25用特定作家的口吻写作</p>
+<p>26用特定作家的口吻翻译</p>
+<p><a href="bookai.top">数十种角色prompt</a></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129170642207.png" alt="image-20231129170642207" style="zoom:67%;" /></p>
+<h4 id="1-6-复杂问题解决"><a href="#1-6-复杂问题解决" class="headerlink" title="1.6 复杂问题解决"></a>1.6 <a href="https://www.bilibili.com/video/BV1Lg4y1c7fk/">复杂问题解决</a></h4><p>简单问题what、where、when</p>
+<p>复杂问题why(知识背景更广,事实推理，不会基于跟人立场、信仰使其逻辑自洽)和how(完成任务，提供目标、路径和工具)</p>
+<p>google 插件(voice control for chatgpt)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129175237433.png" alt="image-20231129175237433" style="zoom:67%;" /></p>
+<p><strong>沟通视窗</strong></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172316317.png" alt="image-20231129172316317" style="zoom:67%;" /></p>
+<blockquote>
+<p>盲区问题：</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172336093.png" alt="image-20231129172336093" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172401575.png" alt="image-20231129172401575" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172424896.png" alt="image-20231129172424896" style="zoom:67%;" /></p>
+<p>公开区：</p>
+<p>检验、扩充认知</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172650406.png" alt="image-20231129172650406" style="zoom:67%;" /></p>
+<p>隐私区:</p>
+<p>21年9月后、专业领域</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172823427.png" alt="image-20231129172823427" style="zoom:67%;" /></p>
+<p>未知区：</p>
+<p>都不知道</p>
+<p>如果……发生，会产生什么影响？</p>
+<p>【提问句式整理】<br>（你不知道，GPT知道）<br>1、元问题：我想了解xxxx，我应该向你问哪些问题？<br>2、请给我列出xxx领域/行业相关的，最常用的50个概念，并做简单解释。如果有英文缩写，请给出完整的英文解释。<br>3、请详细介绍一下elon musk的主要生平事迹。请详细介绍一下tesla这家企业的发展历程。</p>
+<p>（你知道，GPT也知道）<br>检验认知：<br>1、对于xxx主题/技能，你认为哪些是我必须理解和掌握的核心要点？<br>2、我理解的xxx是这样的，你觉得我的理解对吗？<br>3、我对xxx有一些想法，你能帮我批判性地分析一下这些想法的优点和缺点吗？<br>4、我正在考虑xxx的决定，你能帮我分析一下可能的结果和影响吗？</p>
+<p>扩充认知：<br>1、我知道xxx的概念，我想知道更多关于xxx的信息。<br>2、我在xxx问题上遇到困难，你能提供一些可能的解决方案或建议吗？<br>3、我想要深入学习xxx，你能推荐一些进阶的学习资源或学习路径吗？<br>4、我想要在xxx领域有所创新，你能提供一些启发或想法吗？<br>5、我想在xxx领域提升自己，你能根据最新的研究和趋势给我一些建议吗？<br>6、我正在考虑学习xxx，你能给我一些关于这个领域未来发展的观点吗？<br>7、（背景信息xxx），我要做关于xxx的研究，我认为原因是，还有其他可能的原因吗？给出一些可能的研究假设。<br>8、我是一个xx新手，马上要采访这个行业的资深大佬，我应该向他请教哪些有价值的问题？</p>
+<p>（你知道，GPT不知道）<br>介绍背景现象之后可以向gpt发问，你怎么看待这种现象？可能的原因有哪些？这会对xxx产生什么样的影响？你觉得xxx应该怎么做？</p>
+<p>（你和GPT都不知道）<br>如果xxx，这对社会会产生什么影响？</p>
+<p>检验自己认知/能力水平提问句式<br>1、为了测试我对xxx的理解程度，你会问我什么问题来检验我的水平，最少10个。<br>2、我是xx领域的专家，你会问我哪些问题来检验我的专业水平？<br>3、追问一句，这些我都懂，还有更专业更细更深的问题吗？<br>4、你问我答的游戏</p>
+<p>扩展自己能力边界的提问句式我已经很精通xxx了，我想知道我是否还有需要学习的地方？然后不停的问，还有呢还有呢？</p>
+<p>让GPT完成具体任务<br>1、我想做xxx，你能给我提供什么帮助？<br>2、我想要你做xxx，我应该给你输入什么信息？<br>3、直接下指令</p>
+</blockquote>
+<p><strong>达克效应</strong></p>
+<p>反向提问</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129173106787.png" alt="image-20231129173106787"></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129173206123.png" alt="image-20231129173206123" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129173221469.png" alt="image-20231129173221469" style="zoom:67%;" /></p>
+<p>让chatgpt根据自己信息提供推荐</p>
+<p>联网模式</p>
+<p>插件模式(调用第三方插件)</p>
+<p><strong>模拟角色</strong></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129173924046.png" alt="image-20231129173924046" style="zoom: 67%;" /></p>
+<p><strong>扮演一段关系</strong></p>
+<p>感觉到人类的情感和温暖(恐怖)</p>
+<p><strong>扮演几个、几类人</strong></p>
+<p>多个人脑暴，几类人(语料库更多，更准确)</p>
+<p>iphone里的chatgpt app可以语音输入</p>
+<p>世界上大部分有用的知识都沉浸在英语的海洋里面</p>
+<h4 id="1-7-ChatGPT-使用教程"><a href="#1-7-ChatGPT-使用教程" class="headerlink" title="1.7 ChatGPT 使用教程"></a>1.7 <a href="https://www.bilibili.com/video/BV1th4y137yh">ChatGPT 使用教程</a></h4><p>野中郁次郎的SECI模型</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129175659469.png" alt="image-20231129175659469" style="zoom:67%;" /></p>
+<p>理解的是显性知识（主动找的，不是推荐）</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129175744670.png" alt="image-20231129175744670" style="zoom:67%;" /></p>
+<p>得到（知识付费网址）</p>
+<p>搜索pdf(filetype:pdf)</p>
+<p>联网模式（能够使用Pdf语法）</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182140216.png" alt="image-20231129182140216" style="zoom:67%;" /></p>
+<p>快速学习能力：</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182242794.png" alt="image-20231129182242794" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182255861.png" alt="image-20231129182255861" style="zoom:67%;" /></p>
+<p>搜索、提问、自学</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182355395.png" alt="image-20231129182355395" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182418324.png" alt="image-20231129182418324" style="zoom:67%;" /></p>
+<p>3h25次回答(一次多问)</p>
+<p>批判新思维</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129183246973.png" alt="image-20231129183246973" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182908033.png" alt="image-20231129182908033" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129184515233.png" alt="image-20231129184515233" style="zoom:67%;" /></p>
+<p>结构化提问：</p>
+<p>MECE五种方法+几类各种模型</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129183337778.png" alt="image-20231129183337778" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129183438808.png" alt="image-20231129183438808" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129184558855.png" alt="image-20231129184558855"></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129184615178.png" alt="image-20231129184615178" style="zoom:67%;" /></p>
+<h4 id="1-8-GPTs"><a href="#1-8-GPTs" class="headerlink" title="1.8 GPTs"></a>1.8 GPTs</h4><p>opai第一届开发者大会</p>
+<p>数据更新到2023年3月，多模态大整合，自制GPTs</p>
+<p>图片识别能力</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129231036477.png" alt="image-20231129231036477" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129231654562.png" alt="image-20231129231654562" style="zoom:67%;" /></p>
+<h4 id="1-9-ChatGPT插件"><a href="#1-9-ChatGPT插件" class="headerlink" title="1.9 ChatGPT插件"></a>1.9 ChatGPT插件</h4><p><img src="http://png.zkkk123.cn/2023/12/image-20231130101323014.png" alt="image-20231130101323014" style="zoom:67%;" /></p>
+<p>ChatGPT最多支撑同时调用三个插件</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231130101929964.png" alt="image-20231130101929964" style="zoom:67%;" /></p>
+<p>WebPilot(联网功能，唯一推荐，新闻)</p>
+<p>Wolfram(计算数理化(画函数图像，解方程)、推理计算、画图、介绍+图片)</p>
+<p>AI Tool Hunt(找其他AI工具和插件)</p>
+<p>voice over(文字转语音，支持中文、英文、中英混合)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231130103551126.png" alt="image-20231130103551126" style="zoom:67%;" /></p>
+<p>HeyGen(文字转语音，口播视频)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231130103658598.png" alt="image-20231130103658598" style="zoom:67%;" /></p>
+<p>Visia(文字生成视频，找网上视频拼凑而成)</p>
+<p>Video Summary(视频总结，中文需要有字幕)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231130103927180.png" alt="image-20231130103927180" style="zoom:67%;" /></p>
+<p>Scholar AI(查找论文，写综述)</p>
+<p>MixerBox Scholar(找文献、写文献综述，更强、文献质量更高)</p>
+<p>Tutory(个人导师，学习路径)</p>
+<p>Speak(学习语言，模拟对话场景)</p>
+<p>Code Interpreter</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231130104459021.png" alt="image-20231130104459021" style="zoom:67%;" /></p>
+<h3 id="2-0-部署微信AI机器人-chatgpt-on-wechat"><a href="#2-0-部署微信AI机器人-chatgpt-on-wechat" class="headerlink" title="2.0 部署微信AI机器人(chatgpt-on-wechat)"></a><a href="https://www.bilibili.com/video/BV1ZX4y1Y7e9">2.0 部署微信AI机器人(chatgpt-on-wechat)</a></h3><p>tabby(命令提示符工具,github项目)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231130120650093.png" alt="image-20231130120650093" style="zoom:67%;" /></p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>大模型</tag>
+        <tag>chatgpt</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo 新建分类和标签</title>
     <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
     <content><![CDATA[<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
@@ -3209,7 +3209,7 @@
 <h3 id="音乐-Aplayer"><a href="#音乐-Aplayer" class="headerlink" title="音乐 Aplayer"></a>音乐 Aplayer</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% aplayerlist %&#125;</span><br><span class="line">&#123;</span><br><span class="line">    &quot;narrow&quot;: false,// （可选）播放器袖珍风格</span><br><span class="line">    &quot;autoplay&quot;: true,// （可选) 自动播放，移动端浏览器暂时不支持此功能</span><br><span class="line">    &quot;mode&quot;: &quot;random&quot;,// （可选）曲目循环类型，有 &#x27;random&#x27;（随机播放）, &#x27;single&#x27; (单曲播放), &#x27;circulation&#x27; (循环播放), &#x27;order&#x27; (列表播放)， 默认：&#x27;circulation&#x27;</span><br><span class="line">    &quot;showlrc&quot;: 3,// （可选）歌词显示配置项，可选项有：1,2,3</span><br><span class="line">    &quot;mutex&quot;: true,// （可选）该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</span><br><span class="line">    &quot;theme&quot;: &quot;#e6d0b2&quot;,// （可选）播放器风格色彩设置，默认：#b7daff</span><br><span class="line">    &quot;preload&quot;: &quot;metadata&quot;,// （可选）音乐文件预载入模式，可选项： &#x27;none&#x27; &#x27;metadata&#x27; &#x27;auto&#x27;, 默认: &#x27;auto&#x27;</span><br><span class="line">    &quot;listmaxheight&quot;: &quot;513px&quot;,// (可选) 该播放列表的最大长度</span><br><span class="line">    &quot;music&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;CoCo&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;Jeff Williams&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;caffeine.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;caffeine.jpeg&quot;,</span><br><span class="line">            &quot;lrc&quot;: &quot;caffeine.txt&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;アイロニ&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;鹿乃&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;irony.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;irony.jpg&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br><span class="line">&#123;% endaplayerlist %&#125;</span><br></pre></td></tr></table></figure>
 <p>简单示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 
-    <div id="aplayer-RtSCRvAD" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-RvUSeyKV" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <p>进阶示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
@@ -3253,93 +3253,6 @@ title Key elements in Product X
         <tag>hexo</tag>
         <tag>部署博客</tag>
         <tag>bug</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python库学习</title>
-    <url>/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h3 id="pandas库"><a href="#pandas库" class="headerlink" title="pandas库"></a>pandas库</h3><p>pandas 是基于Numpy的一种工具，主要用于数据分析任务。Pandas 纳入了大量库和一些标准的数据模型，提供了高校第操作大型数据集所需要的工具。pandas 的名称来自面板数据（panel data）和python数据分析（data analysis）。</p>
-<ul>
-<li>可以从CSV、JSON、SQL、Microsoft Excel导入数据</li>
-<li>主要数据结构Series（一维数据）和DataFrame（二维数据）</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># pandas 简单实例</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mydataset = &#123;</span><br><span class="line">	<span class="string">&#x27;sites&#x27;</span>:[<span class="string">&#x27;Google&#x27;</span>,<span class="string">&#x27;Runoob&#x27;</span>,<span class="string">&#x27;Wiki&#x27;</span>],</span><br><span class="line">	<span class="string">&#x27;number&#x27;</span>:[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">	&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.DataFrame(mydataset)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line">    sites  number</span><br><span class="line"><span class="number">0</span>  Google       <span class="number">1</span></span><br><span class="line"><span class="number">1</span>  Runoob       <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    Wiki       <span class="number">3</span></span><br></pre></td></tr></table></figure>
-<h4 id="Pandas-Series"><a href="#Pandas-Series" class="headerlink" title="Pandas Series"></a>Pandas Series</h4><ul>
-<li>pandas series类似表格的一列，类似一维数组。</li>
-<li><p>可以用list 和key/value对象创建Series</p>
-</li>
-<li><p>由索引（index）和列组成</p>
-</li>
-</ul>
-<p>Series构造方法如下：</p>
-<p><code>pandas.Series(data,index,dtype,name,copy)</code></p>
-<p>data：数据(ndarray类型)    index：索引标签，默认从0开始    dtype：数据类型，默认自己判断    name：名称    copy：拷贝数据，默认False</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(a)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">0</span>    <span class="number">1</span></span><br><span class="line"><span class="number">1</span>    <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    <span class="number">3</span></span><br><span class="line">dtype: int64</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>sites = &#123;<span class="number">1</span>: <span class="string">&quot;Google&quot;</span>, <span class="number">2</span>: <span class="string">&quot;Runoob&quot;</span>, <span class="number">3</span>: <span class="string">&quot;Wiki&quot;</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(sites, index = [<span class="number">1</span>, <span class="number">2</span>], name=<span class="string">&quot;aike&quot;</span> )</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">1</span>    Google</span><br><span class="line"><span class="number">2</span>    Runoob</span><br><span class="line">Name: aike, dtype: <span class="built_in">object</span></span><br></pre></td></tr></table></figure>
-<h4 id="Pandas-DataFrame"><a href="#Pandas-DataFrame" class="headerlink" title="Pandas DataFrame"></a>Pandas DataFrame</h4><ul>
-<li>表格类型数据</li>
-<li>既有行索引，也有列索引</li>
-</ul>
-<p>DataFrame构造方法：</p>
-<p><code>pandas.DataFrame(data,index,columns,dtype,copy)</code></p>
-<p>columns：列标签，默认为RangeIndex（0,1,2，……，n）</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>data = [[<span class="string">&#x27;Google&#x27;</span>,<span class="number">10</span>],[<span class="string">&#x27;Runoob&#x27;</span>,<span class="number">12</span>],[<span class="string">&#x27;Wike&#x27;</span>,<span class="number">13</span>]]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df = pd.DataFrame(data,columns=[<span class="string">&#x27;Site&#x27;</span>,<span class="string">&#x27;Age&#x27;</span>],dtype=<span class="built_in">float</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df</span><br><span class="line">     Site   Age</span><br><span class="line"><span class="number">0</span>  Google  <span class="number">10.0</span></span><br><span class="line"><span class="number">1</span>  Runoob  <span class="number">12.0</span></span><br><span class="line"><span class="number">2</span>    Wike  <span class="number">13.0</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>loc[ ]：返回指定索引的行</p>
-</li>
-<li><p>loc[[ ]]：返回多行数据</p>
-</li>
-</ul>
-<h4 id="Pandas-CSV文件"><a href="#Pandas-CSV文件" class="headerlink" title="Pandas CSV文件"></a>Pandas CSV文件</h4><p>CSV（<strong>C</strong>omma-<strong>S</strong>eparated <strong>V</strong>alues，逗号分隔值）一般用逗号分割，以纯文本数据存储表格数据（数字和文本）。</p>
-<ul>
-<li>pd.to_string( )：返回DataFrame类型数据</li>
-<li>pd.read_csv( )：读取csv数据</li>
-<li>pd.to_csv( )：将DataFrame存储为csv文件</li>
-<li>df.head(n)：读取回前n行</li>
-<li>df.tail(n)：读取尾部几行</li>
-<li>df.info( )：返回表格基本信息（行列数、各列数据类型）</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import pandas as pd</span><br><span class="line">df = pd.read_csv(&#x27;nba.csv&#x27;)</span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
-<h4 id="Pandas-JSON"><a href="#Pandas-JSON" class="headerlink" title="Pandas JSON"></a>Pandas JSON</h4><p>JSON（<strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation，JavaScript对象表示法），存储和交换文本信息的语法。</p>
-<ul>
-<li>Json可转换为DataFrame</li>
-<li>可以从url中读取json数据</li>
-<li>读取内嵌json<ul>
-<li>pd.json_normalize(data, record_path, meta)</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 Python JSON 模块载入数据</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;nested_list.json&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = json.loads(f.read())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 展平数据</span></span><br><span class="line">df_nested_list = pd.json_normalize(data, record_path =[<span class="string">&#x27;students&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span>(df_nested_list)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>安装glom模块：用.来访问内嵌对象的属性</li>
-</ul>
-<h4 id="Pandas-数据清洗"><a href="#Pandas-数据清洗" class="headerlink" title="Pandas 数据清洗"></a>Pandas 数据清洗</h4><ul>
-<li>缺失</li>
-<li>格式错误</li>
-<li>错误数据或重复数据</li>
-</ul>
-<h5 id="清洗空值"><a href="#清洗空值" class="headerlink" title="清洗空值"></a>清洗空值</h5><ul>
-<li>dropna( )：删除包含空字段的行</li>
-</ul>
-<p><code>DataFrame.dropna(axis=0, how=&#39;any&#39;, thresh=None, subset=None, inplace=False)</code></p>
-<h3 id="pdfminer库"><a href="#pdfminer库" class="headerlink" title="pdfminer库"></a>pdfminer库</h3><p><strong>问题描述</strong></p>
-<p>利用python读取PDF文本内容</p>
-<p><strong>运行环境</strong></p>
-<p>python 3.6</p>
-<p><strong>需要安装的库</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install pdfminer</span><br><span class="line">pip install pdfminer3k</span><br></pre></td></tr></table></figure>
-<p><strong>实现的源代码</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyocr <span class="comment"># 图像处理库，进行ocr识别</span></span><br><span class="line"><span class="keyword">import</span> importlib <span class="comment"># Python中import语句的实现</span></span><br><span class="line"><span class="keyword">import</span> sys <span class="comment"># 针对与Python解释器相关的变量和方法</span></span><br><span class="line"><span class="keyword">import</span> time <span class="comment"># 基础时间库</span></span><br><span class="line"></span><br><span class="line">importlib.reload(sys)</span><br><span class="line">time1 = time.time()</span><br><span class="line"><span class="comment"># print(&#x27;初始时间为：&#x27;,time1)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os.path</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span> PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span>  PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFResourceManager, PDFPageInterpreter</span><br><span class="line"><span class="keyword">from</span> pdfminer.converter <span class="keyword">import</span> PDFPageAggregator</span><br><span class="line"><span class="keyword">from</span> pdfminer.layout <span class="keyword">import</span> LTTextBoxHorizontal,LAParams</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFTextExtractionNotAllowed</span><br><span class="line"></span><br><span class="line">text_path = <span class="string">r&#x27;D:\文档\预测与决策\第2章 非模型预测方法.pdf&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse</span>():</span></span><br><span class="line">    <span class="comment">#解析PDF文本，并保存到TXT文件中</span></span><br><span class="line">    fp = <span class="built_in">open</span>(text_path,<span class="string">&#x27;rb&#x27;</span>)</span><br><span class="line">    <span class="comment">#用文件对象创建一个PDF文档分析器</span></span><br><span class="line">    parser = PDFParser(fp)</span><br><span class="line">    <span class="comment">#创建一个PDF文档</span></span><br><span class="line">    doc = PDFDocument()</span><br><span class="line">    <span class="comment">#连接分析器，与文档对象</span></span><br><span class="line">    parser.set_document(doc)</span><br><span class="line">    doc.set_parser(parser)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#提供初始化密码，如果没有密码，就创建一个空的字符串</span></span><br><span class="line">    doc.initialize()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#检测文档是否提供txt转换，不提供就忽略</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> doc.is_extractable:</span><br><span class="line">        <span class="keyword">raise</span> PDFTextExtractionNotAllowed</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment">#创建PDF,资源管理器，来共享资源</span></span><br><span class="line">        rsrcmgr = PDFResourceManager()</span><br><span class="line">        <span class="comment">#创建一个PDF设备对象</span></span><br><span class="line">        laparams = LAParams()</span><br><span class="line">        device = PDFPageAggregator(rsrcmgr,laparams=laparams)</span><br><span class="line">        <span class="comment">#创建一个PDF解释器其对象</span></span><br><span class="line">        interpreter = PDFPageInterpreter(rsrcmgr,device)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#循环遍历列表，每次处理一个page内容</span></span><br><span class="line">        <span class="comment">#doc.get_pages()获取page列表</span></span><br><span class="line">        <span class="keyword">for</span> page <span class="keyword">in</span> doc.get_pages():</span><br><span class="line">            interpreter.process_page(page)</span><br><span class="line">            <span class="comment">#接受该页面的LTPage对象</span></span><br><span class="line">            layout = device.get_result()</span><br><span class="line">            <span class="comment"># 这里layout是一个LTPage对象 里面存放着 这个page解析出的各种对象</span></span><br><span class="line">            <span class="comment"># 一般包括LTTextBox, LTFigure, LTImage, LTTextBoxHorizontal 等等</span></span><br><span class="line">            <span class="comment"># 想要获取文本就获得对象的text属性，</span></span><br><span class="line">            <span class="keyword">for</span> x <span class="keyword">in</span> layout:</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">isinstance</span>(x,LTTextBoxHorizontal)):</span><br><span class="line">                    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">r&#x27;C:\Users\86159\Desktop\2.txt&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                        results = x.get_text()</span><br><span class="line">                        <span class="built_in">print</span>(results)</span><br><span class="line">                        f.write(results + <span class="string">&quot;\n&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    parse()</span><br><span class="line">    time2 = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;总共消耗时间为：&#x27;</span>,time2-time1)</span><br></pre></td></tr></table></figure>
-<p><strong>结果分析</strong></p>
-<p>将读取的文字存在一个TXT文档里面</p>
-<p>pdfminer只能识别pdf里的文字，而不会读取pdf里图片里的文字内容</p>
-<p><strong>参考链接</strong></p>
-<p><a href="https://www.cnblogs.com/wj-1314/p/9429816.html">https://www.cnblogs.com/wj-1314/p/9429816.html</a></p>
-]]></content>
-      <categories>
-        <category>写写代码</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
       </tags>
   </entry>
   <entry>
@@ -4362,40 +4275,90 @@ title Key elements in Product X
       </tags>
   </entry>
   <entry>
-    <title>修改github.io站点域名</title>
-    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
-    <content><![CDATA[<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
+    <title>python库学习</title>
+    <url>/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h3 id="pandas库"><a href="#pandas库" class="headerlink" title="pandas库"></a>pandas库</h3><p>pandas 是基于Numpy的一种工具，主要用于数据分析任务。Pandas 纳入了大量库和一些标准的数据模型，提供了高校第操作大型数据集所需要的工具。pandas 的名称来自面板数据（panel data）和python数据分析（data analysis）。</p>
 <ul>
-<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
-<ul>
-<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&amp;utm_medium=cpc&amp;utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&amp;utm_medium=se-cpc-op&amp;utm_campaign=10045&amp;utm_content=&amp;utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&amp;utm_adplace=AdPlace039520">华为云</a></li>
+<li>可以从CSV、JSON、SQL、Microsoft Excel导入数据</li>
+<li>主要数据结构Series（一维数据）和DataFrame（二维数据）</li>
 </ul>
-</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># pandas 简单实例</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mydataset = &#123;</span><br><span class="line">	<span class="string">&#x27;sites&#x27;</span>:[<span class="string">&#x27;Google&#x27;</span>,<span class="string">&#x27;Runoob&#x27;</span>,<span class="string">&#x27;Wiki&#x27;</span>],</span><br><span class="line">	<span class="string">&#x27;number&#x27;</span>:[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">	&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.DataFrame(mydataset)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line">    sites  number</span><br><span class="line"><span class="number">0</span>  Google       <span class="number">1</span></span><br><span class="line"><span class="number">1</span>  Runoob       <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    Wiki       <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<h4 id="Pandas-Series"><a href="#Pandas-Series" class="headerlink" title="Pandas Series"></a>Pandas Series</h4><ul>
+<li>pandas series类似表格的一列，类似一维数组。</li>
+<li><p>可以用list 和key/value对象创建Series</p>
+</li>
+<li><p>由索引（index）和列组成</p>
 </li>
 </ul>
-</blockquote>
-<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
-<ul>
-<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20域名设置3.png" alt=""></li>
-<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20域名设置1.png" alt=""></li>
+<p>Series构造方法如下：</p>
+<p><code>pandas.Series(data,index,dtype,name,copy)</code></p>
+<p>data：数据(ndarray类型)    index：索引标签，默认从0开始    dtype：数据类型，默认自己判断    name：名称    copy：拷贝数据，默认False</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(a)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">0</span>    <span class="number">1</span></span><br><span class="line"><span class="number">1</span>    <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    <span class="number">3</span></span><br><span class="line">dtype: int64</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>sites = &#123;<span class="number">1</span>: <span class="string">&quot;Google&quot;</span>, <span class="number">2</span>: <span class="string">&quot;Runoob&quot;</span>, <span class="number">3</span>: <span class="string">&quot;Wiki&quot;</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(sites, index = [<span class="number">1</span>, <span class="number">2</span>], name=<span class="string">&quot;aike&quot;</span> )</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">1</span>    Google</span><br><span class="line"><span class="number">2</span>    Runoob</span><br><span class="line">Name: aike, dtype: <span class="built_in">object</span></span><br></pre></td></tr></table></figure>
+<h4 id="Pandas-DataFrame"><a href="#Pandas-DataFrame" class="headerlink" title="Pandas DataFrame"></a>Pandas DataFrame</h4><ul>
+<li>表格类型数据</li>
+<li>既有行索引，也有列索引</li>
 </ul>
-</blockquote>
-<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
+<p>DataFrame构造方法：</p>
+<p><code>pandas.DataFrame(data,index,columns,dtype,copy)</code></p>
+<p>columns：列标签，默认为RangeIndex（0,1,2，……，n）</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>data = [[<span class="string">&#x27;Google&#x27;</span>,<span class="number">10</span>],[<span class="string">&#x27;Runoob&#x27;</span>,<span class="number">12</span>],[<span class="string">&#x27;Wike&#x27;</span>,<span class="number">13</span>]]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df = pd.DataFrame(data,columns=[<span class="string">&#x27;Site&#x27;</span>,<span class="string">&#x27;Age&#x27;</span>],dtype=<span class="built_in">float</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df</span><br><span class="line">     Site   Age</span><br><span class="line"><span class="number">0</span>  Google  <span class="number">10.0</span></span><br><span class="line"><span class="number">1</span>  Runoob  <span class="number">12.0</span></span><br><span class="line"><span class="number">2</span>    Wike  <span class="number">13.0</span></span><br></pre></td></tr></table></figure>
 <ul>
-<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20域名设置2.png" alt=""></li>
+<li><p>loc[ ]：返回指定索引的行</p>
+</li>
+<li><p>loc[[ ]]：返回多行数据</p>
+</li>
 </ul>
-</blockquote>
-<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
+<h4 id="Pandas-CSV文件"><a href="#Pandas-CSV文件" class="headerlink" title="Pandas CSV文件"></a>Pandas CSV文件</h4><p>CSV（<strong>C</strong>omma-<strong>S</strong>eparated <strong>V</strong>alues，逗号分隔值）一般用逗号分割，以纯文本数据存储表格数据（数字和文本）。</p>
 <ul>
-<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
+<li>pd.to_string( )：返回DataFrame类型数据</li>
+<li>pd.read_csv( )：读取csv数据</li>
+<li>pd.to_csv( )：将DataFrame存储为csv文件</li>
+<li>df.head(n)：读取回前n行</li>
+<li>df.tail(n)：读取尾部几行</li>
+<li>df.info( )：返回表格基本信息（行列数、各列数据类型）</li>
 </ul>
-</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import pandas as pd</span><br><span class="line">df = pd.read_csv(&#x27;nba.csv&#x27;)</span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
+<h4 id="Pandas-JSON"><a href="#Pandas-JSON" class="headerlink" title="Pandas JSON"></a>Pandas JSON</h4><p>JSON（<strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation，JavaScript对象表示法），存储和交换文本信息的语法。</p>
+<ul>
+<li>Json可转换为DataFrame</li>
+<li>可以从url中读取json数据</li>
+<li>读取内嵌json<ul>
+<li>pd.json_normalize(data, record_path, meta)</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 Python JSON 模块载入数据</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;nested_list.json&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = json.loads(f.read())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 展平数据</span></span><br><span class="line">df_nested_list = pd.json_normalize(data, record_path =[<span class="string">&#x27;students&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span>(df_nested_list)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装glom模块：用.来访问内嵌对象的属性</li>
+</ul>
+<h4 id="Pandas-数据清洗"><a href="#Pandas-数据清洗" class="headerlink" title="Pandas 数据清洗"></a>Pandas 数据清洗</h4><ul>
+<li>缺失</li>
+<li>格式错误</li>
+<li>错误数据或重复数据</li>
+</ul>
+<h5 id="清洗空值"><a href="#清洗空值" class="headerlink" title="清洗空值"></a>清洗空值</h5><ul>
+<li>dropna( )：删除包含空字段的行</li>
+</ul>
+<p><code>DataFrame.dropna(axis=0, how=&#39;any&#39;, thresh=None, subset=None, inplace=False)</code></p>
+<h3 id="pdfminer库"><a href="#pdfminer库" class="headerlink" title="pdfminer库"></a>pdfminer库</h3><p><strong>问题描述</strong></p>
+<p>利用python读取PDF文本内容</p>
+<p><strong>运行环境</strong></p>
+<p>python 3.6</p>
+<p><strong>需要安装的库</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install pdfminer</span><br><span class="line">pip install pdfminer3k</span><br></pre></td></tr></table></figure>
+<p><strong>实现的源代码</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyocr <span class="comment"># 图像处理库，进行ocr识别</span></span><br><span class="line"><span class="keyword">import</span> importlib <span class="comment"># Python中import语句的实现</span></span><br><span class="line"><span class="keyword">import</span> sys <span class="comment"># 针对与Python解释器相关的变量和方法</span></span><br><span class="line"><span class="keyword">import</span> time <span class="comment"># 基础时间库</span></span><br><span class="line"></span><br><span class="line">importlib.reload(sys)</span><br><span class="line">time1 = time.time()</span><br><span class="line"><span class="comment"># print(&#x27;初始时间为：&#x27;,time1)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os.path</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span> PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span>  PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFResourceManager, PDFPageInterpreter</span><br><span class="line"><span class="keyword">from</span> pdfminer.converter <span class="keyword">import</span> PDFPageAggregator</span><br><span class="line"><span class="keyword">from</span> pdfminer.layout <span class="keyword">import</span> LTTextBoxHorizontal,LAParams</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFTextExtractionNotAllowed</span><br><span class="line"></span><br><span class="line">text_path = <span class="string">r&#x27;D:\文档\预测与决策\第2章 非模型预测方法.pdf&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse</span>():</span></span><br><span class="line">    <span class="comment">#解析PDF文本，并保存到TXT文件中</span></span><br><span class="line">    fp = <span class="built_in">open</span>(text_path,<span class="string">&#x27;rb&#x27;</span>)</span><br><span class="line">    <span class="comment">#用文件对象创建一个PDF文档分析器</span></span><br><span class="line">    parser = PDFParser(fp)</span><br><span class="line">    <span class="comment">#创建一个PDF文档</span></span><br><span class="line">    doc = PDFDocument()</span><br><span class="line">    <span class="comment">#连接分析器，与文档对象</span></span><br><span class="line">    parser.set_document(doc)</span><br><span class="line">    doc.set_parser(parser)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#提供初始化密码，如果没有密码，就创建一个空的字符串</span></span><br><span class="line">    doc.initialize()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#检测文档是否提供txt转换，不提供就忽略</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> doc.is_extractable:</span><br><span class="line">        <span class="keyword">raise</span> PDFTextExtractionNotAllowed</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment">#创建PDF,资源管理器，来共享资源</span></span><br><span class="line">        rsrcmgr = PDFResourceManager()</span><br><span class="line">        <span class="comment">#创建一个PDF设备对象</span></span><br><span class="line">        laparams = LAParams()</span><br><span class="line">        device = PDFPageAggregator(rsrcmgr,laparams=laparams)</span><br><span class="line">        <span class="comment">#创建一个PDF解释器其对象</span></span><br><span class="line">        interpreter = PDFPageInterpreter(rsrcmgr,device)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#循环遍历列表，每次处理一个page内容</span></span><br><span class="line">        <span class="comment">#doc.get_pages()获取page列表</span></span><br><span class="line">        <span class="keyword">for</span> page <span class="keyword">in</span> doc.get_pages():</span><br><span class="line">            interpreter.process_page(page)</span><br><span class="line">            <span class="comment">#接受该页面的LTPage对象</span></span><br><span class="line">            layout = device.get_result()</span><br><span class="line">            <span class="comment"># 这里layout是一个LTPage对象 里面存放着 这个page解析出的各种对象</span></span><br><span class="line">            <span class="comment"># 一般包括LTTextBox, LTFigure, LTImage, LTTextBoxHorizontal 等等</span></span><br><span class="line">            <span class="comment"># 想要获取文本就获得对象的text属性，</span></span><br><span class="line">            <span class="keyword">for</span> x <span class="keyword">in</span> layout:</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">isinstance</span>(x,LTTextBoxHorizontal)):</span><br><span class="line">                    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">r&#x27;C:\Users\86159\Desktop\2.txt&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                        results = x.get_text()</span><br><span class="line">                        <span class="built_in">print</span>(results)</span><br><span class="line">                        f.write(results + <span class="string">&quot;\n&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    parse()</span><br><span class="line">    time2 = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;总共消耗时间为：&#x27;</span>,time2-time1)</span><br></pre></td></tr></table></figure>
+<p><strong>结果分析</strong></p>
+<p>将读取的文字存在一个TXT文档里面</p>
+<p>pdfminer只能识别pdf里的文字，而不会读取pdf里图片里的文字内容</p>
+<p><strong>参考链接</strong></p>
+<p><a href="https://www.cnblogs.com/wj-1314/p/9429816.html">https://www.cnblogs.com/wj-1314/p/9429816.html</a></p>
 ]]></content>
       <categories>
-        <category>博客相关</category>
+        <category>写写代码</category>
       </categories>
       <tags>
-        <tag>注册域名</tag>
+        <tag>机器学习</tag>
       </tags>
   </entry>
   <entry>
@@ -4607,6 +4570,43 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </tags>
   </entry>
   <entry>
+    <title>修改github.io站点域名</title>
+    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
+    <content><![CDATA[<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
+<ul>
+<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
+<ul>
+<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&amp;utm_medium=cpc&amp;utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&amp;utm_medium=se-cpc-op&amp;utm_campaign=10045&amp;utm_content=&amp;utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&amp;utm_adplace=AdPlace039520">华为云</a></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
+<ul>
+<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20域名设置3.png" alt=""></li>
+<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20域名设置1.png" alt=""></li>
+</ul>
+</blockquote>
+<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
+<ul>
+<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20域名设置2.png" alt=""></li>
+</ul>
+</blockquote>
+<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
+<ul>
+<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>注册域名</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>学车记</title>
     <url>/2021/08/18/%E5%AD%A6%E8%BD%A6%E8%AE%B0/</url>
     <content><![CDATA[<h3 id="学车记1"><a href="#学车记1" class="headerlink" title="学车记1"></a>学车记1</h3><details class="folding-tag" blue><summary> 2022-08-16 </summary>
@@ -4665,8 +4665,8 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
 </ol>
 <p>参考资料：</p>
 <p><a href="https://www.bilibili.com/video/BV1RA4m1V74W">万字测评！18个主流大模型深度评测，读懂AI现状【深度模评03】</a></p>
-<p><img src="http://png.zkkk123.cn/2024/10/image-20241030174119130.png" alt="image-20241030174119130"></p>
-<p><img src="http://png.zkkk123.cn/2024/10/image-20241030174043279.png" alt="image-20241030174043279"></p>
+<p><img src="http://png.zkkk123.cn/2024/10/image-20241030174119130.png" alt="国外大模型"></p>
+<p><img src="http://png.zkkk123.cn/2024/10/image-20241030174043279.png" alt="国内大模型"></p>
 ]]></content>
       <categories>
         <category>学习笔记</category>
@@ -4676,53 +4676,43 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </tags>
   </entry>
   <entry>
-    <title>网站推送百度</title>
-    <url>/2021/07/21/%E7%BD%91%E7%AB%99%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/</url>
-    <content><![CDATA[<blockquote>
-<p>首先说一下吧，我是在配置_config.yml 时<code>hexo g</code>一直报错(缺少什么文件吧 QTQ)，尝试一天后失败告终，后来想想可能对我用处也不大。但这篇文章是我找到最详细的了，发布时间也比较新，所有拿来分享。</p>
-</blockquote>
-<h3 id="seo-优化"><a href="#seo-优化" class="headerlink" title="seo 优化"></a>seo 优化</h3><p>推广是一个烦人的事情啊喂，特别是对于我们搞技术的来说，可能就不擅长推广，那么怎么才能让别人知道我们呢，我们就要想办法让别人通过搜索就可以搜索到你博客的内容，给我们带来自然流量，这就需要 seo 优化,让我们的站点变得对搜索引擎友好</p>
+    <title>虚拟机安装macOS系统</title>
+    <url>/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<p>参考链接</p>
+<p><a href="https://www.pc-daily.com/xitong/75975.html">虚拟机安装macos系统（VMware虚拟机安装macOS详细</a></p>
+<p><a href="https://blog.csdn.net/Simon_477/article/details/110252233">虚拟机VMware安装苹果系统macOS，超级详细教程，附文件下载，真教程！！</a></p>
+<p><a href="https://baijiahao.baidu.com/s?id=1697367423466273816&amp;wfr=spider&amp;for=pc">如何使用虚拟机VMware安装苹果macOS系统</a></p>
+<h5 id="1-安装虚拟机VMware"><a href="#1-安装虚拟机VMware" class="headerlink" title="1 安装虚拟机VMware"></a>1 安装虚拟机VMware</h5><p><a href="https://mp.weixin.qq.com/s?__biz=MzIyNjAxMjEwOQ==&amp;mid=2247502732&amp;idx=5&amp;sn=27221e888444d6c36ac62f4767337215&amp;chksm=e874752edf03fc38cadb220b2e77654f32248976e7fa2af240ba7f1e0c0527541ebba5725643&amp;scene=21#wechat_redirect">VMware16</a></p>
+<h5 id="2-安装解锁工具unlocker"><a href="#2-安装解锁工具unlocker" class="headerlink" title="2  安装解锁工具unlocker"></a>2  安装解锁工具unlocker</h5><p>解锁虚拟机安装macOS限制工具</p>
+<p><a href="http://www.winwin7.com/soft/9473.html#xiazai">unlocker v3.0.3</a></p>
 <blockquote>
-<p>SEO 是由英文 Search Engine Optimization 缩写而来， 中文意译为“搜索引擎优化”。SEO 是指通过站内优化比如网站结构调整、网站内容建设、网站代码优化等以及站外优化。</p>
+<ul>
+<li><strong><a href="https://blog.csdn.net/puspos/article/details/108900141">运行unlocker中win-install时，出现file not found-darwin.</a></strong></li>
+</ul>
 </blockquote>
-<h3 id="让百度收录你的站点"><a href="#让百度收录你的站点" class="headerlink" title="让百度收录你的站点"></a>让百度收录你的站点</h3><p>我们首先要做的就是让各大搜索引擎收录你的站点，我们在刚建站的时候各个搜索引擎是没有收录我们网站的，在搜索引擎中输入 site:&lt;域名&gt;,如果如下图所示就是说明我们的网站并没有被百度收录。我们可以直接点击下面的“网址提交”来提交我们的网站<br><img src="https://s2.loli.net/2022/10/24/qbLeHJwaRO53lZx.png" alt=""></p>
-<h3 id="验证网站所有权"><a href="#验证网站所有权" class="headerlink" title="验证网站所有权"></a>验证网站所有权</h3><p>登录百度站长平台：<a href="http://zhanzhang.baidu.com">http://zhanzhang.baidu.com</a>, 只要有百度旗下的账号就可以登录，登录成功之后在站点管理中点击添加网站然后输入你的站点地址，建议输入的网站为www开头的，不要输入github.io的，因为github是不允许百度的spider爬取github上的内容的，所以如果想让你的站点被百度收录，只能使用自己购买的域名<br><img src="https://s2.loli.net/2022/10/24/NTAb4OfHJzkxXsu.png" alt="1de31ec351ed9e8fa0a666a331366853.png"><br>在选择完网站的类型之后需要验证网站的所有权，验证网站所有权的方式有三种：文件验证。html 标签验证和 cname 解析验证，使用哪一种方式都可以，都是比较简单的，但是一定要注意，使用文件验证文件存放的位置需要放在 source 文件夹下，如果是 html 文件那么 hexo 就会将其编译，所以必须要加上的 layout:false，这样就不会被 hexo 编译。（如果验证文件是 txt 格式的就不需要），其他两种方式也是很简单的，我个人推荐文件验证和 cname 验证，cname 验证最为简单，只需加一条解析就好~<br><img src="https://s2.loli.net/2022/10/24/xFP2mYAceEJbhVN.png" alt="9e7c57829371e8553e48120c984c4533.png"></p>
-<h3 id="生成网站地图"><a href="#生成网站地图" class="headerlink" title="生成网站地图"></a>生成网站地图</h3><p>我们需要使用 npm 自动生成网站的 sitemap，然后将生成的 sitemap 提交到百度和其他搜索引擎</p>
-<h4 id="安装-sitemap-插件"><a href="#安装-sitemap-插件" class="headerlink" title="安装 sitemap 插件"></a>安装 sitemap 插件</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
-<h4 id="修改博客配置文件"><a href="#修改博客配置文件" class="headerlink" title="修改博客配置文件"></a>修改博客配置文件</h4><p>在根目录配置文件中修改 url 为你的站点地址</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># URL</span><br><span class="line">## If your site is put in a subdirectory, set url as &#x27;http://yoursite.com/child&#x27; and root as &#x27;/child/&#x27;</span><br><span class="line">url: http://cherryblog.site</span><br><span class="line">root: /</span><br><span class="line">permalink: :title.html</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
-<p>执行完之后就会在网站根目录生成 sitemap.xml 文件和 baidusitemap.xml 文件，可以通过<a href="http://www.cherryblog.site/baidusitemap.xml,查看该文件是否生成，其中sitemap.xml文件是搜索引擎通用的文件，baidusitemap.xml是百度专用的sitemap文件。">http://www.cherryblog.site/baidusitemap.xml,查看该文件是否生成，其中sitemap.xml文件是搜索引擎通用的文件，baidusitemap.xml是百度专用的sitemap文件。</a></p>
-<h4 id="向百度提交链接"><a href="#向百度提交链接" class="headerlink" title="向百度提交链接"></a>向百度提交链接</h4><p>然后我们就可以将我们生成的 sitemap 文件提交给百度，还是在百度站长平台，找到链接提交，这里我们可以看到有两种提交方式，自动提交和手动提交，自动提交又分为主动推送、自动推送和 sitemap</p>
+<h5 id="3-虚拟机安装-maOS"><a href="#3-虚拟机安装-maOS" class="headerlink" title="3 虚拟机安装 maOS"></a>3 虚拟机安装 maOS</h5><p><a href="https://www.mhero.com/macos">macOS系统下载</a></p>
+<p><a href="https://cloud.mfpud.com/VirtualCDR/44EE85B8FF68F7428C0AE7B3AA27661E/">macOS kealos 10.15</a> （非百度云盘）</p>
+<p><a href="https://sysin.org/blog/macOS/">Apple macOS 下载汇总（系统、应用和技巧）</a></p>
 <blockquote>
-<p>如何选择链接提交方式 1、主动推送：最为快速的提交方式，推荐您将站点当天新产出链接立即通过此方式推送给百度，以保证新链接可以及时被百度收录。 2、自动推送：最为便捷的提交方式，请将自动推送的 JS 代码部署在站点的每一个页面源代码中，部署代码的页面在每次被浏览时，链接会被自动推送给百度。可以与主动推送配合使用。 3、sitemap：您可以定期将网站链接放到 sitemap 中，然后将 sitemap 提交给百度。百度会周期性的抓取检查您提交的 sitemap，对其中的链接进行处理，但收录速度慢于主动推送。 4、手动提交：一次性提交链接给百度，可以使用此种方式。<br>一般主动提交比手动提交效果好，这里介绍主动提交的三种方法 从效率上来说：<br>主动推送&gt;自动推送&gt;sitemap<br><img src="https://s2.loli.net/2022/10/24/qXuD76Vz2t3QCBi.png" alt="701583918691a71b88c48f98385d2660.png"></p>
+<ul>
+<li>报错<a href="https://www.bilibili.com/read/cv13362122"><strong>客户机操作系统已禁用 CPU</strong></a></li>
+</ul>
 </blockquote>
-<h4 id="主动推送"><a href="#主动推送" class="headerlink" title="主动推送"></a>主动推送</h4><p>安装插件 npm install hexo-baidu-url-submit —save 然后再根目录的配置文件中新增字段</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">    count: 100 # 提交最新的一个链接</span><br><span class="line">    host: www.cherryblog.site # 在百度站长平台中注册的域名</span><br><span class="line">    token: 8OGYpxowYnhgVsUM # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span><br><span class="line">    path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里</span><br></pre></td></tr></table></figure>
-<p>在加入新的 deploye</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> - type:baidu_url_submitter</span><br></pre></td></tr></table></figure>
-<p>这样执行 hexo deploy 的时候，新的链接就会被推送了</p>
-<h4 id="设置自动推送"><a href="#设置自动推送" class="headerlink" title="设置自动推送"></a>设置自动推送</h4><p>主题配置文件下设置,将 baidu_push 设置为 true：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO</span><br><span class="line">baidu_push: true</span><br></pre></td></tr></table></figure>
-<p>然后就会将一下代码自动推送到百度，位置是 themes\next\layout_scripts\baidu_push.swig,这样每次访问博客中的页面就会自动向百度提交 sitemap</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.baidu_push %&#125;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">(function()&#123;</span><br><span class="line">    var bp = document.createElement(&#x27;script&#x27;);</span><br><span class="line">    var curProtocol = window.location.protocol.split(&#x27;:&#x27;)[0];</span><br><span class="line">    if (curProtocol === &#x27;https&#x27;) &#123;</span><br><span class="line">        bp.src = &#x27;https://zz.bdstatic.com/linksubmit/push.js&#x27;;</span><br><span class="line">    &#125;</span><br><span class="line">    else &#123;</span><br><span class="line">        bp.src = &#x27;http://push.zhanzhang.baidu.com/push.js&#x27;;</span><br><span class="line">    &#125;</span><br><span class="line">    var s = document.getElementsByTagName(&quot;script&quot;)[0];</span><br><span class="line">    s.parentNode.insertBefore(bp, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="sitemap"><a href="#sitemap" class="headerlink" title="sitemap"></a>sitemap</h4><p>将我们上一步生成的 sitemap 文件提交到百度就可以了~<br><img src="https://s2.loli.net/2022/10/24/b4BIs8nlNO9eU7q.png" alt="513d8354340674c8e34c702a7170bfcd.png"><br>我记得被百度收录过程还是蛮久的，一度让我以为我的方法有问题，提交链接在站长工具中有显示大概是有两天的时候，站点被百度收录大概花了半个月= =，让大家看一下现在的成果 在百度搜索 site:cherryblog.site 已经可以搜索到结果<br><img src="https://s2.loli.net/2022/10/24/2BLTgGekjQ9MCcP.png" alt="d5a493c8610e5b0a2358409ae7b80d80.png"></p>
-<p>输入关键字的名字也可以在第二页就找到呢，好开森~<br><img src="https://s2.loli.net/2022/10/24/OuAjIHflpMJyoCt.png" alt="411785831c166b05d56a09742d57dc6e.png"></p>
-<h3 id="让-google-收录你的站点"><a href="#让-google-收录你的站点" class="headerlink" title="让 google 收录你的站点"></a>让 google 收录你的站点</h3><p>相比于百度，google 的效率实在不能更快，貌似十分钟左右站点就被收录了，其实方法是和百度是一样的，都是先验证你的站点所有权，然后提交 sitemap google 站点平台：<a href="https://www.google.com/webmasters/，">https://www.google.com/webmasters/，</a> 然后就是注册账号、验证站点、提交 sitemap，一步一步来就好，过不了过久就可以被 google 收录了<br><img src="https://s2.loli.net/2022/10/24/fVnz6vmXi927wtB.png" alt="b2a2053612c4e55157c88401bf4c7384.png"><br><img src="https://s2.loli.net/2022/10/24/ipDbLgkoz5E7sj2.png" alt="d4bdeab31727e86d482f5de88f78675c.png"></p>
-<h3 id="让其他搜索引擎收录你的站点"><a href="#让其他搜索引擎收录你的站点" class="headerlink" title="让其他搜索引擎收录你的站点"></a>让其他搜索引擎收录你的站点</h3><p>除了百度和 google 两大搜索引擎，还有搜狗、360 等其他的搜索引擎，流程都是一样的 ，大家就自行选择添加哈，这里就不再赘述了~</p>
-<h3 id="优化你的-url"><a href="#优化你的-url" class="headerlink" title="优化你的 url"></a>优化你的 url</h3><p>seo 搜索引擎优化认为，网站的最佳结构是用户从首页点击三次就可以到达任何一个页面，但是我们使用 hexo 编译的站点打开文章的 url 是：sitename/year/mounth/day/title 四层的结构，这样的 url 结构很不利于 seo，爬虫就会经常爬不到我们的文章，于是，我们可以将 url 直接改成 sitename/title 的形式，并且 title 最好是用英文，在根目录的配置文件下修改 permalink 如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: http://cherryblog.site</span><br><span class="line">root: /</span><br><span class="line">permalink: :title.html</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
-<hr>
-<hr>
-<blockquote>
-<p>相关链接：<br><a href="https://blog.51cto.com/u_8865295/3032268">【Hexo 实战】SEO（百度、Google）设置</a></p>
-</blockquote>
+<h5 id="4-解决安装后屏幕适应问题"><a href="#4-解决安装后屏幕适应问题" class="headerlink" title="4 解决安装后屏幕适应问题"></a>4 解决安装后屏幕适应问题</h5><p>安装VMware Tools，用到步骤二中darwin.iso</p>
+<h5 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h5><p><a href="https://baijiahao.baidu.com/s?id=1691924549832120099&amp;wfr=spider&amp;for=pc">虚拟机中的Mac系统怎么优化</a></p>
+<p><a href="https://blog.csdn.net/SSS_Benjamin/article/details/89296164">VMware 15 上Mac虚拟机卡顿情况的优化</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/337036027">全网最详细的VMware虚拟机安装MacOS系统教程，没有之一！！！附全部资源</a></p>
+<p><strong>网络</strong></p>
+<p><a href="https://m.kafan.cn/A/gvx45wd73r.html">mac虚拟机如何开启wifi</a></p>
+<p><a href="https://blog.csdn.net/kof820/article/details/50515115?spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&amp;utm_relevant_index=1">VMware虚拟机mac系统以太网无法上网</a></p>
+<p><strong>app store</strong></p>
+<p><a href="https://jingyan.baidu.com/article/e75aca852cd5a9142fdac610.html">app store 购买过程中出错 错误500解决方法</a></p>
 ]]></content>
       <categories>
-        <category>博客相关</category>
+        <category>实用教程</category>
       </categories>
       <tags>
-        <tag>网站</tag>
-        <tag>推送百度</tag>
+        <tag>虚拟机</tag>
       </tags>
   </entry>
   <entry>
@@ -4845,43 +4835,53 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </tags>
   </entry>
   <entry>
-    <title>虚拟机安装macOS系统</title>
-    <url>/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<p>参考链接</p>
-<p><a href="https://www.pc-daily.com/xitong/75975.html">虚拟机安装macos系统（VMware虚拟机安装macOS详细</a></p>
-<p><a href="https://blog.csdn.net/Simon_477/article/details/110252233">虚拟机VMware安装苹果系统macOS，超级详细教程，附文件下载，真教程！！</a></p>
-<p><a href="https://baijiahao.baidu.com/s?id=1697367423466273816&amp;wfr=spider&amp;for=pc">如何使用虚拟机VMware安装苹果macOS系统</a></p>
-<h5 id="1-安装虚拟机VMware"><a href="#1-安装虚拟机VMware" class="headerlink" title="1 安装虚拟机VMware"></a>1 安装虚拟机VMware</h5><p><a href="https://mp.weixin.qq.com/s?__biz=MzIyNjAxMjEwOQ==&amp;mid=2247502732&amp;idx=5&amp;sn=27221e888444d6c36ac62f4767337215&amp;chksm=e874752edf03fc38cadb220b2e77654f32248976e7fa2af240ba7f1e0c0527541ebba5725643&amp;scene=21#wechat_redirect">VMware16</a></p>
-<h5 id="2-安装解锁工具unlocker"><a href="#2-安装解锁工具unlocker" class="headerlink" title="2  安装解锁工具unlocker"></a>2  安装解锁工具unlocker</h5><p>解锁虚拟机安装macOS限制工具</p>
-<p><a href="http://www.winwin7.com/soft/9473.html#xiazai">unlocker v3.0.3</a></p>
-<blockquote>
-<ul>
-<li><strong><a href="https://blog.csdn.net/puspos/article/details/108900141">运行unlocker中win-install时，出现file not found-darwin.</a></strong></li>
-</ul>
+    <title>网站推送百度</title>
+    <url>/2021/07/21/%E7%BD%91%E7%AB%99%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/</url>
+    <content><![CDATA[<blockquote>
+<p>首先说一下吧，我是在配置_config.yml 时<code>hexo g</code>一直报错(缺少什么文件吧 QTQ)，尝试一天后失败告终，后来想想可能对我用处也不大。但这篇文章是我找到最详细的了，发布时间也比较新，所有拿来分享。</p>
 </blockquote>
-<h5 id="3-虚拟机安装-maOS"><a href="#3-虚拟机安装-maOS" class="headerlink" title="3 虚拟机安装 maOS"></a>3 虚拟机安装 maOS</h5><p><a href="https://www.mhero.com/macos">macOS系统下载</a></p>
-<p><a href="https://cloud.mfpud.com/VirtualCDR/44EE85B8FF68F7428C0AE7B3AA27661E/">macOS kealos 10.15</a> （非百度云盘）</p>
-<p><a href="https://sysin.org/blog/macOS/">Apple macOS 下载汇总（系统、应用和技巧）</a></p>
+<h3 id="seo-优化"><a href="#seo-优化" class="headerlink" title="seo 优化"></a>seo 优化</h3><p>推广是一个烦人的事情啊喂，特别是对于我们搞技术的来说，可能就不擅长推广，那么怎么才能让别人知道我们呢，我们就要想办法让别人通过搜索就可以搜索到你博客的内容，给我们带来自然流量，这就需要 seo 优化,让我们的站点变得对搜索引擎友好</p>
 <blockquote>
-<ul>
-<li>报错<a href="https://www.bilibili.com/read/cv13362122"><strong>客户机操作系统已禁用 CPU</strong></a></li>
-</ul>
+<p>SEO 是由英文 Search Engine Optimization 缩写而来， 中文意译为“搜索引擎优化”。SEO 是指通过站内优化比如网站结构调整、网站内容建设、网站代码优化等以及站外优化。</p>
 </blockquote>
-<h5 id="4-解决安装后屏幕适应问题"><a href="#4-解决安装后屏幕适应问题" class="headerlink" title="4 解决安装后屏幕适应问题"></a>4 解决安装后屏幕适应问题</h5><p>安装VMware Tools，用到步骤二中darwin.iso</p>
-<h5 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h5><p><a href="https://baijiahao.baidu.com/s?id=1691924549832120099&amp;wfr=spider&amp;for=pc">虚拟机中的Mac系统怎么优化</a></p>
-<p><a href="https://blog.csdn.net/SSS_Benjamin/article/details/89296164">VMware 15 上Mac虚拟机卡顿情况的优化</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/337036027">全网最详细的VMware虚拟机安装MacOS系统教程，没有之一！！！附全部资源</a></p>
-<p><strong>网络</strong></p>
-<p><a href="https://m.kafan.cn/A/gvx45wd73r.html">mac虚拟机如何开启wifi</a></p>
-<p><a href="https://blog.csdn.net/kof820/article/details/50515115?spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&amp;utm_relevant_index=1">VMware虚拟机mac系统以太网无法上网</a></p>
-<p><strong>app store</strong></p>
-<p><a href="https://jingyan.baidu.com/article/e75aca852cd5a9142fdac610.html">app store 购买过程中出错 错误500解决方法</a></p>
+<h3 id="让百度收录你的站点"><a href="#让百度收录你的站点" class="headerlink" title="让百度收录你的站点"></a>让百度收录你的站点</h3><p>我们首先要做的就是让各大搜索引擎收录你的站点，我们在刚建站的时候各个搜索引擎是没有收录我们网站的，在搜索引擎中输入 site:&lt;域名&gt;,如果如下图所示就是说明我们的网站并没有被百度收录。我们可以直接点击下面的“网址提交”来提交我们的网站<br><img src="https://s2.loli.net/2022/10/24/qbLeHJwaRO53lZx.png" alt=""></p>
+<h3 id="验证网站所有权"><a href="#验证网站所有权" class="headerlink" title="验证网站所有权"></a>验证网站所有权</h3><p>登录百度站长平台：<a href="http://zhanzhang.baidu.com">http://zhanzhang.baidu.com</a>, 只要有百度旗下的账号就可以登录，登录成功之后在站点管理中点击添加网站然后输入你的站点地址，建议输入的网站为www开头的，不要输入github.io的，因为github是不允许百度的spider爬取github上的内容的，所以如果想让你的站点被百度收录，只能使用自己购买的域名<br><img src="https://s2.loli.net/2022/10/24/NTAb4OfHJzkxXsu.png" alt="1de31ec351ed9e8fa0a666a331366853.png"><br>在选择完网站的类型之后需要验证网站的所有权，验证网站所有权的方式有三种：文件验证。html 标签验证和 cname 解析验证，使用哪一种方式都可以，都是比较简单的，但是一定要注意，使用文件验证文件存放的位置需要放在 source 文件夹下，如果是 html 文件那么 hexo 就会将其编译，所以必须要加上的 layout:false，这样就不会被 hexo 编译。（如果验证文件是 txt 格式的就不需要），其他两种方式也是很简单的，我个人推荐文件验证和 cname 验证，cname 验证最为简单，只需加一条解析就好~<br><img src="https://s2.loli.net/2022/10/24/xFP2mYAceEJbhVN.png" alt="9e7c57829371e8553e48120c984c4533.png"></p>
+<h3 id="生成网站地图"><a href="#生成网站地图" class="headerlink" title="生成网站地图"></a>生成网站地图</h3><p>我们需要使用 npm 自动生成网站的 sitemap，然后将生成的 sitemap 提交到百度和其他搜索引擎</p>
+<h4 id="安装-sitemap-插件"><a href="#安装-sitemap-插件" class="headerlink" title="安装 sitemap 插件"></a>安装 sitemap 插件</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
+<h4 id="修改博客配置文件"><a href="#修改博客配置文件" class="headerlink" title="修改博客配置文件"></a>修改博客配置文件</h4><p>在根目录配置文件中修改 url 为你的站点地址</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># URL</span><br><span class="line">## If your site is put in a subdirectory, set url as &#x27;http://yoursite.com/child&#x27; and root as &#x27;/child/&#x27;</span><br><span class="line">url: http://cherryblog.site</span><br><span class="line">root: /</span><br><span class="line">permalink: :title.html</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
+<p>执行完之后就会在网站根目录生成 sitemap.xml 文件和 baidusitemap.xml 文件，可以通过<a href="http://www.cherryblog.site/baidusitemap.xml,查看该文件是否生成，其中sitemap.xml文件是搜索引擎通用的文件，baidusitemap.xml是百度专用的sitemap文件。">http://www.cherryblog.site/baidusitemap.xml,查看该文件是否生成，其中sitemap.xml文件是搜索引擎通用的文件，baidusitemap.xml是百度专用的sitemap文件。</a></p>
+<h4 id="向百度提交链接"><a href="#向百度提交链接" class="headerlink" title="向百度提交链接"></a>向百度提交链接</h4><p>然后我们就可以将我们生成的 sitemap 文件提交给百度，还是在百度站长平台，找到链接提交，这里我们可以看到有两种提交方式，自动提交和手动提交，自动提交又分为主动推送、自动推送和 sitemap</p>
+<blockquote>
+<p>如何选择链接提交方式 1、主动推送：最为快速的提交方式，推荐您将站点当天新产出链接立即通过此方式推送给百度，以保证新链接可以及时被百度收录。 2、自动推送：最为便捷的提交方式，请将自动推送的 JS 代码部署在站点的每一个页面源代码中，部署代码的页面在每次被浏览时，链接会被自动推送给百度。可以与主动推送配合使用。 3、sitemap：您可以定期将网站链接放到 sitemap 中，然后将 sitemap 提交给百度。百度会周期性的抓取检查您提交的 sitemap，对其中的链接进行处理，但收录速度慢于主动推送。 4、手动提交：一次性提交链接给百度，可以使用此种方式。<br>一般主动提交比手动提交效果好，这里介绍主动提交的三种方法 从效率上来说：<br>主动推送&gt;自动推送&gt;sitemap<br><img src="https://s2.loli.net/2022/10/24/qXuD76Vz2t3QCBi.png" alt="701583918691a71b88c48f98385d2660.png"></p>
+</blockquote>
+<h4 id="主动推送"><a href="#主动推送" class="headerlink" title="主动推送"></a>主动推送</h4><p>安装插件 npm install hexo-baidu-url-submit —save 然后再根目录的配置文件中新增字段</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">    count: 100 # 提交最新的一个链接</span><br><span class="line">    host: www.cherryblog.site # 在百度站长平台中注册的域名</span><br><span class="line">    token: 8OGYpxowYnhgVsUM # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span><br><span class="line">    path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里</span><br></pre></td></tr></table></figure>
+<p>在加入新的 deploye</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> - type:baidu_url_submitter</span><br></pre></td></tr></table></figure>
+<p>这样执行 hexo deploy 的时候，新的链接就会被推送了</p>
+<h4 id="设置自动推送"><a href="#设置自动推送" class="headerlink" title="设置自动推送"></a>设置自动推送</h4><p>主题配置文件下设置,将 baidu_push 设置为 true：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO</span><br><span class="line">baidu_push: true</span><br></pre></td></tr></table></figure>
+<p>然后就会将一下代码自动推送到百度，位置是 themes\next\layout_scripts\baidu_push.swig,这样每次访问博客中的页面就会自动向百度提交 sitemap</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.baidu_push %&#125;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">(function()&#123;</span><br><span class="line">    var bp = document.createElement(&#x27;script&#x27;);</span><br><span class="line">    var curProtocol = window.location.protocol.split(&#x27;:&#x27;)[0];</span><br><span class="line">    if (curProtocol === &#x27;https&#x27;) &#123;</span><br><span class="line">        bp.src = &#x27;https://zz.bdstatic.com/linksubmit/push.js&#x27;;</span><br><span class="line">    &#125;</span><br><span class="line">    else &#123;</span><br><span class="line">        bp.src = &#x27;http://push.zhanzhang.baidu.com/push.js&#x27;;</span><br><span class="line">    &#125;</span><br><span class="line">    var s = document.getElementsByTagName(&quot;script&quot;)[0];</span><br><span class="line">    s.parentNode.insertBefore(bp, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="sitemap"><a href="#sitemap" class="headerlink" title="sitemap"></a>sitemap</h4><p>将我们上一步生成的 sitemap 文件提交到百度就可以了~<br><img src="https://s2.loli.net/2022/10/24/b4BIs8nlNO9eU7q.png" alt="513d8354340674c8e34c702a7170bfcd.png"><br>我记得被百度收录过程还是蛮久的，一度让我以为我的方法有问题，提交链接在站长工具中有显示大概是有两天的时候，站点被百度收录大概花了半个月= =，让大家看一下现在的成果 在百度搜索 site:cherryblog.site 已经可以搜索到结果<br><img src="https://s2.loli.net/2022/10/24/2BLTgGekjQ9MCcP.png" alt="d5a493c8610e5b0a2358409ae7b80d80.png"></p>
+<p>输入关键字的名字也可以在第二页就找到呢，好开森~<br><img src="https://s2.loli.net/2022/10/24/OuAjIHflpMJyoCt.png" alt="411785831c166b05d56a09742d57dc6e.png"></p>
+<h3 id="让-google-收录你的站点"><a href="#让-google-收录你的站点" class="headerlink" title="让 google 收录你的站点"></a>让 google 收录你的站点</h3><p>相比于百度，google 的效率实在不能更快，貌似十分钟左右站点就被收录了，其实方法是和百度是一样的，都是先验证你的站点所有权，然后提交 sitemap google 站点平台：<a href="https://www.google.com/webmasters/，">https://www.google.com/webmasters/，</a> 然后就是注册账号、验证站点、提交 sitemap，一步一步来就好，过不了过久就可以被 google 收录了<br><img src="https://s2.loli.net/2022/10/24/fVnz6vmXi927wtB.png" alt="b2a2053612c4e55157c88401bf4c7384.png"><br><img src="https://s2.loli.net/2022/10/24/ipDbLgkoz5E7sj2.png" alt="d4bdeab31727e86d482f5de88f78675c.png"></p>
+<h3 id="让其他搜索引擎收录你的站点"><a href="#让其他搜索引擎收录你的站点" class="headerlink" title="让其他搜索引擎收录你的站点"></a>让其他搜索引擎收录你的站点</h3><p>除了百度和 google 两大搜索引擎，还有搜狗、360 等其他的搜索引擎，流程都是一样的 ，大家就自行选择添加哈，这里就不再赘述了~</p>
+<h3 id="优化你的-url"><a href="#优化你的-url" class="headerlink" title="优化你的 url"></a>优化你的 url</h3><p>seo 搜索引擎优化认为，网站的最佳结构是用户从首页点击三次就可以到达任何一个页面，但是我们使用 hexo 编译的站点打开文章的 url 是：sitename/year/mounth/day/title 四层的结构，这样的 url 结构很不利于 seo，爬虫就会经常爬不到我们的文章，于是，我们可以将 url 直接改成 sitename/title 的形式，并且 title 最好是用英文，在根目录的配置文件下修改 permalink 如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: http://cherryblog.site</span><br><span class="line">root: /</span><br><span class="line">permalink: :title.html</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
+<hr>
+<hr>
+<blockquote>
+<p>相关链接：<br><a href="https://blog.51cto.com/u_8865295/3032268">【Hexo 实战】SEO（百度、Google）设置</a></p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>实用教程</category>
+        <category>博客相关</category>
       </categories>
       <tags>
-        <tag>虚拟机</tag>
+        <tag>网站</tag>
+        <tag>推送百度</tag>
       </tags>
   </entry>
 </search>
