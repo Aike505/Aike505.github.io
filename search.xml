@@ -23,207 +23,6 @@
       </tags>
   </entry>
   <entry>
-    <title>chatgpt学习</title>
-    <url>/2023/11/30/chatgpt%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p> 掌握ChatGPT，高效工作：深入理解及实践技巧，避免信息垃圾，精准获取所需。</p>
-<span id="more"></span>
-<h3 id="1-ChatGPT"><a href="#1-ChatGPT" class="headerlink" title="1 ChatGPT"></a>1 <a href="https://www.bilibili.com/video/BV1UP411v7oX/">ChatGPT</a></h3><p>读大量公开文本信息，涌现逻辑思维能力的大语言模型(LLM)</p>
-<p>文字、代码、字符(不考虑多模态)的任务</p>
-<p>训练文本截止(2021年9月)</p>
-<p>无法获取公开知识、未必准确、卸载prompt里(你的想法、背景、爱好它无法感知)</p>
-<p>Prompt(触发和引导大语言模型的输入文本)</p>
-<p>Prompt Engineering(优化prompt设计，改进回答，不同措辞、详细背景信息)</p>
-<p>中文(自然表达、适合中文相关知识和领域，专业领域差)，英文(模型表现更好，国际性信息)</p>
-<h4 id="1-1-ChatGPT-Prompt-Engineering实战"><a href="#1-1-ChatGPT-Prompt-Engineering实战" class="headerlink" title="1.1 ChatGPT Prompt Engineering实战"></a>1.1 ChatGPT Prompt Engineering实战</h4><p>prompt词的分享网站</p>
-<h5 id="1-1-1-Prompt的基础结果"><a href="#1-1-1-Prompt的基础结果" class="headerlink" title="1.1.1 Prompt的基础结果"></a>1.1.1 Prompt的基础结果</h5><p>指令词(事情)、输入(问题、内容)、背景(上下文信息)、输出要求(格式、长度限制)</p>
-<p>猜测(日期、天气、展开对话、文本补充)、输出文本结构范例(提供输入学习、输出要求)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129105726751.png" alt="image-20231129105726751" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129105825779.png" alt="image-20231129105825779" style="zoom:67%;" /></p>
-<h5 id="1-1-2-Prompt-技巧"><a href="#1-1-2-Prompt-技巧" class="headerlink" title="1.1.2 Prompt 技巧"></a>1.1.2 Prompt 技巧</h5><p>设定你的角色(提高相关性和满意度)</p>
-<p>设定chatgpt角色(专业角色，老师律师)</p>
-<p>明确问题(细化)</p>
-<p>提供背景信息(基础信息、现状)</p>
-<p>分阶段提问(复杂任务(出问题、回答问题、评估问题)、简单问题开端、逐步深入)</p>
-<p>引导合理的思维顺序(先展示，让chatgpt合理的思维方式一步步来)</p>
-<p>反馈和迭代(逐步)</p>
-<h5 id="1-1-3-典型场景实践"><a href="#1-1-3-典型场景实践" class="headerlink" title="1.1.3 典型场景实践"></a>1.1.3 典型场景实践</h5><p>Chat with Books(已经公开发行的书籍是幼稚来源，辅助学习(提供问题和作业))</p>
-<p>Chat with Everything()</p>
-<p>独立开发者(引入“产品经理”角色，角色扮演能力实现一个人就是一个团队的效果，引入工作流的角色)</p>
-<p> 翻译能力</p>
-<p>求职场景(工作履历+岗位JD，自动生成每个岗位的建立，Latex代码(ppt可以用)，在Overlea网站生成了，面试演练)</p>
-<p>chatgpt+midjourney(英文，结构化，摄影相机位置、光线、构图(chatgpt懂相机设置))</p>
-<p>随机扩充概念(脑洞)</p>
-<p>图像反向描述(图片输出描述，迭代新的描述)</p>
-<h4 id="1-2-ChatGPT训练原理"><a href="#1-2-ChatGPT训练原理" class="headerlink" title="1.2 ChatGPT训练原理"></a>1.2 ChatGPT训练原理</h4><p>预训练(LLM,基础模型，95%训练时间，LLaMA，GPT3(3000亿token))、监督微调(提示词和回答数据)、奖励模型(评价打分)、强化学习(最大化奖励回答)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129161622713.png" alt="image-20231129161622713" style="zoom:67%;" /></p>
-<p><strong>（1） 预训练 BaseMode</strong>l</p>
-<p>好的提示词逼出好的训练语料，</p>
-<p>词汇表字词化(减少次数，提升翻译)</p>
-<p>迭代训练</p>
-<p>帮助预测下一个单词，而不是回答</p>
-<p>需要开发者继续开发</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129161946581.png" alt="image-20231129161946581" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162120063.png" alt="image-20231129162120063" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162308597.png" alt="image-20231129162308597" style="zoom:67%;" /></p>
-<p><strong>（2）监督微调 SFT Model</strong> </p>
-<p>几天时间，目标(依然预测下一个单词)</p>
-<p>提供模型实例(学习人类的指令)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162619289.png" alt="image-20231129162619289" style="zoom:67%;" /></p>
-<p><strong>（3）奖励建模 Reward Modeling</strong></p>
-<p>不同回答打分的模型</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162821915.png" alt="image-20231129162821915"></p>
-<p><strong>（4）强化学习 Reinforcement Learning</strong></p>
-<p>获取更高得分的答案(更符合人类偏好，中庸，符合一般性，发散性不如Base Model)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162926671.png" alt="image-20231129162926671" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162952118.png" alt="image-20231129162952118" style="zoom:67%;" /></p>
-<h4 id="1-3-人和AI思维模式差异"><a href="#1-3-人和AI思维模式差异" class="headerlink" title="1.3 人和AI思维模式差异"></a>1.3 人和AI思维模式差异</h4><p>提示词功能（缝合人与AI差异）</p>
-<p>提供充足的知识和背景</p>
-<p>提供必要的工具（chatgpt+browsing+plugings）</p>
-<p>允许回溯和检查（本身不带回溯，提问“你的回答是否准确”，反思）</p>
-<p>激发“系统二”慢思考(复杂问题拆解小任务+反思系统(AutoGPT)，更多思考时间，few-shot(提供实施)，think step by step(chatgpt思维展开))</p>
-<p>ChatGPT不想要成功(进修prompt，加入你是这个领域的专家，一般回答质量更好)</p>
-<h4 id="1-4-自定义指令-Custom-Instruction"><a href="#1-4-自定义指令-Custom-Instruction" class="headerlink" title="1.4 自定义指令 Custom Instruction"></a>1.4 自定义指令 Custom Instruction</h4><p>省略每次对话的全局性设置(提高日常使用效率，本身没有提高)</p>
-<p>自己写，针对个人身份(提炼聊天记录)</p>
-<p>简单文字-&gt;更好效果</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129164806642.png" alt="image-20231129164806642"></p>
-<h4 id="1-5-使用技巧"><a href="#1-5-使用技巧" class="headerlink" title="1.5 使用技巧"></a>1.5 使用技巧</h4><p><strong>通用技巧：</strong></p>
-<p>1扮演专家角色回答</p>
-<p>2告诉chatgpt你的身份和能力</p>
-<p>3限制回答长度</p>
-<p>4让chatgpt一步步思考</p>
-<p>5明确要求和目的</p>
-<p>6提供充分背景信息</p>
-<p>7结构化思考prompt</p>
-<p>8系统化设置自定义指令(custom instructions)</p>
-<p><strong>工作相关技巧：</strong></p>
-<p>9生成相关简历(结合JD调整，输出Latex)</p>
-<p>10结合chatgpt写周报(few-shot少示例提示)</p>
-<p>11提供思考方向(脑暴，提供思路)</p>
-<p>12特定角色融入工作流</p>
-<p>13将顶级企业工作方法融入工作流(亚马逊PRFAQ，PEST)</p>
-<p>14帮助写小红书创造内容</p>
-<p>15帮助写视频脚本(few-shot，先找好的脚本示例)</p>
-<p>16将你的想法实现为产品(自然语言编程)</p>
-<p><strong>学习效率提升：</strong></p>
-<p>17用chatgpt总结一本书的内容</p>
-<p>18基于目标，选择性阅读</p>
-<p>19学习过程帮助解释概念，提供示例</p>
-<p>20用chatgpt考察学习成果(费曼学习法，出题)</p>
-<p>21读书笔记和书评</p>
-<p><strong>提升写作效率</strong></p>
-<p>22回复邮件，公文类</p>
-<p>23作为编辑帮助润色文章</p>
-<p>24梳理大纲在进行写作</p>
-<p>25用特定作家的口吻写作</p>
-<p>26用特定作家的口吻翻译</p>
-<p><a href="bookai.top">数十种角色prompt</a></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129170642207.png" alt="image-20231129170642207" style="zoom:67%;" /></p>
-<h4 id="1-6-复杂问题解决"><a href="#1-6-复杂问题解决" class="headerlink" title="1.6 复杂问题解决"></a>1.6 <a href="https://www.bilibili.com/video/BV1Lg4y1c7fk/">复杂问题解决</a></h4><p>简单问题what、where、when</p>
-<p>复杂问题why(知识背景更广,事实推理，不会基于跟人立场、信仰使其逻辑自洽)和how(完成任务，提供目标、路径和工具)</p>
-<p>google 插件(voice control for chatgpt)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129175237433.png" alt="image-20231129175237433" style="zoom:67%;" /></p>
-<p><strong>沟通视窗</strong></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172316317.png" alt="image-20231129172316317" style="zoom:67%;" /></p>
-<blockquote>
-<p>盲区问题：</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172336093.png" alt="image-20231129172336093" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172401575.png" alt="image-20231129172401575" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172424896.png" alt="image-20231129172424896" style="zoom:67%;" /></p>
-<p>公开区：</p>
-<p>检验、扩充认知</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172650406.png" alt="image-20231129172650406" style="zoom:67%;" /></p>
-<p>隐私区:</p>
-<p>21年9月后、专业领域</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172823427.png" alt="image-20231129172823427" style="zoom:67%;" /></p>
-<p>未知区：</p>
-<p>都不知道</p>
-<p>如果……发生，会产生什么影响？</p>
-<p>【提问句式整理】<br>（你不知道，GPT知道）<br>1、元问题：我想了解xxxx，我应该向你问哪些问题？<br>2、请给我列出xxx领域/行业相关的，最常用的50个概念，并做简单解释。如果有英文缩写，请给出完整的英文解释。<br>3、请详细介绍一下elon musk的主要生平事迹。请详细介绍一下tesla这家企业的发展历程。</p>
-<p>（你知道，GPT也知道）<br>检验认知：<br>1、对于xxx主题/技能，你认为哪些是我必须理解和掌握的核心要点？<br>2、我理解的xxx是这样的，你觉得我的理解对吗？<br>3、我对xxx有一些想法，你能帮我批判性地分析一下这些想法的优点和缺点吗？<br>4、我正在考虑xxx的决定，你能帮我分析一下可能的结果和影响吗？</p>
-<p>扩充认知：<br>1、我知道xxx的概念，我想知道更多关于xxx的信息。<br>2、我在xxx问题上遇到困难，你能提供一些可能的解决方案或建议吗？<br>3、我想要深入学习xxx，你能推荐一些进阶的学习资源或学习路径吗？<br>4、我想要在xxx领域有所创新，你能提供一些启发或想法吗？<br>5、我想在xxx领域提升自己，你能根据最新的研究和趋势给我一些建议吗？<br>6、我正在考虑学习xxx，你能给我一些关于这个领域未来发展的观点吗？<br>7、（背景信息xxx），我要做关于xxx的研究，我认为原因是，还有其他可能的原因吗？给出一些可能的研究假设。<br>8、我是一个xx新手，马上要采访这个行业的资深大佬，我应该向他请教哪些有价值的问题？</p>
-<p>（你知道，GPT不知道）<br>介绍背景现象之后可以向gpt发问，你怎么看待这种现象？可能的原因有哪些？这会对xxx产生什么样的影响？你觉得xxx应该怎么做？</p>
-<p>（你和GPT都不知道）<br>如果xxx，这对社会会产生什么影响？</p>
-<p>检验自己认知/能力水平提问句式<br>1、为了测试我对xxx的理解程度，你会问我什么问题来检验我的水平，最少10个。<br>2、我是xx领域的专家，你会问我哪些问题来检验我的专业水平？<br>3、追问一句，这些我都懂，还有更专业更细更深的问题吗？<br>4、你问我答的游戏</p>
-<p>扩展自己能力边界的提问句式我已经很精通xxx了，我想知道我是否还有需要学习的地方？然后不停的问，还有呢还有呢？</p>
-<p>让GPT完成具体任务<br>1、我想做xxx，你能给我提供什么帮助？<br>2、我想要你做xxx，我应该给你输入什么信息？<br>3、直接下指令</p>
-</blockquote>
-<p><strong>达克效应</strong></p>
-<p>反向提问</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129173106787.png" alt="image-20231129173106787"></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129173206123.png" alt="image-20231129173206123" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129173221469.png" alt="image-20231129173221469" style="zoom:67%;" /></p>
-<p>让chatgpt根据自己信息提供推荐</p>
-<p>联网模式</p>
-<p>插件模式(调用第三方插件)</p>
-<p><strong>模拟角色</strong></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129173924046.png" alt="image-20231129173924046" style="zoom: 67%;" /></p>
-<p><strong>扮演一段关系</strong></p>
-<p>感觉到人类的情感和温暖(恐怖)</p>
-<p><strong>扮演几个、几类人</strong></p>
-<p>多个人脑暴，几类人(语料库更多，更准确)</p>
-<p>iphone里的chatgpt app可以语音输入</p>
-<p>世界上大部分有用的知识都沉浸在英语的海洋里面</p>
-<h4 id="1-7-ChatGPT-使用教程"><a href="#1-7-ChatGPT-使用教程" class="headerlink" title="1.7 ChatGPT 使用教程"></a>1.7 <a href="https://www.bilibili.com/video/BV1th4y137yh">ChatGPT 使用教程</a></h4><p>野中郁次郎的SECI模型</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129175659469.png" alt="image-20231129175659469" style="zoom:67%;" /></p>
-<p>理解的是显性知识（主动找的，不是推荐）</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129175744670.png" alt="image-20231129175744670" style="zoom:67%;" /></p>
-<p>得到（知识付费网址）</p>
-<p>搜索pdf(filetype:pdf)</p>
-<p>联网模式（能够使用Pdf语法）</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182140216.png" alt="image-20231129182140216" style="zoom:67%;" /></p>
-<p>快速学习能力：</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182242794.png" alt="image-20231129182242794" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182255861.png" alt="image-20231129182255861" style="zoom:67%;" /></p>
-<p>搜索、提问、自学</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182355395.png" alt="image-20231129182355395" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182418324.png" alt="image-20231129182418324" style="zoom:67%;" /></p>
-<p>3h25次回答(一次多问)</p>
-<p>批判新思维</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129183246973.png" alt="image-20231129183246973" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182908033.png" alt="image-20231129182908033" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129184515233.png" alt="image-20231129184515233" style="zoom:67%;" /></p>
-<p>结构化提问：</p>
-<p>MECE五种方法+几类各种模型</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129183337778.png" alt="image-20231129183337778" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129183438808.png" alt="image-20231129183438808" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129184558855.png" alt="image-20231129184558855"></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129184615178.png" alt="image-20231129184615178" style="zoom:67%;" /></p>
-<h4 id="1-8-GPTs"><a href="#1-8-GPTs" class="headerlink" title="1.8 GPTs"></a>1.8 GPTs</h4><p>opai第一届开发者大会</p>
-<p>数据更新到2023年3月，多模态大整合，自制GPTs</p>
-<p>图片识别能力</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129231036477.png" alt="image-20231129231036477" style="zoom:67%;" /></p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231129231654562.png" alt="image-20231129231654562" style="zoom:67%;" /></p>
-<h4 id="1-9-ChatGPT插件"><a href="#1-9-ChatGPT插件" class="headerlink" title="1.9 ChatGPT插件"></a>1.9 ChatGPT插件</h4><p><img src="http://png.zkkk123.cn/2023/12/image-20231130101323014.png" alt="image-20231130101323014" style="zoom:67%;" /></p>
-<p>ChatGPT最多支撑同时调用三个插件</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231130101929964.png" alt="image-20231130101929964" style="zoom:67%;" /></p>
-<p>WebPilot(联网功能，唯一推荐，新闻)</p>
-<p>Wolfram(计算数理化(画函数图像，解方程)、推理计算、画图、介绍+图片)</p>
-<p>AI Tool Hunt(找其他AI工具和插件)</p>
-<p>voice over(文字转语音，支持中文、英文、中英混合)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231130103551126.png" alt="image-20231130103551126" style="zoom:67%;" /></p>
-<p>HeyGen(文字转语音，口播视频)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231130103658598.png" alt="image-20231130103658598" style="zoom:67%;" /></p>
-<p>Visia(文字生成视频，找网上视频拼凑而成)</p>
-<p>Video Summary(视频总结，中文需要有字幕)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231130103927180.png" alt="image-20231130103927180" style="zoom:67%;" /></p>
-<p>Scholar AI(查找论文，写综述)</p>
-<p>MixerBox Scholar(找文献、写文献综述，更强、文献质量更高)</p>
-<p>Tutory(个人导师，学习路径)</p>
-<p>Speak(学习语言，模拟对话场景)</p>
-<p>Code Interpreter</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231130104459021.png" alt="image-20231130104459021" style="zoom:67%;" /></p>
-<h3 id="2-0-部署微信AI机器人-chatgpt-on-wechat"><a href="#2-0-部署微信AI机器人-chatgpt-on-wechat" class="headerlink" title="2.0 部署微信AI机器人(chatgpt-on-wechat)"></a><a href="https://www.bilibili.com/video/BV1ZX4y1Y7e9">2.0 部署微信AI机器人(chatgpt-on-wechat)</a></h3><p>tabby(命令提示符工具,github项目)</p>
-<p><img src="http://png.zkkk123.cn/2023/12/image-20231130120650093.png" alt="image-20231130120650093" style="zoom:67%;" /></p>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>大模型</tag>
-        <tag>chatgpt</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python程序设计二级考试必看</title>
     <url>/2021/09/04/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%BA%8C%E7%BA%A7%E8%80%83%E8%AF%95%E5%BF%85%E7%9C%8B/</url>
     <content><![CDATA[<h1 id="1-程序设计基本方法"><a href="#1-程序设计基本方法" class="headerlink" title="1.程序设计基本方法"></a>1.程序设计基本方法</h1><ul>
@@ -2102,38 +1901,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo 新建分类和标签</title>
-    <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
-    <content><![CDATA[<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
-<h2 id="1-创建“分类”选项"><a href="#1-创建“分类”选项" class="headerlink" title="1.创建“分类”选项"></a>1.创建“分类”选项</h2><p>生成“分类”页并添加 tpye 属性,进入博客目录。执行命令下方命令</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-<p>categories 文件夹下会有 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2019-04-24 15:30:30</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>保存并关闭文件。</p>
-<p>给文章添加“categories”属性</p>
-<p>打开需要添加分类的文章，为其添加 categories 属性。下方的 categories:Hexo 表示这篇文章添加到到“Hexo”这个分类。注意：一篇文章只会添加到一个分类中，如果是多个默认放到第一个分类中。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 添加分类及标签</span><br><span class="line">date: 2017-05-26 12:12:57</span><br><span class="line">categories: Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了 categories: xxx 的文章才会被收录到首页的“分类”中。</p>
-<h2 id="2-创建“标签”选项"><a href="#2-创建“标签”选项" class="headerlink" title="2.创建“标签”选项"></a>2.创建“标签”选项</h2><p>生成“标签”页并添加 tpye 属性</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-<p>在 tags 文件夹下，找到 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-22 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>添加 type: “tags”到内容中，添加后是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>保存并关闭文件。</p>
-<p>给文章添加“tags”属性,打开需要添加标签的文章，为其添加 tags 属性。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 添加分类及标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">categories:</span><br><span class="line">           - Hexo</span><br><span class="line">tags:</span><br><span class="line">           - 博客</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-        <tag>新建分类标签</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>github+hexo 个人博客更换主题</title>
     <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
     <content><![CDATA[<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
@@ -2191,6 +1958,239 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo 新建分类和标签</title>
+    <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
+    <content><![CDATA[<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
+<h2 id="1-创建“分类”选项"><a href="#1-创建“分类”选项" class="headerlink" title="1.创建“分类”选项"></a>1.创建“分类”选项</h2><p>生成“分类”页并添加 tpye 属性,进入博客目录。执行命令下方命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+<p>categories 文件夹下会有 index.md 这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2019-04-24 15:30:30</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>保存并关闭文件。</p>
+<p>给文章添加“categories”属性</p>
+<p>打开需要添加分类的文章，为其添加 categories 属性。下方的 categories:Hexo 表示这篇文章添加到到“Hexo”这个分类。注意：一篇文章只会添加到一个分类中，如果是多个默认放到第一个分类中。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 添加分类及标签</span><br><span class="line">date: 2017-05-26 12:12:57</span><br><span class="line">categories: Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了 categories: xxx 的文章才会被收录到首页的“分类”中。</p>
+<h2 id="2-创建“标签”选项"><a href="#2-创建“标签”选项" class="headerlink" title="2.创建“标签”选项"></a>2.创建“标签”选项</h2><p>生成“标签”页并添加 tpye 属性</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+<p>在 tags 文件夹下，找到 index.md 这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-22 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>添加 type: “tags”到内容中，添加后是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>保存并关闭文件。</p>
+<p>给文章添加“tags”属性,打开需要添加标签的文章，为其添加 tags 属性。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 添加分类及标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">categories:</span><br><span class="line">           - Hexo</span><br><span class="line">tags:</span><br><span class="line">           - 博客</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+        <tag>新建分类标签</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>chatgpt学习</title>
+    <url>/2023/11/30/chatgpt%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p> 掌握ChatGPT，高效工作：深入理解及实践技巧，避免信息垃圾，精准获取所需。</p>
+<span id="more"></span>
+<h3 id="1-ChatGPT"><a href="#1-ChatGPT" class="headerlink" title="1 ChatGPT"></a>1 <a href="https://www.bilibili.com/video/BV1UP411v7oX/">ChatGPT</a></h3><p>读大量公开文本信息，涌现逻辑思维能力的大语言模型(LLM)</p>
+<p>文字、代码、字符(不考虑多模态)的任务</p>
+<p>训练文本截止(2021年9月)</p>
+<p>无法获取公开知识、未必准确、卸载prompt里(你的想法、背景、爱好它无法感知)</p>
+<p>Prompt(触发和引导大语言模型的输入文本)</p>
+<p>Prompt Engineering(优化prompt设计，改进回答，不同措辞、详细背景信息)</p>
+<p>中文(自然表达、适合中文相关知识和领域，专业领域差)，英文(模型表现更好，国际性信息)</p>
+<h4 id="1-1-ChatGPT-Prompt-Engineering实战"><a href="#1-1-ChatGPT-Prompt-Engineering实战" class="headerlink" title="1.1 ChatGPT Prompt Engineering实战"></a>1.1 ChatGPT Prompt Engineering实战</h4><p>prompt词的分享网站</p>
+<h5 id="1-1-1-Prompt的基础结果"><a href="#1-1-1-Prompt的基础结果" class="headerlink" title="1.1.1 Prompt的基础结果"></a>1.1.1 Prompt的基础结果</h5><p>指令词(事情)、输入(问题、内容)、背景(上下文信息)、输出要求(格式、长度限制)</p>
+<p>猜测(日期、天气、展开对话、文本补充)、输出文本结构范例(提供输入学习、输出要求)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129105726751.png" alt="image-20231129105726751" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129105825779.png" alt="image-20231129105825779" style="zoom:67%;" /></p>
+<h5 id="1-1-2-Prompt-技巧"><a href="#1-1-2-Prompt-技巧" class="headerlink" title="1.1.2 Prompt 技巧"></a>1.1.2 Prompt 技巧</h5><p>设定你的角色(提高相关性和满意度)</p>
+<p>设定chatgpt角色(专业角色，老师律师)</p>
+<p>明确问题(细化)</p>
+<p>提供背景信息(基础信息、现状)</p>
+<p>分阶段提问(复杂任务(出问题、回答问题、评估问题)、简单问题开端、逐步深入)</p>
+<p>引导合理的思维顺序(先展示，让chatgpt合理的思维方式一步步来)</p>
+<p>反馈和迭代(逐步)</p>
+<h5 id="1-1-3-典型场景实践"><a href="#1-1-3-典型场景实践" class="headerlink" title="1.1.3 典型场景实践"></a>1.1.3 典型场景实践</h5><p>Chat with Books(已经公开发行的书籍是幼稚来源，辅助学习(提供问题和作业))</p>
+<p>Chat with Everything()</p>
+<p>独立开发者(引入“产品经理”角色，角色扮演能力实现一个人就是一个团队的效果，引入工作流的角色)</p>
+<p> 翻译能力</p>
+<p>求职场景(工作履历+岗位JD，自动生成每个岗位的建立，Latex代码(ppt可以用)，在Overlea网站生成了，面试演练)</p>
+<p>chatgpt+midjourney(英文，结构化，摄影相机位置、光线、构图(chatgpt懂相机设置))</p>
+<p>随机扩充概念(脑洞)</p>
+<p>图像反向描述(图片输出描述，迭代新的描述)</p>
+<h4 id="1-2-ChatGPT训练原理"><a href="#1-2-ChatGPT训练原理" class="headerlink" title="1.2 ChatGPT训练原理"></a>1.2 ChatGPT训练原理</h4><p>预训练(LLM,基础模型，95%训练时间，LLaMA，GPT3(3000亿token))、监督微调(提示词和回答数据)、奖励模型(评价打分)、强化学习(最大化奖励回答)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129161622713.png" alt="image-20231129161622713" style="zoom:67%;" /></p>
+<p><strong>（1） 预训练 BaseMode</strong>l</p>
+<p>好的提示词逼出好的训练语料，</p>
+<p>词汇表字词化(减少次数，提升翻译)</p>
+<p>迭代训练</p>
+<p>帮助预测下一个单词，而不是回答</p>
+<p>需要开发者继续开发</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129161946581.png" alt="image-20231129161946581" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162120063.png" alt="image-20231129162120063" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162308597.png" alt="image-20231129162308597" style="zoom:67%;" /></p>
+<p><strong>（2）监督微调 SFT Model</strong> </p>
+<p>几天时间，目标(依然预测下一个单词)</p>
+<p>提供模型实例(学习人类的指令)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162619289.png" alt="image-20231129162619289" style="zoom:67%;" /></p>
+<p><strong>（3）奖励建模 Reward Modeling</strong></p>
+<p>不同回答打分的模型</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162821915.png" alt="image-20231129162821915"></p>
+<p><strong>（4）强化学习 Reinforcement Learning</strong></p>
+<p>获取更高得分的答案(更符合人类偏好，中庸，符合一般性，发散性不如Base Model)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162926671.png" alt="image-20231129162926671" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129162952118.png" alt="image-20231129162952118" style="zoom:67%;" /></p>
+<h4 id="1-3-人和AI思维模式差异"><a href="#1-3-人和AI思维模式差异" class="headerlink" title="1.3 人和AI思维模式差异"></a>1.3 人和AI思维模式差异</h4><p>提示词功能（缝合人与AI差异）</p>
+<p>提供充足的知识和背景</p>
+<p>提供必要的工具（chatgpt+browsing+plugings）</p>
+<p>允许回溯和检查（本身不带回溯，提问“你的回答是否准确”，反思）</p>
+<p>激发“系统二”慢思考(复杂问题拆解小任务+反思系统(AutoGPT)，更多思考时间，few-shot(提供实施)，think step by step(chatgpt思维展开))</p>
+<p>ChatGPT不想要成功(进修prompt，加入你是这个领域的专家，一般回答质量更好)</p>
+<h4 id="1-4-自定义指令-Custom-Instruction"><a href="#1-4-自定义指令-Custom-Instruction" class="headerlink" title="1.4 自定义指令 Custom Instruction"></a>1.4 自定义指令 Custom Instruction</h4><p>省略每次对话的全局性设置(提高日常使用效率，本身没有提高)</p>
+<p>自己写，针对个人身份(提炼聊天记录)</p>
+<p>简单文字-&gt;更好效果</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129164806642.png" alt="image-20231129164806642"></p>
+<h4 id="1-5-使用技巧"><a href="#1-5-使用技巧" class="headerlink" title="1.5 使用技巧"></a>1.5 使用技巧</h4><p><strong>通用技巧：</strong></p>
+<p>1扮演专家角色回答</p>
+<p>2告诉chatgpt你的身份和能力</p>
+<p>3限制回答长度</p>
+<p>4让chatgpt一步步思考</p>
+<p>5明确要求和目的</p>
+<p>6提供充分背景信息</p>
+<p>7结构化思考prompt</p>
+<p>8系统化设置自定义指令(custom instructions)</p>
+<p><strong>工作相关技巧：</strong></p>
+<p>9生成相关简历(结合JD调整，输出Latex)</p>
+<p>10结合chatgpt写周报(few-shot少示例提示)</p>
+<p>11提供思考方向(脑暴，提供思路)</p>
+<p>12特定角色融入工作流</p>
+<p>13将顶级企业工作方法融入工作流(亚马逊PRFAQ，PEST)</p>
+<p>14帮助写小红书创造内容</p>
+<p>15帮助写视频脚本(few-shot，先找好的脚本示例)</p>
+<p>16将你的想法实现为产品(自然语言编程)</p>
+<p><strong>学习效率提升：</strong></p>
+<p>17用chatgpt总结一本书的内容</p>
+<p>18基于目标，选择性阅读</p>
+<p>19学习过程帮助解释概念，提供示例</p>
+<p>20用chatgpt考察学习成果(费曼学习法，出题)</p>
+<p>21读书笔记和书评</p>
+<p><strong>提升写作效率</strong></p>
+<p>22回复邮件，公文类</p>
+<p>23作为编辑帮助润色文章</p>
+<p>24梳理大纲在进行写作</p>
+<p>25用特定作家的口吻写作</p>
+<p>26用特定作家的口吻翻译</p>
+<p><a href="bookai.top">数十种角色prompt</a></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129170642207.png" alt="image-20231129170642207" style="zoom:67%;" /></p>
+<h4 id="1-6-复杂问题解决"><a href="#1-6-复杂问题解决" class="headerlink" title="1.6 复杂问题解决"></a>1.6 <a href="https://www.bilibili.com/video/BV1Lg4y1c7fk/">复杂问题解决</a></h4><p>简单问题what、where、when</p>
+<p>复杂问题why(知识背景更广,事实推理，不会基于跟人立场、信仰使其逻辑自洽)和how(完成任务，提供目标、路径和工具)</p>
+<p>google 插件(voice control for chatgpt)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129175237433.png" alt="image-20231129175237433" style="zoom:67%;" /></p>
+<p><strong>沟通视窗</strong></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172316317.png" alt="image-20231129172316317" style="zoom:67%;" /></p>
+<blockquote>
+<p>盲区问题：</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172336093.png" alt="image-20231129172336093" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172401575.png" alt="image-20231129172401575" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172424896.png" alt="image-20231129172424896" style="zoom:67%;" /></p>
+<p>公开区：</p>
+<p>检验、扩充认知</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172650406.png" alt="image-20231129172650406" style="zoom:67%;" /></p>
+<p>隐私区:</p>
+<p>21年9月后、专业领域</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129172823427.png" alt="image-20231129172823427" style="zoom:67%;" /></p>
+<p>未知区：</p>
+<p>都不知道</p>
+<p>如果……发生，会产生什么影响？</p>
+<p>【提问句式整理】<br>（你不知道，GPT知道）<br>1、元问题：我想了解xxxx，我应该向你问哪些问题？<br>2、请给我列出xxx领域/行业相关的，最常用的50个概念，并做简单解释。如果有英文缩写，请给出完整的英文解释。<br>3、请详细介绍一下elon musk的主要生平事迹。请详细介绍一下tesla这家企业的发展历程。</p>
+<p>（你知道，GPT也知道）<br>检验认知：<br>1、对于xxx主题/技能，你认为哪些是我必须理解和掌握的核心要点？<br>2、我理解的xxx是这样的，你觉得我的理解对吗？<br>3、我对xxx有一些想法，你能帮我批判性地分析一下这些想法的优点和缺点吗？<br>4、我正在考虑xxx的决定，你能帮我分析一下可能的结果和影响吗？</p>
+<p>扩充认知：<br>1、我知道xxx的概念，我想知道更多关于xxx的信息。<br>2、我在xxx问题上遇到困难，你能提供一些可能的解决方案或建议吗？<br>3、我想要深入学习xxx，你能推荐一些进阶的学习资源或学习路径吗？<br>4、我想要在xxx领域有所创新，你能提供一些启发或想法吗？<br>5、我想在xxx领域提升自己，你能根据最新的研究和趋势给我一些建议吗？<br>6、我正在考虑学习xxx，你能给我一些关于这个领域未来发展的观点吗？<br>7、（背景信息xxx），我要做关于xxx的研究，我认为原因是，还有其他可能的原因吗？给出一些可能的研究假设。<br>8、我是一个xx新手，马上要采访这个行业的资深大佬，我应该向他请教哪些有价值的问题？</p>
+<p>（你知道，GPT不知道）<br>介绍背景现象之后可以向gpt发问，你怎么看待这种现象？可能的原因有哪些？这会对xxx产生什么样的影响？你觉得xxx应该怎么做？</p>
+<p>（你和GPT都不知道）<br>如果xxx，这对社会会产生什么影响？</p>
+<p>检验自己认知/能力水平提问句式<br>1、为了测试我对xxx的理解程度，你会问我什么问题来检验我的水平，最少10个。<br>2、我是xx领域的专家，你会问我哪些问题来检验我的专业水平？<br>3、追问一句，这些我都懂，还有更专业更细更深的问题吗？<br>4、你问我答的游戏</p>
+<p>扩展自己能力边界的提问句式我已经很精通xxx了，我想知道我是否还有需要学习的地方？然后不停的问，还有呢还有呢？</p>
+<p>让GPT完成具体任务<br>1、我想做xxx，你能给我提供什么帮助？<br>2、我想要你做xxx，我应该给你输入什么信息？<br>3、直接下指令</p>
+</blockquote>
+<p><strong>达克效应</strong></p>
+<p>反向提问</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129173106787.png" alt="image-20231129173106787"></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129173206123.png" alt="image-20231129173206123" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129173221469.png" alt="image-20231129173221469" style="zoom:67%;" /></p>
+<p>让chatgpt根据自己信息提供推荐</p>
+<p>联网模式</p>
+<p>插件模式(调用第三方插件)</p>
+<p><strong>模拟角色</strong></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129173924046.png" alt="image-20231129173924046" style="zoom: 67%;" /></p>
+<p><strong>扮演一段关系</strong></p>
+<p>感觉到人类的情感和温暖(恐怖)</p>
+<p><strong>扮演几个、几类人</strong></p>
+<p>多个人脑暴，几类人(语料库更多，更准确)</p>
+<p>iphone里的chatgpt app可以语音输入</p>
+<p>世界上大部分有用的知识都沉浸在英语的海洋里面</p>
+<h4 id="1-7-ChatGPT-使用教程"><a href="#1-7-ChatGPT-使用教程" class="headerlink" title="1.7 ChatGPT 使用教程"></a>1.7 <a href="https://www.bilibili.com/video/BV1th4y137yh">ChatGPT 使用教程</a></h4><p>野中郁次郎的SECI模型</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129175659469.png" alt="image-20231129175659469" style="zoom:67%;" /></p>
+<p>理解的是显性知识（主动找的，不是推荐）</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129175744670.png" alt="image-20231129175744670" style="zoom:67%;" /></p>
+<p>得到（知识付费网址）</p>
+<p>搜索pdf(filetype:pdf)</p>
+<p>联网模式（能够使用Pdf语法）</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182140216.png" alt="image-20231129182140216" style="zoom:67%;" /></p>
+<p>快速学习能力：</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182242794.png" alt="image-20231129182242794" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182255861.png" alt="image-20231129182255861" style="zoom:67%;" /></p>
+<p>搜索、提问、自学</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182355395.png" alt="image-20231129182355395" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182418324.png" alt="image-20231129182418324" style="zoom:67%;" /></p>
+<p>3h25次回答(一次多问)</p>
+<p>批判新思维</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129183246973.png" alt="image-20231129183246973" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129182908033.png" alt="image-20231129182908033" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129184515233.png" alt="image-20231129184515233" style="zoom:67%;" /></p>
+<p>结构化提问：</p>
+<p>MECE五种方法+几类各种模型</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129183337778.png" alt="image-20231129183337778" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129183438808.png" alt="image-20231129183438808" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129184558855.png" alt="image-20231129184558855"></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129184615178.png" alt="image-20231129184615178" style="zoom:67%;" /></p>
+<h4 id="1-8-GPTs"><a href="#1-8-GPTs" class="headerlink" title="1.8 GPTs"></a>1.8 GPTs</h4><p>opai第一届开发者大会</p>
+<p>数据更新到2023年3月，多模态大整合，自制GPTs</p>
+<p>图片识别能力</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129231036477.png" alt="image-20231129231036477" style="zoom:67%;" /></p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231129231654562.png" alt="image-20231129231654562" style="zoom:67%;" /></p>
+<h4 id="1-9-ChatGPT插件"><a href="#1-9-ChatGPT插件" class="headerlink" title="1.9 ChatGPT插件"></a>1.9 ChatGPT插件</h4><p><img src="http://png.zkkk123.cn/2023/12/image-20231130101323014.png" alt="image-20231130101323014" style="zoom:67%;" /></p>
+<p>ChatGPT最多支撑同时调用三个插件</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231130101929964.png" alt="image-20231130101929964" style="zoom:67%;" /></p>
+<p>WebPilot(联网功能，唯一推荐，新闻)</p>
+<p>Wolfram(计算数理化(画函数图像，解方程)、推理计算、画图、介绍+图片)</p>
+<p>AI Tool Hunt(找其他AI工具和插件)</p>
+<p>voice over(文字转语音，支持中文、英文、中英混合)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231130103551126.png" alt="image-20231130103551126" style="zoom:67%;" /></p>
+<p>HeyGen(文字转语音，口播视频)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231130103658598.png" alt="image-20231130103658598" style="zoom:67%;" /></p>
+<p>Visia(文字生成视频，找网上视频拼凑而成)</p>
+<p>Video Summary(视频总结，中文需要有字幕)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231130103927180.png" alt="image-20231130103927180" style="zoom:67%;" /></p>
+<p>Scholar AI(查找论文，写综述)</p>
+<p>MixerBox Scholar(找文献、写文献综述，更强、文献质量更高)</p>
+<p>Tutory(个人导师，学习路径)</p>
+<p>Speak(学习语言，模拟对话场景)</p>
+<p>Code Interpreter</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231130104459021.png" alt="image-20231130104459021" style="zoom:67%;" /></p>
+<h3 id="2-0-部署微信AI机器人-chatgpt-on-wechat"><a href="#2-0-部署微信AI机器人-chatgpt-on-wechat" class="headerlink" title="2.0 部署微信AI机器人(chatgpt-on-wechat)"></a><a href="https://www.bilibili.com/video/BV1ZX4y1Y7e9">2.0 部署微信AI机器人(chatgpt-on-wechat)</a></h3><p>tabby(命令提示符工具,github项目)</p>
+<p><img src="http://png.zkkk123.cn/2023/12/image-20231130120650093.png" alt="image-20231130120650093" style="zoom:67%;" /></p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>大模型</tag>
+        <tag>chatgpt</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo的安装和在github部署博客</title>
     <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
     <content><![CDATA[<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
@@ -2211,31 +2211,6 @@
       <tags>
         <tag>hexo</tag>
         <tag>部署博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo新手救星：常见部署错误与快速解决指南</title>
-    <url>/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\blog\aikeblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:394:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\blog\aikeblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
-<h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p>
-<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol>
-<li>删除<code>.deploy_git</code>文件夹;</li>
-<li>输入 git<br><code>config --global core.autocrlf false</code></li>
-<li>然后，依次执行：</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>问题解决。暴力直接，有效。</p>
-<h1 id="2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git‘: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git">https://github.com/.../.git</a>‘: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
-        <tag>bug</tag>
       </tags>
   </entry>
   <entry>
@@ -3234,7 +3209,7 @@
 <h3 id="音乐-Aplayer"><a href="#音乐-Aplayer" class="headerlink" title="音乐 Aplayer"></a>音乐 Aplayer</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% aplayerlist %&#125;</span><br><span class="line">&#123;</span><br><span class="line">    &quot;narrow&quot;: false,// （可选）播放器袖珍风格</span><br><span class="line">    &quot;autoplay&quot;: true,// （可选) 自动播放，移动端浏览器暂时不支持此功能</span><br><span class="line">    &quot;mode&quot;: &quot;random&quot;,// （可选）曲目循环类型，有 &#x27;random&#x27;（随机播放）, &#x27;single&#x27; (单曲播放), &#x27;circulation&#x27; (循环播放), &#x27;order&#x27; (列表播放)， 默认：&#x27;circulation&#x27;</span><br><span class="line">    &quot;showlrc&quot;: 3,// （可选）歌词显示配置项，可选项有：1,2,3</span><br><span class="line">    &quot;mutex&quot;: true,// （可选）该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</span><br><span class="line">    &quot;theme&quot;: &quot;#e6d0b2&quot;,// （可选）播放器风格色彩设置，默认：#b7daff</span><br><span class="line">    &quot;preload&quot;: &quot;metadata&quot;,// （可选）音乐文件预载入模式，可选项： &#x27;none&#x27; &#x27;metadata&#x27; &#x27;auto&#x27;, 默认: &#x27;auto&#x27;</span><br><span class="line">    &quot;listmaxheight&quot;: &quot;513px&quot;,// (可选) 该播放列表的最大长度</span><br><span class="line">    &quot;music&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;CoCo&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;Jeff Williams&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;caffeine.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;caffeine.jpeg&quot;,</span><br><span class="line">            &quot;lrc&quot;: &quot;caffeine.txt&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;アイロニ&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;鹿乃&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;irony.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;irony.jpg&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br><span class="line">&#123;% endaplayerlist %&#125;</span><br></pre></td></tr></table></figure>
 <p>简单示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 
-    <div id="aplayer-OjfDDfyM" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-xreJWTkX" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <p>进阶示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
@@ -3487,6 +3462,118 @@ title Key elements in Product X
       </tags>
   </entry>
   <entry>
+    <title>Hexo新手救星：常见部署错误与快速解决指南</title>
+    <url>/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\blog\aikeblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:394:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\blog\aikeblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
+<h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol>
+<li>删除<code>.deploy_git</code>文件夹;</li>
+<li>输入 git<br><code>config --global core.autocrlf false</code></li>
+<li>然后，依次执行：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>问题解决。暴力直接，有效。</p>
+<h1 id="2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git‘: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git">https://github.com/.../.git</a>‘: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
+        <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python库学习</title>
+    <url>/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h3 id="pandas库"><a href="#pandas库" class="headerlink" title="pandas库"></a>pandas库</h3><p>pandas 是基于Numpy的一种工具，主要用于数据分析任务。Pandas 纳入了大量库和一些标准的数据模型，提供了高校第操作大型数据集所需要的工具。pandas 的名称来自面板数据（panel data）和python数据分析（data analysis）。</p>
+<ul>
+<li>可以从CSV、JSON、SQL、Microsoft Excel导入数据</li>
+<li>主要数据结构Series（一维数据）和DataFrame（二维数据）</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># pandas 简单实例</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mydataset = &#123;</span><br><span class="line">	<span class="string">&#x27;sites&#x27;</span>:[<span class="string">&#x27;Google&#x27;</span>,<span class="string">&#x27;Runoob&#x27;</span>,<span class="string">&#x27;Wiki&#x27;</span>],</span><br><span class="line">	<span class="string">&#x27;number&#x27;</span>:[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">	&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.DataFrame(mydataset)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line">    sites  number</span><br><span class="line"><span class="number">0</span>  Google       <span class="number">1</span></span><br><span class="line"><span class="number">1</span>  Runoob       <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    Wiki       <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<h4 id="Pandas-Series"><a href="#Pandas-Series" class="headerlink" title="Pandas Series"></a>Pandas Series</h4><ul>
+<li>pandas series类似表格的一列，类似一维数组。</li>
+<li><p>可以用list 和key/value对象创建Series</p>
+</li>
+<li><p>由索引（index）和列组成</p>
+</li>
+</ul>
+<p>Series构造方法如下：</p>
+<p><code>pandas.Series(data,index,dtype,name,copy)</code></p>
+<p>data：数据(ndarray类型)    index：索引标签，默认从0开始    dtype：数据类型，默认自己判断    name：名称    copy：拷贝数据，默认False</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(a)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">0</span>    <span class="number">1</span></span><br><span class="line"><span class="number">1</span>    <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    <span class="number">3</span></span><br><span class="line">dtype: int64</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>sites = &#123;<span class="number">1</span>: <span class="string">&quot;Google&quot;</span>, <span class="number">2</span>: <span class="string">&quot;Runoob&quot;</span>, <span class="number">3</span>: <span class="string">&quot;Wiki&quot;</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(sites, index = [<span class="number">1</span>, <span class="number">2</span>], name=<span class="string">&quot;aike&quot;</span> )</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">1</span>    Google</span><br><span class="line"><span class="number">2</span>    Runoob</span><br><span class="line">Name: aike, dtype: <span class="built_in">object</span></span><br></pre></td></tr></table></figure>
+<h4 id="Pandas-DataFrame"><a href="#Pandas-DataFrame" class="headerlink" title="Pandas DataFrame"></a>Pandas DataFrame</h4><ul>
+<li>表格类型数据</li>
+<li>既有行索引，也有列索引</li>
+</ul>
+<p>DataFrame构造方法：</p>
+<p><code>pandas.DataFrame(data,index,columns,dtype,copy)</code></p>
+<p>columns：列标签，默认为RangeIndex（0,1,2，……，n）</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>data = [[<span class="string">&#x27;Google&#x27;</span>,<span class="number">10</span>],[<span class="string">&#x27;Runoob&#x27;</span>,<span class="number">12</span>],[<span class="string">&#x27;Wike&#x27;</span>,<span class="number">13</span>]]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df = pd.DataFrame(data,columns=[<span class="string">&#x27;Site&#x27;</span>,<span class="string">&#x27;Age&#x27;</span>],dtype=<span class="built_in">float</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df</span><br><span class="line">     Site   Age</span><br><span class="line"><span class="number">0</span>  Google  <span class="number">10.0</span></span><br><span class="line"><span class="number">1</span>  Runoob  <span class="number">12.0</span></span><br><span class="line"><span class="number">2</span>    Wike  <span class="number">13.0</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>loc[ ]：返回指定索引的行</p>
+</li>
+<li><p>loc[[ ]]：返回多行数据</p>
+</li>
+</ul>
+<h4 id="Pandas-CSV文件"><a href="#Pandas-CSV文件" class="headerlink" title="Pandas CSV文件"></a>Pandas CSV文件</h4><p>CSV（<strong>C</strong>omma-<strong>S</strong>eparated <strong>V</strong>alues，逗号分隔值）一般用逗号分割，以纯文本数据存储表格数据（数字和文本）。</p>
+<ul>
+<li>pd.to_string( )：返回DataFrame类型数据</li>
+<li>pd.read_csv( )：读取csv数据</li>
+<li>pd.to_csv( )：将DataFrame存储为csv文件</li>
+<li>df.head(n)：读取回前n行</li>
+<li>df.tail(n)：读取尾部几行</li>
+<li>df.info( )：返回表格基本信息（行列数、各列数据类型）</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import pandas as pd</span><br><span class="line">df = pd.read_csv(&#x27;nba.csv&#x27;)</span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
+<h4 id="Pandas-JSON"><a href="#Pandas-JSON" class="headerlink" title="Pandas JSON"></a>Pandas JSON</h4><p>JSON（<strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation，JavaScript对象表示法），存储和交换文本信息的语法。</p>
+<ul>
+<li>Json可转换为DataFrame</li>
+<li>可以从url中读取json数据</li>
+<li>读取内嵌json<ul>
+<li>pd.json_normalize(data, record_path, meta)</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 Python JSON 模块载入数据</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;nested_list.json&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = json.loads(f.read())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 展平数据</span></span><br><span class="line">df_nested_list = pd.json_normalize(data, record_path =[<span class="string">&#x27;students&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span>(df_nested_list)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装glom模块：用.来访问内嵌对象的属性</li>
+</ul>
+<h4 id="Pandas-数据清洗"><a href="#Pandas-数据清洗" class="headerlink" title="Pandas 数据清洗"></a>Pandas 数据清洗</h4><ul>
+<li>缺失</li>
+<li>格式错误</li>
+<li>错误数据或重复数据</li>
+</ul>
+<h5 id="清洗空值"><a href="#清洗空值" class="headerlink" title="清洗空值"></a>清洗空值</h5><ul>
+<li>dropna( )：删除包含空字段的行</li>
+</ul>
+<p><code>DataFrame.dropna(axis=0, how=&#39;any&#39;, thresh=None, subset=None, inplace=False)</code></p>
+<h3 id="pdfminer库"><a href="#pdfminer库" class="headerlink" title="pdfminer库"></a>pdfminer库</h3><p><strong>问题描述</strong></p>
+<p>利用python读取PDF文本内容</p>
+<p><strong>运行环境</strong></p>
+<p>python 3.6</p>
+<p><strong>需要安装的库</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install pdfminer</span><br><span class="line">pip install pdfminer3k</span><br></pre></td></tr></table></figure>
+<p><strong>实现的源代码</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyocr <span class="comment"># 图像处理库，进行ocr识别</span></span><br><span class="line"><span class="keyword">import</span> importlib <span class="comment"># Python中import语句的实现</span></span><br><span class="line"><span class="keyword">import</span> sys <span class="comment"># 针对与Python解释器相关的变量和方法</span></span><br><span class="line"><span class="keyword">import</span> time <span class="comment"># 基础时间库</span></span><br><span class="line"></span><br><span class="line">importlib.reload(sys)</span><br><span class="line">time1 = time.time()</span><br><span class="line"><span class="comment"># print(&#x27;初始时间为：&#x27;,time1)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os.path</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span> PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span>  PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFResourceManager, PDFPageInterpreter</span><br><span class="line"><span class="keyword">from</span> pdfminer.converter <span class="keyword">import</span> PDFPageAggregator</span><br><span class="line"><span class="keyword">from</span> pdfminer.layout <span class="keyword">import</span> LTTextBoxHorizontal,LAParams</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFTextExtractionNotAllowed</span><br><span class="line"></span><br><span class="line">text_path = <span class="string">r&#x27;D:\文档\预测与决策\第2章 非模型预测方法.pdf&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse</span>():</span></span><br><span class="line">    <span class="comment">#解析PDF文本，并保存到TXT文件中</span></span><br><span class="line">    fp = <span class="built_in">open</span>(text_path,<span class="string">&#x27;rb&#x27;</span>)</span><br><span class="line">    <span class="comment">#用文件对象创建一个PDF文档分析器</span></span><br><span class="line">    parser = PDFParser(fp)</span><br><span class="line">    <span class="comment">#创建一个PDF文档</span></span><br><span class="line">    doc = PDFDocument()</span><br><span class="line">    <span class="comment">#连接分析器，与文档对象</span></span><br><span class="line">    parser.set_document(doc)</span><br><span class="line">    doc.set_parser(parser)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#提供初始化密码，如果没有密码，就创建一个空的字符串</span></span><br><span class="line">    doc.initialize()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#检测文档是否提供txt转换，不提供就忽略</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> doc.is_extractable:</span><br><span class="line">        <span class="keyword">raise</span> PDFTextExtractionNotAllowed</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment">#创建PDF,资源管理器，来共享资源</span></span><br><span class="line">        rsrcmgr = PDFResourceManager()</span><br><span class="line">        <span class="comment">#创建一个PDF设备对象</span></span><br><span class="line">        laparams = LAParams()</span><br><span class="line">        device = PDFPageAggregator(rsrcmgr,laparams=laparams)</span><br><span class="line">        <span class="comment">#创建一个PDF解释器其对象</span></span><br><span class="line">        interpreter = PDFPageInterpreter(rsrcmgr,device)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#循环遍历列表，每次处理一个page内容</span></span><br><span class="line">        <span class="comment">#doc.get_pages()获取page列表</span></span><br><span class="line">        <span class="keyword">for</span> page <span class="keyword">in</span> doc.get_pages():</span><br><span class="line">            interpreter.process_page(page)</span><br><span class="line">            <span class="comment">#接受该页面的LTPage对象</span></span><br><span class="line">            layout = device.get_result()</span><br><span class="line">            <span class="comment"># 这里layout是一个LTPage对象 里面存放着 这个page解析出的各种对象</span></span><br><span class="line">            <span class="comment"># 一般包括LTTextBox, LTFigure, LTImage, LTTextBoxHorizontal 等等</span></span><br><span class="line">            <span class="comment"># 想要获取文本就获得对象的text属性，</span></span><br><span class="line">            <span class="keyword">for</span> x <span class="keyword">in</span> layout:</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">isinstance</span>(x,LTTextBoxHorizontal)):</span><br><span class="line">                    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">r&#x27;C:\Users\86159\Desktop\2.txt&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                        results = x.get_text()</span><br><span class="line">                        <span class="built_in">print</span>(results)</span><br><span class="line">                        f.write(results + <span class="string">&quot;\n&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    parse()</span><br><span class="line">    time2 = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;总共消耗时间为：&#x27;</span>,time2-time1)</span><br></pre></td></tr></table></figure>
+<p><strong>结果分析</strong></p>
+<p>将读取的文字存在一个TXT文档里面</p>
+<p>pdfminer只能识别pdf里的文字，而不会读取pdf里图片里的文字内容</p>
+<p><strong>参考链接</strong></p>
+<p><a href="https://www.cnblogs.com/wj-1314/p/9429816.html">https://www.cnblogs.com/wj-1314/p/9429816.html</a></p>
+]]></content>
+      <categories>
+        <category>写写代码</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>修改github.io站点域名</title>
     <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
     <content><![CDATA[<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
@@ -3522,6 +3609,29 @@ title Key elements in Product X
       <tags>
         <tag>注册域名</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>学车记</title>
+    <url>/2021/08/18/%E5%AD%A6%E8%BD%A6%E8%AE%B0/</url>
+    <content><![CDATA[<h3 id="学车记1"><a href="#学车记1" class="headerlink" title="学车记1"></a>学车记1</h3><details class="folding-tag" blue><summary> 2022-08-16 </summary>
+              <div class='content'>
+              <blockquote><p>一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以<strong>平凡</strong>的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处&gt;~&lt;</p></blockquote><p> <img src="https://s2.loli.net/2022/10/24/XFVj2Lp45G6O9Zu.jpg" alt=""><br> <img src="https://s2.loli.net/2022/10/24/pRKzCZj6twcgUFI.jpg" alt=""></p>
+              </div>
+            </details>
+<h3 id="学车记2"><a href="#学车记2" class="headerlink" title="学车记2"></a>学车记2</h3><details class="folding-tag" blue><summary> 2021-08-17 </summary>
+              <div class='content'>
+              <blockquote><p>今天看完了《平凡的世界》第三部（<em>利用学驾校时间看的手机</em>），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:</p><blockquote><ul><li>平凡又平庸的我们努力奔向爱情。      </li><li>在这平凡的世界里努力过好平凡的生活。</li><li>我这个平凡的世界里平凡的人觉得遥不可及。</li></ul></blockquote><p>同时，今天是keep打卡第一天 fighting~</p></blockquote><p><img src="https://s2.loli.net/2022/10/24/A3tSV7uq4O2EvCw.jpg" alt=""></p>
+              </div>
+            </details>
+<h3 id="学车记3"><a href="#学车记3" class="headerlink" title="学车记3"></a>学车记3</h3><details class="folding-tag" blue><summary> 2021-08-18 </summary>
+              <div class='content'>
+              <p>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。<br><img src="https://s2.loli.net/2022/10/24/EMygeVouihR32Hz.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/TQ6R4bAKCe3MfYh.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/OueoXa2cI1Alr8i.jpg" alt=""></p>
+              </div>
+            </details>
+]]></content>
+      <categories>
+        <category>生活点滴</category>
+      </categories>
   </entry>
   <entry>
     <title>javaweb学习</title>
@@ -4312,116 +4422,6 @@ title Key elements in Product X
       </tags>
   </entry>
   <entry>
-    <title>python库学习</title>
-    <url>/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h3 id="pandas库"><a href="#pandas库" class="headerlink" title="pandas库"></a>pandas库</h3><p>pandas 是基于Numpy的一种工具，主要用于数据分析任务。Pandas 纳入了大量库和一些标准的数据模型，提供了高校第操作大型数据集所需要的工具。pandas 的名称来自面板数据（panel data）和python数据分析（data analysis）。</p>
-<ul>
-<li>可以从CSV、JSON、SQL、Microsoft Excel导入数据</li>
-<li>主要数据结构Series（一维数据）和DataFrame（二维数据）</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># pandas 简单实例</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mydataset = &#123;</span><br><span class="line">	<span class="string">&#x27;sites&#x27;</span>:[<span class="string">&#x27;Google&#x27;</span>,<span class="string">&#x27;Runoob&#x27;</span>,<span class="string">&#x27;Wiki&#x27;</span>],</span><br><span class="line">	<span class="string">&#x27;number&#x27;</span>:[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">	&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.DataFrame(mydataset)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line">    sites  number</span><br><span class="line"><span class="number">0</span>  Google       <span class="number">1</span></span><br><span class="line"><span class="number">1</span>  Runoob       <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    Wiki       <span class="number">3</span></span><br></pre></td></tr></table></figure>
-<h4 id="Pandas-Series"><a href="#Pandas-Series" class="headerlink" title="Pandas Series"></a>Pandas Series</h4><ul>
-<li>pandas series类似表格的一列，类似一维数组。</li>
-<li><p>可以用list 和key/value对象创建Series</p>
-</li>
-<li><p>由索引（index）和列组成</p>
-</li>
-</ul>
-<p>Series构造方法如下：</p>
-<p><code>pandas.Series(data,index,dtype,name,copy)</code></p>
-<p>data：数据(ndarray类型)    index：索引标签，默认从0开始    dtype：数据类型，默认自己判断    name：名称    copy：拷贝数据，默认False</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(a)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">0</span>    <span class="number">1</span></span><br><span class="line"><span class="number">1</span>    <span class="number">2</span></span><br><span class="line"><span class="number">2</span>    <span class="number">3</span></span><br><span class="line">dtype: int64</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>sites = &#123;<span class="number">1</span>: <span class="string">&quot;Google&quot;</span>, <span class="number">2</span>: <span class="string">&quot;Runoob&quot;</span>, <span class="number">3</span>: <span class="string">&quot;Wiki&quot;</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar = pd.Series(sites, index = [<span class="number">1</span>, <span class="number">2</span>], name=<span class="string">&quot;aike&quot;</span> )</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myvar</span><br><span class="line"><span class="number">1</span>    Google</span><br><span class="line"><span class="number">2</span>    Runoob</span><br><span class="line">Name: aike, dtype: <span class="built_in">object</span></span><br></pre></td></tr></table></figure>
-<h4 id="Pandas-DataFrame"><a href="#Pandas-DataFrame" class="headerlink" title="Pandas DataFrame"></a>Pandas DataFrame</h4><ul>
-<li>表格类型数据</li>
-<li>既有行索引，也有列索引</li>
-</ul>
-<p>DataFrame构造方法：</p>
-<p><code>pandas.DataFrame(data,index,columns,dtype,copy)</code></p>
-<p>columns：列标签，默认为RangeIndex（0,1,2，……，n）</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>data = [[<span class="string">&#x27;Google&#x27;</span>,<span class="number">10</span>],[<span class="string">&#x27;Runoob&#x27;</span>,<span class="number">12</span>],[<span class="string">&#x27;Wike&#x27;</span>,<span class="number">13</span>]]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df = pd.DataFrame(data,columns=[<span class="string">&#x27;Site&#x27;</span>,<span class="string">&#x27;Age&#x27;</span>],dtype=<span class="built_in">float</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>df</span><br><span class="line">     Site   Age</span><br><span class="line"><span class="number">0</span>  Google  <span class="number">10.0</span></span><br><span class="line"><span class="number">1</span>  Runoob  <span class="number">12.0</span></span><br><span class="line"><span class="number">2</span>    Wike  <span class="number">13.0</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>loc[ ]：返回指定索引的行</p>
-</li>
-<li><p>loc[[ ]]：返回多行数据</p>
-</li>
-</ul>
-<h4 id="Pandas-CSV文件"><a href="#Pandas-CSV文件" class="headerlink" title="Pandas CSV文件"></a>Pandas CSV文件</h4><p>CSV（<strong>C</strong>omma-<strong>S</strong>eparated <strong>V</strong>alues，逗号分隔值）一般用逗号分割，以纯文本数据存储表格数据（数字和文本）。</p>
-<ul>
-<li>pd.to_string( )：返回DataFrame类型数据</li>
-<li>pd.read_csv( )：读取csv数据</li>
-<li>pd.to_csv( )：将DataFrame存储为csv文件</li>
-<li>df.head(n)：读取回前n行</li>
-<li>df.tail(n)：读取尾部几行</li>
-<li>df.info( )：返回表格基本信息（行列数、各列数据类型）</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import pandas as pd</span><br><span class="line">df = pd.read_csv(&#x27;nba.csv&#x27;)</span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
-<h4 id="Pandas-JSON"><a href="#Pandas-JSON" class="headerlink" title="Pandas JSON"></a>Pandas JSON</h4><p>JSON（<strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation，JavaScript对象表示法），存储和交换文本信息的语法。</p>
-<ul>
-<li>Json可转换为DataFrame</li>
-<li>可以从url中读取json数据</li>
-<li>读取内嵌json<ul>
-<li>pd.json_normalize(data, record_path, meta)</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 Python JSON 模块载入数据</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;nested_list.json&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = json.loads(f.read())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 展平数据</span></span><br><span class="line">df_nested_list = pd.json_normalize(data, record_path =[<span class="string">&#x27;students&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span>(df_nested_list)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>安装glom模块：用.来访问内嵌对象的属性</li>
-</ul>
-<h4 id="Pandas-数据清洗"><a href="#Pandas-数据清洗" class="headerlink" title="Pandas 数据清洗"></a>Pandas 数据清洗</h4><ul>
-<li>缺失</li>
-<li>格式错误</li>
-<li>错误数据或重复数据</li>
-</ul>
-<h5 id="清洗空值"><a href="#清洗空值" class="headerlink" title="清洗空值"></a>清洗空值</h5><ul>
-<li>dropna( )：删除包含空字段的行</li>
-</ul>
-<p><code>DataFrame.dropna(axis=0, how=&#39;any&#39;, thresh=None, subset=None, inplace=False)</code></p>
-<h3 id="pdfminer库"><a href="#pdfminer库" class="headerlink" title="pdfminer库"></a>pdfminer库</h3><p><strong>问题描述</strong></p>
-<p>利用python读取PDF文本内容</p>
-<p><strong>运行环境</strong></p>
-<p>python 3.6</p>
-<p><strong>需要安装的库</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install pdfminer</span><br><span class="line">pip install pdfminer3k</span><br></pre></td></tr></table></figure>
-<p><strong>实现的源代码</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyocr <span class="comment"># 图像处理库，进行ocr识别</span></span><br><span class="line"><span class="keyword">import</span> importlib <span class="comment"># Python中import语句的实现</span></span><br><span class="line"><span class="keyword">import</span> sys <span class="comment"># 针对与Python解释器相关的变量和方法</span></span><br><span class="line"><span class="keyword">import</span> time <span class="comment"># 基础时间库</span></span><br><span class="line"></span><br><span class="line">importlib.reload(sys)</span><br><span class="line">time1 = time.time()</span><br><span class="line"><span class="comment"># print(&#x27;初始时间为：&#x27;,time1)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os.path</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span> PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfparser <span class="keyword">import</span>  PDFParser,PDFDocument</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFResourceManager, PDFPageInterpreter</span><br><span class="line"><span class="keyword">from</span> pdfminer.converter <span class="keyword">import</span> PDFPageAggregator</span><br><span class="line"><span class="keyword">from</span> pdfminer.layout <span class="keyword">import</span> LTTextBoxHorizontal,LAParams</span><br><span class="line"><span class="keyword">from</span> pdfminer.pdfinterp <span class="keyword">import</span> PDFTextExtractionNotAllowed</span><br><span class="line"></span><br><span class="line">text_path = <span class="string">r&#x27;D:\文档\预测与决策\第2章 非模型预测方法.pdf&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse</span>():</span></span><br><span class="line">    <span class="comment">#解析PDF文本，并保存到TXT文件中</span></span><br><span class="line">    fp = <span class="built_in">open</span>(text_path,<span class="string">&#x27;rb&#x27;</span>)</span><br><span class="line">    <span class="comment">#用文件对象创建一个PDF文档分析器</span></span><br><span class="line">    parser = PDFParser(fp)</span><br><span class="line">    <span class="comment">#创建一个PDF文档</span></span><br><span class="line">    doc = PDFDocument()</span><br><span class="line">    <span class="comment">#连接分析器，与文档对象</span></span><br><span class="line">    parser.set_document(doc)</span><br><span class="line">    doc.set_parser(parser)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#提供初始化密码，如果没有密码，就创建一个空的字符串</span></span><br><span class="line">    doc.initialize()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#检测文档是否提供txt转换，不提供就忽略</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> doc.is_extractable:</span><br><span class="line">        <span class="keyword">raise</span> PDFTextExtractionNotAllowed</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment">#创建PDF,资源管理器，来共享资源</span></span><br><span class="line">        rsrcmgr = PDFResourceManager()</span><br><span class="line">        <span class="comment">#创建一个PDF设备对象</span></span><br><span class="line">        laparams = LAParams()</span><br><span class="line">        device = PDFPageAggregator(rsrcmgr,laparams=laparams)</span><br><span class="line">        <span class="comment">#创建一个PDF解释器其对象</span></span><br><span class="line">        interpreter = PDFPageInterpreter(rsrcmgr,device)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#循环遍历列表，每次处理一个page内容</span></span><br><span class="line">        <span class="comment">#doc.get_pages()获取page列表</span></span><br><span class="line">        <span class="keyword">for</span> page <span class="keyword">in</span> doc.get_pages():</span><br><span class="line">            interpreter.process_page(page)</span><br><span class="line">            <span class="comment">#接受该页面的LTPage对象</span></span><br><span class="line">            layout = device.get_result()</span><br><span class="line">            <span class="comment"># 这里layout是一个LTPage对象 里面存放着 这个page解析出的各种对象</span></span><br><span class="line">            <span class="comment"># 一般包括LTTextBox, LTFigure, LTImage, LTTextBoxHorizontal 等等</span></span><br><span class="line">            <span class="comment"># 想要获取文本就获得对象的text属性，</span></span><br><span class="line">            <span class="keyword">for</span> x <span class="keyword">in</span> layout:</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">isinstance</span>(x,LTTextBoxHorizontal)):</span><br><span class="line">                    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">r&#x27;C:\Users\86159\Desktop\2.txt&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                        results = x.get_text()</span><br><span class="line">                        <span class="built_in">print</span>(results)</span><br><span class="line">                        f.write(results + <span class="string">&quot;\n&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    parse()</span><br><span class="line">    time2 = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;总共消耗时间为：&#x27;</span>,time2-time1)</span><br></pre></td></tr></table></figure>
-<p><strong>结果分析</strong></p>
-<p>将读取的文字存在一个TXT文档里面</p>
-<p>pdfminer只能识别pdf里的文字，而不会读取pdf里图片里的文字内容</p>
-<p><strong>参考链接</strong></p>
-<p><a href="https://www.cnblogs.com/wj-1314/p/9429816.html">https://www.cnblogs.com/wj-1314/p/9429816.html</a></p>
-]]></content>
-      <categories>
-        <category>写写代码</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学车记</title>
-    <url>/2021/08/18/%E5%AD%A6%E8%BD%A6%E8%AE%B0/</url>
-    <content><![CDATA[<h3 id="学车记1"><a href="#学车记1" class="headerlink" title="学车记1"></a>学车记1</h3><details class="folding-tag" blue><summary> 2022-08-16 </summary>
-              <div class='content'>
-              <blockquote><p>一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以<strong>平凡</strong>的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处&gt;~&lt;</p></blockquote><p> <img src="https://s2.loli.net/2022/10/24/XFVj2Lp45G6O9Zu.jpg" alt=""><br> <img src="https://s2.loli.net/2022/10/24/pRKzCZj6twcgUFI.jpg" alt=""></p>
-              </div>
-            </details>
-<h3 id="学车记2"><a href="#学车记2" class="headerlink" title="学车记2"></a>学车记2</h3><details class="folding-tag" blue><summary> 2021-08-17 </summary>
-              <div class='content'>
-              <blockquote><p>今天看完了《平凡的世界》第三部（<em>利用学驾校时间看的手机</em>），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:</p><blockquote><ul><li>平凡又平庸的我们努力奔向爱情。      </li><li>在这平凡的世界里努力过好平凡的生活。</li><li>我这个平凡的世界里平凡的人觉得遥不可及。</li></ul></blockquote><p>同时，今天是keep打卡第一天 fighting~</p></blockquote><p><img src="https://s2.loli.net/2022/10/24/A3tSV7uq4O2EvCw.jpg" alt=""></p>
-              </div>
-            </details>
-<h3 id="学车记3"><a href="#学车记3" class="headerlink" title="学车记3"></a>学车记3</h3><details class="folding-tag" blue><summary> 2021-08-18 </summary>
-              <div class='content'>
-              <p>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。<br><img src="https://s2.loli.net/2022/10/24/EMygeVouihR32Hz.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/TQ6R4bAKCe3MfYh.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/OueoXa2cI1Alr8i.jpg" alt=""></p>
-              </div>
-            </details>
-]]></content>
-      <categories>
-        <category>生活点滴</category>
-      </categories>
-  </entry>
-  <entry>
     <title>启发式算法</title>
     <url>/2022/09/03/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<!-- 显示公式块 -->
@@ -4648,7 +4648,7 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
         <category>学习笔记</category>
       </categories>
       <tags>
-        <tag>大模型</tag>
+        <tag>评测大模型</tag>
       </tags>
   </entry>
   <entry>
