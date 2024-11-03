@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2024国庆</title>
-    <url>/2024/10/11/2024%E5%9B%BD%E5%BA%86/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
     <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
     <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决<br><span id="more"></span></p>
@@ -221,6 +216,41 @@
       <tags>
         <tag>大模型</tag>
         <tag>chatgpt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2024国庆</title>
+    <url>/2024/10/11/2024%E5%9B%BD%E5%BA%86/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>github+hexo 个人博客更换主题</title>
+    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
+<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
+<blockquote>
+<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
+</blockquote>
+<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
+<blockquote>
+<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
+</blockquote>
+<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
+<blockquote>
+<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></table></figure>
+<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+        <tag>主题</tag>
       </tags>
   </entry>
   <entry>
@@ -2102,63 +2132,6 @@
       </tags>
   </entry>
   <entry>
-    <title>github+hexo 个人博客更换主题</title>
-    <url>/2021/07/22/github+hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="1-首先在-github-上找到该主题，博主这里是用的yilia-plus"><a href="#1-首先在-github-上找到该主题，博主这里是用的yilia-plus" class="headerlink" title="1 首先在 github 上找到该主题，博主这里是用的yilia-plus"></a>1 首先在 github 上找到该主题，博主这里是用的<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a></h2><h2 id="2-然后进入-blog-文件夹，然后-Git-brush-here"><a href="#2-然后进入-blog-文件夹，然后-Git-brush-here" class="headerlink" title="2 然后进入 blog 文件夹，然后 Git brush here"></a>2 然后进入 blog 文件夹，然后 Git brush here</h2><p>输入以下指令，从 git 上 clone，放到 blog 文件夹的 theme/文件夹下，并命名为<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">yilia-plus</a>:<br>格式为<code>git clone</code>+<code>主题地址</code>+<code>储存地址</code><br>例如<code>git clone</code>+<code>git@github.com:JoeyBling/hexo-theme-yilia-plus.git</code>+<code>themes/yilia-plus</code></p>
-<h2 id="3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus"><a href="#3-更改-blog-文件夹下的-config-yml-文件，然后将-theme-的值改为-yilia-plus" class="headerlink" title="3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus"></a>3 更改 blog 文件夹下的_config.yml 文件，然后将 theme 的值改为 yilia-plus</h2><h2 id="4-然后执行"><a href="#4-然后执行" class="headerlink" title="4 然后执行"></a>4 然后执行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>浏览器输入<code>localhost:4000</code>可以看到预览效果</p>
-<blockquote>
-<p>ps:如果 4000 端口被占用，更改端口<code>hexo s -p 5000</code><br>ps:这里知识本地预览，还没有部署到网站上</p>
-</blockquote>
-<h2 id="5-主题部署到网站"><a href="#5-主题部署到网站" class="headerlink" title="5 主题部署到网站"></a>5 主题部署到网站</h2><p>基础知识：说明:网站的部署其实就是生成静态文件，blog 下所有生成的静态文件会放在 public/文件夹中，所谓部署 deploy 其实就是将 public/文件夹中内容上传到 git 仓库<code>Aike505.github.io</code>中。</p>
-<blockquote>
-<p>ps：如果是第一次部署网站的话，首先需要安装一个用于部署的插件 hexo-deployer-git，这个插件可以自动将 public/文件中内容上传到 main 下(即用于生成 github.io 界面的文件)。（自行文件复制也行）<br>ps：如果已经部署过了，请直接跳过，直接执行第 6 步.<br><code>npm install hexo-deployer-git --save</code></p>
-</blockquote>
-<h2 id="6-进行生成-generate-和部署-deploy"><a href="#6-进行生成-generate-和部署-deploy" class="headerlink" title="6 进行生成(generate)和部署(deploy)"></a>6 进行生成(generate)和部署(deploy)</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>这个时候你在进入<code>Aike505.github.io</code>就可以看到效果和第 4 步展示的效果是一样的。<br>至此结束，<strong>成功</strong>！！！</p>
-<blockquote>
-<p>ps：网站再次进行部署时，还需要清理 public 文件夹内容，重新生成部署，用以下命令。</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></table></figure>
-<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.pianshen.com/article/7769919495/">yilia-plus 主题配置相关功能</a><br><a href="https://cloud.tencent.com/developer/article/1609396">设置看板娘</a><br><a href="https://itrhx.blog.csdn.net/article/details/98058240">设置图床</a></p>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-        <tag>主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo写博客的正确姿态</title>
-    <url>/2023/09/17/hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E6%80%81/</url>
-    <content><![CDATA[<div class="note red icon-padding simple"><i class="note-icon fas fa-bullhorn"></i><p>博客已经可以访问了，但是不知道如何撰写和发表文章？接下来学习一些写文章需要用到的命令。</p>
-</div>
-<h3 id="step-1：写文章命令"><a href="#step-1：写文章命令" class="headerlink" title="step 1：写文章命令"></a>step 1：写文章命令</h3><p>写文章首先需要再命令行中通过标题新建文章页面（新建文章保存在博客文件夹目录<code>/source/_posts</code>中），同时如果想丰富博客功能，可以新建其他页面（例如音乐、电影、图册等），使用命令如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;postName&quot;</span> --新建文章</span><br><span class="line"></span><br><span class="line">hexo new page <span class="string">&quot;pageName&quot;</span> -- 新建页面</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>在文件夹会创建文章页面的<strong>md格式</strong>文件，打开后就可以自由创作文章内容（强推markdown格式容易上手，其次用html格式），同时也可以对文章元数据（标签、分类等等）进行修改和补充。</p>
-<p>ps：不知道md格式是什么？md格式通常指<a href="https://baike.baidu.com/link?url=C1msjCm9WO4CsHa3_HtIdaYrKHpljdoq0lo6S_WGEytmm8tkRGAm9orbzaZTcEXqrnMGyDXURxDCmjsceDv-A84D5y9LN0h65EwyLeyvXBW">markdown</a>格式，是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的 XHTML（或者HTML）文档。是博客撰写中最常用的命令，推荐使用Typora书写，然后复制在文章页面中。</p>
-</blockquote>
-<h3 id="step-2：新建分类和标签"><a href="#step-2：新建分类和标签" class="headerlink" title="step 2：新建分类和标签"></a>step 2：新建分类和标签</h3><p>如果需要对文章进行方便的管理，可以设置所属的标签（多个）和分类（多级），原理就是用新建页面的命令创建<code>categories</code>和<code>tags</code>页面，所用命令如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br><span class="line"></span><br><span class="line">hexo new page tags</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="step-3：上传命令"><a href="#step-3：上传命令" class="headerlink" title="step 3：上传命令"></a>step 3：上传命令</h3><p>每次对博客进行修改完毕后，都需要重新生成新的静态页面并上传到github，使用命令如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hexo -generate --生成个人博客所需的静态页面</span><br><span class="line"></span><br><span class="line">hexo server --本地预览</span><br><span class="line"></span><br><span class="line">hexo deploy --部署我们的个人博客</span><br><span class="line"></span><br><span class="line">hexo clean --清除缓存</span><br><span class="line"></span><br><span class="line"><span class="comment"># 可以使用缩写，并组合使用，常用方法如下：</span></span><br><span class="line"></span><br><span class="line">hexo cl &amp; hexo g -d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>上传完成后就可以访问你的网址查看是否成功（可能会有几分钟延迟），使用hexo s查看本地预览则没有延迟。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>博客书写</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo 新建分类和标签</title>
     <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
     <content><![CDATA[<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
@@ -2191,6 +2164,33 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo写博客的正确姿态</title>
+    <url>/2023/09/17/hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E6%80%81/</url>
+    <content><![CDATA[<div class="note red icon-padding simple"><i class="note-icon fas fa-bullhorn"></i><p>博客已经可以访问了，但是不知道如何撰写和发表文章？接下来学习一些写文章需要用到的命令。</p>
+</div>
+<h3 id="step-1：写文章命令"><a href="#step-1：写文章命令" class="headerlink" title="step 1：写文章命令"></a>step 1：写文章命令</h3><p>写文章首先需要再命令行中通过标题新建文章页面（新建文章保存在博客文件夹目录<code>/source/_posts</code>中），同时如果想丰富博客功能，可以新建其他页面（例如音乐、电影、图册等），使用命令如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;postName&quot;</span> --新建文章</span><br><span class="line"></span><br><span class="line">hexo new page <span class="string">&quot;pageName&quot;</span> -- 新建页面</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>在文件夹会创建文章页面的<strong>md格式</strong>文件，打开后就可以自由创作文章内容（强推markdown格式容易上手，其次用html格式），同时也可以对文章元数据（标签、分类等等）进行修改和补充。</p>
+<p>ps：不知道md格式是什么？md格式通常指<a href="https://baike.baidu.com/link?url=C1msjCm9WO4CsHa3_HtIdaYrKHpljdoq0lo6S_WGEytmm8tkRGAm9orbzaZTcEXqrnMGyDXURxDCmjsceDv-A84D5y9LN0h65EwyLeyvXBW">markdown</a>格式，是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的 XHTML（或者HTML）文档。是博客撰写中最常用的命令，推荐使用Typora书写，然后复制在文章页面中。</p>
+</blockquote>
+<h3 id="step-2：新建分类和标签"><a href="#step-2：新建分类和标签" class="headerlink" title="step 2：新建分类和标签"></a>step 2：新建分类和标签</h3><p>如果需要对文章进行方便的管理，可以设置所属的标签（多个）和分类（多级），原理就是用新建页面的命令创建<code>categories</code>和<code>tags</code>页面，所用命令如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br><span class="line"></span><br><span class="line">hexo new page tags</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="step-3：上传命令"><a href="#step-3：上传命令" class="headerlink" title="step 3：上传命令"></a>step 3：上传命令</h3><p>每次对博客进行修改完毕后，都需要重新生成新的静态页面并上传到github，使用命令如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hexo -generate --生成个人博客所需的静态页面</span><br><span class="line"></span><br><span class="line">hexo server --本地预览</span><br><span class="line"></span><br><span class="line">hexo deploy --部署我们的个人博客</span><br><span class="line"></span><br><span class="line">hexo clean --清除缓存</span><br><span class="line"></span><br><span class="line"><span class="comment"># 可以使用缩写，并组合使用，常用方法如下：</span></span><br><span class="line"></span><br><span class="line">hexo cl &amp; hexo g -d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>上传完成后就可以访问你的网址查看是否成功（可能会有几分钟延迟），使用hexo s查看本地预览则没有延迟。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>博客书写</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo的安装和在github部署博客</title>
     <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
     <content><![CDATA[<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
@@ -2211,6 +2211,31 @@
       <tags>
         <tag>hexo</tag>
         <tag>部署博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo新手救星：常见部署错误与快速解决指南</title>
+    <url>/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\blog\aikeblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:394:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\blog\aikeblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
+<h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol>
+<li>删除<code>.deploy_git</code>文件夹;</li>
+<li>输入 git<br><code>config --global core.autocrlf false</code></li>
+<li>然后，依次执行：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>问题解决。暴力直接，有效。</p>
+<h1 id="2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git‘: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git">https://github.com/.../.git</a>‘: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
+        <tag>bug</tag>
       </tags>
   </entry>
   <entry>
@@ -3209,7 +3234,7 @@
 <h3 id="音乐-Aplayer"><a href="#音乐-Aplayer" class="headerlink" title="音乐 Aplayer"></a>音乐 Aplayer</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% aplayerlist %&#125;</span><br><span class="line">&#123;</span><br><span class="line">    &quot;narrow&quot;: false,// （可选）播放器袖珍风格</span><br><span class="line">    &quot;autoplay&quot;: true,// （可选) 自动播放，移动端浏览器暂时不支持此功能</span><br><span class="line">    &quot;mode&quot;: &quot;random&quot;,// （可选）曲目循环类型，有 &#x27;random&#x27;（随机播放）, &#x27;single&#x27; (单曲播放), &#x27;circulation&#x27; (循环播放), &#x27;order&#x27; (列表播放)， 默认：&#x27;circulation&#x27;</span><br><span class="line">    &quot;showlrc&quot;: 3,// （可选）歌词显示配置项，可选项有：1,2,3</span><br><span class="line">    &quot;mutex&quot;: true,// （可选）该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</span><br><span class="line">    &quot;theme&quot;: &quot;#e6d0b2&quot;,// （可选）播放器风格色彩设置，默认：#b7daff</span><br><span class="line">    &quot;preload&quot;: &quot;metadata&quot;,// （可选）音乐文件预载入模式，可选项： &#x27;none&#x27; &#x27;metadata&#x27; &#x27;auto&#x27;, 默认: &#x27;auto&#x27;</span><br><span class="line">    &quot;listmaxheight&quot;: &quot;513px&quot;,// (可选) 该播放列表的最大长度</span><br><span class="line">    &quot;music&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;CoCo&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;Jeff Williams&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;caffeine.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;caffeine.jpeg&quot;,</span><br><span class="line">            &quot;lrc&quot;: &quot;caffeine.txt&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;アイロニ&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;鹿乃&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;irony.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;irony.jpg&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br><span class="line">&#123;% endaplayerlist %&#125;</span><br></pre></td></tr></table></figure>
 <p>简单示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 
-    <div id="aplayer-BxWVhObD" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-gpOkpjYE" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <p>进阶示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
@@ -3228,31 +3253,6 @@ title Key elements in Product X
       </categories>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo新手救星：常见部署错误与快速解决指南</title>
-    <url>/2021/07/22/hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<h1 id="1-err-Error-Spawn-failed"><a href="#1-err-Error-Spawn-failed" class="headerlink" title="1.err:Error:Spawn failed"></a>1.err:Error:Spawn failed</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>部署中可能会出现错误</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fatal: unable to access &#x27;https://github.com/Aike505/Aike505.github.io.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\blog\aikeblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:394:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\blog\aikeblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
-<h3 id="总结一下："><a href="#总结一下：" class="headerlink" title="总结一下："></a>总结一下：</h3><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些.<code>deploy_git</code>文件下的内容。</p>
-<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol>
-<li>删除<code>.deploy_git</code>文件夹;</li>
-<li>输入 git<br><code>config --global core.autocrlf false</code></li>
-<li>然后，依次执行：</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>问题解决。暴力直接，有效。</p>
-<h1 id="2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com"><a href="#2-fatal-unable-to-access-‘https-github-com-git‘-Could-not-resolve-host-github-com" class="headerlink" title="2.fatal: unable to access ‘https://github.com/.../.git‘: Could not resolve host: github.com"></a>2.fatal: unable to access ‘<a href="https://github.com/.../.git">https://github.com/.../.git</a>‘: Could not resolve host: github.com</h1><p>只需要在命令行中执行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
-        <tag>bug</tag>
       </tags>
   </entry>
   <entry>
@@ -4275,43 +4275,6 @@ title Key elements in Product X
       </tags>
   </entry>
   <entry>
-    <title>修改github.io站点域名</title>
-    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
-    <content><![CDATA[<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
-<ul>
-<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
-<ul>
-<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&amp;utm_medium=cpc&amp;utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&amp;utm_medium=se-cpc-op&amp;utm_campaign=10045&amp;utm_content=&amp;utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&amp;utm_adplace=AdPlace039520">华为云</a></li>
-</ul>
-</blockquote>
-</li>
-</ul>
-</blockquote>
-<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
-<ul>
-<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20域名设置3.png" alt=""></li>
-<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20域名设置1.png" alt=""></li>
-</ul>
-</blockquote>
-<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
-<ul>
-<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20域名设置2.png" alt=""></li>
-</ul>
-</blockquote>
-<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
-<ul>
-<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
-</ul>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>注册域名</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>python库学习</title>
     <url>/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h3 id="pandas库"><a href="#pandas库" class="headerlink" title="pandas库"></a>pandas库</h3><p>pandas 是基于Numpy的一种工具，主要用于数据分析任务。Pandas 纳入了大量库和一些标准的数据模型，提供了高校第操作大型数据集所需要的工具。pandas 的名称来自面板数据（panel data）和python数据分析（data analysis）。</p>
@@ -4396,6 +4359,43 @@ title Key elements in Product X
       </categories>
       <tags>
         <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>修改github.io站点域名</title>
+    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
+    <content><![CDATA[<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
+<ul>
+<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
+<ul>
+<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&amp;utm_medium=cpc&amp;utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&amp;utm_medium=se-cpc-op&amp;utm_campaign=10045&amp;utm_content=&amp;utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&amp;utm_adplace=AdPlace039520">华为云</a></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
+<ul>
+<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20域名设置3.png" alt=""></li>
+<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20域名设置1.png" alt=""></li>
+</ul>
+</blockquote>
+<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
+<ul>
+<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20域名设置2.png" alt=""></li>
+</ul>
+</blockquote>
+<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
+<ul>
+<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>注册域名</tag>
       </tags>
   </entry>
   <entry>
@@ -4630,6 +4630,30 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </categories>
   </entry>
   <entry>
+    <title>序列比对</title>
+    <url>/2024/11/03/%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9/</url>
+    <content><![CDATA[<p>关键词：生物信息学、序列比对</p>
+<h3 id="序列比对"><a href="#序列比对" class="headerlink" title="序列比对"></a>序列比对</h3><p>1，基于动态规划：最优比对（打分最高的比对方式，矩阵（Match=2，Unmatch=-1），路径（回溯、多条））</p>
+<p>2，最长公共子序列LCS：问题（给定x,y两个字符串，找出最长公共子序列及其长度）、公共子序列个数（不连续，个数（得分改变次数），具体字符（得分改变字符））、递归公式（<code>c[i][j]</code>，矩阵（匹配+1，Max(左、上)））、</p>
+<p><img src="http://png.zkkk123.cn/2024/10/image-20241031232300281.png" alt="动态规划比对"></p>
+<p><img src="http://png.zkkk123.cn/2024/10/image-20241031233329766.png" alt="最长公共子序列1a-描述"></p>
+<p><img src="http://png.zkkk123.cn/2024/10/image-20241031233209418.png" alt="最长公共子序列1b-矩阵"></p>
+<p><img src="http://png.zkkk123.cn/2024/10/image-20241101124039327.png" alt="最长公共子序列2a-递归描述"></p>
+<p><img src="http://png.zkkk123.cn/2024/10/image-20241101123957495.png" alt="最长公共子序列2b-矩阵"></p>
+<p><img src="http://png.zkkk123.cn/2024/10/image-20241101123923025.png" alt="最长公共子序列2c-代码"></p>
+<p>参考资料：</p>
+<p><a href="https://www.bilibili.com/video/BV1cU4y1T7CG">序列比对动态规划矩阵[生物信息学]</a></p>
+<p><a href="https://www.bilibili.com/video/BV1Lp4y1T7jL">动态规划：最长公共子序列问题。讲解</a></p>
+<p><a href="https://www.bilibili.com/video/BV1ey4y1d7oD">[轻松掌握动态规划]5.最长公共子序列 LCS</a></p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>序列不对</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>建站历程</title>
     <url>/2022/11/03/%E5%BB%BA%E7%AB%99%E5%8E%86%E7%A8%8B/</url>
     <content><![CDATA[<div class="timeline blue"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>时间线</p>
@@ -4654,27 +4678,25 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </tags>
   </entry>
   <entry>
-    <title>序列比对</title>
-    <url>/2024/11/03/%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9/</url>
-    <content><![CDATA[<p>关键词：生物信息学、序列比对</p>
-<h3 id="序列比对"><a href="#序列比对" class="headerlink" title="序列比对"></a>序列比对</h3><p>1，基于动态规划：最优比对（打分最高的比对方式，矩阵（Match=2，Unmatch=-1），路径（回溯、多条））</p>
-<p>2，最长公共子序列LCS：问题（给定x,y两个字符串，找出最长公共子序列及其长度）、公共子序列个数（不连续，个数（得分改变次数），具体字符（得分改变字符））、递归公式（<code>c[i][j]</code>，矩阵（匹配+1，Max(左、上)））、</p>
-<p><img src="http://png.zkkk123.cn/2024/10/image-20241031232300281.png" alt="动态规划比对"></p>
-<p><img src="http://png.zkkk123.cn/2024/10/image-20241031233329766.png" alt="最长公共子序列1a-描述"></p>
-<p><img src="http://123.cn/2024/10/image-20241031233209418.png" alt="最长公共子序列1b-矩阵"></p>
-<p><img src="http://png.zkkk123.cn/2024/10/image-20241101124039327.png" alt="最长公共子序列2a-递归描述"></p>
-<p><img src="http://png.zkkk123.cn/2024/10/image-20241101123957495.png" alt="最长公共子序列2b-矩阵"></p>
-<p><img src="http://png.zkkk123.cn/2024/10/image-20241101123923025.png" alt="最长公共子序列2c-代码"></p>
+    <title>深度测评大模型</title>
+    <url>/2024/10/30/%E6%B7%B1%E5%BA%A6%E6%B5%8B%E8%AF%84%E5%A4%A7%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<h3 id="大模型深度测评"><a href="#大模型深度测评" class="headerlink" title="大模型深度测评"></a>大模型深度测评</h3><p>1、评价标准。测试数据集：</p>
+<ol>
+<li>MMLU：测试语言English、AI基础能力测试，美国教育体系下小学到本科57个学科知识，测试能力先验学习和解决问题。GPT4&gt;ChatGLM4&gt;Gemini Pro</li>
+<li>CMMLU：综合性中文评估基准，类似MMLU，主题包括国内九年义务教育到大学高等教育工67个主题，包括具有中国特定答案的任务（驾驶规则、社会基础法规）。BlueLM&gt;通义&gt;GPT-4</li>
+<li>C-EVAL：更广泛的综合性中文评估、包括注会、法考、公考、医师资格证等标准考试，中学到大学主流科目。BlueLM&gt;MagecLM&gt;MindGPT&gt;通义千问</li>
+<li>superClUE：中文特点的评测基准，例如成语诗歌文学题材创作。GPT-4&gt;文心一言&gt;通义千问&gt;OPPO AndesGPT</li>
+</ol>
 <p>参考资料：</p>
-<p><a href="https://www.bilibili.com/video/BV1cU4y1T7CG">序列比对动态规划矩阵[生物信息学]</a></p>
-<p><a href="https://www.bilibili.com/video/BV1Lp4y1T7jL">动态规划：最长公共子序列问题。讲解</a></p>
-<p><a href="https://www.bilibili.com/video/BV1ey4y1d7oD">[轻松掌握动态规划]5.最长公共子序列 LCS</a></p>
+<p><a href="https://www.bilibili.com/video/BV1RA4m1V74W">万字测评！18个主流大模型深度评测，读懂AI现状【深度模评03】</a></p>
+<p><img src="http://png.zkkk123.cn/2024/10/image-20241030174119130.png" alt="国外大模型"></p>
+<p><img src="http://png.zkkk123.cn/2024/10/image-20241030174043279.png" alt="国内大模型"></p>
 ]]></content>
       <categories>
         <category>学习笔记</category>
       </categories>
       <tags>
-        <tag>序列不对</tag>
+        <tag>评测大模型</tag>
       </tags>
   </entry>
   <entry>
@@ -4725,28 +4747,6 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       <tags>
         <tag>网站</tag>
         <tag>推送百度</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深度测评大模型</title>
-    <url>/2024/10/30/%E6%B7%B1%E5%BA%A6%E6%B5%8B%E8%AF%84%E5%A4%A7%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[<h3 id="大模型深度测评"><a href="#大模型深度测评" class="headerlink" title="大模型深度测评"></a>大模型深度测评</h3><p>1、评价标准。测试数据集：</p>
-<ol>
-<li>MMLU：测试语言English、AI基础能力测试，美国教育体系下小学到本科57个学科知识，测试能力先验学习和解决问题。GPT4&gt;ChatGLM4&gt;Gemini Pro</li>
-<li>CMMLU：综合性中文评估基准，类似MMLU，主题包括国内九年义务教育到大学高等教育工67个主题，包括具有中国特定答案的任务（驾驶规则、社会基础法规）。BlueLM&gt;通义&gt;GPT-4</li>
-<li>C-EVAL：更广泛的综合性中文评估、包括注会、法考、公考、医师资格证等标准考试，中学到大学主流科目。BlueLM&gt;MagecLM&gt;MindGPT&gt;通义千问</li>
-<li>superClUE：中文特点的评测基准，例如成语诗歌文学题材创作。GPT-4&gt;文心一言&gt;通义千问&gt;OPPO AndesGPT</li>
-</ol>
-<p>参考资料：</p>
-<p><a href="https://www.bilibili.com/video/BV1RA4m1V74W">万字测评！18个主流大模型深度评测，读懂AI现状【深度模评03】</a></p>
-<p><img src="http://png.zkkk123.cn/2024/10/image-20241030174119130.png" alt="国外大模型"></p>
-<p><img src="http://png.zkkk123.cn/2024/10/image-20241030174043279.png" alt="国内大模型"></p>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>评测大模型</tag>
       </tags>
   </entry>
   <entry>
