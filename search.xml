@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2024国庆</title>
+    <url>/2024/10/11/2024%E5%9B%BD%E5%BA%86/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
     <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
     <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决<br><span id="more"></span></p>
@@ -16,11 +21,6 @@
         <tag>电脑</tag>
         <tag>磁盘</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>2024国庆</title>
-    <url>/2024/10/11/2024%E5%9B%BD%E5%BA%86/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Python程序设计二级考试必看</title>
@@ -1901,6 +1901,38 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo 新建分类和标签</title>
+    <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
+    <content><![CDATA[<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
+<h2 id="1-创建“分类”选项"><a href="#1-创建“分类”选项" class="headerlink" title="1.创建“分类”选项"></a>1.创建“分类”选项</h2><p>生成“分类”页并添加 tpye 属性,进入博客目录。执行命令下方命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+<p>categories 文件夹下会有 index.md 这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2019-04-24 15:30:30</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>保存并关闭文件。</p>
+<p>给文章添加“categories”属性</p>
+<p>打开需要添加分类的文章，为其添加 categories 属性。下方的 categories:Hexo 表示这篇文章添加到到“Hexo”这个分类。注意：一篇文章只会添加到一个分类中，如果是多个默认放到第一个分类中。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 添加分类及标签</span><br><span class="line">date: 2017-05-26 12:12:57</span><br><span class="line">categories: Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了 categories: xxx 的文章才会被收录到首页的“分类”中。</p>
+<h2 id="2-创建“标签”选项"><a href="#2-创建“标签”选项" class="headerlink" title="2.创建“标签”选项"></a>2.创建“标签”选项</h2><p>生成“标签”页并添加 tpye 属性</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+<p>在 tags 文件夹下，找到 index.md 这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-22 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>添加 type: “tags”到内容中，添加后是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>保存并关闭文件。</p>
+<p>给文章添加“tags”属性,打开需要添加标签的文章，为其添加 tags 属性。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 添加分类及标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">categories:</span><br><span class="line">           - Hexo</span><br><span class="line">tags:</span><br><span class="line">           - 博客</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+        <tag>新建分类标签</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>chatgpt学习</title>
     <url>/2023/11/30/chatgpt%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p> 掌握ChatGPT，高效工作：深入理解及实践技巧，避免信息垃圾，精准获取所需。</p>
@@ -2156,38 +2188,6 @@
       <tags>
         <tag>Hexo</tag>
         <tag>博客书写</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo 新建分类和标签</title>
-    <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
-    <content><![CDATA[<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
-<h2 id="1-创建“分类”选项"><a href="#1-创建“分类”选项" class="headerlink" title="1.创建“分类”选项"></a>1.创建“分类”选项</h2><p>生成“分类”页并添加 tpye 属性,进入博客目录。执行命令下方命令</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-<p>categories 文件夹下会有 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2019-04-24 15:30:30</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>保存并关闭文件。</p>
-<p>给文章添加“categories”属性</p>
-<p>打开需要添加分类的文章，为其添加 categories 属性。下方的 categories:Hexo 表示这篇文章添加到到“Hexo”这个分类。注意：一篇文章只会添加到一个分类中，如果是多个默认放到第一个分类中。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 添加分类及标签</span><br><span class="line">date: 2017-05-26 12:12:57</span><br><span class="line">categories: Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了 categories: xxx 的文章才会被收录到首页的“分类”中。</p>
-<h2 id="2-创建“标签”选项"><a href="#2-创建“标签”选项" class="headerlink" title="2.创建“标签”选项"></a>2.创建“标签”选项</h2><p>生成“标签”页并添加 tpye 属性</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-<p>在 tags 文件夹下，找到 index.md 这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-22 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>添加 type: “tags”到内容中，添加后是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>保存并关闭文件。</p>
-<p>给文章添加“tags”属性,打开需要添加标签的文章，为其添加 tags 属性。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 添加分类及标签</span><br><span class="line">date: 2019-04-24 15:40:24</span><br><span class="line">categories:</span><br><span class="line">           - Hexo</span><br><span class="line">tags:</span><br><span class="line">           - 博客</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-        <tag>新建分类标签</tag>
       </tags>
   </entry>
   <entry>
@@ -3186,7 +3186,7 @@
 <h3 id="音乐-Aplayer"><a href="#音乐-Aplayer" class="headerlink" title="音乐 Aplayer"></a>音乐 Aplayer</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% aplayerlist %&#125;</span><br><span class="line">&#123;</span><br><span class="line">    &quot;narrow&quot;: false,// （可选）播放器袖珍风格</span><br><span class="line">    &quot;autoplay&quot;: true,// （可选) 自动播放，移动端浏览器暂时不支持此功能</span><br><span class="line">    &quot;mode&quot;: &quot;random&quot;,// （可选）曲目循环类型，有 &#x27;random&#x27;（随机播放）, &#x27;single&#x27; (单曲播放), &#x27;circulation&#x27; (循环播放), &#x27;order&#x27; (列表播放)， 默认：&#x27;circulation&#x27;</span><br><span class="line">    &quot;showlrc&quot;: 3,// （可选）歌词显示配置项，可选项有：1,2,3</span><br><span class="line">    &quot;mutex&quot;: true,// （可选）该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</span><br><span class="line">    &quot;theme&quot;: &quot;#e6d0b2&quot;,// （可选）播放器风格色彩设置，默认：#b7daff</span><br><span class="line">    &quot;preload&quot;: &quot;metadata&quot;,// （可选）音乐文件预载入模式，可选项： &#x27;none&#x27; &#x27;metadata&#x27; &#x27;auto&#x27;, 默认: &#x27;auto&#x27;</span><br><span class="line">    &quot;listmaxheight&quot;: &quot;513px&quot;,// (可选) 该播放列表的最大长度</span><br><span class="line">    &quot;music&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;CoCo&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;Jeff Williams&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;caffeine.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;caffeine.jpeg&quot;,</span><br><span class="line">            &quot;lrc&quot;: &quot;caffeine.txt&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;アイロニ&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;鹿乃&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;irony.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;irony.jpg&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br><span class="line">&#123;% endaplayerlist %&#125;</span><br></pre></td></tr></table></figure>
 <p>简单示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 
-    <div id="aplayer-xjhXqDmR" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-fHCDokyS" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <p>进阶示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
@@ -3253,237 +3253,6 @@ title Key elements in Product X
       <tags>
         <tag>hexo</tag>
         <tag>部署博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>java小记</title>
-    <url>/2022/07/09/java%E5%B0%8F%E8%AE%B0/</url>
-    <content><![CDATA[<h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p><strong>Java优势：</strong></p>
-<ul>
-<li>Write Once, Run Anywhere</li>
-</ul>
-<p><strong>Java三大版本</strong></p>
-<ul>
-<li><p>JavaSE：标准版</p>
-</li>
-<li><p>JavaME：嵌入式开发</p>
-</li>
-<li>JavaEE：企业级开发</li>
-</ul>
-<p><strong>三大名词</strong></p>
-<ul>
-<li><p>JDK：Java Development Kit </p>
-</li>
-<li><p>JRE：Java Runtime Environment</p>
-</li>
-<li><p>JVM：Java Virtual Machine</p>
-</li>
-</ul>
-<blockquote>
-<p>JDK包含JRE,所以下载JDK就可以了，java的跨平台核心是使用了JVM</p>
-</blockquote>
-<h3 id="java开发环境搭建"><a href="#java开发环境搭建" class="headerlink" title="java开发环境搭建"></a>java开发环境搭建</h3><p><strong>JDK的下载与安装</strong></p>
-<ul>
-<li>通过官网获取JDK：<a href="http://www.oracle.com">http://www.oracle.com</a></li>
-</ul>
-<p><strong>配置环境变量</strong></p>
-<ul>
-<li>系统变量里添加JAVA_HOME</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/10/24/FrP9lKiYXqnh2gA.png" alt=""></p>
-<ul>
-<li><p>在系统变量path路径添加bin目录<br><img src="https://s2.loli.net/2022/10/24/ES8Ttlz7h5NGxk1.png" alt=""></p>
-</li>
-<li><p>同样在系统变量path路径添加jre/bin目录<br><img src="https://s2.loli.net/2022/10/24/ZwdtnmxNK97PSLU.png" alt=""></p>
-<blockquote>
-<p>Java8之后安装jdk不再提供jre的安装，可以通过命令导出：管理员身份打开cmd,切换到java安装路径，输入命令<code>bin\jlink.exe --module-path jmods --add-modules java.desktop --output jre</code> 即可</p>
-</blockquote>
-</li>
-<li><p>在用户变量中添加Classpath：<code>.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar</code></p>
-<p><img src="https://s2.loli.net/2022/10/24/HJS8xyYTAvZbKUw.png" alt=""></p>
-</li>
-<li><p>测试jdk安装是否成功</p>
-<p><img src="https://s2.loli.net/2022/10/24/6ANqBMr3ZUYfcl2.png" alt=""></p>
-</li>
-</ul>
-<p><strong>JDK目录介绍</strong></p>
-<ul>
-<li>bin：放可执行程序</li>
-<li>include：java是用c和c++编写的，这里引入c语言的头文件</li>
-<li>jre：java的运行环境</li>
-<li>lib：放一些类库文件</li>
-</ul>
-<p><strong>HelloWorld及简单语法规则</strong></p>
-<ul>
-<li>新建一个.java文件</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		System.out.print(<span class="string">&quot;Hello,World!&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>cmd里编译和运行</p>
-<p><img src="https://s2.loli.net/2022/10/24/EAJq2plhyjnWzZv.png" alt=""></p>
-</li>
-</ul>
-<p><strong>Notepad++安装和使用</strong></p>
-<p><strong>IDEA安装</strong></p>
-<ul>
-<li>IDE：集成开发环境</li>
-<li>IDEA官网：<a href="https://www.jetbrains.com/">https://www.jetbrains.com/</a></li>
-<li>IDEA常见优化配置</li>
-</ul>
-<blockquote>
-<p>vscode虽然说对java已经很好的支持了，某些功能还是不尽人意，毕竟idea才是开发java的神器，对于java开发的功能可以说都有，市场占有率超过65%。</p>
-</blockquote>
-<h3 id="java基础语法"><a href="#java基础语法" class="headerlink" title="java基础语法"></a>java基础语法</h3><p><strong>注释</strong></p>
-<ul>
-<li>单行注释：// 注释</li>
-<li>多行注释：/<em> 注释 </em>/</li>
-<li>文档注释: /<em>* 注释 </em>/</li>
-</ul>
-<blockquote>
-<p>书写注释是一个非常好的习惯，特别在BAT大厂里</p>
-</blockquote>
-<p><strong>标识符</strong><!----></p>
-<ul>
-<li><p>类名、变量名以及方法名。</p>
-</li>
-<li><p>标识符开头以字母(A-Z或者a-z)、美元符($)和下划线(_)组成</p>
-</li>
-<li>大小写敏感</li>
-<li>可以使用中文</li>
-</ul>
-<p><strong>数据类型</strong></p>
-<ul>
-<li>强类型语言：对于变量使用要求比较严格，所有变量必须先定义后才能使用</li>
-<li><p>弱类型语言：随时定义和使用，javascript、python都是</p>
-</li>
-<li><p>基本类型</p>
-<ul>
-<li>数值类型<ul>
-<li>整数类型<ul>
-<li>byte  1个字节范围-128-127</li>
-<li>short  2个字节范围-32768-32767</li>
-<li>int  4个字节范围21亿左右</li>
-<li>long  8个字节范围</li>
-</ul>
-</li>
-<li>浮点类型<ul>
-<li>float  4个字节范围</li>
-<li>double   8个字节范围</li>
-</ul>
-</li>
-<li>字符类型<ul>
-<li>char  2个字节</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>boolean类型<ul>
-<li>True  占一位</li>
-<li>False  </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>八大基本数据类型，这里基本类型和c语言基本没看出差别，字符串不属于基本类型  </p>
-</blockquote>
-<ul>
-<li>引用类型<ul>
-<li>类</li>
-<li>接口</li>
-<li>数组</li>
-</ul>
-</li>
-</ul>
-<p><strong>类型转换</strong></p>
-<ul>
-<li><p>优先级：byte,short,char==&gt;int==&gt;long==&gt;float==&gt;double</p>
-</li>
-<li><p>强制转换：(类型)变量名  高==&gt;低</p>
-</li>
-<li>自动转换：低—&gt;高</li>
-</ul>
-<blockquote>
-<p>先转换类型再计算</p>
-</blockquote>
-<p><strong>变量</strong></p>
-<ul>
-<li>变量作用域<ul>
-<li>类变量：定义前加一个static，用的时候可以不用声明值，全局可用</li>
-<li>实例变量：写在方法外面，可以不赋值，全局可用，使用要new一个对象</li>
-<li>局部变量：普通的定义，必须给初始化值，只在某个方法里有用</li>
-</ul>
-</li>
-<li>变量命名规范<ul>
-<li>见名知意</li>
-<li>类成员变量：首字母小写驼峰原则   monthSalary</li>
-<li>局部变量：首字母小写驼峰原则</li>
-<li>常量：全部大写可以加下划线</li>
-<li>类名：首字母大写驼峰原则  GoodMan()</li>
-<li>方法名：首字母小写驼峰原则  runRun()</li>
-</ul>
-</li>
-</ul>
-<p><strong>常量</strong></p>
-<ul>
-<li><p>用final声明，用大学字母表示</p>
-<blockquote>
-<p>比如写个PI等于多少，后面一直用而且值不变</p>
-</blockquote>
-</li>
-</ul>
-<p><strong>运算符</strong></p>
-<ul>
-<li><p>算术运算符 + - * /  % ++ —</p>
-<blockquote>
-<p>有long结果为long，没有long 都是int，int不能强制转成string</p>
-<p>乘方计算：java里不能用2^3，需要借助工具Math.pow(2,3)</p>
-</blockquote>
-</li>
-<li><p>赋值运算符 =</p>
-</li>
-<li><p>关系运算符 &gt; &lt; &gt;= &lt;= == !=</p>
-</li>
-<li><p>逻辑运算符 &amp;&amp; || !</p>
-<blockquote>
-<p>&amp;&amp; 都真为真，执行短路运算，检测到一个假后面的都不计算，值也不变    </p>
-<p>|| 有真就真</p>
-<p>！真变假，假变真</p>
-</blockquote>
-</li>
-<li><p>位运算符 &amp; | ^ ~ &gt;&gt; &lt;&lt; &gt;&gt;&gt;</p>
-<blockquote>
-<p>&amp; 同1才是1</p>
-<p>| 有1就是1</p>
-<p>^ 不一样就是1</p>
-<p>~ 0变1，1变0</p>
-<p>&lt;&lt; 左移 *2</p>
-<p>/&gt;&gt; 右移 /2</p>
-</blockquote>
-</li>
-<li><p>条件运算符 ? :</p>
-<blockquote>
-<p>x ? y : z</p>
-<p>如果x==true，结果为y，否则为z</p>
-</blockquote>
-</li>
-<li><p>扩展赋值运算符 += -= *= /=</p>
-<blockquote>
-<p>字符串拼接</p>
-<ul>
-<li>“ “+a+b，先转换成字符串再拼接</li>
-<li>a+b+” “,先运算在转成字符串拼接</li>
-</ul>
-</blockquote>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>写写代码</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -4270,8 +4039,239 @@ title Key elements in Product X
         <category>学习笔记</category>
       </categories>
       <tags>
-        <tag>java</tag>
         <tag>网站开发</tag>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>java小记</title>
+    <url>/2022/07/09/java%E5%B0%8F%E8%AE%B0/</url>
+    <content><![CDATA[<h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p><strong>Java优势：</strong></p>
+<ul>
+<li>Write Once, Run Anywhere</li>
+</ul>
+<p><strong>Java三大版本</strong></p>
+<ul>
+<li><p>JavaSE：标准版</p>
+</li>
+<li><p>JavaME：嵌入式开发</p>
+</li>
+<li>JavaEE：企业级开发</li>
+</ul>
+<p><strong>三大名词</strong></p>
+<ul>
+<li><p>JDK：Java Development Kit </p>
+</li>
+<li><p>JRE：Java Runtime Environment</p>
+</li>
+<li><p>JVM：Java Virtual Machine</p>
+</li>
+</ul>
+<blockquote>
+<p>JDK包含JRE,所以下载JDK就可以了，java的跨平台核心是使用了JVM</p>
+</blockquote>
+<h3 id="java开发环境搭建"><a href="#java开发环境搭建" class="headerlink" title="java开发环境搭建"></a>java开发环境搭建</h3><p><strong>JDK的下载与安装</strong></p>
+<ul>
+<li>通过官网获取JDK：<a href="http://www.oracle.com">http://www.oracle.com</a></li>
+</ul>
+<p><strong>配置环境变量</strong></p>
+<ul>
+<li>系统变量里添加JAVA_HOME</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/10/24/FrP9lKiYXqnh2gA.png" alt=""></p>
+<ul>
+<li><p>在系统变量path路径添加bin目录<br><img src="https://s2.loli.net/2022/10/24/ES8Ttlz7h5NGxk1.png" alt=""></p>
+</li>
+<li><p>同样在系统变量path路径添加jre/bin目录<br><img src="https://s2.loli.net/2022/10/24/ZwdtnmxNK97PSLU.png" alt=""></p>
+<blockquote>
+<p>Java8之后安装jdk不再提供jre的安装，可以通过命令导出：管理员身份打开cmd,切换到java安装路径，输入命令<code>bin\jlink.exe --module-path jmods --add-modules java.desktop --output jre</code> 即可</p>
+</blockquote>
+</li>
+<li><p>在用户变量中添加Classpath：<code>.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar</code></p>
+<p><img src="https://s2.loli.net/2022/10/24/HJS8xyYTAvZbKUw.png" alt=""></p>
+</li>
+<li><p>测试jdk安装是否成功</p>
+<p><img src="https://s2.loli.net/2022/10/24/6ANqBMr3ZUYfcl2.png" alt=""></p>
+</li>
+</ul>
+<p><strong>JDK目录介绍</strong></p>
+<ul>
+<li>bin：放可执行程序</li>
+<li>include：java是用c和c++编写的，这里引入c语言的头文件</li>
+<li>jre：java的运行环境</li>
+<li>lib：放一些类库文件</li>
+</ul>
+<p><strong>HelloWorld及简单语法规则</strong></p>
+<ul>
+<li>新建一个.java文件</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		System.out.print(<span class="string">&quot;Hello,World!&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>cmd里编译和运行</p>
+<p><img src="https://s2.loli.net/2022/10/24/EAJq2plhyjnWzZv.png" alt=""></p>
+</li>
+</ul>
+<p><strong>Notepad++安装和使用</strong></p>
+<p><strong>IDEA安装</strong></p>
+<ul>
+<li>IDE：集成开发环境</li>
+<li>IDEA官网：<a href="https://www.jetbrains.com/">https://www.jetbrains.com/</a></li>
+<li>IDEA常见优化配置</li>
+</ul>
+<blockquote>
+<p>vscode虽然说对java已经很好的支持了，某些功能还是不尽人意，毕竟idea才是开发java的神器，对于java开发的功能可以说都有，市场占有率超过65%。</p>
+</blockquote>
+<h3 id="java基础语法"><a href="#java基础语法" class="headerlink" title="java基础语法"></a>java基础语法</h3><p><strong>注释</strong></p>
+<ul>
+<li>单行注释：// 注释</li>
+<li>多行注释：/<em> 注释 </em>/</li>
+<li>文档注释: /<em>* 注释 </em>/</li>
+</ul>
+<blockquote>
+<p>书写注释是一个非常好的习惯，特别在BAT大厂里</p>
+</blockquote>
+<p><strong>标识符</strong><!----></p>
+<ul>
+<li><p>类名、变量名以及方法名。</p>
+</li>
+<li><p>标识符开头以字母(A-Z或者a-z)、美元符($)和下划线(_)组成</p>
+</li>
+<li>大小写敏感</li>
+<li>可以使用中文</li>
+</ul>
+<p><strong>数据类型</strong></p>
+<ul>
+<li>强类型语言：对于变量使用要求比较严格，所有变量必须先定义后才能使用</li>
+<li><p>弱类型语言：随时定义和使用，javascript、python都是</p>
+</li>
+<li><p>基本类型</p>
+<ul>
+<li>数值类型<ul>
+<li>整数类型<ul>
+<li>byte  1个字节范围-128-127</li>
+<li>short  2个字节范围-32768-32767</li>
+<li>int  4个字节范围21亿左右</li>
+<li>long  8个字节范围</li>
+</ul>
+</li>
+<li>浮点类型<ul>
+<li>float  4个字节范围</li>
+<li>double   8个字节范围</li>
+</ul>
+</li>
+<li>字符类型<ul>
+<li>char  2个字节</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>boolean类型<ul>
+<li>True  占一位</li>
+<li>False  </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>八大基本数据类型，这里基本类型和c语言基本没看出差别，字符串不属于基本类型  </p>
+</blockquote>
+<ul>
+<li>引用类型<ul>
+<li>类</li>
+<li>接口</li>
+<li>数组</li>
+</ul>
+</li>
+</ul>
+<p><strong>类型转换</strong></p>
+<ul>
+<li><p>优先级：byte,short,char==&gt;int==&gt;long==&gt;float==&gt;double</p>
+</li>
+<li><p>强制转换：(类型)变量名  高==&gt;低</p>
+</li>
+<li>自动转换：低—&gt;高</li>
+</ul>
+<blockquote>
+<p>先转换类型再计算</p>
+</blockquote>
+<p><strong>变量</strong></p>
+<ul>
+<li>变量作用域<ul>
+<li>类变量：定义前加一个static，用的时候可以不用声明值，全局可用</li>
+<li>实例变量：写在方法外面，可以不赋值，全局可用，使用要new一个对象</li>
+<li>局部变量：普通的定义，必须给初始化值，只在某个方法里有用</li>
+</ul>
+</li>
+<li>变量命名规范<ul>
+<li>见名知意</li>
+<li>类成员变量：首字母小写驼峰原则   monthSalary</li>
+<li>局部变量：首字母小写驼峰原则</li>
+<li>常量：全部大写可以加下划线</li>
+<li>类名：首字母大写驼峰原则  GoodMan()</li>
+<li>方法名：首字母小写驼峰原则  runRun()</li>
+</ul>
+</li>
+</ul>
+<p><strong>常量</strong></p>
+<ul>
+<li><p>用final声明，用大学字母表示</p>
+<blockquote>
+<p>比如写个PI等于多少，后面一直用而且值不变</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>运算符</strong></p>
+<ul>
+<li><p>算术运算符 + - * /  % ++ —</p>
+<blockquote>
+<p>有long结果为long，没有long 都是int，int不能强制转成string</p>
+<p>乘方计算：java里不能用2^3，需要借助工具Math.pow(2,3)</p>
+</blockquote>
+</li>
+<li><p>赋值运算符 =</p>
+</li>
+<li><p>关系运算符 &gt; &lt; &gt;= &lt;= == !=</p>
+</li>
+<li><p>逻辑运算符 &amp;&amp; || !</p>
+<blockquote>
+<p>&amp;&amp; 都真为真，执行短路运算，检测到一个假后面的都不计算，值也不变    </p>
+<p>|| 有真就真</p>
+<p>！真变假，假变真</p>
+</blockquote>
+</li>
+<li><p>位运算符 &amp; | ^ ~ &gt;&gt; &lt;&lt; &gt;&gt;&gt;</p>
+<blockquote>
+<p>&amp; 同1才是1</p>
+<p>| 有1就是1</p>
+<p>^ 不一样就是1</p>
+<p>~ 0变1，1变0</p>
+<p>&lt;&lt; 左移 *2</p>
+<p>/&gt;&gt; 右移 /2</p>
+</blockquote>
+</li>
+<li><p>条件运算符 ? :</p>
+<blockquote>
+<p>x ? y : z</p>
+<p>如果x==true，结果为y，否则为z</p>
+</blockquote>
+</li>
+<li><p>扩展赋值运算符 += -= *= /=</p>
+<blockquote>
+<p>字符串拼接</p>
+<ul>
+<li>“ “+a+b，先转换成字符串再拼接</li>
+<li>a+b+” “,先运算在转成字符串拼接</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>写写代码</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -4397,6 +4397,29 @@ title Key elements in Product X
       <tags>
         <tag>注册域名</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>学车记</title>
+    <url>/2021/08/18/%E5%AD%A6%E8%BD%A6%E8%AE%B0/</url>
+    <content><![CDATA[<h3 id="学车记1"><a href="#学车记1" class="headerlink" title="学车记1"></a>学车记1</h3><details class="folding-tag" blue><summary> 2022-08-16 </summary>
+              <div class='content'>
+              <blockquote><p>一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以<strong>平凡</strong>的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处&gt;~&lt;</p></blockquote><p> <img src="https://s2.loli.net/2022/10/24/XFVj2Lp45G6O9Zu.jpg" alt=""><br> <img src="https://s2.loli.net/2022/10/24/pRKzCZj6twcgUFI.jpg" alt=""></p>
+              </div>
+            </details>
+<h3 id="学车记2"><a href="#学车记2" class="headerlink" title="学车记2"></a>学车记2</h3><details class="folding-tag" blue><summary> 2021-08-17 </summary>
+              <div class='content'>
+              <blockquote><p>今天看完了《平凡的世界》第三部（<em>利用学驾校时间看的手机</em>），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:</p><blockquote><ul><li>平凡又平庸的我们努力奔向爱情。      </li><li>在这平凡的世界里努力过好平凡的生活。</li><li>我这个平凡的世界里平凡的人觉得遥不可及。</li></ul></blockquote><p>同时，今天是keep打卡第一天 fighting~</p></blockquote><p><img src="https://s2.loli.net/2022/10/24/A3tSV7uq4O2EvCw.jpg" alt=""></p>
+              </div>
+            </details>
+<h3 id="学车记3"><a href="#学车记3" class="headerlink" title="学车记3"></a>学车记3</h3><details class="folding-tag" blue><summary> 2021-08-18 </summary>
+              <div class='content'>
+              <p>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。<br><img src="https://s2.loli.net/2022/10/24/EMygeVouihR32Hz.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/TQ6R4bAKCe3MfYh.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/OueoXa2cI1Alr8i.jpg" alt=""></p>
+              </div>
+            </details>
+]]></content>
+      <categories>
+        <category>生活点滴</category>
+      </categories>
   </entry>
   <entry>
     <title>启发式算法</title>
@@ -4607,29 +4630,6 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </tags>
   </entry>
   <entry>
-    <title>学车记</title>
-    <url>/2021/08/18/%E5%AD%A6%E8%BD%A6%E8%AE%B0/</url>
-    <content><![CDATA[<h3 id="学车记1"><a href="#学车记1" class="headerlink" title="学车记1"></a>学车记1</h3><details class="folding-tag" blue><summary> 2022-08-16 </summary>
-              <div class='content'>
-              <blockquote><p>一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以<strong>平凡</strong>的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处&gt;~&lt;</p></blockquote><p> <img src="https://s2.loli.net/2022/10/24/XFVj2Lp45G6O9Zu.jpg" alt=""><br> <img src="https://s2.loli.net/2022/10/24/pRKzCZj6twcgUFI.jpg" alt=""></p>
-              </div>
-            </details>
-<h3 id="学车记2"><a href="#学车记2" class="headerlink" title="学车记2"></a>学车记2</h3><details class="folding-tag" blue><summary> 2021-08-17 </summary>
-              <div class='content'>
-              <blockquote><p>今天看完了《平凡的世界》第三部（<em>利用学驾校时间看的手机</em>），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:</p><blockquote><ul><li>平凡又平庸的我们努力奔向爱情。      </li><li>在这平凡的世界里努力过好平凡的生活。</li><li>我这个平凡的世界里平凡的人觉得遥不可及。</li></ul></blockquote><p>同时，今天是keep打卡第一天 fighting~</p></blockquote><p><img src="https://s2.loli.net/2022/10/24/A3tSV7uq4O2EvCw.jpg" alt=""></p>
-              </div>
-            </details>
-<h3 id="学车记3"><a href="#学车记3" class="headerlink" title="学车记3"></a>学车记3</h3><details class="folding-tag" blue><summary> 2021-08-18 </summary>
-              <div class='content'>
-              <p>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。<br><img src="https://s2.loli.net/2022/10/24/EMygeVouihR32Hz.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/TQ6R4bAKCe3MfYh.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/OueoXa2cI1Alr8i.jpg" alt=""></p>
-              </div>
-            </details>
-]]></content>
-      <categories>
-        <category>生活点滴</category>
-      </categories>
-  </entry>
-  <entry>
     <title>序列比对</title>
     <url>/2024/11/03/%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9/</url>
     <content><![CDATA[<p>关键词：生物信息学、序列比对</p>
@@ -4650,7 +4650,8 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
         <category>学习笔记</category>
       </categories>
       <tags>
-        <tag>序列不对</tag>
+        <tag>序列比对</tag>
+        <tag>生物信息学</tag>
       </tags>
   </entry>
   <entry>
@@ -4697,6 +4698,46 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </categories>
       <tags>
         <tag>评测大模型</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>虚拟机安装macOS系统</title>
+    <url>/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<p>参考链接</p>
+<p><a href="https://www.pc-daily.com/xitong/75975.html">虚拟机安装macos系统（VMware虚拟机安装macOS详细</a></p>
+<p><a href="https://blog.csdn.net/Simon_477/article/details/110252233">虚拟机VMware安装苹果系统macOS，超级详细教程，附文件下载，真教程！！</a></p>
+<p><a href="https://baijiahao.baidu.com/s?id=1697367423466273816&amp;wfr=spider&amp;for=pc">如何使用虚拟机VMware安装苹果macOS系统</a></p>
+<h5 id="1-安装虚拟机VMware"><a href="#1-安装虚拟机VMware" class="headerlink" title="1 安装虚拟机VMware"></a>1 安装虚拟机VMware</h5><p><a href="https://mp.weixin.qq.com/s?__biz=MzIyNjAxMjEwOQ==&amp;mid=2247502732&amp;idx=5&amp;sn=27221e888444d6c36ac62f4767337215&amp;chksm=e874752edf03fc38cadb220b2e77654f32248976e7fa2af240ba7f1e0c0527541ebba5725643&amp;scene=21#wechat_redirect">VMware16</a></p>
+<h5 id="2-安装解锁工具unlocker"><a href="#2-安装解锁工具unlocker" class="headerlink" title="2  安装解锁工具unlocker"></a>2  安装解锁工具unlocker</h5><p>解锁虚拟机安装macOS限制工具</p>
+<p><a href="http://www.winwin7.com/soft/9473.html#xiazai">unlocker v3.0.3</a></p>
+<blockquote>
+<ul>
+<li><strong><a href="https://blog.csdn.net/puspos/article/details/108900141">运行unlocker中win-install时，出现file not found-darwin.</a></strong></li>
+</ul>
+</blockquote>
+<h5 id="3-虚拟机安装-maOS"><a href="#3-虚拟机安装-maOS" class="headerlink" title="3 虚拟机安装 maOS"></a>3 虚拟机安装 maOS</h5><p><a href="https://www.mhero.com/macos">macOS系统下载</a></p>
+<p><a href="https://cloud.mfpud.com/VirtualCDR/44EE85B8FF68F7428C0AE7B3AA27661E/">macOS kealos 10.15</a> （非百度云盘）</p>
+<p><a href="https://sysin.org/blog/macOS/">Apple macOS 下载汇总（系统、应用和技巧）</a></p>
+<blockquote>
+<ul>
+<li>报错<a href="https://www.bilibili.com/read/cv13362122"><strong>客户机操作系统已禁用 CPU</strong></a></li>
+</ul>
+</blockquote>
+<h5 id="4-解决安装后屏幕适应问题"><a href="#4-解决安装后屏幕适应问题" class="headerlink" title="4 解决安装后屏幕适应问题"></a>4 解决安装后屏幕适应问题</h5><p>安装VMware Tools，用到步骤二中darwin.iso</p>
+<h5 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h5><p><a href="https://baijiahao.baidu.com/s?id=1691924549832120099&amp;wfr=spider&amp;for=pc">虚拟机中的Mac系统怎么优化</a></p>
+<p><a href="https://blog.csdn.net/SSS_Benjamin/article/details/89296164">VMware 15 上Mac虚拟机卡顿情况的优化</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/337036027">全网最详细的VMware虚拟机安装MacOS系统教程，没有之一！！！附全部资源</a></p>
+<p><strong>网络</strong></p>
+<p><a href="https://m.kafan.cn/A/gvx45wd73r.html">mac虚拟机如何开启wifi</a></p>
+<p><a href="https://blog.csdn.net/kof820/article/details/50515115?spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&amp;utm_relevant_index=1">VMware虚拟机mac系统以太网无法上网</a></p>
+<p><strong>app store</strong></p>
+<p><a href="https://jingyan.baidu.com/article/e75aca852cd5a9142fdac610.html">app store 购买过程中出错 错误500解决方法</a></p>
+]]></content>
+      <categories>
+        <category>实用教程</category>
+      </categories>
+      <tags>
+        <tag>虚拟机</tag>
       </tags>
   </entry>
   <entry>
@@ -4747,46 +4788,6 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       <tags>
         <tag>网站</tag>
         <tag>推送百度</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>虚拟机安装macOS系统</title>
-    <url>/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<p>参考链接</p>
-<p><a href="https://www.pc-daily.com/xitong/75975.html">虚拟机安装macos系统（VMware虚拟机安装macOS详细</a></p>
-<p><a href="https://blog.csdn.net/Simon_477/article/details/110252233">虚拟机VMware安装苹果系统macOS，超级详细教程，附文件下载，真教程！！</a></p>
-<p><a href="https://baijiahao.baidu.com/s?id=1697367423466273816&amp;wfr=spider&amp;for=pc">如何使用虚拟机VMware安装苹果macOS系统</a></p>
-<h5 id="1-安装虚拟机VMware"><a href="#1-安装虚拟机VMware" class="headerlink" title="1 安装虚拟机VMware"></a>1 安装虚拟机VMware</h5><p><a href="https://mp.weixin.qq.com/s?__biz=MzIyNjAxMjEwOQ==&amp;mid=2247502732&amp;idx=5&amp;sn=27221e888444d6c36ac62f4767337215&amp;chksm=e874752edf03fc38cadb220b2e77654f32248976e7fa2af240ba7f1e0c0527541ebba5725643&amp;scene=21#wechat_redirect">VMware16</a></p>
-<h5 id="2-安装解锁工具unlocker"><a href="#2-安装解锁工具unlocker" class="headerlink" title="2  安装解锁工具unlocker"></a>2  安装解锁工具unlocker</h5><p>解锁虚拟机安装macOS限制工具</p>
-<p><a href="http://www.winwin7.com/soft/9473.html#xiazai">unlocker v3.0.3</a></p>
-<blockquote>
-<ul>
-<li><strong><a href="https://blog.csdn.net/puspos/article/details/108900141">运行unlocker中win-install时，出现file not found-darwin.</a></strong></li>
-</ul>
-</blockquote>
-<h5 id="3-虚拟机安装-maOS"><a href="#3-虚拟机安装-maOS" class="headerlink" title="3 虚拟机安装 maOS"></a>3 虚拟机安装 maOS</h5><p><a href="https://www.mhero.com/macos">macOS系统下载</a></p>
-<p><a href="https://cloud.mfpud.com/VirtualCDR/44EE85B8FF68F7428C0AE7B3AA27661E/">macOS kealos 10.15</a> （非百度云盘）</p>
-<p><a href="https://sysin.org/blog/macOS/">Apple macOS 下载汇总（系统、应用和技巧）</a></p>
-<blockquote>
-<ul>
-<li>报错<a href="https://www.bilibili.com/read/cv13362122"><strong>客户机操作系统已禁用 CPU</strong></a></li>
-</ul>
-</blockquote>
-<h5 id="4-解决安装后屏幕适应问题"><a href="#4-解决安装后屏幕适应问题" class="headerlink" title="4 解决安装后屏幕适应问题"></a>4 解决安装后屏幕适应问题</h5><p>安装VMware Tools，用到步骤二中darwin.iso</p>
-<h5 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h5><p><a href="https://baijiahao.baidu.com/s?id=1691924549832120099&amp;wfr=spider&amp;for=pc">虚拟机中的Mac系统怎么优化</a></p>
-<p><a href="https://blog.csdn.net/SSS_Benjamin/article/details/89296164">VMware 15 上Mac虚拟机卡顿情况的优化</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/337036027">全网最详细的VMware虚拟机安装MacOS系统教程，没有之一！！！附全部资源</a></p>
-<p><strong>网络</strong></p>
-<p><a href="https://m.kafan.cn/A/gvx45wd73r.html">mac虚拟机如何开启wifi</a></p>
-<p><a href="https://blog.csdn.net/kof820/article/details/50515115?spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&amp;utm_relevant_index=1">VMware虚拟机mac系统以太网无法上网</a></p>
-<p><strong>app store</strong></p>
-<p><a href="https://jingyan.baidu.com/article/e75aca852cd5a9142fdac610.html">app store 购买过程中出错 错误500解决方法</a></p>
-]]></content>
-      <categories>
-        <category>实用教程</category>
-      </categories>
-      <tags>
-        <tag>虚拟机</tag>
       </tags>
   </entry>
   <entry>
