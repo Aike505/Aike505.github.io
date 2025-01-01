@@ -20,6 +20,24 @@
   </url>
   
   <url>
+    <loc>https://aike505.github.io/2025/01/01/%E7%A7%91%E7%A0%94%E7%94%9F%E6%B4%BB/</loc>
+    
+    <lastmod>2025-01-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/2025/01/01/%E7%94%9F%E6%B4%BB-%E7%A7%91%E7%A0%94/</loc>
+    
+    <lastmod>2025-01-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aike505.github.io/2024/11/04/%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%B7%A5%E7%A8%8B/</loc>
     
     <lastmod>2024-11-04</lastmod>
@@ -371,7 +389,7 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/games/cat/index.html</loc>
+    <loc>https://aike505.github.io/games/2048/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -398,7 +416,7 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/games/2048/index.html</loc>
+    <loc>https://aike505.github.io/games/cat/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -434,20 +452,6 @@
 
   
   <url>
-    <loc>https://aike505.github.io/tags/%E5%B9%B4%E5%BA%A6%E7%9B%AE%E6%A0%87/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/tags/Python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://aike505.github.io/tags/%E7%94%B5%E8%84%91/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -456,6 +460,20 @@
   
   <url>
     <loc>https://aike505.github.io/tags/%E7%A3%81%E7%9B%98/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/tags/%E5%B9%B4%E5%BA%A6%E7%9B%AE%E6%A0%87/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/tags/Python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -497,13 +515,6 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://aike505.github.io/tags/Hexo/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -512,6 +523,13 @@
   
   <url>
     <loc>https://aike505.github.io/tags/%E5%8D%9A%E5%AE%A2%E4%B9%A6%E5%86%99/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/tags/%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -546,14 +564,14 @@
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/%E6%B3%A8%E5%86%8C%E5%9F%9F%E5%90%8D/</loc>
+    <loc>https://aike505.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aike505.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://aike505.github.io/tags/%E6%B3%A8%E5%86%8C%E5%9F%9F%E5%90%8D/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -595,6 +613,13 @@
   </url>
   
   <url>
+    <loc>https://aike505.github.io/tags/%E8%AF%84%E6%B5%8B%E5%A4%A7%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://aike505.github.io/tags/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -603,13 +628,6 @@
   
   <url>
     <loc>https://aike505.github.io/tags/%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/tags/%E8%AF%84%E6%B5%8B%E5%A4%A7%E6%A8%A1%E5%9E%8B/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -639,7 +657,14 @@
 
   
   <url>
-    <loc>https://aike505.github.io/categories/%E7%94%9F%E6%B4%BB-%E7%A7%91%E7%A0%94/</loc>
+    <loc>https://aike505.github.io/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aike505.github.io/categories/%E7%A7%91%E7%A0%94%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -647,13 +672,6 @@
   
   <url>
     <loc>https://aike505.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aike505.github.io/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

@@ -4,11 +4,22 @@
     <title>2024国庆</title>
     <url>/2024/10/11/2024%E5%9B%BD%E5%BA%86/</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
+    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决<br><span id="more"></span></p>
+<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
+<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
+<p>软件官网:<a href="https://www.disktool.cn/feature.html">https://www.disktool.cn/feature.html</a><br>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
+<p>成功帮助舍友解决</p>
+]]></content>
       <categories>
-        <category>生活&amp;科研</category>
+        <category>实用教程</category>
       </categories>
       <tags>
-        <tag>年度目标</tag>
+        <tag>电脑</tag>
+        <tag>磁盘</tag>
       </tags>
   </entry>
   <entry>
@@ -18,14 +29,20 @@
 <p>还是从两个事讲起：自己的事&amp;实验室的事</p>
 <p>自己的事：你的生活、爱好、休息日的安排，从更大范围来讲甚至奖学金目标、竞赛参与、科研进度也包括，当然，作为一个博士生，最最重要也是必需你自己完成的事就是论文。</p>
 <p>实验室的事：你作为博士生，在完成自己研究需要实验室的帮助，同时在帮助实验室里的工作，比如引导师弟妹解决科研问题、整理材料、技术汇报、参与需求讨论并提出可行性意见。</p>
-<h4 id="1-自己的事"><a href="#1-自己的事" class="headerlink" title="1. 自己的事"></a>1. 自己的事</h4><p>作为一个成年人，2025已经是你成年后的第5年，除了学习，你需要进行职业技能储备。</p>
+<h3 id="1-自己的事"><a href="#1-自己的事" class="headerlink" title="1. 自己的事"></a>1. 自己的事</h3><p>作为一个成年人，2025已经是你成年后的第5年，除了学习，你需要进行职业技能储备。</p>
 <p>一年两投：对于论文方面，2025投出2篇文章。完成论文开题前准备。</p>
 <p>健身锻炼：体重70KG，穿衣显瘦，脱衣有肉。引体向上完成10个以上，从俯卧撑到基础俄挺。</p>
 <p>奖学金获取：通过科研成果，评选奖学金。</p>
-<h4 id="2-实验室的事"><a href="#2-实验室的事" class="headerlink" title="2. 实验室的事"></a>2. 实验室的事</h4><p>对于导师：完成基础任务（比如材料整理、新生研讨课、专利撰写），对于老师项目上需求，可能需要你出差、项目汇报。</p>
+<h3 id="2-实验室的事"><a href="#2-实验室的事" class="headerlink" title="2. 实验室的事"></a>2. 实验室的事</h3><p>对于导师：完成基础任务（比如材料整理、新生研讨课、专利撰写），对于老师项目上需求，可能需要你出差、项目汇报。</p>
 <p>对于项目：你需要有应对甲方压力的能力（比如需求边界讨论、完成期限界定），因为甲方对技术上的问题天然存在不足，提出的需求没有或不存在已有参考，需要根据你自己的调研后给出结论（情况不同于与已有标准答案但位置，再实现结果逼近），问题通常具有开放性（严格与需求对齐）。</p>
 <p>对于实验室成员：大部分实验室中博士生都戏称小导师（上有导师汇报、下有硕士生管理），你需要根据硕士生的问题给出解决思路、具体实现方法，但你一定不需要实际执行，除非其研究具有价值点并且有助于你自己的研究。</p>
 ]]></content>
+      <categories>
+        <category>科研生活</category>
+      </categories>
+      <tags>
+        <tag>年度目标</tag>
+      </tags>
   </entry>
   <entry>
     <title>Python程序设计二级考试必看</title>
@@ -1906,23 +1923,6 @@
       </tags>
   </entry>
   <entry>
-    <title>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决</title>
-    <url>/2021/09/04/C%E7%9B%98%E4%B8%8ED%E7%9B%98%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%AA%E6%81%A2%E5%A4%8D%E5%88%86%E5%8C%BA%EF%BC%8C%E5%AF%BC%E8%87%B4C%E7%9B%98%E4%B8%8D%E8%83%BD%E6%89%A9%E5%B1%95%E5%8D%B7%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>C盘与D盘中间有个恢复分区，导致C盘不能扩展卷解决<br><span id="more"></span></p>
-<p>C盘还剩二十几个G可用内存，看着就难受，然后想着可以把D盘压缩卷出来点给C盘，压缩后发现D盘和C盘中间夹着个恢复分区，压缩出来的内存不在C盘旁边，所以C盘的扩展卷选项是灰色不能用的。</p>
-<p>于是就在网上找一些相关问题，有的说要删除这个恢复分区，有的格式化重新建；我怎么看怎么不靠谱。于是在找解决方法中看到了一篇博客，用此方法可以移动各分区，然后C盘扩展完成</p>
-<p>软件官网:<a href="https://www.disktool.cn/feature.html">https://www.disktool.cn/feature.html</a><br>博客网址:<a href="https://blog.csdn.net/visual_eagle/article/details/106170969">https://blog.csdn.net/visual_eagle/article/details/106170969</a></p>
-<p>成功帮助舍友解决</p>
-]]></content>
-      <categories>
-        <category>实用教程</category>
-      </categories>
-      <tags>
-        <tag>电脑</tag>
-        <tag>磁盘</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>chatgpt学习</title>
     <url>/2023/11/30/chatgpt%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p> 掌握ChatGPT，高效工作：深入理解及实践技巧，避免信息垃圾，精准获取所需。</p>
@@ -2154,6 +2154,33 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo写博客的正确姿态</title>
+    <url>/2023/09/17/hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E6%80%81/</url>
+    <content><![CDATA[<div class="note red icon-padding simple"><i class="note-icon fas fa-bullhorn"></i><p>博客已经可以访问了，但是不知道如何撰写和发表文章？接下来学习一些写文章需要用到的命令。</p>
+</div>
+<h3 id="step-1：写文章命令"><a href="#step-1：写文章命令" class="headerlink" title="step 1：写文章命令"></a>step 1：写文章命令</h3><p>写文章首先需要再命令行中通过标题新建文章页面（新建文章保存在博客文件夹目录<code>/source/_posts</code>中），同时如果想丰富博客功能，可以新建其他页面（例如音乐、电影、图册等），使用命令如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;postName&quot;</span> --新建文章</span><br><span class="line"></span><br><span class="line">hexo new page <span class="string">&quot;pageName&quot;</span> -- 新建页面</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>在文件夹会创建文章页面的<strong>md格式</strong>文件，打开后就可以自由创作文章内容（强推markdown格式容易上手，其次用html格式），同时也可以对文章元数据（标签、分类等等）进行修改和补充。</p>
+<p>ps：不知道md格式是什么？md格式通常指<a href="https://baike.baidu.com/link?url=C1msjCm9WO4CsHa3_HtIdaYrKHpljdoq0lo6S_WGEytmm8tkRGAm9orbzaZTcEXqrnMGyDXURxDCmjsceDv-A84D5y9LN0h65EwyLeyvXBW">markdown</a>格式，是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的 XHTML（或者HTML）文档。是博客撰写中最常用的命令，推荐使用Typora书写，然后复制在文章页面中。</p>
+</blockquote>
+<h3 id="step-2：新建分类和标签"><a href="#step-2：新建分类和标签" class="headerlink" title="step 2：新建分类和标签"></a>step 2：新建分类和标签</h3><p>如果需要对文章进行方便的管理，可以设置所属的标签（多个）和分类（多级），原理就是用新建页面的命令创建<code>categories</code>和<code>tags</code>页面，所用命令如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br><span class="line"></span><br><span class="line">hexo new page tags</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="step-3：上传命令"><a href="#step-3：上传命令" class="headerlink" title="step 3：上传命令"></a>step 3：上传命令</h3><p>每次对博客进行修改完毕后，都需要重新生成新的静态页面并上传到github，使用命令如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hexo -generate --生成个人博客所需的静态页面</span><br><span class="line"></span><br><span class="line">hexo server --本地预览</span><br><span class="line"></span><br><span class="line">hexo deploy --部署我们的个人博客</span><br><span class="line"></span><br><span class="line">hexo clean --清除缓存</span><br><span class="line"></span><br><span class="line"><span class="comment"># 可以使用缩写，并组合使用，常用方法如下：</span></span><br><span class="line"></span><br><span class="line">hexo cl &amp; hexo g -d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>上传完成后就可以访问你的网址查看是否成功（可能会有几分钟延迟），使用hexo s查看本地预览则没有延迟。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>博客书写</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo 新建分类和标签</title>
     <url>/2021/08/13/hexo-%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
     <content><![CDATA[<p>生成的新文件夹都在 source 下也就是和放文章的文件夹一块<br>以下所有命令都是在博客文件目录下执行</p>
@@ -2183,33 +2210,6 @@
         <tag>hexo</tag>
         <tag>博客</tag>
         <tag>新建分类标签</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo写博客的正确姿态</title>
-    <url>/2023/09/17/hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E6%80%81/</url>
-    <content><![CDATA[<div class="note red icon-padding simple"><i class="note-icon fas fa-bullhorn"></i><p>博客已经可以访问了，但是不知道如何撰写和发表文章？接下来学习一些写文章需要用到的命令。</p>
-</div>
-<h3 id="step-1：写文章命令"><a href="#step-1：写文章命令" class="headerlink" title="step 1：写文章命令"></a>step 1：写文章命令</h3><p>写文章首先需要再命令行中通过标题新建文章页面（新建文章保存在博客文件夹目录<code>/source/_posts</code>中），同时如果想丰富博客功能，可以新建其他页面（例如音乐、电影、图册等），使用命令如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;postName&quot;</span> --新建文章</span><br><span class="line"></span><br><span class="line">hexo new page <span class="string">&quot;pageName&quot;</span> -- 新建页面</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>在文件夹会创建文章页面的<strong>md格式</strong>文件，打开后就可以自由创作文章内容（强推markdown格式容易上手，其次用html格式），同时也可以对文章元数据（标签、分类等等）进行修改和补充。</p>
-<p>ps：不知道md格式是什么？md格式通常指<a href="https://baike.baidu.com/link?url=C1msjCm9WO4CsHa3_HtIdaYrKHpljdoq0lo6S_WGEytmm8tkRGAm9orbzaZTcEXqrnMGyDXURxDCmjsceDv-A84D5y9LN0h65EwyLeyvXBW">markdown</a>格式，是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的 XHTML（或者HTML）文档。是博客撰写中最常用的命令，推荐使用Typora书写，然后复制在文章页面中。</p>
-</blockquote>
-<h3 id="step-2：新建分类和标签"><a href="#step-2：新建分类和标签" class="headerlink" title="step 2：新建分类和标签"></a>step 2：新建分类和标签</h3><p>如果需要对文章进行方便的管理，可以设置所属的标签（多个）和分类（多级），原理就是用新建页面的命令创建<code>categories</code>和<code>tags</code>页面，所用命令如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br><span class="line"></span><br><span class="line">hexo new page tags</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="step-3：上传命令"><a href="#step-3：上传命令" class="headerlink" title="step 3：上传命令"></a>step 3：上传命令</h3><p>每次对博客进行修改完毕后，都需要重新生成新的静态页面并上传到github，使用命令如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hexo -generate --生成个人博客所需的静态页面</span><br><span class="line"></span><br><span class="line">hexo server --本地预览</span><br><span class="line"></span><br><span class="line">hexo deploy --部署我们的个人博客</span><br><span class="line"></span><br><span class="line">hexo clean --清除缓存</span><br><span class="line"></span><br><span class="line"><span class="comment"># 可以使用缩写，并组合使用，常用方法如下：</span></span><br><span class="line"></span><br><span class="line">hexo cl &amp; hexo g -d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>上传完成后就可以访问你的网址查看是否成功（可能会有几分钟延迟），使用hexo s查看本地预览则没有延迟。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>博客书写</tag>
       </tags>
   </entry>
   <entry>
@@ -3208,7 +3208,7 @@
 <h3 id="音乐-Aplayer"><a href="#音乐-Aplayer" class="headerlink" title="音乐 Aplayer"></a>音乐 Aplayer</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% aplayerlist %&#125;</span><br><span class="line">&#123;</span><br><span class="line">    &quot;narrow&quot;: false,// （可选）播放器袖珍风格</span><br><span class="line">    &quot;autoplay&quot;: true,// （可选) 自动播放，移动端浏览器暂时不支持此功能</span><br><span class="line">    &quot;mode&quot;: &quot;random&quot;,// （可选）曲目循环类型，有 &#x27;random&#x27;（随机播放）, &#x27;single&#x27; (单曲播放), &#x27;circulation&#x27; (循环播放), &#x27;order&#x27; (列表播放)， 默认：&#x27;circulation&#x27;</span><br><span class="line">    &quot;showlrc&quot;: 3,// （可选）歌词显示配置项，可选项有：1,2,3</span><br><span class="line">    &quot;mutex&quot;: true,// （可选）该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</span><br><span class="line">    &quot;theme&quot;: &quot;#e6d0b2&quot;,// （可选）播放器风格色彩设置，默认：#b7daff</span><br><span class="line">    &quot;preload&quot;: &quot;metadata&quot;,// （可选）音乐文件预载入模式，可选项： &#x27;none&#x27; &#x27;metadata&#x27; &#x27;auto&#x27;, 默认: &#x27;auto&#x27;</span><br><span class="line">    &quot;listmaxheight&quot;: &quot;513px&quot;,// (可选) 该播放列表的最大长度</span><br><span class="line">    &quot;music&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;CoCo&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;Jeff Williams&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;caffeine.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;caffeine.jpeg&quot;,</span><br><span class="line">            &quot;lrc&quot;: &quot;caffeine.txt&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;アイロニ&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;鹿乃&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;irony.mp3&quot;,</span><br><span class="line">            &quot;pic&quot;: &quot;irony.jpg&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br><span class="line">&#123;% endaplayerlist %&#125;</span><br></pre></td></tr></table></figure>
 <p>简单示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 
-    <div id="aplayer-nnqsnvNl" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-qomfAUDD" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <p>进阶示例<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
@@ -3227,29 +3227,6 @@ title Key elements in Product X
       </categories>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo的安装和在github部署博客</title>
-    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>打开 git 下 git bash 输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
-<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
-<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
-<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
-<hr>
-<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>部署博客</tag>
       </tags>
   </entry>
   <entry>
@@ -3275,6 +3252,29 @@ title Key elements in Product X
         <tag>hexo</tag>
         <tag>部署博客</tag>
         <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo的安装和在github部署博客</title>
+    <url>/2021/07/19/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E5%9C%A8github%E4%B8%8A%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<h3 id="1-软件安装和-Hexo-下载"><a href="#1-软件安装和-Hexo-下载" class="headerlink" title="1 软件安装和 Hexo 下载"></a>1 软件安装和 Hexo 下载</h3><p>安装 git, node, Sublime Text(也可以 vscode)<br>命令提示符打开创建的文件夹</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init aikeblog</span><br><span class="line">cd aikeblog</span><br><span class="line">npm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<h3 id="2-github-账户设置"><a href="#2-github-账户设置" class="headerlink" title="2 github 账户设置"></a>2 github 账户设置</h3><p>注册 github 账户, 创建厂库，命名格式 <code>Aike505.github.io</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>打开 git 下 git bash 输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;aikeblog&quot;</span><br><span class="line">git config --global user.email &quot;1736134512@qq.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;1736134512@qq.com&quot;</span><br></pre></td></tr></table></figure>
+<p>会提示输入密码两次<br>在新创建的.ssh 文件复制公钥，粘贴纸 github 的 SSH and GPG keys 上<br>将 aikeblog 在 vscode 打开，在_config.yml 配置文件末尾修改</p>
+<h3 id="3-Hexo-里参数设置"><a href="#3-Hexo-里参数设置" class="headerlink" title="3 Hexo 里参数设置"></a>3 Hexo 里参数设置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://Aike505.github.io</span><br><span class="line">root: /</span><br><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/Aike505/Aike505.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
+<p>在 aikeblog 下面 <code>hexo cl &amp;&amp; hexo g -d</code> <code>hexo s</code><br>这里就基本部署完成了 用 Aike505.github.io 就可以打开网址</p>
+<hr>
+<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://www.bilibili.com/video/BV1tZ4y1j7bn?t=632">非常不错的视频教程</a><br><a href="https://hexo.io/zh-cn/docs/">官方文档|Hexo</a></p>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>部署博客</tag>
       </tags>
   </entry>
   <entry>
@@ -4297,66 +4297,6 @@ title Key elements in Product X
       </tags>
   </entry>
   <entry>
-    <title>修改github.io站点域名</title>
-    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
-    <content><![CDATA[<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
-<ul>
-<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
-<ul>
-<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&amp;utm_medium=cpc&amp;utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&amp;utm_medium=se-cpc-op&amp;utm_campaign=10045&amp;utm_content=&amp;utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&amp;utm_adplace=AdPlace039520">华为云</a></li>
-</ul>
-</blockquote>
-</li>
-</ul>
-</blockquote>
-<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
-<ul>
-<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20域名设置3.png" alt=""></li>
-<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20域名设置1.png" alt=""></li>
-</ul>
-</blockquote>
-<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
-<ul>
-<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20域名设置2.png" alt=""></li>
-</ul>
-</blockquote>
-<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
-<ul>
-<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
-</ul>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>注册域名</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学车记</title>
-    <url>/2021/08/18/%E5%AD%A6%E8%BD%A6%E8%AE%B0/</url>
-    <content><![CDATA[<h3 id="学车记1"><a href="#学车记1" class="headerlink" title="学车记1"></a>学车记1</h3><details class="folding-tag" blue><summary> 2022-08-16 </summary>
-              <div class='content'>
-              <blockquote><p>一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以<strong>平凡</strong>的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处&gt;~&lt;</p></blockquote><p> <img src="https://s2.loli.net/2022/10/24/XFVj2Lp45G6O9Zu.jpg" alt=""><br> <img src="https://s2.loli.net/2022/10/24/pRKzCZj6twcgUFI.jpg" alt=""></p>
-              </div>
-            </details>
-<h3 id="学车记2"><a href="#学车记2" class="headerlink" title="学车记2"></a>学车记2</h3><details class="folding-tag" blue><summary> 2021-08-17 </summary>
-              <div class='content'>
-              <blockquote><p>今天看完了《平凡的世界》第三部（<em>利用学驾校时间看的手机</em>），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:</p><blockquote><ul><li>平凡又平庸的我们努力奔向爱情。      </li><li>在这平凡的世界里努力过好平凡的生活。</li><li>我这个平凡的世界里平凡的人觉得遥不可及。</li></ul></blockquote><p>同时，今天是keep打卡第一天 fighting~</p></blockquote><p><img src="https://s2.loli.net/2022/10/24/A3tSV7uq4O2EvCw.jpg" alt=""></p>
-              </div>
-            </details>
-<h3 id="学车记3"><a href="#学车记3" class="headerlink" title="学车记3"></a>学车记3</h3><details class="folding-tag" blue><summary> 2021-08-18 </summary>
-              <div class='content'>
-              <p>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。<br><img src="https://s2.loli.net/2022/10/24/EMygeVouihR32Hz.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/TQ6R4bAKCe3MfYh.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/OueoXa2cI1Alr8i.jpg" alt=""></p>
-              </div>
-            </details>
-]]></content>
-      <categories>
-        <category>生活点滴</category>
-      </categories>
-  </entry>
-  <entry>
     <title>python库学习</title>
     <url>/2022/09/23/python%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h3 id="pandas库"><a href="#pandas库" class="headerlink" title="pandas库"></a>pandas库</h3><p>pandas 是基于Numpy的一种工具，主要用于数据分析任务。Pandas 纳入了大量库和一些标准的数据模型，提供了高校第操作大型数据集所需要的工具。pandas 的名称来自面板数据（panel data）和python数据分析（data analysis）。</p>
@@ -4441,6 +4381,43 @@ title Key elements in Product X
       </categories>
       <tags>
         <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>修改github.io站点域名</title>
+    <url>/2021/07/20/%E4%BF%AE%E6%94%B9github-io%E7%AB%99%E7%82%B9%E5%9F%9F%E5%90%8D/</url>
+    <content><![CDATA[<h3 id="1-申请一个域名"><a href="#1-申请一个域名" class="headerlink" title="1 申请一个域名"></a>1 申请一个域名</h3><blockquote>
+<ul>
+<li>可以选择阿里云、腾讯云或者华为云等，最近都有活动，1 元就可以购买。<del>这里我购买的是腾讯云</del><blockquote>
+<ul>
+<li>奉上链接<br><a href="https://wanwang.aliyun.com/domain/1yuan">阿里云</a> &gt;&gt; <a href="https://cloud.tencent.com/act/domainsales?fromSource=gwzcw.2046618.2046618.2046618&amp;utm_medium=cpc&amp;utm_id=gwzcw.2046618.2046618.2046618">腾讯云</a> &gt;&gt; <a href="https://activity.huaweicloud.com/domain1.html?utm_source=baidu&amp;utm_medium=se-cpc-op&amp;utm_campaign=10045&amp;utm_content=&amp;utm_term=%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9F%9F%E5%90%8D&amp;utm_adplace=AdPlace039520">华为云</a></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h3 id="2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名"><a href="#2-在仓库里添加-CNAME-文件并在文件中填写绑定的域名" class="headerlink" title="2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名"></a>2 在仓库里添加 CNAME 文件并在文件中填写绑定的域名</h3><blockquote>
+<ul>
+<li>在仓库创建一个文件， 命名为 CNAME，内容为你的域名，这里我是<code>zkxdu.top</code>(不要包含 http://和 www)<br><img src="../photos/photo/2021-07-20域名设置3.png" alt=""></li>
+<li>进入设置<code>Settings</code>， 找到<code>Pages</code> 里的<code>Custom domain</code>,修改为 CNAME 里的内容<code>zkxdu.top</code><br><img src="../photos/photo/2021-07-20域名设置1.png" alt=""></li>
+</ul>
+</blockquote>
+<h3 id="3-添加域名解析"><a href="#3-添加域名解析" class="headerlink" title="3 添加域名解析"></a>3 添加域名解析</h3><blockquote>
+<ul>
+<li>在控制台添加两个 A 记录，线路类型为<code>CNAME</code>， 记录值为<code>aike505.github.io</code>，其中一个主机域名为<code>www</code><br><img src="../photos/photo/2021-07-20域名设置2.png" alt=""></li>
+</ul>
+</blockquote>
+<h3 id="4-成功"><a href="#4-成功" class="headerlink" title="4 成功"></a>4 成功</h3><blockquote>
+<ul>
+<li>重新在浏览器中输入<code>zkxdu.top</code>，发现已经可以打开了</li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>注册域名</tag>
       </tags>
   </entry>
   <entry>
@@ -4677,6 +4654,29 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </tags>
   </entry>
   <entry>
+    <title>学车记</title>
+    <url>/2021/08/18/%E5%AD%A6%E8%BD%A6%E8%AE%B0/</url>
+    <content><![CDATA[<h3 id="学车记1"><a href="#学车记1" class="headerlink" title="学车记1"></a>学车记1</h3><details class="folding-tag" blue><summary> 2022-08-16 </summary>
+              <div class='content'>
+              <blockquote><p>一如既往的学驾校，一天四趟校车，学车的日子总不至于太单调。在等车的时间，没想到《平凡的世界》第3部都快看完了,感觉路遥笔下的悲喜事，自己从来不偏袒一方，正以<strong>平凡</strong>的口吻娓娓道来。学车的过程中也认识了一群伙伴，但碍于性格总交往不深。学车的地方云很近，是个抬头发呆的好去处&gt;~&lt;</p></blockquote><p> <img src="https://s2.loli.net/2022/10/24/XFVj2Lp45G6O9Zu.jpg" alt=""><br> <img src="https://s2.loli.net/2022/10/24/pRKzCZj6twcgUFI.jpg" alt=""></p>
+              </div>
+            </details>
+<h3 id="学车记2"><a href="#学车记2" class="headerlink" title="学车记2"></a>学车记2</h3><details class="folding-tag" blue><summary> 2021-08-17 </summary>
+              <div class='content'>
+              <blockquote><p>今天看完了《平凡的世界》第三部（<em>利用学驾校时间看的手机</em>），结尾虽然对孙少平的后来没有阐释，但说到还是归于平凡，意味深长。在文末摘抄几句点题的句子:</p><blockquote><ul><li>平凡又平庸的我们努力奔向爱情。      </li><li>在这平凡的世界里努力过好平凡的生活。</li><li>我这个平凡的世界里平凡的人觉得遥不可及。</li></ul></blockquote><p>同时，今天是keep打卡第一天 fighting~</p></blockquote><p><img src="https://s2.loli.net/2022/10/24/A3tSV7uq4O2EvCw.jpg" alt=""></p>
+              </div>
+            </details>
+<h3 id="学车记3"><a href="#学车记3" class="headerlink" title="学车记3"></a>学车记3</h3><details class="folding-tag" blue><summary> 2021-08-18 </summary>
+              <div class='content'>
+              <p>中午天热点了水，下午就间接性暴雨。人生第一次看见天空中彩虹，竟然是在驾校里。<br><img src="https://s2.loli.net/2022/10/24/EMygeVouihR32Hz.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/TQ6R4bAKCe3MfYh.jpg" alt=""><br><img src="https://s2.loli.net/2022/10/24/OueoXa2cI1Alr8i.jpg" alt=""></p>
+              </div>
+            </details>
+]]></content>
+      <categories>
+        <category>生活点滴</category>
+      </categories>
+  </entry>
+  <entry>
     <title>建站历程</title>
     <url>/2022/11/03/%E5%BB%BA%E7%AB%99%E5%8E%86%E7%A8%8B/</url>
     <content><![CDATA[<div class="timeline blue"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>时间线</p>
@@ -4731,6 +4731,33 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </tags>
   </entry>
   <entry>
+    <title>科研生活</title>
+    <url>/2025/01/01/%E7%A7%91%E7%A0%94%E7%94%9F%E6%B4%BB/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>深度测评大模型</title>
+    <url>/2024/10/30/%E6%B7%B1%E5%BA%A6%E6%B5%8B%E8%AF%84%E5%A4%A7%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<h3 id="大模型深度测评"><a href="#大模型深度测评" class="headerlink" title="大模型深度测评"></a>大模型深度测评</h3><p>1、评价标准。测试数据集：</p>
+<ol>
+<li>MMLU：测试语言English、AI基础能力测试，美国教育体系下小学到本科57个学科知识，测试能力先验学习和解决问题。GPT4&gt;ChatGLM4&gt;Gemini Pro</li>
+<li>CMMLU：综合性中文评估基准，类似MMLU，主题包括国内九年义务教育到大学高等教育工67个主题，包括具有中国特定答案的任务（驾驶规则、社会基础法规）。BlueLM&gt;通义&gt;GPT-4</li>
+<li>C-EVAL：更广泛的综合性中文评估、包括注会、法考、公考、医师资格证等标准考试，中学到大学主流科目。BlueLM&gt;MagecLM&gt;MindGPT&gt;通义千问</li>
+<li>superClUE：中文特点的评测基准，例如成语诗歌文学题材创作。GPT-4&gt;文心一言&gt;通义千问&gt;OPPO AndesGPT</li>
+</ol>
+<p>参考资料：</p>
+<p><a href="https://www.bilibili.com/video/BV1RA4m1V74W">万字测评！18个主流大模型深度评测，读懂AI现状【深度模评03】</a></p>
+<p><img src="http://png.zkkk123.cn/2024/10/image-20241030174119130.png" alt="国外大模型"></p>
+<p><img src="http://png.zkkk123.cn/2024/10/image-20241030174043279.png" alt="国内大模型"></p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>评测大模型</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>网站推送百度</title>
     <url>/2021/07/21/%E7%BD%91%E7%AB%99%E6%8E%A8%E9%80%81%E7%99%BE%E5%BA%A6/</url>
     <content><![CDATA[<blockquote>
@@ -4781,28 +4808,6 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       </tags>
   </entry>
   <entry>
-    <title>深度测评大模型</title>
-    <url>/2024/10/30/%E6%B7%B1%E5%BA%A6%E6%B5%8B%E8%AF%84%E5%A4%A7%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[<h3 id="大模型深度测评"><a href="#大模型深度测评" class="headerlink" title="大模型深度测评"></a>大模型深度测评</h3><p>1、评价标准。测试数据集：</p>
-<ol>
-<li>MMLU：测试语言English、AI基础能力测试，美国教育体系下小学到本科57个学科知识，测试能力先验学习和解决问题。GPT4&gt;ChatGLM4&gt;Gemini Pro</li>
-<li>CMMLU：综合性中文评估基准，类似MMLU，主题包括国内九年义务教育到大学高等教育工67个主题，包括具有中国特定答案的任务（驾驶规则、社会基础法规）。BlueLM&gt;通义&gt;GPT-4</li>
-<li>C-EVAL：更广泛的综合性中文评估、包括注会、法考、公考、医师资格证等标准考试，中学到大学主流科目。BlueLM&gt;MagecLM&gt;MindGPT&gt;通义千问</li>
-<li>superClUE：中文特点的评测基准，例如成语诗歌文学题材创作。GPT-4&gt;文心一言&gt;通义千问&gt;OPPO AndesGPT</li>
-</ol>
-<p>参考资料：</p>
-<p><a href="https://www.bilibili.com/video/BV1RA4m1V74W">万字测评！18个主流大模型深度评测，读懂AI现状【深度模评03】</a></p>
-<p><img src="http://png.zkkk123.cn/2024/10/image-20241030174119130.png" alt="国外大模型"></p>
-<p><img src="http://png.zkkk123.cn/2024/10/image-20241030174043279.png" alt="国内大模型"></p>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>评测大模型</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>虚拟机安装macOS系统</title>
     <url>/2022/04/26/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85macOS%E7%B3%BB%E7%BB%9F/</url>
     <content><![CDATA[<p>参考链接</p>
@@ -4841,6 +4846,11 @@ Griewank &f(x) = \frac{1}{4000}\sum_{i=1}^{n}x_i^2-\prod_{i=1}^{n}cos(\frac{x_i}
       <tags>
         <tag>虚拟机</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>生活&amp;科研</title>
+    <url>/2025/01/01/%E7%94%9F%E6%B4%BB-%E7%A7%91%E7%A0%94/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>选课</title>
